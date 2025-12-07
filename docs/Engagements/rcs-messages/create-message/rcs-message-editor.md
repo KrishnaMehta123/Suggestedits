@@ -149,18 +149,6 @@ To configure Fallback SMS:
 
 Refer to [Fallback SMS](https://docs.clevertap.com/docs/rcs-messages#fallback-sms) for more details.
 
-***
-
-# 🎉 **This version will NOT cause the React child error.**
-
-If you'd like, I can also:
-
-✔ Validate the rest of your RCS document for React/MDX hazards
-✔ Rewrite all nested lists into ReadMe-safe lists
-✔ Check all hyperlinks and headings for MDX compatibility
-
-Just say: **“Check the whole doc”**.
-
 ## RCS Template Types
 
 CleverTap provides three types of RCS templates. Each supports text, personalization through placeholders, and interactive buttons.
