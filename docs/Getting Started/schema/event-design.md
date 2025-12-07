@@ -22,20 +22,20 @@ The following is a comprehensive set of guidelines to help you navigate the comp
 
 Determining the number of events to track depends on the complexity of your app or website's functionality. While some apps or websites may require only a few key events, others with richer functionalities may need a more extensive event-tracking approach. It is essential to strike a balance and avoid tracking every minor user action, focusing instead on actions crucial for completing processes within your app or website.
 
-- **Basic Apps**: Apps with fundamental features typically require only a few key events. For example, these apps require approximately 20 key events to track essential user interactions, such as Sign-ups, Purchases, and App Launches.
-- **Feature-rich Apps**: Applications offering a wide range of features and functionalities may require tracking approximately 200 events to capture diverse user actions comprehensively. For example, in addition to tracking Sign-ups and Purchases, these apps may need to monitor advanced interactions such as feature usage, content consumption, and social sharing.
+* **Basic Apps**: Apps with fundamental features typically require only a few key events. For example, these apps require approximately 20 key events to track essential user interactions, such as Sign-ups, Purchases, and App Launches.
+* **Feature-rich Apps**: Applications offering a wide range of features and functionalities may require tracking approximately 200 events to capture diverse user actions comprehensively. For example, in addition to tracking Sign-ups and Purchases, these apps may need to monitor advanced interactions such as feature usage, content consumption, and social sharing.
 
 > 📘 Note
-> 
+>
 > Please note that these number serves as a rough guideline and may vary depending on individual app requirements.
 
 ## Which Events to Track?
 
 Identifying the events to track depends on the critical actions users perform within your app. A helpful rule of thumb is to check if all steps of a process can be represented in a funnel structure. You can optimize your event-tracking strategy by focusing on actions that drive engagement and contribute to your app's success. You can consider the following examples of essential events to track:
 
-- **Sign-up Process Completion**: Tracking when users complete the sign-up process provides valuable insights into user acquisition and conversion rates.
-- **In-App Purchases**: Monitoring purchases within your app allows you to analyze user spending behavior and optimize revenue generation strategies.
-- **Onboarding Progress**: Tracking users' progress through the onboarding process helps identify potential bottlenecks and areas for improvement.
+* **Sign-up Process Completion**: Tracking when users complete the sign-up process provides valuable insights into user acquisition and conversion rates.
+* **In-App Purchases**: Monitoring purchases within your app allows you to analyze user spending behavior and optimize revenue generation strategies.
+* **Onboarding Progress**: Tracking users' progress through the onboarding process helps identify potential bottlenecks and areas for improvement.
 
 # Best Practices for Event Design
 
@@ -47,35 +47,35 @@ Clear and descriptive event names ensure consistency and clarity in your event-t
 
 Let's illustrate this concept with a few more examples:
 
-| Poor Event Name       | Improved Event Name   |
-| :-------------------- | :-------------------- |
-| Initiated_Buy_Screen1 | Product Added to Cart |
-| Clicked_Button123     | Button Clicked        |
-| Opened_Screen_ABC     | Screen ABC Opened     |
-| Selected_Item_XYZ     | Item XYZ Selected     |
-| Completed_Form_1      | Form 1 Completed      |
+| Poor Event Name         | Improved Event Name   |
+| :---------------------- | :-------------------- |
+| Initiated\_Buy\_Screen1 | Product Added to Cart |
+| Clicked\_Button123      | Button Clicked        |
+| Opened\_Screen\_ABC     | Screen ABC Opened     |
+| Selected\_Item\_XYZ     | Item XYZ Selected     |
+| Completed\_Form\_1      | Form 1 Completed      |
 
 ## Finding Essential Events to Track
 
 Identifying key user actions involves understanding the most frequent and important actions users perform within your app. You can identify key user actions by answering two fundamental questions:
 
-- What are the most frequent actions users perform in my app?
-- What are the most important actions I want users to perform in my app?
+* What are the most frequent actions users perform in my app?
+* What are the most important actions I want users to perform in my app?
 
 These questions guide the selection of meaningful and actionable user-centric metrics, steering away from traditional event-centric tracking methods. For example:
 
-- **Frequent User Actions**: _Search_, _Visit Sale Pages_, _Add to Cart_
-- **Important User Actions**: _Register_, _View Products_, _Purchase_
+* **Frequent User Actions**: *Search*, *Visit Sale Pages*, *Add to Cart*
+* **Important User Actions**: *Register*, *View Products*, *Purchase*
 
 ## Tracking User Action Properties
 
 Enhance the granularity of event tracking by incorporating user action properties. Start with tracking fundamental actions and gradually introduce complexity by including action properties to enrich your data analysis.
 
-For example, with the _Added to Cart_ event, you can track properties such as _Product Name_, _Product Category_, and _Cart Amount_. By including properties like _Product Name_ and _Category_, you can gain deeper insights into user behavior and preferences, enabling more targeted marketing campaigns and personalized user experiences.
+For example, with the *Added to Cart* event, you can track properties such as *Product Name*, *Product Category*, and *Cart Amount*. By including properties like *Product Name* and *Category*, you can gain deeper insights into user behavior and preferences, enabling more targeted marketing campaigns and personalized user experiences.
 
 ## Managing Consistency Across Platforms
 
-Maintain consistency in tracked user actions across web and mobile platforms to ensure accurate data analysis and reporting. For example, tracking _Product Viewed_ consistently across web and mobile platforms enables seamless multi-platform marketing reporting and unbiased platform-wise analysis.
+Maintain consistency in tracked user actions across web and mobile platforms to ensure accurate data analysis and reporting. For example, tracking *Product Viewed* consistently across web and mobile platforms enables seamless multi-platform marketing reporting and unbiased platform-wise analysis.
 
 # Event Design Templates
 
@@ -85,39 +85,39 @@ The event design template helps you plan your integration. It guides you in capt
 
 We recommend involving the following stakeholders in the integration:
 
-- Marketers
-- Product Managers
+* Marketers
+* Product Managers
 
 ## Sample Events for Business Verticals
 
 Refer to the links below for sample events by vertical that you can track with CleverTap:
 
-- [Ecommerce Events](doc:ecommerce-events)
-- [Content/Media Events](doc:content-media-events) 
-- [Lead Gen Events](doc:lead-gen-events) 
-- [Bookings](doc:bookings) 
-- [Classifieds](doc:classifieds) 
-- [Travel -1 ](doc:travel)
-- [Travel -2 ](doc:travel-2)
-- [Ride sharing](doc:ride-sharing-events)
-- [Video Streaming](doc:video-streaming-events)
-- [Telecom Events](doc:telecom-events)
-- [Food Tech](doc:food-tech)
-- [Fintech Events](doc:fintech)
-- [Gaming](doc:gaming)
+* [Ecommerce Events](doc:ecommerce-events)
+* [Content/Media Events](doc:content-media-events) 
+* [Lead Gen Events](doc:lead-gen-events) 
+* [Bookings](doc:bookings) 
+* [Classifieds](doc:classifieds) 
+* [Travel -1 ](doc:travel)
+* [Travel -2 ](doc:travel-2)
+* [Ride sharing](doc:ride-sharing-events)
+* [Video Streaming](doc:video-streaming-events)
+* [Telecom Events](doc:telecom-events)
+* [Food Tech](doc:food-tech)
+* [Fintech Events](doc:fintech)
+* [Gaming](doc:gaming)
 
 ## Other Resources
 
 For more information, refer to the following resources:
 
-- **Concepts:** [Events](https://developer.clevertap.com/docs/concepts-events), [User Profiles](https://developer.clevertap.com/docs/concepts-user-profiles), [Campaigns](https://developer.clevertap.com/docs/concepts-campaigns), and [Reports](https://developer.clevertap.com/docs/concepts-reports)
-- **Integration Links:** [Android](https://developer.clevertap.com/docs/android), [iOS](https://developer.clevertap.com/docs/ios), [Website](https://developer.clevertap.com/docs/web), [Others](https://developer.clevertap.com/docs/clevertap-sdks), and [APIs](https://developer.clevertap.com/docs/api-overview)
-- [Developer Documentation](https://developer.clevertap.com/docs)
+* **Concepts:** [Events](https://developer.clevertap.com/docs/concepts-events), [User Profiles](https://developer.clevertap.com/docs/concepts-user-profiles), [Campaigns](https://developer.clevertap.com/docs/concepts-campaigns), and [Reports](https://developer.clevertap.com/docs/concepts-reports)
+* **Integration Links:** [Android](https://developer.clevertap.com/docs/android), [iOS](https://developer.clevertap.com/docs/ios), [Website](https://developer.clevertap.com/docs/web), [Others](https://developer.clevertap.com/docs/clevertap-sdks), and [APIs](https://developer.clevertap.com/docs/api-overview)
+* [Developer Documentation](https://developer.clevertap.com/docs)
 
 # Resources and Support
 
 For additional resources and support on event design within CleverTap, explore the following:
 
-- [Event Design Templates](doc:event-design-templates) 
-- Explore further insights and tips on event design in our blog post: [A Marketer's Guide to Event Design](https://clevertap.com/blog/a-marketers-guide-to-event-design/).
-- For assistance or inquiries regarding event design and implementation, contact our support team at [support@clevertap.com](mailto:support@clevertap.com).
+* [Event Design Templates](doc:event-design-templates) 
+* Explore further insights and tips on event design in our blog post: [A Marketer's Guide to Event Design](https://clevertap.com/blog/a-marketers-guide-to-event-design/).
+* For assistance or inquiries regarding event design and implementation, contact our support team at [support@clevertap.com](mailto:support@clevertap.com).
