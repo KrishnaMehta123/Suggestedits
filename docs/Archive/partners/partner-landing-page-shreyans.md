@@ -10,23 +10,409 @@ metadata:
 next:
   description: ''
 ---
-[block:html]
-{
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Integration Grid</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n       .content-toc.grid-25{\n      \tdisplay:None;\n      }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;\n       \n\n        }\n\n        .grid {\n            display: grid;\n            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */\n            gap: 1rem;\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n\n        .integration-card { /* styling for the cards */\n            display: flex;\n            align-items: center;\n            padding: 1.5rem;\n            #background: #F5F5F5;\n          \tbackground: white;\n            border-radius: 12px;\n          \tmin-width:200px;\n            border: 1px solid rgba(0, 0, 0, 0.1);\n            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\n        }\n\n        .integration-card:hover {\n            \n            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);\n           \n        }\n\n        .logo-container {\n            display: flex;\n            align-items: center;\n            padding-right: 1rem;\n            border-right: 1px solid rgba(0, 0, 0, 0.1);\n            margin-right: 1rem;\n            height: 100%;\n        }\n\n        .logo { /* logo sizing */\n            width: 50px;\n            height: 50px;\n            object-fit:fill;\n            flex-shrink: 0;\n            border-radius: 5px;\n        }\n\n        .content {\n            display: flex;\n            flex-direction: column;\n            justify-content: space-between;\n            min-width: 0;\n            height: 100%;\n        }\n\n        .name {\n            font-size: 1rem;\n            font-weight: 500;\n            color: #000;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n            margin-bottom: 0.5rem;\n        }\n\n        .category {\n            font-size: 0.8rem;\n            color: #92969f;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n        }\n\n       \n/* responsive elements */\n        @media (max-width: 768px) {\n            .grid {\n                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n            }\n        }\n    \n\n        @media (max-width: 480px) {\n            .grid {\n                grid-template-columns: 1fr;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"grid\">\n      <!-- use this card below for replication and change the link to the desired one -->\n    <a href=\"https://www.google.com/?client=safari\">      <!-- change the link here for re-directing -->\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg\" alt=\"Adjust\" class=\"logo\"> <!-- change the link for the logo -->\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Adjust</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n      </a>\n  \n      \n      \n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"https://files.readme.io/487110869d01e0f2e506e9748d03217555ba50b6fc30f24fcd22ceeee65047a4-Adjust_idZed2gUTA_0.svg\" alt=\"Airbridge\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Airbridge</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n      \n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Amazon EventBridge\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Amazon EventBridge</div>\n                <div class=\"category\">Analytics</div>\n            </div>\n        </div>\n      \n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Amazon S3\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Amazon S3</div>\n                <div class=\"category\">Cloud storage</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Amplitude\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Amplitude</div>\n                <div class=\"category\">Analytics</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Apps Flyer\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Apps Flyer</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"AppTrove\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">AppTrove</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Branch\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Branch</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"CleverTap\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">CleverTap</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Google Cloud\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Google Cloud</div>\n                <div class=\"category\">Cloud storage</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Microsoft Azure\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Microsoft Azure</div>\n                <div class=\"category\">Cloud storage</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Mixpanel\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Mixpanel</div>\n                <div class=\"category\">Analytics</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"mParticle\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">mParticle</div>\n                <div class=\"category\">Customer data platform</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Segment\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Segment</div>\n                <div class=\"category\">Customer data platform</div>\n            </div>\n        </div>\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"/Users/shreyans_satpute/Desktop/images.jpeg\" alt=\"Singular\" class=\"logo\">\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Singular</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
-}
-[/block]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+       .content-toc.grid-25{
+      	display:None;
+      }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+       
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .integration-card { /* styling for the cards */
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            #background: #F5F5F5;
+          	background: white;
+            border-radius: 12px;
+          	min-width:200px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .integration-card:hover {
+            
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding-right: 1rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            margin-right: 1rem;
+            height: 100%;
+        }
+
+        .logo { /* logo sizing */
+            width: 50px;
+            height: 50px;
+            object-fit:fill;
+            flex-shrink: 0;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 0;
+            height: 100%;
+        }
+
+        .name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            color: #92969f;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+       
+/* responsive elements */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+      <!-- use this card below for replication and change the link to the desired one -->
+    <a href="https://www.google.com/?client=safari">      <!-- change the link here for re-directing -->
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg" alt="Adjust" class="logo"> <!-- change the link for the logo -->
+            </div>
+            <div class="content">
+                <div class="name">Adjust</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+      </a>
+  
+      
+      
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="https://files.readme.io/487110869d01e0f2e506e9748d03217555ba50b6fc30f24fcd22ceeee65047a4-Adjust_idZed2gUTA_0.svg" alt="Airbridge" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Airbridge</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+      
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Amazon EventBridge" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Amazon EventBridge</div>
+                <div class="category">Analytics</div>
+            </div>
+        </div>
+      
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Amazon S3" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Amazon S3</div>
+                <div class="category">Cloud storage</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Amplitude" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Amplitude</div>
+                <div class="category">Analytics</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Apps Flyer" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Apps Flyer</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="AppTrove" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">AppTrove</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Branch" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Branch</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="CleverTap" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">CleverTap</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Google Cloud" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Google Cloud</div>
+                <div class="category">Cloud storage</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Microsoft Azure" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Microsoft Azure</div>
+                <div class="category">Cloud storage</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Mixpanel" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Mixpanel</div>
+                <div class="category">Analytics</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="mParticle" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">mParticle</div>
+                <div class="category">Customer data platform</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Segment" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Segment</div>
+                <div class="category">Customer data platform</div>
+            </div>
+        </div>
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="/Users/shreyans_satpute/Desktop/images.jpeg" alt="Singular" class="logo">
+            </div>
+            <div class="content">
+                <div class="name">Singular</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+`}</HTMLBlock>
 
 <br />
 
 # Attribution
 
-[block:html]
-{
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Integration Grid</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n       .content-toc.grid-25{\n      \tdisplay:None;\n      }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;\n       \n\n        }\n\n        .grid {\n            display: grid;\n            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */\n            gap: 1rem;\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n\n        .integration-card { /* styling for the cards */\n            display: flex;\n            align-items: center;\n            padding: 1.5rem;\n            #background: #F5F5F5;\n          \tbackground: white;\n            border-radius: 12px;\n          \tmin-width:200px;\n            border: 1px solid rgba(0, 0, 0, 0.1);\n            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\n        }\n\n        .integration-card:hover {\n            \n            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);\n           \n        }\n\n        .logo-container {\n            display: flex;\n            align-items: center;\n            padding-right: 1rem;\n            border-right: 1px solid rgba(0, 0, 0, 0.1);\n            margin-right: 1rem;\n            height: 100%;\n        }\n\n        .logo { /* logo sizing */\n            width: 50px;\n            height: 50px;\n            object-fit:fill;\n            flex-shrink: 0;\n            border-radius: 5px;\n        }\n\n        .content {\n            display: flex;\n            flex-direction: column;\n            justify-content: space-between;\n            min-width: 0;\n            height: 100%;\n        }\n\n        .name {\n            font-size: 1rem;\n            font-weight: 500;\n            color: #000;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n            margin-bottom: 0.5rem;\n        }\n\n        .category {\n            font-size: 0.8rem;\n            color: #92969f;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n        }\n\n       \n/* responsive elements */\n        @media (max-width: 768px) {\n            .grid {\n                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n            }\n        }\n    \n\n        @media (max-width: 480px) {\n            .grid {\n                grid-template-columns: 1fr;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"grid\">\n      <!-- use this card below for replication and change the link to the desired one -->\n    <a href=\"https://www.google.com/?client=safari\">      <!-- change the link here for re-directing -->\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg\" alt=\"Adjust\" class=\"logo\"> <!-- change the link for the logo -->\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Adjust</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n      </a>\n      <a href=\"https://www.google.com/?client=safari\">      <!-- change the link here for re-directing -->\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg\" alt=\"Adjust\" class=\"logo\"> <!-- change the link for the logo -->\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Adjust</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n      </a>\n  </div>\n</body>\n</html>"
-}
-[/block]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+       .content-toc.grid-25{
+      	display:None;
+      }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+       
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .integration-card { /* styling for the cards */
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            #background: #F5F5F5;
+          	background: white;
+            border-radius: 12px;
+          	min-width:200px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .integration-card:hover {
+            
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding-right: 1rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            margin-right: 1rem;
+            height: 100%;
+        }
+
+        .logo { /* logo sizing */
+            width: 50px;
+            height: 50px;
+            object-fit:fill;
+            flex-shrink: 0;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 0;
+            height: 100%;
+        }
+
+        .name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            color: #92969f;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+       
+/* responsive elements */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+      <!-- use this card below for replication and change the link to the desired one -->
+    <a href="https://www.google.com/?client=safari">      <!-- change the link here for re-directing -->
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg" alt="Adjust" class="logo"> <!-- change the link for the logo -->
+            </div>
+            <div class="content">
+                <div class="name">Adjust</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+      </a>
+      <a href="https://www.google.com/?client=safari">      <!-- change the link here for re-directing -->
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg" alt="Adjust" class="logo"> <!-- change the link for the logo -->
+            </div>
+            <div class="content">
+                <div class="name">Adjust</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+      </a>
+  </div>
+</body>
+</html>
+`}</HTMLBlock>
 
 <br />
 
@@ -34,8 +420,142 @@ next:
 
 <br />
 
-[block:html]
-{
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Integration Grid</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n       .content-toc.grid-25{\n      \tdisplay:None;\n      }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;\n       \n\n        }\n\n        .grid {\n            display: grid;\n            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */\n            gap: 1rem;\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n\n        .integration-card { /* styling for the cards */\n            display: flex;\n            align-items: center;\n            padding: 1.5rem;\n            #background: #F5F5F5;\n          \tbackground: white;\n            border-radius: 12px;\n          \tmin-width:200px;\n            border: 1px solid rgba(0, 0, 0, 0.1);\n            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\n        }\n\n        .integration-card:hover {\n            \n            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);\n           \n        }\n\n        .logo-container {\n            display: flex;\n            align-items: center;\n            padding-right: 1rem;\n            border-right: 1px solid rgba(0, 0, 0, 0.1);\n            margin-right: 1rem;\n            height: 100%;\n        }\n\n        .logo { /* logo sizing */\n            width: 50px;\n            height: 50px;\n            object-fit:fill;\n            flex-shrink: 0;\n            border-radius: 5px;\n        }\n\n        .content {\n            display: flex;\n            flex-direction: column;\n            justify-content: space-between;\n            min-width: 0;\n            height: 100%;\n        }\n\n        .name {\n            font-size: 1rem;\n            font-weight: 500;\n            color: #000;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n            margin-bottom: 0.5rem;\n        }\n\n        .category {\n            font-size: 0.8rem;\n            color: #92969f;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n        }\n\n       \n/* responsive elements */\n        @media (max-width: 768px) {\n            .grid {\n                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n            }\n        }\n    \n\n        @media (max-width: 480px) {\n            .grid {\n                grid-template-columns: 1fr;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"grid\">\n      <!-- use this card below for replication and change the link to the desired one -->\n    <a href=\"https://www.google.com/?client=safari\">      <!-- change the link here for re-directing -->\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg\" alt=\"Adjust\" class=\"logo\"> <!-- change the link for the logo -->\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Adjust</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n      </a>\n      <a href=\"https://www.google.com/?client=safari\">      <!-- change the link here for re-directing -->\n        <div class=\"integration-card\">\n            <div class=\"logo-container\">\n                <img src=\"https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg\" alt=\"Adjust\" class=\"logo\"> <!-- change the link for the logo -->\n            </div>\n            <div class=\"content\">\n                <div class=\"name\">Adjust</div>\n                <div class=\"category\">Attribution</div>\n            </div>\n        </div>\n      </a>\n  </div>\n</body>\n</html>"
-}
-[/block]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       .content-toc.grid-25{
+      	display:None;
+      }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+       
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(350px, 1fr)); /* made the value 350px to make grid 3x3 */
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .integration-card { /* styling for the cards */
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            #background: #F5F5F5;
+          	background: white;
+            border-radius: 12px;
+          	min-width:200px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .integration-card:hover {
+            
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding-right: 1rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            margin-right: 1rem;
+            height: 100%;
+        }
+
+        .logo { /* logo sizing */
+            width: 50px;
+            height: 50px;
+            object-fit:fill;
+            flex-shrink: 0;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 0;
+            height: 100%;
+        }
+
+        .name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            color: #92969f;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+       
+/* responsive elements */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+      <!-- use this card below for replication and change the link to the desired one -->
+    <a href="https://www.google.com/?client=safari">      <!-- change the link here for re-directing -->
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg" alt="Adjust" class="logo"> <!-- change the link for the logo -->
+            </div>
+            <div class="content">
+                <div class="name">Adjust</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+      </a>
+      <a href="https://www.google.com/?client=safari">      <!-- change the link here for re-directing -->
+        <div class="integration-card">
+            <div class="logo-container">
+                <img src="https://files.readme.io/93bb344627f1bd8a4d187ff5ebc1da06604fb3a7805ea6fdae208089fb6c5b6b-Airbnb_Symbol_0.svg" alt="Adjust" class="logo"> <!-- change the link for the logo -->
+            </div>
+            <div class="content">
+                <div class="name">Adjust</div>
+                <div class="category">Attribution</div>
+            </div>
+        </div>
+      </a>
+  </div>
+</body>
+</html>
+`}</HTMLBlock>
