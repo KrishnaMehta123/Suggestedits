@@ -20,8 +20,8 @@ This documentation aims to provide information on the top factors contributing t
 
 CleverTap Analytics and Google Analytics employ different data collection methods, which can lead to variations in event data. The following factors contribute to these differences:
 
-- **SDK Integration**: CleverTap and Google Analytics provide their respective SDKs, which developers integrate into mobile or web applications. Differences in SDK implementation, event tagging, or parameter mapping can result in variations in event data collection. It is crucial to ensure consistent implementation across both platforms to minimize discrepancies.
-- **Tracking Mechanisms:** CleverTap Analytics and Google Analytics may use different tracking mechanisms, such as cookies, unique identifiers, or custom tracking codes. These mechanisms can vary in their accuracy and reliability, potentially leading to differences in event data.
+* **SDK Integration**: CleverTap and Google Analytics provide their respective SDKs, which developers integrate into mobile or web applications. Differences in SDK implementation, event tagging, or parameter mapping can result in variations in event data collection. It is crucial to ensure consistent implementation across both platforms to minimize discrepancies.
+* **Tracking Mechanisms:** CleverTap Analytics and Google Analytics may use different tracking mechanisms, such as cookies, unique identifiers, or custom tracking codes. These mechanisms can vary in their accuracy and reliability, potentially leading to differences in event data.
 
 ## Data Sampling
 
@@ -31,8 +31,8 @@ Data sampling involves selecting a subset of the data for analysis and extrapola
 
 CleverTap Analytics and Google Analytics use different algorithms and methodologies for data processing and aggregation, which can contribute to differences in event data. The following factors affect data processing and aggregation:
 
-- **Time Zones:** CleverTap Analytics and Google Analytics may operate in different time zones, which can affect how events are categorized and reported, especially for events occurring close to time zone boundaries. Time zone differences can lead to variations in event timestamps and their subsequent analysis.
-- **Event Deduplication:** The techniques used to detect and remove duplicate events may vary between CleverTap Analytics and Google Analytics. These differences can impact event counts and metrics, resulting in variations in the reported data.
+* **Time Zones:** CleverTap Analytics and Google Analytics may operate in different time zones, which can affect how events are categorized and reported, especially for events occurring close to time zone boundaries. Time zone differences can lead to variations in event timestamps and their subsequent analysis.
+* **Event Deduplication:** The techniques used to detect and remove duplicate events may vary between CleverTap Analytics and Google Analytics. These differences can impact event counts and metrics, resulting in variations in the reported data.
 
 ## Event Attribution Models
 
@@ -42,8 +42,8 @@ Event attribution models determine how credit is assigned to various touchpoints
 
 Each analytics platform has its own limitations or constraints that can affect event data collection and reporting. These limitations arise from platform-specific factors, including:
 
-- **Device and OS Compatibility:** Differences in a device or operating system compatibility can impact data collection accuracy, leading to variations in event data. It is important to ensure that the platforms are compatible with the target devices and operating systems to minimize discrepancies.
-- **Network Connectivity:** Network issues or unreliable connections during data transmission can result in missing or delayed event data, causing discrepancies between CleverTap Analytics and Google Analytics. Ensuring a stable network connection is essential for accurate data collection.
+* **Device and OS Compatibility:** Differences in a device or operating system compatibility can impact data collection accuracy, leading to variations in event data. It is important to ensure that the platforms are compatible with the target devices and operating systems to minimize discrepancies.
+* **Network Connectivity:** Network issues or unreliable connections during data transmission can result in missing or delayed event data, causing discrepancies between CleverTap Analytics and Google Analytics. Ensuring a stable network connection is essential for accurate data collection.
 
 ## Session Timeout
 
