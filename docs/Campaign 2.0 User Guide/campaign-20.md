@@ -11,6 +11,7 @@ next:
   description: ''
 ---
 # Getting Started
+
 * [CleverTap Overview for Users](https://docs.clevertap.com/docs/getting-started)
 * [Set Up Dashboard](https://docs.clevertap.com/docs/set-up-dashboard)
   * [Onboarding Glossary](https://docs.clevertap.com/docs/glossary-2)
@@ -28,7 +29,7 @@ next:
   * [Ecommerce Events](https://docs.google.com/spreadsheets/d/1y7z2c3NtYFU75_a9QenuXjToazg97ebg4xIYGC3e__E/edit#gid=0)
   * [Content/Media Events](https://docs.clevertap.com/docs/contentmedia-events)
   * [Lead Gen Events](https://docs.clevertap.com/docs/lead-gen-events)
-  * [Bookings](https://docs.google.com/spreadsheets/d/1d91A_hU90GwS2_mpN-BbmrMOLNszVdizNA3iaN7_UcE/pubhtml?gid=2031360571&single=true)
+  * [Bookings](https://docs.google.com/spreadsheets/d/1d91A_hU90GwS2_mpN-BbmrMOLNszVdizNA3iaN7_UcE/pubhtml?gid=2031360571\&single=true)
   * [Classifieds](https://docs.clevertap.com/docs/classifieds)
   * [Travel -1](https://docs.clevertap.com/docs/travel)
   * [Travel -2](https://docs.clevertap.com/docs/travel-2)
@@ -43,6 +44,7 @@ next:
 * [Quick Start Guide: Using Demo Account](https://docs.clevertap.com/docs/quickstart-guide)
 
 # Behavioral Analytics
+
 * [Boards](https://docs.clevertap.com/docs/simple-reports)
   * [Snapshot](https://docs.clevertap.com/docs/snapshot-board)
   * [Today View](https://docs.clevertap.com/docs/today-view)
@@ -63,6 +65,7 @@ next:
 * [Session Analytics](https://docs.clevertap.com/docs/session-analytics)
 
 # Messaging Channel
+
 * [Push](https://docs.clevertap.com/docs/push-c20)
   * [Setup](https://docs.clevertap.com/docs/setup-push-notification)
   * [Create Message](https://docs.clevertap.com/docs/push-creation)
@@ -158,6 +161,7 @@ next:
   * [Stats](https://docs.clevertap.com/docs/stats_mparticle_c20)
 
 # Campaigns
+
 * [Control Groups](https://docs.clevertap.com/docs/control-groups)
 * [Campaign Optimization](https://docs.clevertap.com/docs/intro-to-campaigns_c20)
   * [A/B & Multivariate Testing](https://docs.clevertap.com/docs/ab-multivariate-testing_c20)
@@ -177,7 +181,8 @@ next:
   * [Push Amplification Delivery](https://docs.clevertap.com/docs/delivery-optimization#section-push-amplification)
   * [App Inbox Delivery](https://docs.clevertap.com/docs/delivery-optimization#optimize-with-app-inbox)
 
-#Journeys and Orchestration
+# Journeys and Orchestration
+
 * [Journeys Overview](https://docs.clevertap.com/docs/journeys_c20)
 * [Journey Components](https://docs.clevertap.com/docs/journey-components_c20)
   * [Setting up a Journey](https://docs.clevertap.com/docs/setup-journey_c20)
@@ -199,14 +204,17 @@ next:
 * [Journey reports](https://docs.clevertap.com/docs/viewing-journey-reports_c20)
 
 # Lifecycle Optimization
+
 * [Lifecycle Optimizer](https://docs.clevertap.com/docs/lifecycle-optimizer_c20)
 
 # Product Experiences
+
 * [Product Experiences](https://docs.clevertap.com/docs/product-experiences)
 * [Product Experiences Setup](https://docs.clevertap.com/docs/product-experiences-setup)
 * [Product A/B Tests](https://docs.clevertap.com/docs/product-exp-ab-tests)
 
 # Segmentation
+
 * [Find People](https://docs.clevertap.com/docs/find-people_c20)
 * [Segments](https://docs.clevertap.com/docs/segments_c20)
   * [Create Live Segments](https://docs.clevertap.com/docs/segments_c20#create-live-user-segments)
@@ -218,6 +226,7 @@ next:
 * [RFM Analysis](https://docs.clevertap.com/docs/rfm)
 
 # Individualization
+
 * [Catalogs](https://docs.clevertap.com/docs/catalog)
   * [Catalog Data Ingestion](https://docs.clevertap.com/docs/catalog-data-ingestion)
 * [Personalize Messages](https://docs.clevertap.com/docs/personalize-message-all_c20)
@@ -230,6 +239,7 @@ next:
 * [Bulletins](https://docs.clevertap.com/docs/bulletins)
 
 # Integration Guides
+
 * [In-app Purchases](https://docs.clevertap.com/docs/in-app-purchases)
   * [RevenueCat](https://docs.clevertap.com/docs/revenuecat)
 * [Analytics Partners](https://docs.clevertap.com/docs/analytics-partners)
@@ -284,11 +294,13 @@ next:
     * [Google Cloud Platform (GCP)](https://docs.clevertap.com/docs/data-export-to-gcp)
 
 # Billing
+
 * [CleverTap for Startups](https://docs.clevertap.com/docs/clevertap-for-startups-overview)
   * [Billing](https://docs.clevertap.com/docs/billing)
   * [FAQs](https://docs.clevertap.com/docs/clevertap-for-startups-billing-faqs)
 
 # Security and Compliance
+
 * [App Tracking Transparency (ATT)](https://docs.clevertap.com/docs/att)
 * [Compliance & Certifications](https://docs.clevertap.com/docs/compliance-certifications)
 * [General Data Protection Regulation (GDPR)](https://docs.clevertap.com/docs/gdpr)
@@ -297,4 +309,5 @@ next:
   * [Single Sign On (SSO)](https://docs.clevertap.com/docs/single-sign-on-sso)
 
 # Resources
+
 * [Platform Considerations](https://docs.clevertap.com/docs/platform-considerations)
