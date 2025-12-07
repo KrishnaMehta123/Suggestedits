@@ -1,6 +1,7 @@
 ---
 name: ChangeLog
 ---
+<HTMLBlock>{`
 <style>
     .changelog-parent {
         border: 1px solid #1076FB;
@@ -48,6 +49,7 @@ name: ChangeLog
         text-decoration: underline;
     }
 </style>
+`}</HTMLBlock>
 
 <div class="changelog-parent">
     <div class="changelog-content">
