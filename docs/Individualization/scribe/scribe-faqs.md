@@ -28,7 +28,7 @@ A. Yes, Scribe supports generating multilingual messages.
 
 ### Q. Can Scribe rephrase a message it previously generated?
 
-A. Yes, Scribe rephrases a message it originally generated. To do this, generate multiple message copies using the **Generate Options** feature. Select and copy a message, paste it into the _Message/Text_ field, and click **Paraphrase**.
+A. Yes, Scribe rephrases a message it originally generated. To do this, generate multiple message copies using the **Generate Options** feature. Select and copy a message, paste it into the *Message/Text* field, and click **Paraphrase**.
 
 ### Q. Can I write a message on my own and use Scribe only to analyze the emotions?
 
@@ -52,6 +52,6 @@ A. No, your account data is private and not used for generic learning. Scribe do
 
 ### Q. Does Scribe automatically detect trending topics and suggest copies for them?
 
-A. Scribe is integrated with Open AI, trained on publicly available data until Sept 2021. However, you can refine prompts to include the latest topics. For example:  
-**Topic**: Create a promotional campaign for football enthusiasts.  
+A. Scribe is integrated with Open AI, trained on publicly available data until Sept 2021. However, you can refine prompts to include the latest topics. For example:\
+**Topic**: Create a promotional campaign for football enthusiasts.\
 **Include Words**: IPL 2023
