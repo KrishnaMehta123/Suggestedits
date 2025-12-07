@@ -20,25 +20,10 @@ Web Inbox also allows users to engage with the notifications later in time from 
 
 Including the Web Inbox channel in your customer engagement strategy significantly increases engagement and conversion rates.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf0de35-Web_Inbox.png",
-        "A Sample Web Inbox Campaign",
-        4002
-      ],
-      "align": "center",
-      "caption": "Web Inbox "
-    }
-  ]
-}
-[/block]
-
-
-
+<Image title="A Sample Web Inbox Campaign" alt={4002} align="center" src="https://files.readme.io/cf0de35-Web_Inbox.png">
+  Web Inbox 
+</Image>
 
 > 📘 Private Beta
-> 
+>
 > Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
