@@ -10,44 +10,19 @@ metadata:
 next:
   description: ''
 ---
-#Overview
+# Overview
+
 Reset Passcode generates a fresh new passcode for the user. Post resetting, the user must incorporate this passcode for the APIs.
 
-#Reset a Passcode
+# Reset a Passcode
+
 To reset a passcode:
+
 1. From the dashboard, navigate to *Settings* > *Users*.
 2. Click the ![Ellipses](https://files.readme.io/2717d2a-ellipses_icon.png) icon against the required user and click the ![Reset passcode](https://files.readme.io/0147e9f-Reset_passcode_icon.png)  icon.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6bd6682-Chunk_1_-_Reset_Passcode_1.png",
-        "Chunk 1 - Reset Passcode 1.png",
-        1600,
-        277,
-        "#fafafa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Chunk 1 - Reset Passcode 1.png" alt={1600} className="border" border={true} src="https://files.readme.io/6bd6682-Chunk_1_-_Reset_Passcode_1.png" />
+
 4. Click **Reset** when prompted to confirm your action.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e6f979a-Reset_passcode.png",
-        "Reset passcode.png",
-        512,
-        226,
-        "#f8ebec"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
+
+<Image title="Reset passcode.png" alt={512} className="border" width="80%" border={true} src="https://files.readme.io/e6f979a-Reset_passcode.png" />
