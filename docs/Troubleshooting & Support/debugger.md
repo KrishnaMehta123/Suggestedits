@@ -3,12 +3,12 @@ title: Debugger
 excerpt: 'CleverTap Debugger: Enhancing Integration Troubleshooting'
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 > 📘 Private Beta
 >
@@ -56,22 +56,11 @@ Before using the CleverTap Debugger feature, ensure you have the following:
 
 # Access the Debugger Feature
 
-
 Click the <img src= "https://files.readme.io/28f71a8-Debugger_Icon_.png" height="30px" width="30px" />  *Debugger* icon on the left pane of the CleverTap dashboard. 
 
-  The *Debugger* page opens, displaying all the user profiles with their details. 
+The *Debugger* page opens, displaying all the user profiles with their details. 
 
-<Image alt="Accessing the Debugger Feature " align="center" border={true} src="https://files.readme.io/76336f8d4f51354ea0971f562d66e66c1c8e6c79d1cc68a8dd02e7a44e150680-Debugger.png" />  Accessing the Debugger Feature 
-
-
-
-
-
-
-
-
-
-
+<Image alt="Accessing the Debugger Feature" align="center" border={true} src="https://files.readme.io/76336f8d4f51354ea0971f562d66e66c79d1cc68a8dd02e7a44e150680-Debugger.png" />
 
 > 📘 Data Storage
 >
@@ -80,6 +69,7 @@ Click the <img src= "https://files.readme.io/28f71a8-Debugger_Icon_.png" height=
 > * The system can handle up to 100 incoming storage requests per minute.
 
 You can view the following details for the debugged user profile:
+
 | Field          | Description                                                                                                                                                                                                |
 | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *Time*         | This field displays the exact date and time when the user interaction occurred.                                                                                                                            |
@@ -93,26 +83,17 @@ You can view the following details for the debugged user profile:
 
 From the *Debugger* page, you can search for a user profile in the search bar. You can also search for event name, *Identity*, *Device model*, or *Source*. 
 
-<Image alt="Search Functionality" align="center" border={true} src="https://files.readme.io/50f62efd5a16bf5a5d4a981f9395122981adf95a97725004525388700b4248ba-Debugger_Search_.gif" />  Search Functionality
+<Image alt="Search Functionality" align="center" border={true} src="https://files.readme.io/50f62efd5a16bf5a5d4a981f9395122981adf95a97725004525388700b4248ba-Debugger_Search_.gif" />
 
 # Play/Pause for User Profile
 
 You can use the *Play* or *Pause* icon to start or pause processes during debugging, making it easier to examine and control the execution of debugging sessions. This feature is available only at the user level.
 
 # Refresh
+
 Click the <img src="https://files.readme.io/02c530b-Refresh_Icon.png" height="30px" width="30px" /> *Refresh* icon to update the *Debugger* page. This action displays the most recent data when a filter is applied, or you are not on the initial.
 
-<Image alt="Refresh Functionality" align="center" border={true} src="https://files.readme.io/017dca2289d7bf836a944e2c0bbe28680f35a609aaec28105f1ab0e2d8ce2e15-Debugger_Refresh.gif"> Refresh Functionality
-
-
-
-
-
-
-
-
-
-
+<Image alt="Refresh Functionality" align="center" border={true} src="https://files.readme.io/017dca2289d7bf836a944e2c0bbe28680f35a609aaec28105f1ab0e2d8ce2e15-Debugger_Refresh.gif" />
 
 # Accessing User Profile
 
@@ -124,17 +105,7 @@ The following details appear on the left pane of the *Debugger* page.
 
 This section provides a summary of the primary identifiers selected for the project. 
 
-<Image alt="User Profile View" align="center" border={true} src="https://files.readme.io/d8eaad0820b319380b75d9b6583b9fecf40f123f751ae5fbbe4218cb58a5cb53-Debugger_User_Profile.png"> User Profile View
-
-
-
-
-
-
-
-
-
-
+<Image alt="User Profile View" align="center" border={true} src="https://files.readme.io/d8eaad0820b319380b75d9b6583b9fecf40f123f751ae5fbbe4218cb58a5cb53-Debugger_User_Profile.png" />
 
 This summary typically includes:
 
@@ -148,7 +119,8 @@ This summary typically includes:
 2. Click the *View Profile* icon to check the individual user profile details. The *Find People*>\
    *Profile* page appears. For more information on user details, view Profile[ Details](https://docs.clevertap.com/docs/find-people).
 
-<Image alt="Refresh Functionality" align="center" border={true} src="https://files.readme.io/0c0231e5ae022d89f1079e741341ca12c99d0eab5f3c004ebeea056d53bd6768-Debugger_User_Profiles.gif"> View Profile
+<Image alt="View Profile" align="center" border={true} src="https://files.readme.io/0c0231e5ae022d89f1079e741341ca12c99d0eab5f3c004ebeea056d53bd6768-Debugger_User_Profiles.gif" />
+
 > 📘 User Profile states
 >
 > * **Identity Present**- In this case, the user's identity is established, and the corresponding ID is displayed. If there is a profile push onto the profile, the data column displays Profile data, and the data type indicates whether it is a Profile property or identity. If both profile properties and identity are present, the profile property is shown. 
@@ -158,7 +130,7 @@ This summary typically includes:
 
 In the JSON payload section, you can view the JSON payload of data coming in from the SDK/JSON for an event or user property. 
 
-<Image alt="Profile Property View" align="center" border={true} src="https://files.readme.io/7a10033f616524ca7ea210f13624b6af31796bc74b767e7516ade72b83e5b8fa-Debugger_JSON_Payload_.png" />  JSON Payload View
+<Image alt="Profile Property View" align="center" border={true} src="https://files.readme.io/7a10033f616524ca7ea210f13624b6af31796bc74b767e7516ade72b83e5b8fa-Debugger_JSON_Payload_.png" />
 
 > 📘 Reload Time
 >
@@ -173,7 +145,7 @@ This allows you to verify if the user is reachable on the following channels:
 * SMS
 * Web Push
 
-<Image alt="Channels Reachability" align="center" border={true} src="https://files.readme.io/a76459f852b57ca6c6ecd2f1c79d375e575d68c47083a821e1a5f9fee2401743-Debugger_Reachability.png" />  Channels Reachability
+<Image alt="Channels Reachability" align="center" border={true} src="https://files.readme.io/a76459f852b57ca6c6ecd2f1c79d375e575d68c47083a821e1a5f9fee2401743-Debugger_Reachability.png" />
 
 Under the *Status* column for individual channels, you can view the following state for the channels:
 
