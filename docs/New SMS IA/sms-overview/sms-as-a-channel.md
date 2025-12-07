@@ -20,8 +20,8 @@ You can choose between two setup options based on whether your SMS provider is a
 
 | Method      | Description                                   | Navigation                                |
 | ----------- | --------------------------------------------- | ----------------------------------------- |
-| SMS Direct  | Pre-integrated and fully managed by CleverTap | _Settings > Channels > SMS > SMS Direct_  |
-| SMS Connect | Connect your own provider via API credentials | _Settings > Channels > SMS > SMS Connect_ |
+| SMS Direct  | Pre-integrated and fully managed by CleverTap | *Settings > Channels > SMS > SMS Direct*  |
+| SMS Connect | Connect your own provider via API credentials | *Settings > Channels > SMS > SMS Connect* |
 
 ## Common Use Cases
 
