@@ -10,26 +10,12 @@ metadata:
 next:
   description: ''
 ---
-After the campaign is live, you can view the campaign stats from the dashboard by navigating to the _Campaigns_ page and selecting the campaign of interest to view the following stats: Events Streamed, Errors, and Control Group.
+After the campaign is live, you can view the campaign stats from the dashboard by navigating to the *Campaigns* page and selecting the campaign of interest to view the following stats: Events Streamed, Errors, and Control Group.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9cbf48ed05df09b35f71c619fc1679a54b3382342516efeb8217ecba5f04e049-Screenshot_2024-11-12_at_12.13.31_PM.png",
-        "View mParticle Campaign Stats",
-        2734
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View mParticle Campaign Stats"
-    }
-  ]
-}
-[/block]
+<Image title="View mParticle Campaign Stats" alt={2734} align="center" border={true} src="https://files.readme.io/9cbf48ed05df09b35f71c619fc1679a54b3382342516efeb8217ecba5f04e049-Screenshot_2024-11-12_at_12.13.31_PM.png">
+  View mParticle Campaign Stats
+</Image>
 
-
-- **Events Streamed**: This indicates the count of events exported to mParticle.
-- **Errors**: This indicates the count of events not exported to mParticle due to some error. The details of errors are described under the Errors section.
-- **Control group**: The number of times the user qualifies for the control group.
+* **Events Streamed**: This indicates the count of events exported to mParticle.
+* **Errors**: This indicates the count of events not exported to mParticle due to some error. The details of errors are described under the Errors section.
+* **Control group**: The number of times the user qualifies for the control group.
