@@ -29,16 +29,15 @@ next:
 # Overview
 
 Web popup messages are notifications that are displayed on desktop or mobile websites when a user is actively surfing a web page. CleverTap's Web Popup channel allows you to send quick alerts, offers, or how-to byte-sized content to your customers using the built-in web popup builder or your own custom HTML templates.
-[block:callout]
-{
-  "type": "warning",
-  "body": "The prerequisite to setting up web popup campaigns is to integrate your website with the CleverTap JavaScript plugin. For more information, refer to [Web](https://developer.clevertap.com/docs/web) section in the developer documentation.",
-  "title": "Prerequisite"
-}
-[/block]
+
+> 🚧 Prerequisite
+>
+> The prerequisite to setting up web popup campaigns is to integrate your website with the CleverTap JavaScript plugin. For more information, refer to [Web](https://developer.clevertap.com/docs/web) section in the developer documentation.
+
 The *Web Popup* feature makes it easy to set up web popup campaigns for all your users or specific user segments. 
 
 These segments are created based on either of the following ways:
+
 * User action on one of your web pages
 * User visiting one of your specific web pages
 * User visiting your website via any referral web page
@@ -47,4 +46,5 @@ These segments are created based on either of the following ways:
 After sending the campaign, you can view detailed reports on how many messages were sent, how many users converted as a result, and so on.
 
 # Web Exit Intent
+
 CleverTap’s web exit intent popups help with encouraging subscriptions or gathering information from users before they leave your website. CleverTap’s rich segmentation offers the ability to display time-sensitive, relevant, and personalized web popup campaigns on a large scale.
