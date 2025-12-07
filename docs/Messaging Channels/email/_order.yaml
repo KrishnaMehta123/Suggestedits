@@ -38,3 +38,4 @@
 - send-test-personalization-for-email
 - email-sender-reputation
 - email-seed-testing
+- email-sender-authentication
