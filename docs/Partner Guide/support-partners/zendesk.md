@@ -3,12 +3,12 @@ title: Zendesk
 excerpt: Support Partner
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -37,98 +37,93 @@ Set up a webhook to send HTTP API requests with all the information. To set up a
 1. Navigate to *Settings* > *Engage* > *Channels* > *Webhooks* from the CleverTap dashboard. 
 2. Click **+ Add Webhook**.
 
-<Image title="Set up a Webhook from CleverTap dashboard" alt={2858} align="center" border={true} src="https://files.readme.io/1967920-Add_Webhook.png" /> Set Up a Webhook from CleverTap Dashboard
+<Image 
+  title="Set up a Webhook from CleverTap dashboard" 
+  alt={2858} 
+  align="center" 
+  border={true} 
+  src="https://files.readme.io/1967920-Add_Webhook.png" 
+/>
+
+Set Up a Webhook from CleverTap Dashboard
 
 3. Configure the webhook template by adding the following details:
+
 <Table align={["left","left"]}>
   <thead>
     <tr>
       <th>
         Field
       </th>
-
       <th>
         Description
       </th>
     </tr>
   </thead>
-
   <tbody>
     <tr>
       <td>
         Name
       </td>
-
       <td>
         Enter the nickname for your webhook to uniquely identify the webhook.
       </td>
     </tr>
-
     <tr>
       <td>
         Destination URL
       </td>
-
       <td>
         Enter the following URL:\
         https\://\{\{your\_sub\_domain}}.zendesk.com/api/v2/tickets.json.
       </td>
     </tr>
-
     <tr>
       <td>
         Method
       </td>
-
       <td>
         Select the *POST* method from the dropdown.
       </td>
     </tr>
-
     <tr>
       <td>
         Basic Authorization
       </td>
-
       <td>
         Enable this option.
       </td>
     </tr>
-
     <tr>
       <td>
         Username
       </td>
-
       <td>
         Enter the username as follows:\
         *&lt;emailaddress&gt;/token* 
       </td>
     </tr>
-
     <tr>
       <td>
         Password
       </td>
-
       <td>
-        Enter the password as <API Token>. To obtain the API token, refer to [Generating a new API token](https://support.zendesk.com/hc/en-us/articles/4408889192858).
+        Enter the password as `<API Token>`. To obtain the API token, refer to [Generating a new API token](https://support.zendesk.com/hc/en-us/articles/4408889192858).
       </td>
     </tr>
   </tbody>
 </Table>
 
-<Image title="Enter all the required details and create a Webhook template" alt={1006} align="center" width="80%" border={true} src="https://files.readme.io/fb5dbd8-Create_webhook_template.png">  Create a Webhook Template
+<Image 
+  title="Enter all the required details and create a Webhook template" 
+  alt={1006} 
+  align="center" 
+  width="80%" 
+  border={true} 
+  src="https://files.readme.io/fb5dbd8-Create_webhook_template.png"
+/>
 
-
-
-
-
-
-
-
-
-
+Create a Webhook Template
 
 ## Create a Webhook Campaign
 
@@ -137,32 +132,30 @@ To create a webhook campaign:
 1. **Define the audience**.\
    The **Rating Submitted** event is raised when a user submits their feedback through [NPS Campaign](https://docs.clevertap.com/docs/user-ratings). The campaign targets users who give ratings of less than **3**. 
 
-<Image title="Define Target Audience for Webhook campaign" alt={3182} align="center" border={true} src="https://files.readme.io/31c11b3-Define_the_audience.png">  Define Target Audience for Webhook Campaign
+<Image 
+  title="Define Target Audience for Webhook campaign" 
+  alt={3182} 
+  align="center" 
+  border={true} 
+  src="https://files.readme.io/31c11b3-Define_the_audience.png"
+/>
 
-
-
-
-
-
-
-
-
-
+Define Target Audience for Webhook Campaign
 
 2. **Define the campaign content.**\
    a. Click **Go To Editor** to create your message.\
    b. Select *Custom JSON Body* and use the following example to help structure your payload and enter the desired fields:
-<Image title="Define custom body for Webhook campaign" alt={3178} align="center" width="80%" border={true} src="https://files.readme.io/90c30d4-Define_campaign_content.png" />  Custom Body for Webhook Campaign
 
+<Image 
+  title="Define custom body for Webhook campaign" 
+  alt={3178} 
+  align="center" 
+  width="80%" 
+  border={true} 
+  src="https://files.readme.io/90c30d4-Define_campaign_content.png" 
+/>
 
-
-
-
-
-
-
-
-
+Custom Body for Webhook Campaign
 
 Ticket details are extensible and customized based on the [Zendesk ticket API](https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/#create-ticket). To learn more about creating a webhook, refer to [Create a Webhook Campaign](doc:create-message-webhook).
 
