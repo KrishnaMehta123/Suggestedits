@@ -3,12 +3,12 @@ title: Setup
 excerpt: Learn how to set up webhooks.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Set Up Webhooks
 
@@ -19,7 +19,7 @@ To set up your first CleverTap webhook:
 1. Navigate to *Settings* > *Engage* > *Channels*> *Webhooks* from the CleverTap dashboard.
 2. Click **+ Add Webhook**. 
 
-<Image alt="Add a Webhook" align="center" border={true} src="https://files.readme.io/a6763a789646a09f0de7c85469f74d6c6abf2bf49c1b03cac5cab31e44919df1-Add_a_Webhook.png" />  Add a Webhook
+<Image alt="Add a Webhook" align="center" border={true} src="https://files.readme.io/a6763a789646a09f0de7c85469f74d6c6abf2bf49c1b03cac5cab31e44919df1-Add_a_Webhook.png" />
 
 3. Configure the webhook template.
 
@@ -34,15 +34,16 @@ To set up your first CleverTap webhook:
 
 4. Add a webhook *Name* and *Destination URL*. If you currently do not have an endpoint created on your server to receive the webhook, you can use [requestcatcher.com](https://requestcatcher.com) to create and test endpoint.
 
-<Image alt="Configure Webhook Template" align="center" width="45% " border={true} src="https://files.readme.io/8326c7fdc753b9b70359152cd3de88d4b63ef0b00734c539460e719dacb0c0fa-Create_Webhook_Template.png" />  Configure Webhook Template
+<Image alt="Configure Webhook Template" align="center" width="45% " border={true} src="https://files.readme.io/8326c7fdc753b9b70359152cd3de88d4b63ef0b00734c539460e719dacb0c0fa-Create_Webhook_Template.png" />
 
-Select *[Authenticaton type](doc:setup-webhooks#authentication-type)*  from the *Authentication* tab.
+Select *[Authenticaton type](doc:setup-webhooks#authentication-type)* from the *Authentication* tab.
 
 4. Click **Create**. CleverTap sends the following payload to your configured endpoint:
 
 CleverTap saves the template if your endpoint responds with an **HTTP status 200 OK**
 
-<Image title="Sample Webhook Campaign Setup" alt={606} align="center" width="smart" border={true} src="https://files.readme.io/bff36a1-CreateWebhookTemplate.jpg" />  Sample Webhook Setup
+<Image title="Sample Webhook Campaign Setup" alt={606} align="center" width="smart" border={true} src="https://files.readme.io/bff36a1-CreateWebhookTemplate.jpg" />
+
 > 🚧 Webhook Errors
 >
 > CleverTap sends the request and waits for three seconds for a response from the endpoint. If the endpoint URL fails to respond then CleverTap retries the request. If the retry attempt fails, the campaign stats page is updated with the error "Webhook Dispatch Failed." 
@@ -62,7 +63,7 @@ For more information about how to set up a webhook and create a CleverTap webhoo
 Webhook authorization on CleverTap ensures that only verified sources can send data through your Webhooks. It uses one of the following methods:
 
 * **No authentication**: Authenticate users by adding credentials such as a password or token via the *Headers* tab.
-* **Basic Authorization**: Authenticate using a username and password in the request headers to verify the sender’s identity.
+* **Basic Authorization**: Authenticate using a username and password in the request headers to verify the sender's identity.
 * **OAuth 2.0**: Authenticate requests by obtaining an access token from CleverTap and adding the token to the request headers to ensure that only authorized systems can send data.
 
 ## Basic Authentication
@@ -78,78 +79,7 @@ Basic Authentication is a simple authentication method where the client sends an
 
 ### Set Up Webhooks Using Basic Authentication
 
-
 When setting up a webhook with Basic Authentication, CleverTap includes an *Authorization* header in every HTTP request sent to your server. The header follows the format shown below:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## OAuth 2.0
 
@@ -161,10 +91,9 @@ This ensures that CleverTap securely accesses third-party data or services by ob
 
 CleverTap recommends using this method when you need a more secure and scalable approach to managing webhook authentication, especially when interacting with external APIs or services. To configure OAuth 2.0 on the CleverTap dashboard:
 
-
 1. Navigate to *Settings* > *Channels* > *Webhooks* and click **+ Webhook**. The *Create webhook template* window opens on the right.
 2. Add a webhook *Name* and *Destination URL*. 
-3. Select OAuth 2.0 from the *Authenticaton Type*  list.
+3. Select OAuth 2.0 from the *Authenticaton Type* list.
 4. Select either from the following *Grant Type* list: 
    * [Password Credentials](doc:setup-webhooks#using-password-credentials) 
    * [Client Credentials without JWT](doc:setup-webhooks#using-client-credentials)
@@ -180,124 +109,22 @@ CleverTap recommends using this method when you need a more secure and scalable 
    3. After filling out the **Header** and **Payload** details, click **Generate Client Assertion** to create the JWT
 6. Enter the following fields after setting up the Grant Type:
 
-<Image alt="Configure OAuth 2.0" align="center" width="50%" border={true} src="https://files.readme.io/95b5dfc019affcfc50e89eeff114f94738f1a1d04101495d1f31a9ba501f1d93-Configure_OAuth_2.0.png" />  Configure OAuth 2.0
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Field
-      </th>
+<Image alt="Configure OAuth 2.0" align="center" width="50%" border={true} src="https://files.readme.io/95b5dfc019affcfc50e89eeff114f94738f1a1d04101495d1f31a9ba501f1d93-Configure_OAuth_2.0.png" />
 
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
+| Field | Description |
+|-------|-------------|
+| Client ID | - A unique identifier is issued to the requesting application (here, CleverTap) when it registers with an authorization server.<br/>- It helps the authorization server recognize the application that makes the request and applies relevant authorization policies. |
+| Secret | - A confidential key is issued to CleverTap during registration.<br/>- It is used to authenticate the identity of the client application (here, CleverTap) and must be kept secure.<br/>- It works alongside the Client ID to authenticate the requesting application's identity and to prevent unauthorized parties from impersonating the requesting application. |
+| Username* | - A unique identifier issued to the resource owner is necessary when the OAuth flow requires a user's credentials.<br/>- It is required when using the *Password Credentials* grant type, where the application needs to authenticate the user's directly. |
+| Password* | - It works alongside the username to authenticate the resource owner (user) directly when the OAuth flow requires a user's credentials.<br/>- It is required when using the *Password Credentials* grant type, where the application needs to authenticate the user's directly. |
+| Scopes | - The parameters in OAuth that define the specific permissions requested by the client application.<br/>- They control what parts of a user's account the client (here, CleverTap) has access to, such as reading profile data and so on. |
+| Access Token URL | The authorization server's endpoint is where CleverTap sends a request to obtain an access token. |
+| Refresh Token URL* | The authorization server's endpoint where CleverTap sends a request to obtain a new access token using a refresh token when the main access token gets expired. This field is available only when using *Password Credentials* grant type. |
+| Client Authentication Type | - The method a client application uses to prove its identity to the authorization server in OAuth 2.0 flows.<br/>- This ensures that only the authorized client can request tokens or access protected resources.<br/>- The following are the available options:<br/>  - *Send Basic Authentication in Header*: Include an Authorization header with encoded username and password.<br/>  - *Send Bearer Authentication in Header*: Include an Authorization header with an access token obtained from OAuth. |
 
-  <tbody>
-    <tr>
-      <td>
-        Client ID
-      </td>
-
-      <td>
-        <ul><li> A unique identifier is issued to the requesting application (here, CleverTap) when it registers with an authorization server.</li> <li> It helps the authorization server recognize the application that makes the request and applies relevant authorization policies.</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Secret
-      </td>
-
-      <td>
-        <ul> <li>A confidential key is issued to CleverTap during registration.</li><li>It is used to authenticate the identity of the client application (here, CleverTap) and must be kept secure.</li> <li> It works alongside the Client ID to authenticate the requesting application's identity and to prevent unauthorized parties from impersonating the requesting application.</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Username
-
-        \*
-      </td>
-
-      <td>
-        <ul> <li>A unique identifier issued to the resource owner is necessary when the OAuth flow requires a user’s credentials. </li> <li>It is required when using the *Password Credentials* grant type, where the application needs to authenticate the user's directly. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Password
-
-        \*
-      </td>
-
-      <td>
-        <ul> <li>It works alongside the username to authenticate the resource owner (user) directly when the OAuth flow requires a user’s credentials.</li> <li>It is required when using the *Password Credentials* grant type, where the application needs to authenticate the user's directly. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Scopes
-      </td>
-
-      <td>
-        <ul> <li> The parameters in OAuth that define the specific permissions requested by the client application.</li> <li> They control what parts of a user's account the client (here, CleverTap) has access to, such as reading profile data and so on.</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Access Token URL
-      </td>
-
-      <td>
-        The authorization server's endpoint is where CleverTap sends a request to obtain an access token.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Refresh Token URL
-
-        \*
-      </td>
-
-      <td>
-        The authorization server's endpoint where CleverTap sends a request to obtain a new access token using a refresh token when the main access token gets expired. This field is available only when using 
-
-        *Password Credentials*
-
-         grant type.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Client Authentication Type
-      </td>
-
-      <td>
-        <ul> 
-          <li>The method a client application uses to prove its identity to the authorization server in OAuth 2.0 flows. </li> 
-          <li> This ensures that only the authorized client can request tokens or access protected resources. </li> 
-          <li> The following are the available options:
-            <ul>
-              <li> *Send Basic Authentication in Header*: Include an Authorization header with encoded username and password. </li>
-              <li>*Send Bearer Authentication in Header*: Include an Authorization header with an access token obtained from OAuth.</li>
-            </ul>
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</Table>
 > 📘 Note
 >
-> The fields indicated with \* indicate that those are required only when using *Password Credentials* Grant Type.
+> The fields indicated with * indicate that those are required only when using *Password Credentials* Grant Type.
 
 7. Click **Generate**. This creates the Access Token using the provided credentials, which are displayed below:
    1. Map the Access Token and Refresh Token (Only when Refresh Token URL is added).
@@ -305,17 +132,7 @@ CleverTap recommends using this method when you need a more secure and scalable 
 
 The generated OAuth response includes an access token with an expiration time.
 
-<Image alt="Select Expiry from Expiry Dropdown" align="center" width="65% " border={true} src="https://files.readme.io/d586260c10a6f55de0a73a0663819884a3d7107e00f3f77852fd19a0a88bedff-Select_Expiry_for_the_Token.png" />  Select Expiry from Expiry Dropdown
-
-
-
-
-
-
-
-
-
-
+<Image alt="Select Expiry from Expiry Dropdown" align="center" width="65% " border={true} src="https://files.readme.io/d586260c10a6f55de0a73a0663819884a3d7107e00f3f77852fd19a0a88bedff-Select_Expiry_for_the_Token.png" />
 
 8. Click **+ Key-Value Pair** and enter the headers for the API.
 9. Click **Save** to create a webhook.
@@ -328,17 +145,7 @@ Grant Type in OAuth refers to the method CleverTap uses to obtain an access toke
 
 This method involves providing a username and password to obtain an access token. It is typically used when the application has direct access to user credentials. Here is the detailed flow:
 
-<Image alt="Password Credentials Flow" align="center" width="75% " border={true} src="https://files.readme.io/50dbc41f055a335a6a001efa517efc3e067fb98366104439e88aa7918fd00f85-Password_Credentials.png" />  Password Credentials Flow
-
-
-
-
-
-
-
-
-
-
+<Image alt="Password Credentials Flow" align="center" width="75% " border={true} src="https://files.readme.io/50dbc41f055a335a6a001efa517efc3e067fb98366104439e88aa7918fd00f85-Password_Credentials.png" />
 
 1. *Provide User Credentials*: The user provides their credentials (username and password) to CleverTap.
 2. *Send Credentials to Authentication Server*: CleverTap sends the user credentials to the authorization server. This request also includes Client ID and Client Secret Key in the header.
@@ -349,17 +156,8 @@ This method involves providing a username and password to obtain an access token
 #### Using Client Credentials without JWT
 
 This method requires only a client ID and secret key to obtain an access token. Here are the detailed steps:
-<Image alt="Client Credentials Flow" align="center" width="75%" border={true} src="https://files.readme.io/0e139311bd9f0c65bbf95749855a9af4dc8c643d01b9c2fd3599e8eb34e494f9-Client_Credentials.png" /> Client Credentials Flow
 
-
-
-
-
-
-
-
-
-
+<Image alt="Client Credentials Flow" align="center" width="75%" border={true} src="https://files.readme.io/0e139311bd9f0c65bbf95749855a9af4dc8c643d01b9c2fd3599e8eb34e494f9-Client_Credentials.png" />
 
 1. *Send Authorization Request to Authorization Server*: CleverTap makes an authorization request to the authorization server using the Client Credentials, such as Client ID and Secret Key.
 2. *Receive Access Token*: The authorization tool responds with an access token and the access token expiration time if the client credentials are accurate.
@@ -376,7 +174,8 @@ While OAuth 2.0 helps secure API access, token theft is still risky. If an attac
 * **Compact and Self-Contained**: JWTs contain all the necessary information (claims) in the token, reducing the need for constant database checks.
 * **Portable**: JWTs can be passed between systems easily and are ideal for authentication in distributed environments like webhooks.
 
-<Image alt="Client Credentials with JWT" align="center" width="75%" border={true} src="https://files.readme.io/b7d6d2ce41a7cee5ee410b52b9e2e0902d655d176594dab6076968e28a6ea332-JWT_1.png" /> Client Credentials with JWT
+<Image alt="Client Credentials with JWT" align="center" width="75%" border={true} src="https://files.readme.io/b7d6d2ce41a7cee5ee410b52b9e2e0902d655d176594dab6076968e28a6ea332-JWT_1.png" />
+
 1. **CleverTap Generates Public and Private Keys**:\
    CleverTap generates a private key and a corresponding public key. CleverTap keeps the private key secure, and the public key is shared with the client to validate JWTs.
 
@@ -411,7 +210,6 @@ The public key must be configured on the client's OAuth server for the verificat
 
 The following are steps to generate a Public Key:
 
-
 1. **Generate Public Key**: Click **Generate Public Key**. The public key will encrypt sensitive data, such as access tokens, ensuring that only the intended recipient (your server) can decrypt and access this information using the corresponding private key.
 2. **Paste the Public Key to Your Server**: Copy the generated public key and paste it into the relevant configuration on your server. This allows your server to decrypt the data received from CleverTap securely.
 3. (Optional) **Regenerate Public Key**: Click **Regenerate Public Key** only when required. This will invalidate any previously generated keys, providing additional protection if you suspect a key has been compromised or if you need to rotate keys periodically for security purposes.
@@ -420,33 +218,30 @@ The following are steps to generate a Public Key:
 
 The Header of a JWT contains metadata about the token, such as the signing algorithm and token type. The header is typically composed of two parts: the **algorithm** used to sign the token (for example, `RS256` for RSA) and the **type** of the token (usually `JWT`). The header also optionally contains other fields, such as a **key identifier** (`kid`) to indicate which tool is trying to connect. These details help Customer as a recipient understand how to process and verify the JWT.
 
-
-| **Field**            | **Description**                                                                             | **Example Value** | **Reason/Purpose**                                                                                                           |
-| -------------------- | ------------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Algorithm (`alg`)    | Specifies the algorithm used to sign the JWT. Possible values: `RS384`, `RS512`, or `RS256` | `RS256`           | Defines how the signature is created. The recipient uses it to verify the token integrity.                                   |
-| Type (`typ`)         | Defines the type of token.                                                                  | `JWT`             | Helps the system identify the token format, ensuring it is treated correctly as a JWT.                                       |
-| Key ID (`kid`)       | Identifies which public key should be used to verify the signature.                         | `12345`           | Allows authorization server to verify the validity of the JWT, and to determine which key was used to sign the JWT           |
-| Content Type (`cty`) | Specifies the content type of the JWT.                                                      | `JWT`             | Indicates that the JWT contains JWT data, ensuring correct handling by the recipient.                                        |
-| Critical (`crit`)    | Lists headers that must be processed by the recipient.                                      | `["exp", "aud"]`  | Ensures the recipient processes critical headers, such as **expiration** and **audience**, which are important for security. |
+| **Field** | **Description** | **Example Value** | **Reason/Purpose** |
+|-----------|-----------------|-------------------|-------------------|
+| Algorithm (`alg`) | Specifies the algorithm used to sign the JWT. Possible values: `RS384`, `RS512`, or `RS256` | `RS256` | Defines how the signature is created. The recipient uses it to verify the token integrity. |
+| Type (`typ`) | Defines the type of token. | `JWT` | Helps the system identify the token format, ensuring it is treated correctly as a JWT. |
+| Key ID (`kid`) | Identifies which public key should be used to verify the signature. | `12345` | Allows authorization server to verify the validity of the JWT, and to determine which key was used to sign the JWT |
+| Content Type (`cty`) | Specifies the content type of the JWT. | `JWT` | Indicates that the JWT contains JWT data, ensuring correct handling by the recipient. |
+| Critical (`crit`) | Lists headers that must be processed by the recipient. | `["exp", "aud"]` | Ensures the recipient processes critical headers, such as **expiration** and **audience**, which are important for security. |
 
 ##### JWT Payload
 
-The Payload carries important information that validates the authenticity of the token and ensures its intended use. 
+The Payload carries important information that validates the authenticity of the token and ensures its intended use.
 
-
-| **Field**               | **Description**                                                               | **Example Value**                       | **Reason/Purpose**                                                                                        |
-| ----------------------- | ----------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Issuer (`iss`)          | The client ID that was created and sent the JWT.                              | `your-client-id`                        | Identifies the entity that gets the token, allowing Customer to verify the source.                        |
-| Subject (`sub`)         | The client ID or user the token is issued for.                                | `your-client-id`                        | Identifies the server or user for whom the token is issued, ensuring the correct permissions are applied. |
-| Audience (`aud`)        | Indicates the intended source of the token.                                   | `https://api.clevertap.com/oauth/token` | Ensures the token is sent to the correct source, and used only for that specific audience.                |
-| Issued At (`iat`)       | The timestamp when the token was created.                                     | `1626784891` (Unix timestamp)           | Ensures the token is fresh and helps manage the token lifecycle.                                          |
-| Expiration Time (`exp`) | Specifies when the token expires and is no longer valid.                      | `1626788491` (Unix timestamp)           | Prevents replay attacks by making the token invalid after a certain time.                                 |
-| JWT ID (`jti`)          | A unique identifier for the token is used to prevent reuse of the same token. | `unique-jwt-id-123`                     | Helps prevent replay attacks by ensuring each token is unique.                                            |
-| Use Issued At (`iat`)   | Whether the Issued At claim should be used.                                   | `Yes`                                   | Recommended to use to track when the token was issued, ensuring it’s not used prematurely or too late.    |
+| **Field** | **Description** | **Example Value** | **Reason/Purpose** |
+|-----------|-----------------|-------------------|-------------------|
+| Issuer (`iss`) | The client ID that was created and sent the JWT. | `your-client-id` | Identifies the entity that gets the token, allowing Customer to verify the source. |
+| Subject (`sub`) | The client ID or user the token is issued for. | `your-client-id` | Identifies the server or user for whom the token is issued, ensuring the correct permissions are applied. |
+| Audience (`aud`) | Indicates the intended source of the token. | `https://api.clevertap.com/oauth/token` | Ensures the token is sent to the correct source, and used only for that specific audience. |
+| Issued At (`iat`) | The timestamp when the token was created. | `1626784891` (Unix timestamp) | Ensures the token is fresh and helps manage the token lifecycle. |
+| Expiration Time (`exp`) | Specifies when the token expires and is no longer valid. | `1626788491` (Unix timestamp) | Prevents replay attacks by making the token invalid after a certain time. |
+| JWT ID (`jti`) | A unique identifier for the token is used to prevent reuse of the same token. | `unique-jwt-id-123` | Helps prevent replay attacks by ensuring each token is unique. |
+| Use Issued At (`iat`) | Whether the Issued At claim should be used. | `Yes` | Recommended to use to track when the token was issued, ensuring it's not used prematurely or too late. |
 
 # FAQs
 
 ### Q. What are the timeouts and retry limits for Webhook?
-
 
 A. The timeout for Webhook is 5 seconds with a retry limit of 2 times. For more information, refer to the [Channel-Specific Timeouts and Retries](doc:platform-considerations#channel-specific-timeouts-and-retries).
