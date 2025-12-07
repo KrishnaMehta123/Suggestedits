@@ -18,44 +18,16 @@ next:
 
 You can personalize the message for every user based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](https://docs.clevertap.com/docs/user-profiles) and [Events](https://docs.clevertap.com/docs/events#event-properties).
 
-# Inline Personalization 
+# Inline Personalization
 
 To invoke the personalization menu, type the *@* symbol in the value fields while creating a message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3a40632-Web_Personlization.png",
-        "Web Personlization.png",
-        2546,
-        1264,
-        "#f1ebf6"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Web Personlization.png" alt={2546} className="border" border={true} src="https://files.readme.io/3a40632-Web_Personlization.png" />
+
 # Recommendations
 
 Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options. 
 
 After you have uploaded a catalog, you can display personalized recommendations to your customers. For example, you can have a sliding carousel displayed to your customers based on their personal likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6264702-Recommendation_Sample.png",
-        "Recommendation_Sample.png",
-        1752,
-        1184,
-        "#f9fafb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Recommendation_Sample.png" alt={1752} className="border" border={true} src="https://files.readme.io/6264702-Recommendation_Sample.png" />
