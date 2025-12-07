@@ -14,19 +14,6 @@ WhatsApp is a popular messaging channel that enables secure and trustworthy comm
 
 CleverTap provides the capability to use WhatsApp as a channel to engage users in a reliable and secure way. Moreover, you can use CleverTap's [conversations](doc:conversations) to chat with your users on WhatsApp.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/347266b-sample_whatsapp_conversation.png",
-        "sample whatsapp conversation.png",
-        605
-      ],
-      "align": "center",
-      "sizing": "50",
-      "caption": "Sample WhatsApp Conversation"
-    }
-  ]
-}
-[/block]
+<Image title="sample whatsapp conversation.png" alt={605} align="center" width="50%" src="https://files.readme.io/347266b-sample_whatsapp_conversation.png">
+  Sample WhatsApp Conversation
+</Image>
