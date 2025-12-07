@@ -12,7 +12,7 @@ next:
 ---
 ## Mobile Push Setup
 
-Set up your mobile push notifications from the CleverTap dashboard. 
+Set up your mobile push notifications from the CleverTap dashboard.\
 Navigate to *Settings > Channels > Mobile push*. 
 
 # Android
@@ -24,7 +24,6 @@ Set up and enter credentials for all the platforms that your application support
 3. [Baidu](https://developer.clevertap.com/docs/baidu-push-notifications#section-get-the-apps-api-key-secret-key)
 4. [Huwaei](https://developer.clevertap.com/docs/clevertap-huawei-push-integration#section-get-the-apps-app-id-app-secret)
 
-
 ## Notification channels
 
 For Android 8.0 and above, you can create a group of channels that your users. The users can then choose to turn on or turn off the subscription to these channels.  Create a list of channels that will be available in campaign creation. 
@@ -32,17 +31,13 @@ For Android 8.0 and above, you can create a group of channels that your users. T
 # iOS
 
 You can either create and upload: 
+
 * [APNs Auth Key](https://developer.clevertap.com/docs/how-to-create-an-ios-apns-auth-key)
 * [APNs Push Certificate](https://developer.clevertap.com/docs/how-to-create-an-ios-apns-certificate)
 
-
-[block:callout]
-{
-  "type": "info",
-  "body": "We recommend that you create and upload an APNs Auth Key.",
-  "title": "Our Recommendation"
-}
-[/block]
+> 📘 Our Recommendation
+>
+> We recommend that you create and upload an APNs Auth Key.
 
 # Raising Events
 
@@ -55,25 +50,9 @@ The following system events can be enabled manually:
 You can raise and record push notifications delivered to your users’ Android devices.
 
 1. Navigate to *Settings* > *Schema* > *Events*.
-2. From the *System Events *tab, search for *Push Impressions*, then click on the vertical ellipsis menu.
+2. From the *System Events* tab, search for *Push Impressions*, then click on the vertical ellipsis menu.
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f68258-push_set_push_impression.png",
-        "push_set_push_impression.png",
-        1171,
-        501,
-        "#f7f7f8"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="push_set_push_impression.png" alt={1171} className="border" border={true} src="https://files.readme.io/1f68258-push_set_push_impression.png" />
 
 3. Click on **Setup push impressions**. A new window displays.
 4. Turn on the *Mobile Push* toggle. 
@@ -81,39 +60,20 @@ You can raise and record push notifications delivered to your users’ Android d
 
 After the toggle is on, all the push notifications delivered are recorded under the *Push Impressions* event. The viewed and conversion count from this event is also available under *Analytics* > *Events*.
 
-
-[block:callout]
-{
-  "type": "warning",
-  "body": "Some things to consider include:\n1. The push event can only be raised for CleverTap SDK version 3.5.1 and above for Android and version 3.5.0 and above for iOS.\n2. If the notification channel is incorrect, the push notification is not delivered on the device and therefore, no event is raised for the push impression.",
-  "title": "SDK Considerations"
-}
-[/block]
+> 🚧 SDK Considerations
+>
+> Some things to consider include:
+>
+> 1. The push event can only be raised for CleverTap SDK version 3.5.1 and above for Android and version 3.5.0 and above for iOS.
+> 2. If the notification channel is incorrect, the push notification is not delivered on the device and therefore, no event is raised for the push impression.
 
 ## Raising Push Impression Event for iOS
+
 To raise the *Push Impression* event for iOS, it is mandatory to enable the *Mutable Content* under the iOS section of the campaign creation.
 
 For more information on enabling *Push Impression* for your account, refer to our [developer documentation](https://developer.clevertap.com/docs/push-notifications-ios#push-impressions). 
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2bd5135-campaign_iOS.png",
-        "campaign_iOS.png",
-        1251,
-        1507,
-        "#ebe8f0"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
-
+<Image title="campaign_iOS.png" alt={1251} className="border" width="80%" border={true} src="https://files.readme.io/2bd5135-campaign_iOS.png" />
 
 # Push Campaign Throttling
 
@@ -121,11 +81,6 @@ You can throttle the rate at which CleverTap delivers push notifications under *
 
 By using push campaign throttling, you can meter how quickly CleverTap delivers your notifications.
 
-
-[block:callout]
-{
-  "type": "success",
-  "title": "Push Campaign Throttling Example",
-  "body": "If your reachable audience for a campaign is 500,000 users and your back-end systems can only support up to 20% of them, you can set a throttle limit to 100,000 notifications per 15-minute interval. The entire campaign will then deliver in 1 hour 15 minutes."
-}
-[/block]
+> 👍 Push Campaign Throttling Example
+>
+> If your reachable audience for a campaign is 500,000 users and your back-end systems can only support up to 20% of them, you can set a throttle limit to 100,000 notifications per 15-minute interval. The entire campaign will then deliver in 1 hour 15 minutes.
