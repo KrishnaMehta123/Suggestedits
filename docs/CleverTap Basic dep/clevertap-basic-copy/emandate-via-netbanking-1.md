@@ -19,34 +19,20 @@ eMandate, a payment service initiated by RBI and the National Payments Corporati
 
 # eMandate via NetBanking Registration
 
-You can choose eMandate via Netbanking as the preferred payment method when creating a _CleverTap Basic_ or _Essentials_ account or update it later.
+You can choose eMandate via Netbanking as the preferred payment method when creating a *CleverTap Basic* or *Essentials* account or update it later.
 
 You need to register for eMandate by entering the following details:
 
-- Account Number 
-- IFSC code
-- Account Holder Name
-- Account Type
+* Account Number 
+* IFSC code
+* Account Holder Name
+* Account Type
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9fd44e8-image.png",
-        null,
-        "eMandate via NetBanking Registration"
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true,
-      "caption": "eMandate via NetBanking Registration"
-    }
-  ]
-}
-[/block]
+<Image alt="eMandate via NetBanking Registration" align="center" width="70% " border={true} src="https://files.readme.io/9fd44e8-image.png">
+  eMandate via NetBanking Registration
+</Image>
 
-The setup requires one-time authorization via NetBanking for enabling future transactions. The authentication can take up to 1-2 banking days, depending upon the respective bank. After the _eMandate via NetBanking_ payment method is authorized, you will receive a confirmation email about the same. The subsequent payments do not require any customer intervention. 
+The setup requires one-time authorization via NetBanking for enabling future transactions. The authentication can take up to 1-2 banking days, depending upon the respective bank. After the *eMandate via NetBanking* payment method is authorized, you will receive a confirmation email about the same. The subsequent payments do not require any customer intervention. 
 
 It is recommended to inform your customer about the deduction of ₹1 or ₹2 during the authorization. This amount will be refunded to your customer in 5-7 banking days.
 
