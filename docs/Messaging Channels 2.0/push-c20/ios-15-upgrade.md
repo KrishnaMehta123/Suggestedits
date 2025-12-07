@@ -18,35 +18,20 @@ The Apple Website describes the new Mail Privacy Protection (MPP) as, "Mail Priv
 
 MPP means that the Apple Mail app disables tracking for all devices on apple devices for all email services.  However, other email apps installed on Apple devices do not have this restriction. 
 
+<Image title="99192.jpg" alt={1242} width="smart" src="https://files.readme.io/07dd10e-99192.jpg" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/07dd10e-99192.jpg",
-        "99192.jpg",
-        1242,
-        2688,
-        "#242426"
-      ],
-      "sizing": "smart"
-    }
-  ]
-}
-[/block]
 # Email Marketing Considerations
 
-MPP prevents senders from using tracking pixels to collect information about their recipients. Subscribers using Apple's mail client (with MPP enabled) will have their images pre-fetched and cached, causing messages to those subscribers to appear as *opened*, regardless of whether they actually opened them. The impact on the industry will be significant. Apple's mail client makes up ~40% of all usage, according to Validity market data. Marketers will also lose the ability to track device and location data from these pixels.
+MPP prevents senders from using tracking pixels to collect information about their recipients. Subscribers using Apple's mail client (with MPP enabled) will have their images pre-fetched and cached, causing messages to those subscribers to appear as *opened*, regardless of whether they actually opened them. The impact on the industry will be significant. Apple's mail client makes up \~40% of all usage, according to Validity market data. Marketers will also lose the ability to track device and location data from these pixels.
 
 # System Events
 
 Following is the impact on system events.:
+
 * Viewed - Shows the email views. This number may be unusually high because of Apple's mail client pre-loading emails. 
 * Clicked - Shows the email clicks. This number may be unusually high because of Apple's mail client pre-loading emails. 
-* Notification - <<@harsh need info>>
-* Sent - **<<@harsh need info>>**
-
+* Notification - \<\<@harsh need info>>
+* Sent - **\<\<@harsh need info>>**
 
 # Campaign Stats
 
@@ -54,8 +39,8 @@ The MPP will affect the campaign stats. The spike in the clicked and viewed numb
 
 You can turn off the Viewed funnel from the email stats so that you avoid the inflated engagement numbers. 
 
-<<@harsh please add>>
+\<\<@harsh please add>>
 
 # CleverTap Measures
 
-<<@harsh, i think this section is superfluous now>>
+\<\<@harsh, i think this section is superfluous now>>
