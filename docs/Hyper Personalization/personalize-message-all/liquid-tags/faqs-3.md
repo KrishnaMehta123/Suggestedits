@@ -30,8 +30,6 @@ You can use the `default` filter to handle cases where user data is unavailable.
 
 CleverTap currently does not support viewing Liquid execution logs. To troubleshoot and validate your Liquid logic, send test notifications to internal users while creating a campaign.
 
-
-
 ### How do I test or validate the Liquid Tags used for my message?
 
 When creating a campaign message with Liquid tags, errors appear in real time if the syntax is incorrect. Errors also surface when clicking **Done** on the campaign creation page if the message contains invalid Liquid Tag syntax. You can also use **Preview & Test** in the message editor to validate your message and send [test campaigns](doc:send-test-personalization-for-unified-inbox) with personalized values. You should test your liquid tags with test user profiles to verify correct behavior.
@@ -59,16 +57,16 @@ Yes. Liquid Tags can be used with HTML; however, this section applies only to th
 
 The drag-and-drop email editor supports Liquid Tags and Linked Content. This functionality allows customers to design and personalize emails using dynamic content when creating an [email campaign](https://docs.clevertap.com/docs/email#section-email-campaign-creation-steps).
 
-1. Select a template.  
+1. Select a template.\
    ![Select Media Template](https://files.readme.io/0fc50d2-Select_Media_Template.png)
 
-2. Click the **Row item** in _Preview_.  
+2. Click the **Row item** in *Preview*.\
    ![Select the Row Tab](https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png)
 
-3. Click _More_ and select **Customize with Liquid Tags**.  
+3. Click *More* and select **Customize with Liquid Tags**.\
    ![Customize with Liquid Tags](https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png)
 
-4. Add your Liquid script inside the popup.  
+4. Add your Liquid script inside the popup.\
    ![Add Liquid Script](https://files.readme.io/57f0cf4-Add_liquid_script.png)
 
 5. Click **Add**.
