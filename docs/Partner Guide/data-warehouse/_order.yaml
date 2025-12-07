@@ -2,3 +2,4 @@
 - data-export-to-aws-s3
 - data-export-to-gcp
 - bigquery-export
+- microsoft-azure-export
