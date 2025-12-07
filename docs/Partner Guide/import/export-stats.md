@@ -14,305 +14,109 @@ Exporting data from CleverTap to a third-party raw data or analytics partner suc
 
 # Pre requisites
 
-To export data to these partners, the users must integrate the partners under _Settings > Partners_ and then select **Integrate**. Fill in the necessary configuration details like **Bucket Nickname, Bucket URL, Access Key, and Secret Key**.
+To export data to these partners, the users must integrate the partners under *Settings > Partners* and then select **Integrate**. Fill in the necessary configuration details like **Bucket Nickname, Bucket URL, Access Key, and Secret Key**.
 
 # Creating an export
 
-1. Navigate to _Settings > Partners_ and select **Exports**. 
+1. Navigate to *Settings > Partners* and select **Exports**. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ee4e9d3-Export_Stats_1.png",
-        "",
-        "Exports"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Exports"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Exports" align="center" border={true} src="https://files.readme.io/ee4e9d3-Export_Stats_1.png">
+  Exports
+</Image>
 
 2. Navigate to **Create Export**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9fcedce-Export_Stats_-_create_export.png",
-        "",
-        "Create Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Export"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Create Export" align="center" border={true} src="https://files.readme.io/9fcedce-Export_Stats_-_create_export.png">
+  Create Export
+</Image>
 
 3. Select an integrated partner platform to which the data has to be exported. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/86961ab-Export_Stats_-_select_partner.png",
-        "",
-        "Integrated Partner Platforms"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Integrated Partner Platforms"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Integrated Partner Platforms" align="center" border={true} src="https://files.readme.io/86961ab-Export_Stats_-_select_partner.png">
+  Integrated Partner Platforms
+</Image>
 
 4. The Partner Bucket Name will be auto-filled based on the information filled in during the integration process and in case of multiple buckets, select the relevant Partner Bucket from the drop-down.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/674d155-export_stats_-_partner_bucket.png",
-        "",
-        "Partner Bucket Name"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Partner Bucket Name"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Partner Bucket Name" align="center" border={true} src="https://files.readme.io/674d155-export_stats_-_partner_bucket.png">
+  Partner Bucket Name
+</Image>
 
 4. Select a Data Type based on the kind of data that needs to be exported.
 
-- All Events: Export all events for the selected duration. 
+* All Events: Export all events for the selected duration. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9a56187-export_stats_-_data_type.png",
-        "",
-        "Data Types"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Data Types"
-    }
-  ]
-}
-[/block]
+<Image alt="Data Types" align="center" border={true} src="https://files.readme.io/9a56187-export_stats_-_data_type.png">
+  Data Types
+</Image>
 
+* Selected Events: Select the events from the drop-down and export specific data for the selected duration.
 
-- Selected Events: Select the events from the drop-down and export specific data for the selected duration.
+<Image alt="Data Type - Selected Events" align="center" border={true} src="https://files.readme.io/a965c82-export_stats_-_data_type_2.png">
+  Data Type - Selected Events
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a965c82-export_stats_-_data_type_2.png",
-        "",
-        "Data Type - Selected Events"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Data Type - Selected Events"
-    }
-  ]
-}
-[/block]
+* All User Profiles: User profiles will not be available for export stats.
 
-
-- All User Profiles: User profiles will not be available for export stats.
-
-6. Set the priority in the order in which the users will be identified under Identifier \__Priority > Fallback priority order \_for identifiers_. User profiles can be identified by Identity, Email, and Phone Number. In case the identifier set as first priority is not available, the identity column in the export file will display the second priority identifier, and so on.
+6. Set the priority in the order in which the users will be identified under Identifier \_*Priority > Fallback priority order\_for identifiers*. User profiles can be identified by Identity, Email, and Phone Number. In case the identifier set as first priority is not available, the identity column in the export file will display the second priority identifier, and so on.
 
 For Example, if the first priority is set to Identity, the second priority is set to Email, and the third priority is set to Phone Number, then in the user profile, if Identity is not available, the specific cell for the particular user in the Identity column will reflect Email, and if Email is not available, then the export will fetch the Phone Number.
 
 > 📘 Fallback Priority Order
-> 
+>
 > The default priority is set to identity in case no order of priority is set.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/14e18c7-2024-07-15_12-29-15_1.gif",
-        "",
-        "Fallback priority for identifiers"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Fallback priority for identifiers"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Fallback priority for identifiers" align="center" border={true} src="https://files.readme.io/14e18c7-2024-07-15_12-29-15_1.gif">
+  Fallback priority for identifiers
+</Image>
 
 7. Set the export frequency as **One Time** or **Recurring**. Data can be exported only up to the last 60 days.
 
-- One Time: Select the to and from dates to export the data once. 
+* One Time: Select the to and from dates to export the data once. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a6110af-2024-07-15_12-35-20_1.gif",
-        "",
-        "One Time Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "One Time Export"
-    }
-  ]
-}
-[/block]
+<Image alt="One Time Export" align="center" border={true} src="https://files.readme.io/a6110af-2024-07-15_12-35-20_1.gif">
+  One Time Export
+</Image>
 
+* Recurring: Schedule regular data exports at specified intervals every four hours. This automated process ensures that updated data is consistent. 
 
-- Recurring: Schedule regular data exports at specified intervals every four hours. This automated process ensures that updated data is consistent. 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/187f2fb-2024-07-15_12-40-36_1.gif",
-        "",
-        "Recurring Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Recurring Export"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Recurring Export" align="center" border={true} src="https://files.readme.io/187f2fb-2024-07-15_12-40-36_1.gif">
+  Recurring Export
+</Image>
 
 8. Select the export format as **CSV**, **Parquet**, **XML**, or **JSON**; if no format is selected, JSON is the default.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/10a748c-export_stats_-_format.png",
-        "",
-        "Export Format"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Export Format"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Export Format" align="center" border={true} src="https://files.readme.io/10a748c-export_stats_-_format.png">
+  Export Format
+</Image>
 
 8. Export as a string: 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3dbfb9d-2024-07-15_12-45-57_1.gif",
-        "",
-        "Export as a string"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Export as a string"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Export as a string" align="center" border={true} src="https://files.readme.io/3dbfb9d-2024-07-15_12-45-57_1.gif">
+  Export as a string
+</Image>
 
 8. Select **Export**. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9ed3194-export_stats_-_export.png",
-        "",
-        "Export"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Export"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Export" align="center" border={true} src="https://files.readme.io/9ed3194-export_stats_-_export.png">
+  Export
+</Image>
 
 8. On the dashboard, the status of the export will be Pending, and once the export starts based on the type of export - One Time or Recurring, the status will change to Done, Running, or Stopped.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/114cba9-export_stats_-_status.png",
-        "",
-        "Status"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Status"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Status" align="center" border={true} src="https://files.readme.io/114cba9-export_stats_-_status.png">
+  Status
+</Image>
 
 # Dashboard
 
 ## Set up
 
-1. Navigate to the Stats Dashboard, click on ![](https://files.readme.io/1ede62e-export_stats_-_view_icon.png) and then select **Setup**. You can edit your export by selecting** Edit**. This page will provide comprehensive details about the export, including: 
+1. Navigate to the Stats Dashboard, click on ![](https://files.readme.io/1ede62e-export_stats_-_view_icon.png) and then select **Setup**. You can edit your export by selecting **Edit**. This page will provide comprehensive details about the export, including: 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b7c7844-export_stats_-_edit.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Setup and Edit"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Setup and Edit" align="center" border={true} src="https://files.readme.io/b7c7844-export_stats_-_edit.png">
+  Setup and Edit
+</Image>
 
 1. <br />
    1. **Partner Bucket Name**: This refers to the nickname assigned to the partner during the export creation process. This is an editable field. 
@@ -326,23 +130,9 @@ For Example, if the first priority is set to Identity, the second priority is se
 
 1. Navigate to the Stats Dashboard, select ![](https://files.readme.io/2ed6cec-export_stats_-_view_icon.png) , and select **Stats**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ee4c59-export_stats_-_view_stats.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "View Export"
-    }
-  ]
-}
-[/block]
-
+<Image alt="View Export" align="center" border={true} src="https://files.readme.io/5ee4c59-export_stats_-_view_stats.png">
+  View Export
+</Image>
 
 ### One Time Export
 
@@ -358,13 +148,13 @@ For Example, if the first priority is set to Identity, the second priority is se
    1. A total count of the number of times the event has been performed for the specified time frequency will be shown next to each timestamp.
    2. The total number of time stamps available for that particular event will be displayed.
 
-<!----->
+{/***/}
 
 3. Select an event to expand and view its timestamps. For instance, with a recurring export set every 4 hours, timestamps such as 4:00, 8:00, 12:00, 16:00, 20:00, and 00:00 in 24-hour format will be displayed for the selected date. It will show the total number of times the event occurred at each timestamp/frequency, as well as a total count for how many times the selected event occurred throughout the day. If no events have been performed for a particular time stamp, the total count will be 0. 
 4. Once you select the event, the right panel will display a filter containing timestamps based on the frequency chosen for export. For example, a recurring export set for every 4 hours will have filters for timestamps like 4:00, 8:00, 12:00, 16:00, 20:00, and 00:00 in 24-hour format for the selected date. If the event occurs 3 times at 8:00, the filter will only show 8:00 with the total count of the number of times the event has been performed i.e., 3, or it will display a count of 0 against each timestamp where the event did not occur. (@nishu please confirm). 
 
 > 📘 Back Dated Events
-> 
+>
 > If any events are missed or not included during an export run, such as when the 4:00 stats show 30 'Added to Cart' events but the export displays only 28, the missed events (in this case, 2) will be added to the total count in the next export. Therefore, for the 8:00 stats with originally 15 occurrences of 'Added to Cart' events, the displayed count will be 15 + 2, totalling 17.
 
 5. Navigate to **Filter** to filter by dates and Event Type. 
@@ -372,5 +162,5 @@ For Example, if the first priority is set to Identity, the second priority is se
    2. Filter by Events Type: Choose from a list of events using a search bar to find specific events. You can select multiple events and **Apply** filter.
 
 > 📘 Data Storage
-> 
+>
 > CleverTap will only store data for 30 days for both Recurring and One Time exports. In the case of a 60-day One Time export, the most recent 30-day export data will be available.
