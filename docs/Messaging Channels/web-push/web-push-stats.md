@@ -16,49 +16,21 @@ next:
 
 Once the campaign has been published, you can view the statistics from the dashboard. Click on **Campaigns** > select the specific campaign from the campaign list. A Stats page opens up where you can view the total Views, Clicks, Conversions, CTR, and Conversion Performance.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cefa7ba-web_push_stats_final.png",
-        "Trends and Stats",
-        2768
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Web Push Campaign Stats"
-    }
-  ]
-}
-[/block]
+<Image title="Trends and Stats" alt={2768} align="center" border={true} src="https://files.readme.io/cefa7ba-web_push_stats_final.png">
+  Web Push Campaign Stats
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ca4dc9cb6c0f6ec7e0c4c6cffa7b592e484c274073d2a12180aef09804b02a90-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Web Push Conversion Performance Stats"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Web Push Conversion Performance Stats" align="center" border={true} src="https://files.readme.io/ca4dc9cb6c0f6ec7e0c4c6cffa7b592e484c274073d2a12180aef09804b02a90-image.png">
+  Web Push Conversion Performance Stats
+</Image>
 
 <br />
 
-- **Sent**: Represents the count of total Web Push notifications sent to the end-users.
-- **Views**: Represents the number of times a Web Push notification is viewed.
-- **Clicks**: Represents the number of times users have clicked on the Web Push notification.
-- **CTR**:  Represents the ratio of Clicks to Views. (CTR = Clicks/Views \* 100).
-- **Trend charts**: Represents trends of _Sent_, _Viewed_, and _Clicked_ events for this campaign over a specific period of time (for example daily, weekly, monthly).
+* **Sent**: Represents the count of total Web Push notifications sent to the end-users.
+* **Views**: Represents the number of times a Web Push notification is viewed.
+* **Clicks**: Represents the number of times users have clicked on the Web Push notification.
+* **CTR**:  Represents the ratio of Clicks to Views. (CTR = Clicks/Views \* 100).
+* **Trend charts**: Represents trends of *Sent*, *Viewed*, and *Clicked* events for this campaign over a specific period of time (for example daily, weekly, monthly).
 
 # FAQs
 
