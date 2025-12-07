@@ -26,22 +26,9 @@ You can personalize the Web Exit Intent message Title and message body for every
 To invoke the personalization menu, type the @ symbol in the title or the text fields while creating the Web Exit Intent message.
 
 You can also add dynamic replacements in the Web Exit Intent title and body as shown below. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e7c117-Screenshot_2021-10-19_at_4.57.26_PM.png",
-        "Screenshot 2021-10-19 at 4.57.26 PM.png",
-        2874,
-        1120,
-        "#f0ebf4"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Screenshot 2021-10-19 at 4.57.26 PM.png" alt={2874} className="border" border={true} src="https://files.readme.io/8e7c117-Screenshot_2021-10-19_at_4.57.26_PM.png" />
+
 # Recommendations
 
 Click the gear icon in the editor to open personalization options. 
