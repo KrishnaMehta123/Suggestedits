@@ -20,22 +20,6 @@ Once a campaign has been sent, you can view detailed reports on how many message
 
 Following is an example of push notifications in the notification tray or the notification inbox:
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/64ceb99-push_delivery_example.png",
-        "Push Notification Preview on Phone",
-        "Screen shows image of mobile screen with a delivered push notification",
-        4460,
-        3156,
-        "#5b5a59"
-      ],
-      "border": true,
-      "caption": "Sample Push Notification"
-    }
-  ]
-}
-[/block]
+<Image title="Push Notification Preview on Phone" alt="Screen shows image of mobile screen with a delivered push notification" border={true} src="https://files.readme.io/64ceb99-push_delivery_example.png">
+  Sample Push Notification
+</Image>
