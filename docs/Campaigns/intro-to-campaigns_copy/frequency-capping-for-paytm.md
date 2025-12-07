@@ -22,10 +22,10 @@ This implementation is currently exclusive to Paytm and applies specifically to 
 
 Unlike standard frequency capping, Paytm’s implementation supports:
 
-- Priority-driven campaign selection
-- Trigger-based eligibility checks
-- On-device FCAP evaluation for real-time decision-making
-- Campaign recency resolution when priorities are equal
+* Priority-driven campaign selection
+* Trigger-based eligibility checks
+* On-device FCAP evaluation for real-time decision-making
+* Campaign recency resolution when priorities are equal
 
 ## Key Concepts
 
@@ -41,9 +41,9 @@ Unlike standard frequency capping, Paytm’s implementation supports:
 
 The Advanced Frequency Cap helps ensure consistent pacing of user messages throughout the month by setting layered delivery limits across time windows:
 
-- **Monthly Cap**: Sets the maximum number of messages a user can receive in a month.
-- **Weekly Cap**: Restricts how many messages are delivered per week (within the monthly total).
-- **Daily Cap**: Adds a cap to how many messages are sent per day (within the weekly and monthly limits).
+* **Monthly Cap**: Sets the maximum number of messages a user can receive in a month.
+* **Weekly Cap**: Restricts how many messages are delivered per week (within the monthly total).
+* **Daily Cap**: Adds a cap to how many messages are sent per day (within the weekly and monthly limits).
 
 These limits work in tandem, the most restrictive one applies first. If a user hits the daily cap, no further messages are shown that day, even if weekly or monthly caps are still available.
 
@@ -57,35 +57,21 @@ These limits work in tandem, the most restrictive one applies first. If a user h
 
 This setup ensures the following:
 
-- Users receive a 
-  - maximum of 10 messages per day
-  - maximum of 55 messages per week
-  - maximum of 100 messages in a month
+* Users receive a 
+  * maximum of 10 messages per day
+  * maximum of 55 messages per week
+  * maximum of 100 messages in a month
 
 This prevents message exhaustion by ensuring message limits are spread over time, rather than being exhausted early.
 
 #### Campaign Priority Settings
 
-In addition to message caps, campaigns are assigned a priority (Low, Medium, High), which helps resolve conflicts when multiple campaigns are eligible. Priority is evaluated only after trigger and FCAP eligibility are validated.  
+In addition to message caps, campaigns are assigned a priority (Low, Medium, High), which helps resolve conflicts when multiple campaigns are eligible. Priority is evaluated only after trigger and FCAP eligibility are validated.\
 The following gif shows how to set your Advanced FCAP from the CleverTap dashboard for your campaigns:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5e8ec05002af3f6bad880b75b55598efd71a791f3b9791dde2a701cf559a0397-2025-07-21_17-16-05_1.gif",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Setting up Advanced FCAP"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Setting up Advanced FCAP" align="center" border={true} src="https://files.readme.io/5e8ec05002af3f6bad880b75b55598efd71a791f3b9791dde2a701cf559a0397-2025-07-21_17-16-05_1.gif">
+  Setting up Advanced FCAP
+</Image>
 
 ## Campaign Selection Logic (Paytm SDK)
 
@@ -93,16 +79,16 @@ When a contextual trigger fires (for example, App Launch), the SDK performs the 
 
 1. **Fetch eligible campaigns**:
 
-   - Must be live Native Display campaigns
-   - Must be tied to the current trigger
-   - Must not have exhausted their FCAP (daily/weekly/monthly)
+   * Must be live Native Display campaigns
+   * Must be tied to the current trigger
+   * Must not have exhausted their FCAP (daily/weekly/monthly)
 
 2. **Evaluate based on priority**:
 
-   - Select the campaign with the lowest priority number
-   - If multiple campaigns share the same priority:
+   * Select the campaign with the lowest priority number
+   * If multiple campaigns share the same priority:
 
-     - Pick the one with the most recent update timestamp
+     * Pick the one with the most recent update timestamp
 
 3. **Display the selected campaign** and update FCAP usage on device.
 
@@ -118,16 +104,16 @@ The following campaigns are eligible for the **App Launch** trigger:
 
 **Resolution:**
 
-- _Wallet Promo_ is disqualified (daily cap already hit).
-- _Diwali Offer_ and _Cashback Tease_ are eligible.
-- _Cashback Tease_ is chosen because it has:
+* *Wallet Promo* is disqualified (daily cap already hit).
+* *Diwali Offer* and *Cashback Tease* are eligible.
+* *Cashback Tease* is chosen because it has:
 
-  - Higher priority (1 vs 2)
-  - Available daily cap
-  - More recent update (vs Wallet Promo)
+  * Higher priority (1 vs 2)
+  * Available daily cap
+  * More recent update (vs Wallet Promo)
 
 ## Limitations
 
-- Not supported for Push, Email, WhatsApp, or SMS campaigns.
-- Rolling time window–based frequency capping is not available.
-- Trigger and FCAP logic is custom to Paytm’s SDK and not part of CleverTap's standard SDK behavior.
+* Not supported for Push, Email, WhatsApp, or SMS campaigns.
+* Rolling time window–based frequency capping is not available.
+* Trigger and FCAP logic is custom to Paytm’s SDK and not part of CleverTap's standard SDK behavior.
