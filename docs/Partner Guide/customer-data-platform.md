@@ -12,6 +12,6 @@ next:
 ---
 CleverTap integrates with the following Customer Data Platforms, so you can send your user data to any system:
 
-- [mParticle](https://staging.docs.dev.clevertap.net/docs/mparticle)
-- [RudderStack](https://staging.docs.dev.clevertap.net/docs/rudderstack)
-- [Segment](https://staging.docs.dev.clevertap.net/docs/segment)
+* [mParticle](https://staging.docs.dev.clevertap.net/docs/mparticle)
+* [RudderStack](https://staging.docs.dev.clevertap.net/docs/rudderstack)
+* [Segment](https://staging.docs.dev.clevertap.net/docs/segment)
