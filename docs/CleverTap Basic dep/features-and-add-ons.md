@@ -20,34 +20,34 @@ Consider the following features as part of the CleverTap for Startups basic plan
 
 You can get to know your users deeply by tracking their actions and preferences using the following features: We give you powerful tools to analyze your data to gain insights such as: 
 
-- [Boards](https://docs.clevertap.com/docs/simple-reports): In CleverTap, we have pre-built dashboards to help you answer general questions about your app usage.
-- [Funnels](https://docs.clevertap.com/docs/funnels): Funnels are defined as a series of events a user performs in a particular order. Funnels show users progress through defined paths in your app and pinpoint where they drop off between steps.
-- [Cohorts](https://docs.clevertap.com/docs/cohorts): Cohort analysis is a way to group users who are similarly based on who or what they have done and to track their behavior over time.
-- [Trends](https://docs.clevertap.com/docs/trends): Trends provide you with the capability to understand how users are using the platform.
-- [Pivots](https://docs.clevertap.com/docs/pivots): Pivots can derive significance and insights from your user data. The pivot analysis tool summarizes your data with the help of tables and other data visualizations.
-- [Flows](https://docs.clevertap.com/docs/flows): Flows can understand how a user navigates through an app, giving a broad view of the common paths users take and where they get stuck.
-- [Real impact](https://docs.clevertap.com/docs/real-impact): Real Impact is a reporting dashboard that shows how and by what extent users respond to your CleverTap marketing campaigns—everything from the revenue generated to churn.
+* [Boards](https://docs.clevertap.com/docs/simple-reports): In CleverTap, we have pre-built dashboards to help you answer general questions about your app usage.
+* [Funnels](https://docs.clevertap.com/docs/funnels): Funnels are defined as a series of events a user performs in a particular order. Funnels show users progress through defined paths in your app and pinpoint where they drop off between steps.
+* [Cohorts](https://docs.clevertap.com/docs/cohorts): Cohort analysis is a way to group users who are similarly based on who or what they have done and to track their behavior over time.
+* [Trends](https://docs.clevertap.com/docs/trends): Trends provide you with the capability to understand how users are using the platform.
+* [Pivots](https://docs.clevertap.com/docs/pivots): Pivots can derive significance and insights from your user data. The pivot analysis tool summarizes your data with the help of tables and other data visualizations.
+* [Flows](https://docs.clevertap.com/docs/flows): Flows can understand how a user navigates through an app, giving a broad view of the common paths users take and where they get stuck.
+* [Real impact](https://docs.clevertap.com/docs/real-impact): Real Impact is a reporting dashboard that shows how and by what extent users respond to your CleverTap marketing campaigns—everything from the revenue generated to churn.
 
 ## Messaging Channels
 
 CleverTap supports the following messaging channels:
 
-- [Push Notifications](https://docs.clevertap.com/docs/push)
-- [In-App](https://docs.clevertap.com/docs/in-app)
-- [App Inbox](https://docs.clevertap.com/docs/app-inbox)
-- [Native Display](https://docs.clevertap.com/docs/native-display)
-- [SMS](https://docs.clevertap.com/docs/sms)
-- [Email](https://docs.clevertap.com/docs/email)
-- [WhatsApp](https://docs.clevertap.com/docs/whatsapp)
-- [Web Push](https://docs.clevertap.com/docs/web-push)
-- [Web Pop-up](https://docs.clevertap.com/docs/web-pop-up)
-- [Web Exit Intent](https://docs.clevertap.com/docs/web-exit-intent-overview)
-- [Web Native Display](https://docs.clevertap.com/docs/web-native-display)
-- [Web Inbox](https://docs.clevertap.com/docs/web-inbox)
-- [Webhooks](https://docs.clevertap.com/docs/webhooks-overview)
+* [Push Notifications](https://docs.clevertap.com/docs/push)
+* [In-App](https://docs.clevertap.com/docs/in-app)
+* [App Inbox](https://docs.clevertap.com/docs/app-inbox)
+* [Native Display](https://docs.clevertap.com/docs/native-display)
+* [SMS](https://docs.clevertap.com/docs/sms)
+* [Email](https://docs.clevertap.com/docs/email)
+* [WhatsApp](https://docs.clevertap.com/docs/whatsapp)
+* [Web Push](https://docs.clevertap.com/docs/web-push)
+* [Web Pop-up](https://docs.clevertap.com/docs/web-pop-up)
+* [Web Exit Intent](https://docs.clevertap.com/docs/web-exit-intent-overview)
+* [Web Native Display](https://docs.clevertap.com/docs/web-native-display)
+* [Web Inbox](https://docs.clevertap.com/docs/web-inbox)
+* [Webhooks](https://docs.clevertap.com/docs/webhooks-overview)
 
 > 📘 Integrate with Email and SMS Service Providers
-> 
+>
 > You can integrate with Email and SMS service providers of your choice as part of the plan. CleverTap adds no additional charges to the plan, as the cost is settled between you and the service provider.
 
 ## Campaigns
@@ -82,28 +82,56 @@ The basic plan features and associated Add-ons are listed below:
 
 ### Behavioral Analytics
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Add-ons",
-    "h-1": "Description",
-    "h-2": "Price",
-    "0-0": "[Session Analytics](https://docs.clevertap.com/docs/session-analytics)",
-    "0-1": "Track events that are part of the same session view analytics for the number of sessions per day",
-    "0-2": "Free",
-    "1-0": "Insights",
-    "1-1": "- Get access to Pivots and Flows for better insight into data.  \n- Use Custom Formulas in Trends to analyze data.  \n- Combine events into a single [Composite Event](https://docs.clevertap.com/docs/composite-events).  \n- Advanced Cohorts features like Unbounded Retention, Custom Bracket, Custom Metrics, and Any Event.",
-    "1-2": "5% of the base plan"
-  },
-  "cols": 3,
-  "rows": 2,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Add-ons
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Price
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        [Session Analytics](https://docs.clevertap.com/docs/session-analytics)
+      </td>
+
+      <td>
+        Track events that are part of the same session view analytics for the number of sessions per day
+      </td>
+
+      <td>
+        Free
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Insights
+      </td>
+
+      <td>
+        * Get access to Pivots and Flows for better insight into data.  
+        * Use Custom Formulas in Trends to analyze data.  
+        * Combine events into a single [Composite Event](https://docs.clevertap.com/docs/composite-events).  
+        * Advanced Cohorts features like Unbounded Retention, Custom Bracket, Custom Metrics, and Any Event.
+      </td>
+
+      <td>
+        5% of the base plan
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Messaging Channels
 
@@ -120,25 +148,42 @@ The basic plan features and associated Add-ons are listed below:
 
 ### Lifecycle Optimization
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Add-on",
-    "h-1": "Description",
-    "h-2": "Price",
-    "0-0": "Lifecycle Optimizer",
-    "0-1": "CleverTap Lifecycle Optimizer provides you with a guided and end-to-end solution for your retention flow. Lifecycle optimizer enables you to:  \n- Define lifecycle stages to understand users  \n- Connect with users to influence movement into the next stage.",
-    "0-2": "10% of the base plan"
-  },
-  "cols": 3,
-  "rows": 1,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Add-on
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Price
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Lifecycle Optimizer
+      </td>
+
+      <td>
+        CleverTap Lifecycle Optimizer provides you with a guided and end-to-end solution for your retention flow. Lifecycle optimizer enables you to:  
+
+        * Define lifecycle stages to understand users  
+        * Connect with users to influence movement into the next stage.
+      </td>
+
+      <td>
+        10% of the base plan
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Segmentation
 
@@ -148,25 +193,40 @@ The basic plan features and associated Add-ons are listed below:
 
 ### Individualization
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Add-on",
-    "h-1": "Description",
-    "h-2": "Price",
-    "0-0": "[Geofencing](https://docs.clevertap.com/docs/geofencing)",
-    "0-1": "- GPS location-based service that customers can use to engage their audience by sending relevant messages to Android and iOS users.  \n  \n- Users can define geofences on the CleverTap dashboard and trigger campaigns in real-time as users enter and exit them around the world. Read more details about Geofencing.",
-    "0-2": "5% of the base plan"
-  },
-  "cols": 3,
-  "rows": 1,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Add-on
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Price
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        [Geofencing](https://docs.clevertap.com/docs/geofencing)
+      </td>
+
+      <td>
+        * GPS location-based service that customers can use to engage their audience by sending relevant messages to Android and iOS users.  
+        * Users can define geofences on the CleverTap dashboard and trigger campaigns in real-time as users enter and exit them around the world. Read more details about Geofencing.
+      </td>
+
+      <td>
+        5% of the base plan
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Data Management
 
