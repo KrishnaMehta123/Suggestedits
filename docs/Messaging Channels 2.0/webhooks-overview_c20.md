@@ -30,32 +30,107 @@ CleverTap webhooks enable you to pass user information basis on specific busines
 For example, when a high-value transaction is abandoned on your e-commerce website, you can send details about the abandoned products and user details via a webhook campaign to your operations center.
 
 There are six categories of webhooks that you can create. The table below describes each of those categories.
-[block:parameters]
-{
-  "data": {
-    "h-0": "Type",
-    "h-1": "Description",
-    "h-2": "Example",
-    "0-0": "Single action",
-    "1-0": "Actions",
-    "2-0": "Inaction within time",
-    "3-0": "Inaction",
-    "4-0": "Date time property",
-    "5-0": "Actions with user properties",
-    "5-1": "Performed an action or not, filtered by their demographic properties.",
-    "4-1": "Period of time after a date time property on a user event.",
-    "3-1": "Users performed an action, but did not perform another action.",
-    "2-1": "User performed an action, but does not perform another action within a certain time.",
-    "1-1": "User performed multiple actions.",
-    "0-1": "User performed an action.",
-    "0-2": "User launched the app.",
-    "1-2": "User launched the app and viewed a notification.",
-    "2-2": "User has not launched the app in three days.",
-    "3-2": "User launched the app, but did not view a notification.",
-    "4-2": "User purchased an item and three days have passed.",
-    "5-2": "User purchased an item and lives in Canada."
-  },
-  "cols": 3,
-  "rows": 6
-}
-[/block]
+
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Type
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Example
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Single action
+      </td>
+
+      <td>
+        User performed an action.
+      </td>
+
+      <td>
+        User launched the app.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Actions
+      </td>
+
+      <td>
+        User performed multiple actions.
+      </td>
+
+      <td>
+        User launched the app and viewed a notification.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Inaction within time
+      </td>
+
+      <td>
+        User performed an action, but does not perform another action within a certain time.
+      </td>
+
+      <td>
+        User has not launched the app in three days.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Inaction
+      </td>
+
+      <td>
+        Users performed an action, but did not perform another action.
+      </td>
+
+      <td>
+        User launched the app, but did not view a notification.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Date time property
+      </td>
+
+      <td>
+        Period of time after a date time property on a user event.
+      </td>
+
+      <td>
+        User purchased an item and three days have passed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Actions with user properties
+      </td>
+
+      <td>
+        Performed an action or not, filtered by their demographic properties.
+      </td>
+
+      <td>
+        User purchased an item and lives in Canada.
+      </td>
+    </tr>
+  </tbody>
+</Table>
