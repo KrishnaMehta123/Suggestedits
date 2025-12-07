@@ -28,7 +28,7 @@ Push notifications enable you to communicate with your users when they are not i
 
 ### [In-App Messages](doc:in-app)
 
-In-app messages are pop-up messages that are shown to the user while they are in your app. While the user views push notifications outside the app, in-app notifications are viewed inside the app.  
+In-app messages are pop-up messages that are shown to the user while they are in your app. While the user views push notifications outside the app, in-app notifications are viewed inside the app.\
 In-app notifications are great for showing contextual messages, such as discount offers while the user is within the app or communicating with users who have turned off push notifications.
 
 ### [App Inbox](doc:app-inbox)
@@ -83,122 +83,197 @@ SMS notifications enable you to send short communications to your users, such as
 
 # Campaigns Operations
 
-You can perform different actions on the campaigns from the _All Campaigns_ page. Each operation is discussed briefly in the sections to follow.
+You can perform different actions on the campaigns from the *All Campaigns* page. Each operation is discussed briefly in the sections to follow.
 
 ## Filter Campaigns
 
 You can quickly search your campaigns by applying the required filters. To do so: 
 
-1. Navigate to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
+1. Navigate to *Messages* > *Campaigns* from the CleverTap dashboard. The *All Campaigns* page opens.
 2. Click the ![](https://files.readme.io/ac0ed6a-Filter_icon.png) icon. The Filter Campaigns window opens on the right side of the screen.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fbf5087fbe1294fd42ffd5cb82fd3af9a700ac6acf9d276225ad5365e6fc93ce-Filter_Campaigns.png",
-        "Click the Filter icon to filter campaigns",
-        "Filter Campaigns"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filter Campaigns"
-    }
-  ]
-}
-[/block]
-
+<Image title="Click the Filter icon to filter campaigns" alt="Filter Campaigns" align="center" border={true} src="https://files.readme.io/fbf5087fbe1294fd42ffd5cb82fd3af9a700ac6acf9d276225ad5365e6fc93ce-Filter_Campaigns.png">
+  Filter Campaigns
+</Image>
 
 3. Select from the following filters and click **Apply**:
 
-   - **Channel**: Filters based on the type of the type of messaging channel used. The following are the available options: Email, SMS, Push Notifications, Mobile In-app, Web, Audiences, Web Push, Webhooks, Google Ads,  App Inbox, WhatsApp, Partner, Native Display, and Web Native Display.
-   - **Type**: Filters based on the type of campaign. The campaign can be a Single Message, A/B Test, or Message on user property type of campaign. 
-   - **Status**: Filters campaign based on the current status of the campaign. The following are the possible statuses: Scheduled, Running, Stopped, Completed, Draft, Awaiting Next Run, Approval Pending, and Rejected.  
-     <br />
+   * **Channel**: Filters based on the type of the type of messaging channel used. The following are the available options: Email, SMS, Push Notifications, Mobile In-app, Web, Audiences, Web Push, Webhooks, Google Ads,  App Inbox, WhatsApp, Partner, Native Display, and Web Native Display.
+   * **Type**: Filters based on the type of campaign. The campaign can be a Single Message, A/B Test, or Message on user property type of campaign. 
+   * **Status**: Filters campaign based on the current status of the campaign. The following are the possible statuses: Scheduled, Running, Stopped, Completed, Draft, Awaiting Next Run, Approval Pending, and Rejected.\ <br />
 
-   [block:parameters]{"data":{"h-0":"Status","h-1":"Past Behavior Campaign","h-2":"Live Campaign","0-0":"Draft","0-1":"If you create and save a campaign but do not publish it, the campaign state changes to Draft.","0-2":"If you create and save a campaign but do not publish it, the campaign state changes to Draft.","1-0":"Approval Pending","1-1":"For Campaigns with Creator Approver Workflow, if the creator creates/edits the campaign and publishes it, the campaign state changes to Approval Pending.","1-2":"For Campaigns with Creator Approver Workflow, if the creator creates/edits the campaign and publishes it, the campaign state changes to Approval Pending.","2-0":"Scheduled","2-1":"For scheduled one-time campaigns, the campaign state changes to Scheduled after publishing the campaign. For scheduled recurring campaigns, if you select the Send Now option and publish the campaign, the campaign state changes to Scheduled. If you select the Schedule Later option for scheduled recurring campaigns, the campaign state changes to Scheduled until it is picked up for the first run. For Campaigns with Creator Approver Workflow, if the approver approves the campaign before the start time, the campaign state changes to Scheduled.","2-2":"For Campaigns with Creator Approver Workflow, if the approver approves the campaign before the start time, the campaign state changes to Scheduled.","3-0":"Running","3-1":"When the campaign starts executing after the start time, the campaign state changes to Running.  \nFor scheduled recurring campaigns with Creator Approver Workflow, if the campaign is edited while waiting for the run, the campaign state changes to Running.","3-2":"If you select the _Send Now_ option and publish the campaign, the campaign state changes to Running.  \nIf you select the _Schedule Later_ option and publish the campaign, the campaign state changes to Running after the campaign start time. For Campaigns with Creator Approver Workflow, if the approver approves the campaign on time, the campaign state changes to Running after the campaign start time.","4-0":"Awaiting Next Run","4-1":"For Scheduled recurring campaigns, the campaign state changes to Awaiting Next Run when the campaign is waiting for the next run to begin.","4-2":"NA","5-0":"Rejected","5-1":"For Campaigns with Creator Approver Workflow, if the approver rejects the campaign, the campaign state changes to Rejected.","5-2":"For Campaigns with Creator Approver Workflow, if the approver rejects the campaign, the campaign state changes to Rejected.","6-0":"Completed ","6-1":"When campaign runs are completed after publishing, the campaign state changes to Complete.","6-2":"When campaign runs are completed after publishing, the campaign state changes to Completed.","7-0":"Stopped","7-1":"When you stop a running campaign from the dashboard, the campaign state changes to Stopped.","7-2":"NA"},"cols":3,"rows":8,"align":["left","left","left"]}[/block]
+   <Table align={["left","left","left"]}>
+     <thead>
+       <tr>
+         <th style={{ textAlign: "left" }}>
+           Status
+         </th>
 
-   - **Created by:** Filters based on the email ID of the person who created the campaign.
-   - **Label**: Filters based on the labels assigned to the campaigns.
-   - **Delivery**: Filters based on the delivery type of the campaign. The following are the available options: One Time, Inaction, Action, On a date/time, Recurring, API, and Multiple Date.
+         <th style={{ textAlign: "left" }}>
+           Past Behavior Campaign
+         </th>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/80bdbc6-Apply_Campaign_Filter.gif",
-        null,
-        "Apply Campaign Filters"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Apply Campaign Filters"
-    }
-  ]
-}
-[/block]
+         <th style={{ textAlign: "left" }}>
+           Live Campaign
+         </th>
+       </tr>
+     </thead>
 
+     <tbody>
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Draft
+         </td>
 
-All the campaigns that meet the criteria are listed under the _All Campaigns_ page. Also, you can save the filter by clicking the _Save Filter_ link.
+         <td style={{ textAlign: "left" }}>
+           If you create and save a campaign but do not publish it, the campaign state changes to Draft.
+         </td>
 
-You can also apply quick filters from the top of the _All Campaigns_ page.
+         <td style={{ textAlign: "left" }}>
+           If you create and save a campaign but do not publish it, the campaign state changes to Draft.
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Approval Pending
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For Campaigns with Creator Approver Workflow, if the creator creates/edits the campaign and publishes it, the campaign state changes to Approval Pending.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For Campaigns with Creator Approver Workflow, if the creator creates/edits the campaign and publishes it, the campaign state changes to Approval Pending.
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Scheduled
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For scheduled one-time campaigns, the campaign state changes to Scheduled after publishing the campaign. For scheduled recurring campaigns, if you select the Send Now option and publish the campaign, the campaign state changes to Scheduled. If you select the Schedule Later option for scheduled recurring campaigns, the campaign state changes to Scheduled until it is picked up for the first run. For Campaigns with Creator Approver Workflow, if the approver approves the campaign before the start time, the campaign state changes to Scheduled.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For Campaigns with Creator Approver Workflow, if the approver approves the campaign before the start time, the campaign state changes to Scheduled.
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Running
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           When the campaign starts executing after the start time, the campaign state changes to Running.\
+           For scheduled recurring campaigns with Creator Approver Workflow, if the campaign is edited while waiting for the run, the campaign state changes to Running.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           If you select the *Send Now* option and publish the campaign, the campaign state changes to Running.\
+           If you select the *Schedule Later* option and publish the campaign, the campaign state changes to Running after the campaign start time. For Campaigns with Creator Approver Workflow, if the approver approves the campaign on time, the campaign state changes to Running after the campaign start time.
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Awaiting Next Run
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For Scheduled recurring campaigns, the campaign state changes to Awaiting Next Run when the campaign is waiting for the next run to begin.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           NA
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Rejected
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For Campaigns with Creator Approver Workflow, if the approver rejects the campaign, the campaign state changes to Rejected.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           For Campaigns with Creator Approver Workflow, if the approver rejects the campaign, the campaign state changes to Rejected.
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Completed 
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           When campaign runs are completed after publishing, the campaign state changes to Complete.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           When campaign runs are completed after publishing, the campaign state changes to Completed.
+         </td>
+       </tr>
+
+       <tr>
+         <td style={{ textAlign: "left" }}>
+           Stopped
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           When you stop a running campaign from the dashboard, the campaign state changes to Stopped.
+         </td>
+
+         <td style={{ textAlign: "left" }}>
+           NA
+         </td>
+       </tr>
+     </tbody>
+   </Table>
+
+   * **Created by:** Filters based on the email ID of the person who created the campaign.
+   * **Label**: Filters based on the labels assigned to the campaigns.
+   * **Delivery**: Filters based on the delivery type of the campaign. The following are the available options: One Time, Inaction, Action, On a date/time, Recurring, API, and Multiple Date.
+
+<Image alt="Apply Campaign Filters" align="center" border={true} src="https://files.readme.io/80bdbc6-Apply_Campaign_Filter.gif">
+  Apply Campaign Filters
+</Image>
+
+All the campaigns that meet the criteria are listed under the *All Campaigns* page. Also, you can save the filter by clicking the *Save Filter* link.
+
+You can also apply quick filters from the top of the *All Campaigns* page.
 
 ## Archive Campaigns
 
 Archiving campaigns helps to keep your CleverTap account organized and clutter-free, making it easy to find and view the campaigns you want. To do so:
 
-1. Navigate to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
+1. Navigate to *Messages* > *Campaigns* from the CleverTap dashboard. The *All Campaigns* page opens.
 2. Select the campaigns you may want to archive and click the ![](https://files.readme.io/b46b84b-Archive_icon.png) icon.
 3. Click **Save** to archive the selected campaigns or click **Cancel** to undo the action.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/65f3a7d89e189d529f8e9017160947cf6ca85a38901927ebc060e9984b47aa9a-Archive_Campaigns.gif",
-        null,
-        "Archive Selected Campaigns"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Archive Selected Campaigns"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Archive Selected Campaigns" align="center" border={true} src="https://files.readme.io/65f3a7d89e189d529f8e9017160947cf6ca85a38901927ebc060e9984b47aa9a-Archive_Campaigns.gif">
+  Archive Selected Campaigns
+</Image>
 
 > 📘 Note
-> 
-> Toggle the _Archive Campaigns_ option to veiw the archived campaigns.
+>
+> Toggle the *Archive Campaigns* option to veiw the archived campaigns.
 
 ## Stop Campaigns
 
 You may want to stop a particular campaign after monitoring and evaluating its efficacy. To do so:
 
-1. Navigate to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
+1. Navigate to *Messages* > *Campaigns* from the CleverTap dashboard. The *All Campaigns* page opens.
 2. Select the running campaigns you may want to stop and click the ![](https://files.readme.io/c2fcde8-Stop_icon.png) icon.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e4ba1596611e5ec12b7ce1d2ba899ca33952b7a70206a9e9f9a193427fa73e1b-Stop_Campaigns.png",
-        null,
-        "Stop Selected Campaigns"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Stop Selected Campaigns"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Stop Selected Campaigns" align="center" border={true} src="https://files.readme.io/e4ba1596611e5ec12b7ce1d2ba899ca33952b7a70206a9e9f9a193427fa73e1b-Stop_Campaigns.png">
+  Stop Selected Campaigns
+</Image>
 
 3. Click **Save** to archive the selected campaigns or click **Cancel** to undo the action.
 
@@ -206,27 +281,12 @@ You may want to stop a particular campaign after monitoring and evaluating its e
 
 Cloning a campaign helps to create a new campaign from an already existing campaign with minor or no modifications. To do so:
 
-1. Navigate to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
+1. Navigate to *Messages* > *Campaigns* from the CleverTap dashboard. The *All Campaigns* page opens.
 2. Select the running campaigns you may want to clone and click the ![](https://files.readme.io/e6ac3e4-Clone_icon.png) icon.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9d6d2ad-Clone_Campaigns.png",
-        "",
-        "Clone Selected Campaign"
-      ],
-      "align": "center",
-      "sizing": "85% ",
-      "border": true,
-      "caption": "Clone Selected Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Clone Selected Campaign" align="center" width="85% " border={true} src="https://files.readme.io/9d6d2ad-Clone_Campaigns.png">
+  Clone Selected Campaign
+</Image>
 
 3. Click **Save** to archive the selected campaigns or click **Cancel** to undo the action.
 
@@ -238,22 +298,7 @@ Campaign Reports include the channel, delivery status, and key statistics to ass
 
 Use quick filters to isolate campaigns of interest and the email report option to deliver a CSV file to your inbox that includes all the information in the table.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7687a1e2d0fb8b12e136e6a60993757456de75c46e651dbda3485525c5fcd1b5-Subscribe_to_Reports.gif",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/7687a1e2d0fb8b12e136e6a60993757456de75c46e651dbda3485525c5fcd1b5-Subscribe_to_Reports.gif" />
 
 For more information about these reports, refer to [Campaign Reports](doc:campaign-reports).
 
@@ -261,29 +306,15 @@ For more information about these reports, refer to [Campaign Reports](doc:campai
 
 Message Labels enable you to categorize campaigns with descriptive names or themes, facilitating the grouping and analysis of campaign performance and user behavior.
 
-For instance, you can create a label such as _Onboarding_ to categorize campaigns related to new user onboarding across all channels. Alternatively, a label such as _Re-engage_ can be used for campaigns aimed at re-engaging inactive users. Similarly, a label such as _Score Updates_ can be applied to notifications providing match updates.
+For instance, you can create a label such as *Onboarding* to categorize campaigns related to new user onboarding across all channels. Alternatively, a label such as *Re-engage* can be used for campaigns aimed at re-engaging inactive users. Similarly, a label such as *Score Updates* can be applied to notifications providing match updates.
 
-Labels can be created under the _Message Settings_ menu, allowing for the creation of multiple labels simultaneously. The labels cannot start with or contain the following symbols: ”, \, %, >, \<, and !.
+Labels can be created under the *Message Settings* menu, allowing for the creation of multiple labels simultaneously. The labels cannot start with or contain the following symbols: ”, \, %, >, \<, and !.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f9cd0350976bbbb7452a822ff49fc74ccbdfe2ff3fdde71476a1b352e7aafc5b-Apply_Labels_to_Campaigns.gif",
-        null,
-        "Create Multiple Message Labels"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Multiple Message Labels"
-    }
-  ]
-}
-[/block]
+<Image alt="Create Multiple Message Labels" align="center" border={true} src="https://files.readme.io/f9cd0350976bbbb7452a822ff49fc74ccbdfe2ff3fdde71476a1b352e7aafc5b-Apply_Labels_to_Campaigns.gif">
+  Create Multiple Message Labels
+</Image>
 
-
-You can create a maximum of 900 labels on the CleverTap dashboard. Labels can be applied to individual campaigns during creation or using the _Edit Campaign_ option from the _All Campaigns_ page.
+You can create a maximum of 900 labels on the CleverTap dashboard. Labels can be applied to individual campaigns during creation or using the *Edit Campaign* option from the *All Campaigns* page.
 
 ## Segments and Message Labels
 
@@ -291,21 +322,8 @@ One of the more powerful uses of Labels is the combination with CleverTap Segmen
 
 Then from our Find People, Create Segment, or any other Analytics feature, you can isolate users who have been sent a messaging campaign with a particular Label.
 
-For example, you may want to see the 30-day retention of users who were sent Onboarding messages to judge whether these messages were having an impact. After creating a label called _Onboarding_ and associating it with all the relevant campaigns, you can create a new segment and then filter your cohort analysis for 30-day retention to isolate the performance of only these users.
+For example, you may want to see the 30-day retention of users who were sent Onboarding messages to judge whether these messages were having an impact. After creating a label called *Onboarding* and associating it with all the relevant campaigns, you can create a new segment and then filter your cohort analysis for 30-day retention to isolate the performance of only these users.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b961bc7-Filter_by_Users.png",
-        "Campaign optimization using Segments and Message Labels.",
-        1404
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Segments and Message Labels"
-    }
-  ]
-}
-[/block]
+<Image title="Campaign optimization using Segments and Message Labels." alt={1404} align="center" border={true} src="https://files.readme.io/b961bc7-Filter_by_Users.png">
+  Segments and Message Labels
+</Image>
