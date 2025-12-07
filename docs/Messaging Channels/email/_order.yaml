@@ -2,3 +2,4 @@
 - create-message-email
 - create-message-custom-headers-without-sendtest
 - email-editor-templates
+- version-management
