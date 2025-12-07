@@ -2,3 +2,4 @@
 - data-export-to-aws-s3
 - aws-s3_iam-policy
 - configure-aws-s3
+- bigquery-export
