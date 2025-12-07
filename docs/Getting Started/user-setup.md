@@ -18,20 +18,4 @@ For more information, refer to [Invite Team Members](https://docs.clevertap.com/
 
 ![This is sample Alt Text for Readme. Lets test it out](https://files.readme.io/a530f5c-Intellinode_Goal.png)
 
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a530f5c-Intellinode_Goal.png",
-        "Intellinode Goal.png",
-        1000,
-        818,
-        "#000000"
-      ]
-    }
-  ]
-}
-[/block]
+![1000](https://files.readme.io/a530f5c-Intellinode_Goal.png "Intellinode Goal.png")
