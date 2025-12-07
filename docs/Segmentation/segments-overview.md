@@ -16,10 +16,10 @@ Segments are an essential tool for businesses to understand and engage their cus
 
 This section gives an overview of the following topics:
 
-- [Segmentation Criteria](https://docs.clevertap.com/docs/segments-overview#segmentation-criteria)
-- [Types of Segments](https://docs.clevertap.com/docs/segments-overview#types-of-segments)
-- [Find People](https://docs.clevertap.com/docs/segments-overview#find-people)
-- [RFM Analysis](https://docs.clevertap.com/docs/segments-overview#rfm-analysis)
+* [Segmentation Criteria](https://docs.clevertap.com/docs/segments-overview#segmentation-criteria)
+* [Types of Segments](https://docs.clevertap.com/docs/segments-overview#types-of-segments)
+* [Find People](https://docs.clevertap.com/docs/segments-overview#find-people)
+* [RFM Analysis](https://docs.clevertap.com/docs/segments-overview#rfm-analysis)
 
 # Segmentation Criteria
 
@@ -45,9 +45,9 @@ Predictive segments use machine learning algorithms to identify groups of users 
 
 There are three types of segments in CleverTap:
 
-- [Past Behavior Segments](doc:segments-overview#past-behavior-segments)
-- [Live User Segments](doc:segments-overview#live-user-segments)
-- [Custom List Segments](doc:segments-overview#custom-list-segments)
+* [Past Behavior Segments](doc:segments-overview#past-behavior-segments)
+* [Live User Segments](doc:segments-overview#live-user-segments)
+* [Custom List Segments](doc:segments-overview#custom-list-segments)
 
 ## Past Behavior Segments
 
@@ -75,8 +75,8 @@ RFM analysis is a marketing technique that uses Recency, Frequency, and Monetary
 
 CleverTap provides an RFM analysis feature in its dashboard. The RFM analysis in CleverTap enables businesses to segment their customers into groups based on their behavior.
 
-- **Recency**: This refers to the amount of time since a customer's last interaction with your business. Customers who have interacted with your business recently are more likely to be engaged and loyal.
-- **Frequency**: This refers to the number of times a customer has interacted with your business over a specific period. Customers who have interacted with your business more frequently are more likely to be loyal.
-- **Monetary value**: This refers to the amount of money a customer has spent on your products or services. Customers who have spent more money are more valuable to your business.
+* **Recency**: This refers to the amount of time since a customer's last interaction with your business. Customers who have interacted with your business recently are more likely to be engaged and loyal.
+* **Frequency**: This refers to the number of times a customer has interacted with your business over a specific period. Customers who have interacted with your business more frequently are more likely to be loyal.
+* **Monetary value**: This refers to the amount of money a customer has spent on your products or services. Customers who have spent more money are more valuable to your business.
 
 Using the RFM analysis feature in CleverTap, businesses can create segments of customers based on their behavior, such as loyal customers, high spenders, and dormant customers. These segments can then be used to create targeted campaigns, such as personalized offers, to increase engagement and retention. For more information, refer to [RFM Analysis](https://docs.clevertap.com/docs/rfm).
