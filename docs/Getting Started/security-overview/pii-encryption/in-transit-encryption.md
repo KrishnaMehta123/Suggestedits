@@ -17,18 +17,18 @@ PII Encryption for API provides an additional security layer for customers who n
 The feature preserves existing API behavior, constraints, and performance expectations while adding optional payload-level encryption for customers operating in highly regulated or security-sensitive environments.
 
 > 📘 **Private Beta**
-> 
+>
 > This feature is available in Private Beta. To enable PII Encryption for API on your account, contact your Customer Success Manager.
 
 ## Capabilities of PII Encryption for API
 
 With HPKE-based encryption, you can do the following:
 
-- Protect sensitive values at the payload level in addition to TLS.
-- Send encrypted binary request bodies to any CleverTap API.
-- Receive encrypted API responses when requested.
-- Manage your own public keysets and rotate keys securely.
-- Maintain full compatibility with existing API workflows, without modifying request or response schemas.
+* Protect sensitive values at the payload level in addition to TLS.
+* Send encrypted binary request bodies to any CleverTap API.
+* Receive encrypted API responses when requested.
+* Manage your own public keysets and rotate keys securely.
+* Maintain full compatibility with existing API workflows, without modifying request or response schemas.
 
 Encryption applies only to data in transit. No changes occur to API rate limits, payload size limits, throttling rules, or existing functionality.
 
@@ -72,7 +72,7 @@ Encryption is optional. Encrypted and plaintext requests can coexist until you c
 
 # Request and Response Lifecycle
 
-1. The client encrypts the request payload using its HPKE public key.  
+1. The client encrypts the request payload using its HPKE public key.\
    The encrypted payload is sent as raw bytes with the HPKE content type.
 
 2. CleverTap decrypts the payload using the customer’s registered HPKE keyset.
@@ -89,9 +89,9 @@ Customers manage their own public keysets for request decryption and can rotate 
 
 When a public keyset is uploaded:
 
-- CleverTap validates the keyset immediately.
-- Only supported, well-formed HPKE public keysets are accepted.
-- A validated keyset is stored securely and associated with the customer account.
+* CleverTap validates the keyset immediately.
+* Only supported, well-formed HPKE public keysets are accepted.
+* A validated keyset is stored securely and associated with the customer account.
 
 Malformed or unsupported keys are rejected during the upload process.
 
@@ -99,18 +99,18 @@ Malformed or unsupported keys are rejected during the upload process.
 
 CleverTap generates its response-encryption keyset using standard TINK formats.
 
-- The public key is available for customers to download and use when decrypting encrypted responses.
-- The private key is stored only in encrypted form within secure storage.
+* The public key is available for customers to download and use when decrypting encrypted responses.
+* The private key is stored only in encrypted form within secure storage.
 
 ## Key Rotation Behavior
 
 Key rotation is supported without downtime.
 
-- At any given time, CleverTap retains two active keys for a customer:
+* At any given time, CleverTap retains two active keys for a customer:
 
-  - Primary key
-  - Previous key
-- Decryption attempts always try the Primary key first, then fall back to the Previous key.
+  * Primary key
+  * Previous key
+* Decryption attempts always try the Primary key first, then fall back to the Previous key.
 
 This behavior ensures that in-flight encrypted requests continue to succeed during rotation.
 
@@ -133,10 +133,10 @@ All encrypted request bodies must be binary byte streams, not JSON and not Base6
 
 If decryption fails, CleverTap returns structured error responses with clear error codes. Failures may result from:
 
-- Invalid ciphertext
-- Unsupported or missing encryption headers
-- Decryption errors such as key mismatch
-- Unsupported content types
+* Invalid ciphertext
+* Unsupported or missing encryption headers
+* Decryption errors such as key mismatch
+* Unsupported content types
 
 Error messages never include sensitive data or decrypted content.
 
@@ -146,9 +146,9 @@ Customers that fully migrate to encrypted flows can choose to enforce encryption
 
 When enforcement is enabled for an account:
 
-- APIs reject all plaintext requests.
-- Only requests using the HPKE headers are accepted.
-- Responses remain encrypted when the HPKE Accept header is present.
+* APIs reject all plaintext requests.
+* Only requests using the HPKE headers are accepted.
+* Responses remain encrypted when the HPKE Accept header is present.
 
 Enforcement is configurable per customer account.
 
@@ -156,8 +156,8 @@ Enforcement is configurable per customer account.
 
 This capability is controlled as follows:
 
-- A feature flag must be enabled for the customer account.
-- An associated billing entitlement must be active.
+* A feature flag must be enabled for the customer account.
+* An associated billing entitlement must be active.
 
 If the feature or entitlement is not enabled, the APIs continue to function normally without encryption.
 
@@ -167,21 +167,21 @@ PII Encryption for API enhances data protection for regulated environments and c
 
 The security properties include:
 
-- Payload encryption using industry-standard HPKE
-- Transport encryption using HTTPS/TLS
-- Encrypted storage of all private keys
-- No logging of sensitive data or decrypted content
-- Preservation of existing authentication and authorization models
+* Payload encryption using industry-standard HPKE
+* Transport encryption using HTTPS/TLS
+* Encrypted storage of all private keys
+* No logging of sensitive data or decrypted content
+* Preservation of existing authentication and authorization models
 
 # API Behavior and Limitations
 
 PII Encryption for API does not change any existing API constraints.
 
-- API schemas remain the same.
-- Payload size limits are unchanged.
-- Batch size and ingestion limits remain unchanged.
-- Rate limits and throttling continue to apply.
-- Timeout behavior remains unchanged.
+* API schemas remain the same.
+* Payload size limits are unchanged.
+* Batch size and ingestion limits remain unchanged.
+* Rate limits and throttling continue to apply.
+* Timeout behavior remains unchanged.
 
 Encryption operates strictly as an additional security layer.
 
@@ -189,9 +189,9 @@ Encryption operates strictly as an additional security layer.
 
 CleverTap logs non-sensitive key-related events for traceability, such as:
 
-- Key uploads
-- Validation outcomes
-- Key rotations
+* Key uploads
+* Validation outcomes
+* Key rotations
 
 No cryptographic material, decrypted content, or PII appears in logs.
 
@@ -203,20 +203,20 @@ This section outlines the operational guarantees, performance characteristics, a
 
 The encryption layer is designed to operate without affecting existing service performance or uptime guarantees.
 
-- Performance remains in line with existing API SLAs.
-- Encrypted traffic continues to use HTTPS/TLS in addition to HPKE.
-- No additional SLA commitments exist specifically for encryption.
+* Performance remains in line with existing API SLAs.
+* Encrypted traffic continues to use HTTPS/TLS in addition to HPKE.
+* No additional SLA commitments exist specifically for encryption.
 
 ## Fair Usage Policy Alignment
 
 The introduction of payload-level encryption does not modify or add to any existing usage policies.
 
-- Existing fair usage policies continue to apply.
-- No encryption-specific FUP rules are introduced.
+* Existing fair usage policies continue to apply.
+* No encryption-specific FUP rules are introduced.
 
 ## Reliability, RTO and RPO Alignment
 
 The encryption layer follows the same reliability and disaster recovery objectives as the underlying API platform.
 
-- Encryption shares the same RTO and RPO targets as the API platform.
-- No separate disaster recovery expectations exist specifically for encryption.
+* Encryption shares the same RTO and RPO targets as the API platform.
+* No separate disaster recovery expectations exist specifically for encryption.
