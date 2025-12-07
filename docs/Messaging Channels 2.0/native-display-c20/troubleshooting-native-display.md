@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-<<<@checked FAQs. No specific FAQ for native display available as of now. Will be added later. >>
+\<\<\<@checked FAQs. No specific FAQ for native display available as of now. Will be added later. >>
