@@ -1,3 +1,4 @@
 - data-warehouse-import
 - snowflake-configuration
 - create-snowflake-import
+- map-data-for-snowflake-import
