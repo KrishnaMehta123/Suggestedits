@@ -18,46 +18,18 @@ This section covers two ways to send test notifications in operations and test p
 
 The test notification can be sent during the campaign creation. 
 
-Once you are all done setting up the content of your campaign in the _What_ section, you have the option to send a test push notification to any CleverTap user profile you have marked as a _Test profile_.  
+Once you are all done setting up the content of your campaign in the *What* section, you have the option to send a test push notification to any CleverTap user profile you have marked as a *Test profile*.\
 Click the **Preview & Test** button from the message editor to test a message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a9f309e-push_test_notification.png",
-        "Send Test Push to Profiles",
-        836
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Notification Preview and Test"
-    }
-  ]
-}
-[/block]
+<Image title="Send Test Push to Profiles" alt={836} align="center" border={true} src="https://files.readme.io/a9f309e-push_test_notification.png">
+  Notification Preview and Test
+</Image>
 
+In the second approach, you can initiate *Send Push* for the required device to send test push notifications to the user on a specific user profile page. 
 
-In the second approach, you can initiate _Send Push_ for the required device to send test push notifications to the user on a specific user profile page. 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4bd5d33-2.png",
-        "Delivered Test Push Details",
-        1999
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Push Notifications to Specific Users"
-    }
-  ]
-}
-[/block]
-
+<Image title="Delivered Test Push Details" alt={1999} align="center" border={true} src="https://files.readme.io/4bd5d33-2.png">
+  Push Notifications to Specific Users
+</Image>
 
 # Send Test Notifications with Multiple Logins
 
