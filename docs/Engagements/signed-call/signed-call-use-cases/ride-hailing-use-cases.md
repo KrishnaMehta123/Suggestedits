@@ -36,7 +36,7 @@ The ride-hailing business is experiencing innovation at an incredible pace, and 
 
 # Use Case 4
 
-**Challenge** - A user wants to raise a complaint or query about a past ride. The user decides to submit a callback request. After receiving the call, the user must set the context (I am XYZ, phone number 123, had booked a cab today morning, and so on) before asking for help from the customer care executive.  
+**Challenge** - A user wants to raise a complaint or query about a past ride. The user decides to submit a callback request. After receiving the call, the user must set the context (I am XYZ, phone number 123, had booked a cab today morning, and so on) before asking for help from the customer care executive.\
 Users often have to repeat their problems, which consumes their valuable time. This increases the resolution time.
 
 **Solution** - With the CleverTap Signed Call feature, a user can communicate by requesting a free in-app voice call to customer care and providing a fully-personalized context before the actual communication begins. This paves the way for a speedy resolution of the issue, thereby elevating the user experience.
