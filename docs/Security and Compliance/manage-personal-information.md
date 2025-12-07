@@ -18,15 +18,15 @@ Personally Identifiable Information (**PII**) is any data that can identify an i
 
 PII may include the following:
 
-- Name
-- Address
-- Email
-- Telephone Number
-- Date of Birth
-- Passport Number
-- Fingerprint
-- Credit or Debit Card Number
-- Social Security Number
+* Name
+* Address
+* Email
+* Telephone Number
+* Date of Birth
+* Passport Number
+* Fingerprint
+* Credit or Debit Card Number
+* Social Security Number
 
 CleverTap does not automatically collect PII information, such as usernames, advertising identifiers, email addresses, mailing addresses, phone numbers, precise locations (such as GPS coordinates of four decimal places or more), etc. PII data must be explicitly pushed to CleverTap for it to be collected.
 
@@ -34,12 +34,12 @@ CleverTap does not automatically collect PII information, such as usernames, adv
 
 To manage PII for end-users, you may use any or a combination of the following practices:
 
-- [Mask PII](doc:manage-personal-information#mask-pii)
-- [Encrypt PII](doc:manage-personal-information#encrypt-pii) 
-- [Audit Your Integration](doc:manage-personal-information#audit-your-integration)
-- [Use Non-PII Identifiers](doc:manage-personal-information#use-non-pii-identifiers)
-- [Use Server-Side Implementation](doc:manage-personal-information#use-server-side-implementation)
-- [Track Malicious Users](doc:manage-personal-information#track-malicious-users)
+* [Mask PII](doc:manage-personal-information#mask-pii)
+* [Encrypt PII](doc:manage-personal-information#encrypt-pii) 
+* [Audit Your Integration](doc:manage-personal-information#audit-your-integration)
+* [Use Non-PII Identifiers](doc:manage-personal-information#use-non-pii-identifiers)
+* [Use Server-Side Implementation](doc:manage-personal-information#use-server-side-implementation)
+* [Track Malicious Users](doc:manage-personal-information#track-malicious-users)
 
 ## Mask PII
 
@@ -53,35 +53,21 @@ CleverTap implements encryption to safeguard data through a two-step process uti
 
 PII encryption enables the following:
 
-- Protects customer data against potential security breaches by adding an extra encryption layer.
-- Ensures accountability and privacy since CleverTap employees' access to customer data is tracked.
+* Protects customer data against potential security breaches by adding an extra encryption layer.
+* Ensures accountability and privacy since CleverTap employees' access to customer data is tracked.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8bedb64c645e74c5e0e166ba5cfdf064371bc0e42a6e66f0a329183a19c6b806-image.png",
-        null,
-        "Data Encryption with CleverTap"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Data Encryption with CleverTap"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Data Encryption with CleverTap" align="center" border={true} src="https://files.readme.io/8bedb64c645e74c5e0e166ba5cfdf064371bc0e42a6e66f0a329183a19c6b806-image.png">
+  Data Encryption with CleverTap
+</Image>
 
 ### Encryption Options
 
 You can select how you want to encrypt your data. CleverTap provides the following options:
 
-- **Dual-Layer Encryption:**
-  - **First Layer:** Data is initially protected with a specific encryption algorithm.
-  - **Second Layer:** The encrypted data is re-encrypted using a key from the user or CleverTap.
-- **Selective Encryption:** This encryption is applied only to new data after the feature is enabled.
+* **Dual-Layer Encryption:**
+  * **First Layer:** Data is initially protected with a specific encryption algorithm.
+  * **Second Layer:** The encrypted data is re-encrypted using a key from the user or CleverTap.
+* **Selective Encryption:** This encryption is applied only to new data after the feature is enabled.
 
 ### Encryption Stages
 
@@ -93,17 +79,17 @@ The encryption and decryption of data adhere to the highest standards to maintai
 
 ### Encrypt and Access PII Data
 
-- Encrypt Events - link to schema- events page
-- Encrypt Custom User Profile Properties - Link to schema - user profile page
-- Access Data- Link to RBAC page
+* Encrypt Events - link to schema- events page
+* Encrypt Custom User Profile Properties - Link to schema - user profile page
+* Access Data- Link to RBAC page
 
 ## Audit Your Integration
 
-While planning your Integration, you should consult your internal legal counsel before pushing sensitive information such as PII to CleverTap. Get your [Event Design](https://docs.clevertap.com/docs/sample-events-by-business-verticals) document audited to prevent any _arbitrary data_ from being pushed to CleverTap. We recommend only pushing the _data needed_ to achieve the business objectives. For live integrations, use our Schema framework for auditing the data pushed to CleverTap.
+While planning your Integration, you should consult your internal legal counsel before pushing sensitive information such as PII to CleverTap. Get your [Event Design](https://docs.clevertap.com/docs/sample-events-by-business-verticals) document audited to prevent any *arbitrary data* from being pushed to CleverTap. We recommend only pushing the *data needed* to achieve the business objectives. For live integrations, use our Schema framework for auditing the data pushed to CleverTap.
 
 ## Use Non-PII Identifiers
 
-CleverTap's client-side SDKs automatically assign a unique random identifier called a CleverTap ID. You can associate the _CleverTap ID_ with an identifier such as an email address, phone number, or database ID via client-side SDKs or APIs. We strongly recommend using a non-PII identifier. 
+CleverTap's client-side SDKs automatically assign a unique random identifier called a CleverTap ID. You can associate the *CleverTap ID* with an identifier such as an email address, phone number, or database ID via client-side SDKs or APIs. We strongly recommend using a non-PII identifier. 
 
 ## Use Server-Side Implementation
 
