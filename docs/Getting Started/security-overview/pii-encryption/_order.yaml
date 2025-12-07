@@ -1,3 +1,4 @@
 - field-level-at-rest-encryption
 - in-transit-encryption
 - file-upload-encryption
+- cpaas-encryption
