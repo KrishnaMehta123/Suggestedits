@@ -18,8 +18,8 @@ Alternatively, for a recurring or triggered campaign, the same user may re-quali
 
 CleverTap has two types of frequency caps, including:
 
-- _Global Frequency Caps_ control the maximum messages a user can get across campaigns for a particular channel of communication.
-- _Message-level Frequency Caps_ define how often messages can be sent to a particular user for a particular campaign.
+* *Global Frequency Caps* control the maximum messages a user can get across campaigns for a particular channel of communication.
+* *Message-level Frequency Caps* define how often messages can be sent to a particular user for a particular campaign.
 
 When a frequency cap applies to a user, CleverTap will not deliver the associated message. The dropped messages will be accounted for in the campaign report error table.
 
@@ -32,7 +32,7 @@ Global frequency caps operate on a per-channel basis and let you specify the mes
 You can define the maximum number of messages a user can get for a specific channel of communication across campaigns.
 
 > 👍 Cadence Example
-> 
+>
 > You can define a cadence of three push notifications in seven days. This ensures that users only receive three push messages in seven days.
 
 ## Dwell Time Between Messages
@@ -41,8 +41,8 @@ For a communication channel, you can define the minimum time gap between message
 
 For example, you can set a minimum gap of at least four hours between messages with a range of:
 
-- Minimum gap: Five minutes.
-- Maximum gap: Seven days.
+* Minimum gap: Five minutes.
+* Maximum gap: Seven days.
 
 ## Throttle
 
@@ -59,7 +59,7 @@ For example, you want to send a message out to your entire base or a large subse
 Message-level caps let you to control the number of times a particular ongoing campaign is delivered to the same user. 
 
 > 🚧 Message Level and Global Frequency Caps
-> 
+>
 > Message-level and global frequency caps work together when applied simultaneously. A user may be subject to either or both frequency cap limits.
 
 These caps are important for recurring campaigns or triggered campaigns where the same user may re-qualify multiple times to receive a message.
@@ -68,48 +68,32 @@ These caps are important for recurring campaigns or triggered campaigns where th
 
 The control options include:
 
-- Send every time the user qualifies (default): This sends a message every time the user qualifies (can choose to respect global caps).
-- Send with a minimum gap of: This sets a minimum gap between subsequent messages. The minimum gap allowed is five minutes and the maximum gap allowed is 30 days.
+* Send every time the user qualifies (default): This sends a message every time the user qualifies (can choose to respect global caps).
+* Send with a minimum gap of: This sets a minimum gap between subsequent messages. The minimum gap allowed is five minutes and the maximum gap allowed is 30 days.
 
 # FAQs
 
 ### Q. How does the User DND Set error occur?
 
-A. The _User DND Set_ error occurs when you qualify users for a campaign despite unsubscribing on the target device. This error informs you that these users have been passed into the error bucket.
+A. The *User DND Set* error occurs when you qualify users for a campaign despite unsubscribing on the target device. This error informs you that these users have been passed into the error bucket.
 
 ### Q. What is the Frequency Caps Exceed error?
 
-A. The _Global Frequency_ feature limits the total number of messages that can be scheduled per day for a user, taking into account all active devices and across different communication channels.
+A. The *Global Frequency* feature limits the total number of messages that can be scheduled per day for a user, taking into account all active devices and across different communication channels.
 
-Navigate to _Settings_ > _Engage_ > _Setup_ > _Campaign limits_ to cap the frequency for various channels. 
+Navigate to *Settings* > *Engage* > *Setup* > *Campaign limits* to cap the frequency for various channels. 
 
-From the _Campaigns limits_ page, you can define the number of messages you want to send to each user in X number of days. 
+From the *Campaigns limits* page, you can define the number of messages you want to send to each user in X number of days. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/55bab17-New_final_Previous_Campaigns_global_frequency_v1.png",
-        "New final Previous Campaigns_global_frequency v1.png",
-        975
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="New final Previous Campaigns_global_frequency v1.png" alt={975} align="center" className="border" width="100%" border={true} src="https://files.readme.io/55bab17-New_final_Previous_Campaigns_global_frequency_v1.png" />
 
 You can also specify the following:
 
-- _Dwell time_ is the gap you want to keep between messages.
-- _Throttle_ controls the flow of your messages. 
+* *Dwell time* is the gap you want to keep between messages.
+* *Throttle* controls the flow of your messages. 
 
 For more information on dwell time, refer to [Dwell Time Between Messages](https://docs.clevertap.com/docs/messaging-frequency-caps#section-dwell-time-between-messages).
 
 For more information on throttling, refer to [Throttle](https://docs.clevertap.com/docs/messaging-frequency-caps#section-throttle).
 
-Now, when you create a campaign, and you want to disable the _Global frequency limit_, clear the _Global Campaign Limit_ option under the _Who_ section. The _Global Campaign Limit_ is enabled by default.
+Now, when you create a campaign, and you want to disable the *Global frequency limit*, clear the *Global Campaign Limit* option under the *Who* section. The *Global Campaign Limit* is enabled by default.
