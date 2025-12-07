@@ -1,0 +1,73 @@
+---
+title: Personalize Message
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Overview
+
+You can personalize the web inbox message for every user based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](doc:user-profiles) and [Events](doc:events#event-properties).
+
+# Inline Personalization
+
+To invoke the personalization menu, type the _@_ symbol in the title or description fields when creating a message.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/72ec66e-web_inbox_personalization.png",
+        "Personalize Web Inbox Messages",
+        1532
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Personalize Messages"
+    }
+  ]
+}
+[/block]
+
+In addition to the title and description, you can personalize image URLs, deep links, or button text. An _@_ icon against any field indicates that you can personalize that field.
+
+# Liquid Tags
+
+Click the ![Personalization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.
+
+Liquid tags offer great flexibility when composing personalized messages. They allow adding logic using a scripting language, which you can leverage to change the look and feel of your message. Following is an example to send personalized coupon codes based on the type of membership:
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/03628fb-Liquid_Tags.png",
+        "Define Conditional Logic using Liquid Tags",
+        1134
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Define Conditional Logic Using Liquid Tags."
+    }
+  ]
+}
+[/block]
+
+Each notification is personalized to the receiver, as shown in the following example. 
+
+```html Output - Liquid
+Hi John!
+
+Here's a special code for you - MUM50
+```
+
+
+
+For more information on using tags, refer to [Liquid Tags](doc:liquid-tags).
