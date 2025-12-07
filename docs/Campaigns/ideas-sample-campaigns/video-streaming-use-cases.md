@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-<<Good to have. Can skip for now>>
+{user["Good to have. Can skip for now"]}
