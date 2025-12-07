@@ -15,13 +15,13 @@ next:
 ---
 # Overview
 
-The _Create Coupon_ page allows you to define, configure, and launch coupon-based rewards tailored to your business goals. You can create single or bulk coupon codes, set up reward types, define redemption limits, and control visibility and expiration settings.
+The *Create Coupon* page allows you to define, configure, and launch coupon-based rewards tailored to your business goals. You can create single or bulk coupon codes, set up reward types, define redemption limits, and control visibility and expiration settings.
 
 Coupons created through this flow can be used in Promo Campaigns, distributed via user actions, or uploaded in bulk for manual assignment.
 
 # Create Coupon
 
-To create a coupon, go to _Promotions_ > _Rewards_ > _Coupons_, and click **Create Coupon**. The entire process is divided into the following three key steps:
+To create a coupon, go to *Promotions* > *Rewards* > *Coupons*, and click **Create Coupon**. The entire process is divided into the following three key steps:
 
 1. [Select Coupon Type](doc:create-coupons#select-coupon-type)
 2. [Select Reward Effect](create-coupons#select-reward-effect) 
@@ -31,63 +31,35 @@ To create a coupon, go to _Promotions_ > _Rewards_ > _Coupons_, and click **Crea
 
 Select how you want to distribute the coupon codes to your users based on your engagement strategies, then click **Next** to continue.
 
-- **Single code for all users**: A single coupon code that can be used by all users without eligibility criteria. This includes new visitors and existing users. For example, use code `CHRISTMAS20` to get 20% off on your entire order—no sign-up, login, or purchase history required. This type of code is ideal for platform-wide promotions such as festive sales, homepage banners, or email campaigns targeting a broad audience.
+* **Single code for all users**: A single coupon code that can be used by all users without eligibility criteria. This includes new visitors and existing users. For example, use code `CHRISTMAS20` to get 20% off on your entire order—no sign-up, login, or purchase history required. This type of code is ideal for platform-wide promotions such as festive sales, homepage banners, or email campaigns targeting a broad audience.
 
-- **Single code based on user actions**: A single coupon code that is distributed through Promo campaigns when users meet specific qualifying conditions, such as signing up, completing a purchase, or reactivating after a period of inactivity. For example, use code `WELCOME100` to get $100 cashback on your first order. This type of coupon is best used for milestone-based campaigns such as onboarding, re-engagement, or referral rewards, ensuring the reward is tied to meaningful user actions.
+* **Single code based on user actions**: A single coupon code that is distributed through Promo campaigns when users meet specific qualifying conditions, such as signing up, completing a purchase, or reactivating after a period of inactivity. For example, use code `WELCOME100` to get $100 cashback on your first order. This type of coupon is best used for milestone-based campaigns such as onboarding, re-engagement, or referral rewards, ensuring the reward is tied to meaningful user actions.
 
-- **Downloadable bulk unique codes**: Unique, one-time-use codes that can be redeemed by any user—no eligibility criteria required. These are generated in bulk using customizable code formats (for example, alphanumeric), with optional prefix, suffix, and length settings. For example, generate 10,000 unique codes such as `SAVE25XYZ`, which are then distributed via any partner platform. This type of coupon is ideal for offline promotions, printed flyers, or third-party channels where you want to restrict each user to a single redemption without needing system-based user segmentation.
+* **Downloadable bulk unique codes**: Unique, one-time-use codes that can be redeemed by any user—no eligibility criteria required. These are generated in bulk using customizable code formats (for example, alphanumeric), with optional prefix, suffix, and length settings. For example, generate 10,000 unique codes such as `SAVE25XYZ`, which are then distributed via any partner platform. This type of coupon is ideal for offline promotions, printed flyers, or third-party channels where you want to restrict each user to a single redemption without needing system-based user segmentation.
 
-- **Bulk unique codes based on user actions**: One-time-use codes that are automatically assigned to users who meet specific conditions defined in a linked Promo campaign. The system selects and assigns a unique code from the coupon pool when the user qualifies. For example, assign a unique code to each user who completes three purchases in a loyalty campaign. The code is automatically issued once the condition is met and can be redeemed only once by that user. This type of coupon is ideal for personalized reward journeys or limited inventory campaigns where you want to control distribution based on behavioral triggers.
+* **Bulk unique codes based on user actions**: One-time-use codes that are automatically assigned to users who meet specific conditions defined in a linked Promo campaign. The system selects and assigns a unique code from the coupon pool when the user qualifies. For example, assign a unique code to each user who completes three purchases in a loyalty campaign. The code is automatically issued once the condition is met and can be redeemed only once by that user. This type of coupon is ideal for personalized reward journeys or limited inventory campaigns where you want to control distribution based on behavioral triggers.
 
 The preview panel provides a representative visualization of each selected coupon type, helping you understand how the coupon will appear and function for users.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/817615e15b51e294723fa2b396f7e1c518b58b0d9497b20d29bd5c210f8e54df-2025-03-24_15-27-29_1.gif",
-        null,
-        "Select Coupon Type from the Available Types"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select Coupon Type from the Available Types"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Select Coupon Type from the Available Types" align="center" border={true} src="https://files.readme.io/817615e15b51e294723fa2b396f7e1c518b58b0d9497b20d29bd5c210f8e54df-2025-03-24_15-27-29_1.gif">
+  Select Coupon Type from the Available Types
+</Image>
 
 ## Select Reward Effect
 
 Define where the coupon discount will be applied within the order and click **Continue** to configure coupon settings:  
 
-- **Entire Order**: Applies the discount to the total order value. For example, a coupon offering 20% off on an order worth $250 results in a $50 discount. The user pays $200.
+* **Entire Order**: Applies the discount to the total order value. For example, a coupon offering 20% off on an order worth $250 results in a $50 discount. The user pays $200.
 
-- **Specific Products**: Applies the discount only to selected products in the cart. For example, a coupon offering 30% off on jackets, where the cart includes a jacket ($2,000) and shoes ($3,000). The discount applies only to the jacket (30% of $2,000 = $600). The final payable amount is $4,400.
+* **Specific Products**: Applies the discount only to selected products in the cart. For example, a coupon offering 30% off on jackets, where the cart includes a jacket ($2,000) and shoes ($3,000). The discount applies only to the jacket (30% of $2,000 = $600). The final payable amount is $4,400.
 
-- **Custom Order Property**: Applies the discount to a custom property such as platform fees, convenience fees, or surge charges. For example, a coupon offering 50% off on platform fees. If the order subtotal is $2,000 and the platform fee is $200, the user gets a $100 discount, reducing the total payable amount to $2,100.
+* **Custom Order Property**: Applies the discount to a custom property such as platform fees, convenience fees, or surge charges. For example, a coupon offering 50% off on platform fees. If the order subtotal is $2,000 and the platform fee is $200, the user gets a $100 discount, reducing the total payable amount to $2,100.
 
 The preview panel displays a visual breakdown of how the coupon is applied, including itemized pricing, discount amount, and final total.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/11375f30bb60e5c64a0263811f8ba5b5a2e7d047bb1ddb1f67e47a0c4ad1fbd8-2025-03-24_15-31-25_1.gif",
-        null,
-        "Select Reward Effect for a Coupon"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select Reward Effect for Coupon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Select Reward Effect for a Coupon" align="center" border={true} src="https://files.readme.io/11375f30bb60e5c64a0263811f8ba5b5a2e7d047bb1ddb1f67e47a0c4ad1fbd8-2025-03-24_15-31-25_1.gif">
+  Select Reward Effect for Coupon
+</Image>
 
 ## Configure Coupon Settings
 
@@ -110,58 +82,120 @@ Define the core identity and structure of your coupon. The following table outli
 You can preview how the coupon will appear in the user’s coupon tray.
 
 > 📘 Coupon Preview
-> 
+>
 > The preview panel on the right provides a visual representation of how the coupon will appear in the user’s coupon tray. This is only a sample and may not reflect the exact in-app appearance. To customize the tray layout, refer to [Fetch Coupon API](https://staging.docs.dev.clevertap.net/docs/fetch-coupon).
 
 ### Reward
 
 Choose where the reward should be applied within the user’s order. This determines which part of the cart or transaction the discount or cashback will target as follows:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a5e9b19718944996b157c361902beab0a55df2d5f72a93e1cbffe29c2bc1d1a9-Configure_Reward_Section_.png",
-        "",
-        "Define Reward Scope"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define Reward Scope"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Define Reward Scope" align="center" border={true} src="https://files.readme.io/a5e9b19718944996b157c361902beab0a55df2d5f72a93e1cbffe29c2bc1d1a9-Configure_Reward_Section_.png">
+  Define Reward Scope
+</Image>
 
 #### Reward Effect
 
-Each _Reward effect_ provides additional configuration options as follows
+Each *Reward effect* provides additional configuration options as follows
 
-| Reward Effect             | Description                                               | Unique Configuration Options                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Entire Order**          | Applies the reward to the total value of the order.       | **Exclude products**: Enable this option to exclude certain products from the coupon discount. For example, if you select exclude `itemName = iPhone 15` and if a cart contains `iPhone 15` and `AirPods`, only the `AirPods` value will be considered for discount calculation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Specific Products**     | Applies the reward only to selected products in the cart. | <li>**Product Filters**: Define which products are eligible for the reward based on attributes such as `itemName` or `category`. You can apply multiple filters using AND/OR logic. Additionally, you can use custom catalog properties from your product catalog to define business-specific filters.</li><li>**Add Qualifying rules**: Once eligible products are identified using filters, you can define qualifying rules that determine when the reward should apply. These rules are evaluated only against discount-eligible items and include: <ul><li>`itemsTotalQuantity`: The total number of eligible items in the cart.</li><li>`itemsSaleAmount`: The total sale value of eligible items, calculated as _unit price × quantity_.</li></ul>You can combine these rules using AND/OR to specify whether all conditions must be met or just any single is sufficient.</li> |
-| **Custom Order Property** | Applies the reward to a specific order-level property.    | **Applicable property**: Choose a custom field such as platform fee or shipping cost                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Reward Effect
+      </th>
 
-Once you select the reward scope, you can define the reward details such as _Reward type_ and _Discount value_.
+      <th>
+        Description
+      </th>
+
+      <th>
+        Unique Configuration Options
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **Entire Order**
+      </td>
+
+      <td>
+        Applies the reward to the total value of the order.
+      </td>
+
+      <td>
+        **Exclude products**
+
+        : Enable this option to exclude certain products from the coupon discount. For example, if you select exclude 
+
+        `itemName = iPhone 15`
+
+         and if a cart contains 
+
+        `iPhone 15`
+
+         and 
+
+        `AirPods`
+
+        , only the 
+
+        `AirPods`
+
+         value will be considered for discount calculation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Specific Products**
+      </td>
+
+      <td>
+        Applies the reward only to selected products in the cart.
+      </td>
+
+      <td>
+        <li>**Product Filters**: Define which products are eligible for the reward based on attributes such as `itemName` or `category`. You can apply multiple filters using AND/OR logic. Additionally, you can use custom catalog properties from your product catalog to define business-specific filters.</li><li>**Add Qualifying rules**: Once eligible products are identified using filters, you can define qualifying rules that determine when the reward should apply. These rules are evaluated only against discount-eligible items and include: <ul><li>`itemsTotalQuantity`: The total number of eligible items in the cart.</li><li>`itemsSaleAmount`: The total sale value of eligible items, calculated as *unit price × quantity*.</li></ul>You can combine these rules using AND/OR to specify whether all conditions must be met or just any single is sufficient.</li>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Custom Order Property**
+      </td>
+
+      <td>
+        Applies the reward to a specific order-level property.
+      </td>
+
+      <td>
+        **Applicable property**
+
+        : Choose a custom field such as platform fee or shipping cost
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+Once you select the reward scope, you can define the reward details such as *Reward type* and *Discount value*.
 
 #### Reward Type
 
-The following are the options available for the _Reward types_ dropdown on the CleverTap dashboard:
+The following are the options available for the *Reward types* dropdown on the CleverTap dashboard:
 
 | Reward Type         | Description                                                                                                                                                                                                                                               | Supports Max Cap |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Fixed discount      | Offers a flat reduction in the order amount. For example, enter 200 to give users $200 off on their purchases.                                                                                                                                            | No               |
 | Percentage discount | Applies a percentage-based discount to the order. For example, enter 15 to give users a 15% discount on their purchase.                                                                                                                                   | Yes              |
-| Fixed cashback      | Gives fixed cashback points to the user wallet or account. For example, enter 100 to credit $100 cashback points to the user after a successful transaction. It also requires selecting the target _Loyalty wallet_, where the cashback will be credited. | No               |
-| Percentage cashback | Credits cashback points based on a percentage of the order total. For example, enter 10 to provide 10% of the order value as cashback points. It also requires selecting the target _Loyalty wallet_ where the cashback will be credited.                 | Yes              |
+| Fixed cashback      | Gives fixed cashback points to the user wallet or account. For example, enter 100 to credit $100 cashback points to the user after a successful transaction. It also requires selecting the target *Loyalty wallet*, where the cashback will be credited. | No               |
+| Percentage cashback | Credits cashback points based on a percentage of the order total. For example, enter 10 to provide 10% of the order value as cashback points. It also requires selecting the target *Loyalty wallet* where the cashback will be credited.                 | Yes              |
 
 > 📘 Max Cap for Percentage Rewards
-> 
+>
 > For percentage-based rewards, you can optionally set a maximum cap by clearing the Unlimited discount per order or Unlimited cashback per order checkbox. 
-> 
+>
 > For example, 10% discount with a cap of $100 means if the order total is $1500, the discount applied will be $100 max.
 
 #### Discount Value
@@ -170,116 +204,60 @@ Enter either the fixed amount or the percentage to be applied based on the selec
 
 #### Example
 
-Consider an example to understand how the Reward configuration works. You want to offer a 20% discount on T-shirts, but only when a user buys at least two items from that category.  
+Consider an example to understand how the Reward configuration works. You want to offer a 20% discount on T-shirts, but only when a user buys at least two items from that category.\
 In this case,
 
-- **Product filters**: Set category = T-shirts to limit the reward to T-shirt purchases.
-- **Add Qualifying rule**: Define itemsTotalQuantity ≥ 2 to ensure the discount applies only when the user adds two or more T-shirts to their cart.
-- **Reward type**: Choose Percentage discount.
-- **Discount value**: Enter 20% and optionally set a maximum cap (for example, $50) by disabling the Unlimited discount per order checkbox.
+* **Product filters**: Set category = T-shirts to limit the reward to T-shirt purchases.
+* **Add Qualifying rule**: Define itemsTotalQuantity ≥ 2 to ensure the discount applies only when the user adds two or more T-shirts to their cart.
+* **Reward type**: Choose Percentage discount.
+* **Discount value**: Enter 20% and optionally set a maximum cap (for example, $50) by disabling the Unlimited discount per order checkbox.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/45c30d968bd0ad0086902ea8fc059fb521b7744e3397a612f6b9a1b6606e8c35-image.png",
-        null,
-        "Define Reward Rules for Coupon"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define Reward Rules for Coupon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Define Reward Rules for Coupon" align="center" border={true} src="https://files.readme.io/45c30d968bd0ad0086902ea8fc059fb521b7744e3397a612f6b9a1b6606e8c35-image.png">
+  Define Reward Rules for Coupon
+</Image>
 
 ### Qualifying Rules
 
 Define the conditions under which a coupon becomes applicable. You can apply rules based on cart properties, product-level attributes, or user profile traits. Multiple conditions can be combined using AND/OR logic to build flexible eligibility criteria.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/20e60f8c37a5a452b8fc4c750b0315194c4799c1b29893e0d0ef5280f8d296cf-Qualifying_Rules.png",
-        null,
-        "Define Qualifying Rules for the Coupon"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define Qualifying Rules for Coupon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Define Qualifying Rules for the Coupon" align="center" border={true} src="https://files.readme.io/20e60f8c37a5a452b8fc4c750b0315194c4799c1b29893e0d0ef5280f8d296cf-Qualifying_Rules.png">
+  Define Qualifying Rules for Coupon
+</Image>
 
 #### Cart
 
 Define eligibility based on **cart-level attributes** such as total sale amount or total item count. You can add multiple cart conditions using operators like `equals`, `greater than`, `less than`, `between` and so on. You can also use the following logical operators:
 
-- **AND**: All conditions must be met
-- **OR**: At least one condition must be met
+* **AND**: All conditions must be met
+* **OR**: At least one condition must be met
 
 For example, if the condition is set as `saleAmount ≥ 500`, the customer must have a minimum cart value of ₹500 to redeem the coupon. This is useful for setting minimum order value thresholds or offering discounts on high-value carts.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ce6807d47d34f47e1b15cfa6acec5678120832d93c9f667e2babb2bdfcc79af-image.png",
-        null,
-        "Add Qualifying Rules for Cart"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Qualifying Rules for Cart"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Add Qualifying Rules for Cart" align="center" border={true} src="https://files.readme.io/5ce6807d47d34f47e1b15cfa6acec5678120832d93c9f667e2babb2bdfcc79af-image.png">
+  Add Qualifying Rules for Cart
+</Image>
 
 #### Product
 
-Define when a user is eligible to redeem a coupon based on the presence of specific product attributes in the cart. Product qualifying rules only determine eligibility to trigger the coupon. This does not define which products the discount applies to. That is configured separately in the **Reward Effect** section with _Specific Product_ reward type.
+Define when a user is eligible to redeem a coupon based on the presence of specific product attributes in the cart. Product qualifying rules only determine eligibility to trigger the coupon. This does not define which products the discount applies to. That is configured separately in the **Reward Effect** section with *Specific Product* reward type.
 
 You can filter based on any product attribute present in the order event payload, such as, brand, productCategory, itemName, and so on. You can also add multiple product property rules and combine them with **AND/OR** conditions as needed.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ad4990fd2d3aac2bbc28a5085015587940e2deeb555061b88b5aabe28537f088-image.png",
-        null,
-        "Add Qualifying Rules for Product"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Qualifying Rules for Product"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Add Qualifying Rules for Product" align="center" border={true} src="https://files.readme.io/ad4990fd2d3aac2bbc28a5085015587940e2deeb555061b88b5aabe28537f088-image.png">
+  Add Qualifying Rules for Product
+</Image>
 
 You can define product-level rules in one of two modes:
 
-- **Any of**: The coupon is eligible if at least one item in the cart matches any of the specified filters.
-- **Each of**: The coupon is eligible only if all items in the cart match the defined conditions.
+* **Any of**: The coupon is eligible if at least one item in the cart matches any of the specified filters.
+* **Each of**: The coupon is eligible only if all items in the cart match the defined conditions.
 
-For example, a business wants to offer 30% off on the entire cart, but only if the cart contains at least one Levi’s product. In this case, the following should be the conditions for applying the _Product_ rule.
+For example, a business wants to offer 30% off on the entire cart, but only if the cart contains at least one Levi’s product. In this case, the following should be the conditions for applying the *Product* rule.
 
-- **Reward Effect**: _Entire Order_
-- **Product Qualifying Rule**:
-  - Mode = _Any of_
-  - Condition = `brand = Levi's`
+* **Reward Effect**: *Entire Order*
+* **Product Qualifying Rule**:
+  * Mode = *Any of*
+  * Condition = `brand = Levi's`
 
 This ensures that the discount is applied to the entire cart, but only when a Levi's item is present.
 
@@ -289,26 +267,12 @@ Restrict coupon applicability to users who match specific profile attributes. Yo
 
 For example, A food delivery app wants to offer a $50 OFF coupon exclusively to users located in India.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c6474ada9e3b2a4020fdd8d1b9f34cf3fe90c270fc52e3b78ab6aed30b1e567-image.png",
-        null,
-        "Add Qualifying Rules for User Property"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Qualifying Rules for User Property"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Add Qualifying Rules for User Property" align="center" border={true} src="https://files.readme.io/8c6474ada9e3b2a4020fdd8d1b9f34cf3fe90c270fc52e3b78ab6aed30b1e567-image.png">
+  Add Qualifying Rules for User Property
+</Image>
 
 > 📘 Note
-> 
+>
 > The User Property rule is available only for All Users coupons.
 
 ### Validity
@@ -319,61 +283,33 @@ Configure when the coupon will become active and remain available to users. Vali
 
 These include the following coupon types: Single code for all users or Downloadable bulk unique codes. Set the following parameters to define the active window for the coupon:
 
-- **Timezone**: The system uses your default account timezone, for example, GMT +05:30 Asia/Kolkata.
-- **Time Period**: Specify the start and end times during which the coupon is valid and can be redeemed by users.
-  - **Start date and time**: Define when the coupon becomes active. For example, if the start time is 1st July 2025 at 10:00 AM, users will only be able to view and redeem the coupon from that moment onward. For user action-based coupons, the start time is derived from the associated campaign logic, that is, when the user qualifies for and receives the coupon. For non-user action coupons, you manually configure the start date here.
-  - **End date and time**: Choose when the coupon expires. Set a specific time, for example, 31st July 2025 at 11:59 PM) or select _Never ends_ for ongoing availability.
+* **Timezone**: The system uses your default account timezone, for example, GMT +05:30 Asia/Kolkata.
+* **Time Period**: Specify the start and end times during which the coupon is valid and can be redeemed by users.
+  * **Start date and time**: Define when the coupon becomes active. For example, if the start time is 1st July 2025 at 10:00 AM, users will only be able to view and redeem the coupon from that moment onward. For user action-based coupons, the start time is derived from the associated campaign logic, that is, when the user qualifies for and receives the coupon. For non-user action coupons, you manually configure the start date here.
+  * **End date and time**: Choose when the coupon expires. Set a specific time, for example, 31st July 2025 at 11:59 PM) or select *Never ends* for ongoing availability.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a09819937eef7baa1ba00961f658fd2df33702417a9370b40dfb2e8fae454467-image.png",
-        null,
-        "Set Validity for All User Coupons"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Validity for All User Coupons"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Validity for All User Coupons" align="center" border={true} src="https://files.readme.io/a09819937eef7baa1ba00961f658fd2df33702417a9370b40dfb2e8fae454467-image.png">
+  Set Validity for All User Coupons
+</Image>
 
 #### For User Actions-Based Coupons
 
 These include the following coupon types:
 
-- Single code based on user actions
-- Bulk unique codes based on user actions.
+* Single code based on user actions
+* Bulk unique codes based on user actions.
 
 These coupons become active when assigned through a Promo Campaign and support only relative expiry settings:
 
-- **Coupon expiry**: Define how long the coupon remains valid after it is assigned. For example, 7 days after the coupon was rewarded. You can select from minutes, hours, days, or weeks. Select Never for coupons with no expiry.
+* **Coupon expiry**: Define how long the coupon remains valid after it is assigned. For example, 7 days after the coupon was rewarded. You can select from minutes, hours, days, or weeks. Select Never for coupons with no expiry.
 
 > 📘 Why relative expiry?
-> 
+>
 > Since each user may be rewarded the coupon at a different time (depending on when they qualify through the campaign), it is not possible to set a single fixed expiry date. A relative expiry ensures that each user gets a fair and consistent validity window from the moment they receive the coupon.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/18f4b64212939afced1f33c6ef9571c4864501c88755ea11575a8b30d5956ffc-image.png",
-        null,
-        "Set Validity of User Action Based Coupons"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Validity of User Action-Based Coupons"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Validity of User Action Based Coupons" align="center" border={true} src="https://files.readme.io/18f4b64212939afced1f33c6ef9571c4864501c88755ea11575a8b30d5956ffc-image.png">
+  Set Validity of User Action-Based Coupons
+</Image>
 
 #### Custom Schedule
 
@@ -381,8 +317,8 @@ Use this option to restrict when a coupon can be redeemed during the day or week
 
 You can define:
 
-- Specific days of the week (for example, Saturday, Sunday)
-- Specific time slots (for example, 12:00 PM – 3:00 PM)
+* Specific days of the week (for example, Saturday, Sunday)
+* Specific time slots (for example, 12:00 PM – 3:00 PM)
 
 This ensures the coupon is only redeemable during those selected windows, even if it’s otherwise valid.
 
@@ -391,73 +327,45 @@ This ensures the coupon is only redeemable during those selected windows, even i
 Configure how many times a coupon can be redeemed globally and per user. These settings help prevent overuse and ensure budget control.
 
 > 📘 Redemption Limits Rules
-> 
-> - Redemption limits can be configured only for single code coupons (both all user and user action based).
-> - For bulk code coupons (both downloadable and user action based codes), the code-level and user-level redemption limits are fixed to one. This is because each bulk coupon code is unique and designed for one-time use by a single user, ensuring exclusivity and preventing misuse.
+>
+> * Redemption limits can be configured only for single code coupons (both all user and user action based).
+> * For bulk code coupons (both downloadable and user action based codes), the code-level and user-level redemption limits are fixed to one. This is because each bulk coupon code is unique and designed for one-time use by a single user, ensuring exclusivity and preventing misuse.
 
 #### Code Level Limits
 
-Set the total number of times a coupon code can be redeemed globally across all users. The default is _unlimited_ but you can also change the total limit to X times.
+Set the total number of times a coupon code can be redeemed globally across all users. The default is *unlimited* but you can also change the total limit to X times.
 
-- **Daily limit**: Maximum number of redemptions allowed per day. For example, 100 redemptions per day.
-- **Weekly limit**: Maximum number of redemptions allowed per week. For example, 500 redemptions per week.
-- **Monthly limit**: Maximum number of redemptions allowed per month. For example, 2000 redemptions per month.
+* **Daily limit**: Maximum number of redemptions allowed per day. For example, 100 redemptions per day.
+* **Weekly limit**: Maximum number of redemptions allowed per week. For example, 500 redemptions per week.
+* **Monthly limit**: Maximum number of redemptions allowed per month. For example, 2000 redemptions per month.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2b89e8e77a4f6a603141b34f9987bbc60f4239884678bbe7bbc0d1ef5d30e9de-image.png",
-        null,
-        "Set Code Level Limits"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Code Level Limits"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Code Level Limits" align="center" border={true} src="https://files.readme.io/2b89e8e77a4f6a603141b34f9987bbc60f4239884678bbe7bbc0d1ef5d30e9de-image.png">
+  Set Code Level Limits
+</Image>
 
 #### User Level Limits
 
 Set the number of times each user can redeem the coupon. The default total limit is set to one use per user, but you can change it to unlimited or click **Add Limit** to customize:
 
-- **Daily limit**: Redemptions allowed per user per day. For example, 1 redemption per user per day.
-- **Weekly limit**: Redemptions allowed per user per week. For example, 2 redemptions per user per week.
-- **Monthly limit**: Redemptions allowed per user per month. For example, 4 redemptions per user per month.
+* **Daily limit**: Redemptions allowed per user per day. For example, 1 redemption per user per day.
+* **Weekly limit**: Redemptions allowed per user per week. For example, 2 redemptions per user per week.
+* **Monthly limit**: Redemptions allowed per user per month. For example, 4 redemptions per user per month.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d14a64172c2f68ddf06a08b5e98708e93c527c5bb12ea2aa241c7e52222aa755-image.png",
-        null,
-        "Set User Level Limits"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set User Level Limits"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set User Level Limits" align="center" border={true} src="https://files.readme.io/d14a64172c2f68ddf06a08b5e98708e93c527c5bb12ea2aa241c7e52222aa755-image.png">
+  Set User Level Limits
+</Image>
 
 # Redemption Logic
 
 When a user attempts to redeem a coupon, the system validates:
 
-- Whether the coupon is active and within the validity period
-- Whether the coupon meets all qualifying rules (cart, product, user property)
-- If Single Code Coupon:
-  - Ensure the global code-level limit has not been exceeded
-  - Ensure the user has not exceeded their redemption quota
-- If Bulk Code Coupon:
-  - Ensure the unique code hasn’t been used before
+* Whether the coupon is active and within the validity period
+* Whether the coupon meets all qualifying rules (cart, product, user property)
+* If Single Code Coupon:
+  * Ensure the global code-level limit has not been exceeded
+  * Ensure the user has not exceeded their redemption quota
+* If Bulk Code Coupon:
+  * Ensure the unique code hasn’t been used before
 
 If all checks pass, the coupon is successfully applied.
 
@@ -465,8 +373,8 @@ If all checks pass, the coupon is successfully applied.
 
 The following are the best practices when creating coupons:
 
-- Use percentage discounts for small purchases and flat discounts for high-value items.
-- Set expiry dates to create urgency.
-- Use cart-based conditions to increase order value.
-- Track coupon performance regularly and adjust campaigns accordingly.
-- Avoid excessive stacking to prevent revenue loss.
+* Use percentage discounts for small purchases and flat discounts for high-value items.
+* Set expiry dates to create urgency.
+* Use cart-based conditions to increase order value.
+* Track coupon performance regularly and adjust campaigns accordingly.
+* Avoid excessive stacking to prevent revenue loss.
