@@ -1,0 +1,149 @@
+---
+title: Licensing Fee
+excerpt: >-
+  Learn how to manage licenses to optimize your CleverTap experience for maximum
+  efficiency.
+deprecated: false
+hidden: true
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Overview
+
+Licensing Fee at CleverTap helps control and monitor the number of active users, ensuring compliance with the selected tier. This document provides insights into key concepts and considerations related to licensing, offering a comprehensive guide to understanding CleverTap's licensing structure.
+
+# Key Concepts
+
+The following are the fundamental concepts essential for comprehending CleverTap's licensing structure:
+
+- [User Tiers](doc:licensing-fee-in-clevertap#user-tiers)
+- [Licensed User Calculation](doc:licensing-fee-in-clevertap#licensed-user-calculation)
+- [Licensed Seat Usage](doc:licensing-fee-in-clevertap#licensed-seat-usage)
+- [Breach Licensed Seats](doc:licensing-fee-in-clevertap#breach-licensed-seats)
+- [Fair Usage Policy (FUP)](doc:licensing-fee-in-clevertap#fair-usage-policy-fup)
+
+## User Tiers
+
+CleverTap offers various licensing tiers to accommodate businesses of different sizes and requirements. Users are categorized into tiers based on the number of licenses the organization purchases. The following are the CleverTap licensed seat tiers:
+
+- 20 seats
+- 50 seats **(next 30)**
+- 100 seats **(next 50)**
+- Unlimited seats 
+
+The term **next 30** alongside 50 seats refers to an extra increment of 30 seats beyond the initial tier of 20 seats. In contrast, the same term alongside 100 seats implies an additional increase of 50 seats beyond their respective initial tier of 50 seats. This setup allows for flexibility in scaling up the number of licensed seats within specific tiers after reaching the initial seat limits.
+
+## Licensed User Calculation
+
+The average licensed user count is calculated at the end of each month. Consider the following to understand the calculation better:
+
+On the 1st day of the month, there are 40 users.  
+On the 15th day of the month, there are 80 users.  
+On the 30th day of the month, there are 60 users.
+
+In this case, the average licensed user count for the month is calculated as follows:  
+[(40 + 80 + 60) / 3] = 60.
+
+The average count of licensed users per month is calculated by adding the daily counts together and dividing the total by the number of days in that month. CleverTap charges are based on this monthly average, aligning with the pricing structure of the relevant tier.
+
+> 📘 User Status
+> 
+> In an organization, only users with an _Active_ status are considered as licensed users. Users with _Revoked_ or _Invited_ statuses do not count as licensed users.
+
+## Licensed Seat Usage
+
+CleverTap always informs you about license usage when you invite a new user, as shown in the following image:
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/cc3a7e3-Licencing_Usage_Alert.png",
+        null,
+        "Licensed Seats Usage Alert"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Licensed Seats Usage Alert"
+    }
+  ]
+}
+[/block]
+
+
+If the license usage reaches 95%, CleverTap warns you about the limited availability of remaining license seats.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/dabf76f-Breaching_License_Usage.png",
+        null,
+        "Using 95% of the Licence Seats"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Using 95% of the Licence Seats"
+    }
+  ]
+}
+[/block]
+
+
+## Breach Licensed Seats
+
+Breaching the set tier leads to additional charges based on the next tier. If you exceed the allotted seats of your license tier, CleverTap notifies you about the breach on the _Invite Users_ page.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/5018b37-Invite_Users.png",
+        null,
+        "Licence Seats Usage"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Breaching Licensed Seat Usage Alert"
+    }
+  ]
+}
+[/block]
+
+
+CleverTap also informs you about the same on the dashboard's nag bar and via an email alert.
+
+## Fair Usage Policy (FUP)
+
+CleverTap's Fair Usage Policy (FUP) ensures fair usage and adherence to the agreed licensing terms. For FUP, the maximum allowable licenses are capped at 10,000. Reaching the limit leads to restrictions on inviting new users.
+
+# FAQs
+
+The following are the frequently asked questions for CleverTap's licensing fee structure:
+
+### Q. Does CleverTap charge individually per seat, or does it operate exclusively on tier-based pricing?
+
+A. Licensing fees are solely based on tiers; there are no per-seat charges.
+
+### Q. How is the billing calculated if the seat consumption fluctuates during the month?
+
+A. Billing calculations are conducted monthly to accommodate scenarios with varying seat consumption.
+
+### Q. Do licensing fees align with monthly usage or follow specific billing intervals?
+
+A. Licensing fee aligns with monthly consumption.
+
+### Q. Will accessing the CleverTap dashboard through Single Sign-On (SSO) utilize one of the licensed seats?
+
+A. Using Single Sign-On (SSO) to access the CleverTap dashboard does contribute to the licensed seat count.
+
+### Q. What should I do if I exceed the FUP limit?
+
+A. Maximize usage efficiency by revoking access for existing _Active_ or _Invited_ users if you surpass your account's FUP limit before inviting new users.
