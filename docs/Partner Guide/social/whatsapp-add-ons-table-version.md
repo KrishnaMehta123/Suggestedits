@@ -15,35 +15,91 @@ next:
 CleverTap offers WhatsApp add-ons to enhance your messaging capabilities and boost customer engagement. With these add-ons, you can use WhatsApp for various purposes, such as FAQs, auto-replies, agent chats, and much more.
 
 > 📘 WhatsApp Add-Ons
-> 
+>
 > CleverTap's WhatsApp Add-ons are available as a paid feature.
 
 Incorporating WhatsApp as part of your customer engagement strategy significantly enhances your customer engagement rate and overall customer experience.
 
 Prior to learning about WhatsApp Add-ons offered by CleverTap, here are a few points you must bear in mind:
 
-- You can save and test provider credentials without buying the WhatsApp add-on in CleverTap.
-- You will be unable to create or publish WhatsApp campaigns or journeys without purchasing the add-on.
-- WhatsApp conversations (FAQ, auto-reply, and agent chat) require an add-on purchase.
+* You can save and test provider credentials without buying the WhatsApp add-on in CleverTap.
+* You will be unable to create or publish WhatsApp campaigns or journeys without purchasing the add-on.
+* WhatsApp conversations (FAQ, auto-reply, and agent chat) require an add-on purchase.
 
 # WhatsApp Add-ons by CleverTap
 
 CleverTap offers two add-ons for WhatsApp integration: 
 
-- CleverTap Connect
-- CleverTap Direct
+* CleverTap Connect
+* CleverTap Direct
 
 > 🚧 Note
-> 
+>
 > CleverTap Connect subscribers have limited access to external providers. Subscribers can set up a WhatsApp Business Account (WABA) with CleverTap but can not use CleverTap as a Business Service Provider (BSP) in campaigns and journeys.
 
 Let's take a look at the detailed comparison.
 
-| <p>Name of the Add-On</p>                    | <p>CleverTap Connect</p>                                                                                                                                                                                                                                                                                                                   | <p>CleverTap Direct</p>                                                                                                                                                                                                                                                                                                                               |
-| :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong>Description</strong> </p>         | <p>CleverTap Connect is a suitable Add-on for customers willing to use external WhatsApp providers. </p><p>With this add-on, customers will receive access to external providers only and will be charged based on their chosen tier. Any additional usage will be charged at the end of the month.</p>                                    | <p>Using CleverTap Direct, customers can set up both external and internal providers, but they can use only CleverTap WhatsApp Business Account for creating campaigns and journeys.</p>                                                                                                                                                              |
-| <p><strong>Billing Logic</strong> </p>       | <p>CleverTap bills you as per the total notifications sent to your end users.  </p><p>Here, it is assumed that notifications sent successfully from CleverTap are delivered to the end user if they are not considered errors at the provider's end at the time of delivery.</p>                                                           | <p>Customers are billed for the conversation count recorded at WhatsApp's end.</p>                                                                                                                                                                                                                                                                    |
-| <p><strong>Overage Calculation</strong> </p> | <p>The overage for the month is calculated based on the total number of additional notifications used over and above the monthly base fee for the tier allotted.</p><p>Refer to the <a href="https://docs.clevertap.com/docs/whatsapp-add-ons-table-version#clevertap-connect-overage-calculation-logic">overage calculation logic</a></p> | <p>CleverTap considers two types of overages for CleverTap Direct: </p><ul><li><a href="https://docs.clevertap.com/docs/whatsapp-add-ons-table-version#consumption-based-overages">Consumption-based Overage</a></li><li><a href="https://docs.clevertap.com/docs/whatsapp-add-ons-table-version#fair-usage-overage">Fair Usage Overage</a></li></ul> |
+<Table align={["left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Name of the Add-On</p>
+      </th>
+
+      <th>
+        <p>CleverTap Connect</p>
+      </th>
+
+      <th>
+        <p>CleverTap Direct</p>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>Description</strong> </p>
+      </td>
+
+      <td>
+        <p>CleverTap Connect is a suitable Add-on for customers willing to use external WhatsApp providers. </p><p>With this add-on, customers will receive access to external providers only and will be charged based on their chosen tier. Any additional usage will be charged at the end of the month.</p>
+      </td>
+
+      <td>
+        <p>Using CleverTap Direct, customers can set up both external and internal providers, but they can use only CleverTap WhatsApp Business Account for creating campaigns and journeys.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p><strong>Billing Logic</strong> </p>
+      </td>
+
+      <td>
+        <p>CleverTap bills you as per the total notifications sent to your end users.  </p><p>Here, it is assumed that notifications sent successfully from CleverTap are delivered to the end user if they are not considered errors at the provider's end at the time of delivery.</p>
+      </td>
+
+      <td>
+        <p>Customers are billed for the conversation count recorded at WhatsApp's end.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p><strong>Overage Calculation</strong> </p>
+      </td>
+
+      <td>
+        <p>The overage for the month is calculated based on the total number of additional notifications used over and above the monthly base fee for the tier allotted.</p><p>Refer to the <a href="https://docs.clevertap.com/docs/whatsapp-add-ons-table-version#clevertap-connect-overage-calculation-logic">overage calculation logic</a></p>
+      </td>
+
+      <td>
+        <p>CleverTap considers two types of overages for CleverTap Direct: </p><ul><li><a href="https://docs.clevertap.com/docs/whatsapp-add-ons-table-version#consumption-based-overages">Consumption-based Overage</a></li><li><a href="https://docs.clevertap.com/docs/whatsapp-add-ons-table-version#fair-usage-overage">Fair Usage Overage</a></li></ul>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Examples of Overage Billing
 
@@ -59,11 +115,11 @@ To calculate the overage usage in this case, we can use the following formula:
 
 Overage cost = Number of overage notifications \* cost per notification
 
-Where:  
-Number of overage notifications = 5000 (as specified in the scenario)  
+Where:\
+Number of overage notifications = 5000 (as specified in the scenario)\
 Cost per notification = ($30 base plan / 10,000 notifications) = $0.003
 
-Therefore, the overage cost = 5000 \* $0.003 = $15  
+Therefore, the overage cost = 5000 \* $0.003 = $15\
 So, the total cost for the base plan + overage usage would be $30 (base plan) + $15 (overage cost) = $45.
 
 ## CleverTap Direct Overage Calculation Logic
