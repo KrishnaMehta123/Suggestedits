@@ -18,17 +18,17 @@ Integrating Lob with CleverTap, marketers and product teams can trigger direct m
 
 With this integration, you can:
 
-- Re-engagement: Automatically send postcards to users who have not interacted in a set period.
-- Lifecycle Marketing: Send printed coupons or thank-you letters after a purchase.
-- Transactional Communication: Deliver physical invoices, payment reminders, or receipts.
+* Re-engagement: Automatically send postcards to users who have not interacted in a set period.
+* Lifecycle Marketing: Send printed coupons or thank-you letters after a purchase.
+* Transactional Communication: Deliver physical invoices, payment reminders, or receipts.
 
 # Prerequisites for Integration
 
 The following are the prerequisites:
 
-- Access to your Lob Dashboard.
-- A valid Lob API Key available under _Settings_ > _API Keys_ in Lob.
-- Access to your CleverTap Dashboard with permission to create Webhook campaigns.
+* Access to your Lob Dashboard.
+* A valid Lob API Key available under *Settings* > *API Keys* in Lob.
+* Access to your CleverTap Dashboard with permission to create Webhook campaigns.
 
 # Integrate Lob with CleverTap
 
@@ -42,7 +42,7 @@ This section explains how to connect CleverTap and Lob step by step. You’ll se
 
 Before setting up the CleverTap connection, identify which Lob API endpoint you plan to use. Each mail type—postcards, letters, or checks—uses a specific endpoint.
 
-For this guide, we’ll use the _Postcards API endpoint_ as an example.
+For this guide, we’ll use the *Postcards API endpoint* as an example.
 
 #### Example Endpoint:
 
@@ -58,9 +58,9 @@ Set up the webhook connection that will transmit your campaign data from CleverT
 
 To configure the webhook:
 
-1. Go to _Settings_ > _Channels_ > _Webhooks_ from the CleverTap dashboard.
+1. Go to *Settings* > *Channels* > *Webhooks* from the CleverTap dashboard.
 2. Click **+ Add Webhook** and provide a meaningful name for the webhook.
-3. In the _Create webhook template_, enter the following details:
+3. In the *Create webhook template*, enter the following details:
 
 | Field               | Description                             | Example / Value                    |
 | ------------------- | --------------------------------------- | ---------------------------------- |
@@ -71,24 +71,9 @@ To configure the webhook:
 4. Enable **Basic Authorization** and enter the username and password provided by Lob.
 5. Click **Save**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0a659c358f4452b3b10c66a69de148572a45f20a3ae8c7cf7b74a9f6c56b8084-image.png",
-        null,
-        "Create Webhook"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Create Webhook"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Create Webhook" align="center" width="75% " border={true} src="https://files.readme.io/0a659c358f4452b3b10c66a69de148572a45f20a3ae8c7cf7b74a9f6c56b8084-image.png">
+  Create Webhook
+</Image>
 
 This webhook acts as a secure connection between CleverTap and Lob. It ensures that your campaign data is transmitted safely and formatted correctly for Lob’s API.
 
@@ -98,51 +83,21 @@ After setting up your webhook, the next step is to create a Webhook Campaign. Th
 
 To configure the campaign:
 
-1. Go to _Campaigns_ on the CleverTap dashboard, click **+ Campaign** and select _Webhook_ from the list of messaging channels.
+1. Go to *Campaigns* on the CleverTap dashboard, click **+ Campaign** and select *Webhook* from the list of messaging channels.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/76f4ef966fa70f3987fa3aa1004b16beb31953f3ecbc68b99b874b7f046c2da9-image.png",
-        null,
-        "Create Webhook Campaign"
-      ],
-      "align": "center",
-      "sizing": "85% ",
-      "border": true,
-      "caption": "Create Webhook Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Create Webhook Campaign" align="center" width="85% " border={true} src="https://files.readme.io/76f4ef966fa70f3987fa3aa1004b16beb31953f3ecbc68b99b874b7f046c2da9-image.png">
+  Create Webhook Campaign
+</Image>
 
 2. Configure the following campaign settings: qualification criteria, target segment, and delivery preferences.
-3. Under the _What_ section, select the webhook created in [Set Up Webhook in CleverTap](doc:lob#set-up-webhook-in-clevertap).
-4. Click **Go to Editor**, under the _Webhook Content_ and enter the following details:
-   - Content Format: `JSON`
-   - Custom Body: Enter the request payload. Refer to the [sample request payload](doc:lob#example-request-payload).
+3. Under the *What* section, select the webhook created in [Set Up Webhook in CleverTap](doc:lob#set-up-webhook-in-clevertap).
+4. Click **Go to Editor**, under the *Webhook Content* and enter the following details:
+   * Content Format: `JSON`
+   * Custom Body: Enter the request payload. Refer to the [sample request payload](doc:lob#example-request-payload).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8141b202938f046e2db2004487ce0ea9ab9b8070e86ce2dfb8f25deb6988806b-image.png",
-        null,
-        "Webhook Configuration"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Webhook Configuration"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Webhook Configuration" align="center" width="75% " border={true} src="https://files.readme.io/8141b202938f046e2db2004487ce0ea9ab9b8070e86ce2dfb8f25deb6988806b-image.png">
+  Webhook Configuration
+</Image>
 
 ### Example Request Payload
 
@@ -177,77 +132,32 @@ This payload structure defines what data will be sent to Lob when the webhook is
 ```
 
 > ⚠️ Note
-> 
-> - Make sure that your Creative Template ID in Lob (e.g., postcard, letter) is valid and corresponds to the `front` and `back` values above.
-> - You can use Liquid tags (`{{ }}`) to dynamically personalize your postcard or letter content using CleverTap profile data.
+>
+> * Make sure that your Creative Template ID in Lob (e.g., postcard, letter) is valid and corresponds to the `front` and `back` values above.
+> * You can use Liquid tags (`{{ }}`) to dynamically personalize your postcard or letter content using CleverTap profile data.
 
 5. Click **Preview & Test** in CleverTap to send a sample request to Lob.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ff8ea7386a76173ac0826979fccc7284333f1ef7dab29338a152f871bbda2310-image.png",
-        null,
-        "Preview & Test"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Preview & Test"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Preview & Test" align="center" width="75% " border={true} src="https://files.readme.io/ff8ea7386a76173ac0826979fccc7284333f1ef7dab29338a152f871bbda2310-image.png">
+  Preview & Test
+</Image>
 
 ### Verify Integration in Lob
 
 After configuring the webhook campaign, verify that CleverTap and Lob are communicating correctly. This step ensures that CleverTap’s trigger successfully reaches Lob and that the intended mail item (for example, a postcard or letter) is created as expected.
 
-1. Log in to your Lob Dashboard and check _API Requests_ > _API Logs_ to confirm the request was received.
-2. Go to _Print & Mail_ > _Postcards_ to verify that the postcard has been created.
+1. Log in to your Lob Dashboard and check *API Requests* > *API Logs* to confirm the request was received.
+2. Go to *Print & Mail* > *Postcards* to verify that the postcard has been created.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8937242092638442340e8fc32083a7a3a5663475a174d4166585ca130c7bd349-image.png",
-        null,
-        "Verify Integration in Lob"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Verify Integration in Lob"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Verify Integration in Lob" align="center" width="75% " border={true} src="https://files.readme.io/8937242092638442340e8fc32083a7a3a5663475a174d4166585ca130c7bd349-image.png">
+  Verify Integration in Lob
+</Image>
 
 3. Once confirmed, go back to CleverTap and click **Publish** to make the campaign live.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2004e7a58d05b7e46acd09bb4c06d6a6d12278d3606ca6d694eafe4b9d22c8c7-image.png",
-        null,
-        "Publish Campaign"
-      ],
-      "align": "center",
-      "sizing": "76% ",
-      "border": true,
-      "caption": "Publish Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Publish Campaign" align="center" width="76% " border={true} src="https://files.readme.io/2004e7a58d05b7e46acd09bb4c06d6a6d12278d3606ca6d694eafe4b9d22c8c7-image.png">
+  Publish Campaign
+</Image>
 
 ### Verification and Analysis
 
@@ -255,24 +165,10 @@ After publishing, verify the integration by checking both CleverTap and Lob logs
 
 #### Recommended Checks:
 
-- Confirm that Lob requests appear under **API Logs** with successful status codes.
-- Review CleverTap campaign delivery metrics for trigger validation.
-- Ensure personalization data (name, address, or variables) appear correctly in printed mail.
+* Confirm that Lob requests appear under **API Logs** with successful status codes.
+* Review CleverTap campaign delivery metrics for trigger validation.
+* Ensure personalization data (name, address, or variables) appear correctly in printed mail.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/361d7f3b79cf6d9fe3d297f27ba922c0ccf0fb1bcd63b7a6419a8c24238c69dd-2025-12-01_11-31-58_1.gif",
-        "",
-        "Lob API Logs page"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Lob API Logs page"
-    }
-  ]
-}
-[/block]
+<Image alt="Lob API Logs page" align="center" width="75% " border={true} src="https://files.readme.io/361d7f3b79cf6d9fe3d297f27ba922c0ccf0fb1bcd63b7a6419a8c24238c69dd-2025-12-01_11-31-58_1.gif">
+  Lob API Logs page
+</Image>
