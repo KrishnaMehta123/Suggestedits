@@ -14,11 +14,11 @@ next:
 ---
 ## Can I access additional features outside of the CleverTap Essentials plan?
 
-CleverTap Essentials plan provides additional features available as either free or paid add-ons to help you grow. After you have mastered the basics, we recommend getting our [lifecycle optimizer](https://docs.clevertap.com/docs/lifecycle-optimizer?utm_source=C4S&utm_medium=doc&utm_id=KB), where you can map the user lifecycle and nudge users from one engagement stage to the next. Check out all the available add-ons under the My Plan section of the platform. For more information on including or removing add-ons, refer to the [add-ons](https://docs.clevertap.com/docs/billing?utm_source=C4S&utm_medium=doc&utm_id=KB#section-add-ons-inclusion) section. 
+CleverTap Essentials plan provides additional features available as either free or paid add-ons to help you grow. After you have mastered the basics, we recommend getting our [lifecycle optimizer](https://docs.clevertap.com/docs/lifecycle-optimizer?utm_source=C4S\&utm_medium=doc\&utm_id=KB), where you can map the user lifecycle and nudge users from one engagement stage to the next. Check out all the available add-ons under the My Plan section of the platform. For more information on including or removing add-ons, refer to the [add-ons](https://docs.clevertap.com/docs/billing?utm_source=C4S\&utm_medium=doc\&utm_id=KB#section-add-ons-inclusion) section. 
 
 ## Are there any separate costs for sending emails and SMS?
 
-You can integrate several external email and SMS service providers with CleverTap. There are no additional charges from CleverTap to integrate your email or SMS service providers and start running campaigns. Find out more about our [email integrations](https://docs.clevertap.com/docs/email-partners?utm_source=C4S&utm_medium=doc&utm_id=KB) and [SMS integrations](https://docs.clevertap.com/docs/sms-partners?utm_source=C4S&utm_medium=doc&utm_id=KB).
+You can integrate several external email and SMS service providers with CleverTap. There are no additional charges from CleverTap to integrate your email or SMS service providers and start running campaigns. Find out more about our [email integrations](https://docs.clevertap.com/docs/email-partners?utm_source=C4S\&utm_medium=doc\&utm_id=KB) and [SMS integrations](https://docs.clevertap.com/docs/sms-partners?utm_source=C4S\&utm_medium=doc\&utm_id=KB).
 
 ## How do I contact support?
 
