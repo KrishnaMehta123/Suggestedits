@@ -20,27 +20,27 @@ Our team is dedicated to producing the following types of content:
 
 ## Product Documentation
 
-- **Describe the use, operation, and design** of our software through comprehensive user and developer documentation, APIs, diagrams, and graphics.
-- **Provide help** while using our application, offering users an in-depth understanding of how to navigate and utilize our features.
-- **Provide user scenarios and best practices** to guide users through common tasks and workflows.
-- **Educate customers and employees** by offering clear, well-structured content that reduces the learning curve.
-- **Reduce technical support issues** and customer calls by providing easy-to-understand troubleshooting resources and guides.
+* **Describe the use, operation, and design** of our software through comprehensive user and developer documentation, APIs, diagrams, and graphics.
+* **Provide help** while using our application, offering users an in-depth understanding of how to navigate and utilize our features.
+* **Provide user scenarios and best practices** to guide users through common tasks and workflows.
+* **Educate customers and employees** by offering clear, well-structured content that reduces the learning curve.
+* **Reduce technical support issues** and customer calls by providing easy-to-understand troubleshooting resources and guides.
 
 ## UX Content
 
-- **Standardize product naming and terminology** across all content to ensure consistency.
-- **Write clear, concise, and helpful UX copy** that helps users make better decisions while building trust in the product.
-- **Maintain a consistent product voice and tone** that aligns with the CleverTap brand and enhances the user experience.
-- **Guide users** with intuitive UI descriptions and functionality information to help them navigate and use the software more effectively.
+* **Standardize product naming and terminology** across all content to ensure consistency.
+* **Write clear, concise, and helpful UX copy** that helps users make better decisions while building trust in the product.
+* **Maintain a consistent product voice and tone** that aligns with the CleverTap brand and enhances the user experience.
+* **Guide users** with intuitive UI descriptions and functionality information to help them navigate and use the software more effectively.
 
 ## Documentation Deliverables
 
 Our team is responsible for producing the following types of documentation:
 
-- **CleverTap User Documentation**: User guides, help articles, and FAQs that assist customers in using our product.
-- **CleverTap Developer Documentation**: Technical resources, API documentation, and setup guides for developers integrating with our platform.
-- Partner Guide 
-- What's New
+* **CleverTap User Documentation**: User guides, help articles, and FAQs that assist customers in using our product.
+* **CleverTap Developer Documentation**: Technical resources, API documentation, and setup guides for developers integrating with our platform.
+* Partner Guide 
+* What's New
 
 # How to Contact Us
 
