@@ -16,18 +16,18 @@ next:
 
 Integrating Jotform with CleverTap via Zapier enables you to:
 
-- **Sync User Data Automatically**: Send Jotform submissions to CleverTap without manual intervention.
-- **Update or Create Profiles Instantly**: Keep user information such as name, email, and preferences up to date.
-- **Trigger Automated Campaigns**: Initiate CleverTap journeys based on form submissions or document signings.
-- **Enhance Targeting and Personalization**: Enrich CleverTap profiles with form data for better segmentation.
+* **Sync User Data Automatically**: Send Jotform submissions to CleverTap without manual intervention.
+* **Update or Create Profiles Instantly**: Keep user information such as name, email, and preferences up to date.
+* **Trigger Automated Campaigns**: Initiate CleverTap journeys based on form submissions or document signings.
+* **Enhance Targeting and Personalization**: Enrich CleverTap profiles with form data for better segmentation.
 
 # Prerequisites for Integration
 
 The following are the prerequisites for this integration:
 
-- Access to your **Jotform** account
-- Access to an active **Zapier** account
-- A CleverTap account with a valid **Account ID** and **Passcode**
+* Access to your **Jotform** account
+* Access to an active **Zapier** account
+* A CleverTap account with a valid **Account ID** and **Passcode**
 
 # Integrate Jotform with CleverTap Using Zapier
 
@@ -47,28 +47,13 @@ CleverTap uses a header-based authentication model to authenticate API requests.
 Consider an example where you want to capture onboarding details such as Name, Email, and Preferences using Jotform. To do so, perform the following steps:
 
 1. Log in to your **Jotform dashboard**.
-2. Click **+ Create Form** and select a form type such as _Start From Scratch_ or _Use Template_.
+2. Click **+ Create Form** and select a form type such as *Start From Scratch* or *Use Template*.
 3. Customize your form fields as needed.
 4. Click **Publish** to make the form live.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/190399e6cc6b7a01c2bf5927a8d51d2dc5773a9f3e14ed0976bd32a37c98f52d-Screen_Recording_2025-07-14_at_2.18.45_PM_1.gif",
-        "",
-        "Create a Form in Jotform"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Create a Form in Jotform"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Create a Form in Jotform" align="center" width="75% " border={true} src="https://files.readme.io/190399e6cc6b7a01c2bf5927a8d51d2dc5773a9f3e14ed0976bd32a37c98f52d-Screen_Recording_2025-07-14_at_2.18.45_PM_1.gif">
+  Create a Form in Jotform
+</Image>
 
 ## Connect Jotform and CleverTap via Zapier
 
@@ -79,57 +64,27 @@ Zapier acts as the automation bridge between Jotform and CleverTap. Whenever a u
 1. Log in to the [Zapier dashboard](https://zapier.com/app/home) and click **+ Create Zap**.
 2. **Set up the Trigger:**
 
-   1. Select _Jotform_ as the Trigger App.
-   2. Select _New Submission_ as the Trigger Event.
+   1. Select *Jotform* as the Trigger App.
+   2. Select *New Submission* as the Trigger Event.
    3. Connect your Jotform account and follow the on-screen instructions to authenticate.
    4. Select the form you wish to associate with this trigger.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4f6b2ccf174a3a0b5055c327c2232c899295ce7f99d21420433c42e8825d9ca3-2025-10-06_11-02-45_1.gif",
-        "",
-        "Set up the Jotform Trigger"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Set up the Jotform Trigger"
-    }
-  ]
-}
-[/block]
+<Image alt="Set up the Jotform Trigger" align="center" width="75% " border={true} src="https://files.readme.io/4f6b2ccf174a3a0b5055c327c2232c899295ce7f99d21420433c42e8825d9ca3-2025-10-06_11-02-45_1.gif">
+  Set up the Jotform Trigger
+</Image>
 
-
-3. Click **Test Trigger**. This ensures that the correct account is connected and the trigger is set up correctly.  
+3. Click **Test Trigger**. This ensures that the correct account is connected and the trigger is set up correctly.\
    After testing the trigger, Zapier will fetch the most recent responses of the form.
 4. **Set up the Action:**
 
-   1. Select _CleverTap_ as the Action App.
-   2. Select _Create/Update User Profile_ from the Action event dropdown.
-   3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create a Passcode on CleverTap Dashboard](doc:outgrow#create-a-passcode-on-the-clevertap-dashboard) step.
+   1. Select *CleverTap* as the Action App.
+   2. Select *Create/Update User Profile* from the Action event dropdown.
+   3. Select *Account* to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create a Passcode on CleverTap Dashboard](doc:outgrow#create-a-passcode-on-the-clevertap-dashboard) step.
    4. Click **Continue** after successfully connecting your account.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f0cf2f86c09089d9993dd29b8ca95ff5c2fff6f8e467dfccf3a2733f40ff5bca-2025-10-05_12-26-06_1.gif",
-        "",
-        "Select the Action for Zap"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Select the Action for Zap"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Select the Action for Zap" align="center" width="75% " border={true} src="https://files.readme.io/f0cf2f86c09089d9993dd29b8ca95ff5c2fff6f8e467dfccf3a2733f40ff5bca-2025-10-05_12-26-06_1.gif">
+  Select the Action for Zap
+</Image>
 
 5. **Configure the Action**. Map Jotform data fields to CleverTap fields as follows:
 
@@ -141,30 +96,15 @@ Zapier acts as the automation bridge between Jotform and CleverTap. Whenever a u
 | Profile Properties | Responses in JSON format (for example: `{"name": "Alex", "email": "alex@example.com", "role": "Manager"}`) |
 
 > 🚧 Mapping Identity and Object ID
-> 
+>
 > You can keep the Identity field blank if you provide an Object ID, and vice versa.
 
 4. Click **Continue**. Click **Test Step** to test the zap after mapping the files.
 5. Click **Publish Zap** to activate the workflow.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/636844348adc7589790c52e54183e37b00157fdc1ab5d2ee1ea7a07c1252013e-image.png",
-        null,
-        "Verify User Profile in CleverTap"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Verify User Profile in CleverTap"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Verify User Profile in CleverTap" align="center" width="75% " border={true} src="https://files.readme.io/636844348adc7589790c52e54183e37b00157fdc1ab5d2ee1ea7a07c1252013e-image.png">
+  Verify User Profile in CleverTap
+</Image>
 
 ## Configure CleverTap Campaign (Optional)
 
@@ -172,9 +112,9 @@ You can also display your Jotform forms inside CleverTap **In-App** or **Web Pop
 
 To embed a Jotform form:
 
-1. Copy your Jotform _form URL_ or _embed code_. This can be copied after creating and publishing the form from your Jotform dashboard. Refer to [Create a Form in Jotform](doc:jotform#create-a-form-in-jotform)
+1. Copy your Jotform *form URL* or *embed code*. This can be copied after creating and publishing the form from your Jotform dashboard. Refer to [Create a Form in Jotform](doc:jotform#create-a-form-in-jotform)
 2. In the CleverTap dashboard, create a new [In-App Message](doc:create-message-in-app) campaign that supports HTML
-3. In the _What_ section, select a **Custom HTML Template** such as _Blank Template_.
+3. In the *What* section, select a **Custom HTML Template** such as *Blank Template*.
 4. Replace the content with your Jotform embed code.
 
 ```html
@@ -191,24 +131,9 @@ To embed a Jotform form:
 5. Click **Preview and Test** to ensure the form renders correctly within the campaign.
 6. Publish the campaign to display the form to users.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7acef3170b249d289806b962ab5da4b411e8eb4864bb94ac219a1e6f939c7e5-image.png",
-        null,
-        "Embed Jotform in CleverTap Campaign"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "Embed Jotform in CleverTap Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Embed Jotform in CleverTap Campaign" align="center" width="75% " border={true} src="https://files.readme.io/e7acef3170b249d289806b962ab5da4b411e8eb4864bb94ac219a1e6f939c7e5-image.png">
+  Embed Jotform in CleverTap Campaign
+</Image>
 
 # FAQs
 
