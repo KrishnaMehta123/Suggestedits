@@ -38,11 +38,8 @@ next:
       title: Push Troubleshooting & FAQs
       url: https://docs.clevertap.com/docs/troubleshooting-faqs-push-notifications
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
+## Overview
+
 Push notifications provide the capability to communicate brief, yet important alerts to your mobile app users. CleverTap’s rich segmentation and powerful infrastructure lets you send time-sensitive, relevant, and personalized push messages on a large scale.
 
 The *Push* module on the CleverTap dashboard under *Campaigns* makes it easy to set up push campaigns for all your users or specific user segments. These segments can be created on the basis of past or live user behavior, user properties, or a combination of user behavior and properties. 
@@ -50,20 +47,7 @@ The *Push* module on the CleverTap dashboard under *Campaigns* makes it easy to 
 Once a campaign has been sent, you can view detailed reports on how many messages were sent, how many users clicked on them, and how many users converted as a result.
 
 Following is an example of push notifications in the notification tray or the notification inbox:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/64ceb99-push_delivery_example.png",
-        "push_delivery_example.png",
-        4460,
-        3156,
-        "#5b5a59"
-      ],
-      "border": true,
-      "caption": "Push Notification Sample"
-    }
-  ]
-}
-[/block]
+
+<Image title="push_delivery_example.png" alt={4460} border={true} src="https://files.readme.io/64ceb99-push_delivery_example.png">
+  Push Notification Sample
+</Image>
