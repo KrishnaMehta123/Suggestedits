@@ -19,19 +19,19 @@ The Import feature enables seamless import and synchronization of data from your
 
 With data warehouse Import, you can:  
 
-- Automate **User Profile Data** and **Event Data** imports.  
-- Perform a **Dry Run** to validate your configuration before importing.  
-- Schedule imports with custom intervals or run them manually as needed.  
-- Ensure data accuracy through identity mapping and timestamp-based sync.  
+* Automate **User Profile Data** and **Event Data** imports.  
+* Perform a **Dry Run** to validate your configuration before importing.  
+* Schedule imports with custom intervals or run them manually as needed.  
+* Ensure data accuracy through identity mapping and timestamp-based sync.  
 
 # Prerequisites
 
 Before you begin, ensure you have the following:  
 
-- A data warehouse account integrated with CleverTap.  
-- Necessary permissions to create and manage imports.  
-- Access to the data warehouse database with properly configured data.  
-- Identified data to be imported (**User Profile Data** or **Event Data**).  
+* A data warehouse account integrated with CleverTap.  
+* Necessary permissions to create and manage imports.  
+* Access to the data warehouse database with properly configured data.  
+* Identified data to be imported (**User Profile Data** or **Event Data**).  
 
 # Quick Start Guide for Data Warehouse Import
 
@@ -44,13 +44,13 @@ This section is intended for users who have previously set up an **Import** and 
 
 ## Set Up Import
 
-To start an import, navigate to _Settings > Partners > Import Center > Create Import_, then select **Partner**.  
+To start an import, navigate to *Settings > Partners > Import Center > Create Import*, then select **Partner**.  
 
 Ensure that:  
 
-- Your **Database is integrated** with CleverTap.  
-- You configure the **import nickname, database selection, and query type (SQL or Tab)**.  
-- Use **Preview Results** to validate the query before saving the configuration.  
+* Your **Database is integrated** with CleverTap.  
+* You configure the **import nickname, database selection, and query type (SQL or Tab)**.  
+* Use **Preview Results** to validate the query before saving the configuration.  
 
 For detailed steps, refer to [Create Import](doc:create-import).  
 
@@ -58,11 +58,11 @@ For detailed steps, refer to [Create Import](doc:create-import).
 
 CleverTap requires mapping data to either **User Profile Data** or **Event Data**.  
 
-- **Identity Mapping:** Choose from the following options:  
-  - **Identity**: Uses email, phone number, or other unique identifiers to match users.  
-  - **CleverTap ID**: Uses CleverTap’s system-generated ID to track users.  
-- **Updated On Mapping:** Ensures only new or updated rows are imported.  
-- **User & Event Property Mapping:** Assign data warehouse fields to CleverTap attributes.  
+* **Identity Mapping:** Choose from the following options:  
+  * **Identity**: Uses email, phone number, or other unique identifiers to match users.  
+  * **CleverTap ID**: Uses CleverTap’s system-generated ID to track users.  
+* **Updated On Mapping:** Ensures only new or updated rows are imported.  
+* **User & Event Property Mapping:** Assign data warehouse fields to CleverTap attributes.  
 
 For more information, refer to [Data Mapping](doc:data-mapping-snowflake-import).  
 
@@ -70,8 +70,8 @@ For more information, refer to [Data Mapping](doc:data-mapping-snowflake-import)
 
 A **dry run** allows you to test the import setup without affecting live data.  
 
-- Checks for **data mapping errors, missing fields, or syntax issues**.  
-- Displays validation results, including profile updates and new profile creation.  
+* Checks for **data mapping errors, missing fields, or syntax issues**.  
+* Displays validation results, including profile updates and new profile creation.  
 
 For error handling and troubleshooting, refer to [Perform Dry Run](doc:perform-dry-run).  
 
@@ -79,9 +79,9 @@ For error handling and troubleshooting, refer to [Perform Dry Run](doc:perform-d
 
 To automate data imports, configure a **schedule** based on business needs:  
 
-- **Repeat Intervals**: Automate imports at fixed intervals (hourly, daily, and so on).  
-- **Custom Schedule**: Set up imports on specific days of the week or month.  
-- **Manually Trigger**: Run imports immediately or at a specific date/time.  
+* **Repeat Intervals**: Automate imports at fixed intervals (hourly, daily, and so on).  
+* **Custom Schedule**: Set up imports on specific days of the week or month.  
+* **Manually Trigger**: Run imports immediately or at a specific date/time.  
 
 For setup instructions, refer to [Schedule Import](doc:schedule).  
 
@@ -89,8 +89,8 @@ For setup instructions, refer to [Schedule Import](doc:schedule).
 
 Track and troubleshoot import progress via the **Import Listing** page.  
 
-- View **status, frequency, and health** of imports.  
-- Use filters to track imports by **date, creator, or status**.  
-- Analyze **import stats**, including **total records, success rate, and errors**.  
+* View **status, frequency, and health** of imports.  
+* Use filters to track imports by **date, creator, or status**.  
+* Analyze **import stats**, including **total records, success rate, and errors**.  
 
 For more information, refer to [Import Listing and Stats](doc:import-listing-and-stats).
