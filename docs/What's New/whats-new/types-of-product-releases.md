@@ -23,5 +23,5 @@ The following table describes the different types of product releases:
 | ![Update](https://files.readme.io/0c15d9f-Tags.svg)            | Bug fixes, performance improvements, and security enhancements to refine the existing product.                 |
 
 > 📘 Note
-> 
+>
 > Any new feature, enhancement, or update without a Beta or Private Beta tag is considered a General Availability (GA) release.
