@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-<<Need to add info here>>
+{user["Need to add info here"]}
