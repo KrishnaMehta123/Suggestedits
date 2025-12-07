@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-<<Good to have.  Will publish whenever available.>>
+{user["Good to have.  Will publish whenever available."]}
