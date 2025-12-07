@@ -16,17 +16,17 @@ next:
 
 With the CleverTap and Weatherstack integration, you can enhance your marketing campaigns with dynamic weather insights and deliver personalized, context-aware messages to your users. For example:
 
-- Promote indoor products when thunderstorms are reported in the user’s area.
-- Offer cooling products or beverages during hot weather.
-- Recommend air purifiers or masks when pollution levels are high.
+* Promote indoor products when thunderstorms are reported in the user’s area.
+* Offer cooling products or beverages during hot weather.
+* Recommend air purifiers or masks when pollution levels are high.
 
 # Prerequisites for Integration
 
 Before setting up the integration, ensure the following:
 
-- You have a **Weatherstack account** and access to your [API Key](https://weatherstack.com/dashboard).
-- You have access to the [Weatherstack API documentation](https://weatherstack.com/documentation).
-- You have an active CleverTap account with Linked Content enabled.
+* You have a **Weatherstack account** and access to your [API Key](https://weatherstack.com/dashboard).
+* You have access to the [Weatherstack API documentation](https://weatherstack.com/documentation).
+* You have an active CleverTap account with Linked Content enabled.
 
 # Integrating Weatherstack with CleverTap
 
@@ -43,24 +43,9 @@ Before configuring CleverTap, you need to retrieve your Weatherstack API Key, wh
 1. Log in to your [Weatherstack Dashboard](https://weatherstack.com/dashboard).
 2. Copy your **API Key** listed in the account overview.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ed115ab68c0d72440b8df3e4bc8e4e4366af5630b5b1a489e68ff7dcf70f674-image.png",
-        null,
-        "Weatherstack API Key"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Weatherstack API Key"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Weatherstack API Key" align="center" width="65% " border={true} src="https://files.readme.io/5ed115ab68c0d72440b8df3e4bc8e4e4366af5630b5b1a489e68ff7dcf70f674-image.png">
+  Weatherstack API Key
+</Image>
 
 ### Supported Location Inputs
 
@@ -78,7 +63,7 @@ The Weatherstack API allows for flexible ways to specify a user’s location. Th
 
 Set up Linked Content in CleverTap to dynamically fetch live weather data from Weatherstack. To do so, perform the following steps:
 
-1. Go to _Settings_ > _Setup_ >_ Linked Content_ from the CleverTap dashboard.
+1. Go to *Settings* > *Setup* > *Linked Content* from the CleverTap dashboard.
 2. Click **+ Linked Content** and enter the following:
 
 | **Field**        | **Value**                                                                                                                                                                    |
@@ -88,27 +73,12 @@ Set up Linked Content in CleverTap to dynamically fetch live weather data from W
 | **Endpoint URL** | Enter the following endpoint URL: `http://api.weatherstack.com/current?access_key=<YOUR_API_KEY>&query={{city}}` Replace `<YOUR_API_KEY>` with your actual Weatherstack key. |
 
 > 📘 Note
-> 
+>
 > The `{{city}}` parameter dynamically pulls the user’s city from their CleverTap profile. See [Supported Location Inputs](#supported-location-inputs) for alternate location formats.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/17a21e60a9a0dd89732f981a365e7b8c9c2857ca44673c5dda5b7d0cb227fbb8-image.png",
-        null,
-        "Linked Content Setup"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Linked Content Setup"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Linked Content Setup" align="center" width="65% " border={true} src="https://files.readme.io/17a21e60a9a0dd89732f981a365e7b8c9c2857ca44673c5dda5b7d0cb227fbb8-image.png">
+  Linked Content Setup
+</Image>
 
 3. Click **Test Linked Content** to verify the connection. A successful response will look similar to the following sample:
 
@@ -134,75 +104,30 @@ Set up Linked Content in CleverTap to dynamically fetch live weather data from W
 
 4. Click **Auto-Fill Objects with Response** to automatically map the JSON keys.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/10c305982396d65187fa3d5b33a92095417e03635c2fd482f624c20bc6457cfa-image.png",
-        null,
-        "Auto-Fill Objects with Response"
-      ],
-      "align": "center",
-      "sizing": "55% ",
-      "border": true,
-      "caption": "Auto-Fill Objects with Response"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Auto-Fill Objects with Response" align="center" width="55% " border={true} src="https://files.readme.io/10c305982396d65187fa3d5b33a92095417e03635c2fd482f624c20bc6457cfa-image.png">
+  Auto-Fill Objects with Response
+</Image>
 
 5. Click **Test and Save** to complete your Linked Content configuration.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3402fb23a998b25fd1aaee63d16c5ea1f0f39e0ecd8d0095bb5f33980d5a6302-image.png",
-        null,
-        "Test and Save"
-      ],
-      "align": "center",
-      "sizing": "35% ",
-      "border": true,
-      "caption": "Test and Save"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Test and Save" align="center" width="35% " border={true} src="https://files.readme.io/3402fb23a998b25fd1aaee63d16c5ea1f0f39e0ecd8d0095bb5f33980d5a6302-image.png">
+  Test and Save
+</Image>
 
 ## Create Personalized Campaign
 
 Once Linked Content is configured, you can use Weatherstack data to create personalized campaigns in CleverTap. You can personalize campaigns based on real-time weather data in a Push Notification campaign or any other campaign type that supports Linked Content. To do so, perform the following steps:
 
-1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Push Notification_ from the list of messaging channels.
-2. Click **Go to Editor** under the _What_ section.
+1. Go to the *Campaigns* page, click **+ Campaign**, and select *Push Notification* from the list of messaging channels.
+2. Click **Go to Editor** under the *What* section.
 
    1. Click **Personalization** in the top-right corner.
    2. Select the Linked Content configured in [Configure Linked Content API](doc:weatherstack#configure-linked-content-api).
    3. Map the `{{city}}` parameter to the user's city attribute.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c9c63a41b446c215d0a95474a3e8a26ce0e220b0049454eae7e6547e3e8d46d-image.png",
-        null,
-        "Personalization Setup"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Personalization Setup"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Personalization Setup" align="center" width="65% " border={true} src="https://files.readme.io/8c9c63a41b446c215d0a95474a3e8a26ce0e220b0049454eae7e6547e3e8d46d-image.png">
+  Personalization Setup
+</Image>
 
 3. Use [Liquid tags](doc:personalize-message-all#liquid-tags) to personalize your message dynamically. For example:
 
@@ -230,46 +155,16 @@ Stay cool with our **Breezy Linen Collection** – **10% OFF** with code **BREEZ
 {% endif %}
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ff1a9833e42a4a98a538421aae57d6c77976902e18c8802fde1da0735716259e-image.png",
-        null,
-        "Example Personalized Message"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Example Personalized Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Example Personalized Message" align="center" width="65% " border={true} src="https://files.readme.io/ff1a9833e42a4a98a538421aae57d6c77976902e18c8802fde1da0735716259e-image.png">
+  Example Personalized Message
+</Image>
 
 4. Click **Preview and Publish** to test and launch your campaign.
 
 Users will now receive weather-personalized push notifications based on real-time data from Weatherstack and their current location.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d70c6055172c608922b1483bfaa1b21598c2e90b48e49094e2bc3ab2e9326e78-image.png",
-        null,
-        "Push Notification Preview"
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true,
-      "caption": "Push Notification Preview"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Push Notification Preview" align="center" width="25% " border={true} src="https://files.readme.io/d70c6055172c608922b1483bfaa1b21598c2e90b48e49094e2bc3ab2e9326e78-image.png">
+  Push Notification Preview
+</Image>
 
 By combining Weatherstack’s live weather intelligence with CleverTap’s personalization engine, you can create truly contextual campaigns that engage users in the moment and drive measurable business results.
