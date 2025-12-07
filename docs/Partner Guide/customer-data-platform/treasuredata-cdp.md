@@ -13,7 +13,7 @@ next:
 # Overview
 
 > 📘 Public Beta
-> 
+>
 > This feature is released in Public Beta. For more information about this feature, contact your Success Manager or [CleverTap support.](https://clevertap.com/contact-us/)
 
 A Customer Data Platform (CDP) like [Treasure Data](https://www.treasuredata.com/) streamlines data transfer between systems. It enables customers to consolidate data from one source and push it to multiple destinations, such as CleverTap and other attribution partners, without requiring manual integration of each system.
@@ -23,7 +23,7 @@ The CleverTap integration with Treasure Data allows for seamless data synchroniz
 If you have any issues with this integration, write to [Treasure Data support](https://support.treasuredata.com/hc/en-us/requests)
 
 > 📘 Cloud Mode Integration
-> 
+>
 > This Cloud mode integration facilitates efficient data synchronization between Treasure Data and CleverTap. If you require a Device mode integration for more granular control or specific use cases, contact Treasure Data [support](https://support.treasuredata.com/hc/en-us/requests) for assistance.
 
 # Integrating Imports from Treasure Data to CleverTap
@@ -46,28 +46,14 @@ To configure CleverTap on Treasure Data, follow these steps:
 
 4. **Search for CleverTap**: Use the search bar to find "CleverTap" and select it from the list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/edc181838d62f0d5e89ebf86d99b1aef023911bf1a5e6562966dd56ee70e3cda-Screenshot_2024-09-27_at_4.10.19_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/edc181838d62f0d5e89ebf86d99b1aef023911bf1a5e6562966dd56ee70e3cda-Screenshot_2024-09-27_at_4.10.19_PM.png" />
 
 5. **Create Authentication**: Click on "Create Authentication."
 6. **Provide Credential Information**: Fill in the required credential information as specified in your integration documentation. This usually includes:
 
-- **Account ID**: Access the CleverTap dashboard and locate the Project ID under Settings > Project.
-- **Account Passcode**: Access the CleverTap dashboard and locate the Passcode under Settings > Project. To know more refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
-- **Region**: Access the CleverTap dashboard and locate Region for the API endpoint you want to select under Settings > Project. To find the API endpoint for your region, refer to [API endpoints based on your data centre region](https://developer.clevertap.com/docs/idc#api).
+* **Account ID**: Access the CleverTap dashboard and locate the Project ID under Settings > Project.
+* **Account Passcode**: Access the CleverTap dashboard and locate the Passcode under Settings > Project. To know more refer to [Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
+* **Region**: Access the CleverTap dashboard and locate Region for the API endpoint you want to select under Settings > Project. To find the API endpoint for your region, refer to [API endpoints based on your data centre region](https://developer.clevertap.com/docs/idc#api).
 
 7. **Continue**: After entering the credentials, select "Continue."
 8. **Enter a Name for the Authentication**: Provide a descriptive name for the authentication setup, then click "Done."
@@ -98,29 +84,29 @@ This section outlines the key parameters required to configure the connector for
 
 ### Target Data Entity
 
-- **User Profiles**: Import user profile data.
-- **User Events**: Import user event data.
-- **User Audiences - Custom List**: Import a custom list segment.
+* **User Profiles**: Import user profile data.
+* **User Events**: Import user event data.
+* **User Audiences - Custom List**: Import a custom list segment.
 
 # User Profiles Import from Treasure Data
 
 Select one of the following operations for importing user profiles. Refer to this document to [know more](https://docs.treasuredata.com/articles/int/clevertap-export-integration/a/h2_1587868635).
 
-- **Upload User Profiles**: Update user profile information.
-- **Upload Device Tokens**: Add existing device tokens.
-- **Demerge User Profile**: Separate merged profiles.
-- **Update Email/Phone Subscription**: Manage subscription statuses.
-- **Disassociate a Phone Number**: Disconnect a phone number.
+* **Upload User Profiles**: Update user profile information.
+* **Upload Device Tokens**: Add existing device tokens.
+* **Demerge User Profile**: Separate merged profiles.
+* **Update Email/Phone Subscription**: Manage subscription statuses.
+* **Disassociate a Phone Number**: Disconnect a phone number.
 
 ## Additional Options
 
 You can customize the import process with the following options:
 
-- **Array Property Operation**: Choose to replace, append, or remove.
-- **Name for Custom List Upload**: Required for custom lists. [Know more](https://docs.treasuredata.com/articles/int/clevertap-export-integration/a/fieldcolumn-level-specifications)
-- **Segment Operation Mode**: Create or update segments.
-- **Thread Count Number**: Set concurrent requests (1-10, default 5).
-- **Skip on Invalid Record**: Check to skip invalid records.
+* **Array Property Operation**: Choose to replace, append, or remove.
+* **Name for Custom List Upload**: Required for custom lists. [Know more](https://docs.treasuredata.com/articles/int/clevertap-export-integration/a/fieldcolumn-level-specifications)
+* **Segment Operation Mode**: Create or update segments.
+* **Thread Count Number**: Set concurrent requests (1-10, default 5).
+* **Skip on Invalid Record**: Check to skip invalid records.
 
 ## Query Specifications
 
@@ -257,19 +243,19 @@ This section details the configuration required to import custom list segments i
 
 ### Attribute Columns
 
-- **Export All Columns**: Choose this to export all columns without changes.
-- **Add Specific Columns**: Select `+ Add Columns` to include specific columns, updating the Output Column Name as needed.
+* **Export All Columns**: Choose this to export all columns without changes.
+* **Add Specific Columns**: Select `+ Add Columns` to include specific columns, updating the Output Column Name as needed.
 
 ### String Builder
 
-- **Add String**: Create custom strings for export using options like:
-  - **String**: Choose any value.
-  - **Timestamp**: The date and time of the export.
-  - **Segment Id**: The segment ID number.
-  - **Segment Name**: The segment name.
-  - **Audience Id**: The parent segment number.
+* **Add String**: Create custom strings for export using options like:
+  * **String**: Choose any value.
+  * **Timestamp**: The date and time of the export.
+  * **Segment Id**: The segment ID number.
+  * **Segment Name**: The segment name.
+  * **Audience Id**: The parent segment number.
 
 ### Setting a Schedule
 
-- Define your schedule and include optional email notifications.
-- Select **Create** to finalize the activation.
+* Define your schedule and include optional email notifications.
+* Select **Create** to finalize the activation.
