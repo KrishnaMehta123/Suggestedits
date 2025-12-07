@@ -16,26 +16,13 @@ You can personalize the web inbox message for every user based on specific user 
 
 # Inline Personalization
 
-To invoke the personalization menu, type the _@_ symbol in the title or description fields when creating a message.
+To invoke the personalization menu, type the *@* symbol in the title or description fields when creating a message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/72ec66e-web_inbox_personalization.png",
-        "Personalize Web Inbox Messages",
-        1532
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Messages"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Web Inbox Messages" alt={1532} align="center" border={true} src="https://files.readme.io/72ec66e-web_inbox_personalization.png">
+  Personalize Messages
+</Image>
 
-In addition to the title and description, you can personalize image URLs, deep links, or button text. An _@_ icon against any field indicates that you can personalize that field.
+In addition to the title and description, you can personalize image URLs, deep links, or button text. An *@* icon against any field indicates that you can personalize that field.
 
 # Liquid Tags
 
@@ -43,22 +30,9 @@ Click the ![Personalization](https://files.readme.io/b852e7f-Personalization_set
 
 Liquid tags offer great flexibility when composing personalized messages. They allow adding logic using a scripting language, which you can leverage to change the look and feel of your message. Following is an example to send personalized coupon codes based on the type of membership:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/03628fb-Liquid_Tags.png",
-        "Define Conditional Logic using Liquid Tags",
-        1134
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Define Conditional Logic Using Liquid Tags."
-    }
-  ]
-}
-[/block]
+<Image title="Define Conditional Logic using Liquid Tags" alt={1134} align="center" border={true} src="https://files.readme.io/03628fb-Liquid_Tags.png">
+  Define Conditional Logic Using Liquid Tags.
+</Image>
 
 Each notification is personalized to the receiver, as shown in the following example. 
 
@@ -67,7 +41,5 @@ Hi John!
 
 Here's a special code for you - MUM50
 ```
-
-
 
 For more information on using tags, refer to [Liquid Tags](doc:liquid-tags).
