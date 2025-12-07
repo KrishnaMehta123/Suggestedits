@@ -4,3 +4,4 @@
 - configure-aws-s3
 - bigquery-export
 - data-export-to-gcp
+- configure-google-cloud-platform
