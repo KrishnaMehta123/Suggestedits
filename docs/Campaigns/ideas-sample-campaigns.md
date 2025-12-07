@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-Need overview. <<Good to have. Can skip for now>>
+Need overview. {user["Good to have. Can skip for now"]}
