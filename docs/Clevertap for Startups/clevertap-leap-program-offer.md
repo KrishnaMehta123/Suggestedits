@@ -18,17 +18,17 @@ CleverTap for Startups presents an exclusive offer for all new users. After you 
 
 To be eligible for this offer, please review the following terms:
 
-- Applies only to users currently on the **CleverTap Essentials Plan**.
-- Valid only for **new CleverTap accounts**.
-- Applicable to both the **Base Plan** and **Add-Ons**.
-- Offer does not apply to [overages](doc:billing#overages).
-- Users must not have previously received CleverTap discounts or credits.
-- This offer cannot be combined with any other CleverTap discount or promotion, including:
+* Applies only to users currently on the **CleverTap Essentials Plan**.
+* Valid only for **new CleverTap accounts**.
+* Applicable to both the **Base Plan** and **Add-Ons**.
+* Offer does not apply to [overages](doc:billing#overages).
+* Users must not have previously received CleverTap discounts or credits.
+* This offer cannot be combined with any other CleverTap discount or promotion, including:
 
-  - Annual payment discounts.
-  - Goal-based incentives.
-  - Promotional programs such as the [Early Integration Offer](https://docs.clevertap.com/docs/early-integration-offer).
+  * Annual payment discounts.
+  * Goal-based incentives.
+  * Promotional programs such as the [Early Integration Offer](https://docs.clevertap.com/docs/early-integration-offer).
 
 > 📘 Note
-> 
+>
 > CleverTap reserves the right to modify or withdraw this offer at any time without prior notice.
