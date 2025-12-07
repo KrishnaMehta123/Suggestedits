@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-<<Good to have. need info from PM>>
+{user["Good to have. need info from PM"]}
