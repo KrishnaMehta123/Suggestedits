@@ -16,7 +16,7 @@ This section covers how to set up your dashboard and apps.
 
 # Set Up App
 
-You can set up the integration for your app from _Settings_ > _Project_. Alternatively, you can simply select the list from the dashboard top menu, click **Create New Project**.
+You can set up the integration for your app from *Settings* > *Project*. Alternatively, you can simply select the list from the dashboard top menu, click **Create New Project**.
 
 # Set Up your Android App
 
@@ -64,7 +64,7 @@ Add the following snippet to the same manifest file to allow the CleverTap SDK t
 CleverTapAPI clevertapDefaultInstance = CleverTapAPI.getDefaultInstance(getApplicationContext());
 ```
 
-4. Set up Firebase Cloud Messaging (FCM) to send push notifications using CleverTap.  
+4. Set up Firebase Cloud Messaging (FCM) to send push notifications using CleverTap.\
    Register the services inside the <application></application> tags of the Android manifest file.
 
 For more information, refer to [Using FCM version 18.00 and above](https://developer.clevertap.com/docs/using-fcm-version-1800-and-above). 
@@ -124,7 +124,7 @@ cleverTapAPI.onUserLogin(profileUpdate);
 To set up your iOS app, perform the following steps:
 
 1. Enter the AppStore URL for your app. This step is optional.
-2. Install the CleverTap SDK.  
+2. Install the CleverTap SDK.\
    To start integration, install CocoaPods. To integrate the app manually, refer to the [manual integration](https://developer.clevertap.com/docs/ios-quickstart-guide#section-option-b-manual-install). 
 
 Add the following snippet above in the Podfile and run the Pod install command to begin the installation of the CleverTap SDK.
@@ -196,7 +196,7 @@ clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agre
 
 3. Set up push notifications.
 
-To integrate and enable web push notifications, navigate to [web push channel setup] \(<https://developer.clevertap.com/docs/web#section-web-push>).
+To integrate and enable web push notifications, navigate to \[web push channel setup] \([https://developer.clevertap.com/docs/web#section-web-push](https://developer.clevertap.com/docs/web#section-web-push)).
 
 4. Test integration.
 
@@ -218,18 +218,18 @@ clevertap.profile.push({
 
 Set up your API to use events and user profiles. For more information, refer to [API Quick Start Guide](https://developer.clevertap.com/docs/api-quickstart-guide).
 
-1. Upload to the API endpoint: <https://api.clevertap.com/1/upload>
+1. Upload to the API endpoint: [https://api.clevertap.com/1/upload](https://api.clevertap.com/1/upload)
 
 > 📘 URLs for Your Specific Location
-> 
+>
 > Use the URL based on your location:
-> 
-> - India: `in1.api.clevertap.com`
-> - Singapore: `sg1.api.clevertap.com`
-> - U.S.: `us1.api.clevertap.com`
-> - Europe (default region): `api.clevertap.com`
-> - Indonesia: `aps3.api.clevertap.com`
-> - Middle East (UAE): `mec1.api.clevertap.com`
+>
+> * India: `in1.api.clevertap.com`
+> * Singapore: `sg1.api.clevertap.com`
+> * U.S.: `us1.api.clevertap.com`
+> * Europe (default region): `api.clevertap.com`
+> * Indonesia: `aps3.api.clevertap.com`
+> * Middle East (UAE): `mec1.api.clevertap.com`
 
 2. Use the JSON payload for events and user profiles.
 
@@ -317,32 +317,18 @@ Find answers to the following common questions about ̉Setting Up dashboard:
 
 Configure a session timeout for your dashboard in case of inactivity. Only admins can configure the session timeout, which is set to 30 minutes by default. To configure the session timeout:
 
-1. Navigate to _Organization_ > _Projects_.
+1. Navigate to *Organization* > *Projects*.
 2. Select the relevant time from the dropdown, and click **Save**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/355b2b755fb66df0650e649a550d59ce6118d37bff96802c250318cd4b764ea2-image.png",
-        null,
-        "Set Up Session Timeout"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Up Session Timeout"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Up Session Timeout" align="center" border={true} src="https://files.readme.io/355b2b755fb66df0650e649a550d59ce6118d37bff96802c250318cd4b764ea2-image.png">
+  Set Up Session Timeout
+</Image>
 
 ### How do you log out from all active devices at once?
 
 To log out from all active devices at once:
 
-1. Navigate to the _Profile_ page. 
+1. Navigate to the *Profile* page. 
 2. Click the **Log out of all Sessions** option. 
 3. Click **Continue**.  
 
@@ -354,13 +340,13 @@ A. You can bulk upload user profiles using the CSV Upload feature. You can also 
 
 To upload the CSV file to your CleverTap dashboard:
 
-1. Login to your CleverTap account and click the _Settings_ button.
+1. Login to your CleverTap account and click the *Settings* button.
 2. Click  **CSV Uploads**.
 3. Click **Import new profiles from CSV**.
 4. Select the CSV file from your computer, and then click the **Upload** button.
 5. Enter a name for the upload.
 
-Your CSV upload is processed in near real-time. After the uploaded CSV is processed, the status for that upload is changed to _completed_.
+Your CSV upload is processed in near real-time. After the uploaded CSV is processed, the status for that upload is changed to *completed*.
 
 For more information, refer to [CSV Upload](doc:csv-upload).
 
@@ -372,52 +358,22 @@ For example, if you set the Data Retention Policy(DRP) of an event to 12 months,
 
 To adjust the DRP for each event:
 
-1. Navigate to _Settings_ > _Schema_ > _Events_.
+1. Navigate to *Settings* > *Schema* > *Events*.
 2. Click the vertical ellipsis of the event you want to adjust/reduce the DRP.
 3. Click **Set DRP**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e8ea75f-New_final_Settings_DRP_Limit.png",
-        "New final Settings_DRP_Limit.png",
-        1163
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="New final Settings_DRP_Limit.png" alt={1163} align="center" className="border" border={true} src="https://files.readme.io/e8ea75f-New_final_Settings_DRP_Limit.png" />
 
 4. Choose the storage time accordingly.
 
 > 📘 CleverTap for Startups Limit
-> 
+>
 > The default DRP for CleverTap for Startups users is one year and this cannot be changed.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/faba57d-Set_DRP.png",
-        "Set DRP.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image title="Set DRP.png" align="center" className="border" border={true} src="https://files.readme.io/faba57d-Set_DRP.png" />
 
 4. Click **Save**.
 
 > ❗️ Note
-> 
+>
 > Analyze your data before reducing the DRP. Only remove the data that will not affect your campaigns. The maximum reduction in data DRP is up to three months.
