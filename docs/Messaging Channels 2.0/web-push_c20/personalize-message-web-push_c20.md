@@ -25,22 +25,9 @@ You can personalize the Web Push title and message body for every user based on 
 To invoke the personalization menu, type the @ symbol in the title or the text fields while creating the Web Push message.
 
 You can also add dynamic replacements in the Web Push title and body to send personalized web push notifications. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/90233f0-WEB_PUSH_PER.png",
-        "WEB PUSH PER.png",
-        1578,
-        948,
-        "#eeebf6"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="WEB PUSH PER.png" alt={1578} className="border" border={true} src="https://files.readme.io/90233f0-WEB_PUSH_PER.png" />
+
 # Recommendations
 
 Click the ![Personlization](https://files.readme.io/d946c02-personalization_icon.png) icon in the editor to open personalization options. 
