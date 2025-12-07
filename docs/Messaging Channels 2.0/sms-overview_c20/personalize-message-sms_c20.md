@@ -22,30 +22,17 @@ next:
       title: FAQs
       url: https://docs.clevertap.com/docs/sms-faqs_c20
 ---
-# Overview 
+# Overview
 
 You can personalize the SMS title and message body for every user based on specific user property or event property values. For more information on user profile properties and events (dynamic replacements), refer to [User Profiles](https://docs.clevertap.com/docs/user-profiles) and [Events](doc:events).
 
 # Message Personalization
 
 To invoke the personalization menu, type the @ symbol in the title or the text fields while creating the SMS message. It will allow you to add dynamic replacements in the SMS body. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7833739-SMS_personalisation.png",
-        "SMS personalisation.png",
-        1708,
-        880,
-        "#eeebf6"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
-# Catalog 
+
+<Image title="SMS personalisation.png" alt={1708} className="border" border={true} src="https://files.readme.io/7833739-SMS_personalisation.png" />
+
+# Catalog
 
 Click on the ![gear icon](https://files.readme.io/d946c02-personalization_icon.png) icon in the editor to open personalization options. 
 
