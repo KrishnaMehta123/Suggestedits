@@ -14,9 +14,9 @@ next:
 
 CleverTap users can now leverage the SMS capabilities of [Exotel](https://exotel.com/) to communicate with their customers for the following seamlessly:
 
-- Sending just in time offers to customers to drive purchases
-- Gathering feedback on the services 
-- Keeping customers informed and more
+* Sending just in time offers to customers to drive purchases
+* Gathering feedback on the services 
+* Keeping customers informed and more
 
 In addition, businesses can automate sales and marketing engagements by sending personalized texts through ISO-certified secure SMS pipes.
 
@@ -24,137 +24,184 @@ In addition, businesses can automate sales and marketing engagements by sending 
 
 The following are the prerequisites:
 
-- You must have an account with SMS permissions from Exotel.
-- You must have a CleverTap account with SMS setup enabled.
-- You must have DLT-approved templates if the region of your account is in India. 
+* You must have an account with SMS permissions from Exotel.
+* You must have a CleverTap account with SMS setup enabled.
+* You must have DLT-approved templates if the region of your account is in India. 
 
 # Integrate Exotel with CleverTap
 
 ## I. Configure Exotel Dashboard
 
-Per the DLT mandate, you must upload the following details to the _Settings_ page of your Exotel Account to send an SMS:
+Per the DLT mandate, you must upload the following details to the *Settings* page of your Exotel Account to send an SMS:
 
-- **Entity ID**: It is the unique ID provided to every business.
-- **Sender ID**: The six-digit ID from which the SMS is sent.
-- **Template ID**: It is the unique ID for each transactional or promotional SMS that you want to use.
-- **Template Details**: These are the DLT-approved templates for the messages you want to send to your customers. You need to upload it to the Exotel dashboard. 
-- **SMS Type**: It is used to classify different types of messages that you want to send to your customers. The following are the options available: transactional, service explicit, service implicit, and promotional.  
+* **Entity ID**: It is the unique ID provided to every business.
+* **Sender ID**: The six-digit ID from which the SMS is sent.
+* **Template ID**: It is the unique ID for each transactional or promotional SMS that you want to use.
+* **Template Details**: These are the DLT-approved templates for the messages you want to send to your customers. You need to upload it to the Exotel dashboard. 
+* **SMS Type**: It is used to classify different types of messages that you want to send to your customers. The following are the options available: transactional, service explicit, service implicit, and promotional.  
 
 > 📘 Exotel Support
-> 
+>
 > For more information and queries pertaining to Exotel, visit [Exotel Support Center](https://support.exotel.com/a/solutions/articles/3000114660).
 
 ## II. Find Exotel Details
 
 We recommend that you keep the following information handy before starting with configuration on the CleverTap dashboard:
 
-- **Account sid and API Credentials**: To obtain this information, navigate to the [_API_ > _API Settings_](https://my.exotel.com/Exotel/apisettings/site#api-credentials) page from the Exotel dashboard.
+* **Account sid and API Credentials**: To obtain this information, navigate to the [*API* > *API Settings*](https://my.exotel.com/Exotel/apisettings/site#api-credentials) page from the Exotel dashboard.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e388cc6-API_Settings_page.png",
-        "API Settings page.png",
-        2874
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="API Settings page.png" alt={2874} className="border" border={true} src="https://files.readme.io/e388cc6-API_Settings_page.png" />
 
-- **Sender ID**: To obtain this information, navigate to [_Settings_ > _Sender ID_](https://my.exotel.com/Exotel/settings/site#dltentity-settings) from the Exotel dashboard. 
+* **Sender ID**: To obtain this information, navigate to [*Settings* > *Sender ID*](https://my.exotel.com/Exotel/settings/site#dltentity-settings) from the Exotel dashboard. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bfee62e-Sender_ID.png",
-        "Sender ID.png",
-        2868
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Sender ID.png" alt={2868} className="border" border={true} src="https://files.readme.io/bfee62e-Sender_ID.png" />
 
-- **Entity ID**: To obtain this information, navigate to [_Settings_ > _SMS DLT Settings_](https://my.exotel.com/Exotel/settings/site#dltentity-settings). 
+* **Entity ID**: To obtain this information, navigate to [*Settings* > *SMS DLT Settings*](https://my.exotel.com/Exotel/settings/site#dltentity-settings). 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/22a84cd-SMS_DLT_Settings.png",
-        "SMS DLT Settings.png",
-        2506
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="SMS DLT Settings.png" alt={2506} className="border" border={true} src="https://files.readme.io/22a84cd-SMS_DLT_Settings.png" />
 
-- **DLT Template ID**: To obtain this information, navigate to [_Settings_ > _SMS Templates_](https://my.exotel.com/Exotel/settings/site#dltentity-settings).
+* **DLT Template ID**: To obtain this information, navigate to [*Settings* > *SMS Templates*](https://my.exotel.com/Exotel/settings/site#dltentity-settings).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/81c6ec8-SMS_Templates.png",
-        "SMS Templates.png",
-        2876
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="SMS Templates.png" alt={2876} className="border" border={true} src="https://files.readme.io/81c6ec8-SMS_Templates.png" />
 
 ## III. Configure CleverTap Dashboard:
 
 To configure the CleverTap dashboard:
 
-1. Navigate to _Settings_ > _Engage_ > _Channels_ > _SMS_ from the CleverTap dashboard.
-2. Click **+ Add Provider**. The _Add SMS provider_ screen displays.
+1. Navigate to *Settings* > *Engage* > *Channels* > *SMS* from the CleverTap dashboard.
+2. Click **+ Add Provider**. The *Add SMS provider* screen displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c48e134-Add_Provider.png",
-        "Add Provider.png",
-        884
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Add Provider.png" alt={884} className="border" border={true} src="https://files.readme.io/c48e134-Add_Provider.png" />
 
 3. Enter the following details:
 
-| <p>Field</p>          | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>Provider</p>       | <p>Select <em>Exotel</em> from the dropdown list.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| <p>Nickname</p>       | <p>Enter the nickname for the SMS Provider to uniquely identify it.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <p>Callback URL</p>   | <p>Enter the URL where status callbacks must be posted after the SMS is sent.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| <p>Account SID</p>    | <p>Enter your account identifier. For more information, refer to <em>Step 2</em>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| <p>API Key</p>        | <p>Enter API Key(Username) obtained in <a href="https://docs.clevertap.com/docs/exotel_wip#ii-find-exotel-details">Step II</a>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <p>API Token</p>      | <p>Enter API Token(Password) obtained in <a href="https://docs.clevertap.com/docs/exotel_wip#ii-find-exotel-details">Step II</a>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| <p>Region</p>         | <ul><li>Select the <em>Region</em> of your Exotel account from the dropdown list. </li><li>For any queries, contact <a href="https://support.exotel.com/a/solutions/articles/3000114660">Exotel Support Team</a>.</li><li>The following are the available options:<ul><li>Singapore: <a href="api.exotel.com">api.exotel.com</a>. This is the default value.</li><li>Mumbai: <a href="api.in.exotel.com">api.in.exotel.com</a></li></ul></li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| <p>From/Sender ID</p> | <ul><li>It is the ID from which the SMS is sent. </li><li>The format of this field is as follows:<br><code>&#x3C;VN>/&#x3C;SenderID></code> where <ul><li><code>&#x3C;VN></code> is the Exotel Virtual </li><li>Number/ExoPhone through which you send the SMS.</li></ul></li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <p>SMS Type</p>       | <ul><li>Select the <em>None</em> from the dropdown if you have uploaded your templates on the Exotel dashboard.</li><li>It is used to skip template addition on Exotel Dashboard and configure SMS type based on the template registered on DLT in India. </li><li>The following are the options available:<ul><li>None</li><li><strong>transactional</strong>: Indicates that SMS consists of OTP or Service Implicit content.</li><li><strong>transactional_opt_in</strong>: Indicates that the SMS consists of Service Explicit content.</li><li><strong>promotional</strong>: Indicates that the SMS consists of Promotional content with a numeric header.</li></ul></li><li>Default value for this field is None.</li><li>If not set or incorrectly passed, Exotel will look up if the content matches Templates added on Exotel for fetching SMS Type and DLT details.</li></ul> |
-| <p>DLT Entity ID</p>  | <ul><li>Indicates the Content Template ID against the SMS body registered with Distributed Ledger Technology (DLT) portal of operators in India.</li><li>It is optional if you configure it on the Exotel dashboard. If not configured, enter the DLT-approved Entity ID for your legal entity here.</li><li>It is applicable only for SMS sent by Indian businesses to Indian destination numbers.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| <p>Template ID</p>    | <ul><li>It is optional if you configure it on the Exotel dashboard. Enter the DLT-approved Template ID for your legal entity if not configured.</li><li>It is applicable only for SMS sent by Indian businesses to Indian destination numbers.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Field</p>
+      </th>
 
-4. Select the _Template ID_ checkbox. 
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <p>Provider</p>
+      </td>
+
+      <td>
+        <p>Select <em>Exotel</em> from the dropdown list.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Nickname</p>
+      </td>
+
+      <td>
+        <p>Enter the nickname for the SMS Provider to uniquely identify it.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Callback URL</p>
+      </td>
+
+      <td>
+        <p>Enter the URL where status callbacks must be posted after the SMS is sent.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Account SID</p>
+      </td>
+
+      <td>
+        <p>Enter your account identifier. For more information, refer to <em>Step 2</em>.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>API Key</p>
+      </td>
+
+      <td>
+        <p>Enter API Key(Username) obtained in <a href="https://docs.clevertap.com/docs/exotel_wip#ii-find-exotel-details">Step II</a>.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>API Token</p>
+      </td>
+
+      <td>
+        <p>Enter API Token(Password) obtained in <a href="https://docs.clevertap.com/docs/exotel_wip#ii-find-exotel-details">Step II</a>.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Region</p>
+      </td>
+
+      <td>
+        <ul><li>Select the <em>Region</em> of your Exotel account from the dropdown list. </li><li>For any queries, contact <a href="https://support.exotel.com/a/solutions/articles/3000114660">Exotel Support Team</a>.</li><li>The following are the available options:<ul><li>Singapore: <a href="api.exotel.com">api.exotel.com</a>. This is the default value.</li><li>Mumbai: <a href="api.in.exotel.com">api.in.exotel.com</a></li></ul></li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>From/Sender ID</p>
+      </td>
+
+      <td>
+        <ul><li>It is the ID from which the SMS is sent. </li><li>The format of this field is as follows:<br /><code>\<VN>/\<SenderID></code> where <ul><li><code>\<VN></code> is the Exotel Virtual </li><li>Number/ExoPhone through which you send the SMS.</li></ul></li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>SMS Type</p>
+      </td>
+
+      <td>
+        <ul><li>Select the <em>None</em> from the dropdown if you have uploaded your templates on the Exotel dashboard.</li><li>It is used to skip template addition on Exotel Dashboard and configure SMS type based on the template registered on DLT in India. </li><li>The following are the options available:<ul><li>None</li><li><strong>transactional</strong>: Indicates that SMS consists of OTP or Service Implicit content.</li><li><strong>transactional\_opt\_in</strong>: Indicates that the SMS consists of Service Explicit content.</li><li><strong>promotional</strong>: Indicates that the SMS consists of Promotional content with a numeric header.</li></ul></li><li>Default value for this field is None.</li><li>If not set or incorrectly passed, Exotel will look up if the content matches Templates added on Exotel for fetching SMS Type and DLT details.</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>DLT Entity ID</p>
+      </td>
+
+      <td>
+        <ul><li>Indicates the Content Template ID against the SMS body registered with Distributed Ledger Technology (DLT) portal of operators in India.</li><li>It is optional if you configure it on the Exotel dashboard. If not configured, enter the DLT-approved Entity ID for your legal entity here.</li><li>It is applicable only for SMS sent by Indian businesses to Indian destination numbers.</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Template ID</p>
+      </td>
+
+      <td>
+        <ul><li>It is optional if you configure it on the Exotel dashboard. Enter the DLT-approved Template ID for your legal entity if not configured.</li><li>It is applicable only for SMS sent by Indian businesses to Indian destination numbers.</li></ul>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+4. Select the *Template ID* checkbox. 
 5. Select the **Mark this as default** checkbox to make this SMS provider the default provider to send the SMS.
 6. Click **Save** to save the details.
 
@@ -164,24 +211,10 @@ To ensure that the integration is successful:
 
 1. Click the **Send Test SMS** hyperlink before you start creating SMS campaigns and journeys.
 2. Enter the following details: 
-   - **Country Code and Mobile number**: Enter the country code and mobile number to which you want to send the message. 
-   - **Message**: This is a test message powered by Exotel.
+   * **Country Code and Mobile number**: Enter the country code and mobile number to which you want to send the message. 
+   * **Message**: This is a test message powered by Exotel.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/476dbd6-Send_test_SMS.png",
-        "Send test SMS.png",
-        2232
-      ],
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Send test SMS.png" alt={2232} className="border" width="80%" border={true} src="https://files.readme.io/476dbd6-Send_test_SMS.png" />
 
 # Create Campaigns and Journeys
 
@@ -191,25 +224,12 @@ Now that your integration is successful, you can now create [campaigns](https://
 
 ## Failed to send out test notifications
 
-**Issue**  
+**Issue**\
 The following error displays when saving Exotel credentials in the CleverTap dashboard
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/91f1ae3-Screenshot_2022-05-25_at_1.07.22_PM.png",
-        "Screenshot 2022-05-25 at 1.07.22 PM.png",
-        1536
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Screenshot 2022-05-25 at 1.07.22 PM.png" alt={1536} className="border" border={true} src="https://files.readme.io/91f1ae3-Screenshot_2022-05-25_at_1.07.22_PM.png" />
 
- **Resolution**  
+ **Resolution**\
 The following are the steps to resolve the issue:
 
 1. [Find your Exotel Credentials](https://docs.clevertap.com/docs/exotel_wip#ii-find-exotel-details). Ensure that the keys are added correctly as they are case-sensitive.
@@ -218,20 +238,20 @@ The following are the steps to resolve the issue:
 
 # FAQs
 
-**1. How can I check DLT guidelines for sending commercial SMS?**  
+**1. How can I check DLT guidelines for sending commercial SMS?**\
 Ans: For information on TRAI regulations and DLT registration, refer to [TRAI Regulations on Commercial Communications (DLT portal) - SMS in India](https://support.exotel.com/support/solutions/articles/3000096504-trai-regulations-on-commercial-communications-dlt-portal-sms-in-india).
 
-**2. What is an SMS template, and how to get it approved? **  
+**2. What is an SMS template, and how to get it approved?**\
 Ans: To know more about SMS templates, refer to [What is an SMS template and how can I get a template approved?](https://support.exotel.com/support/solutions/articles/38686-what-is-an-sms-template-and-how-can-i-get-a-template-approved-)
 
-**3. How do I check Exotel Account settings?**  
+**3. How do I check Exotel Account settings?**\
 Ans: To check Exotel Account Settings, refer to [How to choose an SMS sender ID?](https://support.exotel.com/support/solutions/articles/126794-how-to-choose-an-sms-sender-id-)
 
-**4. How to choose an SMS Sender ID, and what is its significance?**  
+**4. How to choose an SMS Sender ID, and what is its significance?**\
 Ans: To understand this, refer to [How to choose an SMS sender ID?](https://support.exotel.com/support/solutions/articles/126794-how-to-choose-an-sms-sender-id-)
 
-**5. How to check the delivery status of SMS sent by me?**  
+**5. How to check the delivery status of SMS sent by me?**\
 Ans: To know more about delivery status, refer to [How do I find the delivery status of the SMS I sent using Exotel API?](https://support.exotel.com/support/solutions/articles/48518-how-do-i-find-the-delivery-status-of-the-sms-i-sent-using-exotel-api-)
 
-**6. We are seeing an Exotel API error under Campaign. What is the error about?**  
+**6. We are seeing an Exotel API error under Campaign. What is the error about?**\
 Ans: Exotel API Error is raised under two circumstances. Firstly, when we try to send a message to Exotel, they do not accept it due to some error. Secondly, when Exotel replies with the error code to CleverTap. For more information on this, refer to [Error Codes](https://developer.exotel.com/api/sms#send-sms).
