@@ -5,12 +5,12 @@ excerpt: >-
   page using CleverTap's Email Preference Center feature.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -26,17 +26,9 @@ To configure the Email Preference Center:
 2. Click **+ Provider** to add a provider and [enter all the provider details](doc:setup-email#setup-provider).
 3. Choose your preferred subscription setup option from the drop-down list in the *Provider credentials* > *Email Preference Center* field. 
 
-<Image alt="Set up Email Preference" align="center" width="85%" border={true} src="https://files.readme.io/6952660-image.png" />  Set Up Email Preferences
-
-
-
-
-
-
-
-
-
-
+<Image alt="Set up Email Preference" align="center" width="85%" border={true} src="https://files.readme.io/6952660-image.png">
+  Set Up Email Preferences
+</Image>
 
 The drop-down has the following options:
 <Table align={["left","left"]}>
@@ -88,23 +80,15 @@ The drop-down has the following options:
 
 4. Click **Save** to save your provider configuration. 
 
-<Image alt="Provider Configuration Added" align="center" width="90% " border={true} src="https://files.readme.io/ce4ff5a-image.png" />  Provider Configuration Added
-
-
-
-
-
-
-
-
-
-
+<Image alt="Provider Configuration Added" align="center" width="90% " border={true} src="https://files.readme.io/ce4ff5a-image.png">
+  Provider Configuration Added
+</Image>
 
 > 📘 Advanced Setup
 >
 > You can also preview the *Email Preference Center*  by navigating to *Channels*> *Email*. Select the *Advanced Setup* tab.
 >
-> <Image alt="Email Preference Center" align="center" width="90% " border={true} src="https://files.readme.io/f4ae755-image.png" />
+> <Image alt="Email Preference Center" align="center" width="90% " border={true} src="https://files.readme.io/f4ae755-image.png">
 >   Email Preference Center
 > </Image>
 
