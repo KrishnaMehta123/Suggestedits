@@ -15,7 +15,7 @@ next:
 The GCP Export feature enables you to bulk export your CleverTap event or profile data to a GCP bucket. You can export your CleverTap data to analyze it with Business Intelligence (BI) tools or store it in your data warehouse for future analysis.
 
 > 📘 Note
-> 
+>
 > For more information and enable this feature for your account, contact your account manager at CleverTap.
 
 # Integrate GCP with CleverTap
@@ -31,182 +31,68 @@ The integration involves the following steps:
 To create a service account:
 
 1. Log in to your GCP account and select the project where you want to export your CleverTap data. Create a new project if you do not have a project.
-2. From the left panel, select _IAM_ and then navigate to _Admin_ > _Service Accounts_. 
-3. Create a new _Service Account_ linked to the selected project and enter the Service account name and description, respectively.  
-   This is the account that you will use to _authenticate_ and _authorize_ CleverTap to upload exports to your GCP project.
+2. From the left panel, select *IAM* and then navigate to *Admin* > *Service Accounts*. 
+3. Create a new *Service Account* linked to the selected project and enter the Service account name and description, respectively.\
+   This is the account that you will use to *authenticate* and *authorize* CleverTap to upload exports to your GCP project.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fb49ce9-Screenshot_2020-04-06_at_3.57.40_PM.png",
-        "Enter Service Account Details and click Create",
-        2880
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create a New Service Account"
-    }
-  ]
-}
-[/block]
+<Image title="Enter Service Account Details and click Create" alt={2880} align="center" border={true} src="https://files.readme.io/fb49ce9-Screenshot_2020-04-06_at_3.57.40_PM.png">
+  Create a New Service Account
+</Image>
 
+2. Navigate to *Permissions* > *Storage Admin and continue*.
 
-2. Navigate to _Permissions_ > _Storage Admin and continue_.
+<Image title="Navigate to Storage Admin from Google Cloud" alt={2880} align="center" border={true} src="https://files.readme.io/b14f47c-Screenshot_2020-04-06_at_3.58.36_PM.png">
+  Navigate to Storage Admin
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b14f47c-Screenshot_2020-04-06_at_3.58.36_PM.png",
-        "Navigate to Storage Admin from Google Cloud",
-        2880
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Navigate to Storage Admin"
-    }
-  ]
-}
-[/block]
-
-
-3. Click **+ Create Key** and select JSON for the Service account.  
+3. Click **+ Create Key** and select JSON for the Service account.\
    The JSON key downloads to your machine automatically. Save this key because you will have to upload the key to the CleverTap dashboard later.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e5bc98b-Screenshot_2020-04-06_at_4.04.32_PM.png",
-        "Create a key and select JSON format for Service Account",
-        2880
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Key"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create a key and select JSON format for Service Account" alt={2880} align="center" border={true} src="https://files.readme.io/e5bc98b-Screenshot_2020-04-06_at_4.04.32_PM.png">
+  Create Key
+</Image>
 
 ## Create a Bucket
 
 Create a bucket that will hold the export files from CleverTap. To do so:
 
-1. From the left panel, navigate to _Storage_ and click **Create Bucket**.
+1. From the left panel, navigate to *Storage* and click **Create Bucket**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8d026fe-Screenshot_2020-04-06_at_4.12.33_PM.png",
-        "Navigate to Storage Browser from Google Cloud dashboard",
-        2280
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Navigate to Storage Browser from GCP Dashboard"
-    }
-  ]
-}
-[/block]
+<Image title="Navigate to Storage Browser from Google Cloud dashboard" alt={2280} align="center" border={true} src="https://files.readme.io/8d026fe-Screenshot_2020-04-06_at_4.12.33_PM.png">
+  Navigate to Storage Browser from GCP Dashboard
+</Image>
 
+On clicking, *Create a bucket* page opens.
 
-On clicking, _Create a bucket_ page opens.
+2. *Name your bucket* and fill in the other details as per your requirements.
 
-2. _Name your bucket_ and fill in the other details as per your requirements.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c696063-Screenshot_2020-04-06_at_4.14.53_PM.png",
-        "Enter your bucket details and create a bucket",
-        2880
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enter your Bucket Details and Create a Bucket"
-    }
-  ]
-}
-[/block]
-
+<Image title="Enter your bucket details and create a bucket" alt={2880} align="center" border={true} src="https://files.readme.io/c696063-Screenshot_2020-04-06_at_4.14.53_PM.png">
+  Enter your Bucket Details and Create a Bucket
+</Image>
 
 3. Click **Create**. Following is an image for a successfully created bucket:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fd5d73b-Screenshot_2020-04-06_at_4.16.03_PM.png",
-        "Bucket created successfully on Google Cloud",
-        2880
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Bucket Created Successfully"
-    }
-  ]
-}
-[/block]
-
+<Image title="Bucket created successfully on Google Cloud" alt={2880} align="center" border={true} src="https://files.readme.io/fd5d73b-Screenshot_2020-04-06_at_4.16.03_PM.png">
+  Bucket Created Successfully
+</Image>
 
 ## Configure CleverTap Dashboard
 
 Add the Service account credentials (created in [Step 1](doc:data-export-to-gcp#create-a-service-account-for-your-project) and bucket name to CleverTap. To configure the dashboard:
 
-1. Navigate to _Settings_ > _Partners_ > _Partner List_ from the CleverTap dashboard. 
+1. Navigate to *Settings* > *Partners* > *Partner List* from the CleverTap dashboard. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa31f48-PartnersList.jpg",
-        "Navigating to Partner page from the CleverTap dashboard",
-        2848
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Navigating to Partners"
-    }
-  ]
-}
-[/block]
+<Image title="Navigating to Partner page from the CleverTap dashboard" alt={2848} align="center" width="90% " border={true} src="https://files.readme.io/fa31f48-PartnersList.jpg">
+  Navigating to Partners
+</Image>
 
+2. Hover on the *Google Cloud* icon and click **Integrate**.
 
-2. Hover on the _Google Cloud_ icon and click **Integrate**.
+<Image title="Hover on the Google Cloud icon and click Integrate" alt={2400} align="center" width="90% " border={true} src="https://files.readme.io/11536fe-IntegrateGCP.jpg">
+  Integrate Google Cloud
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/11536fe-IntegrateGCP.jpg",
-        "Hover on the Google Cloud icon and click Integrate",
-        2400
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Integrate Google Cloud"
-    }
-  ]
-}
-[/block]
-
-
-The _Integrate analytics partner - Google Cloud_ window opens on the right side of the screen.
+The *Integrate analytics partner - Google Cloud* window opens on the right side of the screen.
 
 3. Click **+ Google Cloud Bucket** to add a bucket. You can also add multiple buckets from this popup.
 4. Enter the following details and click **Save Credentials**:
@@ -217,176 +103,97 @@ The _Integrate analytics partner - Google Cloud_ window opens on the right side 
 | Service Account Key | Enter the contents of the downloaded Service Account Key JSON file (obtained in [Step 1](doc:data-export-to-gcp#create-a-service-account-for-your-project)) into the Service Key. |
 | Bucket name         | Add the name of the bucket as given in the project.                                                                                                                               |
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e6eb6a-SaveBucket.jpg",
-        "Enter Google Cloud bucket details and click Integrate",
-        2358
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true,
-      "caption": "Enter Google Cloud Bucket Details"
-    }
-  ]
-}
-[/block]
-
+<Image title="Enter Google Cloud bucket details and click Integrate" alt={2358} align="center" width="60% " border={true} src="https://files.readme.io/1e6eb6a-SaveBucket.jpg">
+  Enter Google Cloud Bucket Details
+</Image>
 
 > 🚧 Error When Saving Credential
-> 
+>
 > 1. Check if the bucket name is the same as in GCP. Bucket names need to be an exact match.
-> 2. Generate the Service Account key again, copy and paste the new key into the _Service Account Key_ field on the _Integrate analytics partner - Google Cloud_ window.
+> 2. Generate the Service Account key again, copy and paste the new key into the *Service Account Key* field on the *Integrate analytics partner - Google Cloud* window.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b4b5b46-Screenshot_2020-04-06_at_4.44.59_PM.png",
-        "Service Account Key generated",
-        2540
-      ],
-      "align": "center",
-      "caption": "Service Account Key"
-    }
-  ]
-}
-[/block]
+<Image title="Service Account Key generated" alt={2540} align="center" src="https://files.readme.io/b4b5b46-Screenshot_2020-04-06_at_4.44.59_PM.png">
+  Service Account Key
+</Image>
 
+After successful integration, the *Export* tag displays against *Google Cloud* on the *Partner List* page.
 
-After successful integration, the _Export_ tag displays against _Google Cloud_ on the _Partner List_ page.
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/81d7927-image.png",
-        null,
-        "Successful Google Cloud Integration"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Successful Google Cloud Integration"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Successful Google Cloud Integration" align="center" border={true} src="https://files.readme.io/81d7927-image.png">
+  Successful Google Cloud Integration
+</Image>
 
 <br />
 
-# 
+#
 
 # Create export
 
 To begin, you first create a new export from the CleverTap dashboard. This step connects your CleverTap account with a partner destination and sets the context for the configuration that follows.
 
-1. Navigate to _Settings_ → _Partners_ and click **Create Export**. 
+1. Navigate to *Settings* → *Partners* and click **Create Export**. 
 
-   [block:image]{"images":[{"image":["https://files.readme.io/6d308e01cc3dc940760f1c76ee5cecffda32a57b8db946c62d3e125af9c15d75-export_center_profile_1.png","","Create Export"],"align":"center","border":true,"caption":"Create Export"}]}[/block]
-2. In _Export Setup_, under _Data type_, select **Profiles**. Click **Next**. 
+   <Image alt="Create Export" align="center" border={true} src="https://files.readme.io/6d308e01cc3dc940760f1c76ee5cecffda32a57b8db946c62d3e125af9c15d75-export_center_profile_1.png">
+     Create Export
+   </Image>
+2. In *Export Setup*, under *Data type*, select **Profiles**. Click **Next**. 
 
-   [block:image]{"images":[{"image":["https://files.readme.io/5c7972185b625c21e9b8e3dd538630e7c917584f95c90cccca70fb876021f7fa-data_type_profiles_.png","","Data Type - Profiles"],"align":"center","sizing":"65% ","border":true,"caption":"Data Type - Profiles"}]}[/block]
-3. Under _Partner_, select where you want to send the export and Click **Start**. Selecting a partner affects the first field you’ll see in _Storage & file details_: it appears as _Storage bucket_ for Amazon S3 and Google Cloud, and as _Storage blob_ for Microsoft Azure.
+   <Image alt="Data Type - Profiles" align="center" width="65% " border={true} src="https://files.readme.io/5c7972185b625c21e9b8e3dd538630e7c917584f95c90cccca70fb876021f7fa-data_type_profiles_.png">
+     Data Type - Profiles
+   </Image>
+3. Under *Partner*, select where you want to send the export and Click **Start**. Selecting a partner affects the first field you’ll see in *Storage & file details*: it appears as *Storage bucket* for Amazon S3 and Google Cloud, and as *Storage blob* for Microsoft Azure.
 
-   - **Amazon S3**
-   - **Google Cloud**
-   - **Microsoft Azure** 
+   * **Amazon S3**
+   * **Google Cloud**
+   * **Microsoft Azure** 
 
-     [block:image]{"images":[{"image":["https://files.readme.io/353438c2d86d5c956db69fb1e54c319b25ace89c7951fe05772d9768e3692f2c-partner_export_profile.png","","Select Partner"],"align":"center","sizing":"65% ","border":true,"caption":"Select Partner"}]}[/block]
+     <Image alt="Select Partner" align="center" width="65% " border={true} src="https://files.readme.io/353438c2d86d5c956db69fb1e54c319b25ace89c7951fe05772d9768e3692f2c-partner_export_profile.png">
+       Select Partner
+     </Image>
 
 # Legacy Export
 
 The **Export to Google Cloud** window displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b251131-GCPExport.jpg",
-        "Enter export details and click Export",
-        2452
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Enter Export Details"
-    }
-  ]
-}
-[/block]
-
+<Image title="Enter export details and click Export" alt={2452} align="center" width="90% " border={true} src="https://files.readme.io/b251131-GCPExport.jpg">
+  Enter Export Details
+</Image>
 
 3. Configure the following settings:
 
-   - **Partner Bucket name**: Name of the partner bucket. You can choose the required partner bucket from the drop-down list. 
+   * **Partner Bucket name**: Name of the partner bucket. You can choose the required partner bucket from the drop-down list. 
 
-   - **DATA TYPE & IDENTIFIER PRIORITY**: Select the events from the available options to export. 
-     - _All events_: Export data for all events that have been defined, that is, system and custom events.
-     - _Select events_: Exports only specific events.
-     - _All user properties_: Exports all your user profile data.
+   * **DATA TYPE & IDENTIFIER PRIORITY**: Select the events from the available options to export. 
+     * *All events*: Export data for all events that have been defined, that is, system and custom events.
+     * *Select events*: Exports only specific events.
+     * *All user properties*: Exports all your user profile data.
 
-   - **Fallback priority order for identifiers**: You can prioritize user identities when exporting data. If you have selected multiple identities in the _User Identity_ section, you can assign priorities 1, 2, and 3 to Email, Identity, and Phone Number. Users can then be identified based on these assigned priorities.  
-     **NOTE**:  This feature applies only to _All events_ and _All user properties_ type.
+   * **Fallback priority order for identifiers**: You can prioritize user identities when exporting data. If you have selected multiple identities in the *User Identity* section, you can assign priorities 1, 2, and 3 to Email, Identity, and Phone Number. Users can then be identified based on these assigned priorities.\
+     **NOTE**:  This feature applies only to *All events* and *All user properties* type.
 
-   - **FREQUENCY**: Select the frequency of export.  
-     - **One time**: A single export for the selected export type. You can export data up to the last 60 days. You create an export for a specific day, date range, previous month, current month, and more.  
-     - **Recurring**: Set up a recurring export to export all the new events or user profiles captured in the last window. You can export as frequently as every 4 hours and up to once every 24 hours.
-     - **Dates to export data**: The export starts at 12:00 a.m. on the specified date by default.
+   * **FREQUENCY**: Select the frequency of export.  
+     * **One time**: A single export for the selected export type. You can export data up to the last 60 days. You create an export for a specific day, date range, previous month, current month, and more.  
+     * **Recurring**: Set up a recurring export to export all the new events or user profiles captured in the last window. You can export as frequently as every 4 hours and up to once every 24 hours.
+     * **Dates to export data**: The export starts at 12:00 a.m. on the specified date by default.
 
-   - **Format**: Select from the following export formats: JSON, XML, CSV, and Parquet. For more information, refer to [Export Format](doc:data-export-to-gcp#export-format).
+   * **Format**: Select from the following export formats: JSON, XML, CSV, and Parquet. For more information, refer to [Export Format](doc:data-export-to-gcp#export-format).
 
-   - **Export Data**: If you choose **As string**, the data is sent as a string. If you do not select the box, data is sent in its original format.
+   * **Export Data**: If you choose **As string**, the data is sent as a string. If you do not select the box, data is sent in its original format.
 
 > 🚧 Stop Recurring Profile Export to do One Time Export
-> 
+>
 > Before running a one-time profile export, you must stop any scheduled recurring profile export.
 
-4. Click **Export**. On clicking, the popup closes, and the _Google export has initiated_ message displays at the top of the _Exports_ page. CleverTap processes the export, and you can now see the newly created export for Google Cloud. 
+4. Click **Export**. On clicking, the popup closes, and the *Google export has initiated* message displays at the top of the *Exports* page. CleverTap processes the export, and you can now see the newly created export for Google Cloud. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5392674-GCPInitiated.jpg",
-        "Google Export has initiated message displays at the top",
-        2392
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Google Export Initiated"
-    }
-  ]
-}
-[/block]
+<Image title="Google Export has initiated message displays at the top" alt={2392} align="center" border={true} src="https://files.readme.io/5392674-GCPInitiated.jpg">
+  Google Export Initiated
+</Image>
 
+To confirm that your event data was successfully exported, select *Storage* from the left panel of Google Cloud. Navigate to the *Bucket details* page and search with the `requestid` (available under the Exports page of the CleverTap dashboard). All the exported files are displayed. 
 
-To confirm that your event data was successfully exported, select _Storage_ from the left panel of Google Cloud. Navigate to the _Bucket details_ page and search with the `requestid` (available under the Exports page of the CleverTap dashboard). All the exported files are displayed. 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2dd4777-Screenshot_2020-04-06_at_8.23.50_PM.png",
-        "New Google Cloud export displays on Export page",
-        2862
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "New Google Export Displays on Google Cloud"
-    }
-  ]
-}
-[/block]
-
+<Image title="New Google Cloud export displays on Export page" alt={2862} align="center" border={true} src="https://files.readme.io/2dd4777-Screenshot_2020-04-06_at_8.23.50_PM.png">
+  New Google Export Displays on Google Cloud
+</Image>
 
 # Export Format
 
@@ -394,26 +201,26 @@ This section provides information about the file format and the name format of t
 
 ## File Name Format
 
-- **File Name Format for Event Export**  
+* **File Name Format for Event Export**\
    The example below shows the file name format for event export:
-  - _Export request ID_: Indicates the export request ID generated when you create a request in the CleverTap dashboard.
-  - _Timestamp of the export run_: Indicates when the export was run.
-  - _Event name_: Indicates the event type that is included in the file.
-  - _File index_: We chunk the data across multiple files for larger exports. We limit file sizes to 100 MB chunks to make them more consumable. The file index indicates the file number in the file series. 
-  - _Database ID_: Indicates the database ID of the CleverTap from where the file was exported. 
-  - _File format_: Indicates the format of the file exported to the GCP bucket.  
+  * *Export request ID*: Indicates the export request ID generated when you create a request in the CleverTap dashboard.
+  * *Timestamp of the export run*: Indicates when the export was run.
+  * *Event name*: Indicates the event type that is included in the file.
+  * *File index*: We chunk the data across multiple files for larger exports. We limit file sizes to 100 MB chunks to make them more consumable. The file index indicates the file number in the file series. 
+  * *Database ID*: Indicates the database ID of the CleverTap from where the file was exported. 
+  * *File format*: Indicates the format of the file exported to the GCP bucket.  
 
 ```text
 <export request id>-<timestamp of the export run>-<event name>-<yyyymmdd>-<file index>-<database-id>.json
 ```
 
-- **File Name Format for User Profile Export**:  
+* **File Name Format for User Profile Export**:\
    The example below shows the file name format for user profile export:
-  - _Account ID_: Indicates the integer value for your CleverTap project ID. 
-  - _Request ID_: Indicates the export request ID generated when you create a request in the CleverTap dashboard.
-  - _Timestamp of the export run_: Indicates when the export was run.
-  - _Database ID_: Indicates the database ID of the CleverTap from where the file was exported. 
-  - _File format_: Indicates the format of the file exported to the GCP bucket.
+  * *Account ID*: Indicates the integer value for your CleverTap project ID. 
+  * *Request ID*: Indicates the export request ID generated when you create a request in the CleverTap dashboard.
+  * *Timestamp of the export run*: Indicates when the export was run.
+  * *Database ID*: Indicates the database ID of the CleverTap from where the file was exported. 
+  * *File format*: Indicates the format of the file exported to the GCP bucket.
 
 ```text
 <account id>-<request id>-<timestamp of the export run>-<database-id>-<file format>.gz
@@ -456,7 +263,7 @@ CSV files are comma-delimited and have each event in separate rows.
 
 ### XML
 
-XML files have the _timeStamp_, and _eventName_, followed by _eventProperties_.
+XML files have the *timeStamp*, and *eventName*, followed by *eventProperties*.
 
 ```text
 <Event>
@@ -500,26 +307,26 @@ XML files have the _timeStamp_, and _eventName_, followed by _eventProperties_.
 Parquet has a timestamp, eventName, and eventProperties for each event. 
 
 > 📘 Parquet File Format
-> 
-> - Parquet is an open-source file format for Hadoop. Parquet stores nested data structures in a flat columnar format.
-> - Currently, exports in Parquet format are compressed as **.parquet.gzip**. Contact the customer support if you wish to get the file as .parquet i.e. without any additional compression.
+>
+> * Parquet is an open-source file format for Hadoop. Parquet stores nested data structures in a flat columnar format.
+> * Currently, exports in Parquet format are compressed as **.parquet.gzip**. Contact the customer support if you wish to get the file as .parquet i.e. without any additional compression.
 
 ## Prioritize User Identity for Exports
 
-The export file includes an identity column with the user's Identity, Phone Number, or Email values. These values are set based on the identities configured in the CleverTap dashboard under the _Settings_ > _User Identity_ page. This feature lets you prioritize the identifier you want to export in the identity column. 
+The export file includes an identity column with the user's Identity, Phone Number, or Email values. These values are set based on the identities configured in the CleverTap dashboard under the *Settings* > *User Identity* page. This feature lets you prioritize the identifier you want to export in the identity column. 
 
-Let us understand how the prioritization works based on the identities selected in the _User Identity_ page:
+Let us understand how the prioritization works based on the identities selected in the *User Identity* page:
 
-- If you select only _Identity_, export includes the identity value. The export file's identity column is empty if it is unavailable.  
+* If you select only *Identity*, export includes the identity value. The export file's identity column is empty if it is unavailable.\
   ![](https://files.readme.io/aad1f81-image.png)
-- If you select multiple identifiers, you must set the priorities on the _Export_ page. For instance, you set Priority 1 to _Identity_ and Priority 2 to _Email ID_. When exporting data, the export prioritizes the Identity value for the identity column. If it is absent, the Email ID is exported under the identity column of the export file. If both are missing, the column remains empty.  
+* If you select multiple identifiers, you must set the priorities on the *Export* page. For instance, you set Priority 1 to *Identity* and Priority 2 to *Email ID*. When exporting data, the export prioritizes the Identity value for the identity column. If it is absent, the Email ID is exported under the identity column of the export file. If both are missing, the column remains empty.\
   ![](https://files.readme.io/52ae818-UserIdentity.jpg)
 
 > 📘 Key Points to Remember
-> 
-> - If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
-> - This feature applies only to the following export types: _All events_ and _All user profiles_.
-> - For the old running export, this configuration or prirotization is not applicable. You can add the prioritization by editing the running exports.
+>
+> * If you change the identity later, the export works according to the set priority. To prioritize the modified identities, edit your export.
+> * This feature applies only to the following export types: *All events* and *All user profiles*.
+> * For the old running export, this configuration or prirotization is not applicable. You can add the prioritization by editing the running exports.
 
 To prioritize user identity for exports: 
 
@@ -527,24 +334,9 @@ To prioritize user identity for exports:
 2. Hover over the required GCP export. Click the **Edit** button.
 3. Under **Fallback priority order for identifiers**, set up the priority 1, 2, and 3 for the required identities from the drop-down list.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/195d8df-GCPPriority.jpg",
-        "Enter export details and click Export",
-        1008
-      ],
-      "align": "center",
-      "sizing": "90% ",
-      "border": true,
-      "caption": "Edit Export Priority"
-    }
-  ]
-}
-[/block]
-
+<Image title="Enter export details and click Export" alt={1008} align="center" width="90% " border={true} src="https://files.readme.io/195d8df-GCPPriority.jpg">
+  Edit Export Priority
+</Image>
 
 4. Click **Update export**. 
 
@@ -569,10 +361,10 @@ A. A `403: retentionPolicyNotMet` error can occur when exporting data to GCP. It
 
 A. Yes, CleverTap data exports allow the following special characters:
 
-- Supports Unicode (UTF-8)  character encoding. It facilitates the accurate representation of text in various languages and scripts. For example, Indian regional languages, Arabic, Korean, Russian, Japanese, Chinese, Spanish, Greek, Indonesian, etc.
-- Replaces the following characters with a hyphen to avoid issues in output file generation: Whitespace, Tab, Slash, and null (\\0).
-- Replaces control characters with ?. For more information, refer to [Control Character](https://en.wikipedia.org/wiki/Control_character). 
-- Supports emoji characters; however, some emojis (UTF-16) may not render properly.
+* Supports Unicode (UTF-8)  character encoding. It facilitates the accurate representation of text in various languages and scripts. For example, Indian regional languages, Arabic, Korean, Russian, Japanese, Chinese, Spanish, Greek, Indonesian, etc.
+* Replaces the following characters with a hyphen to avoid issues in output file generation: Whitespace, Tab, Slash, and null (\\0).
+* Replaces control characters with ?. For more information, refer to [Control Character](https://en.wikipedia.org/wiki/Control_character). 
+* Supports emoji characters; however, some emojis (UTF-16) may not render properly.
 
 ### Q. What customer-related errors can stop exports, and how are customers notified when interruptions occur?
 
