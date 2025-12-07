@@ -4,3 +4,4 @@
 - bigquery-export
 - microsoft-azure-export
 - export-format
+- aws-s3-export
