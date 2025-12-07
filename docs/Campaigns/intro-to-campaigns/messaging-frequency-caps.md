@@ -1,0 +1,203 @@
+---
+title: Messaging Frequency Caps
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Overview
+
+Frequency caps help you control the number of messages your users receive. It is common to run multiple messaging campaigns simultaneously or in close proximity to one another. The same user may qualify for more than one of these campaigns and be subject to receiving several messages in short succession. 
+
+Alternatively, for a recurring or triggered campaign, the same user may re-qualify for this campaign and receive the same message more than once. Frequency caps provide the capability to ensure your users do not receive too many messages. 
+
+CleverTap has two types of frequency caps, including:
+
+- _Global Frequency Caps_ control the maximum messages a user can get across campaigns for a particular channel of communication.
+- _Message-level Frequency Caps_ define how often messages can be sent to a particular user for a particular campaign.
+
+When a frequency cap applies to a user, CleverTap will not deliver the associated message. The dropped messages will be accounted for in the campaign report error table.
+
+# Global Frequency Caps
+
+Global frequency caps operate on a per-channel basis and let you specify the message cadence, dwell time between messages, and throttle limits (delivery rates).
+
+## Maximum Messages per Channel
+
+You can define the maximum number of messages a user can receive from a specific communication channel across campaigns.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/84c565d-Global_Message_Limits.png",
+        null,
+        ""
+      ],
+      "align": "center",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+> 👍 Cadence Example
+> 
+> You can define a cadence of three push notifications in seven days. This ensures that users only receive three push messages in seven days.
+
+## Dwell Time Between Messages
+
+For a communication channel, you can define the minimum time gap between messages across campaigns. 
+
+For example, you can set a minimum gap of at least four hours between messages with a range of:
+
+- Minimum gap: Five minutes.
+- Maximum gap: Seven days.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/59118b4-Dwell_time.png",
+        null,
+        ""
+      ],
+      "align": "center",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+## Throttle
+
+Throttle functionality is a feature that enables you to manage the rate at which notifications are sent to end users. It helps prevent overload on your platform/operations by distributing the incoming traffic over a longer period of time rather than redirecting too many users to your mobile application/website at once with too many notifications simultaneously. This feature can significantly reduce the peak traffic on your platform, enabling you to serve more customers without impacting the platform's performance.
+
+To ensure efficient delivery, CleverTap breaks down a large batch of requests into smaller, more manageable sub-batches. For example, if a customer wants to send 600,000 messages in one minute, CleverTap automatically divides these into 12 batches of approximately 50,000 messages each. The batches are sent at an interval of 5 seconds, resulting in a smooth delivery.
+
+Finding the optimal throttling rate is crucial in ensuring the effectiveness of your campaigns. A high throttling rate can overload your platform, while a low rate can result in campaigns running for longer than expected, affecting the relevance of your messages to end users. Therefore, it is important to strike a balance by setting a reasonable throttling rate that suits your campaign reach and frequency to ensure that your messaging stays relevant without overloading your platform.
+
+There are two types of throttle:
+
+- Defined Limit - Select this option to apply global throttle settings in campaigns.
+- Adhoc Limit - Select this option if you want to use custom throttle settings in campaigns overriding the global throttle limits.
+
+### Defined Limit
+
+ The Defined Limit is a default throttle setting that applies to all campaigns. This limit is set globally and can be configured in the Settings tab. To change the throttle limit:
+
+1. Go to_ Settings > Setup > Campaign Limits_.
+2. Click **Add Channel** to add a throttle limit for the channel. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/d620174-Defined_Limit_Settings.png",
+        null,
+        "Set Global Throttle"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Set Global Throttle"
+    }
+  ]
+}
+[/block]
+
+
+This is now the defined limit for all your campaigns. You can check this limit from the Campaigns. 
+
+3. Go to the_ When_ section > _Delivery preferences_.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/89acccf-Defined_Limit_Campaign.png",
+        null,
+        ""
+      ],
+      "align": "center",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+> 📘 Throttle Limit Recommendations
+> 
+> We recommend that the defined throttle limit for any communication channel shouldn't be less than 100.
+> 
+> Always check that your throttle limit is set high enough to prevent campaigns from running for multiple days, because the messages will stop delivering after the third day. This ensures that the relevance for messsages is maintained. 
+> 
+> The _restricted reach \_of your campaigns is displayed in a banner below the \_Global throttle limits_. Make sure that the restricted reach is higher than your expected campaign reach to ensure that all users receive the messages.
+
+### Ad hoc Limit
+
+ The Ad Hoc Limit feature enables you to use a custom throttle limit for a specific campaign, which is different from the global throttle settings. This is useful when you want to apply a different throttle limit for a particular campaign without changing the global settings.
+
+1. Go to the_ When_ section > _Delivery preferences_. The Delivery preferences section displays the _Defined Limit_and the \_Ad Hoc Limit_. 
+2. Select _Ad Hoc_ Limit to change throttle the message from the current campaign.
+3. Click _Done_.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/f1ab9bb-Adhoc_Limit.png",
+        null,
+        "Set Adhoc Limit"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Set Adhoc Limit"
+    }
+  ]
+}
+[/block]
+
+
+The Ad Hoc limit applies only to the current campaign. 
+
+> 📘 Throttle Limit Recommendations
+> 
+> Check that you always set throttle limit to more than 100 when setting the Ad Hoc limit. 
+> 
+> Always check that your throttle limit is set high enough to prevent campaigns from running for multiple days, because the messages will stop delivering after the third day. This ensures that the relevance for messsages is maintained. 
+> 
+> The _restricted reach_ of your campaigns is displayed in a banner below the _Global throttle limits_. Make sure that the restricted reach is higher than your expected campaign reach to ensure that all users receive the messages.
+
+# Message-level Frequency Caps
+
+Message-level caps let you control the number of times a particular ongoing campaign is delivered to the same user. 
+
+> 🚧 Message Level and Global Frequency Caps
+> 
+> Message-level and global frequency caps work together when applied simultaneously. A user may be subject to either or both frequency cap limits.
+
+> 📘 Note
+> 
+> Session limits are not a part of Campaign limits. They are considered separately.
+
+These caps are important for recurring campaigns or triggered campaigns where the same user may re-qualify multiple times to receive a message.
+
+## Control Options
+
+The control options include:
+
+- Send every time the user qualifies (default): This sends a message every time the user qualifies (can choose to respect global caps).
+- Send with a minimum gap of: This sets a minimum gap between subsequent messages. The minimum gap allowed is five minutes, and the maximum gap allowed is 30 days.
