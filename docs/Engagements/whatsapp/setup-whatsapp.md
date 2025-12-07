@@ -20,13 +20,13 @@ To enable WhatsApp as a communication channel for your organization, you need to
 
 # Getting Started
 
-To use WhatsApp as a channel for your marketing campaigns and customer journeys, you need access to the WhatsApp Business API.  
+To use WhatsApp as a channel for your marketing campaigns and customer journeys, you need access to the WhatsApp Business API.\
 CleverTap currently supports no-code integration with the following partners:
 
-- Gupshup
-- Nexmo
-- ValueFirst
-- Exotel
+* Gupshup
+* Nexmo
+* ValueFirst
+* Exotel
 
 If you have access to the WhatsApp Business API through a service provider that is not currently supported by CleverTap, you can use CleverTap's [Generic WhatsApp APIs](https://docs.clevertap.com/docs/generic-whatsapp) to integrate your service provider with CleverTap. 
 
@@ -35,85 +35,43 @@ Alternatively, you can request your service provider to become a supported Whats
 By enabling your service (check for all such instances) provider with CleverTap, you'll be able to utilize all the features and benefits offered by our platform.
 
 > 📘 Note
-> 
+>
 > To access the WhatsApp Business API directly through CleverTap, refer to the detailed [integration document](https://docs.clevertap.com/docs/clevertap-bsp).
 
 # Setup WhatsApp Service Provider
 
 To setup a WhatsApp service provider, perform the following steps:
 
-- From the dashboard, navigate to _Settings_ > _Channels_ > _WhatsApp_.
-- Click **+ Provider** to add a provider.
+* From the dashboard, navigate to *Settings* > *Channels* > *WhatsApp*.
+* Click **+ Provider** to add a provider.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/70663ad-Add_WhatsApp_Service_Provider.png",
-        "Add WhatsApp Service Provider",
-        "Click the +Provider button to add a new service provider for WhatsApp"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add WhatsApp Service Provider"
-    }
-  ]
-}
-[/block]
+<Image title="Add WhatsApp Service Provider" alt="Click the +Provider button to add a new service provider for WhatsApp" align="center" border={true} src="https://files.readme.io/70663ad-Add_WhatsApp_Service_Provider.png">
+  Add WhatsApp Service Provider
+</Image>
 
+* Add the WhatsApp service provider's information.
+* Click **Send Test WhatsApp** to check if the provider has been set up correctly and can send WhatsApp messages. 
 
-- Add the WhatsApp service provider's information.
-- Click **Send Test WhatsApp** to check if the provider has been set up correctly and can send WhatsApp messages. 
+<Image title="Save Provider Details" alt="Click the Save button to save the WhatsApp provider details." align="center" border={true} src="https://files.readme.io/043a64e-Save_Provider_Details.png">
+  Save Provider Details
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/043a64e-Save_Provider_Details.png",
-        "Save Provider Details",
-        "Click the Save button to save the WhatsApp provider details."
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Save Provider Details"
-    }
-  ]
-}
-[/block]
-
-
-- Click **Save** 
+* Click **Save** 
 
 Refer to the following integration guides for more details:
 
-- [Adding Gupshup as a provider](https://docs.clevertap.com/docs/gupshup).
-- [Adding Nexmo as a provider](https://docs.clevertap.com/docs/nexmo-whatsapp).
-- [Adding ValueFirst as a provider](https://docs.clevertap.com/docs/valuefirst-digital-whatsapp).
-- [Adding Exotel as a provider](https://docs.clevertap.com/docs/exotel-whatsapp). 
+* [Adding Gupshup as a provider](https://docs.clevertap.com/docs/gupshup).
+* [Adding Nexmo as a provider](https://docs.clevertap.com/docs/nexmo-whatsapp).
+* [Adding ValueFirst as a provider](https://docs.clevertap.com/docs/valuefirst-digital-whatsapp).
+* [Adding Exotel as a provider](https://docs.clevertap.com/docs/exotel-whatsapp). 
 
 # Provider Operations
 
 This section describes the different user actions for the available WhatsApp service providers.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eaa04e2-Service_Provider_Operations.png",
-        "Service Provider Operations",
-        "The image represents the WhatsApp service provider operations available for the end users."
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Service Provider Operations"
-    }
-  ]
-}
-[/block]
-
+<Image title="Service Provider Operations" alt="The image represents the WhatsApp service provider operations available for the end users." align="center" border={true} src="https://files.readme.io/eaa04e2-Service_Provider_Operations.png">
+  Service Provider Operations
+</Image>
 
 ## Edit Settings
 
@@ -121,12 +79,12 @@ You can edit the WhatsApp provider settings to update the provider configuration
 
 Follow the steps to edit provider settings:
 
-- From the CleverTap dashboard, navigate to _Settings_ > _Channels_ > _WhatsApp_ > Providers tab.
-- Click the ellipsis next to the provider.
-- Select _Edit settings_ from the list. The provider credentials window displays.
-- Update the required information.
-- Click Send Test WhatsApp (Is this a button, please highlight) to check that the provider is working correctly. (I think a valid screenshot will help better understanding here)
-- Click **Save**.
+* From the CleverTap dashboard, navigate to *Settings* > *Channels* > *WhatsApp* > Providers tab.
+* Click the ellipsis next to the provider.
+* Select *Edit settings* from the list. The provider credentials window displays.
+* Update the required information.
+* Click Send Test WhatsApp (Is this a button, please highlight) to check that the provider is working correctly. (I think a valid screenshot will help better understanding here)
+* Click **Save**.
 
 ## Archive Service Providers
 
@@ -134,9 +92,9 @@ You can archive any of the current WhatsApp service providers from the settings.
 
 Follow the steps to archive a WhatsApp service provider:
 
-- From the CleverTap dashboard, navigate to _Settings_ > _Channels_ > _WhatsApp_ > Providers (highlight this as well) tab.
-- Click the ellipsis next to the provider.
-- Select _Archive_ from the list. 
+* From the CleverTap dashboard, navigate to *Settings* > *Channels* > *WhatsApp* > Providers (highlight this as well) tab.
+* Click the ellipsis next to the provider.
+* Select *Archive* from the list. 
 
 ## Delete Service Providers
 
@@ -144,9 +102,9 @@ You can delete any of the current WhatsApp service providers from the settings. 
 
 Follow the steps to delete a WhatsApp service provider:
 
-- From the CleverTap dashboard, navigate to _Settings_ > _Channels_ >_WhatsApp_ > Providers tab.
-- Click the ellipsis next to the provider.
-- Select _Delete_ from the list.
+* From the CleverTap dashboard, navigate to *Settings* > *Channels* >*WhatsApp* > Providers tab.
+* Click the ellipsis next to the provider.
+* Select *Delete* from the list.
 
 ## Opt-in Users into WhatsApp
 
@@ -160,18 +118,18 @@ By default, CleverTap keeps all the profiles opted out of WhatsApp. To opt-in pr
 
 You have the following two ways to opt-in users for WhatsApp:
 
-- [Opt-in via updating the user's profile property](https://developer.clevertap.com/docs/concepts-user-profiles#section-updating-the-user-profile). 
-- [Opt-in via the API profile update](https://developer.clevertap.com/docs/upload-user-profiles-api). 
+* [Opt-in via updating the user's profile property](https://developer.clevertap.com/docs/concepts-user-profiles#section-updating-the-user-profile). 
+* [Opt-in via the API profile update](https://developer.clevertap.com/docs/upload-user-profiles-api). 
 
 ## Enable Click Tracking for WhatsApp
 
 You can track button clicks from your WhatsApp message. To enable click tracking:
 
-1. From the dashboard, navigate to _Account > Settings > Engage > Channels > WhatsApp_. 
+1. From the dashboard, navigate to *Account > Settings > Engage > Channels > WhatsApp*. 
 2. Click one of the Provider names.
 3. Click **+ Template** .
 4. Add a CTA button. 
 5. Select the URL type. 
    1. Static : Add a static link.
    2. Dynamic: Add a dynamic link. 
-   3. CleverTap Link Tracking : Add the link for tracking user clicks. For example, [www.ct1.io/{{1}}](http://www.ct1.io/{{1}}). The URL will be automatically displayed for CleverTap BSP.
+   3. CleverTap Link Tracking : Add the link for tracking user clicks. For example, [www.ct1.io/\{\{1}}](http://www.ct1.io/\{\{1}}). The URL will be automatically displayed for CleverTap BSP.
