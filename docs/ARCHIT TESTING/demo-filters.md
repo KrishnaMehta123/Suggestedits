@@ -10,8 +10,133 @@ metadata:
 next:
   description: ''
 ---
-[block:html]
-{
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Filters UI & Campaign Reports</title>\n    <style>\n        /* Tabs/Filters */\n        .tabs {\n            margin-bottom: 20px;\n            display: flex;\n            gap: 5px;\n        }\n        .tab-label {\n            padding: 5px 10px;\n            border-radius: 5px;\n            font-size: 12px;\n            font-weight: bold;\n            color: white;\n            cursor: pointer;\n        }\n        .new-feature { background-color: #4CAF50; }\n        .enhancement { background-color: #2962FF; }\n        .update { background-color: #673AB7; }\n        .all { background-color: #888; }\n        \n        /* Articles */\n        .tab-content {\n            display: none;\n            max-width: 700px;\n        }\n        .article {\n            border: 1px solid #ddd;\n            padding: 15px;\n            margin-bottom: 15px;\n            border-radius: 5px;\n            background-color: #f9f9f9;\n        }\n        \n        /* Badge inside articles */\n        .badge {\n            display: inline-block;\n            padding: 3px 8px;\n            border-radius: 4px;\n            font-size: 11px;\n            font-weight: bold;\n            color: white;\n        }\n        \n        /* Show the checked tab content */\n        #tab1:checked ~ #content1,\n        #tab2:checked ~ #content2,\n        #tab3:checked ~ #content3,\n        #tab4:checked ~ #content4 {\n            display: block;\n        }\n        \n        /* Hide radio buttons */\n        input[type=\"radio\"] {\n            display: none;\n        }\n    </style>\n</head>\n<body>\n    <h3>FILTERS</h3>\n    \n    <!-- Hidden Radio Buttons for Tabs -->\n    <input type=\"radio\" id=\"tab1\" name=\"tabs\" checked>\n    <input type=\"radio\" id=\"tab2\" name=\"tabs\">\n    <input type=\"radio\" id=\"tab3\" name=\"tabs\">\n    <input type=\"radio\" id=\"tab4\" name=\"tabs\">\n    \n    <!-- Tab Labels -->\n    <div class=\"tabs\">\n        <label for=\"tab1\" class=\"tab-label all\">ALL</label>\n        <label for=\"tab2\" class=\"tab-label new-feature\">NEW FEATURE</label>\n        <label for=\"tab3\" class=\"tab-label enhancement\">ENHANCEMENT</label>\n        <label for=\"tab4\" class=\"tab-label update\">UPDATE</label>\n    </div>\n    \n    <!-- Tab Contents -->\n    <!-- All Articles -->\n    <div id=\"content1\" class=\"tab-content\">\n        <div class=\"article new-feature\">\n            <h2>February</h2>\n            <h3>New Feature Release <span class=\"badge new-feature\">NEW FEATURE</span></h3>\n            <p>This is a new feature update.</p>\n        </div>\n        <div class=\"article enhancement\">\n            <h2>February</h2>\n            <h3>Enhancement Update <span class=\"badge enhancement\">ENHANCEMENT</span></h3>\n            <p>Enhancements have been added.</p>\n        </div>\n        <div class=\"article update\">\n            <h2>February</h2>\n            <h3>System Update <span class=\"badge update\">UPDATE</span></h3>\n            <p>The system has been updated.</p>\n        </div>\n    </div>\n    \n    <!-- New Feature Articles -->\n    <div id=\"content2\" class=\"tab-content\">\n        <div class=\"article new-feature\">\n            <h2>February</h2>\n            <h3>New Feature Release <span class=\"badge new-feature\">NEW FEATURE</span></h3>\n            <p>This is a new feature update.</p>\n        </div>\n    </div>\n    \n    <!-- Enhancement Articles -->\n    <div id=\"content3\" class=\"tab-content\">\n        <div class=\"article enhancement\">\n            <h2>February</h2>\n            <h3>Enhancement Update <span class=\"badge enhancement\">ENHANCEMENT</span></h3>\n            <p>Enhancements have been added.</p>\n        </div>\n    </div>\n    \n    <!-- Update Articles -->\n    <div id=\"content4\" class=\"tab-content\">\n        <div class=\"article update\">\n            <h2>February</h2>\n            <h3>System Update <span class=\"badge update\">UPDATE</span></h3>\n            <p>The system has been updated.</p>\n        </div>\n    </div>\n</body>\n</html>"
-}
-[/block]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters UI & Campaign Reports</title>
+    <style>
+        /* Tabs/Filters */
+        .tabs {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 5px;
+        }
+        .tab-label {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+        .new-feature { background-color: #4CAF50; }
+        .enhancement { background-color: #2962FF; }
+        .update { background-color: #673AB7; }
+        .all { background-color: #888; }
+        
+        /* Articles */
+        .tab-content {
+            display: none;
+            max-width: 700px;
+        }
+        .article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Badge inside articles */
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* Show the checked tab content */
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;
+        }
+        
+        /* Hide radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>FILTERS</h3>
+    
+    <!-- Hidden Radio Buttons for Tabs -->
+    <input type="radio" id="tab1" name="tabs" checked>
+    <input type="radio" id="tab2" name="tabs">
+    <input type="radio" id="tab3" name="tabs">
+    <input type="radio" id="tab4" name="tabs">
+    
+    <!-- Tab Labels -->
+    <div class="tabs">
+        <label for="tab1" class="tab-label all">ALL</label>
+        <label for="tab2" class="tab-label new-feature">NEW FEATURE</label>
+        <label for="tab3" class="tab-label enhancement">ENHANCEMENT</label>
+        <label for="tab4" class="tab-label update">UPDATE</label>
+    </div>
+    
+    <!-- Tab Contents -->
+    <!-- All Articles -->
+    <div id="content1" class="tab-content">
+        <div class="article new-feature">
+            <h2>February</h2>
+            <h3>New Feature Release <span class="badge new-feature">NEW FEATURE</span></h3>
+            <p>This is a new feature update.</p>
+        </div>
+        <div class="article enhancement">
+            <h2>February</h2>
+            <h3>Enhancement Update <span class="badge enhancement">ENHANCEMENT</span></h3>
+            <p>Enhancements have been added.</p>
+        </div>
+        <div class="article update">
+            <h2>February</h2>
+            <h3>System Update <span class="badge update">UPDATE</span></h3>
+            <p>The system has been updated.</p>
+        </div>
+    </div>
+    
+    <!-- New Feature Articles -->
+    <div id="content2" class="tab-content">
+        <div class="article new-feature">
+            <h2>February</h2>
+            <h3>New Feature Release <span class="badge new-feature">NEW FEATURE</span></h3>
+            <p>This is a new feature update.</p>
+        </div>
+    </div>
+    
+    <!-- Enhancement Articles -->
+    <div id="content3" class="tab-content">
+        <div class="article enhancement">
+            <h2>February</h2>
+            <h3>Enhancement Update <span class="badge enhancement">ENHANCEMENT</span></h3>
+            <p>Enhancements have been added.</p>
+        </div>
+    </div>
+    
+    <!-- Update Articles -->
+    <div id="content4" class="tab-content">
+        <div class="article update">
+            <h2>February</h2>
+            <h3>System Update <span class="badge update">UPDATE</span></h3>
+            <p>The system has been updated.</p>
+        </div>
+    </div>
+</body>
+</html>
+`}</HTMLBlock>
