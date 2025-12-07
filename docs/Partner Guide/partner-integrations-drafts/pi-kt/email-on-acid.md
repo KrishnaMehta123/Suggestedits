@@ -11,9 +11,9 @@ next:
   description: ''
 ---
 > ❗️ Note:
-> 
+>
 > **A credit card is required to test emails on the entire account.**
-> 
+>
 > This partner functions more like an Email Service Provider (ESP) than just a template tool. Please confirm whether we should categorize them as an Email Template partner or an Email Service Provider partner.
 
 # Overview
@@ -22,10 +22,10 @@ next:
 
 Integrating CleverTap with Email on Acid, you can:
 
-- Import thoroughly tested and optimized email templates directly into CleverTap campaigns.
-- Deliver emails that render consistently across popular clients and devices.
-- Personalize campaigns using CleverTap’s Liquid tags on top of Email on Acid–validated templates.
-- Automate sending and track performance using CleverTap’s analytics and segmentation tools.
+* Import thoroughly tested and optimized email templates directly into CleverTap campaigns.
+* Deliver emails that render consistently across popular clients and devices.
+* Personalize campaigns using CleverTap’s Liquid tags on top of Email on Acid–validated templates.
+* Automate sending and track performance using CleverTap’s analytics and segmentation tools.
 
 This document explains integrating Email on Acid with CleverTap and using exported HTML in CleverTap campaigns.
 
@@ -33,9 +33,9 @@ This document explains integrating Email on Acid with CleverTap and using export
 
 The following are the prerequisites for this integration:
 
-- An active Email on Acid account.
-- A CleverTap account with a valid Account ID and Passcode.
-- (Optional) Brand assets and images hosted on a public CDN (Content Delivery Network).
+* An active Email on Acid account.
+* A CleverTap account with a valid Account ID and Passcode.
+* (Optional) Brand assets and images hosted on a public CDN (Content Delivery Network).
 
 # Integrate Email on Acid with CleverTap
 
@@ -52,16 +52,16 @@ Consider an example where a marketing team wants to send a promotional campaign.
 
 2. From the dashboard, either:
 
-   - Create a **new email template** from scratch, or
-   - Choose a **predefined template** and modify it with your own content (text, images, branding).
+   * Create a **new email template** from scratch, or
+   * Choose a **predefined template** and modify it with your own content (text, images, branding).
 
    <br />
 
 3. Customize the template with your campaign details:
 
-   - Update text and CTAs.
-   - Add images and logos.
-   - Adjust layout for responsiveness.
+   * Update text and CTAs.
+   * Add images and logos.
+   * Adjust layout for responsiveness.
 
 4. Run **previews and tests** across multiple email clients and devices.
 
@@ -77,38 +77,23 @@ Your email is now ready for use in a CleverTap campaign.
 
 Set up and personalize your campaign in CleverTap using the exported HTML template from Email on Acid. To do so, perform the following steps:
 
-1. Go to the **Campaigns** page in CleverTap, click **+ Campaign**, and select _Email_.
+1. Go to the **Campaigns** page in CleverTap, click **+ Campaign**, and select *Email*.
 
-2. Under the _What_ section, click **Go to Editor** and perform the following steps:
+2. Under the *What* section, click **Go to Editor** and perform the following steps:
 
-   1. Select a _Blank Template_.
+   1. Select a *Blank Template*.
    2. Switch to **Source** mode in the email editor.
    3. Paste the copied HTML code from [Create and Export Template in Email on Acid](doc:email-on-acid#create-and-export-template-in-email-on-acid).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/46fbf4bb496469893b9c9b6620fc7e6f92e1b795dbcabc9ffeca9aa66b22c10f-2025-09-19_12-09-47_1.gif",
-        "",
-        "Paste Code in CleverTap Editor"
-      ],
-      "align": "center",
-      "sizing": "85% ",
-      "border": true,
-      "caption": "Paste Code in CleverTap Editor"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Paste Code in CleverTap Editor" align="center" width="85% " border={true} src="https://files.readme.io/46fbf4bb496469893b9c9b6620fc7e6f92e1b795dbcabc9ffeca9aa66b22c10f-2025-09-19_12-09-47_1.gif">
+  Paste Code in CleverTap Editor
+</Image>
 
 3. (Optional) Add [Liquid tags](doc:personalize-message-all#liquid-tags) for personalization.
 4. Click **Preview & Test** to verify personalization and formatting.
 
 > 📘 Preview Campaign
-> 
+>
 > The preview in CleverTap may render colors differently than in Email on Acid. The final campaign renders correctly to recipients.
 
 5. Once confirmed, click **Publish**.
