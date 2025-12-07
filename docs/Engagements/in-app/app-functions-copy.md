@@ -22,34 +22,34 @@ Below is a list of supported App Functions, their descriptions, use cases, and i
 
 ### 1. **Request App Rating**
 
-- **Description**: Triggers the OS-native app store rating prompt.
-- **Use Case**: Ask for ratings after high-satisfaction moments (e.g., feature success, subscription renewal).
-- **System Behavior**:
+* **Description**: Triggers the OS-native app store rating prompt.
+* **Use Case**: Ask for ratings after high-satisfaction moments (e.g., feature success, subscription renewal).
+* **System Behavior**:
 
-  - OS controls when and how often the prompt appears (may not show every time).
-  - Cannot be forced or tracked.
-  - No outcome data (rating result) is available.
-- **Best Practice**: Precede with a message explaining the value of the rating to improve chances of success.
+  * OS controls when and how often the prompt appears (may not show every time).
+  * Cannot be forced or tracked.
+  * No outcome data (rating result) is available.
+* **Best Practice**: Precede with a message explaining the value of the rating to improve chances of success.
 
 ### 2. **Request Push Permission**
 
-- **Description**: Prompts the user to grant push notification permissions.
-- **Use Case**: Ask after explaining value—e.g., after onboarding, feature walkthroughs.
-- **System Behavior**:
+* **Description**: Prompts the user to grant push notification permissions.
+* **Use Case**: Ask after explaining value—e.g., after onboarding, feature walkthroughs.
+* **System Behavior**:
 
-  - Shown only if permission hasn’t already been granted or denied.
-  - Redirects to app settings if previously denied.
-  - One-time prompt by OS; cannot be re-shown.
+  * Shown only if permission hasn’t already been granted or denied.
+  * Redirects to app settings if previously denied.
+  * One-time prompt by OS; cannot be re-shown.
 
 ### 3. **Open URL**
 
-- **Description**: Opens an external web page or deep-linked screen in the app.
-- **Use Case**: Link to external offers, help pages, account settings, etc.
-- **System Behavior**:
+* **Description**: Opens an external web page or deep-linked screen in the app.
+* **Use Case**: Link to external offers, help pages, account settings, etc.
+* **System Behavior**:
 
-  - URL opens immediately on tap.
-  - Campaign-level analytics track only the in-app click/view, not destination behavior.
-- **Best Practice**: Ensure the URL is mobile-optimized and secure (HTTPS).
+  * URL opens immediately on tap.
+  * Campaign-level analytics track only the in-app click/view, not destination behavior.
+* **Best Practice**: Ensure the URL is mobile-optimized and secure (HTTPS).
 
 ***
 
@@ -69,7 +69,9 @@ You can attach an App Function to a button in an in-app message using the Advanc
 4. In the **On Tap** dropdown, select `App Function`.
 5. Choose one of the available functions: `Request App Rating`, `Request Push Permission`, or `Open URL`.
 
-> 💡 Always add a lead-in message to set context before invoking the system prompt.
+<Callout icon="💡" theme="default">
+  ### Always add a lead-in message to set context before invoking the system prompt.
+</Callout>
 
 ### Option 2: As Standalone App Function Campaign
 
@@ -113,7 +115,7 @@ Push primer campaigns are used to warm up the user before showing the irreversib
 6. Launch the campaign.
 
 > 📘 Best Practice
-> 
+>
 > Use compelling visuals and clear reasons why the user should opt in.
 
 ***
@@ -132,5 +134,5 @@ Rating primer campaigns aim to guide users to leave a review during moments of s
 6. Launch the campaign to a satisfied segment.
 
 > 📘 Tip
-> 
+>
 > Ideal after a purchase, milestone, or subscription renewal.
