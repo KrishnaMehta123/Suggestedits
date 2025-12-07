@@ -3,3 +3,4 @@
 - aws-s3_iam-policy
 - configure-aws-s3
 - bigquery-export
+- data-export-to-gcp
