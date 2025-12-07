@@ -16,9 +16,9 @@ A WhatsApp message can be configured and sent like any other campaign on CleverT
 
 Below are some use case scenarios:
 
-- Send real-time notifications to customers regarding delivery alerts and booking confirmations.
-- Send personalized recommendations about new products, offers, and services through rich media sharing.
-- Delight your customers with reminders about their upcoming bookings.
-- Enable your customer support team to respond to customer queries instantly.
+* Send real-time notifications to customers regarding delivery alerts and booking confirmations.
+* Send personalized recommendations about new products, offers, and services through rich media sharing.
+* Delight your customers with reminders about their upcoming bookings.
+* Enable your customer support team to respond to customer queries instantly.
 
 To learn how to craft high-impact campaigns, explore our guide on[ WhatsApp Marketing](https://clevertap.com/blog/whatsapp-marketing/) for best practices, strategies, and real-world use cases.
