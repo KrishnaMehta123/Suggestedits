@@ -16,7 +16,7 @@ next:
 
 Integrating Clearout with CleverTap enables you to validate user email lists, reduce bounce rates, and maintain your domain’s sender reputation — all within your marketing workflow.
 
-To learn more about Clearout and its result files, refer to the [Clearout documentation](https://clearout.io/help/).  
+To learn more about Clearout and its result files, refer to the [Clearout documentation](https://clearout.io/help/).\
 For support, contact the [Clearout Support team](mailto:us@clearout.io).
 
 ***
@@ -29,9 +29,9 @@ Clearout’s native integration helps you identify invalid, risky, or disposable
 
 This process allows marketers to:
 
-- Maintain clean and reliable email lists.
-- Reduce hard bounces and protect sender reputation.
-- Improve segmentation and campaign ROI by targeting verified users only.
+* Maintain clean and reliable email lists.
+* Reduce hard bounces and protect sender reputation.
+* Improve segmentation and campaign ROI by targeting verified users only.
 
 ***
 
@@ -43,9 +43,9 @@ Once verification is complete, the results are synced back to CleverTap as **cus
 
 This enables marketers to:
 
-- Send email campaigns only to users with verified addresses.
-- Trigger push or in-app messages prompting invalid users to update their emails.
-- Create audience segments based on deliverability status for more targeted engagement.
+* Send email campaigns only to users with verified addresses.
+* Trigger push or in-app messages prompting invalid users to update their emails.
+* Create audience segments based on deliverability status for more targeted engagement.
 
 ***
 
@@ -53,8 +53,8 @@ This enables marketers to:
 
 Before setting up the integration, ensure you have:
 
-- An active **Clearout** account
-- An active **CleverTap** account with valid credentials (Account ID, Passcode, and Region)
+* An active **Clearout** account
+* An active **CleverTap** account with valid credentials (Account ID, Passcode, and Region)
 
 ***
 
@@ -86,12 +86,12 @@ To connect your CleverTap account with Clearout:
 
 4. Enter the following project details to authorize the connection:
 
-   - **Account ID**: Your CleverTap Project ID
-   - **Account Passcode**: Your CleverTap passcode
-   - **Region**: Your CleverTap account region
-   - **Account Name**: A nickname to identify the account
+   * **Account ID**: Your CleverTap Project ID
+   * **Account Passcode**: Your CleverTap passcode
+   * **Region**: Your CleverTap account region
+   * **Account Name**: A nickname to identify the account
 
-These details can be found on the **Settings → Project** page in your CleverTap dashboard.  
+These details can be found on the **Settings → Project** page in your CleverTap dashboard.\
 Use the following table to identify your region based on your CleverTap URL:
 
 | Dashboard URL                                                                                        | Region            |
@@ -117,7 +117,9 @@ After connecting your CleverTap account, add the email list you want to validate
 
 ![Selecting the CleverTap Audience List for Validation](https://files.readme.io/200afc3-Add_to_My_lIst.png)
 
-> 💡 **Tip:** You can add multiple lists to your verification queue to validate them in sequence.
+<Callout icon="💡" theme="default">
+  ### **Tip:** You can add multiple lists to your verification queue to validate them in sequence.
+</Callout>
 
 ***
 
@@ -130,9 +132,13 @@ To validate your selected list:
 
 ![Click Verify to Validate Audience List](https://files.readme.io/70f4586-Click_Verify.png)
 
-> 💡 **Tip:** Clearout automatically categorizes each address by type and risk level, allowing more granular segmentation once synced with CleverTap.
+<Callout icon="💡" theme="default">
+  ### **Tip:** Clearout automatically categorizes each address by type and risk level, allowing more granular segmentation once synced with CleverTap.
+</Callout>
 
-> ⚙️ **How it helps:** Verifying emails ensures that your CleverTap campaigns reach active inboxes, reducing bounces and improving sender reputation.
+<Callout icon="⚙️" theme="default">
+  ### **How it helps:** Verifying emails ensures that your CleverTap campaigns reach active inboxes, reducing bounces and improving sender reputation.
+</Callout>
 
 ***
 
@@ -140,8 +146,8 @@ To validate your selected list:
 
 After validation, you can export the verified results back to CleverTap in one of two ways:
 
-- **Unsubscribe:** Automatically remove invalid or non-deliverable email addresses from your CleverTap audience list.
-- **Append:** Keep all contacts but append Clearout verification status columns to your existing CleverTap data.
+* **Unsubscribe:** Automatically remove invalid or non-deliverable email addresses from your CleverTap audience list.
+* **Append:** Keep all contacts but append Clearout verification status columns to your existing CleverTap data.
 
 To export:
 
@@ -154,7 +160,9 @@ After exporting, Clearout automatically updates CleverTap user profiles with new
 
 You can view these properties in CleverTap by opening any user profile under **User Details → Properties**.
 
-> 💡 **Tip:** The Unsubscribe option is recommended for active mailing lists to prevent deliverability issues.
+<Callout icon="💡" theme="default">
+  ### **Tip:** The Unsubscribe option is recommended for active mailing lists to prevent deliverability issues.
+</Callout>
 
 ***
 
@@ -173,7 +181,9 @@ After verification results are exported to CleverTap, you can use these custom u
 5. Click **Preview and Test** to ensure your campaign targets the correct users.
 6. Once satisfied, click **Publish** to make the campaign live.
 
-> ⚙️ **How it helps:** This ensures that your email campaigns only reach verified users, reducing bounces and improving engagement metrics.
+<Callout icon="⚙️" theme="default">
+  ### **How it helps:** This ensures that your email campaigns only reach verified users, reducing bounces and improving engagement metrics.
+</Callout>
 
 ***
 
@@ -203,11 +213,11 @@ No. You must purchase credits directly from [Clearout](https://app.clearout.io/d
 
 ✅ **Document Alignment Summary**
 
-- Added contextual **Introduction** and **Use Case** sections for clarity.
-- Explained **why** each step matters, not just _how_ to click.
-- Introduced new section: **Create a CleverTap Campaign Using Verified Emails**.
-- Updated tone to match CleverTap’s integration doc style (actionable, concise, results-focused).
-- Verified heading hierarchy, link validity, and image syntax per TEC Style Guide.
+* Added contextual **Introduction** and **Use Case** sections for clarity.
+* Explained **why** each step matters, not just *how* to click.
+* Introduced new section: **Create a CleverTap Campaign Using Verified Emails**.
+* Updated tone to match CleverTap’s integration doc style (actionable, concise, results-focused).
+* Verified heading hierarchy, link validity, and image syntax per TEC Style Guide.
 
 ***
 
