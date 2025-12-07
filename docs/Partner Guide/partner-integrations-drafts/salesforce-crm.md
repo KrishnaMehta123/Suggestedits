@@ -25,22 +25,22 @@ This bi-directional sync allows CRM records and engagement behavior to inform ea
 
 Integrating CleverTap with Salesforce enables a wide range of cross-functional use cases:
 
-- **Unify Customer Profiles**  
+* **Unify Customer Profiles**\
   Bring in Salesforce records such as contacts, leads, accounts, or opportunities as profile data in CleverTap to create a centralized view of your customer.
 
-- **Trigger Campaigns from CRM Events**  
+* **Trigger Campaigns from CRM Events**\
   Use events and status updates, such as task creation, opportunity movement, or case resolution, to trigger real-time journeys and messaging in CleverTap.
 
-- **Sync Behavioral Data Back to Salesforce**  
+* **Sync Behavioral Data Back to Salesforce**\
   Export user activity and campaign engagement from CleverTap into Salesforce to help sales teams prioritize outreach and improve conversion tracking.
 
-- **Segment Based on CRM Attributes**  
+* **Segment Based on CRM Attributes**\
   Build dynamic audience segments in CleverTap using Salesforce attributes such as lead stage, industry, or deal value.
 
-- **Backfill Historical Records**  
+* **Backfill Historical Records**\
   Import historical Salesforce data, such as leads, events, and cases, to enrich user profiles in CleverTap and inform segmentation, targeting, and analytics.
 
-- **Automate Lead Enrichment**  
+* **Automate Lead Enrichment**\
   Use CleverTap campaigns to capture user signals (for example, NPS, Feedback survey) and push them into Salesforce objects for sales or success follow-up.
 
 # Map Fields for Import and Define Payload for Export
@@ -49,10 +49,10 @@ To enable seamless data exchange between Salesforce and CleverTap, you must conf
 
 ### For Import
 
-Map Salesforce object fields, such as _Email_, _Lead ID_, or _Opportunity Status_, to profile attributes or event parameters in CleverTap. This ensures that structured CRM records are accurately ingested as **profiles** or **events** within the CleverTap platform.
+Map Salesforce object fields, such as *Email*, *Lead ID*, or *Opportunity Status*, to profile attributes or event parameters in CleverTap. This ensures that structured CRM records are accurately ingested as **profiles** or **events** within the CleverTap platform.
 
-- For **Profile Imports**, map identifiers and attributes from objects such as _Lead_, _Contact_, or _Account_ to CleverTap profile fields.
-- For **Event Imports**, map lifecycle activities (for example, _Opportunity Created_, _Case Closed_) to event names and properties in CleverTap.
+* For **Profile Imports**, map identifiers and attributes from objects such as *Lead*, *Contact*, or *Account* to CleverTap profile fields.
+* For **Event Imports**, map lifecycle activities (for example, *Opportunity Created*, *Case Closed*) to event names and properties in CleverTap.
 
 For step-by-step guidance, refer to the [Import Guide](https://staging.docs.user.clevertap.net/docs/salesforce-crm-import).
 
@@ -60,7 +60,7 @@ For step-by-step guidance, refer to the [Import Guide](https://staging.docs.user
 
 When exporting data from CleverTap to Salesforce via webhook, define a custom JSON payload that matches the expected structure of your Salesforce Apex REST endpoint.
 
-- Use dynamic fields such as `email`, `leadScore`, or `city` to populate the POST body. These values are typically drawn from user profile attributes or event properties within CleverTap.
-- Ensure that the destination object in Salesforce has matching fields to receive this data, typically configured using a custom object and Apex class.
+* Use dynamic fields such as `email`, `leadScore`, or `city` to populate the POST body. These values are typically drawn from user profile attributes or event properties within CleverTap.
+* Ensure that the destination object in Salesforce has matching fields to receive this data, typically configured using a custom object and Apex class.
 
 For more information about configuring exports, refer to the [Export Guide](https://staging.docs.user.clevertap.net/docs/salesforce-crm-export).
