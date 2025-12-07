@@ -20,459 +20,143 @@ next:
 
 #### Cover
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2f2c7c1-Cover.png",
-        "",
-        "Cover"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "Cover"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Cover" align="center" width="30% " border={true} src="https://files.readme.io/2f2c7c1-Cover.png">
+  Cover
+</Image>
 
 #### Half-Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c854ff-half_interstitial.png",
-        "",
-        "Half-Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Half-Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Half-Interstitial" align="center" border={true} src="https://files.readme.io/7c854ff-half_interstitial.png">
+  Half-Interstitial
+</Image>
 
 #### Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d8f8571-interstitial_1.png",
-        null,
-        "Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Interstitial" align="center" border={true} src="https://files.readme.io/d8f8571-interstitial_1.png">
+  Interstitial
+</Image>
 
 #### Header
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d874537-header.png",
-        null,
-        "Header"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Header"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Header" align="center" border={true} src="https://files.readme.io/d874537-header.png">
+  Header
+</Image>
 
 #### Footer
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf2db66-footer_1.png",
-        null,
-        "Footer"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Footer"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Footer" align="center" border={true} src="https://files.readme.io/cf2db66-footer_1.png">
+  Footer
+</Image>
 
 #### Alert
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/575c3f6-alert.png",
-        null,
-        "Alert"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Alert"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Alert" align="center" border={true} src="https://files.readme.io/575c3f6-alert.png">
+  Alert
+</Image>
 
 #### TBD Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/97826bd-image_interstitial.png",
-        null,
-        "TBD Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "TBD Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="TBD Interstitial" align="center" border={true} src="https://files.readme.io/97826bd-image_interstitial.png">
+  TBD Interstitial
+</Image>
 
 ### Image Only Notifications
 
 #### Cover
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c3bd0c7-cover_image_only.png",
-        "",
-        "Cover"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Cover"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Cover" align="center" border={true} src="https://files.readme.io/c3bd0c7-cover_image_only.png">
+  Cover
+</Image>
 
 #### Half-Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0b0c8d0-half_interstitial_image_only.png",
-        "",
-        "Half-Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Half-Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Half-Interstitial" align="center" border={true} src="https://files.readme.io/0b0c8d0-half_interstitial_image_only.png">
+  Half-Interstitial
+</Image>
 
 #### Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b39660c-interstitial_image_only.png",
-        null,
-        "Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Interstitial" align="center" border={true} src="https://files.readme.io/b39660c-interstitial_image_only.png">
+  Interstitial
+</Image>
 
 #### Image Intertitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0811058-image_interstitial_1.png",
-        null,
-        "Image Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Image Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Image Interstitial" align="center" border={true} src="https://files.readme.io/0811058-image_interstitial_1.png">
+  Image Interstitial
+</Image>
 
 ## Rating Templates
 
 ### NPS Ratings
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a962779-nps_ratings.png",
-        null,
-        "NPS Ratings"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "NPS Ratings"
-    }
-  ]
-}
-[/block]
-
+<Image alt="NPS Ratings" align="center" width="30% " border={true} src="https://files.readme.io/a962779-nps_ratings.png">
+  NPS Ratings
+</Image>
 
 ### User Ratings
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cb57f2d-user_ratings.png",
-        null,
-        "User Ratings"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "User Ratings"
-    }
-  ]
-}
-[/block]
-
+<Image alt="User Ratings" align="center" width="30% " border={true} src="https://files.readme.io/cb57f2d-user_ratings.png">
+  User Ratings
+</Image>
 
 ### NPS with Follow-up Questions
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/24c8bca-nps_with_follow_up_question.png",
-        "",
-        "NPS with Follow-up Questions"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "NPS with Follow-up Questions"
-    }
-  ]
-}
-[/block]
-
+<Image alt="NPS with Follow-up Questions" align="center" width="30% " border={true} src="https://files.readme.io/24c8bca-nps_with_follow_up_question.png">
+  NPS with Follow-up Questions
+</Image>
 
 ### User Ratings with Follow-up Questions
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/db039f0-user_rating_with_follow_up_question.png",
-        "",
-        "User Ratings with Follow-up Questions"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "User Ratings with Follow-up Questions"
-    }
-  ]
-}
-[/block]
-
+<Image alt="User Ratings with Follow-up Questions" align="center" width="30% " border={true} src="https://files.readme.io/db039f0-user_rating_with_follow_up_question.png">
+  User Ratings with Follow-up Questions
+</Image>
 
 ## Lead Gen Templates
 
 ### Text Only
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dd52665-text_only.png",
-        "",
-        "Text Only"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "Text Only"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Text Only" align="center" width="30% " border={true} src="https://files.readme.io/dd52665-text_only.png">
+  Text Only
+</Image>
 
 ### Image on Top
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5dbb159-image_on_top.png",
-        "",
-        "Image on Top"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "Image on Top"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Image on Top" align="center" width="30% " border={true} src="https://files.readme.io/5dbb159-image_on_top.png">
+  Image on Top
+</Image>
 
 ## Custom HTML Templates
 
 ### Cover
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2f2c7c1-Cover.png",
-        "",
-        "Cover"
-      ],
-      "align": "center",
-      "sizing": "30% ",
-      "border": true,
-      "caption": "Cover"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Cover" align="center" width="30% " border={true} src="https://files.readme.io/2f2c7c1-Cover.png">
+  Cover
+</Image>
 
 ### Half-Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c854ff-half_interstitial.png",
-        "",
-        "Half-Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Half-Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Half-Interstitial" align="center" border={true} src="https://files.readme.io/7c854ff-half_interstitial.png">
+  Half-Interstitial
+</Image>
 
 ### Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d8f8571-interstitial_1.png",
-        null,
-        "Interstitial"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Interstitial" align="center" border={true} src="https://files.readme.io/d8f8571-interstitial_1.png">
+  Interstitial
+</Image>
 
 ### Header
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d874537-header.png",
-        null,
-        "Header"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Header"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Header" align="center" border={true} src="https://files.readme.io/d874537-header.png">
+  Header
+</Image>
 
 ### Footer
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf2db66-footer_1.png",
-        null,
-        "Footer"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Footer"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Footer" align="center" border={true} src="https://files.readme.io/cf2db66-footer_1.png">
+  Footer
+</Image>
 
 # App Inbox
 
@@ -480,85 +164,29 @@ next:
 
 ### Simple Message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5d7475d-simple_message.png",
-        "",
-        "Simple Message"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Simple Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Simple Message" align="center" border={true} src="https://files.readme.io/5d7475d-simple_message.png">
+  Simple Message
+</Image>
 
 ### Carousel Message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ec5dee3-carousel_message.png",
-        "",
-        "Carousel Message"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Carousel Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel Message" align="center" border={true} src="https://files.readme.io/ec5dee3-carousel_message.png">
+  Carousel Message
+</Image>
 
 ### Message with Icon
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d9e2e5b-message_with_icon.png",
-        "",
-        "Message with Icon"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Message with Icon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Message with Icon" align="center" border={true} src="https://files.readme.io/d9e2e5b-message_with_icon.png">
+  Message with Icon
+</Image>
 
 ## Image Only Notifications
 
 ### Carousel message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/36c9c77-carousel_message_image_only.png",
-        "",
-        "Carousel Message"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Carousel Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel Message" align="center" border={true} src="https://files.readme.io/36c9c77-carousel_message_image_only.png">
+  Carousel Message
+</Image>
 
 # Email
 
@@ -568,313 +196,117 @@ next:
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a0818f0-create_custom_html_beta.png",
-        "",
-        "Email with rich media (beta)"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Email with rich media (beta)"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Email with rich media (beta)" align="center" width="45% " border={true} src="https://files.readme.io/a0818f0-create_custom_html_beta.png">
+  Email with rich media (beta)
+</Image>
 
 ### Email with drag and drop
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9d6c627-1.png",
-        "",
-        "Email With Drag and Drop"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Email With Drag and Drop"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Email With Drag and Drop" align="center" width="45% " border={true} src="https://files.readme.io/9d6c627-1.png">
+  Email With Drag and Drop
+</Image>
 
 ### Blog Newsletter
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/167272a-18.png",
-        "",
-        "Blog Newsletter"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Blog Newsletter"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Blog Newsletter" align="center" width="45% " border={true} src="https://files.readme.io/167272a-18.png">
+  Blog Newsletter
+</Image>
 
 ### Product Showcase
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d4b4b63-19.png",
-        "",
-        "Product Showcase"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Product Showcase"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Product Showcase" align="center" width="45% " border={true} src="https://files.readme.io/d4b4b63-19.png">
+  Product Showcase
+</Image>
 
 ### Single Column
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c98ec4e-2.png",
-        "",
-        "Single Column"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Single Column"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Single Column" align="center" width="45% " border={true} src="https://files.readme.io/c98ec4e-2.png">
+  Single Column
+</Image>
 
 ### Service with Bookings
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b2371c2-20.png",
-        "",
-        "Service with Bookings\n\n\n\n\n\n\n\n"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Service with Bookings"
-    }
-  ]
-}
-[/block]
+<Image
+  alt="Service with Bookings
 
+
+
+
+
+
+
+"
+  align="center"
+  width="45% "
+  border={true}
+  src="https://files.readme.io/b2371c2-20.png"
+>
+  Service with Bookings
+</Image>
 
 ### Blog Newsletter 2
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5bef013-21_1.png",
-        "",
-        "Blog Newsletter 2 "
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Blog Newsletter 2 "
-    }
-  ]
-}
-[/block]
-
+<Image alt="Blog Newsletter 2 " align="center" width="45% " border={true} src="https://files.readme.io/5bef013-21_1.png">
+  Blog Newsletter 2 
+</Image>
 
 ### Product Showcase 2
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a1c2896-22.png",
-        "",
-        "Product Showcase 2"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Product Showcase 2"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Product Showcase 2" align="center" width="45% " border={true} src="https://files.readme.io/a1c2896-22.png">
+  Product Showcase 2
+</Image>
 
 ### Product Showcase 3
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2d29fa9-23.png",
-        "",
-        "Product Showcase 3"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Product Showcase 3"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Product Showcase 3" align="center" width="45% " border={true} src="https://files.readme.io/2d29fa9-23.png">
+  Product Showcase 3
+</Image>
 
 ### Product Showcase 4
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e26273f-24.png",
-        "",
-        "Product Showcase 4"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Product Showcase 4"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Product Showcase 4" align="center" width="45% " border={true} src="https://files.readme.io/e26273f-24.png">
+  Product Showcase 4
+</Image>
 
 ### Blog Update
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a82c26f-25.png",
-        "",
-        "Blog Update"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Blog Update"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Blog Update" align="center" width="45% " border={true} src="https://files.readme.io/a82c26f-25.png">
+  Blog Update
+</Image>
 
 ### Blog with Photos
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d66ca02-26.png",
-        "",
-        "Blog with Photos"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Blog with Photos"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Blog with Photos" align="center" width="45% " border={true} src="https://files.readme.io/d66ca02-26.png">
+  Blog with Photos
+</Image>
 
 ### Order Confirmation
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/081f53e-27.png",
-        "",
-        "Order Confirmation"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Order Confirmation"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Order Confirmation" align="center" width="45% " border={true} src="https://files.readme.io/081f53e-27.png">
+  Order Confirmation
+</Image>
 
 ### Offers and Deals
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/69da211-28.png",
-        "",
-        "Offers and Deals"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Offers and Deals"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Offers and Deals" align="center" width="45% " border={true} src="https://files.readme.io/69da211-28.png">
+  Offers and Deals
+</Image>
 
 <br />
 
@@ -882,185 +314,65 @@ next:
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/04aebac-29.png",
-        "",
-        "Product Showcase 5"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Product Showcase 5"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Product Showcase 5" align="center" width="45% " border={true} src="https://files.readme.io/04aebac-29.png">
+  Product Showcase 5
+</Image>
 
 ### Single column with hero image
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9b1b8b6-3.png",
-        "",
-        "Single column with hero image"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Single column with hero image"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Single column with hero image" align="center" width="45% " border={true} src="https://files.readme.io/9b1b8b6-3.png">
+  Single column with hero image
+</Image>
 
 ### Booking Confirmation
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5d47bac-30.png",
-        "",
-        "Booking Confirmation"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Booking Confirmation"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Booking Confirmation" align="center" width="45% " border={true} src="https://files.readme.io/5d47bac-30.png">
+  Booking Confirmation
+</Image>
 
 ### Account Verification
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/28c6062-31.png",
-        "",
-        "Account Verification"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Account Verification"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Account Verification" align="center" width="45% " border={true} src="https://files.readme.io/28c6062-31.png">
+  Account Verification
+</Image>
 
 ### Offers and Deals 2
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/030c450-32.png",
-        "",
-        "Offers and Deals 2"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Offers and Deals 2"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Offers and Deals 2" align="center" width="45% " border={true} src="https://files.readme.io/030c450-32.png">
+  Offers and Deals 2
+</Image>
 
 ### Recommendations
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f31d549-34.png",
-        "",
-        "Recommendations"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Recommendations"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Recommendations" align="center" width="45% " border={true} src="https://files.readme.io/f31d549-34.png">
+  Recommendations
+</Image>
 
 ### Feedback Form
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/89188a2-35.png",
-        "",
-        "Feedback Form"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Feedback Form"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Feedback Form" align="center" width="45% " border={true} src="https://files.readme.io/89188a2-35.png">
+  Feedback Form
+</Image>
 
 ### Verification Email
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/af0f118-36.png",
-        "",
-        "Verification Email"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Verification Email"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Verification Email" align="center" width="45% " border={true} src="https://files.readme.io/af0f118-36.png">
+  Verification Email
+</Image>
 
 <br />
 
@@ -1068,205 +380,69 @@ next:
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0e5e703-4.png",
-        "",
-        "Single column with inline image"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Single column with inline image"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Single column with inline image" align="center" width="45% " border={true} src="https://files.readme.io/0e5e703-4.png">
+  Single column with inline image
+</Image>
 
 ### Two Column with inline image
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9902352-5.png",
-        "",
-        "Two Column with inline image"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Two Column with inline image"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Two Column with inline image" align="center" width="45% " border={true} src="https://files.readme.io/9902352-5.png">
+  Two Column with inline image
+</Image>
 
 ## AMP Templates
 
 ### Email with custom HTML & AMP
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4a5b3cd-create_custom_html.png",
-        "",
-        " Email with custom HTML & AMP"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": " Email with custom HTML & AMP"
-    }
-  ]
-}
-[/block]
-
+<Image alt=" Email with custom HTML & AMP" align="center" width="45% " border={true} src="https://files.readme.io/4a5b3cd-create_custom_html.png">
+   Email with custom HTML & AMP
+</Image>
 
 ### Email with drag and drop
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8d18e3d-1.png",
-        "",
-        "Email with drag and drop"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image alt="Email with drag and drop" align="center" className="border" width="45% " border={true} src="https://files.readme.io/8d18e3d-1.png" />
 
 ### NPS Survey
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0b0150d-47.png",
-        "",
-        "NPS Survey"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "NPS Survey"
-    }
-  ]
-}
-[/block]
-
+<Image alt="NPS Survey" align="center" width="45% " border={true} src="https://files.readme.io/0b0150d-47.png">
+  NPS Survey
+</Image>
 
 ### Accordion
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/239850a-39.png",
-        "",
-        "Accordion"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Accordion"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Accordion" align="center" width="45% " border={true} src="https://files.readme.io/239850a-39.png">
+  Accordion
+</Image>
 
 ### Carousel
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/864b38c-40.png",
-        "",
-        "Carousel"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel" align="center" width="45% " border={true} src="https://files.readme.io/864b38c-40.png">
+  Carousel
+</Image>
 
 ### Carousel with Tiles
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4a13cad-Carousel_with_Tiles_AMP.png",
-        "",
-        "Carousel with Tiles"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel with Tiles"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel with Tiles" align="center" width="45% " border={true} src="https://files.readme.io/4a13cad-Carousel_with_Tiles_AMP.png">
+  Carousel with Tiles
+</Image>
 
 ### Simple Carousel
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/452b231-Simple_Carousel_AMP.png",
-        "",
-        "Simple Carousel"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Simple Carousel"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Simple Carousel" align="center" width="45% " border={true} src="https://files.readme.io/452b231-Simple_Carousel_AMP.png">
+  Simple Carousel
+</Image>
 
 <br />
 
@@ -1274,114 +450,39 @@ next:
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c270a6a-43.png",
-        "",
-        "Carousel with Autoplay"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel with Autoplay"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel with Autoplay" align="center" width="45% " border={true} src="https://files.readme.io/c270a6a-43.png">
+  Carousel with Autoplay
+</Image>
 
 ### Carousel with Navigation
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/04cf9a7-44.png",
-        "",
-        "Carousel with Navigation"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel with Navigation"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel with Navigation" align="center" width="45% " border={true} src="https://files.readme.io/04cf9a7-44.png">
+  Carousel with Navigation
+</Image>
 
 ### Carousel with Accordion
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2b338c3-45.png",
-        "",
-        "Carousel with Accordion"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel with Accordion"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel with Accordion" align="center" width="45% " border={true} src="https://files.readme.io/2b338c3-45.png">
+  Carousel with Accordion
+</Image>
 
 ### Tabs
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9e770bc-46.png",
-        "",
-        "Tabs"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Tabs"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Tabs" align="center" width="45% " border={true} src="https://files.readme.io/9e770bc-46.png">
+  Tabs
+</Image>
 
 ### User Feedback
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/349221f-38.png",
-        "",
-        "User Feedback"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "User Feedback"
-    }
-  ]
-}
-[/block]
-
+<Image alt="User Feedback" align="center" width="45% " border={true} src="https://files.readme.io/349221f-38.png">
+  User Feedback
+</Image>
 
 # Native Display
 
@@ -1389,131 +490,41 @@ next:
 
 ### Simple Message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f29ec2-Simple_Message_Native_Display.png",
-        "",
-        "Simple Message"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Simple Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Simple Message" align="center" width="45% " border={true} src="https://files.readme.io/3f29ec2-Simple_Message_Native_Display.png">
+  Simple Message
+</Image>
 
 ### Carousel Message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/32f3c91-Carousel_Message_Native_Display.png",
-        "",
-        "Carousel MEssage"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel MEssage"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel MEssage" align="center" width="45% " border={true} src="https://files.readme.io/32f3c91-Carousel_Message_Native_Display.png">
+  Carousel MEssage
+</Image>
 
 ### Message with Icon
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4c4838e-Message_with_icon_Native_Display.png",
-        "",
-        "Message with Icon"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Message with Icon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Message with Icon" align="center" width="45% " border={true} src="https://files.readme.io/4c4838e-Message_with_icon_Native_Display.png">
+  Message with Icon
+</Image>
 
 ### Custom Key Value
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0c4759b-custom_key_value.png",
-        "",
-        "Custom Key Value"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Custom Key Value"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Custom Key Value" align="center" width="45% " border={true} src="https://files.readme.io/0c4759b-custom_key_value.png">
+  Custom Key Value
+</Image>
 
 ## Image Only Notifications
 
 ### Simple Message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/89dccda-Simple_banner_Native_Display.png",
-        "",
-        "Simple Message"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Simple Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Simple Message" align="center" width="45% " border={true} src="https://files.readme.io/89dccda-Simple_banner_Native_Display.png">
+  Simple Message
+</Image>
 
 ### Carousel Message
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9e3104e-Carousel_Image_Native_Display.png",
-        "",
-        "Carousel Message"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Carousel Message"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Carousel Message" align="center" width="45% " border={true} src="https://files.readme.io/9e3104e-Carousel_Image_Native_Display.png">
+  Carousel Message
+</Image>
 
 # Web Popup
 
@@ -1521,238 +532,73 @@ next:
 
 ### Box
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/196e3e8-box.png",
-        "",
-        "Box"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Box"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Box" align="center" width="45% " border={true} src="https://files.readme.io/196e3e8-box.png">
+  Box
+</Image>
 
 ### Banner
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4b35ff1-banner.png",
-        "",
-        "Banner"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Banner"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Banner" align="center" width="45% " border={true} src="https://files.readme.io/4b35ff1-banner.png">
+  Banner
+</Image>
 
 ### Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/98a031d-interstitial.png",
-        "",
-        "Interstitial"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Interstitial" align="center" width="45% " border={true} src="https://files.readme.io/98a031d-interstitial.png">
+  Interstitial
+</Image>
 
 ### Image only
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/12a5187-image-only.png",
-        "",
-        "Image only"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Image only"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Image only" align="center" width="45% " border={true} src="https://files.readme.io/12a5187-image-only.png">
+  Image only
+</Image>
 
 ## Ratings Templates
 
 ### NPS
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a4a6fab-nps-ratings.png",
-        "",
-        "NPS"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "NPS"
-    }
-  ]
-}
-[/block]
-
+<Image alt="NPS" align="center" width="45% " border={true} src="https://files.readme.io/a4a6fab-nps-ratings.png">
+  NPS
+</Image>
 
 ### User Ratings
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a2c0a9-user-ratings.png",
-        "",
-        "User Ratings"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "User Ratings"
-    }
-  ]
-}
-[/block]
-
+<Image alt="User Ratings" align="center" width="45% " border={true} src="https://files.readme.io/6a2c0a9-user-ratings.png">
+  User Ratings
+</Image>
 
 ### NPS with Follow-up Question
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f945fb2-nps-follow-up.png",
-        "",
-        "NPS with Follow-up Question"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "NPS with Follow-up Question"
-    }
-  ]
-}
-[/block]
-
+<Image alt="NPS with Follow-up Question" align="center" width="45% " border={true} src="https://files.readme.io/f945fb2-nps-follow-up.png">
+  NPS with Follow-up Question
+</Image>
 
 ### User Ratings with Follow-up Questions
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e70a17-user-ratings-follow-up.png",
-        "",
-        "User Ratings with Follow-up Questions"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "User Ratings with Follow-up Questions"
-    }
-  ]
-}
-[/block]
-
+<Image alt="User Ratings with Follow-up Questions" align="center" width="45% " border={true} src="https://files.readme.io/1e70a17-user-ratings-follow-up.png">
+  User Ratings with Follow-up Questions
+</Image>
 
 ## Lead Generation Template
 
 ### Text Only
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e323172-text_only.png",
-        "",
-        "Text Only"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Text Only"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Text Only" align="center" width="45% " border={true} src="https://files.readme.io/e323172-text_only.png">
+  Text Only
+</Image>
 
 ### Image on Side
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ff0f6f1-image_on_side_1.png",
-        "",
-        "Image on Side"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Image on Side"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Image on Side" align="center" width="45% " border={true} src="https://files.readme.io/ff0f6f1-image_on_side_1.png">
+  Image on Side
+</Image>
 
 ### Image on Top
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ca1588-image_on_top.png",
-        "",
-        "Image on Top"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Image on Top"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Image on Top" align="center" width="45% " border={true} src="https://files.readme.io/5ca1588-image_on_top.png">
+  Image on Top
+</Image>
 
 # Web Native Display
 
@@ -1760,129 +606,39 @@ next:
 
 ### Custom key values
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2ece114-custom_key_value.jpg",
-        "",
-        "Custom key values"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Custom key values"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Custom key values" align="center" width="45% " border={true} src="https://files.readme.io/2ece114-custom_key_value.jpg">
+  Custom key values
+</Image>
 
 ### Banner
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/91d1a98-web_native_display_banner.jpg",
-        "",
-        "Banner"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Banner"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Banner" align="center" width="45% " border={true} src="https://files.readme.io/91d1a98-web_native_display_banner.jpg">
+  Banner
+</Image>
 
 ### Banner Carousel
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6d6c294-web_native_display_carousel.jpg",
-        "",
-        "Banner Carousel"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Banner Carousel"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Banner Carousel" align="center" width="45% " border={true} src="https://files.readme.io/6d6c294-web_native_display_carousel.jpg">
+  Banner Carousel
+</Image>
 
 ### Banner with Text
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ecc675e-web_native_display_banner_with_text.jpg",
-        "",
-        "Banner with Text"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Banner with Text"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Banner with Text" align="center" width="45% " border={true} src="https://files.readme.io/ecc675e-web_native_display_banner_with_text.jpg">
+  Banner with Text
+</Image>
 
 ### Banner Carousel with Text
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d8b0209-web_native_display_carousel_with_text.jpg",
-        "",
-        "Banner Carousel with Text"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Banner Carousel with Text"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Banner Carousel with Text" align="center" width="45% " border={true} src="https://files.readme.io/d8b0209-web_native_display_carousel_with_text.jpg">
+  Banner Carousel with Text
+</Image>
 
 ### In Page Customisation
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/063ce8f-point_and_click_template.jpg",
-        "",
-        "In Page Customisation"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "In Page Customisation"
-    }
-  ]
-}
-[/block]
-
+<Image alt="In Page Customisation" align="center" width="45% " border={true} src="https://files.readme.io/063ce8f-point_and_click_template.jpg">
+  In Page Customisation
+</Image>
 
 # Web Exit Intent Popup
 
@@ -1890,24 +646,9 @@ next:
 
 ### Interstitial
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/98a031d-interstitial.png",
-        "",
-        "Interstitial"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Interstitial"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Interstitial" align="center" width="45% " border={true} src="https://files.readme.io/98a031d-interstitial.png">
+  Interstitial
+</Image>
 
 # Web Inbox
 
@@ -1915,62 +656,18 @@ next:
 
 ### Text Only
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/37bd231-text_only.jpg",
-        "",
-        "Text Only"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Text Only"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Text Only" align="center" width="45% " border={true} src="https://files.readme.io/37bd231-text_only.jpg">
+  Text Only
+</Image>
 
 ### Text and Icon
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fb25d74-text_with_icon.jpg",
-        "",
-        "Text and Icon"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Text and Icon"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Text and Icon" align="center" width="45% " border={true} src="https://files.readme.io/fb25d74-text_with_icon.jpg">
+  Text and Icon
+</Image>
 
 ### Text, Icon and Image
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e4d6487-text_with_icon_and_image.jpg",
-        "",
-        "Text, Icon, and Image"
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true,
-      "caption": "Text, Icon, and Image"
-    }
-  ]
-}
-[/block]
+<Image alt="Text, Icon, and Image" align="center" width="45% " border={true} src="https://files.readme.io/e4d6487-text_with_icon_and_image.jpg">
+  Text, Icon, and Image
+</Image>
