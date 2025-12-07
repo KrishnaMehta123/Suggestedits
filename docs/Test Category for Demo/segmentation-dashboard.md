@@ -29,84 +29,25 @@ This section outlines how to create and manage segments from the dashboard.
 
 ### Heading 3
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6619e93f3f52941d421ed1e3c0a61fea9307e742fc2515c3dcc862f86ccf0a87-CT_Ask_copy2x.png",
-        "",
-        "Thank You Slide"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Thank You Slide"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Thank You Slide" align="center" width="50% " border={true} src="https://files.readme.io/6619e93f3f52941d421ed1e3c0a61fea9307e742fc2515c3dcc862f86ccf0a87-CT_Ask_copy2x.png">
+  Thank You Slide
+</Image>
 
 #### Head 4
 
 Adding callouts to Image
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b72317d786273dc9d052d3ad7dbf5309712c7323854602e938e8260de170555c-image.png",
-        null,
-        "Sample Image for Adding Callouts"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample Image for Adding Callouts"
-    }
-  ]
-}
-[/block]
+<Image alt="Sample Image for Adding Callouts" align="center" border={true} src="https://files.readme.io/b72317d786273dc9d052d3ad7dbf5309712c7323854602e938e8260de170555c-image.png">
+  Sample Image for Adding Callouts
+</Image>
 
+<Image alt="Confirmation Prompt" align="center" width="50% " border={true} src="https://files.readme.io/ff234f0d01a26223638fa98b0acc0e4e68ccd6f5e9966bfee769635f38f031e8-image.png">
+  Confirmation Prompt
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ff234f0d01a26223638fa98b0acc0e4e68ccd6f5e9966bfee769635f38f031e8-image.png",
-        null,
-        "Confirmation Prompt"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Confirmation Prompt"
-    }
-  ]
-}
-[/block]
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dc38e3c394d6b685a9c1cffc201bac99898cc4aad71c44ae2c32c9625160a364-image.png",
-        null,
-        "Confirmation Prompt - Without Reducing Pixels"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Confirmation Prompt - Without Reducing Pixels"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Confirmation Prompt - Without Reducing Pixels" align="center" width="50% " border={true} src="https://files.readme.io/dc38e3c394d6b685a9c1cffc201bac99898cc4aad71c44ae2c32c9625160a364-image.png">
+  Confirmation Prompt - Without Reducing Pixels
+</Image>
 
 # Send Emails from Your Gmail Account
 
