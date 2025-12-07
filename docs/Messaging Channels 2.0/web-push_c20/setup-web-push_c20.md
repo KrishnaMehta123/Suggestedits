@@ -29,81 +29,17 @@ From the CleverTap dashboard, navigate to *Settings > Channels > Web push*.
 You can toggle the Web push for every browser that is integrated correctly. All the details are displayed on this page. 
 
 1. [Chrome Browser](https://developer.clevertap.com/docs/web#section-chrome-web-push)
+
 2. [Firefox Browser](https://developer.clevertap.com/docs/web#section-firefox-web-push)
 
-
 3. [Safari Browser](https://developer.clevertap.com/docs/web#section-safari-web-push)
+
 4. [Kai OS](https://developer.clevertap.com/docs/kaios)
 
+<Image title="Chrome.png" alt={1064} className="border" width="80%" border={true} src="https://files.readme.io/6f4405e-Chrome.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6f4405e-Chrome.png",
-        "Chrome.png",
-        1064,
-        1014,
-        "#f9fafc"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
+<Image title="Firefox.png" alt={1066} className="border" width="80%" border={true} src="https://files.readme.io/7c50e6e-Firefox.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c50e6e-Firefox.png",
-        "Firefox.png",
-        1066,
-        610,
-        "#f9fafc"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
+<Image title="safari web push.png" alt={1080} className="border" width="80%" border={true} src="https://files.readme.io/9a8d528-safari_web_push.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9a8d528-safari_web_push.png",
-        "safari web push.png",
-        1080,
-        724,
-        "#f9fafc"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/de2b82a-kai_OS.png",
-        "kai OS.png",
-        1076,
-        740,
-        "#f8f9fb"
-      ],
-      "border": true,
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
+<Image title="kai OS.png" alt={1076} className="border" width="80%" border={true} src="https://files.readme.io/de2b82a-kai_OS.png" />
