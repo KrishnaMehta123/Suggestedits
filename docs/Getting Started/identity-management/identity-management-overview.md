@@ -18,47 +18,33 @@ A user profile in CleverTap provides a comprehensive overview of all user data, 
 
 User identities are important for the following reasons:
 
-- Mapping user activities and profile attributes to specific profiles.
-- Targeting intended users through Campaigns or Journeys, user-level personalization, and recommendations.
+* Mapping user activities and profile attributes to specific profiles.
+* Targeting intended users through Campaigns or Journeys, user-level personalization, and recommendations.
 
 # Types of Identifiers
 
 CleverTap captures the following types of identifiers to identify users:
 
-- CleverTap ID
-- Identity 
-- Email ID
-- Phone Number
+* CleverTap ID
+* Identity 
+* Email ID
+* Phone Number
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4c742cb-identity_management_sample_profile.jpg",
-        null,
-        "Sample Profile With Identifiers"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample User Profile with Identifiers"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Sample Profile With Identifiers" align="center" border={true} src="https://files.readme.io/4c742cb-identity_management_sample_profile.jpg">
+  Sample User Profile with Identifiers
+</Image>
 
 ## CleverTap ID
 
 CleverTap generates a device-level identifier called CleverTap ID (CT ID). You can have a common device identifier for the user across all systems without maintaining a mapping of the device ID. You can also create unique identifiers for end-user devices using a custom CleverTap ID. For more information about setting up a custom CleverTap ID, refer to [Set CleverTap ID](https://developer.clevertap.com/docs/set-clevertap-id#section-rules-for-setting-the-clever-tap-id).
 
 > 📘 GDPR-compliant ID
-> 
-> A GDPR-compliant ID is prefixed by **, For example, \_**g45sder2r\_. To know more about generating GDPR-compliant and non-GDPR complaint CTID, refer to [Create a User Profile](https://developer.clevertap.com/docs/sdk-changes-for-gdpr-compliance).
+>
+> A GDPR-compliant ID is prefixed by **, For example,\_** g45sder2r\_. To know more about generating GDPR-compliant and non-GDPR complaint CTID, refer to [Create a User Profile](https://developer.clevertap.com/docs/sdk-changes-for-gdpr-compliance).
 
 ## Identity
 
-Identity is an ID that you can define in your internal system (database) to uniquely identify users. CleverTap allows you to use any unique ID on your systems as an identifier on the CleverTap dashboard, such as `customerID`, `userID`, `registrationID`, `databaseID`, and so on. The selection of this unique ID in your database depends on the nature of the business. For example, a banking application can have its own unique ID for a user, such as _john1234_. 
+Identity is an ID that you can define in your internal system (database) to uniquely identify users. CleverTap allows you to use any unique ID on your systems as an identifier on the CleverTap dashboard, such as `customerID`, `userID`, `registrationID`, `databaseID`, and so on. The selection of this unique ID in your database depends on the nature of the business. For example, a banking application can have its own unique ID for a user, such as *john1234*. 
 
 ## Email ID
 
