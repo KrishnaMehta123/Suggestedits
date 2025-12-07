@@ -20,8 +20,8 @@ It also tracks delivery failures through callbacks, allowing you to monitor issu
 
 To integrate the ESP with CleverTap, follow these steps:
 
-1. Go to _Settings_ > _Email_ from the dashboard and click **+ Provider**.
-2. Select _Generic HTTP_ from the _Provider_ dropdown.
+1. Go to *Settings* > *Email* from the dashboard and click **+ Provider**.
+2. Select *Generic HTTP* from the *Provider* dropdown.
 3. Enter the following details:
 
 | Field                    | Description                                                                                                                                                                                                                                                         |
@@ -30,11 +30,11 @@ To integrate the ESP with CleverTap, follow these steps:
 | Callback URL             | The URL where callbacks for tracking events like delivered and delivery related failure will be sent. It is non-editable, and the option to copy the callback URL is available.                                                                                     |
 | Request Type             | Dropdown to choose the type of HTTP request (GET and POST).                                                                                                                                                                                                         |
 | HTTP endpoint            | The URL endpoint of your HTTP endpoint.                                                                                                                                                                                                                             |
-| Authentication           | Type dropdown: Option to choose between _No Authentication_ or _Basic Authentication_. In case of _Basic Authentication_, enter the Username and Password values that must be your HTTP credentials needed to connect to the service.                               |
+| Authentication           | Type dropdown: Option to choose between *No Authentication* or *Basic Authentication*. In case of *Basic Authentication*, enter the Username and Password values that must be your HTTP credentials needed to connect to the service.                               |
 | Default From Name        | The sender’s name will appear in the recipient's inbox, helping them identify the sender of the email.                                                                                                                                                              |
 | Default From Address     | Enter the sender’s email address.                                                                                                                                                                                                                                   |
 | Default Reply to Address | The email address where replies from recipients are sent to.                                                                                                                                                                                                        |
-| Email Preference Center  | A landing page where users can [manage their email preferences](doc:manage-email-preferences), including opting out or subscribing to specific types of emails. You can select from the following options: _None_, _CleverTap Preference Center_, and _Custom URL_. |
+| Email Preference Center  | A landing page where users can [manage their email preferences](doc:manage-email-preferences), including opting out or subscribing to specific types of emails. You can select from the following options: *None*, *CleverTap Preference Center*, and *Custom URL*. |
 
 4. Click **Save** to save your settings.
 5. Click **Send a test email**. You will receive an email in your inbox after the setup is complete. If you do not receive the email, refer to [Troubleshooting](doc:generic-smtp-new#troubleshooting).
@@ -47,21 +47,21 @@ This section provides detailed guidance on setting up the **Generic HTTP Integra
 
 Authentication is required to verify the identity of the sender before making HTTP requests to the provider.
 
-- **No Authentication**: This option does not require any authentication credentials.
+* **No Authentication**: This option does not require any authentication credentials.
 
-- **Basic Authentication**: Basic Authentication requires a **Username** and **Password** to authenticate the HTTP request.
-  - **Username**: A field to enter the username for authentication.
-  - **Password**: A field to enter the password for authentication.
+* **Basic Authentication**: Basic Authentication requires a **Username** and **Password** to authenticate the HTTP request.
+  * **Username**: A field to enter the username for authentication.
+  * **Password**: A field to enter the password for authentication.
 
 ### 2. Headers
 
 Headers are essential for customizing HTTP requests by adding extra metadata to the request. They help manage authentication, content type, and other key information that the provider needs to process the request.
 
-- **Custom Key-Value Pairs**: You can add custom headers as key-value pairs. This might include authentication tokens (e.g., **API keys**) or other essential data for the provider. Common headers include `Authorization` for API tokens, or `Content-Type` for specifying the body format (like JSON or XML). These headers are sent as part of the payload in the HTTP request.
-  - **Enter parameter name**: Define the key (e.g., `Authorization`).
-  - **Enter parameter value**: Define the value (e.g., `Bearer <your-api-key>`).
+* **Custom Key-Value Pairs**: You can add custom headers as key-value pairs. This might include authentication tokens (e.g., **API keys**) or other essential data for the provider. Common headers include `Authorization` for API tokens, or `Content-Type` for specifying the body format (like JSON or XML). These headers are sent as part of the payload in the HTTP request.
+  * **Enter parameter name**: Define the key (e.g., `Authorization`).
+  * **Enter parameter value**: Define the value (e.g., `Bearer <your-api-key>`).
 
-- **Dynamic Headers**: Dynamic headers are customizable placeholders that can be replaced with specific values during campaign setup. For example, **$$hid** is a custom placeholder that cannot be personalized at the user level, but its value can be set uniquely for each campaign.
+* **Dynamic Headers**: Dynamic headers are customizable placeholders that can be replaced with specific values during campaign setup. For example, **$$hid** is a custom placeholder that cannot be personalized at the user level, but its value can be set uniquely for each campaign.
 
    In this configuration, a single message record will be set up under the key `msgs`, and all the message body key-value pairs are used with user-level personalization. However, **$$hid** serves as a static placeholder that is replaced with a campaign-specific value during setup, ensuring consistency across all users in that campaign.
 
@@ -120,8 +120,8 @@ This setup provides a flexible yet scalable way to personalize email content acr
 
 The **Batch Parameter** checkbox allows you to send multiple instances of the same parameter in a single API call. This is useful for bulk operations (e.g., sending the same email to multiple recipients). The minimum number of records that can be batched is **2**, and the maximum number of records that can be batched in a single API call is **1000**.
 
-- **Enter parameter name**: Define the key (e.g., `"to"`).
-- **Enter number of instances**: Define how many instances of this parameter you want to include (e.g., send to multiple recipients).
+* **Enter parameter name**: Define the key (e.g., `"to"`).
+* **Enter number of instances**: Define how many instances of this parameter you want to include (e.g., send to multiple recipients).
 
 #### **Example of Batching**:
 
@@ -139,8 +139,8 @@ This allows you to send the same email to multiple recipients in one API call.
 
 Generic HTTP Callbacks provide insights into email delivery success, failures, and user interactions such as unsubscribes and spam reports. These callbacks are essential for optimizing email campaigns and improving user engagement. The following events are captured through HTTP callbacks:
 
-- **Notification Failed Event**: This event captures delivery issues like hard and soft bounces, as well as spam reports and unsubscribes. The `type` parameter specifies the cause of the failure.
-- **Profile Unsubscribes**: If a user unsubscribes, marks an email as spam, or experiences a hard bounce (but not a soft bounce), their profile is automatically unsubscribed from future communications. This triggers the **Channel Unsubscribed** event in CleverTap.
+* **Notification Failed Event**: This event captures delivery issues like hard and soft bounces, as well as spam reports and unsubscribes. The `type` parameter specifies the cause of the failure.
+* **Profile Unsubscribes**: If a user unsubscribes, marks an email as spam, or experiences a hard bounce (but not a soft bounce), their profile is automatically unsubscribed from future communications. This triggers the **Channel Unsubscribed** event in CleverTap.
 
 ### Sending Callback Events
 
@@ -185,9 +185,9 @@ To send callback events to CleverTap, customers must send a **POST** request to 
 
 ### Event Mappings
 
-- **Notification Failed**: Triggered when `type` is `hard_bounce` or `soft_bounce`. Appears under campaign error stats.
-- **Channel Unsubscribed**: Triggered when `type` is `unsubscribed`, `spam`, or `hard_bounce`.
-- **Clicked**: Tracked when `type` is `clicked` and reflected in campaign and provider stats.
+* **Notification Failed**: Triggered when `type` is `hard_bounce` or `soft_bounce`. Appears under campaign error stats.
+* **Channel Unsubscribed**: Triggered when `type` is `unsubscribed`, `spam`, or `hard_bounce`.
+* **Clicked**: Tracked when `type` is `clicked` and reflected in campaign and provider stats.
 
 ### Response Codes
 
@@ -210,16 +210,16 @@ To send callback events to CleverTap, customers must send a **POST** request to 
 
 ### Handling Bounces and Unsubscribes
 
-- **Soft Bounces**: Indicate temporary issues. Do not trigger unsubscription.
-- **Hard Bounces**: Indicate permanent failure. Trigger automatic unsubscription.
-- **Unsubscribes/Spam**: Automatically unsubscribe the user from future communication.
+* **Soft Bounces**: Indicate temporary issues. Do not trigger unsubscription.
+* **Hard Bounces**: Indicate permanent failure. Trigger automatic unsubscription.
+* **Unsubscribes/Spam**: Automatically unsubscribe the user from future communication.
 
 # Troubleshooting
 
-- Ensure SPF and DKIM records are correctly configured.
-- Some email providers (e.g., Gmail, Yahoo) may block test emails sent via your own SMTP gateway.
-- Verify that your IP/domain is not blacklisted by spam services (e.g., Spamhaus).
+* Ensure SPF and DKIM records are correctly configured.
+* Some email providers (e.g., Gmail, Yahoo) may block test emails sent via your own SMTP gateway.
+* Verify that your IP/domain is not blacklisted by spam services (e.g., Spamhaus).
 
 > 📘 Note
-> 
+>
 > The Unsubscribe link does not function in test emails sent during campaign setup.
