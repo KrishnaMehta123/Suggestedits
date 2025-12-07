@@ -21,8 +21,8 @@ Below are the essential events that should be tracked on your Bookings platform 
 | Searched               |                   | Identify the top keywords and categories searched.                                           |           |
 |                        | Keyword           | Search keyword entered by the user.                                                          |           |
 |                        | Category          | Category of the user search.                                                                 |           |
-|                        | From Date         | The _From_ date of booking.                                                                  |           |
-|                        | To Date           | The _To_ date of the booking.                                                                |           |
+|                        | From Date         | The *From* date of booking.                                                                  |           |
+|                        | To Date           | The *To* date of the booking.                                                                |           |
 | Charged                |                   | Captured when a user transacts the booking.                                                  |           |
 |                        | Listing Name      |                                                                                              |           |
 |                        | Listing Category  |                                                                                              |           |
