@@ -34,10 +34,6 @@ initSignedCall(
 ).then(client => SignedCallClient = client).catch(err => console.log(err))
 ```
 
-
-
-
-
 ```javascript
 // Register callback functions for custom UI
 cb: {
@@ -52,8 +48,6 @@ cb: {
 }
 ```
 
-
-
 CleverTap offers the following list of callback functions to manage the call in case of custom UI implementation:
 
 | Callback functions | Description                                                                                                                                     | Returns                                                |
@@ -64,8 +58,6 @@ CleverTap offers the following list of callback functions to manage the call in 
 | answered(data)     | This function is triggered when a call is successfully answered using signedCallClient.answer().                                                | True / False (boolean).                                |
 | cancelled():       | This function is triggered to inform the receiver of the incoming call that the initiator has canceled it.                                      | Void.                                                  |
 | hangup():          | This function is triggered when the call is terminated via signedCallClient.hangup(). It can be called by either the initiator or the receiver. | Void.                                                  |
-
-
 
 ## Callback Properties
 
