@@ -10,13 +10,11 @@ metadata:
 next:
   description: ''
 ---
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
-#User Journey
-- Onboarding 
-- User acquisition
+## Overview
 
-#CleverTap Features that nudge users along the journey
+# User Journey
+
+* Onboarding 
+* User acquisition
+
+# CleverTap Features that nudge users along the journey
