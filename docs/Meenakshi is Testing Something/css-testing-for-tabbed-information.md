@@ -10,8 +10,138 @@ metadata:
 next:
   description: ''
 ---
-[block:html]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Only Horizontal Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .tab-container {
+            max-width: 800px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .tab-labels {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab-label {
+            flex: 1;
+            padding: 15px;
+            cursor: pointer;
+            background: #f0f0f0;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            transition: background 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        input[type="radio"]:checked + .tab-label {
+            background: #e0e0e0;
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+        }
+
+        .tab-content-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            font-size: 14px;
+            color: #333;
+            animation: fadeIn 0.3s ease;
+        }
+
+        input[type="radio"]:checked + .tab-label + .tab-content-wrapper .tab-content {
+            display: block;
+        }
+
+        pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow: auto;
+            font-family: 'Courier New', monospace;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tab-container">
+        <!-- Tab 1 -->
+        <input type="radio" id="tab1" name="tab-group" checked>
+        <label class="tab-label" for="tab1">Webhook Details</label>
+        
+        <input type="radio" id="tab2" name="tab-group">
+        <label class="tab-label" for="tab2">Transformation Code</label>
+
+        <!-- Content wrapper -->
+        <div class="tab-content-wrapper">
+            <div class="tab-content" id="content1">
+                <h3>Webhook Details</h3>
+                <pre>
 {
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>CSS-Only Horizontal Tabs</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #f9f9f9;\n            padding: 20px;\n        }\n\n        .tab-container {\n            max-width: 800px;\n            background: #fff;\n            border-radius: 10px;\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n            overflow: hidden;\n        }\n\n        input[type=\"radio\"] {\n            display: none;\n        }\n\n        .tab-labels {\n            display: flex;\n            border-bottom: 2px solid #ddd;\n        }\n\n        .tab-label {\n            flex: 1;\n            padding: 15px;\n            cursor: pointer;\n            background: #f0f0f0;\n            text-align: center;\n            font-weight: bold;\n            color: #333;\n            transition: background 0.3s ease;\n            border-bottom: 3px solid transparent;\n        }\n\n        input[type=\"radio\"]:checked + .tab-label {\n            background: #e0e0e0;\n            color: #007bff;\n            border-bottom: 3px solid #007bff;\n        }\n\n        .tab-content-wrapper {\n            position: relative;\n            width: 100%;\n        }\n\n        .tab-content {\n            display: none;\n            padding: 20px;\n            font-size: 14px;\n            color: #333;\n            animation: fadeIn 0.3s ease;\n        }\n\n        input[type=\"radio\"]:checked + .tab-label + .tab-content-wrapper .tab-content {\n            display: block;\n        }\n\n        pre {\n            background: #f5f5f5;\n            padding: 15px;\n            border-radius: 5px;\n            overflow: auto;\n            font-family: 'Courier New', monospace;\n        }\n\n        @keyframes fadeIn {\n            from {\n                opacity: 0;\n            }\n            to {\n                opacity: 1;\n            }\n        }\n    </style>\n</head>\n<body>\n\n    <div class=\"tab-container\">\n        <!-- Tab 1 -->\n        <input type=\"radio\" id=\"tab1\" name=\"tab-group\" checked>\n        <label class=\"tab-label\" for=\"tab1\">Webhook Details</label>\n        \n        <input type=\"radio\" id=\"tab2\" name=\"tab-group\">\n        <label class=\"tab-label\" for=\"tab2\">Transformation Code</label>\n\n        <!-- Content wrapper -->\n        <div class=\"tab-content-wrapper\">\n            <div class=\"tab-content\" id=\"content1\">\n                <h3>Webhook Details</h3>\n                <pre>\n{\n    \"headers\": {},\n    \"payload\": {\n        \"event_id\": \"01HC3M3NF4TR1DR47RHYSWTRP5\",\n        \"event_type\": \"form_response\",\n        \"form_response\": {\n            \"form_id\": \"uaIA4a7Y\",\n            \"title\": \"Project Feedback Survey\"\n        }\n    }\n}\n                </pre>\n            </div>\n\n            <div class=\"tab-content\" id=\"content2\">\n                <h3>Transformation Code</h3>\n                <pre>\n// Example transformation code\nlet brazecall = {\n    attributes: [\n        {\n            external_id: payload.user_id,\n            _update_existing_only: true,\n            attribute_1: payload.attribute_1\n        }\n    ],\n    events: []\n};\n                </pre>\n            </div>\n        </div>\n    </div>\n\n</body>\n</html>"
+    "headers": {},
+    "payload": {
+        "event_id": "01HC3M3NF4TR1DR47RHYSWTRP5",
+        "event_type": "form_response",
+        "form_response": {
+            "form_id": "uaIA4a7Y",
+            "title": "Project Feedback Survey"
+        }
+    }
 }
-[/block]
+                </pre>
+            </div>
+
+            <div class="tab-content" id="content2">
+                <h3>Transformation Code</h3>
+                <pre>
+// Example transformation code
+let brazecall = {
+    attributes: [
+        {
+            external_id: payload.user_id,
+            _update_existing_only: true,
+            attribute_1: payload.attribute_1
+        }
+    ],
+    events: []
+};
+                </pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+`}</HTMLBlock>
