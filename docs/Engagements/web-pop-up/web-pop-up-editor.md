@@ -3,12 +3,12 @@ title: Web Pop-up Editor
 excerpt: The Web Pop-up Editor allows you to edit and design your messages.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -18,7 +18,9 @@ From the *What* section in the Web Pop-up builder, Select Message Type and click
 
 The Web Pop-up Editor tool displays.
 
-<Image title="Email Editor Templates" alt={1424} align="center" border={true} src="https://files.readme.io/2199a47-Web_popup_Editors.jpg" /> Select Web Pop-up Editor Type
+<Image title="Email Editor Templates" alt={1424} align="center" border={true} src="https://files.readme.io/2199a47-Web_popup_Editors.jpg" />
+
+Select Web Pop-up Editor Type
 
 # Editors and Templates
 
@@ -61,32 +63,19 @@ Marketers can now create the following two types of rating templates for gatheri
 
 The following images represent a sample user rating popup and an NPS popup.
 
-<Image alt="User Star Rating Popup" align="center" width="50%" src="https://files.readme.io/4062d44-Web_Popup_NPS_rating_Star.jpg" /> User Ratings Popup
-<Image alt="NPS Popup" align="center" width="50%" src="https://files.readme.io/ce8fb86-Web_Popup_NPS_rating_Numbered.jpg" />  NPS Ratings Popup
+<Image alt="User Star Rating Popup" align="center" width="50%" src="https://files.readme.io/4062d44-Web_Popup_NPS_rating_Star.jpg" />
 
+User Ratings Popup
 
+<Image alt="NPS Popup" align="center" width="50%" src="https://files.readme.io/ce8fb86-Web_Popup_NPS_rating_Numbered.jpg" />
 
-
-
-
-
-
-
-
+NPS Ratings Popup
 
 Marketers get the complete flexibility to explicitly define the rating scale, style, its shape (Star, Heart, Emojis), labels, and the overall content of the popup. One can also add a comment box to get accurate user feedback/comments. 
 
-<Image title="Edit Style" alt={1710} align="center" width="70%" border={true} src="https://files.readme.io/7bbc6cc-styling.png" />  Define Element Style
+<Image title="Edit Style" alt={1710} align="center" width="70%" border={true} src="https://files.readme.io/7bbc6cc-styling.png" />
 
-
-
-
-
-
-
-
-
-
+Define Element Style
 
 Besides, additional styling, such as the background color of the notification, text color, button color, and the color of the rating scale, is also possible from the editor, as shown in the image above. To learn more about tracking and monitoring user rating data, refer to the [Analyzing User Rating](https://docs.clevertap.com/docs/user-ratings).
 
@@ -94,17 +83,9 @@ The web popup notification text fields in the following image can be personalize
 
 Add all the required information. You can also flip the scale for languages that read from left to right. For example, Hebrew, Arabic, and so on.
 
-<Image alt="Personalize Web Popup" align="center" width="70%" border={true} src="https://files.readme.io/5241786-web_inbox_NPS_Template.png" />  Personalize Web Popup
+<Image alt="Personalize Web Popup" align="center" width="70%" border={true} src="https://files.readme.io/5241786-web_inbox_NPS_Template.png" />
 
-
-
-
-
-
-
-
-
-
+Personalize Web Popup
 
 #### Follow-up Question Templates
 
@@ -115,46 +96,23 @@ A follow-up question to your ratings can provide more insights about the user ex
 
 For example, after a user has submitted a rating on your app, you can ask follow-up questions such as *What did you like most about us?* and provide reply choices such as Variety, Prices, Quality, Customer Service, Delivery Process, and Website Usability. This can help you get more specific feedback to improve your product and services. 
 
-<Image alt="Short Keyword Choices" align="center" width="50%" src="https://files.readme.io/71b74e6-web_popup_Secondary_Tiles.jpg" />  Short Keyword-Based Choices
+<Image alt="Short Keyword Choices" align="center" width="50%" src="https://files.readme.io/71b74e6-web_popup_Secondary_Tiles.jpg" />
 
-
-
-
-
-
-
-
-
-
+Short Keyword-Based Choices
 
 You can also list descriptive choices such as, *I like the available options and variety*, *I like the quality and durability of the products*, and so on.
-<Image alt="Long Sentence Choices" align="center" width="50%" src="https://files.readme.io/a95c15a-web_popup_Secondary_List.jpg" /> Descriptive Choices
 
+<Image alt="Long Sentence Choices" align="center" width="50%" src="https://files.readme.io/a95c15a-web_popup_Secondary_List.jpg" />
 
-
-
-
-
-
-
-
-
+Descriptive Choices
 
 You can configure the follow-up question from the Web Popup editor with a short keyword-based grid (up to six choices) or a longer sentence-based list (up to four choices).
 
 The label will be the text you want to display to your users. If you want to allow the user to select multiple choices, select *Allow multiple selections*.
 
-<Image alt="Configure Follow-up Popup" align="center" width="80%" border={true} src="https://files.readme.io/fd33f9a-image_18.png" /> Configure Follow-up Popup
+<Image alt="Configure Follow-up Popup" align="center" width="80%" border={true} src="https://files.readme.io/fd33f9a-image_18.png" />
 
-
-
-
-
-
-
-
-
-
+Configure Follow-up Popup
 
 > 📘 Note
 >
@@ -166,17 +124,9 @@ We know that a significant number of website visitors remain anonymous. This pos
 
 By integrating a lead generation form on your website, you can get important customer details such as name, email address, phone number, and so on. This information is helpful for further communication through channels such as SMS, Email, WhatsApp, and others. This post-visit communication not only helps to stay connected with your audience but also opens doors for future business opportunities. You can turn anonymous visitors into loyal customers with the CleverTap Lead Generation template.
 
-<Image title="Lead Gen Template Sample.png" alt={1368} align="center" border={true} src="https://files.readme.io/888a43a-Lead_Gen_Template_Sample.png" /> Sample Lead Generation Template
+<Image title="Lead Gen Template Sample.png" alt={1368} align="center" border={true} src="https://files.readme.io/888a43a-Lead_Gen_Template_Sample.png" />
 
-
-
-
-
-
-
-
-
-
+Sample Lead Generation Template
 
 ### Post Submit Actions
 
@@ -186,19 +136,12 @@ When a user submits information on your Lead Generation template:
 
 * A custom event named *Lead Submitted* records the details submitted by the user as event properties. Following is a sample form image: 
 
-<Image alt="Form Submit Actions" align="center" width="50%" border={true} src="https://files.readme.io/0cae15f-Lead_Gen_Template_preview_with_fields.png" /> Form Submit Actions
+<Image alt="Form Submit Actions" align="center" width="50%" border={true} src="https://files.readme.io/0cae15f-Lead_Gen_Template_preview_with_fields.png" />
 
-
-
-
-
-
-
-
-
-
+Form Submit Actions
 
 Following is a table that records the relevant event properties for the fields displayed on the form:
+
 | Submitted Event Properties | Sample Property Value               |
 | :------------------------- | :---------------------------------- |
 | First Name                 | John                                |
@@ -218,17 +161,9 @@ The Lead Generation template has the following three variants:
 * Image On Side
 * Image On Top
 
-<Image alt="Lead Generation Template Types" align="center" border={true} src="https://files.readme.io/dd75b54-Lead_Gen_Template_Tab.png" />  Lead Generation Template Types
+<Image alt="Lead Generation Template Types" align="center" border={true} src="https://files.readme.io/dd75b54-Lead_Gen_Template_Tab.png" />
 
-
-
-
-
-
-
-
-
-
+Lead Generation Template Types
 
 Select any of the variants to create your Lead Generation template. 
 
@@ -236,17 +171,9 @@ Select any of the variants to create your Lead Generation template.
 
 Create the content to record information from your users. The following image displays a preview of the form:
 
-<Image title="Lead Gen Template Editor Content.png" alt={2364} align="center" border={true} src="https://files.readme.io/2daa708-Lead_Gen_Template_Editor_Content.png" />  Create Lead Generation Template in Editor
+<Image title="Lead Gen Template Editor Content.png" alt={2364} align="center" border={true} src="https://files.readme.io/2daa708-Lead_Gen_Template_Editor_Content.png" />
 
-
-
-
-
-
-
-
-
-
+Create Lead Generation Template in Editor
 
 Enter all the required information. 
 
@@ -254,45 +181,22 @@ Enter all the required information.
 * *Media*: Add the image URL or upload an image. 
 * *Input Fields*: You can add up to four input fields. Select input fields such as Name, Phone Number, Birthday, or Email Address for the template. 
 
-<Image title="Lead Gen Template Input Fields.png" alt={1304} align="center" width="60% " border={true} src="https://files.readme.io/6a87857-Lead_Gen_Template_Input_Fields.png" />  Upto Four Input Fields 
+<Image title="Lead Gen Template Input Fields.png" alt={1304} align="center" width="60% " border={true} src="https://files.readme.io/6a87857-Lead_Gen_Template_Input_Fields.png" />
 
-
-
-
-
-
-
-
-
-
+Upto Four Input Fields 
 
 * *Buttons*: The *Close* button is selected by default. Add a button name such as *Submit* or *Upload*. 
 * *Subtext*: Add subtext such as *privacy policy* to your lead generation template.
-<Image title="Lead Gen Template SubText preview.png" alt="Add Subtext" align="center" width="55%" border={true} src="https://files.readme.io/bb6e1f2-Lead_Gen_Template_SubText_preview.png" />  Add Subtext
 
+<Image title="Lead Gen Template SubText preview.png" alt="Add Subtext" align="center" width="55%" border={true} src="https://files.readme.io/bb6e1f2-Lead_Gen_Template_SubText_preview.png" />
 
-
-
-
-
-
-
-
-
+Add Subtext
 
 The hyperlinked part must be closed between two asterisks. Add the URL in the following URL box. This is the URL where the user will be directed. You can also add a checkbox for your subtext. 
 
-<Image title="Lead Gen Template SubText.png" alt="Subtext and redirect URL" align="center" width="55%" border={true} src="https://files.readme.io/d740b86-Lead_Gen_Template_SubText.png" />  Subtext and redirect URL
+<Image title="Lead Gen Template SubText.png" alt="Subtext and redirect URL" align="center" width="55%" border={true} src="https://files.readme.io/d740b86-Lead_Gen_Template_SubText.png" />
 
-
-
-
-
-
-
-
-
-
+Subtext and redirect URL
 
 * *Acknowledgement*: You can show appreciation to your user by adding an Acknowledgement popup. Select the auto-close timer for the popup. 
 
@@ -304,17 +208,9 @@ You can select the layout and card position from this screen. You can also selec
 >
 > The Mobile view can display images only at the *Top*, *Bottom* or in the *Center*.
 
-<Image title="Lead Gen Template Editor Style.png" alt={2378} align="center" border={true} src="https://files.readme.io/ae9c7d6-Lead_Gen_Template_Editor_Style.png" />  Style Elements for Lead Generation
+<Image title="Lead Gen Template Editor Style.png" alt={2378} align="center" border={true} src="https://files.readme.io/ae9c7d6-Lead_Gen_Template_Editor_Style.png" />
 
-
-
-
-
-
-
-
-
-
+Style Elements for Lead Generation
 
 # Custom HTML Editor
 
@@ -326,17 +222,9 @@ A Custom HTML Editor is used to create templates with custom HTML scripts. Users
 
 To track the campaign stats, such as the number of total clicks and CTRs, marketers must select the *Enable click tracking for Custom HTML* checkbox.
 
-<Image title="Disable if Clicks Recorded Manually " alt={1510} align="center" border={true} src="https://files.readme.io/76d8b12-custom_html_click_tracking_web_popup.png" />  Track Campaign Stats
+<Image title="Disable if Clicks Recorded Manually " alt={1510} align="center" border={true} src="https://files.readme.io/76d8b12-custom_html_click_tracking_web_popup.png" />
 
-
-
-
-
-
-
-
-
-
+Track Campaign Stats
 
 # Drag and Drop Editor
 
@@ -377,11 +265,15 @@ Learn how to use a *Drag and Drop* template. There are many edits you can make t
 1. From the *What* section in the Web Pop-up editor, select *Drag & Drop Editor Templates*.
 2. Click **Blank Template** to create a new template or use a template saved earlier.
 
-<Image alt="Select Drag and drop template" align="center" border={true} src="https://files.readme.io/f039372-blank_template.jpg"> Create Template
+<Image alt="Select Drag and drop template" align="center" border={true} src="https://files.readme.io/f039372-blank_template.jpg" />
+
+Create Template
 
 The Drag and Drop editor displays.
 
-<Image alt="Drag and Drop Editor" align="center" border={true} src="https://files.readme.io/ea030b3-Drag_and_drop_editor_empty.jpg"> Drag and Drop Editor
+<Image alt="Drag and Drop Editor" align="center" border={true} src="https://files.readme.io/ea030b3-Drag_and_drop_editor_empty.jpg" />
+
+Drag and Drop Editor
 
 Add elements from this editor to create a compelling message.
 
@@ -400,7 +292,9 @@ You can add text boxes and format the text within this element.
 
 1. Under the *Content* tab, drag and drop the *Text* element.
 
-<Image title="Add a Text Box to Email Content" alt={1324} align="center" border={true} src="https://files.readme.io/1206203-text_block.jpg"> Add a Text element
+<Image title="Add a Text Box to Email Content" alt={1324} align="center" border={true} src="https://files.readme.io/1206203-text_block.jpg" />
+
+Add a Text element
 
 2. Drag the Text icon to the desired location.
 
@@ -409,19 +303,12 @@ Now, you have a new text element.
 Similarly, you can also drag other elements, such as Images, Buttons, or Videos, into your template.
 
 ### Delete an Element
+
 1. Click the box of the element you want to delete.
 
-<Image title="Delete a Saved Row" alt="Delete an element" align="center" border={true} src="https://files.readme.io/5a6fc2b-row_delete.jpg" /> Delete an element
+<Image title="Delete a Saved Row" alt="Delete an element" align="center" border={true} src="https://files.readme.io/5a6fc2b-row_delete.jpg" />
 
-
-
-
-
-
-
-
-
-
+Delete an element
 
 2. Click the trashcan <img src="https://files.readme.io/dd90a6a-delete_template_icon.jpg" height="30px" width="30px" /> icon.
 
@@ -444,33 +331,17 @@ Delete saved rows from the editor.
 2. Click the ROWS tab in the editor.
 3. Select the saved row and click the delete icon.
 
-<Image title="Delete a Saved Row" alt="Delete a row" align="center" border={true} src="https://files.readme.io/5d44ea3-row_delete.jpg" /> Delete a Saved Row
+<Image title="Delete a Saved Row" alt="Delete a row" align="center" border={true} src="https://files.readme.io/5d44ea3-row_delete.jpg" />
 
-
-
-
-
-
-
-
-
-
+Delete a Saved Row
 
 ## Mobile View
 
 You can switch between the mobile and desktop views of your message to view and edit content. You can check how the content will display on a mobile phone without going to Previews or sending a test message. Any changes made to the mobile view will be reflected on the desktop view as well. It is a What You See is What You Get (WYSIWYG) editor.
 
-<Image title="View Email Content in Mobile" alt="Desktop View and Mobile View" align="center" border={true} src="https://files.readme.io/46015a0-mobile_and_desktop_view.gif" /> View Responsiveness on Desktop and Mobile
+<Image title="View Email Content in Mobile" alt="Desktop View and Mobile View" align="center" border={true} src="https://files.readme.io/46015a0-mobile_and_desktop_view.gif" />
 
-
-
-
-
-
-
-
-
-
+View Responsiveness on Desktop and Mobile
 
 ## Template Operations
 
@@ -480,28 +351,23 @@ You can customize a template further to update the Web Pop-up display.
 
 Click the **Advanced customization** button from the template editor to update the display. You can change the following settings:
 
-<Image alt="Advanced customizationf or popups" align="center" width="50%" border={true} src="https://files.readme.io/726f50a-image.png" /> Advanced customization of web pop-up
+<Image alt="Advanced customizationf or popups" align="center" width="50%" border={true} src="https://files.readme.io/726f50a-image.png" />
+
+Advanced customization of web pop-up
+
 * *Layout*:  Select the appropriate option to display the popup in the center of the page, bottom-right, top-left, and so on.
 * *Popup Size*: A popup size must be relevant to the page. Select the appropriate width for your popup on mobile and desktop. The height is adjusted automatically. 
 * *Card Style*: Select if the popup should have rounded corners, borders, and also select the background color. 
 * *Close icon*: Select the icon's color to close the popup. For example, a black icon is distinctly visible on a white popup. 
-* *Overlay style*: An overlay keeps you focused on the popup content without distracting user from the rest of the website content. Generally, the overlay is used for centered or interstitial layouts by increasing the opacity of the background. A higher opacity will make the popup more visible, while a lower opacity can provide a subtle hint at the content without overpowering the user's attention. Opacity can vary depending on the design and purpose of the popup. It's essential to test different opacities to find the best balance for your design and audience. Select if you want to add an overlay and then its opacity. 
+* *Overlay style*: An overlay keeps you focused on the popup content without distracting user from the rest of the website content. Generally, the overlay is used for centered or interstitial layouts by increasing the opacity of the background. A higher opacity will make the popup more visible, while a lower opacity can provide a subtle hint at the content without overpowering the user's attention. Opacity can vary depending on the design and purpose of the popup. It's essential to test different opacities to find the best balance for your design and audience. Select if you want to add an overlay and then its opacity. 
 
 ### Save A Template
 
 This step is optional. You can choose to save a template for future use. Click **Save template**.
 
-<Image title="Save a Template for Future Use" alt="Save a Template" align="center" border={true} src="https://files.readme.io/37acd05-save_template.jpg" />  Save a Template
+<Image title="Save a Template for Future Use" alt="Save a Template" align="center" border={true} src="https://files.readme.io/37acd05-save_template.jpg" />
 
-
-
-
-
-
-
-
-
-
+Save a Template
 
 2. Name your template and click Save.
 
@@ -511,31 +377,24 @@ Your template is now saved under **Saved Templates**  tab.
 
 The *On Click Actions* feature allows customers to trigger specific actions (such as opening a link, running a function, and so on) when a user clicks a web popup or the button within the popup. This functionality is essential for creating interactive and dynamic web experiences, giving customers greater control over how elements behave in response to user interactions.
 
-<Image alt="On click Actions" align="center" border={true} src="https://files.readme.io/216a99152920048201bdc4be042a8fe76be5a02fb207d5306b6ff599a1d39b38-On_Click_Action.png" />  On click Actions
+<Image alt="On click Actions" align="center" border={true} src="https://files.readme.io/216a99152920048201bdc4be042a8fe76be5a02fb207d5306b6ff599a1d39b38-On_Click_Action.png" />
 
-
-
-
-
-
-
-
-
-
+On click Actions
 
 Available Actions:
-* **Open Link**\
-  *Description*: Opens a specified link in the new browser tab.\
+
+* **Open Link**  
+  *Description*: Opens a specified link in the new browser tab.  
   *Use Case*: Ideal for campaigns that use navigation buttons, external links, or any element that redirects users to a different webpage.
-* **Open Link and Close Popup**\
-  *Description*: Opens a specified link and closes any open popups.\
+* **Open Link and Close Popup**  
+  *Description*: Opens a specified link and closes any open popups.  
   *Use Case*: Ideal for campaigns that use buttons within popups that redirect users while also cleaning up the user interface by closing the popup.
-* **Send Prompt to Allow Notifications**\
-  *Description*: Sends a browser prompt requesting the user to allow notifications from the website.\
+* **Send Prompt to Allow Notifications**  
+  *Description*: Sends a browser prompt requesting the user to allow notifications from the website.  
   *Use Case*: Ideal for web applications that rely on browser notifications for real-time updates, alerts, or promotional messages.
-* **Close Notification**\
-  *Description*: Closes the current notification popup.\
+* **Close Notification**  
+  *Description*: Closes the current notification popup.  
   *Use Case*: Ideal for campaigns allowing users to dismiss notifications or popups without taking any further action, ensuring a clean user interface.
-* **Run a JavaScript Function**\
-  *Description*: Executes a specified JavaScript function when the element is clicked.\
+* **Run a JavaScript Function**  
+  *Description*: Executes a specified JavaScript function when the element is clicked.  
   *Use Case*: Ideal for campaigns that require running custom scripts for advanced actions, such as form validation, data submission, or trigger animations.
