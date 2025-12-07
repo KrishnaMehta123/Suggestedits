@@ -21,20 +21,20 @@ You see an estimated user count alongside a breakdown by platform and device. Th
 
 Estimate Reach helps you to do the following:
 
-- Validate your targeting logic
-- Anticipate campaign scale
-- Avoid under- or over-targeting
+* Validate your targeting logic
+* Anticipate campaign scale
+* Avoid under- or over-targeting
 
 Use this tool to fine-tune segmentation before activating your campaign.
 
 ## Visibility of the Estimate Reach Panel
 
-You can view the _Estimated Reach_ panel in the _Who_ section when:
+You can view the *Estimated Reach* panel in the *Who* section when:
 
-- You are creating an **online trigger campaign**
-- You are defining a **trigger event** (for example, App Launched)
-- You are enabling **Filter on past behavior and user properties**
-- You are adding at least one behavior or user property filter
+* You are creating an **online trigger campaign**
+* You are defining a **trigger event** (for example, App Launched)
+* You are enabling **Filter on past behavior and user properties**
+* You are adding at least one behavior or user property filter
 
 Once these conditions are met, the **Calculate** button becomes available in the side panel. Clicking it displays your estimated user count.
 
@@ -65,7 +65,7 @@ Start a new trigger campaign from the Campaigns dashboard and select the trigger
 
 ## Define the Trigger Event
 
-In the _Target Segment_ section, do the following:
+In the *Target Segment* section, do the following:
 
 1. Set the real-time event that triggers the message (for example, “App Launched”)
 2. Optionally, apply filters to this event (for example, app version = latest)
@@ -76,18 +76,18 @@ Turn on the checkbox labeled **Filter on past behavior and user properties**.
 
 Then add filters across the following categories:
 
-- **Have done**  
+* **Have done**\
   For example: Users who have added an item to cart more than twice  
-- **Have not done**  
+* **Have not done**\
   For example: Users who have not visited a pricing page  
-- **With user properties**  
+* **With user properties**\
   For example: Users whose location is “India” or platform is “iOS”
 
 You can add multiple filters in each section and combine them using AND logic.
 
 ## Select Delivery Platforms and Devices
 
-In the_ Deliver to_ section, do the following:
+In the *Deliver to* section, do the following:
 
 1. Choose the platform: Android, iOS, or both
 2. Choose the device types: Mobile, Tablet, or TV
@@ -100,35 +100,21 @@ Click **Calculate** in the side panel to get an estimate of the audience.
 
 You can view the following:
 
-- **Total Users**: Number of users matching your conditions and delivery filters
-- **Breakdown by Platform**: Android vs iOS user counts
-- **Visual Indicator**: A doughnut chart summarizing the share by OS
+* **Total Users**: Number of users matching your conditions and delivery filters
+* **Breakdown by Platform**: Android vs iOS user counts
+* **Visual Indicator**: A doughnut chart summarizing the share by OS
 
 The estimate refreshes based on the latest filters and event data available at the time of calculation.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c9e4e54785c7b6278061b4ea84da74b08d2e88e98b46ff0bd63bf2c3eb833d83-2025-07-29_12-49-09_1.gif",
-        "",
-        "Calculate Estimate Reach"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Calculate Estimate Reach"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Calculate Estimate Reach" align="center" border={true} src="https://files.readme.io/c9e4e54785c7b6278061b4ea84da74b08d2e88e98b46ff0bd63bf2c3eb833d83-2025-07-29_12-49-09_1.gif">
+  Calculate Estimate Reach
+</Image>
 
 The estimate includes the following:
 
-- Users who qualify for the segment based on your trigger event and filters
-- Users who can be messaged based on platform and device settings
-- Only those currently eligible for delivery (for example, not uninstalled or unsubscribed)
+* Users who qualify for the segment based on your trigger event and filters
+* Users who can be messaged based on platform and device settings
+* Only those currently eligible for delivery (for example, not uninstalled or unsubscribed)
 
 The count reflects the **event summary** data available in the system, not a live or real-time lookup.
 
@@ -136,23 +122,23 @@ The count reflects the **event summary** data available in the system, not a liv
 
 You want to target users who:
 
-- Launch the app (real-time trigger event)
-- Have **not** visited a _Pricing_  page in the last 7 days
-- Belong to the _Returning Users_ cohort
-- Use Android devices only
+* Launch the app (real-time trigger event)
+* Have **not** visited a *Pricing*  page in the last 7 days
+* Belong to the *Returning Users* cohort
+* Use Android devices only
 
 As you set these conditions in the **Who** section:
 
-- The Estimated Reach panel shows the total Android users matching the above filters
-- You can toggle to see the count by devices (e.g., Mobile, Tablet)
-- If the count is too low or high, you can adjust filters accordingly
+* The Estimated Reach panel shows the total Android users matching the above filters
+* You can toggle to see the count by devices (e.g., Mobile, Tablet)
+* If the count is too low or high, you can adjust filters accordingly
 
 This helps ensure your campaign reaches the right audience before it goes live.
 
 Estimate Reach is not available in the following scenarios:
 
-- If you do not enable behavioral or property filters, the estimate is not available
-- If your filters result in zero eligible users, the panel shows a zero count
+* If you do not enable behavioral or property filters, the estimate is not available
+* If your filters result in zero eligible users, the panel shows a zero count
 
 # FAQs
 
@@ -160,8 +146,8 @@ Estimate Reach is not available in the following scenarios:
 
 Estimate Reach supports Mini WHO filters based on the following:
 
-- Event frequency (First Time, Last Time, Occurrences)
-- Inactivity (Did Not Do)
+* Event frequency (First Time, Last Time, Occurrences)
+* Inactivity (Did Not Do)
 
 User properties (for example, platform, app version, location)
 
@@ -175,10 +161,10 @@ No. Estimate Reach is only available for online trigger campaigns that use Mini 
 
 The following are the possible reasons for the Estimate Reach panel being invisible:
 
-- You are not in an online trigger campaign
-- You have not enabled the Filter on past behavior and user properties checkbox'
-- You have not added any behavioral or property filters
-- Your filters return zero matching users
+* You are not in an online trigger campaign
+* You have not enabled the Filter on past behavior and user properties checkbox'
+* You have not added any behavioral or property filters
+* Your filters return zero matching users
 
 ### Is the estimate based on live user data?
 
@@ -196,16 +182,16 @@ Yes. The platform (Android, iOS) and device type (Mobile, Tablet, TV) filters di
 
 Yes. Once calculated, you can view the following:
 
-- Total users who match your filters
-- Platform-wise breakdown (Android vs iOS)
-- A doughnut chart summarizing the share
+* Total users who match your filters
+* Platform-wise breakdown (Android vs iOS)
+* A doughnut chart summarizing the share
 
 ### What should I do if the estimated reach is too low or too high?
 
 Use the insights to adjust your filters. You can do the following:
 
-- Broaden or narrow event criteria
-- Modify user property conditions
-- Adjust platform or device filters
+* Broaden or narrow event criteria
+* Modify user property conditions
+* Adjust platform or device filters
 
 This lets you fine-tune the campaign before launch.
