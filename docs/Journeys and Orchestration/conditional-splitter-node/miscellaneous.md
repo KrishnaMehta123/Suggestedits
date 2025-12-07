@@ -16,15 +16,15 @@ The Conditional Split Node cannot be connected directly after an IntelliNode. Fo
 
 If personalization is required based on user properties (for example, `plan_type` or `region`), the correct approach is:
 
-- Use the Splitter to divide users based on logic (for example, Premium vs. Free)
-- Attach separate IntelliNODES for each branch, if experimentation is still needed within those segments
+* Use the Splitter to divide users based on logic (for example, Premium vs. Free)
+* Attach separate IntelliNODES for each branch, if experimentation is still needed within those segments
 
 (@Amrita to add graphics here)
 
 ## Error Scenarios
 
-- Conditional Splitter nodes will reset to an ideal state (that is, lose all path logic) in the following cases:
-  - Event Change: If the event in the connected Action node is changed after the Splitter was configured, all event-property-based logic is invalidated.
-  - Delay > 24 Hours: If an Action node delay is updated to more than 24 hours and the Conditional Split node uses event properties or Advanced filters, it resets.
-- If the node preceding the Conditional Split node is deleted, the conditional split node resets to its default state and must be reconfigured.
-- If a non-supported data type (such as array, number, and so on) is selected, the system throws a validation error.
+* Conditional Splitter nodes will reset to an ideal state (that is, lose all path logic) in the following cases:
+  * Event Change: If the event in the connected Action node is changed after the Splitter was configured, all event-property-based logic is invalidated.
+  * Delay > 24 Hours: If an Action node delay is updated to more than 24 hours and the Conditional Split node uses event properties or Advanced filters, it resets.
+* If the node preceding the Conditional Split node is deleted, the conditional split node resets to its default state and must be reconfigured.
+* If a non-supported data type (such as array, number, and so on) is selected, the system throws a validation error.
