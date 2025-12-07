@@ -12,66 +12,36 @@ metadata:
 next:
   description: ''
 ---
-#Overview
+# Overview
 
 You can have multiple variations in an IntelliNODE journey. This allows you to run multiple A/B tests to check the journey's success and test your assumptions. 
 
 # Create an IntelliNODE Journey
 
 To create an IntelliNODE journey:
+
 1. Create a new Journey. 
 2. Drag and drop **IntelliNODE** from the *Controllers* section to create an IntelliNODE journey. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f6e2d1d-Intellinode_journey_drag_drop_.gif",
-        "Intellinode_journey_drag_drop .gif",
-        1392,
-        672,
-        "#000000"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Intellinode_journey_drag_drop .gif" alt={1392} className="border" border={true} src="https://files.readme.io/f6e2d1d-Intellinode_journey_drag_drop_.gif" />
+
 3. Click **IntelliNODE** in the canvas to set up the experiment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d3be1aa-InteliNODE_Set_Up.png",
-        "InteliNODE Set Up.png",
-        1514,
-        1218,
-        "#000000"
-      ],
-      "border": true,
-      "sizing": "smart"
-    }
-  ]
-}
-[/block]
+<Image title="InteliNODE Set Up.png" alt={1514} className="border" width="smart" border={true} src="https://files.readme.io/d3be1aa-InteliNODE_Set_Up.png" />
+
 4. Enter a name for the  IntelliNODE and select whether you want the experiments configured manually or automatically. We recommend entering a simple name you can remember, such as *abandoned cart experiment*. 
-  * Automated Mode: This mode handles the distribution of qualifying users across all the connected paths. All paths start with equal distribution. However, the system automatically assigns a higher distribution to better-performing paths by re-evaluating the performance of each path every five minutes. The IntellNODE goal is used to determine the performance of each path. 
-  * Manual Mode: This mode gives you control over the user distribution for each path. You can monitor the performance of your experiment and then change the distribution percentages of each path in the live journey. 
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Switching between Automated and Manual Modes",
-  "body": "You cannot switch modes in an IntelliNODE *after* publishing the journey."
-}
-[/block]
-5. Click **+Path** to add paths to a user journey.
-You can add up to seven paths for the user journeys in the automated or manual mode.
+* Automated Mode: This mode handles the distribution of qualifying users across all the connected paths. All paths start with equal distribution. However, the system automatically assigns a higher distribution to better-performing paths by re-evaluating the performance of each path every five minutes. The IntellNODE goal is used to determine the performance of each path. 
+* Manual Mode: This mode gives you control over the user distribution for each path. You can monitor the performance of your experiment and then change the distribution percentages of each path in the live journey. 
 
-##IntelliNODE Goals
+> 📘 Switching between Automated and Manual Modes
+>
+> You cannot switch modes in an IntelliNODE *after* publishing the journey.
+
+5. Click **+Path** to add paths to a user journey.\
+   You can add up to seven paths for the user journeys in the automated or manual mode.
+
+## IntelliNODE Goals
 
 An IntelliNODE goal is common for all the paths. The goal is used to calculate the conversion percentage. 
 
@@ -81,32 +51,17 @@ In automated mode, this conversion percentage determines the user distribution. 
 2. Define the preferred user action by using events and filters.
 3. Click **+IntelliNODE Goal** to add more goals. You can add up to 3 goals.
 4. Click *Save & Close* to save the goal. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5266944-InteliNODE_Goals.png",
-        "InteliNODE Goals.png",
-        1540,
-        2052,
-        "#000000"
-      ],
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
-##Publish
+
+<Image title="InteliNODE Goals.png" alt={1540} className="border" width="smart" border={true} src="https://files.readme.io/5266944-InteliNODE_Goals.png" />
+
+## Publish
+
 Click **Publish** to make the journey live.
-[block:callout]
-{
-  "type": "info",
-  "title": "Distribution changes in a manual mode",
-  "body": "For manual mode, only the latest ten edit logs are available."
-}
-[/block]
+
+> 📘 Distribution changes in a manual mode
+>
+> For manual mode, only the latest ten edit logs are available.
+
 Monitor the [IntelliNODE stats](https://docs.clevertap.com/docs/intellinode-stats) to check if your journey is progressing as planned.
 
 # Automated vs. Manual IntelliNODE
