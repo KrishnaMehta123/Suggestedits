@@ -12,18 +12,4 @@ next:
 ---
 Navigate to the Campaigns list page by clicking on the Campaigns option in the menu. The Campaigns list page will give you a quick overview of the campaign stats.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e71c3f6-List_views.png",
-        "List views.png",
-        1999,
-        902,
-        "#f7f8f9"
-      ]
-    }
-  ]
-}
-[/block]
+![1999](https://files.readme.io/e71c3f6-List_views.png "List views.png")
