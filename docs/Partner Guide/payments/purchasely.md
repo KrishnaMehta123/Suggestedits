@@ -16,18 +16,18 @@ next:
 
 The Purchasely model offers the following benefits:
 
-- Manage your products, pricing, and subscriptions
-- Analyze your in-app purchase data to track revenue, conversion rates, and user behavior
+* Manage your products, pricing, and subscriptions
+* Analyze your in-app purchase data to track revenue, conversion rates, and user behavior
 
 # Prerequisites for Integration
 
 Before setting up Purchasely with CleverTap, there are a few prerequisites that you must have in place. These include:
 
-- **Purchasely account:** You must have a Purchasely account with all the required setup and configurations to send events to the CleverTap dashboard.
-- **CleverTap account:** You must have an active CleverTap account with access to the CleverTap dashboard.
-- **Purchasely SDK integration:** You need to have integrated the Purchasely SDK into your mobile app to enable in-app purchases.
-- **In-app purchases enabled:** In-app purchases must be enabled in your mobile app to allow users to make purchases.
-- **API and secret keys:** You must have the API and secret keys for your Purchasely account. These are required to connect your Purchasely account with your CleverTap account.
+* **Purchasely account:** You must have a Purchasely account with all the required setup and configurations to send events to the CleverTap dashboard.
+* **CleverTap account:** You must have an active CleverTap account with access to the CleverTap dashboard.
+* **Purchasely SDK integration:** You need to have integrated the Purchasely SDK into your mobile app to enable in-app purchases.
+* **In-app purchases enabled:** In-app purchases must be enabled in your mobile app to allow users to make purchases.
+* **API and secret keys:** You must have the API and secret keys for your Purchasely account. These are required to connect your Purchasely account with your CleverTap account.
 
 # Integrate Purchasely with CleverTap
 
@@ -75,138 +75,83 @@ CleverTap.getCleverTapID((err, res) => {
 
 Find the following project details to authorize the Purchasely connection with the CleverTap dashboard:
 
-- Project ID
-- Passcode
-- Region
+* Project ID
+* Passcode
+* Region
 
-These details are obtained by navigating to the _Settings_ > _Project_ page of the CleverTap dashboard:
+These details are obtained by navigating to the *Settings* > *Project* page of the CleverTap dashboard:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c15acc7-Project_Details.png",
-        null,
-        "CleverTap Project Details"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "CleverTap Project Details"
-    }
-  ]
-}
-[/block]
+<Image alt="CleverTap Project Details" align="center" border={true} src="https://files.readme.io/c15acc7-Project_Details.png">
+  CleverTap Project Details
+</Image>
 
 To identify the region of your account, check the URL of your CleverTap account. 
 
 Refer to the following table to identify the region for your account:
 
-| Region                  | API Endpoint           | CleverTap Dashboard URL                           |
-| :---------------------- | :--------------------- | :------------------------------------------------ |
-| India                   | in1.api.clevertap.com  | <https://in1.dashboard.clevertap.com/login.html>  |
-| Singapore               | sg1.api.clevertap.com  | <https://sg1.dashboard.clevertap.com/login.html>  |
-| United States           | us1.api.clevertap.com  | <https://us1.dashboard.clevertap.com/login.html>  |
-| Indonesia               | aps3.api.clevertap.com | <https://aps3.dashboard.clevertap.com/login.html> |
-| Middle East (UAE)       | mec1.api.clevertap.com | <https://mec1.dashboard.clevertap.com/login.html> |
-| Europe (default region) | api.clevertap.com      | <https://eu1.dashboard.clevertap.com/login.html>  |
+| Region                  | API Endpoint           | CleverTap Dashboard URL                                                                            |
+| :---------------------- | :--------------------- | :------------------------------------------------------------------------------------------------- |
+| India                   | in1.api.clevertap.com  | [https://in1.dashboard.clevertap.com/login.html](https://in1.dashboard.clevertap.com/login.html)   |
+| Singapore               | sg1.api.clevertap.com  | [https://sg1.dashboard.clevertap.com/login.html](https://sg1.dashboard.clevertap.com/login.html)   |
+| United States           | us1.api.clevertap.com  | [https://us1.dashboard.clevertap.com/login.html](https://us1.dashboard.clevertap.com/login.html)   |
+| Indonesia               | aps3.api.clevertap.com | [https://aps3.dashboard.clevertap.com/login.html](https://aps3.dashboard.clevertap.com/login.html) |
+| Middle East (UAE)       | mec1.api.clevertap.com | [https://mec1.dashboard.clevertap.com/login.html](https://mec1.dashboard.clevertap.com/login.html) |
+| Europe (default region) | api.clevertap.com      | [https://eu1.dashboard.clevertap.com/login.html](https://eu1.dashboard.clevertap.com/login.html)   |
 
 ## Set Up CleverTap in Purchasely Dashboard
 
 To set up CleverTap in Purchasely dashboard:
 
-1. Navigate to _Settings_ > _Integrations_ from the Purchasely dashboard. The _External Integrations_ page opens.
-2. Click the ellipsis ![](https://files.readme.io/f1bcbe8-Ellipsis.png) icon on the _CleverTap_ tile.
+1. Navigate to *Settings* > *Integrations* from the Purchasely dashboard. The *External Integrations* page opens.
+2. Click the ellipsis ![](https://files.readme.io/f1bcbe8-Ellipsis.png) icon on the *CleverTap* tile.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c8687c9-CleverTap.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/c8687c9-CleverTap.png" />
 
 The CleverTap Integration form opens.
 
-3. From the _Account Parameters_ tab, enable the integration, and enter your CleverTap Account _Region_, _Account ID_, and _Passcode_.
+3. From the *Account Parameters* tab, enable the integration, and enter your CleverTap Account *Region*, *Account ID*, and *Passcode*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bbb8788-Account_Parameters.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/bbb8788-Account_Parameters.png" />
 
 To find these details, refer to [CleverTap Project Details](https://docs.clevertap.com/docs/purchasely#2-find-clevertap-project-details).
 
 4. Click **Next**.
 5. Enable the events you want to be sent to CleverTap.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f98c6ba-Server_Events.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/f98c6ba-Server_Events.png" />
 
-6. Click _Save_.
+6. Click *Save*.
 
 > 📘 Renaming Events
-> 
+>
 > You can orverride the names of events sent to CleverTap when setting up the integration.
 
 # Subscription Events
 
 The following are the main subscription events that can be sent to CleverTap by Purchasely. To view the full list, refer to [Subscription Events](https://docs.purchasely.com/analytics/events/webhook-events/subscription-events).
 
-| Event                         | Description                                                                                                              |
-| :---------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| SUBSCRIPTION_STARTED          | Sent when the user purchases a product whether it is the start of a trial or a regular purchase of a consumable product. |
-| SUBSCRIPTION_RENEWED          | Sent when a subscription renews                                                                                          |
-| SUBSCRIPTION_EXPIRED          | Sent when the subscription actually ends                                                                                 |
-| SUBSCRIPTION_REACTIVATED      | Sent when an expired subscription is reactivated. This event is particularly useful for win-back & retargeting campaigns |
-| SUBSCRIPTION_REFUNDED_REVOKED | Sent when the subscription actually ends                                                                                 |
-| RENEWAL_DISABLED              | Sent when the user deactivates the renewal of a subscription wether it is in trial period or not.                        |
-| RENEWAL_ENABLED               | Sent when the user reactivates                                                                                           |
-| TRIAL_STARTED                 | Sent when a trial starts                                                                                                 |
-| TRIAL_CONVERTED               | Sent when a user converts from a free trial to a normal paid-period                                                      |
-| TRIAL_NOT_CONVERTED           | Sent when a user finishes it's trial period without renewing to a paid-period                                            |
+| Event                           | Description                                                                                                              |
+| :------------------------------ | :----------------------------------------------------------------------------------------------------------------------- |
+| SUBSCRIPTION\_STARTED           | Sent when the user purchases a product whether it is the start of a trial or a regular purchase of a consumable product. |
+| SUBSCRIPTION\_RENEWED           | Sent when a subscription renews                                                                                          |
+| SUBSCRIPTION\_EXPIRED           | Sent when the subscription actually ends                                                                                 |
+| SUBSCRIPTION\_REACTIVATED       | Sent when an expired subscription is reactivated. This event is particularly useful for win-back & retargeting campaigns |
+| SUBSCRIPTION\_REFUNDED\_REVOKED | Sent when the subscription actually ends                                                                                 |
+| RENEWAL\_DISABLED               | Sent when the user deactivates the renewal of a subscription wether it is in trial period or not.                        |
+| RENEWAL\_ENABLED                | Sent when the user reactivates                                                                                           |
+| TRIAL\_STARTED                  | Sent when a trial starts                                                                                                 |
+| TRIAL\_CONVERTED                | Sent when a user converts from a free trial to a normal paid-period                                                      |
+| TRIAL\_NOT\_CONVERTED           | Sent when a user finishes it's trial period without renewing to a paid-period                                            |
 
 # Use Cases for Customer Engagements
 
 Purchasely and CleverTap are two powerful tools that can be integrated to help businesses improve their user acquisition, engagement, and retention strategies. After integrating Purchasely with CleverTap businesses can solve use cases like:
 
-- **Personalized in-app purchase offers:** With Purchasely and CleverTap integration, businesses can offer personalized in-app purchase offers to their users based on their past purchase behavior and user data. This can increase the chances of converting users into paying customers.
-- **Automated subscription management:** Purchasely offers a subscription management system that can be integrated with CleverTap to automate subscription renewals, cancellations, and upgrades. This can help businesses reduce churn rates and increase revenue.
-- **Targeted push notifications:** With CleverTap's advanced segmentation capabilities, businesses can target specific user segments with personalized push notifications that promote Purchasely offers and promotions. This can increase user engagement and revenue.
-- **User behavior tracking:** CleverTap can track user behavior within the app, such as which features they use the most, and which Purchasely offers they respond to. This data can be used to optimize future Purchasely offers and improve the overall user experience.
-- **A/B testing:** With CleverTap, businesses can conduct A/B tests to compare different Purchasely offers and pricing strategies to see which ones generate the most revenue and conversions.
+* **Personalized in-app purchase offers:** With Purchasely and CleverTap integration, businesses can offer personalized in-app purchase offers to their users based on their past purchase behavior and user data. This can increase the chances of converting users into paying customers.
+* **Automated subscription management:** Purchasely offers a subscription management system that can be integrated with CleverTap to automate subscription renewals, cancellations, and upgrades. This can help businesses reduce churn rates and increase revenue.
+* **Targeted push notifications:** With CleverTap's advanced segmentation capabilities, businesses can target specific user segments with personalized push notifications that promote Purchasely offers and promotions. This can increase user engagement and revenue.
+* **User behavior tracking:** CleverTap can track user behavior within the app, such as which features they use the most, and which Purchasely offers they respond to. This data can be used to optimize future Purchasely offers and improve the overall user experience.
+* **A/B testing:** With CleverTap, businesses can conduct A/B tests to compare different Purchasely offers and pricing strategies to see which ones generate the most revenue and conversions.
 
 Overall, integrating Purchasely with CleverTap can help businesses improve their in-app purchase strategies, increase revenue, and improve user engagement and retention.
 
