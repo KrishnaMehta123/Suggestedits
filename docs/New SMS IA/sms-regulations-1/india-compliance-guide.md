@@ -53,9 +53,9 @@ You must begin by registering as a Principal Entity (PE).
 2. Go to **Principal Entity Registration**.
 3. Provide the following:
 
-   - Legal Name, Entity Type, PAN, GSTIN
-   - Valid email and mobile number
-   - Upload supporting KYC documents: incorporation certificate, address proof, authorization letter
+   * Legal Name, Entity Type, PAN, GSTIN
+   * Valid email and mobile number
+   * Upload supporting KYC documents: incorporation certificate, address proof, authorization letter
 4. Verify email and phone via OTP
 5. Submit for approval (typically within 48–72 hours)
 
@@ -90,13 +90,13 @@ TRAI mandates all domains and short links in SMS messages must be whitelisted be
 
 > Non-whitelisted URLs will result in outright delivery failure—this is a mandatory compliance check.
 
-| Requirement           | Detail                                                                 |
-| --------------------- | ---------------------------------------------------------------------- |
-| Type of URLs          | Static, dynamic, or branded short links (e.g., <https://go.brand.com>) |
-| Whitelisting Location | “Content Templates” or dedicated “URL Whitelisting” tab                |
-| Link & Header Mapping | Associate each URL with an approved header                             |
-| Approval Timeframe    | Usually within 1 business day                                          |
-| CleverTap Sync        | Update whitelisted links in CleverTap’s SMS link shortener config      |
+| Requirement           | Detail                                                                                       |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| Type of URLs          | Static, dynamic, or branded short links (e.g., [https://go.brand.com](https://go.brand.com)) |
+| Whitelisting Location | “Content Templates” or dedicated “URL Whitelisting” tab                                      |
+| Link & Header Mapping | Associate each URL with an approved header                                                   |
+| Approval Timeframe    | Usually within 1 business day                                                                |
+| CleverTap Sync        | Update whitelisted links in CleverTap’s SMS link shortener config                            |
 
 ### Template Registration
 
@@ -106,8 +106,8 @@ Templates define the SMS message body and must be approved before use.
 2. Add message content using `{#var#}` placeholders for personalization.
 3. Assign a **Header** and **Message Category**:
 
-   - _Header_ refers to the approved Sender ID that the message will be sent from.
-   - _Message Category_ defines the classification of the message (Promotional, Transactional, etc.).
+   * *Header* refers to the approved Sender ID that the message will be sent from.
+   * *Message Category* defines the classification of the message (Promotional, Transactional, etc.).
 4. Upload a sample screenshot if requested.
 5. Submit for approval (instant to 1–2 hours depending on operator).
 
@@ -119,9 +119,9 @@ Following registration, you must map the DLT credentials inside your CleverTap a
 
 1. Gather your approved credentials:
 
-   - **Entity ID**: Identifies your registered business (Principal Entity) in the DLT system.
-   - **Header ID**: Represents the approved sender name that will appear in user inboxes.
-   - **Template ID**: Corresponds to each pre-approved SMS body with variables.
+   * **Entity ID**: Identifies your registered business (Principal Entity) in the DLT system.
+   * **Header ID**: Represents the approved sender name that will appear in user inboxes.
+   * **Template ID**: Corresponds to each pre-approved SMS body with variables.
 2. Add these to your SMS provider configuration inside CleverTap.
 3. Set up variable mappings in the message composer.
 4. Perform a test send to confirm setup integrity.
@@ -147,13 +147,13 @@ TRAI imposes message-level rules to safeguard consumer interests. These vary by 
 
 Certain message content types are entirely disallowed under Indian telecom law.
 
-- Adult content and services
-- Lottery, gambling, cryptocurrency
-- Hate speech, defamation, obscenity
-- Fraudulent schemes (“you’ve won a prize”)
-- Political messages during election blackout periods
-- Unapproved short URLs or non-whitelisted domains
-- Spam volume (>6 identical messages/hour to same user)
+* Adult content and services
+* Lottery, gambling, cryptocurrency
+* Hate speech, defamation, obscenity
+* Fraudulent schemes (“you’ve won a prize”)
+* Political messages during election blackout periods
+* Unapproved short URLs or non-whitelisted domains
+* Spam volume (>6 identical messages/hour to same user)
 
 ### Template Format and Variables
 
@@ -169,7 +169,7 @@ TRAI enforces ongoing compliance through regular audits and message filtering.
 
 > Maintain all approvals and audit trails—non-compliance may lead to delivery suspension or DLT portal blocks.
 
-- Reverify headers and templates quarterly
-- Renew or update expired approvals
-- Monitor campaign reports in CleverTap for blocked message rates
-- Resubmit any edited content
+* Reverify headers and templates quarterly
+* Renew or update expired approvals
+* Monitor campaign reports in CleverTap for blocked message rates
+* Resubmit any edited content
