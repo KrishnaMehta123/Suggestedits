@@ -1,0 +1,416 @@
+---
+title: Email Campaign Stats
+excerpt: Measure the performance of your Email campaign.
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# View Email Campaign Stats
+
+After the email campaign is live, the following events are raised in case of email campaigns:
+
+- _Notification Sent_ when the email campaign is sent to the user.
+- _Notification Viewed_ when the user opens the email campaign.
+- _Notification Clicked_ when the user clicks on the email campaign.
+
+You can view its stats by navigating to _Campaigns_ from the CleverTap dashboard. To do so:
+
+1. Click _Campaigns_ from the dashboard. The _All Campaigns_ page displays.
+2. Select the email campaign you want to view the stats for. Or you can also filter campaigns using the **Filter** button (see figure below).
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/5ef8ad422137f9919071243c4ecfcfaaa803bea361cf851096c76eb82c5f44a6-11.png",
+        "Filter Email Campaign from All Campaigns",
+        "Filter Email Campaigns"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Filter Email Campaigns"
+    }
+  ]
+}
+[/block]
+
+
+3. Click the campaign to open it. The _Stats_ tab displays the following campaign stats: Sent, Viewed, Clicks, CTR, and Converted users.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/76e4a96-Email_Campaign_Stats.png",
+        "View Email Campaign Hero Stats",
+        2662
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Campaign Stats"
+    }
+  ]
+}
+[/block]
+
+
+The stats card shows the total count and the percentage. You can track the following stats for your email campaign:
+
+- Sent: Displays the total number of emails delivered. This count excludes the count of emails sent to CC and BCC recipients.
+- Viewed: Displays the aggregate open percentage for your message, which is calculated as \[(Viewed/Sent)\*100]. It also shows the total number of emails opened. The views of CC/BCC recipients are attributed to the main recipient.
+  - AMP for Email Viewed: Displays the percentage of your total emails rendered as [AMP emails](https://docs.clevertap.com/docs/ampforemail). Displayed in case of AMP Email campaigns.
+  - HTML Viewed: Displays the percentage of your total emails rendered as HTML. 
+- Clicks: Displays the aggregate percentage of clicks from the total sent messages. It is calculated as [(Clicks/Sent)*100]. It also shows the total number of clicks on the emails. The clicks of CC/BCC recipients are attributed to the main recipient.
+  - AMP for Email Clicks: Displays the percentage of clicks on emails rendered as AMP. Displayed in case of AMP Email campaigns.
+  - HTML Clicks: Displays the percentage of clicks on emails rendered as HTML.
+- CTR: The clickthrough rate of the campaign. It is calculated as \[(Click/Viewed)\*100}.
+- Converted users: Displays the percentage of total users who performed the conversion event. For example, purchased an item. It also shows the number of users who converted after receiving the campaign. 
+- Errors: Displays the number of errors for the campaign. These can be technical errors, such as email provider errors, or non-technical errors, such as message frequency exceeded. 
+- Control group: Displays the number of users considered part of a control group for the campaign.
+- CC Sent: Displays the total number of emails sent to recipients under the CC field.
+- BCC Sent: Displays the total number of emails sent to recipients under the BCC field.
+- CC Errors: Displays the total number of emails that failed to be sent to recipients under the CC field. This refers to errors encountered when sending email campaigns from CleverTap to the Email Service Provider (ESP).
+- BCC Errors: Displays the total number of emails that failed to be sent to recipients under the BCC field. This refers to the errors encountered when sending email campaigns from CleverTap to the Email Service Provider (ESP).
+- Global Unsubscribes: Displays the total number of unsubscriptions. The unsubscription is attributed to the primary recipients who qualify for the campaign only if you use the `unsubscribe(isReEncode)` method to [unsubscribe from an email campaign](doc:handling-unsubscribes).
+
+> 📘 Note
+> 
+> Tracking delivery related errors like Unsubscribes, Bounces, and Report as Spam are not available for CC/BCC recipients.
+
+## Message Trend
+
+Click **Message Trend** to view the message trends by Sent, Viewed, or Clicked. You can view the daily, weekly, or monthly trends.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/27a73a8-Email_Stats_Message_Trend.png",
+        "View Message Trend Stats of Email Campaign",
+        2680
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Message Trend"
+    }
+  ]
+}
+[/block]
+
+
+## Conversion Performance Overview
+
+Click _Conversion Performance_ to view conversion, revenue performance, and users' conversion funnel. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/32d1f59-Email_stats_conversion_performance.png",
+        "View Conversion Stas of Email Campaign",
+        2726
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Conversion Performance"
+    }
+  ]
+}
+[/block]
+
+
+You can view stats for each variant under the User conversion funnel for A/B test, split delivery, and message on user property campaigns.
+
+### Conversion Performance
+
+The conversion performance section shows the conversion boost achieved from your campaign.  You can compare your campaign conversions with the control group conversions to see the impact of your campaign. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/7bf34ea-Email_Stats_Conversion_Conversion_hero.png",
+        "View Conversion Performance Stats of Email Campaign",
+        1310
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Conversion Performance Stats"
+    }
+  ]
+}
+[/block]
+
+
+### Revenue Performance
+
+The Revenue Performance section shows the revenue boost achieved from your campaign.
+
+## Users Conversion Funnel
+
+Shows the conversion funnel, that is _Sent_ > _Viewed_ > _Clicked_ > _Converted_. You can understand the drop-offs at each step of the campaign.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/9e1b1ae-Email_Stats_Conversion_Performance_with_Viewed.png",
+        "View Users Conversion Funnel of Email Campaign",
+        2592
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Users' Conversion Funnel"
+    }
+  ]
+}
+[/block]
+
+
+### Hide Viewed
+
+The _Viewed_ numbers in a report can sometimes be unusually high because of virus scanners, email forwards, email groups, and so on. For more information, refer to [Unusually High Email Opens and Clicks](doc:troubleshooting-open-click-tracking). In this case, you can hide the viewed step by selecting the \_Hide Viewed_button.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/b4954e5-Email_Stats_Conversion_Performance_No_Viewed.png",
+        "Hide Viewed Funnel of Users Conversion",
+        2698
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Hide Viewed Funnel"
+    }
+  ]
+}
+[/block]
+
+
+> 📘 Key Points to Remember
+> 
+> The Conversion Performance number for _All Variants_ may be equal to or less than the combined Conversion Performance number for each individual variant. For example, if the Conversion Performance number for All Variants is 10500, with Variant A at 5575 and Variant B at 5053, the total for Variants A and B combined is 10628, exceeding the total for _All Variants_.
+> 
+> This scenario can occur due to the following reasons:
+> 
+> - For Live campaigns, different variants are delivered to various devices, identified by different GUIDs for the same user. Consequently, the Conversion Performance number for All Variants might not match the sum of the Conversion Performance numbers for each variant. For instance, a user may receive Variant A before uninstalling the app and then receive Variant B after reinstalling it until their identity is established.
+> - For Recurring campaigns (user property campaigns), the user can qualify more than once when and receive different message copy each time. For example, the user upgrades to a new plan. In this case, the message copy received by the user before and after upgrading the _Membership type_ can be different.
+> 
+> In both the cases, the same user is counted twice, once for Variant A and once for Variant B. However, when calculating the Conversion Performance number for _All Variants_, each user is counted only once.
+
+## Click Heat Map
+
+The Click Heat Map is a powerful visual representation of your email that highlights the links that have been clicked. This feature allows users to see which links are performing well and helps determine optimal link placement within email campaigns. By analyzing these metrics, users can make informed decisions about potential changes to content blocks based on link performance.
+
+The Click Heat Map displays the email you’ve sent to your users, overlaid with color-coded representations of link clicks. Each link features numbers indicating the total number of clicks, enabling you to see how the placement of each link impacts your campaign metrics.
+
+### Color Coding
+
+Color coding provides a quick and intuitive way to assess click activity across your email links. Here's what each color represents:
+
+- **Red**: Represents the highest clicked links.
+- **Orange**: Indicates the next tier of highly clicked links.
+- **Yellow**: Shows moderate click activity.
+- **Green**: Reflects lower click activity.
+- **Blue**: Represents minimal clicks.
+- **Gray**: All links with no clicks will be represented in Gray.
+
+### Link Clicks
+
+The Link Clicks feature provides detailed insights into which links were clicked and metrics such as total clicks and click percentages. To access these stats, follow these steps:
+
+1. Click on _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page will appear.
+
+2. Choose the email campaign for which you want to view the stats. Use the **Filter** button if needed.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/dd4db61-View_Email_Campaign_Stats.png",
+        null,
+        "Filter Email Campaigns"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Filter Email Campaigns"
+    }
+  ]
+}
+[/block]
+
+
+3. Click on the campaign to view its details. The _Stats_ tab will display key metrics, including Sent, Viewed, Clicks, CTR, and Converted Users.
+4. Go to the _Link Clicks_ section. By default, the heat map will show the total number of clicks for each link in the email.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/778afe036278e08960b7321b6585a24aaf63bfc34de5096042825eb23623a5d9-screencapture-sk1-dashboard-staging-3-dashboard-clevertap-W8W-897-865Z-campaigns-campaign-1732268690-report-stats-clicks-2024-11-22-15_40_25.png",
+        "",
+        "Click Heat Map - Email Campaign"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Click Heat Map - Email Campaign"
+    }
+  ]
+}
+[/block]
+
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/78be0ef3573d38b6898655fd5f11a4d0a7e619000eb866c2c49aca1ddba6d893-Screenshot_2024-11-22_at_15.41.46.png",
+        "",
+        "Click Heat Map - Email Cmapaign"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Click Heat Map - Email Campaign"
+    }
+  ]
+}
+[/block]
+
+
+5. From the drop-down menu, choose Total Clicks, Unique Clicks, or Click Rate to view the corresponding click data for each link.
+
+- **Total Clicks**: Counts every click on all links, regardless of the recipient.
+- **Unique Clicks**: Counts distinct recipients who have clicked a link, regardless of the number of clicks.
+- **Click Rate**: Calculated by dividing unique clicks by the total number of delivered emails, multiplied by 100. This metric helps assess the effectiveness of your email’s call-to-action.
+
+6. Select the email variant from the campaign you want to analyze from the drop-down menu.
+7. For AMP email campaigns, select AMP from the drop-down (default is set to HTML).
+8. The right pane will display each link, sorted by color from highest to lowest clicks. You’ll see stats for Total Clicks, Unique Clicks, and Click Rate for each link.
+9. Click on **View User Details** to access the _Events_ page under _Analytics_.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/e36d35957d1dde27cce2133bf6bbfb2bb3a392308901969acdbe692959700bfa-Screenshot_2024-11-22_at_15.44.40.png",
+        "",
+        "View User Details"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "View User Details"
+    }
+  ]
+}
+[/block]
+
+
+### User Details of Clicks
+
+You can view the details of users who clicked on your email campaign using the _View details of users who clicked_ link present on the _Split of Clicks_ tab. You are navigated to the _Events_ page. Click the _People_ tab to view user details. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/d55d148-Email_stats_notification_clicked.png",
+        "View Event Analysis for Notification Clicked",
+        1049
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Event Analysis for Notification Clicked"
+    }
+  ]
+}
+[/block]
+
+
+## Errors
+
+You can view campaign errors from the Stats > Errors tab.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/579eaeac43e3f43aab26ed06c0762a092c6ab44a783beb1e81c23538f3e8372c-Email_-_Errors.png",
+        "View Email Campaign Errors",
+        2702
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Email Campaign Errors"
+    }
+  ]
+}
+[/block]
+
+
+### Block (Soft bounce)
+
+A bounced email is an email message that gets rejected by a mail server. There are two types of bounces:
+
+#### Soft Bounce
+
+A soft bounce indicates that mail bounced due to one of the following reasons even though the email address was valid and the email message reached the recipient's mail server:
+
+- The mailbox was full (the user has exceeded their storage quota)
+- The recipient server was down
+- The message was rejected as spam
+- The message was too large for the recipient's inbox.  
+  CleverTap campaign reports include soft bounces and do not mark the users as unsubscribed.
+
+#### Hard Bounce
+
+A hard bounce indicated that the email was returned to the sender and was completely undeliverable. However, common reasons it got rejected include:
+
+- The email address is invalid
+- The email address does not exist
+- The recipient's email server has rejected the email
+
+CleverTap campaign reports include hard bounces and mark the users as unsubscribed.
+
+> 📘 Deferred emails
+> 
+> The time for retrying a deferred email and the number of retries depend on the sending ESP. For SendGrid, the retry period is set to 72 hours.
+
+# View Detailed Engagement Stats
+
+You can also view the user details for notifications _sent_, _viewed_, _clicked_, and _bounced_ from the _Analytics_ page of the CleverTap dashboard. For more information about viewing such stats, refer to [Analyze an Event ](doc:events-analytics#analyze-an-event). 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/46340b1-Events.png",
+        "View Event Analysis for Notification Viewed",
+        2658
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Event Analysis for Notification Viewed"
+    }
+  ]
+}
+[/block]
