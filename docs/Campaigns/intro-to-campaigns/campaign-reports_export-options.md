@@ -18,97 +18,115 @@ Campaign reports provide you with campaign performance at a glance. Using these 
 
 You can view the campaigns from the campaigns list page. Follow the steps to view a report:
 
-1. Navigate to _Campaigns_ page from the main menu. The _All Campaigns_ page opens.
+1. Navigate to *Campaigns* page from the main menu. The *All Campaigns* page opens.
 2. Select the campaigns or select the filter criteria to export the reports for the required campaigns.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bd1b02d-Subscribe_to_Reports.gif",
-        "Subscribe to Reports.gif",
-        1376
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Subscribe to Reports.gif" alt={1376} align="center" className="border" border={true} src="https://files.readme.io/bd1b02d-Subscribe_to_Reports.gif" />
 
 3. Click the ![Email Report](https://files.readme.io/5e252c3-Email_Report_icon.jpg) icon or the ![Subscribe to Reports](https://files.readme.io/f0ac781-Click_Subscribe_to_report_link.png) link. The Campaign Report window opens on the right side.
 
 4. Configure the following settings:  
 
-| <p>Field</p>                | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>Report name</p>          | <p>Enter the name to identify your report uniquely.</p>                                                                                                                                                                                                                                                                                                                                                                                            |
-| <p>Create a report. for</p> | <p>Select from the following options for which you want to create a report:</p><ul><li>Selected Campaigns - Generates reports only for the campaigns selected from the list. </li><li>All campaigns with filters applied - Generates report for all the campaigns displayed after applying filters on the campaigns list page.</li></ul>                                                                                                           |
-| <p>Data to include</p>      | <p>Select the data from the following options that you want to include in the report:</p><ul><li>Campaign overview</li><li>Campaign stats</li><li>Campaign detailed stats</li><li>Campaign errors</li></ul>                                                                                                                                                                                                                                        |
-| <p>Split all data by</p>    | <p>Select the option to split your data. The following are the available options:</p><ul><li>Day</li><li>OS</li><li>Variant type</li></ul>                                                                                                                                                                                                                                                                                                         |
-| <p>Frequency</p>            | <p>Select the export frequency for your report. The following are the available options:</p><ul><li>One-time</li><li>Recurring</li></ul>                                                                                                                                                                                                                                                                                                           |
-| <p>Delivery Method</p>      | <p>Select from the following delivery options:</p><ul><li><strong>Email</strong>: You must enter the recipient's email address when you select this option. </li><li><strong>Partner Export</strong>: Select any one from the following export partners and then select the bucket where you want to export the reports: <ul><li>Amazon S3 </li><li>Google Cloud Platform</li></ul></li></ul><p>The reports are always exported in CSV format.</p> |
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Field</p>
+      </th>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9e45c4e-Campaign_Reports.png",
-        "Campaign Reports.png",
-        1696
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <tr>
+      <td>
+        <p>Report name</p>
+      </td>
 
+      <td>
+        <p>Enter the name to identify your report uniquely.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Create a report. for</p>
+      </td>
+
+      <td>
+        <p>Select from the following options for which you want to create a report:</p><ul><li>Selected Campaigns - Generates reports only for the campaigns selected from the list. </li><li>All campaigns with filters applied - Generates report for all the campaigns displayed after applying filters on the campaigns list page.</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Data to include</p>
+      </td>
+
+      <td>
+        <p>Select the data from the following options that you want to include in the report:</p><ul><li>Campaign overview</li><li>Campaign stats</li><li>Campaign detailed stats</li><li>Campaign errors</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Split all data by</p>
+      </td>
+
+      <td>
+        <p>Select the option to split your data. The following are the available options:</p><ul><li>Day</li><li>OS</li><li>Variant type</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Frequency</p>
+      </td>
+
+      <td>
+        <p>Select the export frequency for your report. The following are the available options:</p><ul><li>One-time</li><li>Recurring</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Delivery Method</p>
+      </td>
+
+      <td>
+        <p>Select from the following delivery options:</p><ul><li><strong>Email</strong>: You must enter the recipient's email address when you select this option. </li><li><strong>Partner Export</strong>: Select any one from the following export partners and then select the bucket where you want to export the reports: <ul><li>Amazon S3 </li><li>Google Cloud Platform</li></ul></li></ul><p>The reports are always exported in CSV format.</p>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<Image title="Campaign Reports.png" alt={1696} align="center" className="border" width="smart" border={true} src="https://files.readme.io/9e45c4e-Campaign_Reports.png" />
 
 5. Click **Send Report** to send the report immediately or click **Subscribe** to send the reports at defined intervals.
 
-You can include _Campaign stats_ and _Campaign overview_ in the campaign report for a maximum of 2500 campaigns. 
+You can include *Campaign stats* and *Campaign overview* in the campaign report for a maximum of 2500 campaigns. 
 
 > 📘 Campaign Reports Enhancement in Private Beta
-> 
-> You can now include _Campaign details stats_ in the campaign report for a maximum of 2000 campaigns, which was 100 campaigns earlier. This enhancement is currently available in Private Beta.
+>
+> You can now include *Campaign details stats* in the campaign report for a maximum of 2000 campaigns, which was 100 campaigns earlier. This enhancement is currently available in Private Beta.
 
 # Subscribe to Reports
 
-You may want to subscribe to a report in various scenarios. For example, select and subscribe to four campaigns on a monthly recurrence, or only subscribe to push campaigns that you created with a label for a monthly/daily recurrence.  
-The subscriptions are displayed on the _Subscriptions_ tab of the _Campaign Report_ window. To create a new report or create a new report subscription, refer to [Genetate Reports](doc:campaign-reports#generate-reports).
+You may want to subscribe to a report in various scenarios. For example, select and subscribe to four campaigns on a monthly recurrence, or only subscribe to push campaigns that you created with a label for a monthly/daily recurrence.\
+The subscriptions are displayed on the *Subscriptions* tab of the *Campaign Report* window. To create a new report or create a new report subscription, refer to [Genetate Reports](doc:campaign-reports#generate-reports).
 
 # Edit/Delete Reports
 
-The existing schedule for the reports is displayed on the _Subscribe_ tab. To edit or delete a subscription to a report,  
+The existing schedule for the reports is displayed on the *Subscribe* tab. To edit or delete a subscription to a report,  
 
 1. Click **Subscribe to Reports** on the campaign list page. The Campaign Summary Emails pane appears.
-2. Select the _Subscriptions_ tab
+2. Select the *Subscriptions* tab
 3. Click the ellipsis icon to edit or delete a report subscription.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/95f9da4-Edit_subscriptions.gif",
-        "Edit_subscriptions.gif",
-        570
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
+<Image title="Edit_subscriptions.gif" alt={570} align="center" className="border" border={true} src="https://files.readme.io/95f9da4-Edit_subscriptions.gif" />
 
 # Reports API
 
@@ -116,142 +134,3421 @@ You can use the [Get Campaign Report API](https://developer.clevertap.com/docs/g
 
 # Campaign Report Data
 
-The following table provides all the report's columns based on the selected data group. For example, the first column, Campaign ID, will be part of each report, irrespective of the data group.  
-However, the Campaign Name appears as a column in your report only if you select _Campaign overview_ when requesting the report.
+The following table provides all the report's columns based on the selected data group. For example, the first column, Campaign ID, will be part of each report, irrespective of the data group.\
+However, the Campaign Name appears as a column in your report only if you select *Campaign overview* when requesting the report.
 
 > 📘 Send Copy of Push Campaign to App Inbox
-> 
-> When you choose to send a copy of a Push campaign to the App Inbox, it appears as a single campaign on the _All Campaigns_ page on the dashboard. However, you will see two separate entries for the campaign in the campaign reports.
+>
+> When you choose to send a copy of a Push campaign to the App Inbox, it appears as a single campaign on the *All Campaigns* page on the dashboard. However, you will see two separate entries for the campaign in the campaign reports.
 
-| <p>Report Column</p>                     | <p>Campaign overview</p> | <p>Campaign stats</p> | <p>Campaign detailed stats</p> | <p>Campaign errors</p> | <p>Description</p>                                                                                             |
-| :--------------------------------------- | :----------------------- | :-------------------- | :----------------------------- | :--------------------- | :------------------------------------------------------------------------------------------------------------- |
-| <p>Campaign ID</p>                       | <p>Yes</p>               | <p>Yes</p>            | <p>Yes</p>                     | <p>Yes</p>             | <p>The unique ID for the campaign.</p>                                                                         |
-| <p>Campaign Name</p>                     | <p>Yes</p>               |                       |                                |                        | <p>The name provided for the campaign during its creation.</p>                                                 |
-| <p>Channel</p>                           | <p>Yes</p>               |                       |                                |                        | <p>The channel such as Email, Mobile Push, and so on that is used for the campaign.</p>                        |
-| <p>Delivery</p>                          | <p>Yes</p>               |                       |                                |                        | <p>The campaign delivery such as Action, Inaction, One time, and so on.</p>                                    |
-| <p>Type</p>                              | <p>Yes</p>               |                       |                                |                        | <p>The type of campaign such as single message, message on user property, or A/B test.</p>                     |
-| <p>Variant</p>                           | <p>Yes</p>               |                       |                                |                        | <p>The message variant. Applicable only to A/B test messages and message on user property.</p>                 |
-| <p>OS</p>                                | <p>Yes</p>               |                       |                                |                        | <p>The device operating system, such as iOS and Android.</p>                                                   |
-| <p>Device</p>                            | <p>Yes</p>               |                       |                                |                        | <p>Devices such as mobile, TV, or a Tablet.</p>                                                                |
-| <p>DND / set campaign frequency</p>      | <p>Yes</p>               |                       |                                |                        | <p>DND or campaign frequency setting configured at the time of campaign creation.</p>                          |
-| <p>timezone</p>                          | <p>Yes</p>               |                       |                                |                        | <p>Configuration for the delivery in the user timezone.</p>                                                    |
-| <p>cutoff</p>                            | <p>Yes</p>               |                       |                                |                        | <p>Configuration of the cutoff period after which the campaign is not delivered.</p>                           |
-| <p>fcap (global campaign limits)</p>     | <p>Yes</p>               |                       |                                |                        | <p>Configuration for the  maximum number of messages that a user can receive in a day.</p>                     |
-| <p>throttle</p>                          | <p>Yes</p>               |                       |                                |                        | <p>Configuration for the  throttle limits applied to the campaigns.</p>                                        |
-| <p>Safety check limit</p>                | <p>Yes</p>               |                       |                                |                        | <p>The campaign is not sent to any user if the number of qualified users exceed the limit.</p>                 |
-| <p>Campaign per day limit</p>            | <p>Yes</p>               |                       |                                |                        | <p>Number of maximum messages sent per day for the campaign.</p>                                               |
-| <p>Campaign overall limit</p>            | <p>Yes</p>               |                       |                                |                        | <p>Number of maximum messages sent overall for the campaign.</p>                                               |
-| <p>estimated reach</p>                   | <p>Yes</p>               |                       |                                |                        | <p>Estimated qualification of users.</p>                                                                       |
-| <p>Reach (Send to all / last active)</p> | <p>Yes</p>               |                       |                                |                        | <p>Send to all devices or the last active device.</p>                                                          |
-| <p>WHO query</p>                         | <p>Yes</p>               |                       |                                |                        | <p>The who query defined in the campaign.</p>                                                                  |
-| <p>Constant event property</p>           | <p>Yes</p>               |                       |                                |                        | <p>Shows whether the Constant event property is applicable or not.</p>                                         |
-| <p>Title</p>                             | <p>Yes</p>               |                       |                                |                        | <p>The title of the notification</p>                                                                           |
-| <p>Message</p>                           | <p>Yes</p>               |                       |                                |                        | <p>Message of the notification.</p>                                                                            |
-| <p>iOS Rich Media type</p>               | <p>Yes</p>               |                       |                                |                        | <p>Media type such as, Single or Carousel for iOS push notifications</p>                                       |
-| <p>IOS Rich media URL</p>                | <p>Yes</p>               |                       |                                |                        | <p>Image URL  for iOS push notifications</p>                                                                   |
-| <p>IOS sound file</p>                    | <p>Yes</p>               |                       |                                |                        | <p>iOS sound or the file URL if custom.</p>                                                                    |
-| <p>IOS Badge Count</p>                   | <p>Yes</p>               |                       |                                |                        | <p>Badge count on IOS notification</p>                                                                         |
-| <p>IOS Category</p>                      | <p>Yes</p>               |                       |                                |                        | <p>Category for iOS push notifications (if applicable).</p>                                                    |
-| <p>IOS Deep link / External URL</p>      | <p>Yes</p>               |                       |                                |                        | <p>Deep link for iOS push notifications.</p>                                                                   |
-| <p>IOS Mutable content</p>               | <p>Yes</p>               |                       |                                |                        | <p>Shows whether the content is mutable. The values are Yes/No.</p>                                            |
-| <p>Android Subtitle</p>                  | <p>Yes</p>               |                       |                                |                        | <p>Subtitle of the Android push notifications.</p>                                                             |
-| <p>Android Image URL</p>                 | <p>Yes</p>               |                       |                                |                        | <p>Image URL for Android push notifications.</p>                                                               |
-| <p>Android Summary</p>                   | <p>Yes</p>               |                       |                                |                        | <p>Summary text for Android push notifications.</p>                                                            |
-| <p>Android large Icon URL</p>            | <p>Yes</p>               |                       |                                |                        | <p>Large icon for Android push notifications.</p>                                                              |
-| <p>Android Small App Icon colour</p>     | <p>Yes</p>               |                       |                                |                        | <p>Small app icon for Android push notifications.</p>                                                          |
-| <p>Android Deep link / External URL</p>  | <p>Yes</p>               |                       |                                |                        | <p>Deep link for Android push notifications.</p>                                                               |
-| <p>Android Sound File</p>                | <p>Yes</p>               |                       |                                |                        | <p>The values are:</p><ul><li>NA </li><li>Default OS sound</li><li>file URL,  if the file is custom</li></ul>  |
-| Android Notification tray priority       | Yes                      |                       |                                |                        | Shows the priority of display in tray of android device                                                        |
-| Android Notification delivery priority   | Yes                      |                       |                                |                        | Server priority for Android push notifications                                                                 |
-| Collapse notification                    | Yes                      |                       |                                |                        | Shows whether the notification is collapsible or not                                                           |
-| Notification channels                    | Yes                      |                       |                                |                        | Communication channel, for which the user consent is received.                                                 |
-| Badge ID                                 | Yes                      |                       |                                |                        | Badge ID for Android push notifications.                                                                       |
-| Badge Icon                               | Yes                      |                       |                                |                        | Badge count Android push notifications.                                                                        |
-| Send to App Inbox as well                | Yes                      |                       |                                |                        | Applicable only for push. Sent to app inbox as well or not.                                                    |
-| Time to live                             | Yes                      |                       |                                |                        | Time for the notification to live in the user device.                                                          |
-| SMS/ Email/ WA service provider          | Yes                      |                       |                                |                        | The service provider.                                                                                          |
-| Start Date                               | Yes                      |                       |                                |                        | Start date of the campaign.                                                                                    |
-| Start Time                               | Yes                      |                       |                                |                        | Displays the start time of the campaign. Displays the time value if the campaign is set to best time.          |
-| Conversion Event                         | Yes                      |                       |                                |                        | The conversion is tracked for this event in the campaign.                                                      |
-| Conversion Time (in minutes)             | Yes                      |                       |                                |                        | Time period within which conversion is tracked for the campaign.                                               |
-| Campaign URL                             | Yes                      |                       |                                |                        | The URL of the campaign to access it on Clevertap dashboard.                                                   |
-| Status                                   | Yes                      |                       |                                |                        | Current status of the campaign.                                                                                |
-| Created By                               | Yes                      |                       |                                |                        | The creator of the campaign.                                                                                   |
-| Created time                             | Yes                      |                       |                                |                        | Time of creating the campaign.                                                                                 |
-| Labels                                   | Yes                      |                       |                                |                        | The Labels / tags used to identify and organize campaigns.                                                     |
-| AmplifiedByInbox                         | Yes                      |                       |                                |                        | Shows whether the campaign was amplified by sending it to inbox as well or not.                                |
-| AmplifiedByPush                          | Yes                      |                       |                                |                        | If Enhanced Push Delivery is applied or not.                                                                   |
-| Web Priority                             | Yes                      |                       |                                |                        | Priority of web notifications. It can be High, Medium or low.                                                  |
-| Run Date                                 |                          | Yes                   |                                |                        | Applicable for Day-wise reports only. Displays the run date.                                                   |
-| Total Sent (users)                       |                          | Yes                   |                                |                        | Displays the total count for the sent users. Shows as N/A for channels that are not supported, such as In-app. |
-| Total Viewed (users)                     |                          | Yes                   |                                |                        | Displays the total count for the users who viewed the notification.                                            |
-| Total Clicked (users)                    |                          | Yes                   |                                |                        | Displays the total count for the users who clicked the notification.                                           |
-| Total Sent (events)                      |                          | Yes                   |                                |                        | Total events. Total devices (if 'Send to all' is applied)                                                      |
-| Total Viewed (events)                    |                          | Yes                   |                                |                        | Total events. Total devices (in case of 'Send to all' is applied)                                              |
-| Total Clicked (events)                   |                          | Yes                   |                                |                        | Total events. Total devices (in case of 'Send to all' is applied)                                              |
-| Errors                                   |                          | Yes                   |                                |                        | Errors                                                                                                         |
-| Click through conversions                |                          | Yes                   |                                |                        | Total converting users ( as per funnel, including clicked step)                                                |
-| Click through conversions %              |                          | Yes                   |                                |                        | Total converting users / Total sent users.                                                                     |
-| Click through conversion revenue         |                          | Yes                   |                                |                        | Revenue as per the revenue property related to Total conversions.                                              |
-| Total control group count                |                          | Yes                   |                                |                        | Total number of users in control group.                                                                        |
-| Total control group conversions          |                          | Yes                   |                                |                        | Total number of control group users converting.                                                                |
-| Total control group conversions %        |                          | Yes                   |                                |                        | Total number of control group users converting / Total number of users in control group.                       |
-| Total control group revenue              |                          | Yes                   |                                |                        | Revenue as per revenue property related to conversion.                                                         |
-| Unique Sent (users)                      |                          |                       | Yes                            |                        | Unique users who were sent notification                                                                        |
-| Unique Viewed Within Conversion Time     |                          |                       | Yes                            |                        | Unique users who viewed the notifications within the set conversion time.                                      |
-| Unique Clicked Within Conversion Time    |                          |                       | Yes                            |                        | Unique users who clicked the notifications within set conversion time.                                         |
-| Unique Converted Within Conversion Time  |                          |                       | Yes                            |                        | Unique users who converted  within the set conversion time.                                                    |
-| Revenue Within Conversion Time           |                          |                       | Yes                            |                        | Revenue as per the revenue property related to conversion.                                                     |
-| View through Conversions                 |                          |                       | Yes                            |                        | Users who were sent a message and they converted. Referred as influenced conversions on the dashboard.         |
-| View through Conversions %               |                          |                       | Yes                            |                        | Influenced conversion (above) / Total sent users                                                               |
-| View through conversions Revenue         |                          |                       | Yes                            |                        | Revenue as per the revenue property related to conversion.                                                     |
-| System Control Group Conversions         |                          |                       | Yes                            |                        | Total number of system control group users converting.                                                         |
-| System Control Group Conversions %       |                          |                       | Yes                            |                        | Total number of system control group users converting / Total number of users in system control group.         |
-| System Control Group Revenue             |                          |                       | Yes                            |                        | Revenue as per the revenue property related to conversion.                                                     |
-| Campaign Control Group Conversions       |                          |                       | Yes                            |                        | Total number of campaign control group users converting                                                        |
-| Campaign Control Group Conversions %     |                          |                       | Yes                            |                        | Total number of campaign control group users converting / Total number of users in campaign control group.     |
-| Campaign Control Group Revenue           |                          |                       | Yes                            |                        | Revenue as per the revenue property related to conversion                                                      |
-| Custom Control Group Conversions         |                          |                       | Yes                            |                        | Total number of custom control group users converting.                                                         |
-| Custom Control Group Conversions %       |                          |                       | Yes                            |                        | Total number of custom control group users converting / Total number of users in custom control group.         |
-| Custom Control Group Revenue             |                          |                       | Yes                            |                        | Revenue as per the revenue property related to conversion.                                                     |
-| Custom Control Group Name                |                          |                       | Yes                            |                        | Name of the custom control group.                                                                              |
-| System Control Group Count               |                          |                       | Yes                            |                        | Total number of users in system control group.                                                                 |
-| Custom Control Group count               |                          |                       | Yes                            |                        | Total number of users in custom control group.                                                                 |
-| Campaign Control Group count             |                          |                       | Yes                            |                        | Total number of users in campaign control group.                                                               |
-| Invalid FCM key                          |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| App uninstalled(Android)                 |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Wrong FCM API key                        |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Invalid APNS certificate                 |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS error                               |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS Format error                        |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS Account Temporarily Blacklisted     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| App Uninstalled(iOS)                     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Invalid Profiles                         |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Duplicate APNS Token                     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Invalid token - FCM                      |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Unknown error - FCM                      |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Dispatch error                           |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Internal error due to amplification      |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Global frequency cap exceeded            |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Campaign frequency cap exceeded          |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Campaign limit reached for day           |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Campaign limit reach for run             |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Profile not reachable                    |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Campaign stopped                         |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| User DND                                 |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Duplicate profile for channel            |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS bad topic error                     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS disallowed topic                    |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS bad device token                    |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS device token and topic mismatch     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS inactive device token for topic     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS wrong environment certificate       |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS bad certificate                     |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS idle timeout                        |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS missing certificate topic           |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| APNS Bad Priority                        |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| FCM payload too large                    |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| User not reachable                       |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| User not qualified                       |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Notification during campaign DND         |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
-| Campaign cut-off time reached            |                          |                       |                                | Yes                    | Campaign error description.                                                                                    |
+<Table align={["left","left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Report Column</p>
+      </th>
+
+      <th>
+        <p>Campaign overview</p>
+      </th>
+
+      <th>
+        <p>Campaign stats</p>
+      </th>
+
+      <th>
+        <p>Campaign detailed stats</p>
+      </th>
+
+      <th>
+        <p>Campaign errors</p>
+      </th>
+
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <p>Campaign ID</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+        <p>The unique ID for the campaign.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Campaign Name</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The name provided for the campaign during its creation.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Channel</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The channel such as Email, Mobile Push, and so on that is used for the campaign.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Delivery</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The campaign delivery such as Action, Inaction, One time, and so on.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Type</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The type of campaign such as single message, message on user property, or A/B test.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Variant</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The message variant. Applicable only to A/B test messages and message on user property.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>OS</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The device operating system, such as iOS and Android.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Device</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Devices such as mobile, TV, or a Tablet.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>DND / set campaign frequency</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>DND or campaign frequency setting configured at the time of campaign creation.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>timezone</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Configuration for the delivery in the user timezone.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>cutoff</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Configuration of the cutoff period after which the campaign is not delivered.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>fcap (global campaign limits)</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Configuration for the  maximum number of messages that a user can receive in a day.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>throttle</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Configuration for the  throttle limits applied to the campaigns.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Safety check limit</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The campaign is not sent to any user if the number of qualified users exceed the limit.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Campaign per day limit</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Number of maximum messages sent per day for the campaign.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Campaign overall limit</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Number of maximum messages sent overall for the campaign.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>estimated reach</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Estimated qualification of users.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Reach (Send to all / last active)</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Send to all devices or the last active device.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>WHO query</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The who query defined in the campaign.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Constant event property</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Shows whether the Constant event property is applicable or not.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Title</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The title of the notification</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Message</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Message of the notification.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>iOS Rich Media type</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Media type such as, Single or Carousel for iOS push notifications</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>IOS Rich media URL</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Image URL  for iOS push notifications</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>IOS sound file</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>iOS sound or the file URL if custom.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>IOS Badge Count</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Badge count on IOS notification</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>IOS Category</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Category for iOS push notifications (if applicable).</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>IOS Deep link / External URL</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Deep link for iOS push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>IOS Mutable content</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Shows whether the content is mutable. The values are Yes/No.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android Subtitle</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Subtitle of the Android push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android Image URL</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Image URL for Android push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android Summary</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Summary text for Android push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android large Icon URL</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Large icon for Android push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android Small App Icon colour</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Small app icon for Android push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android Deep link / External URL</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>Deep link for Android push notifications.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Android Sound File</p>
+      </td>
+
+      <td>
+        <p>Yes</p>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        <p>The values are:</p><ul><li>NA </li><li>Default OS sound</li><li>file URL,  if the file is custom</li></ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Android Notification tray priority
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Shows the priority of display in tray of android device
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Android Notification delivery priority
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Server priority for Android push notifications
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Collapse notification
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Shows whether the notification is collapsible or not
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Notification channels
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Communication channel, for which the user consent is received.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Badge ID
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Badge ID for Android push notifications.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Badge Icon
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Badge count Android push notifications.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Send to App Inbox as well
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Applicable only for push. Sent to app inbox as well or not.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Time to live
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Time for the notification to live in the user device.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SMS/ Email/ WA service provider
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        The service provider.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Start Date
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Start date of the campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Start Time
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Displays the start time of the campaign. Displays the time value if the campaign is set to best time.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Conversion Event
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        The conversion is tracked for this event in the campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Conversion Time (in minutes)
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Time period within which conversion is tracked for the campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign URL
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        The URL of the campaign to access it on Clevertap dashboard.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Status
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Current status of the campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created By
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        The creator of the campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Created time
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Time of creating the campaign.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Labels
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        The Labels / tags used to identify and organize campaigns.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        AmplifiedByInbox
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Shows whether the campaign was amplified by sending it to inbox as well or not.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        AmplifiedByPush
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        If Enhanced Push Delivery is applied or not.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Web Priority
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Priority of web notifications. It can be High, Medium or low.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Run Date
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Applicable for Day-wise reports only. Displays the run date.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total Sent (users)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Displays the total count for the sent users. Shows as N/A for channels that are not supported, such as In-app.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total Viewed (users)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Displays the total count for the users who viewed the notification.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total Clicked (users)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Displays the total count for the users who clicked the notification.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total Sent (events)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total events. Total devices (if 'Send to all' is applied)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total Viewed (events)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total events. Total devices (in case of 'Send to all' is applied)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total Clicked (events)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total events. Total devices (in case of 'Send to all' is applied)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Errors
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Errors
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Click through conversions
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total converting users ( as per funnel, including clicked step)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Click through conversions %
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total converting users / Total sent users.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Click through conversion revenue
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per the revenue property related to Total conversions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total control group count
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of users in control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total control group conversions
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of control group users converting.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total control group conversions %
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of control group users converting / Total number of users in control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Total control group revenue
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per revenue property related to conversion.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Unique Sent (users)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Unique users who were sent notification
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Unique Viewed Within Conversion Time
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Unique users who viewed the notifications within the set conversion time.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Unique Clicked Within Conversion Time
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Unique users who clicked the notifications within set conversion time.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Unique Converted Within Conversion Time
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Unique users who converted  within the set conversion time.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Revenue Within Conversion Time
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per the revenue property related to conversion.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        View through Conversions
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Users who were sent a message and they converted. Referred as influenced conversions on the dashboard.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        View through Conversions %
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Influenced conversion (above) / Total sent users
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        View through conversions Revenue
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per the revenue property related to conversion.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        System Control Group Conversions
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of system control group users converting.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        System Control Group Conversions %
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of system control group users converting / Total number of users in system control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        System Control Group Revenue
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per the revenue property related to conversion.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign Control Group Conversions
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of campaign control group users converting
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign Control Group Conversions %
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of campaign control group users converting / Total number of users in campaign control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign Control Group Revenue
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per the revenue property related to conversion
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Custom Control Group Conversions
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of custom control group users converting.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Custom Control Group Conversions %
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of custom control group users converting / Total number of users in custom control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Custom Control Group Revenue
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue as per the revenue property related to conversion.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Custom Control Group Name
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Name of the custom control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        System Control Group Count
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of users in system control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Custom Control Group count
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of users in custom control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign Control Group count
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Total number of users in campaign control group.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Invalid FCM key
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        App uninstalled(Android)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Wrong FCM API key
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Invalid APNS certificate
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS error
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS Format error
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS Account Temporarily Blacklisted
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        App Uninstalled(iOS)
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Invalid Profiles
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Duplicate APNS Token
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Invalid token - FCM
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Unknown error - FCM
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dispatch error
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Internal error due to amplification
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Global frequency cap exceeded
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign frequency cap exceeded
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign limit reached for day
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign limit reach for run
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Profile not reachable
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign stopped
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        User DND
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Duplicate profile for channel
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS bad topic error
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS disallowed topic
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS bad device token
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS device token and topic mismatch
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS inactive device token for topic
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS wrong environment certificate
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS bad certificate
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS idle timeout
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS missing certificate topic
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        APNS Bad Priority
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        FCM payload too large
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        User not reachable
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        User not qualified
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Notification during campaign DND
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Campaign cut-off time reached
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Yes
+      </td>
+
+      <td>
+        Campaign error description.
+      </td>
+    </tr>
+  </tbody>
+</Table>
