@@ -38,11 +38,11 @@ All businesses intending to send SMS must register themselves as a Principal Ent
 2. **Fill Principal Entity Details**: Include PAN, GSTIN, business type, and authorized contact.
 3. **Upload Required Documents**:
 
-   - PAN Card
-   - GST Certificate
-   - Certificate of Incorporation
-   - Address Proof (utility bill, lease agreement)
-   - Authorization Letter
+   * PAN Card
+   * GST Certificate
+   * Certificate of Incorporation
+   * Address Proof (utility bill, lease agreement)
+   * Authorization Letter
 4. **Verify Email and Mobile**: Complete OTP-based verification.
 5. **Approval Timeline**: Typically granted within 48–72 hours.
 
@@ -56,7 +56,7 @@ A Telemarketer (TM) is an SMS aggregator or delivery vendor who sends messages o
 4. **Sync Timeline**: Binding syncs across all DLT portals within a few hours.
 
 > 📘 Note
-> 
+>
 > Only Telemarketers bound to your PE can submit headers, templates, and SMS traffic.
 
 ## Registering Sender Headers
@@ -66,10 +66,10 @@ All sender identities—also known as headers—must be registered and approved 
 1. **Navigate to the Headers section** in your DLT portal.
 2. **Add Header (Sender ID)**:
 
-   - For Transactional: 6-letter alphabetic + suffix -T
-   - For Promotional: 6-digit numeric + suffix -P
-   - For Service: 6-letter alphabetic + suffix -S
-   - For Government: 6-letter alphabetic + suffix -G
+   * For Transactional: 6-letter alphabetic + suffix -T
+   * For Promotional: 6-digit numeric + suffix -P
+   * For Service: 6-letter alphabetic + suffix -S
+   * For Government: 6-letter alphabetic + suffix -G
 3. **Provide Rationale**: In some cases, a business justification or document may be required.
 4. **Approval Timeline**: Typically processed within 1–2 business days.
 
@@ -89,7 +89,7 @@ TRAI mandates URL whitelisting to ensure safety and avoid misuse in SMS campaign
 4. **Sync with CleverTap**: Update your CleverTap short link configuration to reflect approved domains.
 
 > 📘 Note
-> 
+>
 > Messages with non-whitelisted URLs will be blocked outright at the operator level.
 
 ## Registering Message Templates
@@ -100,8 +100,8 @@ All message content must be pre-registered with exact copy and placeholders. No 
 2. **Add Template Text** using placeholder syntax like `Dear {#var#}, your OTP is {#var#}`.
 3. **Assign Header and Message Category**:
 
-   - Header: The sender ID this message will be sent from.
-   - Message Category: One of Transactional, Promotional, Service, or Government.
+   * Header: The sender ID this message will be sent from.
+   * Message Category: One of Transactional, Promotional, Service, or Government.
 4. **Upload Sample Screenshot** if required.
 5. **Approval Timeline**: Typically instant to a few hours.
 
@@ -116,14 +116,14 @@ After obtaining approvals, you must configure your DLT credentials in CleverTap 
 | Template ID | ID linked to the exact message template pre-approved on the DLT portal |
 
 > 📘 Note
-> 
+>
 > These identifiers must be added to your SMS configuration in CleverTap or passed via APIs.
 
 ## Maintenance and Ongoing Compliance
 
 To remain compliant with TRAI’s evolving policies, regular maintenance of your DLT registration is essential. This includes:
 
-- Quarterly audits of headers and templates.
-- Updating records for revoked or expired entities.
-- Monitoring delivery reports for CTA mismatches.
-- Ensuring whitelisted links remain active and approved.
+* Quarterly audits of headers and templates.
+* Updating records for revoked or expired entities.
+* Monitoring delivery reports for CTA mismatches.
+* Ensuring whitelisted links remain active and approved.
