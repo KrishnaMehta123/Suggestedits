@@ -18,8 +18,8 @@ SMS communication in the United States is governed by federal regulations and ca
 
 The following federal and industry regulations form the basis of SMS compliance in the U.S.:
 
-- **TCPA (Telephone Consumer Protection Act)**: Requires prior **express written consent** for promotional SMS. For transactional SMS (e.g., OTPs), **express consent** (oral or written) is sufficient. Businesses must retain records of this consent.
-- **CTIA Messaging Principles & Best Practices**: CTIA provides industry-wide standards for SMS content, throughput, opt-out handling, and acceptable use. These guidelines are enforced by individual carriers such as AT\&T, Verizon, and T-Mobile.
+* **TCPA (Telephone Consumer Protection Act)**: Requires prior **express written consent** for promotional SMS. For transactional SMS (e.g., OTPs), **express consent** (oral or written) is sufficient. Businesses must retain records of this consent.
+* **CTIA Messaging Principles & Best Practices**: CTIA provides industry-wide standards for SMS content, throughput, opt-out handling, and acceptable use. These guidelines are enforced by individual carriers such as AT\&T, Verizon, and T-Mobile.
 
 Non-compliance with TCPA or CTIA guidelines may result in fines, carrier filtering, or legal action.
 
@@ -71,15 +71,15 @@ All sender types require registration with appropriate campaign details and samp
 
 ### Toll-Free Registration
 
-- Apply through your SMS provider.
-- Follow the same campaign registration workflow as 10DLC.
-- Toll-free numbers also require verification before going live.
+* Apply through your SMS provider.
+* Follow the same campaign registration workflow as 10DLC.
+* Toll-free numbers also require verification before going live.
 
 ### Short Code Registration
 
-- Choose between dedicated or shared codes.
-- Register via The Campaign Registry (TCR).
-- Carriers review all use cases and templates. Approval typically takes 8–12 weeks.
+* Choose between dedicated or shared codes.
+* Register via The Campaign Registry (TCR).
+* Carriers review all use cases and templates. Approval typically takes 8–12 weeks.
 
 ## Content Restrictions
 
@@ -113,8 +113,8 @@ Branded URLs should be pre-tested within your SMS campaigns to ensure high deliv
 
 ## Enforcement Bodies and Carrier Policies
 
-- CTIA sets overarching messaging guidelines, enforced by carriers.
-- Carriers (e.g., T-Mobile, Verizon, AT\&T) may also enforce additional restrictions through their Codes of Conduct.
-- T-Mobile enforces stricter guidelines for political messaging and requires opt-out confirmation even for transactional flows.
+* CTIA sets overarching messaging guidelines, enforced by carriers.
+* Carriers (e.g., T-Mobile, Verizon, AT\&T) may also enforce additional restrictions through their Codes of Conduct.
+* T-Mobile enforces stricter guidelines for political messaging and requires opt-out confirmation even for transactional flows.
 
 For a comprehensive overview of carrier enforcement, refer to [Twilio’s Messaging Policy](https://www.twilio.com/legal/messaging-policy).
