@@ -1,0 +1,216 @@
+---
+title: Preview and Send In-App
+excerpt: >-
+  Learn how to send personalized test In-App campaigns from the CleverTap
+  dashboard.
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Overview
+
+Marketing teams can test In-App campaigns with personalized values before publishing them. This helps them verify the app experience before sending it to the user.
+
+For example, marketers can send a personalized In-App message that highlights a user’s recently viewed product or shows a tailored offer based on their behavior, and first test it with an internal audience. The results of this test help verify that the personalized elements in the campaign are displayed correctly in the In-App experience before sending it to customers. 
+
+Once you are all done setting up the content of your campaign in the _What_ section, you have the option to send an In-App notification to any CleverTap user profile that you have marked as a _Test profile_.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/9d49427-Sent_Test_Popup.gif",
+        null,
+        "Preview & Test Popup"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Preview & Test Popup"
+    }
+  ]
+}
+[/block]
+
+
+> 📘 Note
+> 
+> The Preview & Test feature for sending tests on a real device requires minimum SDK versions (Android and iOS 6.0.0 or later, Unity 3.0.0 or later). For lower SDK versions, send the campaign exclusively to a specific user for testing, then recreate and send it to your full audience. {@murtaza need the equivalent of this for in-app. Also, do we need to add a private beta note ?}
+
+# Test by Users and Devices
+
+Select the _Notification channel_ to send your test message. You can test your message by device or by user profiles. You can combine event personalization with other In-App personalization options such as user profile properties, inline `@` personalization, recommendations, linked content, and Liquid tags to fully tailor the In-App experience. For more information, refer to [In-App Personalization](https://docs.clevertap.com/docs/personalize-message-inapp).
+
+## By Devices
+
+In this case, you can focus your test on specific devices.
+
+In the _Send test on_ section, click _Device tokens_.  The Android and iOS device token sections are displayed.  This is useful when a user has multiple devices, and you want to validate the In-App experience on specific form factors (for example, phone vs. tablet) or operating systems.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/7e3f964d50fed866ddc4f57401afb5b60515150cb838b1cdff68b72564b4bb8e-image.png",
+        null,
+        "Test by Device Tokens"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Test by Device Tokens"
+    }
+  ]
+}
+[/block]
+
+
+<br />
+
+## By User
+
+CleverTap provides the following options to select the users to send a personalized test In-App message:
+
+- From Test Profiles
+- From Any Profile
+
+### From Test Profiles
+
+You can select multiple [profiles that are marked as test profiles](doc:user-profiles#mark-a-user-profile-as-a-test-profile) and send a test In-App message to them. Test profiles are ideally your internal users.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/e59d77eb5d9f4d5f7243687891c7876343e218afb63b015f561353657db92031-image.png",
+        null,
+        "Select Test Profiles"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Select Test Profiles"
+    }
+  ]
+}
+[/block]
+
+
+### From Any Profile
+
+Search for a user profile from _Select from Profiles_. In this case, you can search for any recipient profile that is already present on your dashboard and send them a test In-App message by email address, CleverTap ID, or identity.  {@murtaza, please check if correct?}. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/18f37944c31a2efa4a256e3dd5ae39aabc53b3237c0981f69fb981bd1a949a7b-image.png",
+        null,
+        "Search Users for Testing"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Search Users for Testing"
+    }
+  ]
+}
+[/block]
+
+
+### Test Devices
+
+You can further filter the messaging by devices for each selected user and send them a test message. The _Test Devices_ section lists only devices where your app is installed. So you test only on devices that can actually render the In-App message. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/e1ed505561d727f98b3dafb96f65e40a55fbf026e01b483ee178673fb1b31a27-image.png",
+        null,
+        "Select Devices for User Profiles"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Select Devices for User Profiles"
+    }
+  ]
+}
+[/block]
+
+
+<br />
+
+After configuring all the required fields, you can preview the In-App campaign with personalized values for the selected user profile before sending the message. If you select multiple profiles, you can select the user from the list under the _Preview_ section on the right to test the rendering for each profile (refer to the following image). 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/d59c5de6d18c5449d84805a7328c8c6449a71fedd2b68af538dd7b00d20dac2f-image.png",
+        null,
+        "Preview Users from List"
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Preview Users from List"
+    }
+  ]
+}
+[/block]
+
+
+<br />
+
+Consider a scenario where your In-App message includes profile personalization, meaning you want to send an In-App message to each user based on their native language.  You can test the rendering of this message for each language based on the selected user in the list. This also allows you to detect issues early; for example, the message may exceed the character limit in German, but it displays correctly in other languages.  
+
+### Test Event Personalization
+
+The events selected in your message will be displayed here. You can change the values to preview the message with the updated values. For example {@murtaza need a good example here}
+
+### Test Custom User Personalization
+
+If the user you want to test is not listed in the preview section, or if you are unsure who matches your criteria, enter the email address, CleverTap ID, or identity of a profile for which you have the details. This will give you an instant preview of your message with the applied personalization. 
+
+<br />
+
+# Send Test Response
+
+{@murtaza, this option is not available for In-app correct ? Will remove it}
+
+You can view the response details as soon as you send the test In-App message. To do so, click _Send Test_ from the _Preview & Test_ popup. The _Send Test Response_ window opens, where all the response details are classified into the following categories. Click the **+** sign against each user to view all the details (refer to the following image):
+
+- Details of the message sent successfully
+- General Errors, if any
+- Linked Content Response: You can copy the responses by clicking the  ![](https://files.readme.io/7534549-Copy_icon.png)icon against the respective response.
+- Liquid Tags Error, if any 
+
+<br />
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/3ee2a74-image.png",
+        null,
+        "Error Details Per User"
+      ],
+      "align": "center",
+      "sizing": "75% ",
+      "border": true,
+      "caption": "Send Test Response Per User"
+    }
+  ]
+}
+[/block]
+
+
+This ensures a thorough examination of the test response, offering valuable insights into the success and potential errors associated with the sent test In-App messages. Use these insights to fix Liquid tag issues, adjust linked content responses, and refine your personalization logic before you publish the In-App campaign to your target audience.
