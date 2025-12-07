@@ -3,3 +3,4 @@
 - postmark
 - sendgrid
 - generic-smtp
+- generic-smtp-new-payload
