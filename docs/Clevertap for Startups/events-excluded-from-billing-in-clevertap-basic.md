@@ -11,10 +11,13 @@ next:
   description: ''
 ---
 # Overview
+
 Some system events are excluded from the MAU and Data Point calculations for CleverTap Basic users.
 
 # Events Excluded from MAU Calculations
+
 The following is the list of events that are excluded from the MAU calculation:
+
 * AB Experiment Disqualified
 * AB Experiment Rendered
 * AB Experiment Rolled Out
@@ -35,8 +38,10 @@ The following is the list of events that are excluded from the MAU calculation:
 * Session Concluded
 * State Transitioned
 
-# Events Excluded from Data Point Calculations 
+# Events Excluded from Data Point Calculations
+
 The following is the list of events that are excluded from the data point calculation:
+
 * AB Experiment Disqualified
 * AB Experiment Rendered
 * AB Experiment Rolled Out
@@ -59,6 +64,5 @@ The following is the list of events that are excluded from the data point calcul
 * Session Concluded
 * State Transitioned
 * UTM Visited
-  
 
 For more information about each of these events, refer to [System Events](doc:events#system-events) and [Debug Events](doc:events#debug-events).
