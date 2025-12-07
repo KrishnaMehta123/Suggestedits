@@ -16,27 +16,14 @@ Once the recommendations have been published, you can use them in your engagemen
 
 # Access Recommendations Within a Campaign
 
-During the campaign creating in the _What_ section, access recommendations with the following steps:
+During the campaign creating in the *What* section, access recommendations with the following steps:
 
 1. Type the @ symbol to personalize your message. 
-2. Click **+ Create** under _Recommendation Content_.
+2. Click **+ Create** under *Recommendation Content*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1c66c66-Create.png",
-        "+Create Recommendation Content",
-        667
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Recommendation Content"
-    }
-  ]
-}
-[/block]
+<Image title="+Create Recommendation Content" alt={667} align="center" border={true} src="https://files.readme.io/1c66c66-Create.png">
+  Create Recommendation Content
+</Image>
 
 # Create Recommendation Content
 
@@ -45,49 +32,36 @@ To create recommendation content, perform the following steps:
 1. Select a recommendation from a list of recommendations that have already been published and the event that you want to trigger the recommendation.
 
 > 📘 Event Selection
-> 
+>
 > You can only select events you mapped to the catalog on which the chosen recommendation is running.
 
 2. (Optional) Filter recommendations by event or by location: 
 
-- Click **+ Filter by event**.
-- Select whether you want to include or exclude an event and categories.
-- Add more events if required. 
+* Click **+ Filter by event**.
+* Select whether you want to include or exclude an event and categories.
+* Add more events if required. 
 
 > 📘 How the Filter by Event Works
-> 
+>
 > The filter by event takes precedence over recommended items and selected events matching. It provides the capability to include and exclude all recommended items when an item in the product catalog column matches a defined event property.
 
-- Click **+ Filter by location**.
-- Select a product location catalog and a radius.
-- Add more locations if required.
+* Click **+ Filter by location**.
+* Select a product location catalog and a radius.
+* Add more locations if required.
 
 > 📘 How the Filter by Location Works
-> 
+>
 > The filter by location takes precedence over the location of the recommended items which are fetched from the location catalog. Items in a defined range are looked up with the associated product location catalog and matched with the user's last known location to be included in the filter.
 
 3. Decide the sequence of items to be served up to the user out of the list of items that can be recommended (for example, serve up the first item from the list of recommended items).
 4. Click **Create**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b772b6c-Enhanced_recommendations_with_both_catalogs.png",
-        "Enhanced Recommendations with both Catalogs",
-        1956
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enhance the Recommendations with both Catalogs"
-    }
-  ]
-}
-[/block]
+<Image title="Enhanced Recommendations with both Catalogs" alt={1956} align="center" border={true} src="https://files.readme.io/b772b6c-Enhanced_recommendations_with_both_catalogs.png">
+  Enhance the Recommendations with both Catalogs
+</Image>
 
 > 📘 Web Popup Campaign Preview
-> 
+>
 > In case of Web Popup campaign preview, CleverTap does not support recommendations.
 
 # Choose the Fields to Personalize your Message
@@ -100,45 +74,19 @@ Now that you have created a recommendation, use the following steps to finalize 
 When the campaign is sent out, the fields will be replaced and the message will contain the personalized fields for each product. 
 
 > 👍 Video Example
-> 
+>
 > You can send out a recommended video to the user with the video name and thumbnail image based on the last videos a user has watched.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a93d41a-Reco_catalog_field_name.png",
-        "Select Catalog Field to Map",
-        475
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select Catalog Field to Map"
-    }
-  ]
-}
-[/block]
+<Image title="Select Catalog Field to Map" alt={475} align="center" border={true} src="https://files.readme.io/a93d41a-Reco_catalog_field_name.png">
+  Select Catalog Field to Map
+</Image>
 
 3. Send a test campaign to yourself to see the look and feel of the campaign. The test message will show the first item in the recommendation list.
 4. Once you are done testing, publish the campaign.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4d118f5-Screenshot_2019-03-01_at_5.28.45_PM.png",
-        "Preview the Campaign",
-        328
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Preview the Campaign"
-    }
-  ]
-}
-[/block]
+<Image title="Preview the Campaign" alt={328} align="center" border={true} src="https://files.readme.io/4d118f5-Screenshot_2019-03-01_at_5.28.45_PM.png">
+  Preview the Campaign
+</Image>
 
 ## Email Campaigns with Recommendations
 
@@ -146,25 +94,12 @@ You can create email campaigns with recommended content by invoking recommendati
 
 You can create emails using:
 
-- New email with rich media
-- Templates
+* New email with rich media
+* Templates
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dbc2a30-Email_templates.png",
-        "Create Email Campaigns with Recommendations",
-        1597
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Email Campaigns with Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Create Email Campaigns with Recommendations" alt={1597} align="center" border={true} src="https://files.readme.io/dbc2a30-Email_templates.png">
+  Create Email Campaigns with Recommendations
+</Image>
 
 ## Recommendations using a New Email with Rich Media
 
@@ -176,41 +111,15 @@ You can add recommendations within links with the following steps:
 
 1. Click on the link icon to add a link to your email message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5b7f404-Link_icon.png",
-        "Create Link with Recommendations",
-        1591
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Link with Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Create Link with Recommendations" alt={1591} align="center" border={true} src="https://files.readme.io/5b7f404-Link_icon.png">
+  Create Link with Recommendations
+</Image>
 
 2. Type the @ symbol to personalize the link using recommendations in the display text and the URL fields.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4eb166-Link_pop-up.png",
-        "dd Personalized Links",
-        690
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Personalized Links"
-    }
-  ]
-}
-[/block]
+<Image title="dd Personalized Links" alt={690} align="center" border={true} src="https://files.readme.io/c4eb166-Link_pop-up.png">
+  Add Personalized Links
+</Image>
 
 ### Image with Recommendations
 
@@ -218,41 +127,15 @@ You can also add recommendations within images with the following steps:
 
 1. Click on the image icon to add an image to your email message.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/59ca530-Link_icon.png",
-        "Create Image with Recommendations",
-        1591
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Image with Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Create Image with Recommendations" alt={1591} align="center" border={true} src="https://files.readme.io/59ca530-Link_icon.png">
+  Create Image with Recommendations
+</Image>
 
 2. Type the @ symbol to personalize the link using recommendations in the URL and the alternative text fields.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/441a81b-Image_pop-up.png",
-        "Personalize Links using Recommendations",
-        648
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Links using Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Links using Recommendations" alt={648} align="center" border={true} src="https://files.readme.io/441a81b-Image_pop-up.png">
+  Personalize Links using Recommendations
+</Image>
 
 The remainder of the steps is the same as any other campaigns as explained in the sections above.
 
@@ -264,197 +147,81 @@ You can create personalized recommendations using template emails with the steps
 
 You can add recommendations within links, images, deeplinks, and custom HTML with the following steps:
 
-1. Drag and drop the _Dynamic Content_ block into the content box in the center of the email body.
+1. Drag and drop the *Dynamic Content* block into the content box in the center of the email body.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b7ced3f-Dynamic_Content_button.png",
-        "Dynamic Content button.png",
-        1610
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Recommendations within Links, Images, Deep-links, and Custom HTML"
-    }
-  ]
-}
-[/block]
+<Image title="Dynamic Content button.png" alt={1610} align="center" border={true} src="https://files.readme.io/b7ced3f-Dynamic_Content_button.png">
+  Add Recommendations within Links, Images, Deep-links, and Custom HTML
+</Image>
 
 2. Click on the new content box to display the menu on the right.
 3. Click on the **Add options** button to access the dynamic content options. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8927951-Dynamic_Content_-_Add_options.png",
-        "Dynamic Content - Add options.png",
-        1611
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Option"
-    }
-  ]
-}
-[/block]
+<Image title="Dynamic Content - Add options.png" alt={1611} align="center" border={true} src="https://files.readme.io/8927951-Dynamic_Content_-_Add_options.png">
+  Add Option
+</Image>
 
 4. When the window pop-up displays, select one of the following options:
 
-- Image
-- Deeplink
-- Text
-- Custom HTML
+* Image
+* Deeplink
+* Text
+* Custom HTML
 
 > 📘 Option Name Required
-> 
+>
 > When you create a dynamic block, the option name is mandatory. Also, these dynamic blocks can be re-used if required.
 
 #### Image with Recommendations
 
 Type the @ symbol to personalize the image content using recommendations in the URL, alternative text, and target URL fields.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/356b302-Image_content_recommendation.png",
-        "Personalize Image Content using Recommendations",
-        643
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Image Content using Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Image Content using Recommendations" alt={643} align="center" border={true} src="https://files.readme.io/356b302-Image_content_recommendation.png">
+  Personalize Image Content using Recommendations
+</Image>
 
 #### Deeplink with Recommendations
 
 Type the @ symbol to personalize the deeplink content using recommendations in the display text and URL fields.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/95a2a74-Deeplink_content_recommendation.png",
-        "Personalize Deeplink Content using Recommendations",
-        644
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Deeplink Content using Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Deeplink Content using Recommendations" alt={644} align="center" border={true} src="https://files.readme.io/95a2a74-Deeplink_content_recommendation.png">
+  Personalize Deeplink Content using Recommendations
+</Image>
 
 #### Text with Recommendations
 
 Type the @ symbol to personalize the text content using recommendations in the text field.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6089f59-Recommendation_Email_10_copy1.png",
-        "Personalize Text Content using Recommendations",
-        671
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Text Content using Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Text Content using Recommendations" alt={671} align="center" border={true} src="https://files.readme.io/6089f59-Recommendation_Email_10_copy1.png">
+  Personalize Text Content using Recommendations
+</Image>
 
 #### Custom HTML with recommendations
 
 Type the @ symbol to personalize the custom HTML content using recommendations in the custom HTML code box.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/12adce3-Custom_HTML_content_recommendation.png",
-        "Personalize Custom HTML Content using Recommendations",
-        638
-      ],
-      "align": "center",
-      "caption": "Personalize Custom HTML Content using Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Custom HTML Content using Recommendations" alt={638} align="center" src="https://files.readme.io/12adce3-Custom_HTML_content_recommendation.png">
+  Personalize Custom HTML Content using Recommendations
+</Image>
 
 ### Existing Text Content Type in the Template Containing Deeplinks with Recommendations
 
 You can access recommendations within the existing text content type with the following steps:
 
-1. Drag and drop the _Text_ block into the content box in the center of the email body.
+1. Drag and drop the *Text* block into the content box in the center of the email body.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e16e2d8-Dynamic_Content_button.png",
-        "Dynamic Content button.png",
-        1610
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Access Recommendations in the Existing Text"
-    }
-  ]
-}
-[/block]
+<Image title="Dynamic Content button.png" alt={1610} align="center" border={true} src="https://files.readme.io/e16e2d8-Dynamic_Content_button.png">
+  Access Recommendations in the Existing Text
+</Image>
 
 2. Click on the content box to display the menu.
 3. Click **More** > **Personalized Deeplink**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/307d55f-Personalized_deeplink.png",
-        "Create Personalized Deeplin",
-        1607
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Personalized Deeplink"
-    }
-  ]
-}
-[/block]
+<Image title="Create Personalized Deeplin" alt={1607} align="center" border={true} src="https://files.readme.io/307d55f-Personalized_deeplink.png">
+  Create Personalized Deeplink
+</Image>
 
 3. Type the @ symbol to personalize the deelink content using recommendations in the display text and URL fields.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8551529-Deeplink_popup_content_recommendation.png",
-        "Personalize Deeplink using Recommendations",
-        644
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Deeplink using Recommendations"
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Deeplink using Recommendations" alt={644} align="center" border={true} src="https://files.readme.io/8551529-Deeplink_popup_content_recommendation.png">
+  Personalize Deeplink using Recommendations
+</Image>
