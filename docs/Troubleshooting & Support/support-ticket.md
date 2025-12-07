@@ -27,35 +27,84 @@ You can raise support requests from the following: (i) CleverTap Dashboard and (
 To create a support ticket from within the CleverTap dashboard:
 
 1. Log into your Clevertap account. 
-2. Click the ![](https://files.readme.io/349fbe3-Need_Help_icon.png) icon and select _Create a Support Ticket_  from the list. The **Create Support Ticket** pop-up window opens.
+2. Click the ![](https://files.readme.io/349fbe3-Need_Help_icon.png) icon and select *Create a Support Ticket*  from the list. The **Create Support Ticket** pop-up window opens.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7353d37-Support_Ticket_from_CleverTap_Dashboard.gif",
-        "",
-        "Creating Support Ticket"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Creating Support Ticket"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Creating Support Ticket" align="center" border={true} src="https://files.readme.io/7353d37-Support_Ticket_from_CleverTap_Dashboard.gif">
+  Creating Support Ticket
+</Image>
 
 3. Enter the following details:
 
-| Fields                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Email ID                       | This field is prepopulated with your related email ID. This is not an editable field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Account ID                     | This field is prepopulated with your CT account ID. This is not an editable field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Account Name                   | This field is prepopulated with your account name. This is not an editable field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| \* What do you need help with? | Select from the drop-down option for which you need help.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| \* Category                    | <li> _Query_: Select this option for general inquiries or questions regarding CleverTap features, functionalities, or best practices. </li>
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Fields
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Email ID
+      </td>
+
+      <td>
+        This field is prepopulated with your related email ID. This is not an editable field.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Account ID
+      </td>
+
+      <td>
+        This field is prepopulated with your CT account ID. This is not an editable field.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Account Name
+      </td>
+
+      <td>
+        This field is prepopulated with your account name. This is not an editable field.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \*
+
+         What do you need help with?
+      </td>
+
+      <td>
+        Select from the drop-down option for which you need help.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        \*
+
+         Category
+      </td>
+
+      <td>
+        <li> *Query*: Select this option for general inquiries or questions regarding CleverTap features, functionalities, or best practices. </li>
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 <li> _Bug_: Select this option to report any technical issues, errors, or unexpected behavior experienced while using CleverTap. </li>
 <li> _Billing_: Select this option for inquiries related to billing, subscription plans, invoices, payment processing, or account billing details. </li>
 <li> _Feature Request_: Select this option to suggest new features, enhancements, or improvements you would like to see implemented in CleverTap. </li>
@@ -79,51 +128,23 @@ Our customer success team will receive the ticket along with pertinent account d
 
 To raise a support request from the Clevertap Help Center, visit the [CleverTap Help Center](https://help.clevertap.com/hc/en-us/requests/new) and select from the following options
 
-- _I have a CleverTap account_: If you choose this option, you will be advised to raise a ticket from within the CleverTap dashboard. 
-- _I can't log in to my CleverTap Dashboard, or I don't have a CleverTap account yet_: If you select this option, you are prompted to enter the details of the issue you are encountering.
+* *I have a CleverTap account*: If you choose this option, you will be advised to raise a ticket from within the CleverTap dashboard. 
+* *I can't log in to my CleverTap Dashboard, or I don't have a CleverTap account yet*: If you select this option, you are prompted to enter the details of the issue you are encountering.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc0572d-Submit_a_Request_-_Help_Center.png",
-        "",
-        "Submit a Support Request from the Help Center"
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true,
-      "caption": "Submit a Support Request from the Help Center"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Submit a Support Request from the Help Center" align="center" width="65% " border={true} src="https://files.readme.io/cc0572d-Submit_a_Request_-_Help_Center.png">
+  Submit a Support Request from the Help Center
+</Image>
 
 # Track A Support Request
 
-After you create your support ticket, you can track it from _Ticket Dashboard_ > _Need Help?_. The Ticket Dashboard lists the support tickets created with their status. You can also find the ticket history on this page.
+After you create your support ticket, you can track it from *Ticket Dashboard* > *Need Help?*. The Ticket Dashboard lists the support tickets created with their status. You can also find the ticket history on this page.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e8083e-image.png",
-        null,
-        "Track Your Support Request"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Track Your Support Request"
-    }
-  ]
-}
-[/block]
+<Image alt="Track Your Support Request" align="center" border={true} src="https://files.readme.io/8e8083e-image.png">
+  Track Your Support Request
+</Image>
 
 # FAQ
 
 ## How do I create a support ticket if I'm not logged into the CleverTap dashboard?
 
-If you are not logged into the CleverTap dashboard, you can create a support ticket by visiting the [CleverTap Help Center](https://help.clevertap.com/hc/en-us/requests/new). Select the option _I can't log in to my CleverTap Dashboard, or I don't have a CleverTap account yet_ from the dropdown, and enter the details of your issue.
+If you are not logged into the CleverTap dashboard, you can create a support ticket by visiting the [CleverTap Help Center](https://help.clevertap.com/hc/en-us/requests/new). Select the option *I can't log in to my CleverTap Dashboard, or I don't have a CleverTap account yet* from the dropdown, and enter the details of your issue.
