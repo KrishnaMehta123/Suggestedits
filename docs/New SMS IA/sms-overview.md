@@ -37,11 +37,11 @@ The table below outlines the key advantages:
 
 CleverTap supports message-level functionality to enable scalable, compliant, and personalized communication.
 
-| Feature             | Description                                                                |
-| ------------------- | -------------------------------------------------------------------------- |
-| Message Length      | Up to 160 characters per segment (GSM-7), 70 characters for Unicode        |
-| Sender ID           | Long codes, shortcodes, or alphanumeric (6–11 characters)                  |
-| Personalization     | Use dynamic fields such as {{first\_name}}, {{order\_id}}, {{promo\_code}} |
-| Delivery Reports    | Sent, Delivered, and Failed statuses available in real-time                |
-| Two-Way Interaction | Automatically processes STOP, HELP, and custom replies                     |
-| URL Whitelisting    | Improves deliverability by registering link domains with carriers          |
+| Feature             | Description                                                                      |
+| ------------------- | -------------------------------------------------------------------------------- |
+| Message Length      | Up to 160 characters per segment (GSM-7), 70 characters for Unicode              |
+| Sender ID           | Long codes, shortcodes, or alphanumeric (6–11 characters)                        |
+| Personalization     | Use dynamic fields such as \{\{first\_name}}, \{\{order\_id}}, \{\{promo\_code}} |
+| Delivery Reports    | Sent, Delivered, and Failed statuses available in real-time                      |
+| Two-Way Interaction | Automatically processes STOP, HELP, and custom replies                           |
+| URL Whitelisting    | Improves deliverability by registering link domains with carriers                |
