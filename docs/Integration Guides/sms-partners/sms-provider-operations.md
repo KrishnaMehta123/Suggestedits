@@ -11,29 +11,17 @@ next:
   description: ''
 ---
 # Overview
+
 This section describes actions for the available SMS service providers.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a8a68c2-SMS_setup_provider_archive_edit.png",
-        "SMS_setup_provider_archive_edit.png",
-        1183,
-        698,
-        "#f5f6fb"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="SMS_setup_provider_archive_edit.png" alt={1183} className="border" border={true} src="https://files.readme.io/a8a68c2-SMS_setup_provider_archive_edit.png" />
+
 # Archive Service Providers
 
 You can archive any current SMS service providers from the SMS settings. Archiving the SMS service provider stops any active *Campaigns* or *Journeys* for this provider. The archived provider will not be available for use in the future. However, it will still retain the provider stats. 
 
 Follow the steps to archive an SMS service provider:
+
 1. From the CleverTap dashboard, navigate to *Settings > Channels > SMS > Providers* tab. 
 2. Click the ellipsis next to the provider. 
 3. Select *Archive* from the list. 
@@ -43,6 +31,7 @@ Follow the steps to archive an SMS service provider:
 You can delete any of the current SMS service providers from the SMS settings. Deleting the SMS service provider will remove all existing data from our system and stop any active *Campaigns* or *Journeys*. The deleted provider will not be available for use in the future.
 
 Follow the steps to delete an SMS service provider:
+
 1. From the CleverTap dashboard, navigate to *Settings > Channels > SMS > Providers* tab. 
 2. Click the ellipsis next to the provider. 
 3. Select *Delete* from the list.
@@ -52,6 +41,7 @@ Follow the steps to delete an SMS service provider:
 Edit the SMS settings to change *Provider credentials*.
 
 Follow the steps to edit provider settings:
+
 1. From the CleverTap dashboard, navigate to *Settings > Channels > SMS > Providers* tab. 
 2. Click the ellipsis next to the provider. 
 3. Select *Edit settings* from the list. The *Provider credentials* window displays.
