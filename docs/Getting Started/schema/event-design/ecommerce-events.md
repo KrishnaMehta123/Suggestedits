@@ -33,7 +33,7 @@ Below are the essential events that should be tracked on your e-commerce platfor
 |                   | Product ID               | Identifier for the product (e.g., SKU).                                                         | String    |
 |                   | Category                 | Name of the product category (e.g., Electronics).                                               | String    |
 |                   | Selling Price            | Price of the viewed product.                                                                    | Integer   |
-|                   | Stock Availability       | Indicates if the product is in stock. The _Buy Now_ button appears when the stock is available. | String    |
+|                   | Stock Availability       | Indicates if the product is in stock. The *Buy Now* button appears when the stock is available. | String    |
 | Added to Cart     |                          | Captured when a user adds a product to the cart.                                                |           |
 |                   | Product Name             | Name of the product added to the cart.                                                          | String    |
 |                   | Product ID               | Unique identifier for the added product (e.g., SKU).                                            | String    |
