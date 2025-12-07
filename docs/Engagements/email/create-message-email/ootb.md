@@ -26,9 +26,47 @@ Alongside each use case, you’ll find a breakdown of customizable components li
 
 <br />
 
-| Template Name     | Description                                                                                     | Use case                                                                                        | Components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| :---------------- | :---------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Birthday Template | A celebratory template designed to acknowledge a customer’s birthday and make them feel valued. | A celebratory template designed to acknowledge a customer’s birthday and make them feel valued. | <li> [Replace the Logo](doc:ootb#1-replace-the-logo) </li><li>[Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)</li> <li> [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas) </li> <li>[Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter) </li> <li>[Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)</li>  <li>[Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)</li> |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Template Name
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Use case
+      </th>
+
+      <th>
+        Components
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Birthday Template
+      </td>
+
+      <td>
+        A celebratory template designed to acknowledge a customer’s birthday and make them feel valued.
+      </td>
+
+      <td>
+        A celebratory template designed to acknowledge a customer’s birthday and make them feel valued.
+      </td>
+
+      <td>
+        <li> [Replace the Logo](doc:ootb#1-replace-the-logo) </li><li>[Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)</li> <li> [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas) </li> <li>[Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter) </li> <li>[Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)</li>  <li>[Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)</li>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <br />
 
@@ -217,12 +255,12 @@ A post-interaction follow-up template used to collect user opinions and improve 
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
 
 ### Template Code
 
@@ -360,13 +398,13 @@ A promotional email that incentivizes users to make their first purchase using a
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -522,14 +560,14 @@ A high-conversion template designed to build urgency around a limited-time offer
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
-- [Configure the Countdown Timer](doc:ootb#countdown-timer-flash-sale-only)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Configure the Countdown Timer](doc:ootb#countdown-timer-flash-sale-only)
 
 ```html HTML
 <!DOCTYPE html>
@@ -701,13 +739,13 @@ Re-engages users who have added items to their cart but did not complete the pur
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -1025,13 +1063,13 @@ An exclusive offer template that gives early access to select customers before t
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html HTML
 <!DOCTYPE html>
@@ -1213,13 +1251,13 @@ A transactional template used to confirm new user sign-ups or secure account act
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html HTML
 <!DOCTYPE html>
@@ -1413,12 +1451,12 @@ A relationship-nurturing template that celebrates a customer's anniversary with 
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html HTML
 <!DOCTYPE html>
@@ -1617,12 +1655,12 @@ Shares important business updates, new features, or informational content that d
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html HTML
 <!DOCTYPE html>
@@ -1771,12 +1809,12 @@ A template that alerts users about expiring loyalty points and urges them to use
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color) 
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color) 
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html
 <!DOCTYPE html>
@@ -1923,10 +1961,10 @@ A retention-focused template that updates users about their earned loyalty point
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html
 <!DOCTYPE html>
@@ -2070,13 +2108,13 @@ A recurring email layout used to share curated content like blogs, product updat
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html
 <!DOCTYPE html>
@@ -2226,13 +2264,13 @@ A transactional template confirming successful delivery of an order.
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html
 <!DOCTYPE html>
@@ -2373,13 +2411,13 @@ A confirmation email sent after a customer places an order.
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ```html
 <!DOCTYPE html>
@@ -2527,12 +2565,12 @@ An update email informing customers that their order has been dispatched.
 
 **Components:**
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
 
 ```html
 <!DOCTYPE html>
@@ -2680,13 +2718,13 @@ Sends a reset password link to users who have forgotten or initiated a reset req
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -2802,19 +2840,19 @@ A high-impact marketing email used to announce ongoing deals, highlight product 
 
 ### Use Case Examples
 
-- Announce a limited-time festive discount.
-- Promote newly launched products or collections.
-- Re-engage users with a category-specific deal.
+* Announce a limited-time festive discount.
+* Promote newly launched products or collections.
+* Re-engage users with a category-specific deal.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -2976,12 +3014,12 @@ This growth marketing template is crafted to boost customer acquisition through 
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images) 
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy) 
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images) 
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy) 
 
 ### Template Code
 
@@ -3118,23 +3156,23 @@ This personalized content email template is designed to showcase relevant video 
 
 ### Use Case Examples
 
-- Suggest items based on browsing, cart, or purchase history 
-- Recommend articles, videos, or learning modules based on prior engagement or interests.
-- Promote complementary or premium products to increase average order value 
-- Engage users post-transaction with related product or content recommendations.
-- Bring users back by showcasing trending or personalized items based on past behavior.
-- Tailor deals or discounts based on recommended categories or affinity tags.
-- Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
+* Suggest items based on browsing, cart, or purchase history 
+* Recommend articles, videos, or learning modules based on prior engagement or interests.
+* Promote complementary or premium products to increase average order value 
+* Engage users post-transaction with related product or content recommendations.
+* Bring users back by showcasing trending or personalized items based on past behavior.
+* Tailor deals or discounts based on recommended categories or affinity tags.
+* Delivers curated video, show, or episode suggestions to users to enhance discovery, engagement, and viewership based on recent behavior.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template
 
@@ -3441,19 +3479,19 @@ This product-focused promotional template showcases category-wise products, Men,
 
 ### Use Case Examples
 
-- Promote seasonal or new arrivals across different product categories.
-- Highlight interest-based collections (for example, Men, Women, Kids, Pets).
-- Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
+* Promote seasonal or new arrivals across different product categories.
+* Highlight interest-based collections (for example, Men, Women, Kids, Pets).
+* Encourage exploration through curated visual sections such as Trending Now, Recommended for You, or Back in Stock.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -3868,13 +3906,13 @@ Encourages churned or inactive users to return by offering a compelling incentiv
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -4208,13 +4246,13 @@ Confirms a successful subscription or entices users to upgrade by highlighting p
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -4356,20 +4394,20 @@ This is an interactive email template designed to gamify the user experience by 
 
 ### Use Case Examples
 
-- Engage users during festive or seasonal campaigns with surprise offers.
-- Reactivate dormant users by giving them a chance to win a reward.
-- Reward loyal customers with a fun, interactive coupon reveal.
-- Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
+* Engage users during festive or seasonal campaigns with surprise offers.
+* Reactivate dormant users by giving them a chance to win a reward.
+* Reward loyal customers with a fun, interactive coupon reveal.
+* Launch a limited-time “scratch-to-win” contest to drive urgency and clicks.
 
 ### Template Customization Options
 
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -4498,16 +4536,16 @@ A warm onboarding email template used to greet new users, introduce your brand, 
 
 ### Use Case Examples
 
-- Introduces new subscribers to the brand 
-- Highlights key benefits of your product and encourages first engagement or purchases.
-- ### Template Customization Options
-- [Replace the Logo](doc:ootb#1-replace-the-logo)
-- [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
-- [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
-- [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
-- [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
-- [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
-- [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
+* Introduces new subscribers to the brand 
+* Highlights key benefits of your product and encourages first engagement or purchases.
+* ### Template Customization Options
+* [Replace the Logo](doc:ootb#1-replace-the-logo)
+* [Update Banner/Product Images](doc:ootb#2-update-bannerproduct-images)
+* [Update Call-To-Actions (CTAs)](https://staging.docs.user.clevertap.net/docs/ootb#3-call-to-actions-ctas)
+* [Update Links in the Header/Footer](doc:ootb#4-update-links-in-the-headerfooter)
+* [Change the Theme or Background Color](doc:ootb#5-change-the-theme-or-background-color)
+* [Update the Privacy Policy](doc:ootb#update-the-privacy-policy)
+* [Update Social Media Links and Download Links](doc:ootb#update-social-media-links-and-download-links)
 
 ### Template Code
 
@@ -4638,9 +4676,8 @@ A warm onboarding email template used to greet new users, introduce your brand, 
 </html>
 ```
 
-~~~\`html Rounded Borders
-
-~~~
+```&#x60;html Rounded Borders
+```
 
 # Template Customization Options
 
@@ -4671,8 +4708,8 @@ To display your brand’s logo at the top of the email, ensuring immediate brand
    ```
 
 3. Optionally customize:
-   - `alt`: Add accessible text such as `"Your Brand Logo"`
-   - `width` and `height`: Adjust only if required (default is typically `127px × 58px`)
+   * `alt`: Add accessible text such as `"Your Brand Logo"`
+   * `width` and `height`: Adjust only if required (default is typically `127px × 58px`)
 
 ### Option 2: Using the CleverTap Visual Editor
 
@@ -4680,8 +4717,8 @@ To display your brand’s logo at the top of the email, ensuring immediate brand
 2. Click on the existing logo image in the top section of the email.
 3. In the toolbar, click **Replace Image** or the **image icon**.
 4. Choose one of the following:
-   - **Upload** a new image file (preferably PNG or SVG for sharpness), or  
-   - Paste the hosted image link in the **Image URL** field.
+   * **Upload** a new image file (preferably PNG or SVG for sharpness), or  
+   * Paste the hosted image link in the **Image URL** field.
 5. Click **Add** or **Apply**.
 6. Use the drag handles or the **Style** panel to adjust logo size and alignment as needed.
 7. Click **Done**, and preview the email to ensure correct rendering.
@@ -4697,7 +4734,7 @@ To display your brand’s logo at the top of the email, ensuring immediate brand
 | **What's in the Store**                 | The logo size can vary and may be around **146px width**. Adjustments may be required for clarity in small areas.       |
 
 > 📘 Note
-> 
+>
 > For templates listed above, verify logo alignment, spacing, and sizing on both mobile and desktop previews after replacement.
 
 ## 2. Update Banner/Product Images
@@ -4724,10 +4761,10 @@ To visually highlight products, offers, or campaigns at the top of the email usi
 3. Update the `alt` attribute to provide descriptive alternative text for accessibility and fallback scenarios.
 
 4. Ensure the image meets the following specifications:
-   - **Recommended size**: 600px (width) × 400px (height)
-   - **Aspect ratio**: 3:2
-   - **File formats**: `.jpg`, `.png`, `.gif`
-   - **Maximum file size**: Under 1MB
+   * **Recommended size**: 600px (width) × 400px (height)
+   * **Aspect ratio**: 3:2
+   * **File formats**: `.jpg`, `.png`, `.gif`
+   * **Maximum file size**: Under 1MB
 
 ### Option 2: Using the CleverTap Visual Editor
 
@@ -4735,8 +4772,8 @@ To visually highlight products, offers, or campaigns at the top of the email usi
 2. Click on the existing banner image.
 3. In the toolbar, click **Replace Image** or the **image icon**.
 4. Either:
-   - **Upload** a new image (recommended size: 600×400px), or
-   - Paste a hosted image link into the **Image URL** field.
+   * **Upload** a new image (recommended size: 600×400px), or
+   * Paste a hosted image link into the **Image URL** field.
 5. Click **Add** or **Apply**.
 6. Use the drag handles or the **Style** panel to adjust alignment and spacing.
 7. Click **Done**, then preview the email across screen sizes to confirm correct rendering.
@@ -4745,21 +4782,21 @@ To visually highlight products, offers, or campaigns at the top of the email usi
 
 Some templates use custom-sized banners or include grid layouts with smaller product tiles instead of a single large banner.
 
-| Template Name                          | Banner Type              | Dimensions / Notes                                 |
-| -------------------------------------- | ------------------------ | -------------------------------------------------- |
-| **Cart Abandonment**                   | Standard Banner          | 600×400px banner and optional product grid         |
-| **Newsletter**                         | Standard Banner          | 600×400px                                          |
-| **Loyalty Expiry**                     | Standard Banner          | 600×400px                                          |
-| **Order Placed / Shipped / Delivered** | Standard Banner          | 600×400px                                          |
-| **Password Reset**                     | Standard Banner          | 600×400px                                          |
-| **Access to Early Sales**              | Standard Banner + Grid   | 600×400px banner, plus product grid                |
-| **Flash Sale**                         | Product Cards Grid       | Countdown and product cards (approx. 247×383px)    |
-| **Show Recommendation (Black/White)**  | Grid Tiles               | 2–3 column layout, 180–250px width per tile        |
-| **What’s in the Store**                | Hero Grid                | 3-column layout, 200–250px width per tile          |
-| **Promotional**                        | Banner + Grid            | 600px banner, 2-column product grid (~270px width) |
-| **Referral** (specific designs)        | Side-by-side Tiles       | Benefit tiles; sizes vary                          |
-| **Winback**                            | Hero Grid                | 2–3 column layout with product images (~247×383px) |
-| **Subscription**                       | Banner + Featured Blocks | 600×400px banner with optional tiles               |
+| Template Name                          | Banner Type              | Dimensions / Notes                                  |
+| -------------------------------------- | ------------------------ | --------------------------------------------------- |
+| **Cart Abandonment**                   | Standard Banner          | 600×400px banner and optional product grid          |
+| **Newsletter**                         | Standard Banner          | 600×400px                                           |
+| **Loyalty Expiry**                     | Standard Banner          | 600×400px                                           |
+| **Order Placed / Shipped / Delivered** | Standard Banner          | 600×400px                                           |
+| **Password Reset**                     | Standard Banner          | 600×400px                                           |
+| **Access to Early Sales**              | Standard Banner + Grid   | 600×400px banner, plus product grid                 |
+| **Flash Sale**                         | Product Cards Grid       | Countdown and product cards (approx. 247×383px)     |
+| **Show Recommendation (Black/White)**  | Grid Tiles               | 2–3 column layout, 180–250px width per tile         |
+| **What’s in the Store**                | Hero Grid                | 3-column layout, 200–250px width per tile           |
+| **Promotional**                        | Banner + Grid            | 600px banner, 2-column product grid (\~270px width) |
+| **Referral** (specific designs)        | Side-by-side Tiles       | Benefit tiles; sizes vary                           |
+| **Winback**                            | Hero Grid                | 2–3 column layout with product images (\~247×383px) |
+| **Subscription**                       | Banner + Featured Blocks | 600×400px banner with optional tiles                |
 
 For templates using grid-based layouts or product tiles, always match the original image dimensions and maintain consistent spacing to ensure the layout remains visually balanced and responsive.
 
@@ -4801,8 +4838,8 @@ To guide the user to take a specific action within the email, such as clicking a
 2. Click on the existing CTA button (or link).
 3. In the toolbar, click **Edit** or the **link icon**.
 4. Either:
-   - **Update the link URL** to the desired destination, or
-   - **Change the CTA text** to suit your new action.
+   * **Update the link URL** to the desired destination, or
+   * **Change the CTA text** to suit your new action.
 5. Customize the styling, such as adjusting the button's size, padding, and color, using the editor's **Style** options.
 6. Click **Done**, and preview the email to confirm that the CTA behaves as expected.
 
@@ -4820,12 +4857,12 @@ To guide the user to take a specific action within the email, such as clicking a
 
 ### Customizable Elements:
 
-- **Text**: Modify the text within the anchor tag (e.g., "Discover More" → "Shop Now").
-- **URL**: Update the `href` attribute with the desired link (e.g., `href="https://your-domain.com"`)
-- **Styling**: Adjust the CSS properties to fit your design specifications (e.g., background color, padding, text size).
+* **Text**: Modify the text within the anchor tag (e.g., "Discover More" → "Shop Now").
+* **URL**: Update the `href` attribute with the desired link (e.g., `href="https://your-domain.com"`)
+* **Styling**: Adjust the CSS properties to fit your design specifications (e.g., background color, padding, text size).
 
 > 📘 Best Practices
-> 
+>
 > Always make sure the CTAs are clear and actionable, and consider using verbs like "Buy," "Get Started," "Learn More," or "Shop Now."
 
 ## 4. Update Links in the Header/Footer
@@ -4842,7 +4879,7 @@ To update the links in the header or footer sections of the email, such as Priva
    ```
 
 2. **Update the Link**:
-   - Replace the `href` URL with the new destination:
+   * Replace the `href` URL with the new destination:
      ```html
      href="https://your-domain.com/new-link"
      ```
@@ -4890,11 +4927,11 @@ To update the links in the header or footer sections of the email, such as Priva
 | **Loyalty Points Template**     | Footer links might refer to **loyalty rewards** such as "View Rewards" or "Redeem Points". Ensure the links reflect the correct loyalty program page.                  |
 
 > 📘 Key Notes:
-> 
-> - **Unsubscribe Link**: For compliance with regulations such as GDPR and CAN-SPAM, all templates that include an **Unsubscribe** link in the footer must ensure it directs to the correct unsubscribe mechanism.
-> - **Social Media Links**: Ensure all social media links, like those for Facebook, Instagram, etc., are up-to-date and lead to your current active profiles.
-> - **Dynamic Links**: Some templates, like **Referral** or **Cart Abandonment**, require dynamic links that change based on user activity. Make sure these URLs are generated dynamically by your platform or manually updated.
-> - **Call-to-Actions (CTAs)**: Some templates, especially those with **sales**, **product promotions**, or **loyalty rewards**, might have CTAs that need to be consistently checked and updated based on current offers or time-sensitive promotions.
+>
+> * **Unsubscribe Link**: For compliance with regulations such as GDPR and CAN-SPAM, all templates that include an **Unsubscribe** link in the footer must ensure it directs to the correct unsubscribe mechanism.
+> * **Social Media Links**: Ensure all social media links, like those for Facebook, Instagram, etc., are up-to-date and lead to your current active profiles.
+> * **Dynamic Links**: Some templates, like **Referral** or **Cart Abandonment**, require dynamic links that change based on user activity. Make sure these URLs are generated dynamically by your platform or manually updated.
+> * **Call-to-Actions (CTAs)**: Some templates, especially those with **sales**, **product promotions**, or **loyalty rewards**, might have CTAs that need to be consistently checked and updated based on current offers or time-sensitive promotions.
 
 ## 5. Change the Theme or Background Color
 
@@ -4907,7 +4944,7 @@ To modify the background color or overall theme of the email to match your brand
    <table style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff;" width="100%" cellspacing="0" cellpadding="0" border="0">
    ```
 
-2. **Update the Background Color**:  
+2. **Update the Background Color**:\
    Replace the existing `background` attribute value with your desired color. For example:
    ```html
    background: #f0f0f0;
@@ -4929,13 +4966,13 @@ To ensure that the Privacy Policy link in the email template directs users to th
 
 ### Option 1: Direct Code Editing
 
-1. **Locate the Privacy Policy Link**:  
+1. **Locate the Privacy Policy Link**:\
    Search for the `<a>` tag associated with the Privacy Policy in the footer or header section of your template. A typical code structure might look like:
    ```html
    <a href="#" class="f-nav-link" style="font-family: 'Poppins', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; color: #939393 !important; text-decoration: none;">Privacy Policy</a>
    ```
 
-2. **Update the `href` URL**:  
+2. **Update the`href` URL**:\
    Replace the current `href="#"` with the correct URL for your Privacy Policy page. For example:
    ```html
    href="https://yourdomain.com/privacy-policy"
@@ -4961,7 +4998,7 @@ To update and ensure that all social media and download links in your email temp
 
 ### Option 1: Direct Code Editing
 
-1. **Locate the Social Media and Download Sections**:  
+1. **Locate the Social Media and Download Sections**:\
    Search for sections in the HTML code related to social media platforms (such as Facebook, Twitter, Instagram, etc.) and download buttons (such as Android or Apple store download links). You may see something like:
    ```html
    <a href="https://your-facebook-link" target="_blank">
@@ -4995,7 +5032,7 @@ To update and ensure that all social media and download links in your email temp
    </a>
    ```
 
-3. **Save and Preview**:  
+3. **Save and Preview**:\
    After updating the URLs for both social media and download links, save the file and preview the email to ensure all links work properly.
 
 ### Option 2: Using the CleverTap Visual Editor
@@ -5013,7 +5050,7 @@ To update and ensure that all social media and download links in your email temp
 
 ### Steps:
 
-- Use a hosted GIF or PNG and replace image `src`.
+* Use a hosted GIF or PNG and replace image `src`.
 
 ```html
 <img src="timer.gif" alt="Countdown Timer" style="width: 100%;" />
@@ -5033,20 +5070,20 @@ This AMP template is designed to promote a curated selection of new arrivals, tr
 
 ### Use Case Examples
 
-- Highlight newly launched or trending products from your catalog.
-- Personalize the product showcase based on the user’s recent activity or preferences.
-- Run weekly or monthly What’s New campaigns for returning users.
-- Drive conversions by enabling users to click through to product pages without friction.
+* Highlight newly launched or trending products from your catalog.
+* Personalize the product showcase based on the user’s recent activity or preferences.
+* Run weekly or monthly What’s New campaigns for returning users.
+* Drive conversions by enabling users to click through to product pages without friction.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update the Privacy Policy
-- Update Social Media and Download Links
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update the Privacy Policy
+* Update Social Media and Download Links
 
 ### Template Code
 
@@ -6592,18 +6629,18 @@ This AMP email template is designed to help recover lost sales by reminding user
 
 ### Use Case Examples
 
-- Recover lost revenue by reminding users about items left in their shopping cart.
-- Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
-- Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
-- Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
+* Recover lost revenue by reminding users about items left in their shopping cart.
+* Re-engage users with personalized product suggestions based on past purchases or browsing behavior.
+* Promote urgency with limited-time offers or low stock alerts tied to abandoned items.
+* Enhance the shopping experience by allowing users to interact with product carousels or resume checkout directly within the email
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
 
 ### Template Code
 
@@ -8624,18 +8661,18 @@ This AMP template delivers a gamified experience within the email itself. It all
 
 ### Use Case Examples
 
-- Launch surprise reward campaigns to boost conversions.
-- Drive festive or seasonal promotions with a gamified touch.
-- Encourage user engagement with loyalty program perks.
-- Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
+* Launch surprise reward campaigns to boost conversions.
+* Drive festive or seasonal promotions with a gamified touch.
+* Encourage user engagement with loyalty program perks.
+* Re-engage inactive users with a “Scratch To Unlock” coupon or deal.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Replace Background
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
+* Replace the Logo
+* Replace Background
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
 
 ### Template Code
 
@@ -8953,18 +8990,18 @@ This AMP template adds a fun, gamified interaction to your email by letting user
 
 ### Use Case Examples
 
-- Drive conversions during sales events or festivals with spin-to-win deals.
-- Run promotional campaigns that reward users with random offers.
-- Re-engage dormant users with a playful incentive.
-- Launch loyalty or referral-based programs with interactive rewards.
+* Drive conversions during sales events or festivals with spin-to-win deals.
+* Run promotional campaigns that reward users with random offers.
+* Re-engage dormant users with a playful incentive.
+* Launch loyalty or referral-based programs with interactive rewards.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Replace Background
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
+* Replace the Logo
+* Replace Background
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
 
 ### Template Code
 
@@ -9406,19 +9443,19 @@ This AMP template enables you to collect user input directly within the email, a
 
 ### Use Case Examples
 
-- Gather user feedback post-purchase or post-interaction.
-- Collect survey responses (for example, NPS survey, product ratings, and so on).
-- Enable newsletter or webinar sign-ups within the email.
-- Registration for events, contests, or loyalty programs.
+* Gather user feedback post-purchase or post-interaction.
+* Collect survey responses (for example, NPS survey, product ratings, and so on).
+* Enable newsletter or webinar sign-ups within the email.
+* Registration for events, contests, or loyalty programs.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update Social Media and Download Links
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update Social Media and Download Links
 
 ### Template Code
 
@@ -11112,19 +11149,19 @@ This AMP template offers users an embedded calculator directly within the email,
 
 ### Use Case Examples
 
-- Promote new loan or credit products with an embedded EMI estimator.
-- Assist users in planning repayments based on tenure and interest rate.
-- Offer personalized finance tools in engagement campaigns.
-- Support comparison scenarios between multiple loan products.
+* Promote new loan or credit products with an embedded EMI estimator.
+* Assist users in planning repayments based on tenure and interest rate.
+* Offer personalized finance tools in engagement campaigns.
+* Support comparison scenarios between multiple loan products.
 
 ### Template Customization Options
 
-- Find the SRC attribute in the code
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update Social Media Links and Download Links
+* Find the SRC attribute in the code
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update Social Media Links and Download Links
 
 ### Template Code
 
@@ -11619,19 +11656,19 @@ This AMP template allows users to calculate the potential returns of their Syste
 
 ### Use Case Examples
 
-- Educate users about SIP benefits while promoting mutual fund products.
-- Encourage investment planning by allowing quick in-email projections.
-- Enable financial goal-based marketing through interactive calculators.
-- Re-engage users by helping them visualize long-term returns.
+* Educate users about SIP benefits while promoting mutual fund products.
+* Encourage investment planning by allowing quick in-email projections.
+* Enable financial goal-based marketing through interactive calculators.
+* Re-engage users by helping them visualize long-term returns.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update Social Media Links and Download Links
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update Social Media Links and Download Links
 
 ### Template Code
 
@@ -12135,18 +12172,18 @@ This AMP template empowers users to estimate insurance premiums based on paramet
 
 ### Use Case Examples
 
-- Promote insurance plans with embedded quote estimators.
-- Help users calculate premiums before applying for a policy.
-- Improve lead conversion by reducing drop-offs during research.
+* Promote insurance plans with embedded quote estimators.
+* Help users calculate premiums before applying for a policy.
+* Improve lead conversion by reducing drop-offs during research.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update Social Media and Download Links
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update Social Media and Download Links
 
 ### Template Code
 
@@ -12638,21 +12675,21 @@ This AMP template dynamically showcases relevant products based on a user’s pa
 
 ### Use Case Examples
 
-- Recommend products personalized to users’ past interactions or preferences.
-- Launch seasonal or trending collections in an interactive format.
-- Encourage repeat purchases with dynamic product carousels and filters.
-- Promote gender- or category-specific catalogs (for example, Men/Women collections).
+* Recommend products personalized to users’ past interactions or preferences.
+* Launch seasonal or trending collections in an interactive format.
+* Encourage repeat purchases with dynamic product carousels and filters.
+* Promote gender- or category-specific catalogs (for example, Men/Women collections).
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update the Privacy Policy
-- Update Social Media Links and Download Links
-- Add More Filters: Add or modify product filters
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update the Privacy Policy
+* Update Social Media Links and Download Links
+* Add More Filters: Add or modify product filters
 
 ### Template Code
 
@@ -13517,20 +13554,20 @@ This AMP template introduces users to personalized product suggestions using int
 
 ### Use Case Examples
 
-- Introduce new users to relevant collections based on browsing behavior.
-- Highlight bestsellers or staff picks to increase discovery.
-- Re-engage dormant users with personalized product nudges.
-- Encourage first purchases through category filters and CTAs.
+* Introduce new users to relevant collections based on browsing behavior.
+* Highlight bestsellers or staff picks to increase discovery.
+* Re-engage dormant users with personalized product nudges.
+* Encourage first purchases through category filters and CTAs.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update Social Media Links and Download Links
-- How to Add More Filters
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update Social Media Links and Download Links
+* How to Add More Filters
 
 ### Template Code
 
@@ -15106,19 +15143,19 @@ This AMP template enables brands to collect real-time customer feedback directly
 
 ### Use Case Examples
 
-- Collect post-purchase feedback to improve product or service quality.
-- Trigger surveys after support interactions or delivery completion.
-- Capture Net Promoter Score (NPS) and satisfaction scores.
-- Gather insights during product beta testing or soft launches.
+* Collect post-purchase feedback to improve product or service quality.
+* Trigger surveys after support interactions or delivery completion.
+* Capture Net Promoter Score (NPS) and satisfaction scores.
+* Gather insights during product beta testing or soft launches.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Change the Theme or Background Color
-- Update Social Media Links and Download Links
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Change the Theme or Background Color
+* Update Social Media Links and Download Links
 
 ### Template Code
 
@@ -15706,18 +15743,18 @@ When clicked, each tile displays an offer, message, or interactive form, enablin
 
 ### Use Case Examples
 
-- Zodiac-based Offer Engagement: Display tailored offers by the user’s zodiac sign.
-- Product Category Showcases: Let users explore offers based on product types (for example, electronics, apparel, beauty).
-- Festival/Seasonal Gifting: Show different recommendations for occasions (for example, Diwali gifts, Summer picks).
-- User Personas or Interests: Target users with content that aligns with their interests (for example, Fitness, Fashion, Tech).
+* Zodiac-based Offer Engagement: Display tailored offers by the user’s zodiac sign.
+* Product Category Showcases: Let users explore offers based on product types (for example, electronics, apparel, beauty).
+* Festival/Seasonal Gifting: Show different recommendations for occasions (for example, Diwali gifts, Summer picks).
+* User Personas or Interests: Target users with content that aligns with their interests (for example, Fitness, Fashion, Tech).
 
 ### Template Customization Options
 
-- Replace tile icons/text with your categories or offerings.
-- Configure the pop-up content per tile.
-- Update CTAs within the popups (e.g., View Deal, Claim Offer, Remind Me).
-- Modify header/footer with brand elements and policy links.
-- Adjust background colors and fonts to suit campaign tone.
+* Replace tile icons/text with your categories or offerings.
+* Configure the pop-up content per tile.
+* Update CTAs within the popups (e.g., View Deal, Claim Offer, Remind Me).
+* Modify header/footer with brand elements and policy links.
+* Adjust background colors and fonts to suit campaign tone.
 
 ### Template Code
 
@@ -16719,18 +16756,18 @@ This AMP template allows users to engage with an email by clicking on an image t
 
 ### Use Case Examples
 
-- Unlock hidden discounts in flash sales or festival campaigns.
-- Gamify email experiences with “scratch-to-reveal” like formats.
-- Increase engagement during limited-time promotions.
-- Run surprise loyalty rewards or exclusive unlockable content.
+* Unlock hidden discounts in flash sales or festival campaigns.
+* Gamify email experiences with “scratch-to-reveal” like formats.
+* Increase engagement during limited-time promotions.
+* Run surprise loyalty rewards or exclusive unlockable content.
 
 ### Template Customization Options
 
-- Replace the Logo
-- Update Banner/Product Images
-- Update Call-To-Actions (CTAs)
-- Update Links in the Header/Footer
-- Modify Image Swapping Logic
+* Replace the Logo
+* Update Banner/Product Images
+* Update Call-To-Actions (CTAs)
+* Update Links in the Header/Footer
+* Modify Image Swapping Logic
 
 ### Template Code
 
