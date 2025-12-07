@@ -14,15 +14,419 @@ metadata:
 
 ## February
 
-[block:html]
-{
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Navbar + Filters + Main Content</title>\n  <style>\n    /* 🌟 Your Original CSS 🌟 */\n    .container {\n      max-width: 100%;\n      margin: 0 auto;\n      height: 100vh;\n      display: flex;\n      overflow: hidden;\n    }\n\n    .layout-wrapper {\n      display: flex;\n      width: 100%;\n    }\n\n    /* Navigation */\n    #leftNav {\n      width: 260px;\n      background-color: #F1F5FB;\n      padding: 20px;\n      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);\n      overflow-y: auto;\n      position: sticky;\n      top: 0;\n      height: 100vh;\n      box-sizing: border-box;\n    }\n\n    .nav-content {\n      display: flex;\n      flex-direction: column;\n    }\n\n    .topsearch-text {\n      font-size: 18px;\n      font-weight: bold;\n      margin-bottom: 20px;\n    }\n\n    .nav-link {\n      color: #434761;\n      font-size: 14px;\n      line-height: 32px;\n      padding: 5px 10px;\n      text-decoration: none;\n      border-radius: 4px;\n      transition: background 0.3s;\n    }\n\n    .nav-link:hover {\n      background-color: #E1E7F0;\n    }\n\n    .nav-link:active, .nav-link:focus {\n      color: #2962FF;\n    }\n\n    /* Filters and Content */\n    .filter-content-wrapper {\n      display: flex;\n      flex: 1;\n      overflow: hidden;\n    }\n\n    .filters {\n      width: 200px;\n      padding: 20px;\n      background: #fff;\n      border-left: 1px solid #ddd;\n      overflow-y: auto;\n      position: sticky;\n      top: 0;\n      height: 100vh;\n      box-sizing: border-box;\n    }\n\n    h4 {\n      font-size: 16px;\n      color: #444C5A;\n      font-weight: bold;\n    }\n\n    .filter-option {\n      display: flex;\n      align-items: center;\n      margin-bottom: 12px;\n      cursor: pointer;\n    }\n\n    .filter-option input {\n      margin-right: 10px;\n      width: 16px;\n      height: 16px;\n      cursor: pointer;\n    }\n\n    .content {\n      flex: 1;\n      padding: 20px;\n      overflow-y: auto;\n    }\n\n    .release-note {\n      background: white;\n      padding: 20px;\n      margin-bottom: 20px;\n      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n      transition: all 0.3s ease;\n    }\n\n    .badge {\n      font-size: 12px;\n      font-weight: bold;\n      color: white;\n      padding: 4px 8px;\n      border-radius: 5px;\n      display: inline-block;\n    }\n\n    .campaigns { background-color: #4CAF50; }\n    .journeys { background-color: #2962FF; }\n    .segments { background-color: #FF9800; }\n    .cohort { background-color: #9C27B0; }\n    .pivot { background-color: #FF5722; }\n\n    @media (max-width: 1024px) {\n      .layout-wrapper {\n        flex-direction: column;\n      }\n\n      #leftNav, .filters {\n        width: 100%;\n        height: auto;\n        position: static;\n      }\n\n      .content {\n        width: 100%;\n      }\n    }\n\n    @media (max-width: 768px) {\n      .container {\n        padding: 10px;\n      }\n\n      .release-note {\n        padding: 15px;\n        margin-bottom: 15px;\n      }\n\n      .badge {\n        font-size: 10px;\n        padding: 2px 4px;\n      }\n    }\n  </style>\n</head>\n<body>\n\n<div class=\"container\">\n  <!-- Left Navbar -->\n  <div id=\"leftNav\">\n    <div class=\"nav-content\">\n      <p class=\"topsearch-text\">Article Sections</p>\n      <a href=\"#section1\" class=\"nav-link\">Introduction</a>\n      <a href=\"#section2\" class=\"nav-link\">Features</a>\n      <a href=\"#section3\" class=\"nav-link\">Enhancements</a>\n      <a href=\"#section4\" class=\"nav-link\">Beta Updates</a>\n      <a href=\"#section5\" class=\"nav-link\">Conclusion</a>\n    </div>\n  </div>\n\n  <!-- Main Content and Filters -->\n  <div class=\"filter-content-wrapper\">\n    <div class=\"content\">\n      <div class=\"release-note campaigns-article\">\n        <div class=\"release-note-header\">\n          <h3>Event Personalization for Live Campaigns</h3>\n          <span class=\"badge campaigns\">CAMPAIGNS</span>\n        </div>\n        <p>Personalized push campaigns based on event properties to drive better targeting.</p>\n      </div>\n\n      <div class=\"release-note journeys-article\">\n        <div class=\"release-note-header\">\n          <h3>AI-Powered Message Optimization</h3>\n          <span class=\"badge journeys\">JOURNEYS</span>\n        </div>\n        <p>Enhancing real-time message archiving with Google Cloud Platform (GCP) support.</p>\n      </div>\n\n      <div class=\"release-note segments-article\">\n        <div class=\"release-note-header\">\n          <h3>Email Add-on for CleverTap Essentials Plan</h3>\n          <span class=\"badge segments\">SEGMENTS</span>\n        </div>\n        <p>Enables CleverTap as your Email Service Provider (ESP) without third-party integrations.</p>\n      </div>\n\n      <div class=\"release-note cohort-article\">\n        <div class=\"release-note-header\">\n          <h3>Enhanced Segmentation Options</h3>\n          <span class=\"badge cohort\">COHORT</span>\n        </div>\n        <p>Improved segmentation capabilities for better audience targeting and messaging.</p>\n      </div>\n\n      <div class=\"release-note pivot-article\">\n        <div class=\"release-note-header\">\n          <h3>Updated Campaign Analytics Dashboard</h3>\n          <span class=\"badge pivot\">PIVOT</span>\n        </div>\n        <p>Granular insights with reports broken down by tag groups.</p>\n      </div>\n    </div>\n\n    <!-- Filters -->\n    <div class=\"filters\">\n      <h4>FILTERS</h4>\n      <label class=\"filter-option\">\n        <input type=\"checkbox\" id=\"campaigns\">\n        <span class=\"badge campaigns\">CAMPAIGNS</span>\n      </label>\n      <label class=\"filter-option\">\n        <input type=\"checkbox\" id=\"journeys\">\n        <span class=\"badge journeys\">JOURNEYS</span>\n      </label>\n      <label class=\"filter-option\">\n        <input type=\"checkbox\" id=\"segments\">\n        <span class=\"badge segments\">SEGMENTS</span>\n      </label>\n      <label class=\"filter-option\">\n        <input type=\"checkbox\" id=\"cohort\">\n        <span class=\"badge cohort\">COHORT</span>\n      </label>\n      <label class=\"filter-option\">\n        <input type=\"checkbox\" id=\"pivot\">\n        <span class=\"badge pivot\">PIVOT</span>\n      </label>\n    </div>\n  </div>\n</div>\n\n</body>\n</html>\n"
-}
-[/block]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar + Filters + Main Content</title>
+  <style>
+    /* 🌟 Your Original CSS 🌟 */
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
 
+    .layout-wrapper {
+      display: flex;
+      width: 100%;
+    }
 
-[block:html]
-{
-  "html": "<style>\n  /* Main Layout */\n.container {\n  max-width: 1200px;\n  margin: 0 auto;\n  height: 100vh;\n  display:flex;\n  overflow: hidden;\n}\n\n.filter-content-wrapper {\n  gap: 12px;\n  height: 100vh;\n}\n\n.release-note-header {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n/* Filters */\n.filters {\n  width: 200px;\n  height: 100vh;\n  overflow-y: auto;\n  position: sticky;\n  top: 0;\n  padding: 10px;\n  box-sizing: border-box;\n}\n\nh4 {\n  font-size: 16px;\n  color: #444C5A;\n  font-weight: bold;\n}\n\n.filter-option {\n  display: flex;\n  align-items: center;\n  margin-bottom: 10px;\n  cursor: pointer;\n}\n\n.filter-option input {\n  margin-right: 10px;\n  width: 16px;\n  height: 16px;\n  cursor: pointer;\n}\n\n/* Content */\n.content {\n  flex: 1;\n  padding: 10px;\n  overflow-y: auto;\n}\n\n.release-note {\n  padding: 10px;\n  background-color: white;\n  margin-bottom: 20px;\n  transition: all 0.3s ease;\n}\n\n/* Badges */\n.badge {\n  font-size: 12px;\n  font-weight: 700;\n  color: white;\n  padding: 0px 4px;\n  border-radius: 5px;\n  display: inline-block;\n}\n\n/* Updated Badge Colors */\n.campaigns { background-color: #B0B0B0; }    /* Private Beta -> Campaigns */\n.journeys { background-color: #9E9E9E; }     /* Beta -> Journeys */\n.segments { background-color: #4CAF50; }     /* New Feature -> Segments */\n.cohort { background-color: #2962FF; }       /* Enhancement -> Cohort */\n.pivot { background-color: #673AB7; }        /* Update -> Pivot */\n\na {\n  text-decoration: none !important;\n}\n\n/* 🌟 Filtering Logic for Multiple Selections 🌟 */\n.filter-content-wrapper:has(input:checked) .release-note {\n  display: none;\n}\n\n.filter-content-wrapper:has(#campaigns:checked) .campaigns-article {\n  display: block;\n}\n\n.filter-content-wrapper:has(#journeys:checked) .journeys-article {\n  display: block;\n}\n\n.filter-content-wrapper:has(#segments:checked) .segments-article {\n  display: block;\n}\n\n.filter-content-wrapper:has(#cohort:checked) .cohort-article {\n  display: block;\n}\n\n.filter-content-wrapper:has(#pivot:checked) .pivot-article {\n  display: block;\n}\n\n.filter-content-wrapper:not(:has(input:checked)) .release-note {\n  display: block;\n}\n\n/* Tablets and small screens */\n@media (max-width: 1024px) {\n  .filter-content-wrapper {\n    flex-direction: column;\n  }\n  .filters {\n    width: 100%;\n    position: static;\n    top: auto;\n    padding: 15px;\n  }\n  .content {\n    width: 100%;\n  }\n}\n\n/* Mobile devices */\n@media (max-width: 768px) {\n  .container {\n    padding: 10px;\n  }\n\n  .content {\n    width: 100%;\n  }\n\n  .release-note {\n    padding: 10px;\n    margin-bottom: 15px;\n  }\n\n  .release-note-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 4px;\n  }\n\n  .badge {\n    font-size: 10px;\n    padding: 2px 4px;\n  }\n}\n</style>"
+    /* Navigation */
+    #leftNav {
+      width: 260px;
+      background-color: #F1F5FB;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .nav-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topsearch-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .nav-link {
+      color: #434761;
+      font-size: 14px;
+      line-height: 32px;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #E1E7F0;
+    }
+
+    .nav-link:active, .nav-link:focus {
+      color: #2962FF;
+    }
+
+    /* Filters and Content */
+    .filter-content-wrapper {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .filters {
+      width: 200px;
+      padding: 20px;
+      background: #fff;
+      border-left: 1px solid #ddd;
+      overflow-y: auto;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: #444C5A;
+      font-weight: bold;
+    }
+
+    .filter-option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    .filter-option input {
+      margin-right: 10px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .release-note {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .badge {
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .campaigns { background-color: #4CAF50; }
+    .journeys { background-color: #2962FF; }
+    .segments { background-color: #FF9800; }
+    .cohort { background-color: #9C27B0; }
+    .pivot { background-color: #FF5722; }
+
+    @media (max-width: 1024px) {
+      .layout-wrapper {
+        flex-direction: column;
+      }
+
+      #leftNav, .filters {
+        width: 100%;
+        height: auto;
+        position: static;
+      }
+
+      .content {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .release-note {
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      .badge {
+        font-size: 10px;
+        padding: 2px 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left Navbar -->
+  <div id="leftNav">
+    <div class="nav-content">
+      <p class="topsearch-text">Article Sections</p>
+      <a href="#section1" class="nav-link">Introduction</a>
+      <a href="#section2" class="nav-link">Features</a>
+      <a href="#section3" class="nav-link">Enhancements</a>
+      <a href="#section4" class="nav-link">Beta Updates</a>
+      <a href="#section5" class="nav-link">Conclusion</a>
+    </div>
+  </div>
+
+  <!-- Main Content and Filters -->
+  <div class="filter-content-wrapper">
+    <div class="content">
+      <div class="release-note campaigns-article">
+        <div class="release-note-header">
+          <h3>Event Personalization for Live Campaigns</h3>
+          <span class="badge campaigns">CAMPAIGNS</span>
+        </div>
+        <p>Personalized push campaigns based on event properties to drive better targeting.</p>
+      </div>
+
+      <div class="release-note journeys-article">
+        <div class="release-note-header">
+          <h3>AI-Powered Message Optimization</h3>
+          <span class="badge journeys">JOURNEYS</span>
+        </div>
+        <p>Enhancing real-time message archiving with Google Cloud Platform (GCP) support.</p>
+      </div>
+
+      <div class="release-note segments-article">
+        <div class="release-note-header">
+          <h3>Email Add-on for CleverTap Essentials Plan</h3>
+          <span class="badge segments">SEGMENTS</span>
+        </div>
+        <p>Enables CleverTap as your Email Service Provider (ESP) without third-party integrations.</p>
+      </div>
+
+      <div class="release-note cohort-article">
+        <div class="release-note-header">
+          <h3>Enhanced Segmentation Options</h3>
+          <span class="badge cohort">COHORT</span>
+        </div>
+        <p>Improved segmentation capabilities for better audience targeting and messaging.</p>
+      </div>
+
+      <div class="release-note pivot-article">
+        <div class="release-note-header">
+          <h3>Updated Campaign Analytics Dashboard</h3>
+          <span class="badge pivot">PIVOT</span>
+        </div>
+        <p>Granular insights with reports broken down by tag groups.</p>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <h4>FILTERS</h4>
+      <label class="filter-option">
+        <input type="checkbox" id="campaigns">
+        <span class="badge campaigns">CAMPAIGNS</span>
+      </label>
+      <label class="filter-option">
+        <input type="checkbox" id="journeys">
+        <span class="badge journeys">JOURNEYS</span>
+      </label>
+      <label class="filter-option">
+        <input type="checkbox" id="segments">
+        <span class="badge segments">SEGMENTS</span>
+      </label>
+      <label class="filter-option">
+        <input type="checkbox" id="cohort">
+        <span class="badge cohort">COHORT</span>
+      </label>
+      <label class="filter-option">
+        <input type="checkbox" id="pivot">
+        <span class="badge pivot">PIVOT</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<style>
+  /* Main Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  display:flex;
+  overflow: hidden;
 }
-[/block]
+
+.filter-content-wrapper {
+  gap: 12px;
+  height: 100vh;
+}
+
+.release-note-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Filters */
+.filters {
+  width: 200px;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-size: 16px;
+  color: #444C5A;
+  font-weight: bold;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.filter-option input {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.release-note {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Badges */
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  padding: 0px 4px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Updated Badge Colors */
+.campaigns { background-color: #B0B0B0; }    /* Private Beta -> Campaigns */
+.journeys { background-color: #9E9E9E; }     /* Beta -> Journeys */
+.segments { background-color: #4CAF50; }     /* New Feature -> Segments */
+.cohort { background-color: #2962FF; }       /* Enhancement -> Cohort */
+.pivot { background-color: #673AB7; }        /* Update -> Pivot */
+
+a {
+  text-decoration: none !important;
+}
+
+/* 🌟 Filtering Logic for Multiple Selections 🌟 */
+.filter-content-wrapper:has(input:checked) .release-note {
+  display: none;
+}
+
+.filter-content-wrapper:has(#campaigns:checked) .campaigns-article {
+  display: block;
+}
+
+.filter-content-wrapper:has(#journeys:checked) .journeys-article {
+  display: block;
+}
+
+.filter-content-wrapper:has(#segments:checked) .segments-article {
+  display: block;
+}
+
+.filter-content-wrapper:has(#cohort:checked) .cohort-article {
+  display: block;
+}
+
+.filter-content-wrapper:has(#pivot:checked) .pivot-article {
+  display: block;
+}
+
+.filter-content-wrapper:not(:has(input:checked)) .release-note {
+  display: block;
+}
+
+/* Tablets and small screens */
+@media (max-width: 1024px) {
+  .filter-content-wrapper {
+    flex-direction: column;
+  }
+  .filters {
+    width: 100%;
+    position: static;
+    top: auto;
+    padding: 15px;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .release-note {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .release-note-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+</style>
+`}</HTMLBlock>
