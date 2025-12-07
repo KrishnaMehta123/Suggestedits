@@ -12,23 +12,9 @@ next:
 ---
 Xiaomi Corporation made a significant announcement recently, notifying users about discontinuing the Mi Push service beyond Mainland China due to operational concerns. You might have already received communication regarding this matter (see the following image).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/216611a-Discontinuation_Message.png",
-        "",
-        "Mi Push Service Discontinuation Notification"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Mi Push Service Discontinuation Notification"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Mi Push Service Discontinuation Notification" align="center" border={true} src="https://files.readme.io/216611a-Discontinuation_Message.png">
+  Mi Push Service Discontinuation Notification
+</Image>
 
 # Who Does this Shutdown Affect?
 
@@ -44,23 +30,9 @@ You can still use the CleverTap Push and Rendermax<sup>TM</sup> to send push not
 
 Starting from Android SDK version v6.1.0, CleverTap will discontinue the support for Mi Push. Consequently, CleverTap will remove the provision to set up the Xiaomi credentials from the CleverTap dashboard and will remove all the existing credentials.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/403a8ce-image.png",
-        null,
-        "Mi Push Settings"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Mi Push Settings"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Mi Push Settings" align="center" border={true} src="https://files.readme.io/403a8ce-image.png">
+  Mi Push Settings
+</Image>
 
 # When Does CleverTap Plan to Implement the Changes?
 
