@@ -18,8 +18,8 @@ Alternatively, for a recurring or triggered campaign, the same user may re-quali
 
 CleverTap has two types of frequency caps, including:
 
-- _Global Frequency Caps_ control the maximum messages a user can get across campaigns for a particular channel of communication.
-- _Message-level Frequency Caps_ define how often messages can be sent to a particular user for a particular campaign.
+* *Global Frequency Caps* control the maximum messages a user can get across campaigns for a particular channel of communication.
+* *Message-level Frequency Caps* define how often messages can be sent to a particular user for a particular campaign.
 
 When a frequency cap applies to a user, CleverTap will not deliver the associated message. The dropped messages will be accounted for in the campaign report error table.
 
@@ -31,25 +31,10 @@ Global frequency caps operate on a per-channel basis and let you specify the mes
 
 You can define the maximum number of messages a user can receive from a specific communication channel across campaigns.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/84c565d-Global_Message_Limits.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/84c565d-Global_Message_Limits.png" />
 
 > 👍 Cadence Example
-> 
+>
 > You can define a cadence of three push notifications in seven days. This ensures that users only receive three push messages in seven days.
 
 ## Dwell Time Between Messages
@@ -58,25 +43,10 @@ For a communication channel, you can define the minimum time gap between message
 
 For example, you can set a minimum gap of at least four hours between messages with a range of:
 
-- Minimum gap: Five minutes.
-- Maximum gap: Seven days.
+* Minimum gap: Five minutes.
+* Maximum gap: Seven days.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/59118b4-Dwell_time.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/59118b4-Dwell_time.png" />
 
 ## Throttle
 
@@ -88,109 +58,66 @@ Finding the optimal throttling rate is crucial in ensuring the effectiveness of 
 
 There are two types of throttle:
 
-- Defined Limit - Select this option to apply global throttle settings in campaigns.
-- Adhoc Limit - Select this option if you want to use custom throttle settings in campaigns overriding the global throttle limits.
+* Defined Limit - Select this option to apply global throttle settings in campaigns.
+* Adhoc Limit - Select this option if you want to use custom throttle settings in campaigns overriding the global throttle limits.
 
 ### Defined Limit
 
  The Defined Limit is a default throttle setting that applies to all campaigns. This limit is set globally and can be configured in the Settings tab. To change the throttle limit:
 
-1. Go to_ Settings > Setup > Campaign Limits_.
+1. Go to *Settings > Setup > Campaign Limits*.
 2. Click **Add Channel** to add a throttle limit for the channel. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d620174-Defined_Limit_Settings.png",
-        null,
-        "Set Global Throttle"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Global Throttle"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Global Throttle" align="center" border={true} src="https://files.readme.io/d620174-Defined_Limit_Settings.png">
+  Set Global Throttle
+</Image>
 
 This is now the defined limit for all your campaigns. You can check this limit from the Campaigns. 
 
-3. Go to the_ When_ section > _Delivery preferences_.
+3. Go to the *When* section > *Delivery preferences*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/89acccf-Defined_Limit_Campaign.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/89acccf-Defined_Limit_Campaign.png" />
 
 > 📘 Throttle Limit Recommendations
-> 
+>
 > We recommend that the defined throttle limit for any communication channel shouldn't be less than 100.
-> 
+>
 > Always check that your throttle limit is set high enough to prevent campaigns from running for multiple days, because the messages will stop delivering after the third day. This ensures that the relevance for messsages is maintained. 
-> 
-> The _restricted reach \_of your campaigns is displayed in a banner below the \_Global throttle limits_. Make sure that the restricted reach is higher than your expected campaign reach to ensure that all users receive the messages.
+>
+> The *restricted reach\_of your campaigns is displayed in a banner below the \_Global throttle limits*. Make sure that the restricted reach is higher than your expected campaign reach to ensure that all users receive the messages.
 
 ### Ad hoc Limit
 
  The Ad Hoc Limit feature enables you to use a custom throttle limit for a specific campaign, which is different from the global throttle settings. This is useful when you want to apply a different throttle limit for a particular campaign without changing the global settings.
 
-1. Go to the_ When_ section > _Delivery preferences_. The Delivery preferences section displays the _Defined Limit_and the \_Ad Hoc Limit_. 
-2. Select _Ad Hoc_ Limit to change throttle the message from the current campaign.
-3. Click _Done_.
+1. Go to the *When* section > *Delivery preferences*. The Delivery preferences section displays the *Defined Limit\_and the\_Ad Hoc Limit*. 
+2. Select *Ad Hoc* Limit to change throttle the message from the current campaign.
+3. Click *Done*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f1ab9bb-Adhoc_Limit.png",
-        null,
-        "Set Adhoc Limit"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Set Adhoc Limit"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Set Adhoc Limit" align="center" border={true} src="https://files.readme.io/f1ab9bb-Adhoc_Limit.png">
+  Set Adhoc Limit
+</Image>
 
 The Ad Hoc limit applies only to the current campaign. 
 
 > 📘 Throttle Limit Recommendations
-> 
+>
 > Check that you always set throttle limit to more than 100 when setting the Ad Hoc limit. 
-> 
+>
 > Always check that your throttle limit is set high enough to prevent campaigns from running for multiple days, because the messages will stop delivering after the third day. This ensures that the relevance for messsages is maintained. 
-> 
-> The _restricted reach_ of your campaigns is displayed in a banner below the _Global throttle limits_. Make sure that the restricted reach is higher than your expected campaign reach to ensure that all users receive the messages.
+>
+> The *restricted reach* of your campaigns is displayed in a banner below the *Global throttle limits*. Make sure that the restricted reach is higher than your expected campaign reach to ensure that all users receive the messages.
 
 # Message-level Frequency Caps
 
 Message-level caps let you control the number of times a particular ongoing campaign is delivered to the same user. 
 
 > 🚧 Message Level and Global Frequency Caps
-> 
+>
 > Message-level and global frequency caps work together when applied simultaneously. A user may be subject to either or both frequency cap limits.
 
 > 📘 Note
-> 
+>
 > Session limits are not a part of Campaign limits. They are considered separately.
 
 These caps are important for recurring campaigns or triggered campaigns where the same user may re-qualify multiple times to receive a message.
@@ -199,5 +126,5 @@ These caps are important for recurring campaigns or triggered campaigns where th
 
 The control options include:
 
-- Send every time the user qualifies (default): This sends a message every time the user qualifies (can choose to respect global caps).
-- Send with a minimum gap of: This sets a minimum gap between subsequent messages. The minimum gap allowed is five minutes, and the maximum gap allowed is 30 days.
+* Send every time the user qualifies (default): This sends a message every time the user qualifies (can choose to respect global caps).
+* Send with a minimum gap of: This sets a minimum gap between subsequent messages. The minimum gap allowed is five minutes, and the maximum gap allowed is 30 days.
