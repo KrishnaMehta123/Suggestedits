@@ -13,34 +13,7 @@ next:
 The Who section in the Campaign creation flow allows you to select the user segment from the list of segments that were created under the Segments section. 
 
 Alternatively, you can define an ad-hoc segment just for the campaign currently being created. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bec1a3f-1_Who.png",
-        "1 Who.png",
-        1999,
-        937,
-        "#f7f8fa"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b998325-2_Who.png",
-        "2 Who.png",
-        1999,
-        966,
-        "#fbfbfc"
-      ]
-    }
-  ]
-}
-[/block]
+![1999](https://files.readme.io/bec1a3f-1_Who.png "1 Who.png")
+
+![1999](https://files.readme.io/b998325-2_Who.png "2 Who.png")
