@@ -1,14 +1,17 @@
 ---
-title: O Auth - JSON Web Tokens (JWT)
-excerpt: ''
+title: OAuth - JSON Web Tokens (JWT)
+excerpt: >-
+  Learn how CleverTap uses JWT with OAuth 2.0 to provide secure authentication
+  and authorization for webhook integrations, ensuring tamper-proof and
+  encrypted data transmission.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -16,14 +19,13 @@ JSON Web Tokens (JWT) OAuth 2.0 offers a secure way to authenticate and authoriz
 
 By using OAuth 2.0, CleverTap enables secure communication through access tokens, which can be easily refreshed when needed. JWT ensures the integrity of the data, making it ideal for transmitting sensitive information like user identities and preferences.
 
-While OAuth 2.0 helps secure API access, there is still the risk of token theft. If an attacker intercepts an access token, they can impersonate the legitimate client and make unauthorized requests to Clevertap’s API. This is where JWT (JSON Web Token) comes in, enhancing security. With an added layer of security JWT secures data as follows,
+While OAuth 2.0 helps secure API access, there is still the risk of token theft. If an attacker intercepts an access token, they can impersonate the legitimate client and make unauthorized requests to Clevertap's API. This is where JWT (JSON Web Token) comes in, enhancing security. With an added layer of security JWT secures data as follows,
 
 * **Tamper-Proof**: JWTs are signed using a private key, ensuring that the signature becomes invalid if an attacker tries to modify the token.
 * **Compact and Self-Contained**: JWTs contain all the necessary information (claims) in the token itself, reducing the need for constant database checks.
 * **Portable**: JWTs can be passed between systems easily and are ideal for authentication in distributed environments like webhooks.
 
 ## An overview of the JWT flow
-
 
 1. **CleverTap Generates Public and Private Keys**:\
    CleverTap generates a private key and a corresponding public key. The private key is kept secure by CleverTap, and the public key is shared with the client to validate JWTs.
@@ -45,33 +47,23 @@ While OAuth 2.0 helps secure API access, there is still the risk of token theft.
 
 <Image alt="Client Credentials with JWT" align="center" width="75% " border={true} src="https://files.readme.io/b7d6d2ce41a7cee5ee410b52b9e2e0902d655d176594dab6076968e28a6ea332-JWT_1.png" />  Client Credentials with JWT
 
-
-
-
-
-
-
-
-
-
-
 ## Securing OAuth 2.0 with JWT
 
-Using JWT adds an extra layer of security to OAuth 2.0. Here’s how it works:
+Using JWT adds an extra layer of security to OAuth 2.0. Here's how it works:
+
 * **Signature Verification**: 
   * Only CleverTap has the private key used to sign the JWT. When the Auth Server receives the JWT, it uses the public key to verify the signature.
   * If the JWT is modified in any way, the signature will not match, and the Auth Server will reject the request.
 * **Preventing Token Theft**: 
   * Even if someone intercepts the JWT during transmission, they cannot alter it or generate a new, valid token without the private key.
-  * The JWT contains all the necessary information (like the client’s identity, permissions, and expiration time) and is self-contained, which reduces the chance of exposing sensitive data.
-* **No Need for Repeated`client_secret` Transmission**: 
-  * The client does not need to transmit the `client_secret` every time it makes a request to CleverTThe damage is limited if compromisap. Instead, the client assertion (signed JWT) proves the client's identity and authorization.
+  * The JWT contains all the necessary information (like the client's identity, permissions, and expiration time) and is self-contained, which reduces the chance of exposing sensitive data.
+* **No Need for Repeated `client_secret` Transmission**: 
+  * The client does not need to transmit the `client_secret` every time it makes a request to CleverTap. Instead, the client assertion (signed JWT) proves the client's identity and authorization.
   * This minimizes the risk of `client_secret` exposure.
 * **Short-Lived Tokens**: 
   * Access tokens are often short-lived (minutes or hours). If compromised, the damage is limited because the token is valid for only a short duration. Once expired, the client must obtain a new token using secure methods.
 
 # Configure OAuth 2.0 with JWT
-
 
 1. Navigate to *Settings* > *Channels* > *Webhooks* and click **+ Webhook**. The *Create webhook template* window opens on the right.
 
@@ -88,8 +80,8 @@ Using JWT adds an extra layer of security to OAuth 2.0. Here’s how it works:
 
 6. **Set Up Client Assertion**.\
    After generating the Public Key, you must set up the Client Assertion. The Client Assertion is a JWT that authenticates your application and proves it is authorized to access CleverTap resources. It includes a Header, Payload, and Signature to ensure the integrity and authenticity of the request.
-   * [Header](https://staging.docs.user.clevertap.net/docs/oauth-jwt#header) - @Krishna - cross-references will change as I changed the heading
-   * [Payload](https://staging.docs.user.clevertap.net/docs/oauth-jwt#payload) - @Krishna - cross-references will change as I changed the heading
+   * [Header](#jwt-header)
+   * [Payload](#jwt-payload)
 
 7. Click **Generate Client Assertion** to create the JWT after filling out the **Header** and **Payload** details.
 
@@ -101,92 +93,65 @@ Using JWT adds an extra layer of security to OAuth 2.0. Here’s how it works:
          <th style={{ textAlign: "left" }}>
            Field
          </th>
-
          <th style={{ textAlign: "left" }}>
            Description
          </th>
        </tr>
      </thead>
-
      <tbody>
        <tr>
          <td style={{ textAlign: "left" }}>
            Client ID
          </td>
-
          <td style={{ textAlign: "left" }}>
-           <ul><li> A unique identifier issued to the requesting application (here, CleverTap) when it registers with an authorization server.</li> <li> It helps the authorization server recognize the application that makes the request and applies relevant authorization policies.</li></ul>
+           A unique identifier issued to the requesting application (here, CleverTap) when it registers with an authorization server. It helps the authorization server recognize the application that makes the request and applies relevant authorization policies.
          </td>
        </tr>
-
        <tr>
          <td style={{ textAlign: "left" }}>
            Client Assertion Type
          </td>
-
          <td style={{ textAlign: "left" }}>
-           <ul><li>The method used by the client (CleverTap) to authenticate itself to the authorization server using a JWT (JSON Web Token).</li><li>The JWT is sent in the request, and the server validates it to confirm the client's identity.</li><li>Commonly used in Client Credentials Flow and JWT Authorization Grant of OAuth 2.0.</li><li>More secure than basic authentication, as it relies on cryptographic signatures and short-lived tokens.</li></ul>
+           The method used by the client (CleverTap) to authenticate itself to the authorization server using a JWT (JSON Web Token). The JWT is sent in the request, and the server validates it to confirm the client's identity. Commonly used in Client Credentials Flow and JWT Authorization Grant of OAuth 2.0. More secure than basic authentication, as it relies on cryptographic signatures and short-lived tokens.
          </td>
        </tr>
-
        <tr>
          <td style={{ textAlign: "left" }}>
            Scopes
          </td>
-
          <td style={{ textAlign: "left" }}>
-           <ul> <li> The parameters in OAuth that define the specific permissions requested by the client application.</li> <li> They control what parts of a user's account the client (here, CleverTap) has access to, such as reading profile data and so on.</li></ul>
+           The parameters in OAuth that define the specific permissions requested by the client application. They control what parts of a user's account the client (here, CleverTap) has access to, such as reading profile data and so on.
          </td>
        </tr>
-
        <tr>
          <td style={{ textAlign: "left" }}>
            Access Token URL
          </td>
-
          <td style={{ textAlign: "left" }}>
            The endpoint on the authorization server where a client application (CleverTap) sends a request to obtain an access token.
          </td>
        </tr>
-
        <tr>
          <td style={{ textAlign: "left" }}>
-           Refresh Token URL
-
-           \*
+           Refresh Token URL*
          </td>
-
          <td style={{ textAlign: "left" }}>
-           The endpoint on an authorization server where a client application sends a request to obtain a new access token using a refresh token. This field is available only when using 
-
-           *Password Credentials*
-
-            grant type.
+           The endpoint on an authorization server where a client application sends a request to obtain a new access token using a refresh token. This field is available only when using <em>Password Credentials</em> grant type.
          </td>
        </tr>
-
        <tr>
          <td style={{ textAlign: "left" }}>
            Client Authentication Type
          </td>
-
          <td style={{ textAlign: "left" }}>
-           <ul> 
-             <li>The method used by a client application to prove its identity to the authorization server in OAuth 2.0 flows. </li> 
-             <li>This ensures that only the authorized client can request tokens or access protected resources. </li> 
-             <li>The following are the available options:
-               <ul>
-                 <li>*Send Basic Authentication in Header*: Include an Authorization header with encoded username and password. </li>
-                 <li>*Send Bearer Authentication in Header*: Include an Authorization header with an access token obtained from OAuth.</li>
-               </ul>
-             </li>
-           </ul>
+           The method used by a client application to prove its identity to the authorization server in OAuth 2.0 flows. This ensures that only the authorized client can request tokens or access protected resources. Available options: <strong>Send Basic Authentication in Header</strong> (include an Authorization header with encoded username and password) and <strong>Send Bearer Authentication in Header</strong> (include an Authorization header with an access token obtained from OAuth).
          </td>
        </tr>
      </tbody>
    </Table>
 
 9. Click **Save**.
+
 ### Generate and Configure Public Key
 
 The public key must be configured on the client's OAuth server for the verification process to work. This allows the server to verify the authenticity of the JWS. The JWT cannot be trusted if the signature verification fails and should be discarded. On the other hand, if both the signature verification and claims validation are successful, CleverTap will receive the access token from their OAuth server.
@@ -211,7 +176,6 @@ The following are steps to generate a Public Key:
 
 The Header of a JWT contains metadata about the token, such as the signing algorithm and the type of token. The header is typically composed of two parts: the **algorithm** used to sign the token (for example, `RS256` for RSA) and the **type** of the token (usually `JWT`). The header also optionally contains other fields, such as a **key identifier** (`kid`) to indicate which public key should be used for signature verification. These details help CleverTap as a recipient understand how to process and verify the JWT.
 
-
 | **Field**            | **Description**                                                                             | **Example Value** | **Reason/Purpose**                                                                                                           |
 | -------------------- | ------------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Algorithm (`alg`)    | Specifies the algorithm used to sign the JWT. Possible values: `RS384`, `RS512`, or `RS256` | `RS256`           | Defines how the signature is created. The recipient (CleverTap) uses it to verify the token integrity.                       |
@@ -222,8 +186,7 @@ The Header of a JWT contains metadata about the token, such as the signing algor
 
 ### JWT Payload
 
-The Payload of a JWT contains the claims - statements about an entity (typically the user) and additional data. The claims are categorized into three types: registered, public, and private. In the case of CleverTap's OAuth 2.0 integration, the **Issuer** (`iss`), **Subject** (`sub`), **Audience** (`aud`), **Issued At** (`iat`), and **Expiration Time** (`exp`) are the most commonly used claims. The Payload carries important information that validates the authenticity of the token and ensures its intended use. 
-
+The Payload of a JWT contains the claims - statements about an entity (typically the user) and additional data. The claims are categorized into three types: registered, public, and private. In the case of CleverTap's OAuth 2.0 integration, the **Issuer** (`iss`), **Subject** (`sub`), **Audience** (`aud`), **Issued At** (`iat`), and **Expiration Time** (`exp`) are the most commonly used claims. The Payload carries important information that validates the authenticity of the token and ensures its intended use.
 
 | **Field**               | **Description**                                                             | **Example Value**                       | **Reason/Purpose**                                                                                         |
 | ----------------------- | --------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -233,4 +196,4 @@ The Payload of a JWT contains the claims - statements about an entity (typically
 | Issued At (`iat`)       | The timestamp when the token was created.                                   | `1626784891` (Unix timestamp)           | Ensures the token is fresh and helps manage the token lifecycle.                                           |
 | Expiration Time (`exp`) | Specifies when the token expires and is no longer valid.                    | `1626788491` (Unix timestamp)           | Prevents replay attacks by making the token invalid after a certain time.                                  |
 | JWT ID (`jti`)          | A unique identifier for the token, used to prevent reuse of the same token. | `unique-jwt-id-123`                     | Helps prevent replay attacks by ensuring each token is unique.                                             |
-| Use Issued At (`iat`)   | Whether the Issued At claim should be used.                                 | `Yes`                                   | Recommended to use to track when the token was issued, ensuring it’s not used prematurely or too late.     |
+| Use Issued At (`iat`)   | Whether the Issued At claim should be used.                                 | `Yes`                                   | Recommended to use to track when the token was issued, ensuring it's not used prematurely or too late.     |
