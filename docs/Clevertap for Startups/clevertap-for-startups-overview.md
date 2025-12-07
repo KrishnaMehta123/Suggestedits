@@ -18,18 +18,18 @@ It is powered by [TesseractDBTM](https://clevertap.com/blog/tesseractdb-the-futu
 
 CleverTap can be integrated into a product in any domain where understanding users helps make good decisions to retain them. A few of them are: 
 
-- [Ecommerce](https://clevertap.com/resources/?ct_resources_category=Case%20Study&ct_resources_industry=Ecommerce)
-- [FinTech](https://clevertap.com/resources/?ct_resources_category=Case%20Study&ct_resources_industry=Fintech)
-- [Media & Entertainment](https://clevertap.com/resources/?ct_resources_category=Case%20Study&ct_resources_industry=Media%20and%20Entertainment)
-- [Travel & Transportation](https://clevertap.com/resources/?ct_resources_category=Case%20Study&ct_resources_industry=Travel%20and%20Transportation)
-- [Food Tech](https://clevertap.com/resources/?ct_resources_category=Case%20Study&ct_resources_industry=Foodtech)
+* [Ecommerce](https://clevertap.com/resources/?ct_resources_category=Case%20Study\&ct_resources_industry=Ecommerce)
+* [FinTech](https://clevertap.com/resources/?ct_resources_category=Case%20Study\&ct_resources_industry=Fintech)
+* [Media & Entertainment](https://clevertap.com/resources/?ct_resources_category=Case%20Study\&ct_resources_industry=Media%20and%20Entertainment)
+* [Travel & Transportation](https://clevertap.com/resources/?ct_resources_category=Case%20Study\&ct_resources_industry=Travel%20and%20Transportation)
+* [Food Tech](https://clevertap.com/resources/?ct_resources_category=Case%20Study\&ct_resources_industry=Foodtech)
 
 # Plans and Programs
 
 Refer to the following CleverTap for Startups plans and programs:
 
-- [Basic Plan](https://docs.clevertap.com/docs/plans-programs#basic-plan)
-- [Leap](Leap)
+* [Basic Plan](https://docs.clevertap.com/docs/plans-programs#basic-plan)
+* [Leap](Leap)
 
 ## Basic Plan
 
@@ -45,41 +45,28 @@ As part of the CleverTap for Startups Program, we have a community called Clever
 
 Refer to the Startup growth partners that are supported as of now:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/12a8684-image.png",
-        "Startup Growth Partners",
-        "Startup Growth Partners"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "CleverTap for Startup Growth Partners"
-    }
-  ]
-}
-[/block]
+<Image title="Startup Growth Partners" alt="Startup Growth Partners" align="center" border={true} src="https://files.readme.io/12a8684-image.png">
+  CleverTap for Startup Growth Partners
+</Image>
 
 ### What’s Included?
 
-- A discount on the CleverTap for Startups Plan, including add-ons.
-- Complete access to a library of marketing resources, product documentation, and ongoing user engagement events and webinars
-- Opportunity to collaborate with us on joint marketing initiatives such as case studies, and webinars  
+* A discount on the CleverTap for Startups Plan, including add-ons.
+* Complete access to a library of marketing resources, product documentation, and ongoing user engagement events and webinars
+* Opportunity to collaborate with us on joint marketing initiatives such as case studies, and webinars\
   Bragging rights and startup love
 
 ### Who’s Eligible?
 
-- To be eligible for the CleverTap Leap program, all businesses must meet the following criteria:
-  - Applicable only on CleverTap for Startups
-  - Have not previously received CleverTap discounts/credits
-  - Should be a current participant or alumni with one of our startup growth partners.
-  - Applicable only to customers who are new to CleverTap.
+* To be eligible for the CleverTap Leap program, all businesses must meet the following criteria:
+  * Applicable only on CleverTap for Startups
+  * Have not previously received CleverTap discounts/credits
+  * Should be a current participant or alumni with one of our startup growth partners.
+  * Applicable only to customers who are new to CleverTap.
 
 ### How to apply?
 
-- Sign up for the CleverTap for Startups plan.
-- If you’ve already subscribed, fill out the [application form](https://clevertap.com/leap/).
-- Sit tight!
-- We’ll get back to you shortly.
+* Sign up for the CleverTap for Startups plan.
+* If you’ve already subscribed, fill out the [application form](https://clevertap.com/leap/).
+* Sit tight!
+* We’ll get back to you shortly.
