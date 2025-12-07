@@ -13,6 +13,7 @@ next:
   description: ''
 ---
 # Overview
+
 CleverTap's Signed Call helps build trust between a business and its customers via in-app voice calls, which results in higher engagement and customer retention. To know more about different Signed Call use cases, refer to the following documents:
 
 * [Ride-Hailing] (doc:ride-hailing-use-cases)
