@@ -14,94 +14,328 @@ CleverTap integrates with the following platforms and technology partners to pro
 
 # Platform Integration
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Partner  \nName",
-    "h-1": "Integrates with CleverTap",
-    "h-2": "Included in CleverTap for Startups Basic Plan",
-    "h-3": "Add-On",
-    "h-4": "Add-On Cost",
-    "h-5": "Integration Process",
-    "0-0": "iOS",
-    "0-1": "Yes",
-    "0-2": "Yes",
-    "0-3": "Free",
-    "0-4": "N/A",
-    "0-5": "[iOS SDK](https://developer.clevertap.com/docs/ios)",
-    "1-0": "Android",
-    "1-1": "Yes",
-    "1-2": "Yes",
-    "1-3": "Free",
-    "1-4": "N/A",
-    "1-5": "[Android SDK](https://developer.clevertap.com/docs/android)",
-    "2-0": "Cordova",
-    "2-1": "Yes",
-    "2-2": "Yes",
-    "2-3": "Free",
-    "2-4": "N/A",
-    "2-5": "[Cordova SDK](https://developer.clevertap.com/docs/cordova)",
-    "3-0": "Flutter",
-    "3-1": "Yes",
-    "3-2": "Yes",
-    "3-3": "Free",
-    "3-4": "N/A",
-    "3-5": "[Flutter SDK](https://developer.clevertap.com/docs/flutter-sdk)",
-    "4-0": "Geofencing",
-    "4-1": "Yes",
-    "4-2": "Yes",
-    "4-3": "Free",
-    "4-4": "N/A",
-    "4-5": "[Geofencing](https://developer.clevertap.com/docs/geofencing)",
-    "5-0": "React Native",
-    "5-1": "Yes",
-    "5-2": "Yes",
-    "5-3": "Free",
-    "5-4": "N/A",
-    "5-5": "[React Native](https://developer.clevertap.com/docs/react-native)",
-    "6-0": "Unity",
-    "6-1": "Yes",
-    "6-2": "Yes",
-    "6-3": "Free",
-    "6-4": "N/A",
-    "6-5": "[Unity](https://developer.clevertap.com/docs/unity)",
-    "7-0": "Xamarin",
-    "7-1": "Yes",
-    "7-2": "Yes",
-    "7-3": "Free",
-    "7-4": "N/A",
-    "7-5": "[Xamarin](https://developer.clevertap.com/docs/xamarin)",
-    "8-0": "KaiOS",
-    "8-1": "Yes",
-    "8-2": "Yes",
-    "8-3": "Free",
-    "8-4": "N/A",
-    "8-5": "[KaiOS](https://developer.clevertap.com/docs/kaios)",
-    "9-0": "Web",
-    "9-1": "Yes",
-    "9-2": "Yes",
-    "9-3": "Free",
-    "9-4": "N/A",
-    "9-5": "[Web SDK](https://developer.clevertap.com/docs/web-overview)",
-    "10-0": "Google Tag Manager",
-    "10-1": "Yes",
-    "10-2": "Yes",
-    "10-3": "Free",
-    "10-4": "N/A",
-    "10-5": "[Google Tag Manager](https://developer.clevertap.com/docs/google-tag-manager)"
-  },
-  "cols": 6,
-  "rows": 11,
-  "align": [
-    "left",
-    "left",
-    "left",
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Partner
+
+
+
+
+        Name
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Integrates with CleverTap
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Included in CleverTap for Startups Basic Plan
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Add-On
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Add-On Cost
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Integration Process
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        iOS
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [iOS SDK](https://developer.clevertap.com/docs/ios)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Android
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Android SDK](https://developer.clevertap.com/docs/android)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Cordova
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Cordova SDK](https://developer.clevertap.com/docs/cordova)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Flutter
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Flutter SDK](https://developer.clevertap.com/docs/flutter-sdk)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Geofencing
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Geofencing](https://developer.clevertap.com/docs/geofencing)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        React Native
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [React Native](https://developer.clevertap.com/docs/react-native)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Unity
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Unity](https://developer.clevertap.com/docs/unity)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Xamarin
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Xamarin](https://developer.clevertap.com/docs/xamarin)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        KaiOS
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [KaiOS](https://developer.clevertap.com/docs/kaios)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Web
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Web SDK](https://developer.clevertap.com/docs/web-overview)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Google Tag Manager
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Yes
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Free
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        N/A
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [Google Tag Manager](https://developer.clevertap.com/docs/google-tag-manager)
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Technology Partner Integration
 
