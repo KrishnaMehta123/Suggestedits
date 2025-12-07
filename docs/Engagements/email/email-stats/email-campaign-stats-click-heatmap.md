@@ -20,32 +20,32 @@ The Click Heat Map displays the email you’ve sent to your users, overlaid with
 
 Color coding provides a quick and intuitive way to assess click activity across your email links. Here's what each color represents:
 
-- **Red**: Represents the highest clicked links.
-- **Orange**: Indicates the next tier of highly clicked links.
-- **Yellow**: Shows moderate click activity.
-- **Green**: Reflects lower click activity.
-- **Blue**: Represents minimal clicks.
-- **Gray**: All links with no clicks will be represented in Gray.
+* **Red**: Represents the highest clicked links.
+* **Orange**: Indicates the next tier of highly clicked links.
+* **Yellow**: Shows moderate click activity.
+* **Green**: Reflects lower click activity.
+* **Blue**: Represents minimal clicks.
+* **Gray**: All links with no clicks will be represented in Gray.
 
 ## Link Clicks
 
 The Link Clicks feature provides detailed insights into which links were clicked, along with metrics such as total clicks and click percentages. To access these stats, follow these steps:
 
-1. **Access Campaigns**: Click on _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page will appear.
+1. **Access Campaigns**: Click on *Campaigns* from the CleverTap dashboard. The *All Campaigns* page will appear.
 
 2. **Select Email Campaign**: Choose the email campaign for which you want to view the stats. Use the **Filter** button if needed.
 
    ![Filter Email Campaigns](https://files.readme.io/dd4db61-View_Email_Campaign_Stats.png)
 
-3. **Open Campaign**: Click on the campaign to view its details. The _Stats_ tab will display key metrics, including Sent, Viewed, Clicks, CTR, and Converted Users.
+3. **Open Campaign**: Click on the campaign to view its details. The *Stats* tab will display key metrics, including Sent, Viewed, Clicks, CTR, and Converted Users.
 
-4. **Navigate to Link Clicks**: Go to the _Link Clicks_ section. By default, the heat map will show the total number of clicks for each link in the email.
+4. **Navigate to Link Clicks**: Go to the *Link Clicks* section. By default, the heat map will show the total number of clicks for each link in the email.
 
 5. **Select Metrics**: From the drop-down menu, choose "Total Clicks," "Unique Clicks," or "Click Rate" to view the corresponding click data for each link.
 
-   - **Total Clicks**: Counts every click on all links, regardless of the recipient.
-   - **Unique Clicks**: Counts distinct recipients who have clicked a link, regardless of the number of clicks.
-   - **Click Rate**: Calculated by dividing unique clicks by the total number of delivered emails, multiplied by 100. This metric helps assess the effectiveness of your email’s call-to-action.
+   * **Total Clicks**: Counts every click on all links, regardless of the recipient.
+   * **Unique Clicks**: Counts distinct recipients who have clicked a link, regardless of the number of clicks.
+   * **Click Rate**: Calculated by dividing unique clicks by the total number of delivered emails, multiplied by 100. This metric helps assess the effectiveness of your email’s call-to-action.
 
 6. **Choose Email Variant**: From the drop-down menu, select the email variant from the campaign you want to analyze.
 
@@ -53,6 +53,6 @@ The Link Clicks feature provides detailed insights into which links were clicked
 
 8. **View Link Performance**: The right pane will display each link, sorted by color from highest to lowest clicks. You’ll see stats for "Total Clicks," "Unique Clicks," and "Click Rate" for each link.
 
-9. **View User Details**: Click on _View User Details_ to access the _Events_ page under _Analytics_.
+9. **View User Details**: Click on *View User Details* to access the *Events* page under *Analytics*.
 
 With the Click Heat Map, you can effectively analyze link performance and make data-driven adjustments to enhance the effectiveness of your email campaigns.
