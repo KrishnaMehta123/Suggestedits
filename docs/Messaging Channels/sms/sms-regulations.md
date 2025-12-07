@@ -52,8 +52,8 @@ You can register as a telemarketer or an enterprise on the DLT platform. If you 
 
 The two types of telemarketers include:
 
-- Telemarketer Aggregator: Not connected directly with the telecom operator. Can be an individual or company.
-- Telemarketer Delivery: Collects SMS/voice traffic from enterprises. Directly connected with telecom operators.
+* Telemarketer Aggregator: Not connected directly with the telecom operator. Can be an individual or company.
+* Telemarketer Delivery: Collects SMS/voice traffic from enterprises. Directly connected with telecom operators.
 
 Telemarketers are the main source of sales for many companies. The most common form of telemarketing is outbound sales where businesses communicate with customers through SMS or voice. Therefore, it is necessary to register on the DLT platform as a telemarketer to send promotional and transactional messages.
 
@@ -65,8 +65,8 @@ TRAI requires telemarketers and enterprises to register on the DLT platform. Reg
 
 Follow the steps below to register on the DLT platform:
 
-1. Select as a _Telemarketer_.
-2. Select the _Aggregator_ function. 
+1. Select as a *Telemarketer*.
+2. Select the *Aggregator* function. 
 3. Click **No** when asked if you have registered with any other mobile operator DLT network. 
 4. Enter your business PAN number. 
 5. Verify your OTP. 
@@ -79,8 +79,8 @@ Follow the steps below to register on the DLT platform:
 
 Follow the steps below to register as a telemarketer registration:
 
-1. Select as a _Telemarketer_.
-2. Select the _Aggregator_ function. 
+1. Select as a *Telemarketer*.
+2. Select the *Aggregator* function. 
 3. Click **No** when asked if you have registered with any other mobile operator DLT network. 
 4. Enter your business PAN number. 
 5. Verify your OTP. 
@@ -93,7 +93,7 @@ Follow the steps below to register as a telemarketer registration:
 
 Follow the steps below to register as an enterprise:
 
-1. Select as an _Enterprise_.
+1. Select as an *Enterprise*.
 2. Click **No** when asked if you have registered with any other mobile operator DLT network. 
 3. Enter your business PAN number. 
 4. Fill the form with the required details.
@@ -115,19 +115,19 @@ A unique registration number is provided on the first phase of DLT registration 
 
 The customer benefits include:
 
-- Elimination of spam and fraud.
-- Strong security using blockchain technology.
-- More transparency with a separate registration for telemarketers and enterprises.
-- Allow customers to consent before sending the SMS and also select time slots.
+* Elimination of spam and fraud.
+* Strong security using blockchain technology.
+* More transparency with a separate registration for telemarketers and enterprises.
+* Allow customers to consent before sending the SMS and also select time slots.
 
 ### Enterprise Benefits
 
 The enterprise benefits include:
 
-- More targeted outreach to the customers.
-- All headers and templates are registered on the platform.
-- Better communication with the customers who actually want to receive information from you.
-- Improved marketing practices to reach your target audience.
+* More targeted outreach to the customers.
+* All headers and templates are registered on the platform.
+* Better communication with the customers who actually want to receive information from you.
+* Improved marketing practices to reach your target audience.
 
 # Conclusion
 
