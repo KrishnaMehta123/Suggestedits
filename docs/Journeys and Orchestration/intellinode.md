@@ -20,20 +20,6 @@ With IntelliNODE, you can compare up to seven paths for a journey. You can try d
 
 A simple example can be engaging a user who has abandoned a cart item. You can send a push message on the app informing the customer about the abandoned cart item and then a reminder message on a different channel such as SMS, Email, or WhatsApp to nudge the user.  Each channel may have a different reach and a different cost implication. Trying and comparing these different approaches can help determine the optimal way to reach the user.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/09d0055-Sample_IntelliNODE_experiment.png",
-        "Sample Journey flow using IntelliNODE",
-        2106
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Sample IntelliNODE Journey Flow"
-    }
-  ]
-}
-[/block]
+<Image title="Sample Journey flow using IntelliNODE" alt={2106} align="center" width="smart" border={true} src="https://files.readme.io/09d0055-Sample_IntelliNODE_experiment.png">
+  Sample IntelliNODE Journey Flow
+</Image>
