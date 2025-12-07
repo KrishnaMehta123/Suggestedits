@@ -42,25 +42,25 @@ To configure the Times Mobile dashboard:
 
 1. Log in to the Times Mobile Dashboard using your credentials.
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/ce13378-Times_Internet_.png" />
-2. Navigate to *Sender ID Management* > *Request Sender* and click **Request For Sender** to request a new sender ID. 
+   <Image align="center" border={true} src="https://files.readme.io/ce13378-Times_Internet_.png" className="border" />
+2. Navigate to _Sender ID Management_ > _Request Sender_ and click **Request For Sender** to request a new sender ID.
 3. Enter the following DLT-approved header details: **Sender Name**, **Account Type** (either trans or pro), and  **DLT Principal Entity Id**. **Sender Name** should be six characters or digits as per your account type.
 
-<Image alt="Configure Sender IDs " align="center" width="100%" border={true} src="https://files.readme.io/8dae093-Times_Internet_Request_Sender.png" /> 
+<Image align="center" alt="Configure Sender IDs " border={true} width="100%" src="https://files.readme.io/8dae093-Times_Internet_Request_Sender.png" className="border" />
 
 Configure Sender IDs
 
 4. After adding the header details, click  **Create Sender Request** to create the sender request.
-5. Navigate to *Bulk SMS* > *HTTP* from the Times Mobile dashboard to access your SMS Push API credentials. These credentials are required for configuration within the CleverTap platform. CleverTap recommends keeping these credentials handy before configuring them on the CleverTap dashboard.
+5. Navigate to _Bulk SMS_ > _HTTP_ from the Times Mobile dashboard to access your SMS Push API credentials. These credentials are required for configuration within the CleverTap platform. CleverTap recommends keeping these credentials handy before configuring them on the CleverTap dashboard.
 
-<Image alt="Configure CleverTap DLR Callback Webhook" align="center" border={true} src="https://files.readme.io/3d80859-SMS_Push_Credentials-_Times_internet.png" />
+<Image align="center" alt="Configure CleverTap DLR Callback Webhook" border={true} src="https://files.readme.io/3d80859-SMS_Push_Credentials-_Times_internet.png" className="border" />
 
 Obtain SMS Push API Credentials
 
-6. Click **Username** > **Profile** from the Times Mobile Dashboard. 
+6. Click **Username** > **Profile** from the Times Mobile Dashboard.
 7. Under the **Delivery Report Post Back URL** section, configure the CleverTap DLR Callback Webhook for real-time SMS delivery updates. For more information, refer to the callback URL column in the [Configure CleverTap Dashboard ](doc:times-internet#configure-clevertap-dashboard) section.
 
-<Image alt="Obtain SMS Push API Credentials" align="center" border={true} src="https://files.readme.io/a12ee6f-Times_Internet-_Delivery_Report_Post_Back_URL.png" />
+<Image align="center" alt="Obtain SMS Push API Credentials" border={true} src="https://files.readme.io/a12ee6f-Times_Internet-_Delivery_Report_Post_Back_URL.png" className="border" />
 
 Configure CleverTap DLR Callback Webhook
 
@@ -70,14 +70,14 @@ If you encounter any issues while configuring, contact [support@timesmobile.in](
 
 To add Times Mobile details on the CleverTap dashboard:
 
-1. From the CleverTap Dashboard, navigate to *Settings* > *Engage* > *Channels* > *SMS*.
-2. Click **+Add Provider**. The *Add SMS Provider* page opens. 
+1. From the CleverTap Dashboard, navigate to _Settings_ > _Engage_ > _Channels_ > _SMS_.
+2. Click **+Add Provider**. The _Add SMS Provider_ page opens.
 
-<Image alt="Add SMS Provider" align="center" width="90% " border={true} src="https://files.readme.io/090cf81-SMS_Add_Provider.png" />
+<Image align="center" alt="Add SMS Provider" border={true} width="90% " src="https://files.readme.io/090cf81-SMS_Add_Provider.png" className="border" />
 
 Add SMS Provider
 
-3. Select the *Setup* tab and enter the following details:
+3. Select the _Setup_ tab and enter the following details:
 
 <Table align={["left","left"]}>
   <thead>
@@ -95,17 +95,17 @@ Add SMS Provider
   <tbody>
     <tr>
       <td>
-        *Provider*
+        _Provider_
       </td>
 
       <td>
-        Select *Other(Generic)* from the dropdown list.
+        Select _Other(Generic)_ from the dropdown list.
       </td>
     </tr>
 
     <tr>
       <td>
-        * *Nickname*
+        * _Nickname_
       </td>
 
       <td>
@@ -115,7 +115,7 @@ Add SMS Provider
 
     <tr>
       <td>
-        * *Callback URL*
+        * _Callback URL_
       </td>
 
       <td>
@@ -125,17 +125,17 @@ Add SMS Provider
 
     <tr>
       <td>
-        *Request Type*
+        _Request Type_
       </td>
 
       <td>
-        Select *GET* or *POST* based on the HTTP endpoint.
+        Select _GET_ or _POST_ based on the HTTP endpoint.
       </td>
     </tr>
 
     <tr>
       <td>
-        *HTTP Endpoint*
+        _HTTP Endpoint_
       </td>
 
       <td>
@@ -145,26 +145,26 @@ Add SMS Provider
 
     <tr>
       <td>
-        *Authentication*
+        _Authentication_
       </td>
 
       <td>
-        Select from the following authentication types:  
+        Select from the following authentication types:
 
-        <li> No Authentication_ : For GET_  endpoint, select this option.</li><li>_Basic Authentication_ : For _POST_ endpoint, select this option. Also, provide Times Mobile API _Username_ and _Password_ details.</li><li>_OAuth 2.0_: Enter client URL, client ID, secret key, and key-value pairs (optional).</li>
+        <li> No Authentication_ : For GET_  endpoint, select this option.</li><li>*Basic Authentication* : For *POST* endpoint, select this option. Also, provide Times Mobile API *Username* and *Password* details.</li><li>*OAuth 2.0*: Enter client URL, client ID, secret key, and key-value pairs (optional).</li>
       </td>
     </tr>
 
     <tr>
       <td>
-        *Parameters*
+        _Parameters_
       </td>
 
       <td>
-        Select *x-www-form-unlenencoded* or *JSON* for *Type* column.\
-        For the *POST* endpoint, select *JSON* and enter the JSON payload structure. This field appears when you select *POST* in the *Request Type* column.\
-        POST endpoint: `https://bsms.timesapi.in/ct/api/v1/message`\
-        For more information, refer to the following:  
+        Select _x-www-form-unlenencoded_ or _JSON_ for _Type_ column.  
+        For the _POST_ endpoint, select _JSON_ and enter the JSON payload structure. This field appears when you select _POST_ in the _Request Type_ column.  
+        POST endpoint: `https://bsms.timesapi.in/ct/api/v1/message`  
+        For more information, refer to the following:
 
         <li> [Get endpoint](https://bsms.timesapi.in/ct/api/v1/send?username=%3Capiusername%3E&password=%3Capipassword%3E&unicode=false&from=%3Csenderid%3E&to=$$To&text=$$Body&dltContentId=$$TemplateID&corelationid=$$MessageID)</li>  
         <li> [Post endpoint](https://bsms.timesapi.in/ct/api/v1/message)</li>  
@@ -174,20 +174,20 @@ Add SMS Provider
 
     <tr>
       <td>
-        *Headers*
+        _Headers_
       </td>
 
       <td>
-        For the *POST* endpoint, enter the following key-value pairs:  
+        For the _POST_ endpoint, enter the following key-value pairs:
 
-        1. *Key*: Content-Type | *Value*: application/JSON  
-        2. *Key*: Accept | *Value*: application/JSON
+        1. _Key_: Content-Type | _Value_: application/JSON
+        2. _Key_: Accept | _Value_: application/JSON
       </td>
     </tr>
 
     <tr>
       <td>
-        *Custom Key-value pairs in campaign*
+        _Custom Key-value pairs in campaign_
       </td>
 
       <td>
@@ -197,19 +197,19 @@ Add SMS Provider
 
     <tr>
       <td>
-        *Mark this as default*
+        _Mark this as default_
       </td>
 
       <td>
-        Select *Mark this as default* to make this SMS provider the default provider to send the SMS.
+        Select _Mark this as default_ to make this SMS provider the default provider to send the SMS.
       </td>
     </tr>
   </tbody>
 </Table>
 
-**\*The fields marked with asterisk mark (\*) are mandatory fields.**
+***The fields marked with asterisk mark (*) are mandatory fields.**
 
-<Image alt="Add Times Internet as an SMS Provider" align="center" width="70%" border={true} src="https://files.readme.io/7946b37-Times_Internet_Provider.png" />
+<Image align="center" alt="Add Times Internet as an SMS Provider" border={true} width="70%" src="https://files.readme.io/7946b37-Times_Internet_Provider.png" className="border" />
 
 Add Times Mobile as an SMS Provider
 
@@ -219,13 +219,14 @@ Add Times Mobile as an SMS Provider
 
 To ensure that the integration is successful, send a test SMS as follows:
 
-1. Click the *Send Test SMS* option before creating SMS campaigns and journeys.
+1. Click the _Send Test SMS_ option before creating SMS campaigns and journeys.
+
 2. Enter the following details:
 
-   * *Country Code* and *Mobile Number*: Enter the country code and mobile number you want to send the message to.
-   * *Message*: This is a test message.
+   * _Country Code_ and _Mobile Number_: Enter the country code and mobile number you want to send the message to.
+   * _Message_: This is a test message.
 
-   <Image alt="Send a Test SMS" align="center" width="75%" border={true} src="https://files.readme.io/8543b05-Send_a_Test_SMS_.png" />
+   <Image align="center" alt="Send a Test SMS" border={true} width="75%" src="https://files.readme.io/8543b05-Send_a_Test_SMS_.png" className="border" />
 
    Send a Test SMS
 
@@ -235,24 +236,39 @@ To ensure that the integration is successful, send a test SMS as follows:
 
 In the default setup, Times Mobile sends the information to CleverTap's callback URL as follows:
 
-1. CleverTap generates the callback that customers need to set up on the  Times Mobile dashboard. 
+1. CleverTap generates the callback that customers need to set up on the  Times Mobile dashboard.
 2. TimesInternet sends the callback directly to CleverTap on the default URL.
 3. CleverTap processes the callback.
 
-Upon receiving callbacks from Times Mobile, the comprehensive stats are displayed on the CleverTap dashboard. For more information, refer to the [Stats](doc:times-internet#stats) section. 
+Upon receiving callbacks from Times Mobile, the comprehensive stats are displayed on the CleverTap dashboard. For more information, refer to the [Stats](doc:times-internet#stats) section.
 
 ## Set Up Message Payload
 
 This section provides information about the sample request payload sent to SMS providers.
 
+```json
+{
+
+   "username": "<apiusername>",
+   "password": "<apipassword>",
+   "unicode": "false",
+   "from": "<senderid>",
+   "to": "$$To",
+   "text": "$$Body",
+   "dltContentId": "$$TemplateID",
+   "corelationid": "$$MessageID"
+}
+```
+
 # Stats
 
 CleverTap displays comprehensive stats such as Errors, Delivered, Clicked, and CTRs upon receiving callbacks from Times Mobile. After setting up the provider on the CleverTap dashboard, you can view these statistics from the following pages on the CleverTap dashboard:
 
-* For [SMS Stats](https://docs.clevertap.com/docs/sms-stats), select the *Stats* tab of the Campaigns.
-* For [Provider Stats](https://docs.clevertap.com/docs/sms-provider-operations), select the *Stats* tab under *Provider* setup. 
+* For [SMS Stats](https://docs.clevertap.com/docs/sms-stats), select the _Stats_ tab of the Campaigns.
+* For [Provider Stats](https://docs.clevertap.com/docs/sms-provider-operations), select the _Stats_ tab under _Provider_ setup.
 
 # Troubleshooting
+
 If you encounter issues when sending test messages or saving the configuration, check that the Times Mobile endpoint and parameters are correctly added. Endpoints are case-sensitive. If the issue persists, raise a support ticket with the CleverTap team to obtain error codes. Once you have the error codes, connect with the  [Times Mobile Support](mailto:support@timesmobile.in) team.
 
 # Frequently Asked Questions (FAQs)
