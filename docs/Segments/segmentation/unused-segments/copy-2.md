@@ -22,10 +22,10 @@ This guide explains how segments are classified as inactive, how you can access 
 
 Over time, accounts may accumulate many segments, some of which are no longer actively used. These inactive segments can make finding and managing the ones that matter most is harder (SA: grammatical error).  By automatically identifying and grouping unused segments, this feature helps you:
 
-- Gain better visibility into which segments are in use and which are idle
-- Review segments that may no longer be needed
-- Easily reuse or remove old segments without disrupting ongoing setups
-- Keep your workspace organized and easier to navigate
+* Gain better visibility into which segments are in use and which are idle
+* Review segments that may no longer be needed
+* Easily reuse or remove old segments without disrupting ongoing setups
+* Keep your workspace organized and easier to navigate
 
 Inactive segments do not interfere with active campaigns or analytics but remain accessible whenever needed.
 
@@ -33,34 +33,20 @@ Inactive segments do not interfere with active campaigns or analytics but remain
 
 A segment is marked **Inactive** when it meets the following conditions:
 
-- It is not actively referenced in any live campaign, journey, test list, or message (SA: referencing is technical for customers, what is test list or message?)
-- Its rule logic may still support passive features like analytics reports (Funnels, Cohorts) (SA: didn't understand this)
+* It is not actively referenced in any live campaign, journey, test list, or message (SA: referencing is technical for customers, what is test list or message?)
+* Its rule logic may still support passive features like analytics reports (Funnels, Cohorts) (SA: didn't understand this)
 
 Inactive segments are not automatically removed from your account. They remain available for reuse, review, or deletion. You can view them by applying a filter on the segment list.
 
 ## Accessing Inactive Segments
 
-The main _Segments_ page does not display inactive segments by default (This is wrong, inactive segments are displayed on the list page, however customer can't differentiate between active and inactive segments from the list page), prioritizing active segments for easier navigation. However, you can view inactive segments by enabling the **Status** column and applying filters to explore segments that are not currently in use.
+The main *Segments* page does not display inactive segments by default (This is wrong, inactive segments are displayed on the list page, however customer can't differentiate between active and inactive segments from the list page), prioritizing active segments for easier navigation. However, you can view inactive segments by enabling the **Status** column and applying filters to explore segments that are not currently in use.
 
 Inactive segments are fully searchable and sortable like any other segment, ensuring you can find them when needed without cluttering the default view.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a0e1cfc538439eb21edc7875e232df7f6a12e44a16f762e64d82ad08ab34d572-image.png",
-        null,
-        "Unused Segments Marked Inactive"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Unused Segments Marked Inactive"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Unused Segments Marked Inactive" align="center" border={true} src="https://files.readme.io/a0e1cfc538439eb21edc7875e232df7f6a12e44a16f762e64d82ad08ab34d572-image.png">
+  Unused Segments Marked Inactive
+</Image>
 
 ## Segment Status: Active vs Inactive
 
@@ -73,15 +59,15 @@ Inactive segments remain accessible without interfering with your active setups.
 
 ## How Inactive Segments Work
 
-- They are grouped separately and hidden from the default view until filtered.
-- They remain searchable, sortable, and available for reuse.
-- They are marked active when resumed or reused.
-- Computation for resumed segments is triggered as needed.
-- Their presence does not affect reports or historical data.
+* They are grouped separately and hidden from the default view until filtered.
+* They remain searchable, sortable, and available for reuse.
+* They are marked active when resumed or reused.
+* Computation for resumed segments is triggered as needed.
+* Their presence does not affect reports or historical data.
 
 ## Managing Inactive Segments
 
-While this feature does not require constant action, it helps you review and manage unused segments effectively. From the _Segments_ screen, you can:
+While this feature does not require constant action, it helps you review and manage unused segments effectively. From the *Segments* screen, you can:
 
 | Action | Description                                                         |
 | ------ | ------------------------------------------------------------------- |
@@ -93,43 +79,15 @@ These actions help you keep the segment list tidy and ensure only relevant segme
 
 You can perform these actions individually or in bulk.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4db8b8c2f05d039cb4ca97b019a26300dbe55b430db28c1518d92b562bbeb241-image.png",
-        null,
-        "Manage Inactive Segments"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Manage Inactive Segments"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Manage Inactive Segments" align="center" border={true} src="https://files.readme.io/4db8b8c2f05d039cb4ca97b019a26300dbe55b430db28c1518d92b562bbeb241-image.png">
+  Manage Inactive Segments
+</Image>
 
 Segments can be resumed for computation using the option **Resume computation**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1adfe6f549ffa9a6514713b4cc1f67b5391827a6acee13a3df73752deddc5e74-image.png",
-        null,
-        "Resume Computation for Segments"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Resume Computation for Segments"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Resume Computation for Segments" align="center" border={true} src="https://files.readme.io/1adfe6f549ffa9a6514713b4cc1f67b5391827a6acee13a3df73752deddc5e74-image.png">
+  Resume Computation for Segments
+</Image>
 
 # FAQs
 
@@ -143,12 +101,12 @@ Yes. Inactive segments remain available for use. Once you resume or reuse a segm
 
 ### How do I view inactive segments?
 
-Inactive segments are accessible by applying filters in the _Segments_ list. The default view prioritizes active segments, but you can easily include inactive segments by enabling the **Status** column and selecting the appropriate filter. (SA: this is incorrect)
+Inactive segments are accessible by applying filters in the *Segments* list. The default view prioritizes active segments, but you can easily include inactive segments by enabling the **Status** column and selecting the appropriate filter. (SA: this is incorrect)
 
 ### What is the difference between inactive and archived segments? (SA: we dont have any thing called as "Archived" segments)
 
-- **Inactive** segments are automatically marked based on usage patterns but remain accessible and visible when filtered.
-- **Archived** segments are manually removed from the active list and can be restored when needed. 
+* **Inactive** segments are automatically marked based on usage patterns but remain accessible and visible when filtered.
+* **Archived** segments are manually removed from the active list and can be restored when needed. 
 
 ### Can I delete inactive segments?
 
