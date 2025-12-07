@@ -14,9 +14,9 @@ next:
 
 Optimizing messages and campaigns is a crucial activity for any app marketer. Clevertap offers three ways to optimize everything you deliver:
 
-- A/B & multivariate testing.
-- Split message delivery.
-- Sending campaigns to an audience subset.
+* A/B & multivariate testing.
+* Split message delivery.
+* Sending campaigns to an audience subset.
 
 # A/B Testing
 
@@ -24,23 +24,9 @@ A/B testing lets you compare up to three different versions of a message for any
 
 Pick the test audience size to run and we do the rest. We determine the winner based on the number of clicks. In the case of email, the winner is determined based on views. We then deliver the winning variant to the rest of your target audience.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e5353df-ab1.gif",
-        "ab1.gif",
-        1280
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Results of A/B Testing"
-    }
-  ]
-}
-[/block]
-
+<Image title="ab1.gif" alt={1280} align="center" border={true} src="https://files.readme.io/e5353df-ab1.gif">
+  Results of A/B Testing
+</Image>
 
 For any campaign, you need the content and creatives for each message. When you create a push notification campaign, you have an option to add up to three variants of any message to test which one performs best.
 
@@ -50,35 +36,21 @@ You can determine the size of the test to run after adding the desired number of
 
 For campaigns sent to past behavior segments (grouping of users based on their past actions), you have two options: launch the A/B test to a percentage of your target audience or send out an absolute number of messages. In either case, we deliver the variants equally to the test audience.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f8d2724-A_b_Multivariate.png",
-        "Test the Campaigns sent to Past Behaviour Segments",
-        754
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Test the Campaigns Sent to Past Behaviour Segments"
-    }
-  ]
-}
-[/block]
-
+<Image title="Test the Campaigns sent to Past Behaviour Segments" alt={754} align="center" border={true} src="https://files.readme.io/f8d2724-A_b_Multivariate.png">
+  Test the Campaigns Sent to Past Behaviour Segments
+</Image>
 
 For example:
 
-- You are testing three messages (Variant A, Variant B, Variant C)
-- Your Campaign Reach is 2,000,000 users
-- You choose a Test Population of 15% of Campaign Reach (300,000 users)
+* You are testing three messages (Variant A, Variant B, Variant C)
+* Your Campaign Reach is 2,000,000 users
+* You choose a Test Population of 15% of Campaign Reach (300,000 users)
 
 Then, we send:
 
-- Variant A to 100,000 users
-- Variant B to 100,000 users
-- Variant C to 100,000 users
+* Variant A to 100,000 users
+* Variant B to 100,000 users
+* Variant C to 100,000 users
 
 After the 300,000 messages have been delivered, we calculate the winning message over this test group based on the number of views. 
 
@@ -86,23 +58,9 @@ We then automatically send the winning message to the remainder of your target a
 
 The following is a sample report:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/163bbdaf505a233a38bb365ee8744fc10c8b545749595c948923873023abe565-AB_Stats.png",
-        "Sample Campaign Reports of A/B Variant testing",
-        1440
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Sample Campaign Reports"
-    }
-  ]
-}
-[/block]
-
+<Image title="Sample Campaign Reports of A/B Variant testing" alt={1440} align="center" border={true} src="https://files.readme.io/163bbdaf505a233a38bb365ee8744fc10c8b545749595c948923873023abe565-AB_Stats.png">
+  Sample Campaign Reports
+</Image>
 
 ## Campaigns Sent to Live User Segments
 
@@ -119,53 +77,24 @@ Deciding on a test audience for A/B testing triggered campaigns requires some es
 If your test group size exceeds the total number of users who ultimately qualify for that campaign, then no winner is be declared and each message variant is alternatively delivered for the duration of the campaign.
 
 > 📘 Same Number of Clicks
-> 
+>
 > If all variants receive the same number of clicks, then Variant A is declared the winner.
 
 # Split Delivery
 
 For some campaigns, you want to send multiple variants of a message to your entire target audience without selecting a winner. With split delivery, you choose what percentage of your target audience receives each variant and we deliver them accordingly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7a1a774-ab5.png",
-        "Results of Split Delivery tests.",
-        1200
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Results of Split Delivery Test"
-    }
-  ]
-}
-[/block]
-
+<Image title="Results of Split Delivery tests." alt={1200} align="center" border={true} src="https://files.readme.io/7a1a774-ab5.png">
+  Results of Split Delivery Test
+</Image>
 
 Here is how it works:
 
 As with A/B testing, when creating the message for a campaign you can add up to three variants. With split delivery, you can decide what percentage of your audience receives each message variant. We deliver the messages in exactly this proportion for the duration of the campaign.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/981b1db-message_type_split_delivery.png",
-        "Variant Distribution for Split Delivery",
-        731
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Variant Distribution for Split Delivery"
-    }
-  ]
-}
-[/block]
-
+<Image title="Variant Distribution for Split Delivery" alt={731} align="center" width="smart" border={true} src="https://files.readme.io/981b1db-message_type_split_delivery.png">
+  Variant Distribution for Split Delivery
+</Image>
 
 After the campaign is completed, navigate to the campaign stats to compare how each message performed.
 
@@ -175,62 +104,33 @@ Sometimes you want to send a message to only a subset of the qualifying audience
 
 A use case is a limited offer when you want to distribute a fixed number of coupon codes. If the total reach for your campaign exceeds the available number of coupon codes, you can simply limit the number of users who will receive the message to the available number of coupons. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8f35a4d-ab7.png",
-        "Deliver Campaigns to subset of users.",
-        406
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Deliver Campaigns to Subset of Users"
-    }
-  ]
-}
-[/block]
-
+<Image title="Deliver Campaigns to subset of users." alt={406} align="center" border={true} src="https://files.readme.io/8f35a4d-ab7.png">
+  Deliver Campaigns to Subset of Users
+</Image>
 
 Here is how it works:
 
-In the campaign creation flow, when you are determining who to send your message to under the _Limits and Control Group_ section, select the option to limit delivery of the messages to the number you want.
+In the campaign creation flow, when you are determining who to send your message to under the *Limits and Control Group* section, select the option to limit delivery of the messages to the number you want.
 
 For triggered campaigns (based on live user segments), as users qualify, they receive the message until the total specified quantity is delivered, after which the campaign ends. For campaigns based on past behavior segments, we randomly select the users who receive the message.
 
 The campaign limits can also be configured as follows: 
 
-- Global campaign limit: Set up at the device level. 
-  - When _Send to all devices_ is selected, it limits the number of messages to be sent to all the active devices of each user every day (or as per the limits in settings). For instance, if the limit for the Mobile Push channel is set to 2 messages per day, and the user has 2 active devices with push tokens. When the push campaign is sent, it is delivered to all the user's active devices, resulting in a total message count of 2 in this scenario.
-  - When _Send to last active device_ is selected, limits the number of messages to be sent to each user for each day (or as per the limits in settings).
+* Global campaign limit: Set up at the device level. 
+  * When *Send to all devices* is selected, it limits the number of messages to be sent to all the active devices of each user every day (or as per the limits in settings). For instance, if the limit for the Mobile Push channel is set to 2 messages per day, and the user has 2 active devices with push tokens. When the push campaign is sent, it is delivered to all the user's active devices, resulting in a total message count of 2 in this scenario.
+  * When *Send to last active device* is selected, limits the number of messages to be sent to each user for each day (or as per the limits in settings).
 
-- Campaign run limit: Limits the number of users for an entire campaign or each run of a campaign for a fixed time or recurring campaign. In the case of live campaigns, each day is considered as each run.
+* Campaign run limit: Limits the number of users for an entire campaign or each run of a campaign for a fixed time or recurring campaign. In the case of live campaigns, each day is considered as each run.
 
-- Safety check: Prevents sending out unwanted campaigns. A campaign does not run if the number of qualified users exceeds the safety limit. The campaign creator receives an email alert for further action. 
+* Safety check: Prevents sending out unwanted campaigns. A campaign does not run if the number of qualified users exceeds the safety limit. The campaign creator receives an email alert for further action. 
 
 > 👍 Target Audience Example
-> 
+>
 > A customer has a budget for distributing 1,000 discount coupons but the qualified user count is 10,000. If you select the safety check, the campaign does not run and prevents the sender from spending over budget.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e9304f-Message_Type_Control_Group.png",
-        "Control Group and Targeting Cap",
-        513
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true,
-      "caption": "Control Group and Targeting Cap"
-    }
-  ]
-}
-[/block]
-
+<Image title="Control Group and Targeting Cap" alt={513} align="center" width="smart" border={true} src="https://files.readme.io/8e9304f-Message_Type_Control_Group.png">
+  Control Group and Targeting Cap
+</Image>
 
 # Email A/B Testing
 
@@ -240,78 +140,35 @@ CleverTap's email A/B testing feature lets you compare up to three different ver
 
 Creating an email campaign using the A/B testing feature follows a similar pattern to creating a normal email campaign. After choosing the segment to target and frequency of communication, you can run the campaign as an A/B test using the following steps.
 
-1. Select _A/B Test_ to set up the email A/B test.
+1. Select *A/B Test* to set up the email A/B test.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a99abc-5_Select_AB_Test.png",
-        "Create a message.",
-        1343
-      ],
-      "align": "center",
-      "sizing": "100",
-      "border": true,
-      "caption": "Create a Message"
-    }
-  ]
-}
-[/block]
-
+<Image title="Create a message." alt={1343} align="center" width="100%" border={true} src="https://files.readme.io/6a99abc-5_Select_AB_Test.png">
+  Create a Message
+</Image>
 
 2. On the next page, build two or three different variations of the email you want to send. You can modify the email template, content, subject line, and sender name. 
 
 3. Click **Done** after you are finished building the email variations.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/056e715-Message_Type_Email_A_B_test.png",
-        "Variant distribution of emails for A/B tests.",
-        804
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Variant Distribution of Emails"
-    }
-  ]
-}
-[/block]
-
+<Image title="Variant distribution of emails for A/B tests." alt={804} align="center" border={true} src="https://files.readme.io/056e715-Message_Type_Email_A_B_test.png">
+  Variant Distribution of Emails
+</Image>
 
 > 📘 Winner Evaluation
-> 
+>
 > We determine the winner based on the number of views and then deliver the winning message to the rest of your target audience. 
-> 
+>
 > In the above image, we are sending the A/B test to a sample size of 10% who will receive either Variant A or B. In other words, 5% of the target segment will receive email Variant A and another 5% will receive email Variant B. We will wait for 45 minutes to evaluate the winner based on the number of views. The winner variant is then automatically sent to the remaining 90% of the target segment.
-> 
+>
 > If there is a tie between Variant A and B, we will send the email Variant A to the remaining 90% of the audience.
 
 You are finished with setting up the A/B test portion of building your email campaign. Now, you can complete the rest of the steps similar to a normal campaign. 
 
 6. Click **Publish Campaign** to finalize your campaign.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/21481dd-6_Summary.png",
-        "Publish the Campaign",
-        1373
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Publish the Campaign"
-    }
-  ]
-}
-[/block]
-
+<Image title="Publish the Campaign" alt={1373} align="center" border={true} src="https://files.readme.io/21481dd-6_Summary.png">
+  Publish the Campaign
+</Image>
 
 # Multi-variant Campaigns
 
@@ -321,57 +178,16 @@ For example, if you have users segregated based on languages. You can send campa
 
 You can create up to 50 such variants in the same message. The default variant engage the users who have no value against the profile property.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/567f327-7_Multivariate_campaigns.png",
-        "Create Multi-Variant Campaigns",
-        1345
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Multi-Variant Campaigns"
-    }
-  ]
-}
-[/block]
+<Image title="Create Multi-Variant Campaigns" alt={1345} align="center" border={true} src="https://files.readme.io/567f327-7_Multivariate_campaigns.png">
+  Create Multi-Variant Campaigns
+</Image>
 
+You can also perform analysis and derive insights based on the variant of the notification sent. For analysis, you can filter the information based on the event property *Variant* for the notification-based events (Notification Sent, Notification Clicked, etc.) as shown in the following figures. You can download the list of users to whom a specific notification variant was sent, as well as save this query as a segment and use it for further action.
 
-You can also perform analysis and derive insights based on the variant of the notification sent. For analysis, you can filter the information based on the event property _Variant_ for the notification-based events (Notification Sent, Notification Clicked, etc.) as shown in the following figures. You can download the list of users to whom a specific notification variant was sent, as well as save this query as a segment and use it for further action.
+<Image title="Filtering Variant details on Events page." alt={1784} align="center" border={true} src="https://files.readme.io/a460a51-Filtering_Variant_information_on_Events_page.png">
+  Filtering Variant Details on Event Page
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a460a51-Filtering_Variant_information_on_Events_page.png",
-        "Filtering Variant details on Events page.",
-        1784
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filtering Variant Details on Event Page"
-    }
-  ]
-}
-[/block]
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4a8bae7-Filtering_Variants_on_Funnels_page.png",
-        "Filtering Variants on Funnels page",
-        1778
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Filtering Variants on Funnels Page"
-    }
-  ]
-}
-[/block]
+<Image title="Filtering Variants on Funnels page" alt={1778} align="center" border={true} src="https://files.readme.io/4a8bae7-Filtering_Variants_on_Funnels_page.png">
+  Filtering Variants on Funnels Page
+</Image>
