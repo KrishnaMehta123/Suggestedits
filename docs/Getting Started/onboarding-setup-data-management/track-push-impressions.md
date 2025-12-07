@@ -16,82 +16,56 @@ The Push Impression event is tracked when a push notification sent from CleverTa
 
 To do so:
 
-1. Navigate to _Settings_ > _Schema_ > _Events_ from the CleverTap dashboard.
-2. Select the _Push Impressions_ event from the _System events_ tab.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and then select _Setup push impressions_ from the list.
-4. Turn ON the **Mobile Push** toggle and click **Save**. The _Push impressions tracking enables_ message displays on the screen.
+1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
+2. Select the *Push Impressions* event from the *System events* tab.
+3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and then select *Setup push impressions* from the list.
+4. Turn ON the **Mobile Push** toggle and click **Save**. The *Push impressions tracking enables* message displays on the screen.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0e8a8e4-Enable_Tracking_Push_Impressions_Event.gif",
-        null,
-        "Enable Tracking Push Impressions Event"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Enable Tracking Push Impressions Event"
-    }
-  ]
-}
-[/block]
+<Image alt="Enable Tracking Push Impressions Event" align="center" border={true} src="https://files.readme.io/0e8a8e4-Enable_Tracking_Push_Impressions_Event.gif">
+  Enable Tracking Push Impressions Event
+</Image>
 
 ### Enable Event Property Tracking
 
-The users can enable or disable the tracking of some of the _Push Impression_ event properties from the CleverTap dashboard. There are a few Push Impression event properties for which you do not have the option to enable or disable the tracking, which are listed as follows:
+The users can enable or disable the tracking of some of the *Push Impression* event properties from the CleverTap dashboard. There are a few Push Impression event properties for which you do not have the option to enable or disable the tracking, which are listed as follows:
 
-- `wzrk_ttl_s`
-- `wzrk_st`
-- `wzrk_rnv`
-- `Campaign type`
-- `wzrk_cid`
-- `wzrk_dl`
-- `wzrk_bc`
-- `wzrk_bi`
-- `wzrk_bp`
-- `wzrk_nms`
-- `wzrk_ck`
-- `wzrk_mutable_content`
-- `wzrk_ttl`
-- `wzrk_pn_s`
+* `wzrk_ttl_s`
+* `wzrk_st`
+* `wzrk_rnv`
+* `Campaign type`
+* `wzrk_cid`
+* `wzrk_dl`
+* `wzrk_bc`
+* `wzrk_bi`
+* `wzrk_bp`
+* `wzrk_nms`
+* `wzrk_ck`
+* `wzrk_mutable_content`
+* `wzrk_ttl`
+* `wzrk_pn_s`
 
 To enable the tracking of Push Impression event properties:
 
-1. Navigate to _Settings_ > _Schema_ > _Events_ from the CleverTap dashboard.
-2. Select the _Push Impression_  from the _System events_ tab.
-3. Click the hyperlink under the _Properties_ column. The Push Impression properties list opens. (@bajrang, this is not the latest screenshot)
+1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
+2. Select the *Push Impression*  from the *System events* tab.
+3. Click the hyperlink under the *Properties* column. The Push Impression properties list opens. (@bajrang, this is not the latest screenshot)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6c0b851-image.png",
-        null,
-        "Push Impressions Properties List"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Push Impressions Properties List"
-    }
-  ]
-}
-[/block]
+<Image alt="Push Impressions Properties List" align="center" border={true} src="https://files.readme.io/6c0b851-image.png">
+  Push Impressions Properties List
+</Image>
 
-4. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select _Enable property variant_ from the list. The _Enable property tracking_ popup opens.  
+4. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select *Enable property variant* from the list. The *Enable property tracking* popup opens.\
    (@bajrang: pls add a screenshot here.)
-5. Click **Enable** to confirm your action. The _Property tracking successfully enabled_ message displays on the screen. The status of the event property changes to _Active_. Once enabled, if you want to disable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Disable property variant** from the list. 
+5. Click **Enable** to confirm your action. The *Property tracking successfully enabled* message displays on the screen. The status of the event property changes to *Active*. Once enabled, if you want to disable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Disable property variant** from the list. 
 
 > 📘 Key Points to Remember
-> 
-> The following are some of the points to consider when configuring the _Push Impressions_ event:
-> 
-> - The event property tracking feature is not available for required properties.
-> - The **Status** is always _Active_ for mandatory properties.
-> - The tracking of configurable properties is disabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of push impression feature. 
-> - For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
+>
+> The following are some of the points to consider when configuring the *Push Impressions* event:
+>
+> * The event property tracking feature is not available for required properties.
+> * The **Status** is always *Active* for mandatory properties.
+> * The tracking of configurable properties is disabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of push impression feature. 
+> * For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
 
 The following table lists the Push Impression event properties:
 
