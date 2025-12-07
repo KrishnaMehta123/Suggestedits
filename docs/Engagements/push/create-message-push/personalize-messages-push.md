@@ -16,47 +16,19 @@ You can personalize the push message for every user based on specific user prope
 
 # Inline Personalization
 
-While creating a message, type the _@_ or the _{{}} \_symbol in the \_Title_ or _Text_ fields to invoke the personalization menu.
+While creating a message, type the *@* or the *\{\{}}\_symbol in the \_Title* or *Text* fields to invoke the personalization menu.
 
 You can also add dynamic replacements in the title and body. Refer to the following preview image:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/90fcafb-Inline_Personalization.png",
-        "Inline Personalization with @ and {{}}",
-        "Inline Personalization"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Inline Personalization"
-    }
-  ]
-}
-[/block]
+<Image title="Inline Personalization with @ and {{}}" alt="Inline Personalization" align="center" border={true} src="https://files.readme.io/90fcafb-Inline_Personalization.png">
+  Inline Personalization
+</Image>
 
+You can personalize the title and body, as well as media URLs, deep links, and button text. An *@* icon in a box indicates that it can be personalized. 
 
-You can personalize the title and body, as well as media URLs, deep links, and button text. An _@ _ icon in a box indicates that it can be personalized. 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d7af31bb1c849d8e7648764d557765fa0995fa605b934622fff8260a18f51833-Personaliza_Media_URL.png",
-        "Personalize Multiple Elements",
-        748
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Personalize Media URL"
-    }
-  ]
-}
-[/block]
-
+<Image title="Personalize Multiple Elements" alt={748} align="center" border={true} src="https://files.readme.io/d7af31bb1c849d8e7648764d557765fa0995fa605b934622fff8260a18f51833-Personaliza_Media_URL.png">
+  Personalize Media URL
+</Image>
 
 # Liquid Tags
 
@@ -64,24 +36,9 @@ Liquid tags offer great flexibility while composing personalized messages. Liqui
 
 Following is an example to send personalized coupon codes based on the type of membership:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8af3d4fac4da47b8e9aba636f35e267a035d99886f11fe24841b17fba46fd1e8-Sample_Liquid_Tags.png",
-        "Personalized Message by Customer Type ",
-        1110
-      ],
-      "align": "center",
-      "sizing": "85% ",
-      "border": true,
-      "caption": "Sample Liquid Tag"
-    }
-  ]
-}
-[/block]
-
+<Image title="Personalized Message by Customer Type " alt={1110} align="center" width="85% " border={true} src="https://files.readme.io/8af3d4fac4da47b8e9aba636f35e267a035d99886f11fe24841b17fba46fd1e8-Sample_Liquid_Tags.png">
+  Sample Liquid Tag
+</Image>
 
 Following is a preview of the final message. Each notification is personalized to the receiver. 
 
@@ -98,31 +55,31 @@ For more information on using Liquid tags, refer to [Liquid Tags](doc:liquid-tag
 CleverTap supports Liquid personalization for Push Campaigns sent via Campaign API. This feature enables you to dynamically customize push messages with user-specific values, improving user engagement.
 
 > 📘 Private Beta
-> 
+>
 > This feature is released in Private Beta. If you want to access this feature, contact your Customer Success Manager.
 
 ### Syntax
 
 Use the following syntax to configure personalization placeholders:
 
-- Profile Personalization: `{{Profile.name | default:"Name"}}`
-- Campaign ID Personalization: `{{Campaign.campaignId | default:"0_0"}}`
+* Profile Personalization: `{{Profile.name | default:"Name"}}`
+* Campaign ID Personalization: `{{Campaign.campaignId | default:"0_0"}}`
 
 > 📘 Supported and Unsupported Variables
-> 
+>
 > **Supported Variables**
-> 
-> - You can personalize Push Campaigns using the following placeholders with Liquid syntax:
->   - Profile attributes: `{{Profile.name}}, {{Profile.accounttype}}`
->   - Campaign ID: `{{Campaign.campaignId}}`
-> - Liquid syntax can be used in specific fields in the Push API payload. For more information on the parameters that support personalization, refer to [Campaign API](https://developer.clevertap.com/docs/create-campaign-api).
-> 
+>
+> * You can personalize Push Campaigns using the following placeholders with Liquid syntax:
+>   * Profile attributes: `{{Profile.name}}, {{Profile.accounttype}}`
+>   * Campaign ID: `{{Campaign.campaignId}}`
+> * Liquid syntax can be used in specific fields in the Push API payload. For more information on the parameters that support personalization, refer to [Campaign API](https://developer.clevertap.com/docs/create-campaign-api).
+>
 > **Unsupported Variables**
-> 
-> - Catalog and recommendation variables fall back to default values.
-> - Event personalization is not supported as API campaigns only utilize Past Behavior Segments, which do not allow for event personalization.
-> - As @ Personalization is not supported, any variable prefixed with @ (for example, @Profile - Name) is not parsed, that is, the variable is not replaced with a value.
-> - Messages with invalid Liquid syntax are flagged as errors. The following is a sample error: `Invalid syntax for title field. Rectify and try again. Read more: https://developer.clevertap.com/docs/create-campaign-api`
+>
+> * Catalog and recommendation variables fall back to default values.
+> * Event personalization is not supported as API campaigns only utilize Past Behavior Segments, which do not allow for event personalization.
+> * As @ Personalization is not supported, any variable prefixed with @ (for example, @Profile - Name) is not parsed, that is, the variable is not replaced with a value.
+> * Messages with invalid Liquid syntax are flagged as errors. The following is a sample error: `Invalid syntax for title field. Rectify and try again. Read more: https://developer.clevertap.com/docs/create-campaign-api`
 
 # Linked Content
 
@@ -172,72 +129,30 @@ Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_sett
 
 After you have uploaded a product catalog, you can display personalized recommendations to your customers. For example, you can display a sliding carousel to your customers based on their likes!  For more information on recommendations, see [Recommendations](doc:recommendations).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6264702-Recommendation_Sample.png",
-        "Map Catalog and Define Rules",
-        1752
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Create Recommendations"
-    }
-  ]
-}
-[/block]
-
+<Image title="Map Catalog and Define Rules" alt={1752} align="center" border={true} src="https://files.readme.io/6264702-Recommendation_Sample.png">
+  Create Recommendations
+</Image>
 
 # Catalog
 
 Click the ![Personlization](https://files.readme.io/b852e7f-Personalization_setting.png) icon in the editor to open personalization options.  Select a catalog from the list. 
 
-A _Catalog_ provides the ability to personalize campaigns with dynamic information in messages from product prices to inventory levels. You can create a new product catalog by uploading a file that contains one row for each item in your product catalog. A _Catalog_ can be uploaded directly on the CleverTap dashboard via a CSV file that is generated by your inventory management system. For more information on _Catalogs_, see [Catalogs](doc:catalog).
+A *Catalog* provides the ability to personalize campaigns with dynamic information in messages from product prices to inventory levels. You can create a new product catalog by uploading a file that contains one row for each item in your product catalog. A *Catalog* can be uploaded directly on the CleverTap dashboard via a CSV file that is generated by your inventory management system. For more information on *Catalogs*, see [Catalogs](doc:catalog).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5077276-catalog_sample.png",
-        "Store Catalog by Location",
-        1560
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Upload a Catalog"
-    }
-  ]
-}
-[/block]
-
+<Image title="Store Catalog by Location" alt={1560} align="center" border={true} src="https://files.readme.io/5077276-catalog_sample.png">
+  Upload a Catalog
+</Image>
 
 # Constant Event Property
 
 Constant Event Property allows you to engage the user for multiple actions and inactions. For example, person A added to cart a white coat, and person B added to cart a pair of blue jeans. However, none of them purchased the items. 
 
-You can create a campaign for each product added to the cart, or you can use a _constant event property_ to personalize the campaign to each user that did not purchase the item. 
+You can create a campaign for each product added to the cart, or you can use a *constant event property* to personalize the campaign to each user that did not purchase the item. 
 
-For example, you can map the _prod_name_ property of the _charged_ event to the _product_name_ property of the _added to cart_ event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. 
+For example, you can map the *prod\_name* property of the *charged* event to the *product\_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/790bd5c-Constant_property_sample.png",
-        "Constant Property Across Multiple Events",
-        1374
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Constant Property and Catalog Send-Time Personalization"
-    }
-  ]
-}
-[/block]
-
+<Image title="Constant Property Across Multiple Events" alt={1374} align="center" border={true} src="https://files.readme.io/790bd5c-Constant_property_sample.png">
+  Constant Property and Catalog Send-Time Personalization
+</Image>
 
  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
