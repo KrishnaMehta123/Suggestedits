@@ -24,72 +24,56 @@ next:
       url: https://docs.clevertap.com/docs/stats-for-amazon-eventbridge_c20
 ---
 This process involves adding Amazon Eventbridge details to the CleverTap dashboard. To add the details to the CleverTap dashboard:
+
 1. Log in to your CleverTap account.
 2. Navigate to *Settings* > *Partners* > *Exports*. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/034dcc7-Amazon_unconnected.png",
-        "Amazon unconnected.png",
-        1672,
-        1032,
-        "#e9ebf1"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="Amazon unconnected.png" alt={1672} className="border" border={true} src="https://files.readme.io/034dcc7-Amazon_unconnected.png" />
+
 3. Click the **Amazon** icon under the *Unconnected partners* section. The *Amazon* page is displayed.
 4. Enter Amazon service details.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/32bf8d8-EB_config.png",
-        "EB config.png",
-        1180,
-        392,
-        "#fcfcfd"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image title="EB config.png" alt={1180} className="border" border={true} src="https://files.readme.io/32bf8d8-EB_config.png" />
+
 The details can be obtained by navigating to *Amazon EventBridge* > *Amazon EventBridge* Partners and then clicking **Set up** CleverTap partner listing of the Amazon dashboard.
-[block:parameters]
-{
-  "data": {
-    "h-0": "Field",
-    "h-1": "Description",
-    "0-0": "AWS Account ID",
-    "1-0": "Region",
-    "0-1": "This user property is used as an identifier when sending events data to Amazon Eventbridge.",
-    "1-1": "Select the AWS region from the **AWS region** dropdown list to receive events."
-  },
-  "cols": 2,
-  "rows": 2
-}
-[/block]
-5. Click **Save**. On clicking, the message "Your Amazon credentials saved successfully" is displayed.
-Amazon is now displayed under Connected partners when you navigate to *Settings* > *Partners* > *Exports*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/178732a-Amazon_connected.png",
-        "Amazon connected.png",
-        1392,
-        794,
-        "#f9f9fa"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        AWS Account ID
+      </td>
+
+      <td>
+        This user property is used as an identifier when sending events data to Amazon Eventbridge.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Region
+      </td>
+
+      <td>
+        Select the AWS region from the **AWS region** dropdown list to receive events.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+5. Click **Save**. On clicking, the message "Your Amazon credentials saved successfully" is displayed.\
+   Amazon is now displayed under Connected partners when you navigate to *Settings* > *Partners* > *Exports*.
+
+<Image title="Amazon connected.png" alt={1392} className="border" border={true} src="https://files.readme.io/178732a-Amazon_connected.png" />
