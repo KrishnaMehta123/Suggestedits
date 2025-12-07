@@ -26,32 +26,18 @@ To personalize your campaign, click **+Key-Value Pair** and click **@** symbol i
 
 You can also add dynamic replacements in the *Values* field. The preview of the selected key-value pairs is displayed on the right side of the page (see figure below).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c09c8e9-Personalize_Campaign.png",
-        "Personalize Campaign.png",
-        2872,
-        1366,
-        "#d2cfda"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Personalize Campaign.png" alt={2872} className="border" border={true} src="https://files.readme.io/c09c8e9-Personalize_Campaign.png" />
+
 # Recommendations
 
 Click the ![Personlization](https://files.readme.io/d946c02-personalization_icon.png) icon in the editor to open personalization options. 
 
 You can send recommendation data to Amazon Eventbridge. For more information on recommendations, see [Recommendations](doc:recommendations).
 
-# Constant event property 
+# Constant event property
 
 Constant Event Property allows you to engage the user on multiple actions and inactions. For example, person A added a white coat to the cart, and person B added a pair of blue jeans to the cart, but they both did not purchase the items. 
 
 You can create a campaign for each product added to the cart or use a *constant event property* to personalize the campaign to each user that did not purchase the item. 
 
-For example, you can map the *prod_name* property of the *charged* event to the *product_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user.  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
+For example, you can map the *prod\_name* property of the *charged* event to the *product\_name* property of the *added to cart* event. You can then hold this property constant across both events. Based on this property, you can now personalize the message received by each user.  For more information on using a constant event property, see [Constant Event Property](doc:constant-property).
