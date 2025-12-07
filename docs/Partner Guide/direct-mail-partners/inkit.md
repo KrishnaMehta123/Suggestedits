@@ -20,8 +20,8 @@ With this integration, CleverTap seamlessly lets Inkit send direct mailers to yo
 
 The following are the prerequisites for this integration:
 
-- You must have an Inkit [Account](https://app.inkit.io/), an [API token](https://docs.inkit.com/docs/authentication#how-to-find-the-api-key-or-token-in-the-app), and a [Template ID](https://docs.inkit.com/docs/inkit-postcards-api#api-token-and-template-id) to send requests from CleverTap using webhook.
-- You must have an account with CleverTap.
+* You must have an Inkit [Account](https://app.inkit.io/), an [API token](https://docs.inkit.com/docs/authentication#how-to-find-the-api-key-or-token-in-the-app), and a [Template ID](https://docs.inkit.com/docs/inkit-postcards-api#api-token-and-template-id) to send requests from CleverTap using webhook.
+* You must have an account with CleverTap.
 
 # Integrate CleverTap with Inkit
 
@@ -38,67 +38,76 @@ To create the Inkit template:
 1. [Create a Postcard template](https://docs.inkit.com/docs/create-a-template) on the Inkit dashboard, which can be used on the CleverTap dashboard for sending campaigns.
 2. Copy the Template ID and save it for future use. You will need this Template ID when sending out the campaign from CleverTap.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0c55e7-d2a2948-create_a_template_with_key.gif",
-        "d2a2948-create_a_template_with_key.gif",
-        2149
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="d2a2948-create_a_template_with_key.gif" alt={2149} className="border" border={true} src="https://files.readme.io/e0c55e7-d2a2948-create_a_template_with_key.gif" />
 
 ## Set Up a Webhook
 
 To set up a webhook:
 
-1. Navigate to _Settings_ > _Engage_ > _Channels_ > _Webhooks_ to create a webhook on the CleverTap dashboard. 
+1. Navigate to *Settings* > *Engage* > *Channels* > *Webhooks* to create a webhook on the CleverTap dashboard. 
 2. Click **+ Add Webhook**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/01372a9-Add_a_webhook.png",
-        "Add a webhook.png",
-        3200
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Add a webhook.png" alt={3200} className="border" border={true} src="https://files.readme.io/01372a9-Add_a_webhook.png" />
 
 3. Configure the webhook template by adding the following details and click **Create**:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8dcbae6-create_webhook_template.png",
-        "create webhook template.png",
-        2014
-      ],
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="create webhook template.png" alt={2014} className="border" width="80%" border={true} src="https://files.readme.io/8dcbae6-create_webhook_template.png" />
 
-| <p>Field</p>               | <p>Description</p>                                                                                                                                                                                                                                |
-| :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <p>Name</p>                | <p>Enter the nickname for your webhook to uniquely identify the webhook.</p>                                                                                                                                                                      |
-| <p>Destination URL</p>     | <p>Enter the following URL:<br><a href="https://internal.inkit.io/integrations/webhook">https://internal.inkit.io/integrations/webhook</a> </p>                                                                                                   |
-| <p>Method</p>              | <p>Select the POST method from the dropdown.</p>                                                                                                                                                                                                  |
-| <p>Basic Authorization</p> | <ul><li>Enter the following:<br>Inkit &#x3C;API Token></li><li>To obtain the API token, refer to <a href="https://docs.inkit.com/docs/authentication#how-to-find-the-api-key-or-token-in-the-app">Find API Key or Token in the App</a>.</li></ul> |
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        <p>Field</p>
+      </th>
+
+      <th>
+        <p>Description</p>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <p>Name</p>
+      </td>
+
+      <td>
+        <p>Enter the nickname for your webhook to uniquely identify the webhook.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Destination URL</p>
+      </td>
+
+      <td>
+        <p>Enter the following URL:<br /><a href="https://internal.inkit.io/integrations/webhook">https\://internal.inkit.io/integrations/webhook</a> </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Method</p>
+      </td>
+
+      <td>
+        <p>Select the POST method from the dropdown.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>Basic Authorization</p>
+      </td>
+
+      <td>
+        <ul><li>Enter the following:<br />Inkit \<API Token></li><li>To obtain the API token, refer to <a href="https://docs.inkit.com/docs/authentication#how-to-find-the-api-key-or-token-in-the-app">Find API Key or Token in the App</a>.</li></ul>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## Create a Webhook Campaign
 
@@ -125,24 +134,10 @@ To create a webhook campaign:
 }
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8be8c4d-Define_the_campaign_content.png",
-        "Define the campaign content.png",
-        3150
-      ],
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image title="Define the campaign content.png" alt={3150} className="border" width="80%" border={true} src="https://files.readme.io/8be8c4d-Define_the_campaign_content.png" />
 
 To learn more about creating a webhook, refer to [Create a Webhook Campaign](doc:create-message-webhook).
 
 > 📘 Uploading Custom User Properties
-> 
+>
 > First Name, Last Name, Company, Address Line 1, Address Line 2, Address City, Address State, Address Zip, and Country are the custom user properties. You need to push it for every user using [API](https://developer.clevertap.com/docs/upload-user-profiles-api), [CSV upload](doc:csv-upload), [SDK](https://developer.clevertap.com/docs/clevertap-sdks#mobile-sdks), or [SFTP](https://developer.clevertap.com/docs/imports-via-sftp).
