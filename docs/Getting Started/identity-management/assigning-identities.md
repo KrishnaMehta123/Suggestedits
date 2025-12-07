@@ -51,23 +51,9 @@ After a user logs in, the profile with the CleverTap ID 4 is updated with an add
 
 The following image shows how user profiles are identified on multiple devices:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/81af898-image.png",
-        null,
-        "Common user on multiple devices - merging profiles"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Profile merge after identification"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Common user on multiple devices - merging profiles" align="center" border={true} src="https://files.readme.io/81af898-image.png">
+  Profile merge after identification
+</Image>
 
 Refer to the table below to understand how CleverTap assigns IDs to users logging in to the app. 
 
