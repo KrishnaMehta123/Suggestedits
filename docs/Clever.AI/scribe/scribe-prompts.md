@@ -12,10 +12,11 @@ next:
 ---
 ### E-Commerce
 
+
 <table style="width:100%; table-layout:fixed; border-collapse:collapse;">
   <colgroup>
-    <col style="width:36%;">
-    <col style="width:64%;">
+    <col style="width:36%;" />
+    <col style="width:64%;" />
   </colgroup>
   <thead>
     <tr>
@@ -75,15 +76,15 @@ next:
     </tr>
   </tbody>
 </table>
-
 ***
 
 ### Food Delivery
 
+
 <table style="width:100%; table-layout:fixed; border-collapse:collapse;">
   <colgroup>
-    <col style="width:36%;">
-    <col style="width:64%;">
+    <col style="width:36%;" />
+    <col style="width:64%;" />
   </colgroup>
   <thead>
     <tr>
@@ -142,15 +143,15 @@ next:
     </tr>
   </tbody>
 </table>
-
 ***
 
 ### Gaming
 
+
 <table style="width:100%; table-layout:fixed; border-collapse:collapse;">
   <colgroup>
-    <col style="width:36%;">
-    <col style="width:64%;">
+    <col style="width:36%;" />
+    <col style="width:64%;" />
   </colgroup>
   <thead>
     <tr>
@@ -210,15 +211,15 @@ next:
     </tr>
   </tbody>
 </table>
-
 ***
 
 ### OTT
 
+
 <table style="width:100%; table-layout:fixed; border-collapse:collapse;">
   <colgroup>
-    <col style="width:36%;">
-    <col style="width:64%;">
+    <col style="width:36%;" />
+    <col style="width:64%;" />
   </colgroup>
   <thead>
     <tr>
@@ -277,15 +278,15 @@ next:
     </tr>
   </tbody>
 </table>
-
 ***
 
 ### Fintech
 
+
 <table style="width:100%; table-layout:fixed; border-collapse:collapse;">
   <colgroup>
-    <col style="width:36%;">
-    <col style="width:64%;">
+    <col style="width:36%;" />
+    <col style="width:64%;" />
   </colgroup>
   <thead>
     <tr>
