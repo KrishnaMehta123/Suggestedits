@@ -22,80 +22,108 @@ This document explains how the Teams feature in CleverTap affects the way users 
 
 Teams work with Roles to define both **what users can do** (permissions) and **what they can access** (team-scoped entities).
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "**Role Type**",
-    "h-1": "**Access Description**",
-    "0-0": "**Admin**",
-    "0-1": "They have full access to all Campaigns, Journeys, and Segments across all teams in the project.  \n  \n**Note**: Admins are always members of all teams and cannot be removed.",
-    "1-0": "**Creator**",
-    "1-1": "They can create and edit Campaigns, Journeys, and Segments within their assigned teams.",
-    "2-0": "**Member**",
-    "2-1": "They can view Campaigns, Journeys, and Segments created within their teams.",
-    "3-0": "**Approver**",
-    "3-1": "They can approve campaigns created by users on their team if they have approval permissions.",
-    "4-0": "**Custom Roles**",
-    "4-1": "Access is limited to the user’s teams and governed by their configured permissions. For example, a Team Marketing Manager can publish journeys for Team A, but cannot access anything under Team B."
-  },
-  "cols": 2,
-  "rows": 5,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **Role Type**
+      </th>
 
+      <th>
+        **Access Description**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **Admin**
+      </td>
+
+      <td>
+        They have full access to all Campaigns, Journeys, and Segments across all teams in the project.  
+
+        * \*Note\*\*: Admins are always members of all teams and cannot be removed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Creator**
+      </td>
+
+      <td>
+        They can create and edit Campaigns, Journeys, and Segments within their assigned teams.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Member**
+      </td>
+
+      <td>
+        They can view Campaigns, Journeys, and Segments created within their teams.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Approver**
+      </td>
+
+      <td>
+        They can approve campaigns created by users on their team if they have approval permissions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Custom Roles**
+      </td>
+
+      <td>
+        Access is limited to the user’s teams and governed by their configured permissions. For example, a Team Marketing Manager can publish journeys for Team A, but cannot access anything under Team B.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # View Journeys on Listing Page
 
-The _Team_ column on the Journeys listing page displays the team associated with each journey.
+The *Team* column on the Journeys listing page displays the team associated with each journey.
 
-![](<>)
+![]()
 
-- You can view only the journeys that belong to the teams you are assigned to.
-- Admin users can view all journeys across all teams.
-- If you try to access a Journey via a shared link belonging to a different team, you will see a _Permission Denied_ error.
+* You can view only the journeys that belong to the teams you are assigned to.
+* Admin users can view all journeys across all teams.
+* If you try to access a Journey via a shared link belonging to a different team, you will see a *Permission Denied* error.
 
-You can also **filter** and **sort** the Journey list by Team. The _Created By_ filter continues to display the journey creator, even if they are no longer part of the team.
+You can also **filter** and **sort** the Journey list by Team. The *Created By* filter continues to display the journey creator, even if they are no longer part of the team.
 
 # Assign Journey to Team
 
 When a user initiates a new journey, the team assignment step determines where that journey will reside and who will be able to access it:
 
-- If the user is assigned to only one team, that team is automatically selected and locked, and the user cannot change it once the journey is published, even in edit.
-- If the user is part of multiple teams, a dropdown shows a list of the teams they belong to. The first team (based on join order) is preselected, but users can change it to any other team they are part of.
-- Admins can create journeys under any team, as they are implicitly part of all teams.
-- When you clone a journey, the team assignment cannot be changed. The cloned journey automatically inherits the same team as the original.
+* If the user is assigned to only one team, that team is automatically selected and locked, and the user cannot change it once the journey is published, even in edit.
+* If the user is part of multiple teams, a dropdown shows a list of the teams they belong to. The first team (based on join order) is preselected, but users can change it to any other team they are part of.
+* Admins can create journeys under any team, as they are implicitly part of all teams.
+* When you clone a journey, the team assignment cannot be changed. The cloned journey automatically inherits the same team as the original.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e669108e0f3cedcccf06d29b84e82787bb035ae1ffd1f4e6f14f0118000c61a-Assign_Journey_to_a_Team.png",
-        "",
-        "Assign Journey to a Team"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Assign Journey to a Team"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Assign Journey to a Team" align="center" border={true} src="https://files.readme.io/2e669108e0f3cedcccf06d29b84e82787bb035ae1ffd1f4e6f14f0118000c61a-Assign_Journey_to_a_Team.png">
+  Assign Journey to a Team
+</Image>
 
 This selection ensures that the journey is created with appropriate access rights.
 
 > 📘 Default Team
-> 
+>
 > When Teams is first enabled:
-> 
-> - All existing campaigns are assigned to the **Default Team** irrespective of their states.
-> - Any journey created without selecting a team is assigned to Default Team.
-> - Journeys in the Default Team are visible only to users who belong to it or Admins.
+>
+> * All existing campaigns are assigned to the **Default Team** irrespective of their states.
+> * Any journey created without selecting a team is assigned to Default Team.
+> * Journeys in the Default Team are visible only to users who belong to it or Admins.
 
 # Change Team for Journey
 
@@ -103,15 +131,15 @@ You can only change the assigned team if the Journey is still in **Draft** state
 
 # Segmentation in Journeys
 
-When defining the audience in the _Who_ section or configuring any node that uses segments, such as goals, conditional splits, or IntelliNODEs:
+When defining the audience in the *Who* section or configuring any node that uses segments, such as goals, conditional splits, or IntelliNODEs:
 
-- Only segments created within the **same team** as the Journey are available.
-- This also applies to **Include/Exclude** segments.
+* Only segments created within the **same team** as the Journey are available.
+* This also applies to **Include/Exclude** segments.
 
 When using another journey as a trigger, only journeys belonging to the selected team are available.
 
 > 🚧 Sharing Segments Across Teams
-> 
+>
 > If you change the team for a draft Journey, previously selected segments from a different team become invalid and must be replaced.
 
 # FAQs
@@ -120,7 +148,7 @@ Here are answers to common questions about using Teams with Journeys.
 
 ### Can a journey be moved to another team after publishing?
 
-No. The team reassignment is allowed only in the _Draft_ state.
+No. The team reassignment is allowed only in the *Draft* state.
 
 ### What happens if a user is removed from a team?
 
