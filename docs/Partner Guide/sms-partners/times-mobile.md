@@ -3,12 +3,12 @@ title: Times Mobile
 excerpt: SMS Provider
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Introduction
 
@@ -46,36 +46,23 @@ To configure the Times Mobile dashboard:
 2. Navigate to *Sender ID Management* > *Request Sender* and click **Request For Sender** to request a new sender ID. 
 3. Enter the following DLT-approved header details: **Sender Name**, **Account Type** (either trans or pro), and  **DLT Principal Entity Id**. **Sender Name** should be six characters or digits as per your account type.
 
-<Image alt="Configure Sender IDs " align="center" width="100%" border={true} src="https://files.readme.io/8dae093-Times_Internet_Request_Sender.png" /> Configure Sender IDs
+<Image alt="Configure Sender IDs " align="center" width="100%" border={true} src="https://files.readme.io/8dae093-Times_Internet_Request_Sender.png" /> 
+
+Configure Sender IDs
+
 4. After adding the header details, click  **Create Sender Request** to create the sender request.
 5. Navigate to *Bulk SMS* > *HTTP* from the Times Mobile dashboard to access your SMS Push API credentials. These credentials are required for configuration within the CleverTap platform. CleverTap recommends keeping these credentials handy before configuring them on the CleverTap dashboard.
 
-<Image alt="Configure CleverTap DLR Callback Webhook" align="center" border={true} src="https://files.readme.io/3d80859-SMS_Push_Credentials-_Times_internet.png" />  Obtain SMS Push API Credentials
+<Image alt="Configure CleverTap DLR Callback Webhook" align="center" border={true} src="https://files.readme.io/3d80859-SMS_Push_Credentials-_Times_internet.png" />
 
-
-
-
-
-
-
-
-
-
+Obtain SMS Push API Credentials
 
 6. Click **Username** > **Profile** from the Times Mobile Dashboard. 
 7. Under the **Delivery Report Post Back URL** section, configure the CleverTap DLR Callback Webhook for real-time SMS delivery updates. For more information, refer to the callback URL column in the [Configure CleverTap Dashboard ](doc:times-internet#configure-clevertap-dashboard) section.
 
-<Image alt="Obtain SMS Push API Credentials" align="center" border={true} src="https://files.readme.io/a12ee6f-Times_Internet-_Delivery_Report_Post_Back_URL.png" />  Configure CleverTap DLR Callback Webhook
+<Image alt="Obtain SMS Push API Credentials" align="center" border={true} src="https://files.readme.io/a12ee6f-Times_Internet-_Delivery_Report_Post_Back_URL.png" />
 
-
-
-
-
-
-
-
-
-
+Configure CleverTap DLR Callback Webhook
 
 If you encounter any issues while configuring, contact [support@timesmobile.in](mailto:support@timesmobile.in) for further assistance.
 
@@ -86,19 +73,12 @@ To add Times Mobile details on the CleverTap dashboard:
 1. From the CleverTap Dashboard, navigate to *Settings* > *Engage* > *Channels* > *SMS*.
 2. Click **+Add Provider**. The *Add SMS Provider* page opens. 
 
-<Image alt="Add SMS Provider" align="center" width="90% " border={true} src="https://files.readme.io/090cf81-SMS_Add_Provider.png" />  Add SMS Provider
+<Image alt="Add SMS Provider" align="center" width="90% " border={true} src="https://files.readme.io/090cf81-SMS_Add_Provider.png" />
 
-
-
-
-
-
-
-
-
-
+Add SMS Provider
 
 3. Select the *Setup* tab and enter the following details:
+
 <Table align={["left","left"]}>
   <thead>
     <tr>
@@ -226,19 +206,12 @@ To add Times Mobile details on the CleverTap dashboard:
     </tr>
   </tbody>
 </Table>
+
 **\*The fields marked with asterisk mark (\*) are mandatory fields.**
 
-<Image alt="Add Times Internet as an SMS Provider" align="center" width="70%" border={true} src="https://files.readme.io/7946b37-Times_Internet_Provider.png" /> Add Times Mobile as an SMS Provider
+<Image alt="Add Times Internet as an SMS Provider" align="center" width="70%" border={true} src="https://files.readme.io/7946b37-Times_Internet_Provider.png" />
 
-
-
-
-
-
-
-
-
-
+Add Times Mobile as an SMS Provider
 
 4. Click **Save** to save the details.
 
@@ -253,8 +226,9 @@ To ensure that the integration is successful, send a test SMS as follows:
    * *Message*: This is a test message.
 
    <Image alt="Send a Test SMS" align="center" width="75%" border={true} src="https://files.readme.io/8543b05-Send_a_Test_SMS_.png" />
-     Send a Test SMS
-   </Image>
+
+   Send a Test SMS
+
 3. Click **Send Test** to send the test campaign.
 
 # Times Mobile Callbacks
@@ -270,247 +244,6 @@ Upon receiving callbacks from Times Mobile, the comprehensive stats are displaye
 ## Set Up Message Payload
 
 This section provides information about the sample request payload sent to SMS providers.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Stats
 
