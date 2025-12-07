@@ -2,3 +2,4 @@
 - mandrill
 - postmark
 - sendgrid
+- generic-smtp
