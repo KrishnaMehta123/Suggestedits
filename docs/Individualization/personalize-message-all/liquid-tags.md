@@ -12,14 +12,14 @@ next:
 ---
 Liquid tags offer tremendous flexibility and personalization for your messages. You can create a 'write once use multiple times' message and add multiple variations to it. You can use Liquid tags with the following engagement channels:
 
-- Email
-- Mobile Push
-- SMS
-- Webhooks
-- App Inbox
-- In-App
-- Native Display
-- WhatsApp
+* Email
+* Mobile Push
+* SMS
+* Webhooks
+* App Inbox
+* In-App
+* Native Display
+* WhatsApp
 
 Here is a simple example of personalization with a liquid tag: 
 
@@ -49,22 +49,9 @@ You can personalize your messages for [Events](doc:events) and [User Profiles](d
 
 Let us create a Liquid tag in an email campaign. To create a tag, select the "New email with rich media" template when you create an [email campaign](https://docs.clevertap.com/docs/email#section-email-campaign-creation-steps). You can use Liquid Tags within this template. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png",
-        "Select a Rich Media Template",
-        2878
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select a Rich Media Template"
-    }
-  ]
-}
-[/block]
+<Image title="Select a Rich Media Template" alt={2878} align="center" border={true} src="https://files.readme.io/bc6d48d-Select_Rich_Media_Template.png">
+  Select a Rich Media Template
+</Image>
 
 The Liquid Tags work within the email editor. However, you can also combine the power of HTML with Liquid Tags.  You can paste your HTML code directly in the HTML editor by clicking the Source button and then personalize it with Liquid Tags. For more information, see [Liquid Tags with HTML](https://docs.clevertap.com/docs/liquid-tags#section-liquid-tags-with-htmll) 
 
@@ -74,13 +61,13 @@ The liquid terms are adapted from [shopify's documentation](https://shopify.gith
 
 You can start creating your message by declaring tags in the campaign editor. You can declare the tags in the following ways: 
 
-- For creating message conditions - Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
-- For displaying output from a variable - Output tags display the output of a variable. For example, if customer_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
+* For creating message conditions - Conditional tags can help you vary the message for each condition. For example, if your users make a purchase, then send them a coupon with an additional discount for their next purchase. You can create a conditional tag by enclosing the condition within curly braces and a % sign. Start by entering `{%` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{% if %} {% endif %}`
+* For displaying output from a variable - Output tags display the output of a variable. For example, if customer\_type is a variable, display all the types of customers such as Platinum, Gold,  and Silver. Start by entering `{{` in the email editor. The closing tag is completed automatically. The syntax for these tags is: `{{customer_type}}`
 
 You can use any of the Profile and Event properties within tags. Just enter `Profile.` or `Event.` in the editor, and we will list all the corresponding properties automatically. 
 
 > 📘 Note
-> 
+>
 > When selecting properties, the "P" in profile and the "E" in Events must be capitalized and followed with a period ".". Profile properties are available for all segments. Liquid tags for Event properties are only available for live user segments. The "@" personalization is supported only outside the tags.
 
 ## Conditional Tags
@@ -89,18 +76,18 @@ You can use conditional tags for creating simple or complex conditional statemen
 
 Following are the conditional tags:
 
-- if
-- else
-- else-if
-- unless
-- switch case
-- for
-- break
-- continue
-- abort
-- limit
-- offset
-- tablerow
+* if
+* else
+* else-if
+* unless
+* switch case
+* for
+* break
+* continue
+* abort
+* limit
+* offset
+* tablerow
 
 ### If
 
@@ -158,8 +145,8 @@ Hello!
 
 ### Switch case
 
-You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.  
-For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer_type".  You can change the displayed message based on the type of customers. 
+You can switch a statement when a variable changes in value.  The `when` statements define the various conditions.\
+For example, you have three types of customers, namely "Gold", "Silver" and everyone else. They are represented by the profile property "customer\_type".  You can change the displayed message based on the type of customers. 
 
 ```liquid Switch case Tag
 {% case Profile.customer_type %}
@@ -386,22 +373,9 @@ You can combine your HTML code with Liquid Tags to create beautiful and personal
 1. Open the message editor and paste your HTML code. 
 2. Click the ![Liquid tag](https://files.readme.io/651c228-Liquid_tag_icon.png) icon and add your Liquid Tags. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7aa86c-Add_Liquid_tags.png",
-        "Add Liquid Tags",
-        2876
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Liquid Tags"
-    }
-  ]
-}
-[/block]
+<Image title="Add Liquid Tags" alt={2876} align="center" border={true} src="https://files.readme.io/e7aa86c-Add_Liquid_tags.png">
+  Add Liquid Tags
+</Image>
 
 # Linked Content and Liquid Tags in Drag and Drop Editor
 
@@ -411,79 +385,27 @@ Perform the following steps to personalize drag and drop editor templates with l
 
 1. Select a template.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0fc50d2-Select_Media_Template.png",
-        "Select Media Template",
-        2878
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select Media Template"
-    }
-  ]
-}
-[/block]
+<Image title="Select Media Template" alt={2878} align="center" border={true} src="https://files.readme.io/0fc50d2-Select_Media_Template.png">
+  Select Media Template
+</Image>
 
-2. Click the Row item in _Preview_.
+2. Click the Row item in *Preview*.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png",
-        "Select the Row Tab",
-        1047
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Select the Row Tab"
-    }
-  ]
-}
-[/block]
+<Image title="Select the Row Tab" alt={1047} align="center" border={true} src="https://files.readme.io/b461f6b-2020-07-28_19-19-33_Select_row_item.png">
+  Select the Row Tab
+</Image>
 
-3. Click _More_ dropdown and select **Customize with Liquid Tags**. The _Personalize messages with Liquid tags and Linked Content_ popup displays.
+3. Click *More* dropdown and select **Customize with Liquid Tags**. The *Personalize messages with Liquid tags and Linked Content* popup displays.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png",
-        "Select Customize with Liquid Tags",
-        2862
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Customize with Liquid Tags"
-    }
-  ]
-}
-[/block]
+<Image title="Select Customize with Liquid Tags" alt={2862} align="center" border={true} src="https://files.readme.io/6404ab8-Select_Customize_with_Liquid_Tags.png">
+  Customize with Liquid Tags
+</Image>
 
 4. Add the liquid script inside the popup.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/57f0cf4-Add_liquid_script.png",
-        "Add Liquid Script",
-        2856
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "Add Liquid Script"
-    }
-  ]
-}
-[/block]
+<Image title="Add Liquid Script" alt={2856} align="center" border={true} src="https://files.readme.io/57f0cf4-Add_liquid_script.png">
+  Add Liquid Script
+</Image>
 
 5. Click **Add**.
 
@@ -491,15 +413,4 @@ Perform the following steps to personalize drag and drop editor templates with l
 
 For further information, you can watch the following video on liquid tags:
 
-
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F8LX2GcG3V8k%3Flist%3DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8LX2GcG3V8k&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F8LX2GcG3V8k%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=8LX2GcG3V8k&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=14",
-  "title": "Product Demo: Liquid Tags",
-  "favicon": "https://www.youtube.com/s/desktop/006e516c/img/favicon.ico",
-  "image": "https://i.ytimg.com/vi/8LX2GcG3V8k/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=8LX2GcG3V8k&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=14"
-}
-[/block]
+<Embed url="https://www.youtube.com/watch?v=8LX2GcG3V8k&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=14" title="Product Demo: Liquid Tags" favicon="https://www.youtube.com/s/desktop/006e516c/img/favicon.ico" image="https://i.ytimg.com/vi/8LX2GcG3V8k/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=8LX2GcG3V8k&list=PLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8&index=14" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F8LX2GcG3V8k%253Flist%253DPLTXk2GzdxAChuuVW4i_H3VwQ9obTRs1L8%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D8LX2GcG3V8k%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F8LX2GcG3V8k%252Fhqdefault.jpg%26key%3Df2aa6fc3595946d0afc3d76cbbd25dc3%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
