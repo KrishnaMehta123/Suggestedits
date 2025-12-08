@@ -88,16 +88,17 @@ From the campaign creation setup, select **Attachments** from the _What_ section
 
 * **File URL**: Paste a publicly accessible HTTPS URL pointing to the file. Also, provide a friendly display name for the file, such as `Monthly Report.pdf`.  After uploading, you can rename the file by hovering over the uploaded attachment and clicking the ![](https://files.readme.io/42a29cd4fe23c9ab89b9e3f19c62f7896517787823c9b86827530e2ee9266a0b-Rename_icon.png) icon. The display name provided here (for example, _Monthly Report.pdf_) is visible to the end user in their inbox. Attachments are **not stored in CMS automatically** when uploaded via this option.
 
-  <Image align="center" alt="Attach Files via Files URL" border={true} caption="Attach Files via Files URL" src="https://files.readme.io/73237a564349e698f1717dfecff2fdfb8ee7bee27d6e3fdc32b8bfd1f7c8557f-Attach_FIles_via_URL.gif" />
-* **Device Storage**: Click to open your file browser and select the file you want to upload. Attachments are **not stored in CMS automatically** when uploaded via this option.  
-
-  <br />
+  <Image align="center" alt="Attach Files via Files URL" border={true} caption="Attach Files via Files URL" src="https://files.readme.io/8f8cb6b88c9106711de6ffe8e1e6c8cc72665c6fa37542336a8126688306401d-Attach_Files_via_URL.gif" />
+* **Device Storage**: Click to open your file browser and select the file you want to upload. Attachments are **not stored in CMS automatically** when uploaded via this option.
 
   <Image align="center" alt="Attach Files via Device Storage" border={true} caption="Attach Files via Device Storage" src="https://files.readme.io/fb71219a6004ddb399ce79bd6582106269af7a31314eecf4058e6b18294083ab-Attach_File_via_Device_Storage.gif" />
-* **Content Manager**: Click **Browse** to attach previously uploaded assets to the email campaign.  
+* **Content Manager**: Click **Browse** to attach previously uploaded assets to the email campaign.
 
+  The attached files, along with their file names and types, are displayed in the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name.   
 
-  The attached files, along with their file names and types, are displayed in the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file.
+  <Image align="center" alt="Attach Image via Content Manager" border={true} caption="Attach Image via Content Manager" src="https://files.readme.io/031f13e04a9dc335235b6554c95e800379caead2341268baeea1eb6a29c12c59-via_Device_Storage_1.gif" />
+
+  The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file.
 
 <Callout icon="📘" theme="info">
   **Max Overall Email Size**
