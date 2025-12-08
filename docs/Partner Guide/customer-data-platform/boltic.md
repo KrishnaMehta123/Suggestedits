@@ -3,12 +3,12 @@ title: Boltic
 excerpt: Customer Data Platform
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -106,8 +106,8 @@ For this specific use case, we will use the Webhook trigger to send real-time da
    1. Drag the **API** block from the *Helpers*  panel on the left and drop it below the **Webhook** block in the workflow.
    2. Click **API** for configuration:
       1. Set the *HTTP Method* to *POST* to send the events and user profiles to CleverTap.
-      2. Enter the following *CleverTap API endpoint URL*, where you need to replace <region> with the region of your CleverTap account. To know the region of your account, refer to [API Quick Start Guide](https://developer.clevertap.com/docs/api-quickstart-guide).\
-         [https://<region>.api.clevertap.com/1/upload](https://\<region>.api.clevertap.com/1/upload)
+      2. Enter the following *CleverTap API endpoint URL*, where you need to replace &lt;region&gt; with the region of your CleverTap account. To know the region of your account, refer to [API Quick Start Guide](https://developer.clevertap.com/docs/api-quickstart-guide).\
+         `https://<region>.api.clevertap.com/1/upload`
 
 <Image alt="Select the API Action" align="center" border={true} src="https://files.readme.io/7fa13b1de6b61af8a238de9f75a0599066559dd417f36c5997a962b336a6d1b0-bolt_api_.gif" />
 Select API Action
