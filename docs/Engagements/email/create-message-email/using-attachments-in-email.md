@@ -72,7 +72,7 @@ CleverTap supports uploading images and PDFs using flexible upload methods to he
       </td>
 
       <td>
-        *   2 MB per PDF
+        * 2 MB per PDF
         * 2MB per document
         * 1 MB per image
       </td>
@@ -86,7 +86,7 @@ You can add attachments to your email directly from the **Content Manager**, **W
 
 From the campaign creation setup, select **Attachments** from the _What_ section, select one of the following options, and click **Attach**:
 
-* **File URL**: Paste a publicly accessible HTTPS URL pointing to the file. Also, provide a friendly display name for the file, such as _Monthly Report.pdf_.  After uploading, you can rename the file by hovering over the uploaded attachment and clicking the ![](https://files.readme.io/42a29cd4fe23c9ab89b9e3f19c62f7896517787823c9b86827530e2ee9266a0b-Rename_icon.png) icon. The display name provided here (for example, _Monthly Report.pdf_) is visible to the end user in their inbox. Attachments are **not stored in CMS automatically** when uploaded via this option.
+* **File URL**: Paste a publicly accessible HTTPS URL pointing to the file. Also, provide a friendly display name for the file, such as `Monthly Report.pdf`.  After uploading, you can rename the file by hovering over the uploaded attachment and clicking the ![](https://files.readme.io/42a29cd4fe23c9ab89b9e3f19c62f7896517787823c9b86827530e2ee9266a0b-Rename_icon.png) icon. The display name provided here (for example, _Monthly Report.pdf_) is visible to the end user in their inbox. Attachments are **not stored in CMS automatically** when uploaded via this option.
 
   <Image align="center" alt="Attach Files via Files URL" border={true} caption="Attach Files via Files URL" src="https://files.readme.io/6b31ad1f1816495e90e8ef26a8b60e9809ebb8f3131a3ff57dfc1fb945ca2fe7-Attach_Files_via_Files_URL.gif" />
 * **Device Storage**: Click to open your file browser and select the file you want to upload. Attachments are **not stored in CMS automatically** when uploaded via this option.
@@ -96,7 +96,7 @@ From the campaign creation setup, select **Attachments** from the _What_ section
 
   <Image align="center" alt="Attach FIles via Content Manager" border={true} caption="Attach Files via Content Manager" src="https://files.readme.io/560767193ddfcc6087800fce5d63ba545c2b5544f9485f6756b729fa03d9c9a6-Attach_FIles_via_Content_Manager.gif" />
 
-  The attached files, along with their file names and types, are displayed in the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file. 
+  The attached files, along with their file names and types, are displayed in the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file.
 
 <Callout icon="📘" theme="info">
   **Max Overall Email Size**
