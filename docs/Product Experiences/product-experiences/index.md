@@ -1,14 +1,17 @@
 ---
 title: Product Experiences Legacy
-excerpt: ''
+excerpt: >-
+  Learn how to use CleverTap's legacy Product Experiences to remotely configure
+  your app behavior and appearance using product configs and feature flags
+  without app store deployment.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 > 🚧 Feature Availability
 >
@@ -48,7 +51,9 @@ To create keys:
 
 You can now activate or deactivate the dark mode based on the keys. The default value that the app is expecting for this key is `3`. These values are set in your app. Assume the key value 3 means activate the feature, and 4 means to deactivate the feature.
 
-<Image title="Add key details and define the default value" alt={2880} align="center" border={true} src="https://files.readme.io/eafa5c2-product_exp_keys.png" /> Adding Key Details
+<Image title="Add key details and define the default value" alt={2880} align="center" border={true} src="https://files.readme.io/eafa5c2-product_exp_keys.png" />
+
+*Adding Key Details*
 
 4. Click **Save**. The `dark_mode` key is now listed on the *Manage Keys* page.
 
@@ -72,17 +77,9 @@ To define the segments:
 4. Create a segment by users who performed and/or did not perform an event.  You can also create segments for user properties such a demographics, geography, and so on. For our example, create a segment of iPhone users living in New York. 
 5. Save the segment. 
 
-<Image title="Define segments who will receive app changes" alt={1182} align="center" width="100%" border={true} src="https://files.readme.io/483d933-ProductExp_Segment_Create.png" />  Define Segments Who will Receive App Changes
+<Image title="Define segments who will receive app changes" alt={1182} align="center" width="100%" border={true} src="https://files.readme.io/483d933-ProductExp_Segment_Create.png" />
 
-
-
-
-
-
-
-
-
-
+*Define Segments Who will Receive App Changes*
 
 ## Edit/Clone a Segment
 
@@ -112,17 +109,9 @@ For example, select the "iPhone users in New York"  and "iPhone users in Miami" 
 5. Add the value and set the priority for your product config keys. Drag the <img src="https://files.readme.io/b3f4cdd-Move_icon.png" height="30px" width="30px" /> icon up or down to change segment priority. 
 6. Publish your product config or schedule it to be published at a later date. 
 
-<Image title="Create product config" alt={777} align="center" width="100%" border={true} src="https://files.readme.io/fc9b178-ProductExp_Product_Config_Create.png">  Create Product Config
+<Image title="Create product config" alt={777} align="center" width="100%" border={true} src="https://files.readme.io/fc9b178-ProductExp_Product_Config_Create.png" />
 
-
-
-
-
-
-
-
-
-
+*Create Product Config*
 
 ## Edit/Archive Product Config
 
@@ -149,17 +138,9 @@ You can view the following information:
 1. You can see a trend of the total number of keys delivered for all segments or a particular segment from the first chart.
 2. In the second box, you can further break it down to get the count of each type of key value-wise.
 
-<Image title="View product config stats" alt={720} align="center" width="100%" border={true} src="https://files.readme.io/f5d39be-Product_Exp_Keys_Stats.png">  View Product Config Stats
+<Image title="View product config stats" alt={720} align="center" width="100%" border={true} src="https://files.readme.io/f5d39be-Product_Exp_Keys_Stats.png" />
 
-
-
-
-
-
-
-
-
-
+*View Product Config Stats*
 
 ## Product Config Version
 
@@ -171,7 +152,10 @@ To revert to an older version:
 2. Click the ellipsis menu to edit a product config.  The versions appear on the right side.
 3. Click the required version number and publish. The selected version becomes active and the current version becomes inactive. 
 
-<Image title="Creating product config versions" alt={1157} align="center" width="100%" border={true} src="https://files.readme.io/1b1bd88-ProductExp_product_config_versioning.png">  Product Config Versions
+<Image title="Creating product config versions" alt={1157} align="center" width="100%" border={true} src="https://files.readme.io/1b1bd88-ProductExp_product_config_versioning.png" />
+
+*Product Config Versions*
+
 # Feature Flags
 
 You can have canary releases using feature flags. You can remotely turn on or turn off features on your app. 
@@ -202,31 +186,15 @@ For example, select the "iPhone users in New York" and "iPhone users in Miami" s
 5. Under *Key value and priority*, add the key value for each segment. 
 6. Toggle the selected segment and define the percentage of users who will receive this change. 
 
-<Image title="Create feature flags" alt={779} align="center" width="100%" border={true} src="https://files.readme.io/683d874-ProductExp_Feature_Flag_Create.png" />  Create Feature Flags
+<Image title="Create feature flags" alt={779} align="center" width="100%" border={true} src="https://files.readme.io/683d874-ProductExp_Feature_Flag_Create.png" />
 
-
-
-
-
-
-
-
-
-
+*Create Feature Flags*
 
 6. Publish your feature flag or schedule it to be published at a later date. 
 
-<Image title="Schedule or publish a feature flag" alt={698} align="center" border={true} src="https://files.readme.io/88c5406-ProductExp_feature_flag_schedule.png" />  Scheduling or Publishing a Feature Flag
+<Image title="Schedule or publish a feature flag" alt={698} align="center" border={true} src="https://files.readme.io/88c5406-ProductExp_feature_flag_schedule.png" />
 
-
-
-
-
-
-
-
-
-
+*Scheduling or Publishing a Feature Flag*
 
 ## Edit/Archive Feature Flags
 > 📘 Note
@@ -247,7 +215,9 @@ You can view the following information:
 1. You can see a trend of the total number of keys delivered for all segments or a particular segment from the first chart.
 2. In the second box, you can further break it down to get a count of each type of key value-wise
 
-<Image title="View feature flag stats" alt={723} align="center" border={true} src="https://files.readme.io/be9202d-ProductExp_Feature_Flags_Stats.png" />  View Feature Flag Stats
+<Image title="View feature flag stats" alt={723} align="center" border={true} src="https://files.readme.io/be9202d-ProductExp_Feature_Flags_Stats.png" />
+
+*View Feature Flag Stats*
 
 ## Feature Flag Version
 
@@ -257,7 +227,9 @@ A new version is created every time you edit a feature flag. If the current feat
 2. Click the ellipsis menu to edit a feature flag.  The versions appear on the right side.
 3. Click the required version number and publish it. The selected version becomes active and the current version becomes inactive. 
 
-<Image title="Create feature flag versions" alt={1181} align="center" width="100%" border={true} src="https://files.readme.io/83b192d-ProductExp_feature_flag_versioning.png" />  Feature Flag Versions
+<Image title="Create feature flag versions" alt={1181} align="center" width="100%" border={true} src="https://files.readme.io/83b192d-ProductExp_feature_flag_versioning.png" />
+
+*Feature Flag Versions*
 
 # Role-Based Access Control for Product Experiences
 
