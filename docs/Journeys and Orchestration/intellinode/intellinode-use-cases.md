@@ -3,12 +3,12 @@ title: IntelliNODE Use Cases
 excerpt: Understand how to make the most of your IntelliNODE experiment.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -389,8 +389,7 @@ Create different paths with IntelliNODE and find the best messaging order betwee
 </details>
 
 <details>
-  <summary><span class="bold"> Constantly nudging users to convert from AVOD to SVOD users may cause them to unsubscibe</span>
-</summary>
+  <summary><span class="bold"> Constantly nudging users to convert from AVOD to SVOD users may cause them to unsubscibe</span></summary>
 
 ### Constant nudges for SVOD cause user unsubscribes
 
