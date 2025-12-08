@@ -18,7 +18,7 @@ When integrated with CleverTap, Mail.so enables real-time email validation throu
 
 ### Use Case
 
-When a user submits an email through your app or website, CleverTap triggers a **Push Notification campaign**.\
+When a user submits an email through your app or website, CleverTap triggers a **Push Notification campaign**.  
 CleverTap’s **Linked Content** feature sends the email to Mail.so for verification and retrieves the validation result in real time.
 
 Based on the response:
@@ -50,23 +50,21 @@ The process includes three key configurations:
 To enable communication between CleverTap and Mail.so, you need a Mail.so API key. This key authenticates CleverTap’s requests to Mail.so and ensures secure data exchange. To do so, perform the following steps:
 
 1. Log in to your Mail.so Dashboard.
-2. Go to *API* from the top navigation panel.
-3. Copy the *API Key* displayed in this section.
+2. Go to _API_ from the top navigation panel.
+3. Copy the _API Key_ displayed in this section.
 4. Keep it secure; it will be used in the Linked Content configuration step.
 
-<Image alt="Mail.so API Key page" align="center" width="65% " border={true} src="https://files.readme.io/dd0453010af50fa59c5291e92bc27f5a9c21879684b76e2a4114c1f94f199ec1-image.png">
-  Mail.so API Key page
-</Image>
+<Image align="center" alt="Mail.so API Key page" border={true} caption="Mail.so API Key page" src="https://files.readme.io/dd0453010af50fa59c5291e92bc27f5a9c21879684b76e2a4114c1f94f199ec1-image.png" width="65% " />
 
 For additional details, refer to the [Mail.so API Documentation](https://mail.so/docs).
 
 ## Configure Linked Content
 
-Once the API key is ready, create a *Linked Content* configuration in CleverTap. Linked Content allows CleverTap to fetch live data from Mail.so’s verification API whenever a campaign runs.
+Once the API key is ready, create a _Linked Content_ configuration in CleverTap. Linked Content allows CleverTap to fetch live data from Mail.so’s verification API whenever a campaign runs.
 
 To configure Linked Content:
 
-1. Go to *Settings* > *Setup* > *Linked Content* from the CleverTap dashboard.
+1. Go to _Settings_ > _Setup_ > _Linked Content_ from the CleverTap dashboard.
 
 2. Click **+ Linked Content** and enter the following:
 
@@ -110,7 +108,7 @@ To configure Linked Content:
       </td>
 
       <td>
-        Enter the following endpoint URL: `https://api.mails.so/v1/validate?email={{email}}`  
+        Enter the following endpoint URL: `https://api.mails.so/v1/validate?email={{email}}`
 
         * The `{{email}}` parameter dynamically retrieves the user’s email from CleverTap.
         * The endpoint validates that email in real time through Mail.so’s API.
@@ -123,8 +121,8 @@ To configure Linked Content:
       </td>
 
       <td>
-        Add key-value pair as:\
-        Key: `x-mails-api-key`\
+        Add key-value pair as:  
+        Key: `x-mails-api-key`  
         Value: `<YOUR_API_KEY>`
       </td>
     </tr>
@@ -148,17 +146,15 @@ To configure Linked Content:
 }
 ```
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/d36834cdf3040ca49a7d0ebab85629522e18cddf38c6367926657441afd91c58-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/d36834cdf3040ca49a7d0ebab85629522e18cddf38c6367926657441afd91c58-image.png" className="border" />
 
 4. Click **Autofill Objects with Response** to map the data automatically.
 
-<Image align="center" className="border" width="45% " border={true} src="https://files.readme.io/a2234f9f6d4912a49e4c8daf056d1f2d341fe341afcb94bdb9ce881b43486e49-image.png" />
+<Image align="center" border={true} width="45% " src="https://files.readme.io/a2234f9f6d4912a49e4c8daf056d1f2d341fe341afcb94bdb9ce881b43486e49-image.png" className="border" />
 
 5. Click **Test and Save** to complete your Linked Content configuration.
 
-<Image alt="Test and Save" align="center" width="55% " border={true} src="https://files.readme.io/82403b215a4d6080c96d54ad01528db3f022816e401409c63af03d0dd4a97616-f3c8d36cb3a3c519913e7ce1264832eb7b72bfda7d84994768ac5441f5834d8c-image.png">
-  Test and Save
-</Image>
+<Image align="center" alt="Test and Save" border={true} caption="Test and Save" src="https://files.readme.io/82403b215a4d6080c96d54ad01528db3f022816e401409c63af03d0dd4a97616-f3c8d36cb3a3c519913e7ce1264832eb7b72bfda7d84994768ac5441f5834d8c-image.png" width="55% " />
 
 ## Configure the Campaign in CleverTap
 
@@ -203,8 +199,8 @@ Invalid email address provided. Please enter a valid email.
 
 When the campaign runs:
 
-* **For valid emails:** Users receive a success message such as *“Email verified successfully.”*
-* **For invalid emails:** Users receive a prompt such as *“Invalid email address provided. Please enter a valid email.”*
+* **For valid emails:** Users receive a success message such as _“Email verified successfully.”_
+* **For invalid emails:** Users receive a prompt such as _“Invalid email address provided. Please enter a valid email.”_
 
 This flow ensures data accuracy and improves the overall user experience.
 
@@ -212,11 +208,5 @@ This flow ensures data accuracy and improves the overall user experience.
 
 ## Conclusion
 
-This integration allows CleverTap to validate user emails dynamically through Mail.so and tailor messaging accordingly.\
+This integration allows CleverTap to validate user emails dynamically through Mail.so and tailor messaging accordingly.  
 It strengthens data accuracy, enhances user engagement, and ensures a cleaner, more reliable contact database.
-
-### 📘 **Final Category Placement**
-
-**Category:** Integrations\
-**Subcategory:** Email Validation\
-**Title:** *Mail.so Email Validation Integration with CleverTap*
