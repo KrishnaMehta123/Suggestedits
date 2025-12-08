@@ -2,7 +2,7 @@
 title: Data Warehouse Import
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
