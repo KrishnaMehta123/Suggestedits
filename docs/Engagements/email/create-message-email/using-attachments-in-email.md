@@ -96,7 +96,7 @@ From the campaign creation setup, select **Attachments** from the _What_ section
 
   <Image align="center" alt="Attach FIles via Content Manager" border={true} caption="Attach Files via Content Manager" src="https://files.readme.io/560767193ddfcc6087800fce5d63ba545c2b5544f9485f6756b729fa03d9c9a6-Attach_FIles_via_Content_Manager.gif" />
 
-  The attached files, along with their file names and types, are displayed in the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file.\ <br />
+  The attached files, along with their file names and types, are displayed in the _Preview_ section on the right. The files are validated for size, extension, and name during this time. You can **rename** a file uploaded by clicking the ![](https://files.readme.io/b79e2947976e8baefc1fba973c0a391d91528b5b933eb4e3a4eb7190ed62be37-Rename_icon.png) icon next to the file name and entering a display-friendly name. The display name provided here is visible to the end user in their inbox. You can remove any file by clicking the ![](https://files.readme.io/77cb7f4c433c6442788e32e4d6ec56906e305942d35b0c7c5e7f9f4a4c8949ad-70a339a-delete_all_icon.jpg) icon next to the uploaded file. 
 
 <Callout icon="📘" theme="info">
   **Max Overall Email Size**
