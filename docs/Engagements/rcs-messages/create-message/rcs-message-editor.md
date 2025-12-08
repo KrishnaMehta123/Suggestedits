@@ -78,7 +78,7 @@ Follow the steps below to configure Message Text:
 2. Enter the text for your message.
 3. To personalize the content:
 
-   * Click the **\{\{ }\}\** icon.
+   * Click the *_\{\{ }}*_ icon.
    * Select a profile or event property.
    * Insert the placeholder into the message text.
 4. Review the preview pane to confirm how the message appears.
@@ -142,7 +142,7 @@ To configure Fallback SMS:
 3. Enter the fallback SMS text.
 4. To personalize the SMS:
 
-   * Click the **\{\{ }\}\** icon.
+   * Click the *_\{\{ }}*_ icon.
    * Select a property.
    * Insert the placeholder into the SMS text.
 5. Review the SMS content to ensure compliance.
