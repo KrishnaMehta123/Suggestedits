@@ -39,7 +39,7 @@ Use this flow when your IDP handles provisioning but authentication does not rel
 * If using Auth0, the user must set their password via the reset flow.
 * Roles, teams, and statuses must be valid for the account.
 
-### **Supported Operations**
+### Supported Operations
 
 CleverTap supports four SCIM operations:
 
@@ -48,16 +48,14 @@ CleverTap supports four SCIM operations:
 * DELETE (remove access)
 * GET (retrieve user)
 
-### **Use This Flow When**
+### Use This Flow When
 
 * Your IDP manages provisioning only.
 * SSO is not used for authentication.
 
-***
+## Provision Users Through IDP With SSO
 
-## **Provision Users Through IDP With SSO**
-
-Use this flow when the IDP provisions users and authentication occurs through SSO. CleverTap applies the access details received from SCIM while login is handled outside CleverTap.
+Use this flow when the IDP provisions users, and authentication occurs through SSO. CleverTap applies the access details received from SCIM, while login is handled outside CleverTap.
 
 * The token must be created with the IDP flag enabled.
 * Use the endpoint `/scim/v2/idp/users`.
@@ -66,7 +64,7 @@ Use this flow when the IDP provisions users and authentication occurs through SS
 * No invite email is issued.
 * CleverTap applies the access attributes as provided.
 
-### **Behavior You Can Expect**
+### Behavior
 
 * Provisioned users appear in the CleverTap Users section.
 * Authentication is delegated to the SSO provider.
@@ -78,9 +76,7 @@ Use this flow when the IDP provisions users and authentication occurs through SS
 * Your organization uses SSO for login.
 * The IDP is the single source of truth for identity and attributes.
 
-***
-
-## **Use SCIM Through Direct API Requests (Non-IDP Mode)**
+## Use SCIM Through Direct API Requests (Non-IDP Mode)
 
 Use this mode when you want to manage provisioning without an IDP. This approach suits internal automation tools or custom provisioning systems.
 
@@ -89,9 +85,7 @@ Use this mode when you want to manage provisioning without an IDP. This approach
 * Follow the SCIM-compatible structure required for API requests.
 * All validation rules from the transcript apply to this flow.
 
-***
-
-## **Follow Payload Requirements for IDP Provisioning**
+## Payload for IDP Provisioning
 
 Use this structure when constructing IDP-originated provisioning requests. CleverTap validates the full request before applying access changes.
 
@@ -115,7 +109,7 @@ Use this structure when constructing IDP-originated provisioning requests. Cleve
 }
 ```
 
-### **Validation Rules to Keep in Mind**
+### Validation Rules 
 
 * Missing fields produce explicit errors.
 * Invalid roles or teams return validation errors.
@@ -126,9 +120,7 @@ Use this structure when constructing IDP-originated provisioning requests. Cleve
 
 SCIM provisioning does not trigger an invite email. Users complete authentication through your chosen identity method.
 
-***
-
-## **Manage Password Handling for Non-SSO Users**
+## Manage Password Handling for Non-SSO Users
 
 Use this section to understand how CleverTap handles passwords in IDP-based flows where SSO is not used.
 
@@ -136,9 +128,7 @@ Use this section to understand how CleverTap handles passwords in IDP-based flow
 * Users must set their password using the “Forgot Password” flow.
 * CleverTap does not display or store the generated password.
 
-***
-
-## **Troubleshoot Common Provisioning Issues**
+## Troubleshooting
 
 Use this section to identify common issues encountered during SCIM provisioning and understand their likely causes.
 
@@ -161,9 +151,7 @@ Use this section to identify common issues encountered during SCIM provisioning 
 * Status not set to `active` on creation
 * Account does not belong to the parent–child structure
 
-***
-
-## **Apply Best Practices for IDP-Based Provisioning**
+## Best Practices for IDP-Based Provisioning
 
 Use these recommendations to ensure reliable, predictable SCIM integration.
 
@@ -173,15 +161,7 @@ Use these recommendations to ensure reliable, predictable SCIM integration.
 * Validate roles and teams in CleverTap before mapping them in your IDP.
 * Test provisioning using a non-production account first.
 
-***
-
-If you'd like, I can now:
-
-✔ apply the same heading + lead-in improvements to your **Developer Guide**
-✔ produce a **consistency checklist** you can reuse
-✔ generate a **flow diagram** for IDP With SSO / Without SSO / Direct API
-
-Just tell me what you want next.
+<br />
 
 ***
 
