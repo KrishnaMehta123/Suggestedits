@@ -20,660 +20,649 @@ The schema table stores event and user properties in a pre-defined order to pres
 
 You can view your events under Settings> Schema Events. This page displays all the events you are working with and the ability to edit or discard them and search and filter them.
 
-The *Events* schema has four parts: 
+The _Events_ schema has four parts:
 
-* [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events) 
+* [Custom events](https://docs.clevertap.com/docs/schema#section-custom-events)
 * [System events](https://docs.clevertap.com/docs/schema#section-system-events)
-* [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event) 
-* [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event) 
+* [Conversion event](https://docs.clevertap.com/docs/schema#section-conversion-event)
+* [Qualifying event](https://docs.clevertap.com/docs/schema#section-qualifying-event)
 
 # System Events
 
-System events are tracked automatically. CleverTap can configure system events, enabling businesses to monitor and analyse user application actions. However, some businesses may not immediately need certain system events, resulting in potentially avoidable expenses. CleverTap allows businesses to configure those unused system events, providing a seamless process to address this issue. 
+System events are tracked automatically. CleverTap can configure system events, enabling businesses to monitor and analyse user application actions. However, some businesses may not immediately need certain system events, resulting in potentially avoidable expenses. CleverTap allows businesses to configure those unused system events, providing a seamless process to address this issue.
 
 ## Configure System Events
 
 To configure the tracking of system events:
 
-1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
-2. Select the event you want to configure from the *System events* tab.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select *Enable/Disable* from the list.
+1. Navigate to _Settings_ > _Schema_ > _Events_ from the CleverTap dashboard.
+2. Select the event you want to configure from the _System events_ tab.
+3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select _Enable/Disable_ from the list.
 
-<Image alt="Turn off Toggle to Disable Tracking UTM Visited" align="center" border={true} src="https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif">
-  Turn Off Toggle to Disable Tracking UTM Visited
-</Image>
+<Image align="center" alt="Turn off Toggle to Disable Tracking UTM Visited" border={true} caption="Turn Off Toggle to Disable Tracking UTM Visited" src="https://files.readme.io/4454bcf-UTM_Tracking_Toggle_Off.gif" />
 
 Currently, you can enable or disable tracking for the following events from the CleverTap dashboard:
 
 <details>
   <summary>Push Impression</summary>
 
-The Push Impression event is tracked when a push notification sent from CleverTap is delivered to a user’s device. After the toggle for Push Impressions is turned on, the CleverTap SDK starts recording an event whenever a push notification sent via CleverTap is delivered to the user’s device. 
-
-The *Push Impression* event has its properties, and the users can configure these non-required event properties to optimize the cost.
-
-To do so:
-
-1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
-2. Select the *Push Impressions* event from the *System events* tab.
-3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select *Setup push impressions* from the list.
-4. Turn ON the **Mobile Push** toggle and click **Save**. The *Push impressions tracking enables the* message to be displayed on the screen.
-
-<Image alt="Disable Tracking Push Impressions Event" align="center" border={true} src="https://files.readme.io/94f4dcb-Turn_Off_Push_Impression_Tracking.gif">
-  Disable Tracking Push Impressions Event
-</Image>
-
-### Disable Event Property Tracking
-
-The users can disable tracking of some of the *Push Impression* event properties from the CleverTap dashboard. However, there are a few Push Impression event properties for which you do not have the option to disable the tracking. These are listed as follows:
-
-<Table align={["left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Property
-      </th>
-
-      <th>
-        Property Description
-      </th>
-
-      <th>
-        Configurable
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        `wzrk_push_amp`
-      </td>
-
-      <td>
-        Indicates whether push amplification is enabled.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pn`
-      </td>
-
-      <td>
-        Indicates whether the push notification is sent from CleverTap.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `CT Source`
-      </td>
-
-      <td>
-        Specifies the source of the CleverTap campaign.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_id`
-      </td>
-
-      <td>
-        Specifies the CleverTap campaign ID associated with the notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pid`
-      </td>
-
-      <td>
-        Specifies the unique ID for the push notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pivot`
-      </td>
-
-      <td>
-        Indicates the variant used in the A/B test campaign.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_acct_id`
-      </td>
-
-      <td>
-        Specifies the CleverTap Account ID.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `CT App Version`
-      </td>
-
-      <td>
-        Indicates the version of the CleverTap App.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_dt`
-      </td>
-
-      <td>
-        Specifies the delivery type for the notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_acts`
-      </td>
-
-      <td>
-        Refers to the CTA button included in the notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pn_h`
-      </td>
-
-      <td>
-        Indicates the RenderMax health status of the push notification.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pn`
-      </td>
-
-      <td>
-        Indicates that the notification is sent from CleverTap, if present.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bp`
-      </td>
-
-      <td>
-        Displays an image in the notification if the URL is present.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_sound`
-      </td>
-
-      <td>
-        Plays the default or custom Android notification sound if present.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `nt`
-      </td>
-
-      <td>
-        Displays the notification title; defaults to app name if absent or empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `nm`
-      </td>
-
-      <td>
-        Displays the notification body; ignores the notification if absent or empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_dl`
-      </td>
-
-      <td>
-        Opens the specified deeplink when the notification is clicked, if present.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_d`
-      </td>
-
-      <td>
-        Ignores the notification if this key is present.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `ico`
-      </td>
-
-      <td>
-        Displays the small notification icon from the specified URL if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_pivot`
-      </td>
-
-      <td>
-        Identifies the variant type in A/B testing if present and not empty..
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_rnv`
-      </td>
-
-      <td>
-        Raises the Push Impressions event if present and not empty.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_nms`
-      </td>
-
-      <td>
-        Displays summary text with the image if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_st`
-      </td>
-
-      <td>
-        Displays subtitle text next to the app name if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_clr`
-      </td>
-
-      <td>
-        Applies the hex color to the small icon and app name (on Android versions below Pie) if present and not empty.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bpds`
-      </td>
-
-      <td>
-        Indicates the image rendering status with the following values:  
-
-        <ul><li> NO_IMAGE- No image included</li>
-        <li>SUCCESS- Image downloaded successfully</li>
-        <li> NO_NETWORK- Image included but no network connectivity</li>
-          <li> DOWNLOAD_FAILED- Image download failed due to an external error</li></ul>
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_cid`
-      </td>
-
-      <td>
-        Refers to the channel ID used for the push notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_mutable_content`
-      </td>
-
-      <td>
-        Enables rendering of rich push notification via extension class if set to true.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bi`
-      </td>
-
-      <td>
-        Specifies the badge icon to be displayed in the push notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_bc`
-      </td>
-
-      <td>
-        Specifies the badge count to be shown on the app icon.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `Campaign Type`
-      </td>
-
-      <td>
-        Indicates the campaign’s channel type (for example, Push, Email, SMS).
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_ttl`
-      </td>
-
-      <td>
-        Specifies the time to live (TTL) for the notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_ttl_s`
-      </td>
-
-      <td>
-        Specifies the time to live for the notification in seconds.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_cts`
-      </td>
-
-      <td>
-        Records the timestamp when the notification is clicked.
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_ck`
-      </td>
-
-      <td>
-        Defines the collapse key (typically a timestamp) for the notification.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_collapsible`
-      </td>
-
-      <td>
-        Specifies whether the notification is collapsible.
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_category`
-      </td>
-
-      <td>
-        Specifies the notification category for APNS (iOS only).
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_interruption_level`
-      </td>
-
-      <td>
-        Sets the interruption level on APNS (iOS only).
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `wzrk_relevance_score`
-      </td>
-
-      <td>
-        Assigns the relevance score on APNS (iOS only).
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-To disable the tracking of Push Impression event properties:
-
-1. From the *System events* tab, click the *Properties* hyperlink. The Push Impressions properties list opens.
-
-<Image alt="Push Impressions Properties List" align="center" border={true} src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png">
-  Push Impressions Properties List
-</Image>
-
-2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select *Disable Property* from the list. The *Enable property tracking* popup opens.
-
-<Image alt="Disable Property Tracking" align="center" border={true} src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif">
-  Disable Property Tracking
-</Image>
-
-3. Click **Disable** to confirm your action. The *Property tracking successfully disabled* message displays on the screen. The status of the event property changes to *Active*. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
-
-> 📘 Key Points to Remember
->
-> The following are some of the points to consider when configuring the *Push Impressions* event:
->
-> * The event property tracking feature is not available for required properties.
-> * The **Status** is always *Active* for mandatory properties.
-> * The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature. 
-> * For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
-
+  The Push Impression event is tracked when a push notification sent from CleverTap is delivered to a user’s device. After the toggle for Push Impressions is turned on, the CleverTap SDK starts recording an event whenever a push notification sent via CleverTap is delivered to the user’s device.
+
+  The *Push Impression* event has its properties, and the users can configure these non-required event properties to optimize the cost.
+
+  To do so:
+
+  1. Navigate to *Settings* > *Schema* > *Events* from the CleverTap dashboard.
+  2. Select the *Push Impressions* event from the *System events* tab.
+  3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and select *Setup push impressions* from the list.
+  4. Turn ON the **Mobile Push** toggle and click **Save**. The *Push impressions tracking enables the* message to be displayed on the screen.
+
+  <Image align="center" border={true} src="https://files.readme.io/94f4dcb-Turn_Off_Push_Impression_Tracking.gif" alt="Disable Tracking Push Impressions Event" />
+
+  ### Disable Event Property Tracking
+
+  The users can disable tracking of some of the *Push Impression* event properties from the CleverTap dashboard. However, there are a few Push Impression event properties for which you do not have the option to disable the tracking. These are listed as follows:
+
+  <Table align={["left","left","left"]}>
+    <thead>
+      <tr>
+        <th>
+          Property
+        </th>
+
+        <th>
+          Property Description
+        </th>
+
+        <th>
+          Configurable
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          `wzrk_push_amp`
+        </td>
+
+        <td>
+          Indicates whether push amplification is enabled.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pn`
+        </td>
+
+        <td>
+          Indicates whether the push notification is sent from CleverTap.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `CT Source`
+        </td>
+
+        <td>
+          Specifies the source of the CleverTap campaign.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_id`
+        </td>
+
+        <td>
+          Specifies the CleverTap campaign ID associated with the notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pid`
+        </td>
+
+        <td>
+          Specifies the unique ID for the push notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pivot`
+        </td>
+
+        <td>
+          Indicates the variant used in the A/B test campaign.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_acct_id`
+        </td>
+
+        <td>
+          Specifies the CleverTap Account ID.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `CT App Version`
+        </td>
+
+        <td>
+          Indicates the version of the CleverTap App.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_dt`
+        </td>
+
+        <td>
+          Specifies the delivery type for the notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_acts`
+        </td>
+
+        <td>
+          Refers to the CTA button included in the notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pn_h`
+        </td>
+
+        <td>
+          Indicates the RenderMax health status of the push notification.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pn`
+        </td>
+
+        <td>
+          Indicates that the notification is sent from CleverTap, if present.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bp`
+        </td>
+
+        <td>
+          Displays an image in the notification if the URL is present.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_sound`
+        </td>
+
+        <td>
+          Plays the default or custom Android notification sound if present.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `nt`
+        </td>
+
+        <td>
+          Displays the notification title; defaults to app name if absent or empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `nm`
+        </td>
+
+        <td>
+          Displays the notification body; ignores the notification if absent or empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_dl`
+        </td>
+
+        <td>
+          Opens the specified deeplink when the notification is clicked, if present.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_d`
+        </td>
+
+        <td>
+          Ignores the notification if this key is present.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `ico`
+        </td>
+
+        <td>
+          Displays the small notification icon from the specified URL if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_pivot`
+        </td>
+
+        <td>
+          Identifies the variant type in A/B testing if present and not empty..
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_rnv`
+        </td>
+
+        <td>
+          Raises the Push Impressions event if present and not empty.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_nms`
+        </td>
+
+        <td>
+          Displays summary text with the image if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_st`
+        </td>
+
+        <td>
+          Displays subtitle text next to the app name if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_clr`
+        </td>
+
+        <td>
+          Applies the hex color to the small icon and app name (on Android versions below Pie) if present and not empty.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bpds`
+        </td>
+
+        <td>
+          Indicates the image rendering status with the following values:
+
+          <ul><li> NO\_IMAGE- No image included</li>
+          <li>SUCCESS- Image downloaded successfully</li>
+          <li> NO\_NETWORK- Image included but no network connectivity</li>
+          <li> DOWNLOAD\_FAILED- Image download failed due to an external error</li></ul>
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_cid`
+        </td>
+
+        <td>
+          Refers to the channel ID used for the push notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_mutable_content`
+        </td>
+
+        <td>
+          Enables rendering of rich push notification via extension class if set to true.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bi`
+        </td>
+
+        <td>
+          Specifies the badge icon to be displayed in the push notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_bc`
+        </td>
+
+        <td>
+          Specifies the badge count to be shown on the app icon.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `Campaign Type`
+        </td>
+
+        <td>
+          Indicates the campaign’s channel type (for example, Push, Email, SMS).
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_ttl`
+        </td>
+
+        <td>
+          Specifies the time to live (TTL) for the notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_ttl_s`
+        </td>
+
+        <td>
+          Specifies the time to live for the notification in seconds.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_cts`
+        </td>
+
+        <td>
+          Records the timestamp when the notification is clicked.
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_ck`
+        </td>
+
+        <td>
+          Defines the collapse key (typically a timestamp) for the notification.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_collapsible`
+        </td>
+
+        <td>
+          Specifies whether the notification is collapsible.
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_category`
+        </td>
+
+        <td>
+          Specifies the notification category for APNS (iOS only).
+        </td>
+
+        <td>
+          Yes
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_interruption_level`
+        </td>
+
+        <td>
+          Sets the interruption level on APNS (iOS only).
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `wzrk_relevance_score`
+        </td>
+
+        <td>
+          Assigns the relevance score on APNS (iOS only).
+        </td>
+
+        <td>
+          No
+        </td>
+      </tr>
+    </tbody>
+  </Table>
+
+  To disable the tracking of Push Impression event properties:
+
+  1. From the *System events* tab, click the *Properties* hyperlink. The Push Impressions properties list opens.
+
+  <Image align="center" border={true} src="https://files.readme.io/1dd0fc5-View_Push_Impressions_Properties.png" alt="Push Impressions Properties List" />
+
+  2. Select the configurable property, click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, and select *Disable Property* from the list. The *Enable property tracking* popup opens.
+
+  <Image align="center" border={true} src="https://files.readme.io/479d1ac-Disable_a_Push_Impression_Property.gif" alt="Disable Property Tracking" />
+
+  3. Click **Disable** to confirm your action. The *Property tracking successfully disabled* message displays on the screen. The status of the event property changes to *Active*. Once disabled, if you want to enable the tracking later, you can do so by clicking the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon and selecting **Enable Property** from the list.
+
+  > 📘 Key Points to Remember
+  >
+  > The following are some of the points to consider when configuring the *Push Impressions* event:
+  >
+  > * The event property tracking feature is not available for required properties.
+  > * The **Status** is always *Active* for mandatory properties.
+  > * The tracking of configurable properties is enabled by default for new (new users of CleverTap dashboard) or returning users (existing users who turned off push impression feature) of Push Impression feature.
+  > * For existing users, the tracking of event properties remains as is, however, they have the additional capability to enable/disable tracking for the same.
 </details>
 
 <details>
   <summary>Web Session Started</summary>
 
-This is a web entry event similar to the App launched event. This event refers to the event triggered when a user starts a session or engages with your website. This event is recorded in two cases: 
+  This is a web entry event similar to the App launched event. This event refers to the event triggered when a user starts a session or engages with your website. This event is recorded in two cases:
 
-* When a user opens a webpage.
-* When a user reloads the browser after 20 minutes of inactivity.
+  * When a user opens a webpage.
+  * When a user reloads the browser after 20 minutes of inactivity.
 
-> 📘 Default Behavior
->
-> This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
-
+  > 📘 Default Behavior
+  >
+  > This event is disabled by default for all customers and can be configured by the customers. When enabled, it captures the unique visitors to the website in a particular session.
 </details>
 
 <details>
   <summary>UTM Visited</summary>
 
-The *UTM Visited* event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
+  The *UTM Visited* event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as AppsFlyer or Branch, sends this information to CleverTap. This event is recorded for your marketing campaigns from external sources, such as Google Ads or Facebook.
 
-> 📘 Default Behavior
->
-> The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of *UTM Visited* remains as is. However, they can enable or disable the same.
-
+  > 📘 Default Behavior
+  >
+  > The UTM Visited tracking is ON for new customers by default. For existing customers, the tracking of *UTM Visited* remains as is. However, they can enable or disable the same.
 </details>
 
 > 📘 Configuring Other System Events
@@ -682,124 +671,35 @@ The *UTM Visited* event is tracked when a user clicks on a link from a marketing
 
 # Custom Events
 
-Custom events are events that you can define, edit, remove, and so on. These are your app events that you can fully control. 
+Custom events are events that you can define, edit, remove, and so on. These are your app events that you can fully control.
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. Click the **Custom events** tab. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. Click the **Custom events** tab.
 
-If you have already defined your events, they are all present on this tab. 
+If you have already defined your events, they are all present on this tab.
 
-<Image title="Click Custom Events Tab" alt={1153} align="center" width="80%" border={true} src="https://files.readme.io/a13c357-Custom_Events.png">
-  View Custom Events
-</Image>
+<Image align="center" alt={1153} border={true} caption="View Custom Events" title="Click Custom Events Tab" src="https://files.readme.io/a13c357-Custom_Events.png" width="80%" />
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Event Detail
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Event name
-      </td>
-
-      <td>
-        The name of the event as it is displayed on the dashboard.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Type
-      </td>
-
-      <td>
-        There are two types:<ul> <li>Defined: Events that are part of your schema definition. </li> <li>Undefined: Events that are not defined in the schema but passed to CleverTap.</li> </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Status
-      </td>
-
-      <td>
-        An event can have any of the following statuses:<ul> <li>Active: An event that has been passed to CleverTap. </li> <li>Inactive: An event that has not yet been passed to CleverTap.</li> <li>Discarded: An event for which all past data has been dropped. Any future data that is passed for the event with the same name will also be dropped.</li> </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        DRP
-      </td>
-
-      <td>
-        Data retention policy defines the length of time that the data is retained.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        This month
-      </td>
-
-      <td>
-        The number of occurrences of the event in the current month.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Last month
-      </td>
-
-      <td>
-        The number of occurrences of the event in the previous month.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Count
-      </td>
-
-      <td>
-        A count can be an event, event property, or a user property update.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Properties
-      </td>
-
-      <td>
-        Attributes that provide additional context around the event. For more information, refer to [Event Property](https://docs.clevertap.com/docs/schema#section-event-property).
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Event Detail | Description                                                                                                                                                                                                                                                                                                                                                  |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Event name   | The name of the event as it is displayed on the dashboard.                                                                                                                                                                                                                                                                                                   |
+| Type         | There are two types:<ul> <li>Defined: Events that are part of your schema definition. </li> <li>Undefined: Events that are not defined in the schema but passed to CleverTap.</li> </ul>                                                                                                                                                                     |
+| Status       | An event can have any of the following statuses:<ul> <li>Active: An event that has been passed to CleverTap. </li> <li>Inactive: An event that has not yet been passed to CleverTap.</li> <li>Discarded: An event for which all past data has been dropped. Any future data that is passed for the event with the same name will also be dropped.</li> </ul> |
+| DRP          | Data retention policy defines the length of time that the data is retained.                                                                                                                                                                                                                                                                                  |
+| This month   | The number of occurrences of the event in the current month.                                                                                                                                                                                                                                                                                                 |
+| Last month   | The number of occurrences of the event in the previous month.                                                                                                                                                                                                                                                                                                |
+| Count        | A count can be an event, event property, or a user property update.                                                                                                                                                                                                                                                                                          |
+| Properties   | Attributes that provide additional context around the event. For more information, refer to [Event Property](https://docs.clevertap.com/docs/schema#section-event-property).                                                                                                                                                                                 |
 
 ## Add Event
 
-You can add an event from the *Custom events* tab. 
+You can add an event from the _Custom events_ tab.
 
-1. Navigate to *Settings* > *Schema Events* > *Custom events*.
-2. Click the **+Event** button to add an event. 
+1. Navigate to _Settings_ > _Schema Events_ > _Custom events_.
+2. Click the **+Event** button to add an event.
 3. Add the event name. This name must be unique in the schema.
 
-<Image title="Click +Event. toAdd a Custom Event" alt="Add a Custom Event" align="center" border={true} src="https://files.readme.io/6a62a19-Add_New_Event.png">
-  Add a Custom Event
-</Image>
+<Image align="center" alt="Add a Custom Event" border={true} caption="Add a Custom Event" title="Click +Event. toAdd a Custom Event" src="https://files.readme.io/6a62a19-Add_New_Event.png" />
 
 For more information, refer to [Event Property](https://docs.clevertap.com/docs/schema#section-event-property).
 
@@ -807,27 +707,25 @@ For more information, refer to [Event Property](https://docs.clevertap.com/docs/
 
 The name cannot be changed after the event is published.
 
-1. Click the edit icon on the event row. 
+1. Click the edit icon on the event row.
 2. Edit the event name.
-3. Click the checkmark. 
+3. Click the checkmark.
 
 ## Set Data Retention Policy
 
-The Data Retention Policy (DRP) retains an event for the specified time before discarding it automatically. Your subscription plan determines the default DRP limit. 
+The Data Retention Policy (DRP) retains an event for the specified time before discarding it automatically. Your subscription plan determines the default DRP limit.
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. From the System Events tab, click the ellipsis on the event row and click **Set Data Retention Policy (DRP)**. 
-3. Select *Custom*, then enter your specific time limit. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. From the System Events tab, click the ellipsis on the event row and click **Set Data Retention Policy (DRP)**.
+3. Select _Custom_, then enter your specific time limit.
 
 > 📘 CleverTap Essentials Plan Limit
 >
 > The default DRP for CleverTap Essentials Plan users is one year, which cannot be changed.
 
-4. Click **Save**. 
+4. Click **Save**.
 
-<Image alt="Custom DRP Selection" align="center" width="50% " border={true} src="https://files.readme.io/a57863ff74ecdc6b4f7712944b263471986135c4b829f70d073ef38fef10cd6e-image.png">
-  Custom DRP Selection
-</Image>
+<Image align="center" alt="Custom DRP Selection" border={true} caption="Custom DRP Selection" src="https://files.readme.io/a57863ff74ecdc6b4f7712944b263471986135c4b829f70d073ef38fef10cd6e-image.png" width="50% " />
 
 **DRP Change Propagation Time**
 
@@ -838,14 +736,12 @@ As the purging happens after 16 days, users must plan DRP changes well in advanc
 
 ## Remove Event
 
-You must be careful before removing an event. If you ever need to remove an event from the schema, remove it from the event row on the *Events* page. You can only remove an inactive event from your schema; however, the effects are minimal because the event is not active. This action does not drop another event coming in with the same name. 
+You must be careful before removing an event. If you ever need to remove an event from the schema, remove it from the event row on the _Events_ page. You can only remove an inactive event from your schema; however, the effects are minimal because the event is not active. This action does not drop another event coming in with the same name.
 
 1. Click the ellipsis menu on the event row.
-2. Click **Remove**. 
+2. Click **Remove**.
 
-<Image title="Click Remove from the Ellipsis Menu to Remove the Event" alt={1153} align="center" border={true} src="https://files.readme.io/b6033f7-Custom_Events.png">
-  Remove an Event
-</Image>
+<Image align="center" alt={1153} border={true} caption="Remove an Event" title="Click Remove from the Ellipsis Menu to Remove the Event" src="https://files.readme.io/b6033f7-Custom_Events.png" />
 
 After an event is removed:
 
@@ -861,11 +757,9 @@ You can discard an active event from the schema. You can still see the event row
 > You can discard only an active event. Discarding an event purges all data for that event and drops any future incoming events with the same name. This action impacts your schema. A discarded event can be restored, but only after 24 hours.
 
 1. Click the ellipsis menu on the event row.
-2. Click **Discard**. 
+2. Click **Discard**.
 
-<Image title="Click Discard from the Ellipsis Menu to Discard the Event" alt={1126} align="center" border={true} src="https://files.readme.io/6f94655-Discard_event.png">
-  Discard an Event
-</Image>
+<Image align="center" alt={1126} border={true} caption="Discard an Event" title="Click Discard from the Ellipsis Menu to Discard the Event" src="https://files.readme.io/6f94655-Discard_event.png" />
 
 > 📘 Discard Access
 >
@@ -873,7 +767,7 @@ You can discard an active event from the schema. You can still see the event row
 
 > 📘 AI-Generated Descriptions for Custom Events
 >
-> The system now automatically generates clear and consistent descriptions whenever a custom event is created or updated. You can choose to *Accept* or *Dismiss* the generated description. After accepting it, you can edit the description if needed.
+> The system now automatically generates clear and consistent descriptions whenever a custom event is created or updated. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
 
 ## Restore Event
 
@@ -882,31 +776,27 @@ You can restore a previously discarded event, event property, or user property f
 > 🚧 Cooldown Period for Restore and Re-discard
 >
 > * After you discard an item, you cannot restore it for the next 24 hours.
-> * After you restore an item, you cannot discard it again for the next 24 hours. 
+> * After you restore an item, you cannot discard it again for the next 24 hours.
 >
 > These measures prevent accidental or repeated changes to your schema.
 
 ### Restore a Single Item
 
-1. Go to the *Custom events* page.
+1. Go to the _Custom events_ page.
 2. Locate the discarded event you want to restore.
-3. Click the ![](https://files.readme.io/d1a1a29245a043e42fe9f768ccb6c41e50dc1693d8b3553ac09edd9cadcc8355-Restore_Icon.png)  icon. 
+3. Click the ![](https://files.readme.io/d1a1a29245a043e42fe9f768ccb6c41e50dc1693d8b3553ac09edd9cadcc8355-Restore_Icon.png)  icon.
 4. In the confirmation window, click **Restore**.
 
-<Image alt="Restore Custom Event" align="center" border={true} src="https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png">
-  Restore Custom Event
-</Image>
+<Image align="center" alt="Restore Custom Event" border={true} caption="Restore Custom Event" src="https://files.readme.io/b64c088b7f531e770b0e9b81441008e59bb5b099c0a00a2f8b0be2826e0b9568-image.png" />
 
 ### Restore Multiple Items
 
-1. Go to the Events, or Event Properties, or User Properties table on the *Custom events* page.
+1. Go to the Events, or Event Properties, or User Properties table on the _Custom events_ page.
 2. Select the discarded items you want to restore.
 3. Click the ![](https://files.readme.io/4f93c7fed376db11d7b36dd4e54539e1a2284761341d8dfc3e227322f366d3d5-Restore_Icon.png)  icon from the toolbar.
 4. In the confirmation window, click **Restore**.
 
-<Image alt="Bulk Restore discarded items" align="center" border={true} src="https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png">
-  Bulk Restore Discarded Items
-</Image>
+<Image align="center" alt="Bulk Restore discarded items" border={true} caption="Bulk Restore Discarded Items" src="https://files.readme.io/f3def79a65dda3e144e4a8711f3e4e0407dc1b61b35dbcb12699fbde4ba41230-image.png" />
 
 > 📘 Restore Access
 >
@@ -914,7 +804,7 @@ You can restore a previously discarded event, event property, or user property f
 
 ## Encrypt Event Property
 
-You can encrypt the data for custom events to meet your security or audit requirements. CleverTap allows you to encrypt a single custom event or multiple custom events. This feature ensures that your PII data has additional security. It takes about 15 minutes to start encrypting data. The encryption will apply only to new data. 
+You can encrypt the data for custom events to meet your security or audit requirements. CleverTap allows you to encrypt a single custom event or multiple custom events. This feature ensures that your PII data has additional security. It takes about 15 minutes to start encrypting data. The encryption will apply only to new data.
 
 > 🚧 Encryption is Irreversible
 >
@@ -924,16 +814,16 @@ You can encrypt the data for custom events to meet your security or audit requir
 
 To encrypt custom event data, follow these steps:
 
-1. Click the ellipsis menu on the event row. 
-2. Select *Encrypt*, and the *Encrypt* window appears.
+1. Click the ellipsis menu on the event row.
+2. Select _Encrypt_, and the _Encrypt_ window appears.
 3. Click **Apply**.
 
 ### Encrypt Bulk Events
 
 To encrypt multiple custom event data, follow these steps:
 
-1. Select the required events from the list. 
-2. Click the Encrypt icon at the top. The *Encrypt* window appears.
+1. Select the required events from the list.
+2. Click the Encrypt icon at the top. The _Encrypt_ window appears.
 3. Click **Apply**.
 
 # Mask Event Data
@@ -942,7 +832,7 @@ Apply masking to event properties in CleverTap to protect sensitive information 
 
 > 📘 Access Control
 >
-> Only dashboard users with Admin access can mask custom events or user properties.\
+> Only dashboard users with Admin access can mask custom events or user properties.  
 > Non-Admin roles do not have permission to apply masking to any values.
 
 Use masking when you want to:
@@ -962,20 +852,16 @@ To mask a single property, such as a user name or email, you can apply the maski
 
 To mask a single property:
 
-1. Go to *Settings* > *Schema* >*Events* > *Custom events*.
-2. Click the *Properties* hyperlink for the relevant custom event.
+1. Go to _Settings_ > _Schema_ >_Events_ > _Custom events_.
+2. Click the _Properties_ hyperlink for the relevant custom event.
 3. Click the ![](https://files.readme.io/fb90f6a-Ellipsis.png) icon, next to the property name and select **Mask**.
 4. In the confirmation dialog, click **Mask**.
 
-<Image alt="Mask Single Property" align="center" border={true} src="https://files.readme.io/452a72da983136b4eeaf027e7748230b1e60f718240625380b63033d7af3eb8a-2025-05-08_02-06-07_1.gif">
-  Mask Single Property
-</Image>
+<Image align="center" alt="Mask Single Property" border={true} caption="Mask Single Property" src="https://files.readme.io/452a72da983136b4eeaf027e7748230b1e60f718240625380b63033d7af3eb8a-2025-05-08_02-06-07_1.gif" />
 
 This will mask the complete value of selected properties. Only users with the required [role-based access](doc:role-based-access-control) will be able to see or unmask the full values of masked properties.
 
-<Image alt="Masked property queued for processing" align="center" border={true} src="https://files.readme.io/9aee73f5bf09518d23faedca071aa3f81d5a2f0b36452ac5c2d93c475bd28981-image.png">
-  Masked property queued for processing
-</Image>
+<Image align="center" alt="Masked property queued for processing" border={true} caption="Masked property queued for processing" src="https://files.readme.io/9aee73f5bf09518d23faedca071aa3f81d5a2f0b36452ac5c2d93c475bd28981-image.png" />
 
 Once confirmed, CleverTap begins masking the selected property in the background. The process typically completes within a few minutes.
 
@@ -985,20 +871,16 @@ To mask multiple properties in a custom event, you can mask them all in one go t
 
 To mask multiple properties:
 
-1. Go to *Settings* > *Schema* > *Events* > *Custom events*.
-2. Click the *Properties* hyperlink for the relevant custom event.
+1. Go to _Settings_ > _Schema_ > _Events_ > _Custom events_.
+2. Click the _Properties_ hyperlink for the relevant custom event.
 3. Select the checkboxes next to the properties to mask, then click the ![](https://files.readme.io/f5d0869de355db2c753f2c712fb174e07e0c4ca7c98e40ffb130035cefae64a8-2025-05-08_03-05-09.png) mask icon to mask properties in bulk.
 4. In the confirmation dialog, click **Mask**.
 
-<Image alt="Mask Properties in Bulk" align="center" border={true} src="https://files.readme.io/9dcacf8fcbf672a377ed27003032bb9baafb53898792e39d3d1809d4f8673af7-2025-05-08_02-17-57_1.gif">
-  Mask Properties in Bulk
-</Image>
+<Image align="center" alt="Mask Properties in Bulk" border={true} caption="Mask Properties in Bulk" src="https://files.readme.io/9dcacf8fcbf672a377ed27003032bb9baafb53898792e39d3d1809d4f8673af7-2025-05-08_02-17-57_1.gif" />
 
 This will mask the complete value of selected properties. Only users with the required [role-based access](doc:role-based-access-control) will be able to see or unmask the full values of masked properties.
 
-<Image alt="Masked property queued for processing" align="center" border={true} src="https://files.readme.io/ebad65c9d791a15ae65099da746df83b2e9071c7bb4caa370da64d75d9a71974-image.png">
-  Masked property queued for processing
-</Image>
+<Image align="center" alt="Masked property queued for processing" border={true} caption="Masked property queued for processing" src="https://files.readme.io/ebad65c9d791a15ae65099da746df83b2e9071c7bb4caa370da64d75d9a71974-image.png" />
 
 Once confirmed, CleverTap starts the background process. Within a few minutes, values for all masked properties will be replaced with placeholders
 
@@ -1008,112 +890,27 @@ Once confirmed, CleverTap starts the background process. Within a few minutes, v
 
 The events that are passed to CleverTap but not defined are marked as undefined events. You can define these events from the event row. Defining an event marks it as a recognized event in the schema, and therefore, when the event is received, this will not cause any error.
 
-1. Click the ellipsis menu on the event row. 
-2. Select *Define Event*. The new window opens.
-3. Click **Define & Save**. 
+1. Click the ellipsis menu on the event row.
+2. Select _Define Event_. The new window opens.
+3. Click **Define & Save**.
 
 ## Publish Schema/Events
 
 To publish the events, perform the following:
 
-1. Check that you have all the required events. 
-2. Click the **Publish Events** button. 
+1. Check that you have all the required events.
+2. Click the **Publish Events** button.
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Event Name
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Property name
-      </td>
-
-      <td>
-        The name of the property.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Type
-      </td>
-
-      <td>
-        The type of property:<ul> <li>Defined: Properties that you have added to the schema. </li> <li>Undefined: Properties that you have not added to the schema and are currently receiving data.</li> </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Status
-      </td>
-
-      <td>
-        An event property can have any of the following statuses:<ul> <li>Active: An event property that has been passed to CleverTap.</li> <li>Inactive: An event property that has not yet been passed to CleverTap.</li> <li>Discarded: An event property for which all past data has been dropped. Any future data passed for this user property with the same name will also be dropped.</li> </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Required
-      </td>
-
-      <td>
-        This defines whether a property is mandatory for the event.<ul> <li> <p>Yes: The property is mandatory. The event is dropped if it is received without the event property.<br /> <em>Note</em>: Exercise this option with caution. If an event is received without the required property, then the entire event is dropped. This is a powerful option to keep your data clean, but you could drop an existing event if it starts receiving an undefined property.</p> </li> <li> <p>No: The property is optional. The event is allowed even if it is received without the event property.</p> </li> </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Data type
-      </td>
-
-      <td>
-        This defines the data type of the event property:<ul> <li>String</li> <li>Integer</li> <li>Float</li> <li>Boolean</li> <li>Mixed</li> <li>List</li> </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Data type fallback
-      </td>
-
-      <td>
-        The fallback action if the event property is not in the defined format:<ul> <li>Drop event: This drops the incoming event if the data type does not match.<br /> <em>Note</em>: Exercise extreme caution when dropping an event. This action cannot be undone. This action has an impact on your schema because it purges all data for the dropped event. It also drops any future incoming event with the same name.</li> <li>Drop event property: This drops the incoming event property if the data type does not match.<br /> <em>Note</em>: Exercise extreme caution when dropping an event property. This action cannot be undone. This action has an impact on your schema because it purges all data for the dropped event property. It also drops any future incoming event property with the same name.</li> <li>Allow property: This allows the property even if the data type does not match.</li> </ul>An error is reported for all actions. A *drop* will have a higher severity, and *allow* will have a lower severity. For more information, refer to [Error Stream](https://docs.clevertap.com/docs/error-stream).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Created on
-      </td>
-
-      <td>
-        The date when the user property was created.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Description
-      </td>
-
-      <td>
-        The description of the event property. You can set the description from the ellipsis menu on the event property row. The property is optional. The event is allowed even if it is received without the event property.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Event Name         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :----------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Property name      | The name of the property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Type               | The type of property:<ul> <li>Defined: Properties that you have added to the schema. </li> <li>Undefined: Properties that you have not added to the schema and are currently receiving data.</li> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Status             | An event property can have any of the following statuses:<ul> <li>Active: An event property that has been passed to CleverTap.</li> <li>Inactive: An event property that has not yet been passed to CleverTap.</li> <li>Discarded: An event property for which all past data has been dropped. Any future data passed for this user property with the same name will also be dropped.</li> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Required           | This defines whether a property is mandatory for the event.<ul> <li> <p>Yes: The property is mandatory. The event is dropped if it is received without the event property.<br /> <em>Note</em>: Exercise this option with caution. If an event is received without the required property, then the entire event is dropped. This is a powerful option to keep your data clean, but you could drop an existing event if it starts receiving an undefined property.</p> </li> <li> <p>No: The property is optional. The event is allowed even if it is received without the event property.</p> </li> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Data type          | This defines the data type of the event property:<ul> <li>String</li> <li>Integer</li> <li>Float</li> <li>Boolean</li> <li>Mixed</li> <li>List</li> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Data type fallback | The fallback action if the event property is not in the defined format:<ul> <li>Drop event: This drops the incoming event if the data type does not match.<br /> <em>Note</em>: Exercise extreme caution when dropping an event. This action cannot be undone. This action has an impact on your schema because it purges all data for the dropped event. It also drops any future incoming event with the same name.</li> <li>Drop event property: This drops the incoming event property if the data type does not match.<br /> <em>Note</em>: Exercise extreme caution when dropping an event property. This action cannot be undone. This action has an impact on your schema because it purges all data for the dropped event property. It also drops any future incoming event property with the same name.</li> <li>Allow property: This allows the property even if the data type does not match.</li> </ul>An error is reported for all actions. A _drop_ will have a higher severity, and _allow_ will have a lower severity. For more information, refer to [Error Stream](https://docs.clevertap.com/docs/error-stream). |
+| Created on         | The date when the user property was created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Description        | The description of the event property. You can set the description from the ellipsis menu on the event property row. The property is optional. The event is allowed even if it is received without the event property.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 > 📘 Effect of Changing the Data Type of an Event or User Property
 >
@@ -1121,51 +918,33 @@ To publish the events, perform the following:
 > * The values already present in the old data type will not change in the new data type.
 > * For the users who already have the value of the user/event property in the old data type, you will have to again pass the user/event property with the value that will have a new data type.
 
-### AI-Generated Descriptions for User Properties, Custom Events, and Event Properties
-
-The system now automatically generates clear and consistent descriptions whenever a user property, custom event, or custom event property is created or updated. You can choose to *Accept* or *Dismiss* the generated description. After accepting it, you can edit the description if needed.
-
-These descriptions outline the purpose of the item, when it is triggered, and any relevant domain context. These details support teams in maintaining accurate, consistent, and readable metadata while reducing manual effort.
-
-AI-generated descriptions appear only when the description is blank. Existing descriptions remain unchanged.
-
-The following image shows how the system generates descriptions automatically:
-
-<Image alt="AI-Generated Descriptions" align="center" border={true} src="https://files.readme.io/b65740e2a6cc48dc01dc555988a05ede4f88f9730756aa8ace448119de4496c6-2025-12-04_17-08-08_1.gif">
-  AI-Generated Descriptions
-</Image>
-
 ## Add Event Property
 
-To add an event property: 
+To add an event property:
 
-1. Click the number of properties shown in the *Custom events* tab
-2. Click **+Property**, then click **Add new**.\
+1. Click the number of properties shown in the _Custom events_ tab
+2. Click **+Property**, then click **Add new**.  
    You can also add an event property from the catalog by clicking **Add from catalog**. For more information, refer to [Add Columns from a Catalog](doc:catalog-data-ingestion#add-columns-from-a-catalog).
 3. Enter a property name and choose the relevant property details.
-4. Select the checkmark. 
+4. Select the checkmark.
 
-<Image title="Click +Property to Add Event Property" alt={1144} align="center" border={true} src="https://files.readme.io/9a45a27-Add_property.png">
-  Add Event Property
-</Image>
+<Image align="center" alt={1144} border={true} caption="Add Event Property" title="Click +Property to Add Event Property" src="https://files.readme.io/9a45a27-Add_property.png" />
 
 ## Edit Event Property
 
-You can edit any column; however, you can only edit names for unpublished event properties. 
+You can edit any column; however, you can only edit names for unpublished event properties.
 
-1. Click the edit icon on the property row from the *Custom events* tab. 
+1. Click the edit icon on the property row from the _Custom events_ tab.
 2. Edit the property name and any other appropriate property details.
-3. Click the checkmark. 
+3. Click the checkmark.
 
-<Image title="Click the Edit Icon to Edit Event Property" alt={1184} align="center" border={true} src="https://files.readme.io/804cbdc-Edit_Event_Property.png">
-  Edit Event Property
-</Image>
+<Image align="center" alt={1184} border={true} caption="Edit Event Property" title="Click the Edit Icon to Edit Event Property" src="https://files.readme.io/804cbdc-Edit_Event_Property.png" />
 
 ## Remove Event Property
 
-You can remove an unpublished event property. 
+You can remove an unpublished event property.
 
-1. Click the ellipsis icon on the property row from the *Custom events* tab. 
+1. Click the ellipsis icon on the property row from the _Custom events_ tab.
 2. Click **Remove**.
 
 After an event property is removed:
@@ -1175,15 +954,13 @@ After an event property is removed:
 
 ## Discard Event Property
 
-You can discard a published event property from the schema. You can still see the event property row in the schema; however, it will be marked as discarded. 
+You can discard a published event property from the schema. You can still see the event property row in the schema; however, it will be marked as discarded.
 
-1. Click the ellipsis icon on the property row from the *Custom events* tab. 
+1. Click the ellipsis icon on the property row from the _Custom events_ tab.
 2. Click **Discard**, and a new window displays.
 3. Click **Discard** again.
 
-<Image title="Click Discard Button to Discard Event Property" alt={531} align="center" width="80%" border={true} src="https://files.readme.io/40172c7-Discard_event_property.png">
-  Discard Event Property
-</Image>
+<Image align="center" alt={531} border={true} caption="Discard Event Property" title="Click Discard Button to Discard Event Property" src="https://files.readme.io/40172c7-Discard_event_property.png" width="80%" />
 
 > ❗️ Caution When Discarding an Event Property
 >
@@ -1191,106 +968,37 @@ You can discard a published event property from the schema. You can still see th
 
 > 📘 AI-Generated Descriptions for Event Properties
 >
-> The system now automatically generates clear and consistent descriptions whenever a event property 
+> The system now automatically generates clear and consistent descriptions whenever a event property
 >
-> is created or updated. You can choose to *Accept* or *Dismiss* the generated description. After accepting it, you can edit the description if needed.
+> is created or updated. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
 
 # User Properties
 
 This section shows how to manage your user properties.
 
-1. Navigate to *Settings* > *Schema* > *User Properties*.  All the user properties are listed on this page.
+1. Navigate to _Settings_ > _Schema_ > _User Properties_.  All the user properties are listed on this page.
 2. Click any of the properties on the user property row to see the property details.
 
 From this page, you can also search and filter properties.
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        <p>Property Detail</p>
-      </th>
-
-      <th>
-        <p>Description</p>
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <p>Property name</p>
-      </td>
-
-      <td>
-        <p>The name of the user property.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Type</p>
-      </td>
-
-      <td>
-        <p>The type of property:</p><ul><li>Defined: Properties that you have added to the schema.</li><li>Undefined: Properties that you have not added to the schema and are currently receiving data.</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Status</p>
-      </td>
-
-      <td>
-        <p>A user property can have any of the following statuses:</p><ul><li>Active: A user property that has been passed to CleverTap.</li><li>Inactive: A user property that has not yet been passed to CleverTap.</li><li>Discarded: A user property for which all past data has been dropped. Any future data that is passed for this user property with the same name will also be dropped.</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Data type</p>
-      </td>
-
-      <td>
-        <p>This defines the data type of the user property:</p><ul><li>String</li><li>Integer</li><li>Float</li><li>Boolean</li><li>Mixed</li><li>List</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Data type fallback</p>
-      </td>
-
-      <td>
-        <p>This includes:</p><ul><li>Drop user property: This drops the incoming property if the data type does not match.<br /><em>Note</em>: Exercise extreme caution when dropping a user property. This action cannot be undone. This action has an impact on your schema because it purges all data for the discarded user property. It also drops any future incoming user property with the same name.</li><li>Allow property: This allows the property even if the data type does not match.<br />An error is reported for all actions. A <em>drop</em> will have a higher severity and <em>allow</em> will have a lower severity. For more information, refer to <a href="https://docs.clevertap.com/docs/error-stream">Error Stream</a>.</li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Created on
-      </td>
-
-      <td>
-        The date when the user property was created.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| <p>Property Detail</p>    | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| :------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>Property name</p>      | <p>The name of the user property.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| <p>Type</p>               | <p>The type of property:</p><ul><li>Defined: Properties that you have added to the schema.</li><li>Undefined: Properties that you have not added to the schema and are currently receiving data.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| <p>Status</p>             | <p>A user property can have any of the following statuses:</p><ul><li>Active: A user property that has been passed to CleverTap.</li><li>Inactive: A user property that has not yet been passed to CleverTap.</li><li>Discarded: A user property for which all past data has been dropped. Any future data that is passed for this user property with the same name will also be dropped.</li></ul>                                                                                                                                                                                                                                                                                                                                                  |
+| <p>Data type</p>          | <p>This defines the data type of the user property:</p><ul><li>String</li><li>Integer</li><li>Float</li><li>Boolean</li><li>Mixed</li><li>List</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| <p>Data type fallback</p> | <p>This includes:</p><ul><li>Drop user property: This drops the incoming property if the data type does not match.<br /><em>Note</em>: Exercise extreme caution when dropping a user property. This action cannot be undone. This action has an impact on your schema because it purges all data for the discarded user property. It also drops any future incoming user property with the same name.</li><li>Allow property: This allows the property even if the data type does not match.<br />An error is reported for all actions. A <em>drop</em> will have a higher severity and <em>allow</em> will have a lower severity. For more information, refer to <a href="https://docs.clevertap.com/docs/error-stream">Error Stream</a>.</li></ul> |
+| Created on                | The date when the user property was created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 ## Add User Property
 
-To add a user property from this page: 
+To add a user property from this page:
 
 1. Click the **+Property** button.
 2. Enter a property name and choose a data type.
 3. Click the checkmark.
 
-<Image title="Enter a Property Name and Choose a Data Type to Add a User Property" alt="Add User Property" align="center" border={true} src="https://files.readme.io/fc5ba43-Add_User_Property.png">
-  Add User Property
-</Image>
+<Image align="center" alt="Add User Property" border={true} caption="Add User Property" title="Enter a Property Name and Choose a Data Type to Add a User Property" src="https://files.readme.io/fc5ba43-Add_User_Property.png" />
 
 ## Edit User Property
 
@@ -1300,9 +1008,7 @@ You can edit any column; however, you can only edit names for unpublished user p
 2. Edit the property name and the data type.
 3. Click the checkmark.
 
-<Image title="Click the Edit Icon to Edit the Property Name and Data Type" alt={1109} align="center" width="80%" border={true} src="https://files.readme.io/0afe960-Edit_User_Property.png">
-  Edit User Property
-</Image>
+<Image align="center" alt={1109} border={true} caption="Edit User Property" title="Click the Edit Icon to Edit the Property Name and Data Type" src="https://files.readme.io/0afe960-Edit_User_Property.png" width="80%" />
 
 ## Remove User Property
 
@@ -1324,9 +1030,7 @@ You can discard a published user property from the schema. You can still see the
 2. Click **Discard**, and a new window displays.
 3. Click **Discard** again.
 
-<Image title="Click Discard Button to Discard User Property" alt={525} align="center" width="80%" border={true} src="https://files.readme.io/d75580c-Discard_User_Property.png">
-  Discard User Property
-</Image>
+<Image align="center" alt={525} border={true} caption="Discard User Property" title="Click Discard Button to Discard User Property" src="https://files.readme.io/d75580c-Discard_User_Property.png" width="80%" />
 
 > ❗️ Caution When Discarding a User Property
 >
@@ -1334,46 +1038,46 @@ You can discard a published user property from the schema. You can still see the
 
 > 📘 AI-Generated Descriptions for User Properties
 >
-> The system now automatically generates clear and consistent descriptions whenever a user property is created or updated. You can choose to *Accept* or *Dismiss* the generated description. After accepting it, you can edit the description if needed.
+> The system now automatically generates clear and consistent descriptions whenever a user property is created or updated. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
 
 ## Encrypt User Property
 
-You can encrypt the data for custom user properties to meet your security or audit requirements. CleverTap allows you to encrypt a custom user property or multiple custom user properties. This feature ensures that your PII data has additional security. It takes about 15 minutes to start encrypting data. The encryption will apply only to new data. 
+You can encrypt the data for custom user properties to meet your security or audit requirements. CleverTap allows you to encrypt a custom user property or multiple custom user properties. This feature ensures that your PII data has additional security. It takes about 15 minutes to start encrypting data. The encryption will apply only to new data.
 
 ### Encrypt a User Property
 
 To encrypt user property, follow these steps:
 
-1. Click the ellipsis menu on the event row. 
-2. Select *Encrypt*, and the *Encrypt* window appears.
+1. Click the ellipsis menu on the event row.
+2. Select _Encrypt_, and the _Encrypt_ window appears.
 3. Click **Apply**.
 
 ### Encrypt Bulk User Properties
 
 To encrypt multiple custom events data, follow these steps:
 
-1. Select the required properties from the list. 
-2. Click the Encrypt icon at the top. The *Encrypt* window appears.
+1. Select the required properties from the list.
+2. Click the Encrypt icon at the top. The _Encrypt_ window appears.
 3. Click **Apply**.
 
 ## Mask a Property
 
-You can mask the data for custom user or event properties to meet your security and audit requirements. CleverTap allows you to mask multiple custom properties. This feature ensures that your PII data has additional security.  
+You can mask the data for custom user or event properties to meet your security and audit requirements. CleverTap allows you to mask multiple custom properties. This feature ensures that your PII data has additional security.
 
 ### Mask a User Property
 
 To mask user property, follow these steps:
 
-1. Click the ellipsis menu on the event row. 
-2. Select *Mask*, and the *Mask* window appears.
+1. Click the ellipsis menu on the event row.
+2. Select _Mask_, and the _Mask_ window appears.
 3. Click **Apply**.
 
 ### Mask Bulk Properties
 
 To mask multiple custom events data, follow these steps:
 
-1. Select the required properties from the list. 
-2. Click the Mask icon at the top. The *Mask* window appears.
+1. Select the required properties from the list.
+2. Click the Mask icon at the top. The _Mask_ window appears.
 3. Click **Apply**.
 
 ## Create Linked Event for User Property
@@ -1382,19 +1086,17 @@ You can link an event with a user property. This allows you to trigger campaigns
 
 > 📘 Key Points to Remember
 >
-> * This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences. 
+> * This feature is supported only for messaging channels such as Push, SMS, Email, In-App, Webhooks, and remarketing channels such as Google Ads and Facebook Audiences.
 > * For In-App, CleverTap SDK v7.0.0 or higher is required.
 > * User property updates via Journeys are not supported for this feature.
 
 To link an event with a user property:
 
-1. Navigate to *Settings* > *Schema* > *User Property* from the CleverTap dashboard.
-2. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon and select *Create Linked Event*.
-3. Enter the *Event Name* and click **Create Event**.
+1. Navigate to _Settings_ > _Schema_ > _User Property_ from the CleverTap dashboard.
+2. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon and select _Create Linked Event_.
+3. Enter the _Event Name_ and click **Create Event**.
 
-<Image alt="Create Associated Event" align="center" border={true} src="https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif">
-  Create Linked Event
-</Image>
+<Image align="center" alt="Create Associated Event" border={true} caption="Create Linked Event" src="https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif" />
 
 ### Create Linked Events in Bulk
 
@@ -1404,28 +1106,22 @@ To create linked events in bulk:
 
 1. Select the user properties you want to link and click the ![](https://files.readme.io/9bd94d1-Bulk_Link.png) icon.
 
-<Image alt="Select User Properties in Bulk" align="center" border={true} src="https://files.readme.io/6675b4f-Bulk_Link_Event.png">
-  Bulk Link Events
-</Image>
+<Image align="center" alt="Select User Properties in Bulk" border={true} caption="Bulk Link Events" src="https://files.readme.io/6675b4f-Bulk_Link_Event.png" />
 
 2. Enter the events you want to link for each user property and click **Create**.
 
-<Image alt="Create Bulk Raise Events" align="center" border={true} src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png">
-  Create Linked Events in Bulk
-</Image>
+<Image align="center" alt="Create Bulk Raise Events" border={true} caption="Create Linked Events in Bulk" src="https://files.readme.io/7b5b7fd-Create_Linked_Events_in_Bulk.png" />
 
 ### Discard Linked Event
 
 You can discard a linked event from the user property.
 
-To discard linked events: 
+To discard linked events:
 
-1. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon of the user property. 
-2. Select *Discard Linked Event* and click **Discard**.
+1. Click the ![](https://files.readme.io/01a6671-Ellipsis.png) icon of the user property.
+2. Select _Discard Linked Event_ and click **Discard**.
 
-<Image alt="Discard a Linked Event" align="center" border={true} src="https://files.readme.io/5980787-Discard_Linked_Event.gif">
-  Discard a Linked Event
-</Image>
+<Image align="center" alt="Discard a Linked Event" border={true} caption="Discard a Linked Event" src="https://files.readme.io/5980787-Discard_Linked_Event.gif" />
 
 > 📘 Key Points to Remember
 >
@@ -1441,52 +1137,48 @@ To discard linked events:
 
 # Conversion Event
 
-The conversion event helps track conversion. 
+The conversion event helps track conversion.
 
 To set a conversion event:
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. Click the **Conversion event** tab. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. Click the **Conversion event** tab.
 
-To track revenue, set the user conversion event and revenue property. This property must be a numeric value. 
+To track revenue, set the user conversion event and revenue property. This property must be a numeric value.
 
-<Image title="Set Conversion Event Details and Click Save" alt={1155} align="center" border={true} src="https://files.readme.io/5ba54c0-set_conversion.png">
-  Set Up Conversion Event
-</Image>
+<Image align="center" alt={1155} border={true} caption="Set Up Conversion Event" title="Set Conversion Event Details and Click Save" src="https://files.readme.io/5ba54c0-set_conversion.png" />
 
 # Qualifying Event
 
 To set a qualifying event:
 
-1. Navigate to *Settings* > *Schema* > *Events*. 
-2. Click the **Qualifying event** tab. 
+1. Navigate to _Settings_ > _Schema_ > _Events_.
+2. Click the **Qualifying event** tab.
 
 This event qualifies users as active if they have performed the event at least once in the defined time.
 
-Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active) tab uses the qualifying event on the *Trends* page.
+Currently, the [active %](https://docs.clevertap.com/docs/trends#section-active) tab uses the qualifying event on the _Trends_ page.
 
-<Image title="Set Qualifying Event and Click Save" alt={1162} align="center" border={true} src="https://files.readme.io/5d67342-set_qualifying.png">
-  Set Qualifying Event
-</Image>
+<Image align="center" alt={1162} border={true} caption="Set Qualifying Event" title="Set Qualifying Event and Click Save" src="https://files.readme.io/5d67342-set_qualifying.png" />
 
 # Download Schema Data from Dashboard
 
-You can download the data for all events and user profiles from the CleverTap dashboard or via an API. 
+You can download the data for all events and user profiles from the CleverTap dashboard or via an API.
 
 ## Event Data
 
 To download event data from the CleverTap dashboard in CSV format:
 
-1. Go to *Settings* > *Schema* > *Events*. You can download event data from the *System events* tab or the *Custom events* tab. 
-2. Click the **Download as CSV** button, then the *Download CSV file* window displays. 
-3. Select to download *Events* or *Events with properties*.
+1. Go to _Settings_ > _Schema_ > _Events_. You can download event data from the _System events_ tab or the _Custom events_ tab.
+2. Click the **Download as CSV** button, then the _Download CSV file_ window displays.
+3. Select to download _Events_ or _Events with properties_.
 4. Click **Download**.
 
 ## User Profile data
 
 To download all event data from the CleverTap dashboard in CSV format:
 
-1. Go to *Settings* > *Schema* > *User Properties*.
+1. Go to _Settings_ > _Schema_ > _User Properties_.
 2. Click **Download as CSV**.
 
 ## Download with API
@@ -1504,11 +1196,11 @@ There are some specific validations when creating events and properties. For mor
 
 ### Can we get all past behavior data for an event after discarding it?
 
-No, we cannot get all past behavior data for an event after discarding it. 
+No, we cannot get all past behavior data for an event after discarding it.
 
 ### Does a discarded event appear under the user profile in the user's activity?
 
-No, a discarded event does not appear under the user profile in the user's activity. 
+No, a discarded event does not appear under the user profile in the user's activity.
 
 ### For how many days can I get the data of discarded events?
 
