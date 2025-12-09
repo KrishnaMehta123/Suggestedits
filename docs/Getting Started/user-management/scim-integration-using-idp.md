@@ -9,8 +9,8 @@ metadata:
 
 CleverTap supports SCIM-based provisioning through dedicated endpoints, applying and validating access details sent from your IDP. The SCIM token determines which endpoint to use and is generated with the appropriate configuration for IDP-based flows.
 
-* IDP-enabled tokens use: `/scim/v2/idp/users`
-* Non-IDP tokens use: `/scim/v2/users`
+* _IDP-enabled tokens use_: `/scim/v2/idp/users`
+* _Non-IDP tokens use_: `/scim/v2/users`
 
 When regenerating a token, update it wherever it is configured.
 
