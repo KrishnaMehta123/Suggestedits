@@ -968,9 +968,7 @@ You can discard a published event property from the schema. You can still see th
 
 > 📘 AI-Generated Descriptions for Event Properties
 >
-> The system now automatically generates clear and consistent descriptions whenever a event property
->
-> is created or updated. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
+> The system now automatically generates clear and consistent descriptions whenever a event property is created or updated. You can choose to _Accept_ or _Dismiss_ the generated description. After accepting it, you can edit the description if needed.
 
 # User Properties
 
