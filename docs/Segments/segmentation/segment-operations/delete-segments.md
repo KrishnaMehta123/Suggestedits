@@ -25,9 +25,9 @@ Learn how and when you can delete segments and manage dependencies.
 When deleting a segment, CleverTap automatically checks if it is included or excluded in any other segments or engagements. CleverTap ensures segments are safely deleted by validating their dependencies:
 
 * **Segments in Active Engagements**: A segment cannot be deleted if it is part of an active engagement. To delete a segment used in an active engagement, you must stop the active engagement.
-* **Segments with Dependent Segments**: A segment that depends on another segment cannot be deleted. For example, if _Segment A_ includes _Segment B_, you cannot delete _Segment B_ without first removing it from _Segment A_. However, it is possible to delete these segments when they do not have any engagements.
+* **Segments with Dependent Segments**:  A segment that depends on another segment can be deleted if the related segments do not have any engagements. 
 
-This process ensures seamless operation of all engagements and avoids errors caused by missing segments.
+  This process ensures seamless operation of all engagements and avoids errors caused by missing segments.
 
 ## Understand Deletion Rules for Engagement Types
 
