@@ -38,9 +38,13 @@ Before setting up Popular Recommendations, ensure the following:
 
 # Setting Up a Popular Recommendation
 
-Follow these steps to create and configure a Popular Recommendation setup for your account.
+Follow these steps to create and configure a Popular Recommendation setup for your account.  
 
-## Step 1: Select the Recommendation Type
+1. Select the Recommendation Type
+2. Configure Setup Parameters
+3. Publish and Monitor Status
+
+## Select the Recommendation Type
 
 From the Recommendations Setup dashboard:
 
@@ -49,7 +53,7 @@ From the Recommendations Setup dashboard:
 
 Each account can have multiple active Popular setups.
 
-## Step 2: Configure Setup Parameters
+## Configure Setup Parameters
 
 | Parameter       | Description                                                                                                              | Editable | Extended at Invocation |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------ | -------- | ---------------------- |
@@ -64,7 +68,7 @@ Each account can have multiple active Popular setups.
 | Count           | Number of items to recommend.                                                                                            | Yes      | Yes                    |
 | Product Details | Choose which product attributes appear in the recommendation response.                                                   | Yes      | Yes                    |
 
-## Step 3: Publish and Monitor Status
+## Publish and Monitor Status
 
 Once the setup is saved and published:
 
@@ -142,14 +146,14 @@ If personalization is enabled, you can pass the CleverTap user identity with the
 
 # FAQs
 
-### How are Popular Recommendations different from Trending Recommendations 
+### How are Popular Recommendations different from Trending Recommendations
 
 Popular rankings are based on cumulative interactions within a set window, while Trending weighs recent velocity and changes in engagement.
 
-### Can I override default recommendation rules?  
+### Can I override default recommendation rules?
 
 Yes, overwrites and extensions are allowed for rules, fallback rules, and counts at invocation.
 
-### What happens if there are fewer recommendations than requested?  
+### What happens if there are fewer recommendations than requested?
 
 The system fills missing items using fallback rules or default items.
