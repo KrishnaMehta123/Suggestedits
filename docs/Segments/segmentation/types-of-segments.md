@@ -18,20 +18,16 @@ CleverTap's Segmentation feature helps personalize user experiences and optimize
 
 Before creating any segment on the CleverTap dashboard, default system segments are already present. To view these system segments:
 
-1. Navigate to *Segments* > *Segments* from the CleverTap dashboard.
-2. Click the ![Filter icon](https://files.readme.io/1d37ff4-Filter_Icon.png) icon.
-3. From the *Created By* dropdown, select *System*.
+1. Navigate to _Segments_ > _Segments_ from the CleverTap dashboard.
+2. Click the ![](https://files.readme.io/1d37ff4-Filter_Icon.png) icon.
+3. From the _Created By_ dropdown, select _System_.
 
-   <Image alt="Filter System User Segments" align="center" border={true} src="https://files.readme.io/7614538-System_Segments.png">
-     Filter System User Segments
-   </Image>
-4. Click *Apply*, and all the system user segments display.
+   <Image align="center" alt="Filter System User Segments" border={true} caption="Filter System User Segments" src="https://files.readme.io/7614538-System_Segments.png" />
+4. Click _Apply_, and all the system user segments display.
 
-<Image alt="View All System User Segments" align="center" border={true} src="https://files.readme.io/46f2bf6-View_System_Segments.png">
-  View All System User Segments
-</Image>
+<Image align="center" alt="View All System User Segments" border={true} caption="View All System User Segments" src="https://files.readme.io/46f2bf6-View_System_Segments.png" />
 
-The following are the system-defined user segments that are available for your use: 
+The following are the system-defined user segments that are available for your use:
 
 * **First time App Users - Live View**: This system segment includes users who have recently installed and launched the app for the first time. First-time app users are crucial for businesses to understand, as they represent potential new customers or users. Analyzing this segment can help organizations tailor onboarding experiences, send targeted welcome messages, and implement strategies to encourage further engagement.
 * **Engaged Users - at least 4 times in the past week**: This segment comprises users who have demonstrated high engagement with the app. To qualify for this segment, users must have interacted with the app at least four times within the past week. Analyzing the behavior of these users provides insights into the features that are popular and help businesses design targeted campaigns or promotions to retain and further engage this user segment.
@@ -46,13 +42,31 @@ The following are the three types of segments that can be created from the Cleve
 * [Live User Segments](doc:types-of-segments#live-user-segments)
 * [Custom List Segments](doc:types-of-segments#custom-list-segments)
 
-<Image alt="Types of Segments" align="center" border={true} src="https://files.readme.io/9adfb41-All_Segments.png">
-  Types of Segments
-</Image>
+<Image align="center" alt="Types of Segments" border={true} caption="Types of Segments" src="https://files.readme.io/9adfb41-All_Segments.png" />
 
 ## Past Behavior Segments
 
-Past behavior segments include users grouped by their actions in the past. You can group users based on a single activity or do complex combinations of actions, inactions, and user properties. For example, you can create a segment of users from California who are females, have launched the application in the last 30 days, and have not purchased anything from the app.
+Past behavior segments allow you to group users based on actions or inactions they have performed in the past, combined with their user properties. Segments evaluate behavioral events relative to the date selected in the Today filter, while user properties evaluate on the actual calendar date unless otherwise specified.  
+
+For example, you can create a segment of users from California who are female, have launched the application within the last 30 days, and have not made any purchases from the app.    
+
+### Additional Use Cases
+
+**Use case:** Find users who launched the app two days ago but did not launch today
+
+This segment identifies users who performed an app launch exactly two days before the date selected in the Today filter and excludes users who launched the app on the selected date.
+
+**Outcome:**
+The system evaluates the segment relative to T-1 of the Today filter. When viewed on 3 December, the segment returns users who launched the app on 2 December and did not launch on 3 December.
+
+**Use case:** Find users whose birthday is today
+
+This segment identifies users whose birthday matches the current date on the calendar.
+
+**Outcome:**
+The system evaluates user properties based on the actual date of the event. As of 3 December 2025, the segment returns users whose birthday falls on the same date.
+
+Segmentation behavior for Past Behavior Segments varies based on the data type. Event-based conditions are evaluated relative to the Today filter, while user properties are assessed on the actual date.
 
 ## Live User Segments
 
