@@ -25,13 +25,13 @@ CleverTap helps you add and manage branded domains for your campaigns. You can e
 
 ## Add Domain
 
-This section provides information about creating a branded domain for your campaigns. You can choose between two types of domains: 
+This section provides information about creating a branded domain for your campaigns. You can choose between two types of domains:
 
 **System Domain:** Provided by CleverTap, where you can customize the system generated short links with your brand's prefix for easy integration without the need for DNS configuration.
 
 **Custom Domain:** Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking.
 
-Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs. 
+Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs.
 
 To create new System and Custom domains, follow the steps below:
 
@@ -39,11 +39,9 @@ To create new System and Custom domains, follow the steps below:
 
 You can create a system domain to quickly start using branded links without DNS configuration. Follow these steps:
 
-<Image alt="System Domain Creation" align="center" border={true} src="https://files.readme.io/9bc74aeb0814633f881aa3b1ddaadca049e395bb61df7f9f55379bad0c76a63c-image.png">
-  System Domain Creation
-</Image>
+<Image align="center" alt="System Domain Creation" border={true} caption="System Domain Creation" src="https://files.readme.io/9bc74aeb0814633f881aa3b1ddaadca049e395bb61df7f9f55379bad0c76a63c-image.png" width="75% " />
 
-1. Go to *Settings > Set Up > Branded Domain*.
+1. Go to _Settings > Set Up > Branded Domain_.
 
 2. Click **+ Domain**, and select **System Domain**.
 
@@ -60,7 +58,7 @@ You can create a system domain to quickly start using branded links without DNS 
    | mec1.dashboard.clevertap.com | ct8.io        | Middle East | ct8.io/25ZaJz |
    | aps3.dashboard.clevertap.com | ct9.io        | Indonesia   | ct9.io/52KJz  |
 
-5. Enter the **Adjoiner**: The adjoiner is a brand-specific path segment that connects the domain and short key, helping personalize your URLs. (for example, `/yourbrand`, `/clevertap/`).  
+5. Enter the **Adjoiner**: The adjoiner is a brand-specific path segment that connects the domain and short key, helping personalize your URLs. (for example, `/yourbrand`, `/clevertap/`).
 
 * **URL structure** : `domain/adjoiner/shortKey`
 * **Example**: `ct3.io/clevertap/abc123`
@@ -73,7 +71,7 @@ You can create a system domain to quickly start using branded links without DNS 
     * Must be unique per domain.
 
 6. Review the **URL Preview** to ensure that it appears as expected.
-7. Choose your **404 Error Page**:\
+7. Choose your **404 Error Page**:  
    The 404 error page configuration allows you to customize the page displayed when a link is expired or no longer valid. This ensures that even in error scenarios, your brand's consistency is maintained, offering a user-friendly experience.
    * **System**: CleverTap  provider [system error page](https://ct.io).
    * **Custom URL**: Provide your own error page URL.
@@ -83,13 +81,11 @@ You can create a system domain to quickly start using branded links without DNS 
 
 Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
-<Image alt="Custom Domain Creation" align="center" border={true} src="https://files.readme.io/a96ff7313f6c1a553f982b0ce5f798cccb8d3e04a1eb43b0b076a40443785aa4-image.png">
-  Custom Domain Creation
-</Image>
+<Image align="center" alt="Custom Domain Creation" border={true} caption="Custom Domain Creation" src="https://files.readme.io/a96ff7313f6c1a553f982b0ce5f798cccb8d3e04a1eb43b0b076a40443785aa4-image.png" />
 
 To configure your custom domain, follow these steps:
 
-1. Go to *Settings > Set Up > Branded Domain*.
+1. Go to _Settings > Set Up > Branded Domain_.
 2. Click **+ Domain**, and select **Custom Domain**.
 3. **Add a Nickname**: Provide a name to identify the domain (for example, "Sales Campaign").
 4. Enter your preferred **Domain** (for example, links.yourbrand.com)
@@ -104,7 +100,7 @@ To configure your custom domain, follow these steps:
        * Cannot include special characters like `@`, `_`, `&`, etc.
        * Must be unique per domain.
 6. Review the **URL Preview** to ensure that it appears as expected.
-7. Choose your **404 Error Page**:\
+7. Choose your **404 Error Page**:  
    The 404 error page configuration allows you to customize the page displayed when a link is expired or no longer valid. This ensures that even in error scenarios, your brand's consistency is maintained, offering a user-friendly experience.
    * **System**: CleverTap  provider [system error page](https://ct.io).
    * **Custom URL**: Provide your own error page URL.
@@ -116,27 +112,25 @@ To configure your custom domain, follow these steps:
 
 ### DNS Records
 
-<Image alt="DNS Records" align="center" border={true} src="https://files.readme.io/46e37a4daf231fd72e9edb0de202487d8579cb3600d4e441d7f50147576882ad-image.png">
-  DNS Records
-</Image>
+<Image align="center" alt="DNS Records" border={true} caption="DNS Records" src="https://files.readme.io/46e37a4daf231fd72e9edb0de202487d8579cb3600d4e441d7f50147576882ad-image.png" />
 
 After saving a custom domain, CleverTap will generate three DNS records that must be configured with your domain provider (for example, GoDaddy, Hostinger, etc.).
 
 #### Example DNS Records
 
-You must configure the following DNS records: 
+You must configure the following DNS records:
 
-| Type  | Key (Name)                                                      | Value                                                                        | Description                                               |
-| ----- | --------------------------------------------------------------- | ---------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| CNAME | \_c58ebcb5&#x63;**\*\***&#x35;f03bb6b174349.short.clevertap.com | \_0f8561a2d&#x63;**\*\*\***&#x39;ef25e32f6.xl\*\*\*\*vlj.acm-validations.aws | Used for domain ownership verification.                   |
-| CNAME | short.clevertap.com                                             | short-clevertap-com.cltap.com                                                | Redirects branded links to CleverTap's short URL service. |
-| TXT   | \_txt-&#x36;**-R**-R47Z.short.clevertap.com                     | ct0.co=2c1f96426804                                                          | Verifies domain association with CleverTap.               |
+| Type  | Key (Name)                                         | Value                                                      | Description                                               |
+| ----- | -------------------------------------------------- | ---------------------------------------------------------- | :-------------------------------------------------------- |
+| CNAME | _c58ebcb5c******5f03bb6b174349.short.clevertap.com | _0f8561a2dc*******9ef25e32f6.xl****vlj.acm-validations.aws | Used for domain ownership verification.                   |
+| CNAME | short.clevertap.com                                | short-clevertap-com.cltap.com                              | Redirects branded links to CleverTap's short URL service. |
+| TXT   | _txt-6**-R**-R47Z.short.clevertap.com              | ct0.co=2c1f96426804                                        | Verifies domain association with CleverTap.               |
 
 #### While Configuring DNS:
 
 When configuring the DNS records with your domain provider, check the following:
 
-* **Enter only the prefix part** in the **Name** field. Prefix is the portion before the main domain starts. Following are the examples for adding a Name: 
+* **Enter only the prefix part** in the **Name** field. Prefix is the portion before the main domain starts. Following are the examples for adding a Name:
   * Example: For `_c58ebcb5c******5f03bb6b174349.short.clevertap.com`, enter `_c58ebcb5c******5f03bb6b174349.short`.
   * Example: For `short.clevertap.com`, enter `short`.
   * Example: For `_txt-6**-R**-R47Z.short.clevertap.com`, enter `_txt-6**-R**-R47Z.short`.
@@ -154,21 +148,21 @@ DNS propagation may take up to 24 hours. If verification fails, check your DNS c
 
 The Domain Listing section allows you to view and manage all your configured domains. You can easily edit domain settings, view DNS records, and make any necessary updates to check if your domains are properly set up and functioning.
 
-Go to *Settings > Set Up > Branded Domain*. You’ll see a list of all your domains (system or custom), including the following details:
+Go to _Settings > Set Up > Branded Domain_. You’ll see a list of all your domains (system or custom), including the following details:
 
 | Field             | Description                                                                                        |
 | ----------------- | -------------------------------------------------------------------------------------------------- |
-| *Domain Nickname* | A user-defined name for identifying the domain (for example, "Sales Campaign").                    |
-| *Domain URL*      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`). |
-| *Created By*      | The user who created the domain.                                                                   |
-| *Status*          | The current status of the domain  can be **Active** or **Pending Verification**.                   |
-| *Last Updated On* | The date when the domain settings were last updated.                                               |
+| _Domain Nickname_ | A user-defined name for identifying the domain (for example, "Sales Campaign").                    |
+| _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`). |
+| _Created By_      | The user who created the domain.                                                                   |
+| _Status_          | The current status of the domain  can be **Active** or **Pending Verification**.                   |
+| _Last Updated On_ | The date when the domain settings were last updated.                                               |
 
 ## Key Domain Operations
 
 Once you’ve added a domain, you can perform various operations on it:
 
-* **Set Default Domain**: You can set any verified domain as the default. This domain will automatically be used for wrapping and tracking links in SMS, WhatsApp, and RCS campaigns (including template buttons). You can override it per campaign while creating new ones. 
+* **Set Default Domain**: You can set any verified domain as the default. This domain will automatically be used for wrapping and tracking links in SMS, WhatsApp, and RCS campaigns (including template buttons). You can override it per campaign while creating new ones.
 
 * **Edit Domains**: For each domain (except system defaults), you can set a custom 404 error page. This page is displayed if users click on expired links (older than 7 days).
 
@@ -178,78 +172,78 @@ Once you’ve added a domain, you can perform various operations on it:
 
 ## FAQs
 
-1. **What is a branded domain, and why should I set it up?**\
+1. **What is a branded domain, and why should I set it up?**  
    A branded domain is a custom or customized URL that tracks clicks from your SMS, WhatsApp, or RCS campaigns. It helps build brand trust, improves click-through rates, and complies with regulations like **DLT whitelisting** (especially in India).
 
-2. **What’s the difference between a system domain and a custom domain?**  
+2. **What’s the difference between a system domain and a custom domain?**
 
-* **System Domain**: Provided by CleverTap (for example, `ct3.io`) and ready to use. You can customize the path (`/brand/`) or query parameter (`?key=brand`) to brand it.  
+* **System Domain**: Provided by CleverTap (for example, `ct3.io`) and ready to use. You can customize the path (`/brand/`) or query parameter (`?key=brand`) to brand it.
 * **Custom Domain**: Your own subdomain (for example, `links.yourbrand.com`) that you configure via your domain provider with DNS settings.
 
-3. **What is an Adjoiner, and why is it needed?**\
-   An **Adjoiner** is the part of the URL that appears between the domain and the short key. It adds brand identity and structure to the tracking URL. The adjoiner is required to create a valid branded domain URL.\
-   Example:  
+3. **What is an Adjoiner, and why is it needed?**  
+   An **Adjoiner** is the part of the URL that appears between the domain and the short key. It adds brand identity and structure to the tracking URL. The adjoiner is required to create a valid branded domain URL.  
+   Example:
 
-* **Path-based**: `ct3.io/yourbrand/abc123`  
+* **Path-based**: `ct3.io/yourbrand/abc123`
 * **Query-based**: `ct3.io?key=yourbrand&sk=abc123`
 
-4. **Can I use special characters in the adjoiner?**\
+4. **Can I use special characters in the adjoiner?**  
    No. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters like `@`, `#`, `&`, and so on.
 
-5. **Can I switch between path-based and query-based adjoiners?**\
+5. **Can I switch between path-based and query-based adjoiners?**  
    No, you must choose one format per domain — either **path-based** (`/yourbrand/`) or **query-based** (`?key=yourbrand`). You cannot mix both formats in a single domain configuration.
 
-6. **What happens if a user clicks an expired link?**\
-   If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links. 
+6. **What happens if a user clicks an expired link?**  
+   If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links.
 
-7. **What is the default domain and how does it work?**\
+7. **What is the default domain and how does it work?**  
    The **Default Domain** is automatically used to wrap and track links in **SMS**, **RCS**, and **WhatsApp** campaigns (including template buttons). You can override the **Default Domain** per campaign by selecting a different domain from the dropdown when creating new campaigns.
 
-8. **Will old campaigns use the new branded domain?**\
+8. **Will old campaigns use the new branded domain?**  
    No. Campaigns created before you set up a branded domain will continue using the **System Domain** unless you manually edit or recreate them with the new branded domain.
 
-9. **How long does domain verification take?**\
+9. **How long does domain verification take?**  
    Custom domains require **DNS record configuration**. While CleverTap fetches DNS updates automatically, it may take up to **24 hours** for DNS changes to propagate globally. You can click the **refresh** icon to retry verification.
 
-10. **I configured the DNS records, but my domain has still not been verified. What should I do?**\
-    Check the following:  
+10. **I configured the DNS records, but my domain has still not been verified. What should I do?**  
+    Check the following:
 
-* **DNS records** are entered exactly as shown in the CleverTap dashboard. 
-* You’ve entered only the required prefix in the **Key** field (for example, short, not short.clevertap.com)  
+* **DNS records** are entered exactly as shown in the CleverTap dashboard.
+* You’ve entered only the required prefix in the **Key** field (for example, short, not short.clevertap.com)
 * Wait up to 24 hours, then try refreshing again
 
 11. **What are the best practices for adding a branded domain in CleverTap?**
 
-Here are some tips to ensure your branded domain setup is effective and compliant:  
+Here are some tips to ensure your branded domain setup is effective and compliant:
 
-* **For System Domains** (like `ct3.io/yourbrand/abc123`):  
-  * Choose a short and meaningful **Adjoiner** that clearly represents your brand or campaign type.  
-  * Use lowercase letters and hyphens (`-`) if needed (for example, `/clevertap/`, `/new-user/`, `/sale2024/`).  
-  * Keep it concise: Aim for 5–8 characters in the **Adjoiner** (excluding the slashes) to avoid long URLs in **SMS** or **WhatsApp** messages.  
-  * Avoid vague terms like `/track/` or `/link/` — use something unique to your brand.  
-* **For Custom Domains** (like `links.yourbrand.com`):  
-  * Use a subdomain such as **links.**, **click.**, or **promo.** (for example,`links.yourbrand.com`, `click.yourbrand.com`).  
-  * Keep the **Subdomain** short, relevant, and easy to remember.  
-  * Avoid complex words, long phrases, or special characters in the **Subdomain** name.  
+* **For System Domains** (like `ct3.io/yourbrand/abc123`):
+  * Choose a short and meaningful **Adjoiner** that clearly represents your brand or campaign type.
+  * Use lowercase letters and hyphens (`-`) if needed (for example, `/clevertap/`, `/new-user/`, `/sale2024/`).
+  * Keep it concise: Aim for 5–8 characters in the **Adjoiner** (excluding the slashes) to avoid long URLs in **SMS** or **WhatsApp** messages.
+  * Avoid vague terms like `/track/` or `/link/` — use something unique to your brand.
+* **For Custom Domains** (like `links.yourbrand.com`):
+  * Use a subdomain such as **links.**, **click.**, or **promo.** (for example,`links.yourbrand.com`, `click.yourbrand.com`).
+  * Keep the **Subdomain** short, relevant, and easy to remember.
+  * Avoid complex words, long phrases, or special characters in the **Subdomain** name.
   * Ensure you configure **DNS records** exactly as shown after setup to avoid delays in verification.
 
-**Avoid**:  
+**Avoid**:
 
-* Using more than 20 characters in the **Adjoiner** or **Subdomain**  
-* Starting or ending **Adjoiners** with hyphens  
-* Using non-brand-specific generic terms  
+* Using more than 20 characters in the **Adjoiner** or **Subdomain**
+* Starting or ending **Adjoiners** with hyphens
+* Using non-brand-specific generic terms
 
 > 📘 Pro Tip: Buy a new short domain for campaigns
 >
-> If your existing domain is long or complex, consider purchasing a new, short domain for marketing messages. Ideally, the domain must be 5–8 characters long and phonetically similar to your brand name. This improves:  
+> If your existing domain is long or complex, consider purchasing a new, short domain for marketing messages. Ideally, the domain must be 5–8 characters long and phonetically similar to your brand name. This improves:
 >
-> * Link trustworthiness  
-> * User recall and voice-based sharing (for example, over phone or radio)  
-> * Visual clarity in messages and notifications  
+> * Link trustworthiness
+> * User recall and voice-based sharing (for example, over phone or radio)
+> * Visual clarity in messages and notifications
 >
-> **Examples**:  
+> **Examples**:
 >
-> * If your brand is **MobiKart**, consider domains like **mobkt.in**, **mobik.in**, or **mkrt.co**.  
+> * If your brand is **MobiKart**, consider domains like **mobkt.in**, **mobik.in**, or **mkrt.co**.
 > * If your brand is **FreshBite**, try **frsbt.com**, **frbite.in**, etc.
 
 11. When will a link preview be shown for my branded domain link?
@@ -277,7 +271,7 @@ iOS devices running version 10 or above support link previews in the native Mess
 * Only one link should be included in the message. Messages with multiple links will not generate a preview.
 * The link must be the final element in the message. No text, punctuation, or symbols should follow the link.
 * The domain must be served over HTTPS and use a valid SSL certificate. Self-signed, expired, or incomplete certificates will block preview generation.
-* The recipient must tap *Tap to Load Preview* for metadata to be fetched.
+* The recipient must tap _Tap to Load Preview_ for metadata to be fetched.
 
 **iOS-specific behaviors and limitations**
 
