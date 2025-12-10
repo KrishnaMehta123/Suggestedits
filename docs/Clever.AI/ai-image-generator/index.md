@@ -29,102 +29,90 @@ The feature is embedded within the Push Notification editor, next to image uploa
 
 The Designer Agent automatically applies your Brand Kit to ensure every generated image aligns with your brand colors, styles, and tone.
 
-<Image alt="AI Image Generator for Push Notification" align="center" border={true} src="https://files.readme.io/74795935df940693c38e96dff8d6cb0cd01e89ed293312891efb74866c2cdd25-AI_Image_Generator_for_Push_Campaign.png">
-  Designer Agent for Push Notification
-</Image>
+<Image align="center" alt="AI Image Generator for Push Notification" border={true} caption="Designer Agent for Push Notification" src="https://files.readme.io/74795935df940693c38e96dff8d6cb0cd01e89ed293312891efb74866c2cdd25-AI_Image_Generator_for_Push_Campaign.png" />
 
 ## Generate Image Using Prompt
 
 The Designer Agent utilizes your prompt and Brand Kit settings to create visuals that align with your campaign’s theme. By providing clear and detailed descriptions of what you need, you can quickly create on-brand images tailored to your requirements. To do so:
 
-The AI Image Generator uses your prompts along with Brand Kit settings to produce visuals that match your campaign's theme. 
+The AI Image Generator uses your prompts along with Brand Kit settings to produce visuals that match your campaign's theme.
 
 The AI Image Generator combines your prompt and Brand Kit settings to produce campaign-ready images that align with your brand and message.
 
 1. Open your **Push Notification** campaign editor.
-2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the *Expanded image* or *Large icon* fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the *Rich media* field. 
-3. Click **Generate Image**. The *Generate Image* window opens.
-4. Describe the image you want in the prompt field at the bottom. For example, if you are going to generate a sample image for an OTT platform to promote an upcoming Premier League football match, refer to the following image: 
+2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the _Expanded image_ or _Large icon_ fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the _Rich media_ field.
+3. Click **Generate Image**. The _Generate Image_ window opens.
+4. Describe the image you want in the prompt field at the bottom. For example, if you are going to generate a sample image for an OTT platform to promote an upcoming Premier League football match, refer to the following image:
 
-<Image alt="Generate Image" align="center" border={true} src="https://files.readme.io/d536d43634a56cea46994435aa5db5450774744f0e6b8e05e2470d4c11ed7a9c-OTT_Platform_Example.png">
-  Image Generated Using Text to Image Option
-</Image>
+<Image align="center" alt="Generate Image" border={true} caption="Image Generated Using Text to Image Option" src="https://files.readme.io/d536d43634a56cea46994435aa5db5450774744f0e6b8e05e2470d4c11ed7a9c-OTT_Platform_Example.png" />
 
-5. Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337c238198a6d7cc896ee-Image_Settings_Icon.png) to select the *File format* (JPEG or PNG). The Ratio/Size (that is, 1:1) is auto-selected and non-editable. The aspect ratio and size are automatically aligned with Push OS specifications (for example, 1:1 for Large Icon and 16:9 for Expanded Image) to ensure compatibility.
+5. Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337c238198a6d7cc896ee-Image_Settings_Icon.png) to select the _File format_ (JPEG or PNG). The Ratio/Size (that is, 1:1) is auto-selected and non-editable. The aspect ratio and size are automatically aligned with Push OS specifications (for example, 1:1 for Large Icon and 16:9 for Expanded Image) to ensure compatibility.
 
-<Image alt="Image Studio" align="center" border={true} src="https://files.readme.io/a7f815daca070109b5ff17f4f78a54aa308f9847b073dc4a391f738344ff8e02-image.png">
-  Image Studio
-</Image>
+<Image align="center" alt="Image Studio" border={true} caption="Image Studio" src="https://files.readme.io/a7f815daca070109b5ff17f4f78a54aa308f9847b073dc4a391f738344ff8e02-image.png" />
 
 6. Click **Primary Kit** to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply**. Click **Secondary Kit** to configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://staging.docs.user.clevertap.net/docs/brand-kit).
 
-<Image alt="Brand Kit" align="center" src="https://files.readme.io/664001348ea7da1a08f8185bb381e98c5c06a2d0afcf98268593042681c1a0d3-image.png">
-  Brand Kit
-</Image>
+<Image align="center" alt="Brand Kit" border={true} caption="Brand Kit" src="https://files.readme.io/664001348ea7da1a08f8185bb381e98c5c06a2d0afcf98268593042681c1a0d3-image.png" />
 
-> 📘 **Brand Kits**
->
-> * Brand kit names reflect what you set up in your account.
-> * You can set up a maximum of 10 brand kits per account. You can select from the available kits.
-> * If a brand kit is locked, it cannot be edited within the campaign flow.
-> * Any changes you make here apply only to the current campaign. They do not update the original brand kit saved in your account.
-> * When generating or editing images, the **selected Brand Kit** always takes precedence over text prompts. If a prompt conflicts with your brand kit’s defined elements, for example, color codes, borders, or typography, the AI prioritizes the brand kit settings.\
->   **Example**\
->   If your brand kit specifies a *red border (0.5 cm)* and the prompt requests a *blue border*,\
->   the generated image will use **red**, following your brand kit guidelines.\
->   This ensures visual consistency and keeps all campaign creatives on-brand, regardless of the prompt details.
->
-> For more information on setting up and using brand kits, refer to Brand Kit. (link)
+<Callout icon="📘" theme="info">
+  **Brand Kits**
+
+  (@Meenal: can we just add a cross-reference to Brand Kit document instead of adding all these points.)
+
+  * Brand kit names reflect what you set up in your account.
+  * You can set up a maximum of 10 brand kits per account. You can select from the available kits.
+  * If a brand kit is locked, it cannot be edited within the campaign flow.
+  * Any changes you make here apply only to the current campaign. They do not update the original brand kit saved in your account.
+  * When generating or editing images, the **selected Brand Kit** always takes precedence over text prompts. If a prompt conflicts with your brand kit’s defined elements, for example, color codes, borders, or typography, the AI prioritizes the brand kit settings.  
+    **Example**  
+    If your brand kit specifies a _red border (0.5 cm)_ and the prompt requests a _blue border_,  
+    the generated image will use **red**, following your brand kit guidelines.  
+    This ensures visual consistency and keeps all campaign creatives on-brand, regardless of the prompt details.
+
+  For more information on setting up and using brand kits, refer to Brand Kit. (link)
+</Callout>
 
 7. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
 8. After inserting the image, you can edit or refine the image directly within the editor:
+   * Enter follow-up prompts in the same chat thread to refine the image.
+   * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
 
-* Enter follow-up prompts in the same chat thread to refine the image.
-* To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
-
-  <Image alt="Edit Generated Image" align="center" border={true} src="https://files.readme.io/01e7233196e05a2a68213836230306770b3d994a7555e64bdfbfb041c577dde2-Edit_Generated_Image.gif">
-    Edit Generated Image
-  </Image>
+<Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/01e7233196e05a2a68213836230306770b3d994a7555e64bdfbfb041c577dde2-Edit_Generated_Image.gif" />
 
 ## Generate Using Reference Image
 
 To generate an image using a reference image, perform the following steps:
 
 1. Open your Push Notification campaign editor.
-2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the *Expanded image* or *Large icon* fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the *Rich media* field.
+2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the _Expanded image_ or _Large icon_ fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the _Rich media_ field.
 3. Click **Generate Image**. The Generate Image window opens.
-4. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to select an existing banner from CMS. 
+4. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to select an existing banner from CMS.
 
-<Image alt="Generate Image Using Reference Image" align="center" border={true} src="https://files.readme.io/e321224127b1de1ff8feae54767ad33433f1ef8bf704571e3418a72d4f777fc2-2025-11-28_14-49-17_1.gif">
-  Generate Image Using Reference Image
-</Image>
+<Image align="center" alt="Generate Image Using Reference Image" border={true} caption="Generate Image Using Reference Image" src="https://files.readme.io/e321224127b1de1ff8feae54767ad33433f1ef8bf704571e3418a72d4f777fc2-2025-11-28_14-49-17_1.gif" />
 
 5. You can also browse and select an image from your AI-generated images folder in the CMS. Click **Upload** and **Edit**.
 
-<Image alt="Edit Image" align="center" border={true} src="https://files.readme.io/feba778dbafdf0bb11dd24ae8038992f84b7b7f97547fff534d2152026ac4d7c-image.png">
-  Edit Image
-</Image>
+<Image align="center" alt="Edit Image" border={true} caption="Edit Image" src="https://files.readme.io/feba778dbafdf0bb11dd24ae8038992f84b7b7f97547fff534d2152026ac4d7c-image.png" />
 
 6. In the prompt field, describe the updates or new campaign details you want to apply.  Once you select an image, you can:
-
-* **Change text**: For example, update offer amounts, taglines, or call-to-action text.
-* **Change background**: Modify colors, replace backgrounds, or adjust contrast for seasonal themes.
-* **Replace visual elements**: Swap product photos, icons, or logos.
-* **Adjust layout**: Realign elements, add or remove visual sections, or reposition branding.
-* **Add highlights or effects**: Emphasize key offers or add simple visual effects, such as a glow or drop shadows.\
-  For example, if you want to use 30% Off banner as a reference and update it for Holi with bright color accents and festive treats.
-
+   * **Change text**: For example, update offer amounts, taglines, or call-to-action text.
+   * **Change background**: Modify colors, replace backgrounds, or adjust contrast for seasonal themes.
+   * **Replace visual elements**: Swap product photos, icons, or logos.
+   * **Adjust layout**: Realign elements, add or remove visual sections, or reposition branding.
+   * **Add highlights or effects**: Emphasize key offers or add simple visual effects, such as a glow or drop shadows. For example, if you want to use 30% Off banner as a reference and update it for Holi with bright color accents and festive treats.
 7. Click **Brand Kit** to view or switch to another kit if needed.
 8. Click **Generate**. It analyzes your reference image and applies the prompt instructions you provide. A new image is generated that maintains the layout and design consistency of your requirements.
 9. Review the generated image and click **Insert** to add it to your campaign.
 
-> 📘 Brand Kit Application
->
-> The latest created Brand Kit is automatically selected and applied to your image, even if you don’t manually choose one.
->
-> If only one Brand Kit exists, it’s applied by default.
->
-> If multiple kits are available, the most recently created one is auto-selected.
+<Callout icon="📘" theme="info">
+  **Brand Kit Application**
+
+  The latest created Brand Kit is automatically selected and applied to your image, even if you don’t manually choose one.
+
+  If only one Brand Kit exists, it is applied by default.
+
+  If multiple kits are available, the most recently created one is auto-selected.
+</Callout>
 
 ## Use Secondary Image to Update Primary Image
 
@@ -138,34 +126,32 @@ This helps with the following:
 To generate an image using this method, perform the following steps:
 
 1. Open your Push Notification campaign editor.
-2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the *Expanded image* or *Large icon* fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the *Rich media* field.
+2. For Android, click **![](https://files.readme.io/935fb6454c1119d8ecbbcb60baaa21dd7d7fbd62688f5c4fc3a5590b17a9c46e-Clever_AI_icon.png)Generate with AI** for the _Expanded image_ or _Large icon_ fields. For iOS, click **![](https://files.readme.io/de594698e41f816505d7fb2148204b4ce6f2f581d952289e89b9d9022fe5015d-Clever_AI_icon.png)Generate with AI**  for the _Rich media_ field.
 3. Click **Generate Image**. The Generate Image window opens.
 4. Click ![](https://files.readme.io/7c39b5787600b7ac069bc4f2f78a6f3f0304bd3c3cc04eef082aa945c714fdf8-Plus_Icon.png) to upload the following.
    * Primary Image: The creative you want to update.
    * Secondary Image: The visual reference that defines your desired color tone, layout, or design.
 5. In the prompt field, describe how you want to adapt or align the primary image to match the secondary one.
 
-<Image alt="Use Secondary Image to Update Primary Image" align="center" border={true} src="https://files.readme.io/879aae0c5629396861b0d7d09d4684d616f8ca0ab45eac0938ddc2a6d5ab87b1-2025-11-23_17-21-52_1.gif">
-  Use Secondary Image to Update Primary Image
-</Image>
+<Image align="center" alt="Use Secondary Image to Update Primary Image" border={true} caption="Use Secondary Image to Update Primary Image" src="https://files.readme.io/879aae0c5629396861b0d7d09d4684d616f8ca0ab45eac0938ddc2a6d5ab87b1-2025-11-23_17-21-52_1.gif" />
 
-Refer to the following example prompt:
+Refer to the following example prompt:  
 
-6. ```Text Example Prompt
-   Use the Christmas Sale banner as the primary image and the Diwali Sale banner as the secondary reference.  
+```
+Use the Christmas Sale banner as the primary image and the Diwali Sale banner as the secondary reference.  
 
-   Match the Christmas image’s composition, color palette, and text placement to the Diwali banner’s warm, festive layout.  
-   Replace the background gradient with rich gold tones, add warm lighting, and include subtle decorative elements like stars or ribbons.  
-   Headline: “Celebrate the Season with Style”  
-   Subheadline: “Up to 50% Off on Fashion & Accessories.”  
-   CTA: “Shop Now” in a red or gold rounded button.
-   ```
+Match the Christmas image’s composition, color palette, and text placement to the Diwali banner’s warm, festive layout.  
+Replace the background gradient with rich gold tones, add warm lighting, and include subtle decorative elements like stars or ribbons.  
+Headline: “Celebrate the Season with Style”  
+Subheadline: “Up to 50% Off on Fashion & Accessories.”  
+CTA: “Shop Now” in a red or gold rounded button.
+```
 
 <br />
 
 6. Click **Brand Kit** to apply your brand’s predefined colors, tones, and layout.
 7. Click **Generate**. It analyzes both images and adjusts the primary to match the secondary in tone, layout, and design style.
-8. Review the generated image in the preview panel and click **Insert** to add it to your campaign. To make refinements, use follow-up prompts. 
+8. Review the generated image in the preview panel and click **Insert** to add it to your campaign. To make refinements, use follow-up prompts.
 
 > 📘 Why detailed prompts matter?
 >
@@ -173,18 +159,16 @@ Refer to the following example prompt:
 
 # Manage Generated Images
 
-All AI Generated images can be accessed via: 
+All AI-generated images can be accessed via:
 
-* [Threads](https://staging.docs.user.clevertap.net/docs/ai-image-generator#threads) 
+* [Threads](https://staging.docs.user.clevertap.net/docs/ai-image-generator#threads)
 * [AI Generated Images Folder](https://staging.docs.user.clevertap.net/docs/ai-image-generator#ai-generated-images-folder)
 
 ## Threads
 
-Once you start generating images, it automatically saves your sessions under the ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context. 
+Once you start generating images, it automatically saves your sessions under the ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
 
-<Image alt="All Threads" align="center" border={true} src="https://files.readme.io/e709fdea4b216257df9129d2d2e28f798ed53f1ec2caaf0bf946eba64d51bf18-image.png">
-  All Threads
-</Image>
+<Image align="center" alt="All Threads" border={true} caption="All Threads" src="https://files.readme.io/e709fdea4b216257df9129d2d2e28f798ed53f1ec2caaf0bf946eba64d51bf18-image.png" />
 
 ### How Threads Work
 
@@ -192,7 +176,7 @@ Threads are scoped to your **Account**, **Agent**, and **User**, ensuring that y
 
 If multiple users from the same account use AI tools:
 
-* Each user sees only their own threads and the latest image generation session that they have participated in.  
+* Each user sees only their own threads and the latest image generation session that they have participated in.
 * Threads are separate for **Designer Agent** and **AI Content Generator**, even under the same account.
 
 ### Manage Threads
@@ -206,32 +190,32 @@ From the **All Threads** view, you can:
 <Callout icon="💡" theme="default">
   ### **Tip**
 
-  For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: *“Make the background blue and add a 50% OFF badge in the corner.”* The AI will update the existing image while maintaining your brand styling and earlier visual tone.
+  For subsequent edits, you need not restart a session. You can type your next instruction directly in the chat. For example: _“Make the background blue and add a 50% OFF badge in the corner.”_ The AI will update the existing image while maintaining your brand styling and earlier visual tone.
 </Callout>
 
-## AI Generated Images Folder
+## AI-Generated Images Folder
 
-All AI-generated images are automatically stored in your *CMS*, under the **AI Generated Images** folder for your account. This allows you to reuse, manage, or download previously created visuals without needing to regenerate them.
+All AI-generated images are automatically stored in your _CMS_, under the **AI Generated Images** folder for your account. This allows you to reuse, manage, or download previously created visuals without needing to regenerate them.
 
-<Image alt="AI Generated Images Folder" align="center" border={true} src="https://files.readme.io/c7bd10e224147810623d972c5b4c9854c17e9d267de86e3a17db5fa22d64eeaa-brand.png">
-  AI Generated Images Folder
-</Image>
+<Image align="center" alt="AI Generated Images Folder" border={true} caption="AI Generated Images Folder" src="https://files.readme.io/c7bd10e224147810623d972c5b4c9854c17e9d267de86e3a17db5fa22d64eeaa-brand.png" />
 
 # Best Practices for Writing Prompts
 
+(@Meenal: add a cross-reference to "effective prompts" doc in this section - you can decide where you want to add in this section.)
+
 The following best practices will help you with writing more detailed prompts:
 
-* Be **specific** and include theme, tone, and visual intent.\
-  *Example: “Create a modern app promo banner with minimalist icons.”*
+* Be **specific** and include theme, tone, and visual intent.  
+  _Example: “Create a modern app promo banner with minimalist icons.”_
 * Add **context**; specify what the image is for (offer, product launch, festival).
 * Use your **brand kit** for visual alignment.
 * Don’t write one-liners. A prompt like “banner” or “sale” gives the AI too little to work with — resulting in generic, off-brand images.
-* Describe the scene, emotion, and layout you want to see.\
-  *Example: “Create a 1:1 Push Notification image for a festive Diwali campaign with maroon and gold tones, decorative lamps, and a bold ‘Shop Now’ button in brand colors.”*
+* Describe the scene, emotion, and layout you want to see.  
+  _Example: “Create a 1:1 Push Notification image for a festive Diwali campaign with maroon and gold tones, decorative lamps, and a bold ‘Shop Now’ button in brand colors.”_
 * Review and refine your prompt if the output doesn’t match your intent.
 
-The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals.\
-The more specific you are about theme, colors, layout, and mood, the better the output aligns with your campaign goals.\
+The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals.  
+The more specific you are about theme, colors, layout, and mood, the better the output aligns with your campaign goals.  
 Include contextual details such as the event name, offer type, and brand tone for optimal results.
 
 | Prompt Type         | Example                                                                                                                                               | Output Description                                                |
@@ -251,26 +235,28 @@ The generator currently supports **JPEG** and **PNG** formats.
 
 ### What if I want my brand guidelines applied every time I generate an image?
 
-You can lock your Brand Kit from the BrandKit section. When locked, the selected kit’s styles (colors, buttons, etc.) are automatically applied to every generated image, and cannot be overridden in the campaign flow. For more information, refer to Brand Kit. (link) 
+You can lock your Brand Kit from the BrandKit section. When locked, the selected kit’s styles (colors, buttons, etc.) are automatically applied to every generated image, and cannot be overridden in the campaign flow. For more information, refer to Brand Kit. (link)
 
 ### Does CleverTap store or reuse the images I generate?
 
 Yes, the images you generate are stored securely within your account’s CMS so you can access them later. However, CleverTap does not reuse, resell, or redistribute your images in any way. The generated output remains unique to your prompt and campaign inputs.
 
-> 📘 Note
->
-> Images are stored only for your reuse and are never shared across accounts.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  Images are stored only for your reuse and are never shared across accounts.
+</Callout>
 
 ### Who owns the images I generate?
 
-You retain full ownership of all images generated using the Designer Agent. CleverTap does not claim any intellectual property rights over generated content. 
+You retain full ownership of all images generated using the Designer Agent. CleverTap does not claim any intellectual property rights over generated content.
 
 ### How is my data used and shared with Nano Banana AI?
 
-CleverTap’s Designer Agent uses Nano Banana AI to create images. Your input data is transmitted securely to Nano Banana’s API for generation and returned to CleverTap for display in your campaign. Your data is never used to train Nano Banana AI models. Nano Banana deletes all input data within 30 days, in accordance with their Terms of Use. CleverTap sends only the necessary input to generate your requested image, including your text prompt, and, if applicable, metadata such as brand kit colors or style selections. No personally identifiable information (PII) about you or your users is shared unless you explicitly include it in your prompt. The generated image and related metadata are stored securely within your CleverTap account. 
+CleverTap’s Designer Agent uses Nano Banana AI to create images. Your input data is transmitted securely to Nano Banana’s API for generation and returned to CleverTap for display in your campaign. Your data is never used to train Nano Banana AI models. Nano Banana deletes all input data within 30 days, in accordance with their Terms of Use. CleverTap sends only the necessary input to generate your requested image, including your text prompt, and, if applicable, metadata such as brand kit colors or style selections. No personally identifiable information (PII) about you or your users is shared unless you explicitly include it in your prompt. The generated image and related metadata are stored securely within your CleverTap account.
 
 <Callout icon="💡" theme="default">
-  ### **Best Practice**
+  **Best Practice**
 
   All generated materials should be reviewed by your internal brand and legal teams before use in public campaigns.
 
