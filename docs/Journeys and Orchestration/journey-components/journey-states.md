@@ -92,18 +92,20 @@ CleverTap can automatically identify and stop journeys that are no longer active
 
   A PBS Journey is typically designed to target users based on historical actions or custom lists. Once these predefined conditions are met, no new users can qualify. A PBS Journey is considered inactive and eligible for stoppage when:
 
-  * The **entry criteria** have been fully processed — for example, all users from the selected past behavior segment have entered the journey.
+  * The **entry criteria** have been fully processed. For example, all users from the selected past behavior segment have entered the journey.
   * The **entry end date** (if defined) has passed.
   * All qualified users have **completed their journey paths or timed out** within the defined nodes.
-    When these conditions are met, the journey automatically transitions to the **Stopped** state, ensuring completed PBS campaigns no longer occupy active processing slots.
-* Live Journeys
+
+  When these conditions are met, the journey automatically transitions to the **Stopped** state, ensuring completed PBS campaigns no longer occupy active processing slots.
+* **Live Journeys**
 
   Live Journeys continuously evaluate user behavior in real time and allow new users to qualify based on triggers or conditions. A Live Journey is considered inactive when:
 
   * The defined **entry period** or **end date** has passed.
   * The journey has **no recent user entries or movement** for a sustained period.
   * All existing users in the flow have **completed or timed out**, with no pending scheduled actions.
-    When these conditions are met, CleverTap marks the journey as inactive and automatically transitions it to the **Stopped** state.
+
+  When these conditions are met, CleverTap marks the journey as inactive and automatically transitions it to the **Stopped** state.
 
 Journeys that stop automatically behave the same as those that are stopped manually; no new users can enter, and existing users exit over time.
 
