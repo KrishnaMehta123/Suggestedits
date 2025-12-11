@@ -31,7 +31,7 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/ac0ed6a-Filter_icon.png) icon. The _Filters_ window opens on the left side of the screen.
 
-<Image align="center" alt="Filter Campaigns" border={true} caption="Filter Campaigns" src="https://files.readme.io/cb4445f55fa911570e0468447bf785041e3b6b03930b19dc4a50be6e0999b1da-Campaign_Listing.png" />
+<Image align="center" alt="Filter Campaigns" border={true} caption="Filter Campaigns" src="https://files.readme.io/8cd9b547d48c83a96dd0269e92389e13d056f0c79334e187826806ab27e6d39a-listing.png" />
 
 3. Select the required filters and click **Apply** to view results on the _All Campaigns_ page.
 4. Click **Reset** to reset all the applied filters.
@@ -70,7 +70,7 @@ Filters are divided into two main sections, Active and Archived. Refer to the ta
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
 
@@ -84,7 +84,7 @@ Filters are divided into two main sections, Active and Archived. Refer to the ta
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
 
@@ -263,9 +263,9 @@ All filters except the _Delivery Type_ and _Segment Type_ filters also have indi
 
 You can customize the campaign listing view to match your preferences. Click the _Edit Columns_ icon to select and reorder the columns you want displayed on the campaign list. You can view up to 2000 campaigns on the listing page.
 
-The Sent column is toggled off by default. A new Engagement column is available to show channel-specific stats.
+The Sent column is toggled off by default. An Engagement Rate column is available to show channel-specific stats.
 
-<Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/05bd2ec0f8c74cb89ce160267e739614a66e6f175ea2bd47d8b5a8ab66357951-2025-08-04_16-20-09_1.gif" />
+<Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" />
 
 > 📘 Note
 >
@@ -278,11 +278,11 @@ Selecting _Campaigns_ from the CleverTap Dashboard opens the Campaign Reports ta
 
 Click Subscribe to reports and enter the details.
 
-<Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/5d2fc9b5e41e56926108dc575793b08b82a68b2ae5ef9f176767e8ffee73fc85-Campaign_Reports.png" />
+<Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" />
 
 You can also email a report by selecting the campaign and clicking the email report icon.
 
-<Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/f8c0da53dd6aea9a0858d5a82118bd514171ae4cbf9bba4953421fe210e442b4-Email_reports.png" />
+<Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" />
 
 If the report section opens with _All Time_ as the selected time period, requesting the report will automatically adjust the date range to ±15 days. A warning message will be displayed to inform the user of this change. For more details, refer to [Campaign Reports](https://staging.docs.user.clevertap.net/docs/campaign-reports-copy).
 
@@ -303,14 +303,14 @@ You can create and apply labels from the _All Campaigns_ or the _All Journeys_ p
 3. Select the labels you want to add. These labels are moved to the _Selected Tag ID_ section. Click **Deselect** to remove any label.
 4. Click **Apply**.
 
-<Image align="center" alt="Create Multiple Message Labels" border={true} caption="Create and Assign Multiple Message Labels" src="https://files.readme.io/93019fa3fad015ac90de2faa18ba0255a67a0a1c899c9ee78b866109ea724ce0-2025-08-04_12-47-58_1.gif" />
+<Image align="center" alt="Create Multiple Message Labels" border={true} caption="Create and Assign Multiple Message Labels" src="https://files.readme.io/3dd944e95bec99bc93eba8c1d3a729042e52cc3085530098ae42ee79e531f8fa-2025-12-11_18-49-11_1.gif" />
 
 > 📘 Note
 >
 > * When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
 > * To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
 >
-> <Image align="center" border={true} src="https://files.readme.io/1448d0f81e81413e3c206a4c85872c85a3dfb718c57754ed17cca37c8f54416b-Labels.png" className="border" />
+> <Image align="center" border={true} src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" className="border" />
 
 You can view and export all labels to a CSV file from the _Settings_ >  _Setup_  > _Labels_  page. You can also edit or delete labels from this page.
 
@@ -326,7 +326,7 @@ Archiving campaigns helps to keep your CleverTap account organized and clutter-f
 
 Running campaigns cannot be archived.
 
-<Image align="center" alt="Archive Selected Campaigns" border={true} caption="Archive Selected Campaigns" src="https://files.readme.io/0463ee95226683f426f48be57535b8d4241a59429c651c5a7aebca13e5fa03ee-Archive.png" />
+<Image align="center" alt="Archive Selected Campaigns" border={true} caption="Archive Selected Campaigns" src="https://files.readme.io/99629a5f98ff342e202d24b02c1cadc12487899a05aba35b50bef7086acb34d9-2025-12-11_18-46-35.png" />
 
 > 📘 Note
 >
@@ -341,13 +341,13 @@ You may want to stop a particular campaign after monitoring and evaluating its e
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Select the running campaigns you may want to stop and click the ![](https://files.readme.io/c2fcde8-Stop_icon.png) icon.
 
-<Image align="center" alt="Stop Selected Campaigns" border={true} caption="Stop Selected Campaigns" src="https://files.readme.io/b79b1f1cc7220ad4b588ffce7a0ebffc7fdac2ceaaea9663e16ed6aaa0a8858c-Stop_C.png" />
+<Image align="center" alt="Stop Selected Campaigns" border={true} caption="Stop Selected Campaigns" src="https://files.readme.io/0acbeac73896e43f91a0d5f1fbac522c355109387b7123260d23ca6b763ad48a-2025-12-11_18-46-35.png" />
 
 3. Click **Save** to stop the selected campaigns or click **Cancel** to undo the action.
 
 Once a campaign is published, you can stop it, but you cannot pause it. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to stop and click **Stop**.
 
-<Image align="center" alt="Stop Campaign" border={true} caption="Stop Campaign" src="https://files.readme.io/7bfb3be76729a674dabe4b13a764658f6a1d6155677d66ed436ef78734f71d4d-Stop.png" />
+<Image align="center" alt="Stop Campaign" border={true} caption="Stop Campaign" src="https://files.readme.io/e6ba3f73e785f15879df03cfd98f6909e8d660e8fc480a03a407cbd362e83413-2025-12-11_18-55-42.png" />
 
 ## Clone Campaign
 
@@ -356,7 +356,7 @@ Cloning a campaign helps create a new campaign from an existing one with minor o
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to clone and click **Clone**.
 
-<Image align="center" alt="Clone Selected Campaign" border={true} caption="Clone Selected Campaign" src="https://files.readme.io/4368a25089f3cac6007bd9badbb19baf8778a8922c90671c13a481b740805484-Clone.png" />
+<Image align="center" alt="Clone Selected Campaign" border={true} caption="Clone Selected Campaign" src="https://files.readme.io/60ef9756f17593efaf98027f43705cc7449505d10e17fe267808760f050d5d23-2025-12-11_18-54-21.png" />
 
 ## Edit Campaigns
 
@@ -365,11 +365,11 @@ All active campaigns except those in the _Stopped_, _Completed_, _Rejected_, or 
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to edit and click **Edit**.
 
-<Image align="center" alt="Edit" border={true} caption="Edit" src="https://files.readme.io/1e76dcb3b0ebff7ed6031037eac198c55463684d61fc92824d89ef08d9d102f6-Edits.png" />
+<Image align="center" alt="Edit" border={true} caption="Edit" src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" />
 
 You can also click this icon to open the campaign in a new tab and edit it. In case the campaign is completed, you can view stats.
 
-<Image align="center" alt="Open in new tab" border={true} caption="Open in new tab" src="https://files.readme.io/eb612e1bd7f734ae78e90d9c2fd23a2372d7b66213b44869dbc370e53861ff01-OPen_in_new_tab.png" />
+<Image align="center" alt="Open in new tab" border={true} caption="Open in new tab" src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" />
 
 <Callout icon="📘" theme="info">
   # Role-Based Access Control (RBAC) enforcement for campaign actions
@@ -378,7 +378,7 @@ You can also click this icon to open the campaign in a new tab and edit it. In c
 
   A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
 
-  * Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns. 
+  * Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns.
   * Write access: If users have write access to certain Campaigns, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
 
   For more information, refer to [Channel Level Access](https://docs.clevertap.com/docs/role-based-access-control#channel-level-access).
