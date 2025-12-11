@@ -53,9 +53,10 @@ Specify the structure of your image; where to place text, logos, or visual empha
 
 **Example prompts:**
 
-* “Add clear space at the bottom for headline text.”
+* “Add a header and subheader for the main message.”
+* “Include space at the bottom for a ‘Shop Now’ CTA button.”
+* “Add T&Cs text at the bottom in smaller font.”
 * “Place the brand logo in the top-right corner.”
-* “Leave room in the center for a CTA button or offer area.”
 
 <Callout icon="💡" theme="default">
   ### **Prompt Tips**
@@ -66,7 +67,6 @@ Specify the structure of your image; where to place text, logos, or visual empha
   * Mention lighting or visual treatment (for example, soft light, gradient glow, high contrast).
   * Avoid mixing contradictory styles (“vibrant and minimal”).
   * Do not paste links or external URLs; attach or upload reference images instead.
-  * Include your brand or campaign colors for consistency.
   * Add audience or product type for fine-tuning.
 </Callout>
 
@@ -108,28 +108,27 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Prompt:**
 
-> "Create a 16:9 banner for an online fashion sale offering 40% off on summer wear.  
-> Use bright, airy tones with soft beige and teal accents from the brand kit.  
-> Show models wearing summer outfits in a clean, minimal layout.  
-> Add a bold 'Shop Now' CTA at the bottom."
+> "Create a clean, minimalist banner for an e-commerce campaign promoting “Chinos for Every Occasion.”
+> Show four models wearing chinos in neutral shades (beige, olive, and grey) against a light, modern background. The main model should be centered in a relaxed, confident pose with subtle shadows for depth.
+> Place text at the bottom center:
+> Headline: “Weekdays, Weekends, All-Rounders.”
+> Subheadline: “Perfectly tailored chinos starting at ₹999.”
+> Add a rectangular ‘Shop Now’ CTA in brand orange.
+> Keep it polished, modern, and premium, like a high-end fashion e-commerce ad."
 
 **Result:**
 
-<Image alt="E-Commerce" border={false} src="https://files.readme.io/c3ac25a634b3f8931f616ea6ed0a6394a9fb686a845960e9e3a3bbd397a1d6ed-image.png" />
+<Image align="center" border={true} caption="E-Commerce" src="https://files.readme.io/87e3e0ec64378f3d755d307abf26840f308db1e82b798aab39e958666d67eb12-image.png" />
 
 ## OTT
 
 **Prompt:**
 
-> Create a cinematic, symmetrical push banner for an OTT platform promoting an upcoming Premier League match.
->
-> Show two football players at the center one in a red kit (Liverpool) and the other in a blue kit (Chelsea) facing off under bright floodlights in a packed stadium at night. Add soft haze, motion light streaks, and a subtle red–blue glow split for depth and energy.
->
+> Create a cinematic, symmetrical push banner for an OTT platform promoting an upcoming Premier League match. Show two football players at the center one in a red kit (Liverpool) and the other in a blue kit (Chelsea) facing off under bright floodlights in a packed stadium at night. Add soft haze, motion light streaks, and a subtle red–blue glow split for depth and energy.  
 > Place text at the top centre:  
 > Headline: “Premier League Live – Sat, 8:30 PM”  
-> Subheadline: “Liverpool vs Chelsea • Your Favourite Teams. One Epic Battle.”
->
-> Keep it clean, cinematic, and broadcast-grade, like a real sports promo on OTT platform. 
+> Subheadline: “Liverpool vs Chelsea • Your Favourite Teams. One Epic Battle.”  
+> Keep it clean, cinematic, and broadcast-grade.
 
 **Result:**
 
@@ -146,31 +145,51 @@ The following sample prompts show how detailed prompts improve image quality, to
 
 **Result:**
 
-<Image alt="Fintech" border={false} src="https://files.readme.io/78b1dcdcf9450bdb46a96331b94e86c0bec6680a8c4d7e158b87abd9db078357-image.png" />
+<Image align="center" alt="Fintech" border={true} caption="Fintech" src="https://files.readme.io/78b1dcdcf9450bdb46a96331b94e86c0bec6680a8c4d7e158b87abd9db078357-image.png" />
+
+**Prompt:**
+
+> "Create a clean, professional banner for a fintech campaign promoting a new investment with Gold credit card.
+> Use a light blue and white color scheme with minimal iconography (coins, charts, or growth arrows).
+> Place text in the center:
+> Headline: “Earn 30% Returns Annually.”
+> Subheadline: “Smart Investments with Gold Credit Card That Work for You.”
+> Include fine-print text below: “*Investments are subject to market risks. Terms and conditions apply.”
+> Keep it professional, clear, and regulatory-compliant."
+
+**Result:**
+
+<Image align="center" border={true} caption="Fintech" src="https://files.readme.io/e2e9fed90e0ba18461d3b754f38038c6fc2fe43a376812362729a3bc7b9be1d9-image.png" />
 
 ## Food Delivery
 
 **Prompt:**
 
-> "Design a 16:9 weekend offer banner for a food delivery app offering 25% off on pizza orders.  
-> Use warm, appetizing tones with real pizza imagery and subtle glow lighting.  
-> Add a bold 'Order Now' CTA in brand color #A8FBD3 with readable, rounded text."
+> "Create a banner for a festive desserts promotion.
+> Show assorted traditional sweets like barfi and laddoos placed on golden plates with marigold decorations in the background. Add soft festive lighting for warmth.
+> Place text at the bottom center:
+> Headline: “Sweet Treats Incoming!”
+> Subheadline: “Celebrate with Delicious Festive Specials.”
 
 **Result:**
 
-<Image alt="Food Delivery" border={false} src="https://files.readme.io/0e19fd7adf3bc9afd9597b11670b66eca505322f9093163023dc389b6cd400de-image.png" />
+<Image align="center" alt="Food Delivery" border={true} caption="Food Delivery" src="https://files.readme.io/cfaccb5cb56067a2359ad4ae266ed77e12a1391c4725b6134c71c2d1f4decf26-2025-12-11_16-41-24.png" />
 
 ## Gaming
 
 **Prompt:**
 
-> "Create a 16:9 promotional banner for a gaming app's weekly reward challenge.  
-> Use dark neon backgrounds with glowing effects to emphasize excitement.  
-> Add bold typography for the text 'Unlock Weekly Rewards!' and include a gold button with 'Play Now."
+> "Design a cinematic image for a new mobile game release.
+> Show a central character in a dark, glowing environment with light rays and a bold title area.
+> Place text at the top center:
+> Headline: “The Battle Begins.”
+> Subheadline: “Play the New Action Adventure Now.”
+> Add a ‘Download & Play’ CTA in blue or gold.
+> Keep it visually intense, engaging, and ready for campaign use."
 
 **Result:**
 
-<Image alt="Gaming" border={false} src="https://files.readme.io/0f483a76343bfe4511565d2759c6a924af39eb5ee4ee425faad7f890f1689621-image.png" />
+<Image align="center" border={true} caption="Gaming" src="https://files.readme.io/8d88243086da41cd314c190b846e3162161585111b1e6a913a822f09d942e0b2-image.png" />
 
 # Ways to Generate Images with AI
 
