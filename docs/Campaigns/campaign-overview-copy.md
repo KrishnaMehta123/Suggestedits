@@ -396,7 +396,7 @@ You can also click this icon to open the campaign in a new tab and edit it. In c
 
   If a user attempts an action they don’t have permission for (for example, editing a campaign without write access), an error message is shown indicating insufficient permissions.
 
-  Add ss
+  <Image align="center" border={true} caption="Limited Access" src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" width="50% " />
 </Callout>
 
 # Campaign States
