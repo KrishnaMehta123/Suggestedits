@@ -50,7 +50,7 @@ The AI Image Generator combines your prompt and Brand Kit settings to produce ca
 
 <Image align="center" alt="Image Studio" border={true} caption="Image Studio" src="https://files.readme.io/a7f815daca070109b5ff17f4f78a54aa308f9847b073dc4a391f738344ff8e02-image.png" />
 
-6. Click **Primary Kit** to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply**. Click **Secondary Kit** to configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://staging.docs.user.clevertap.net/docs/brand-kit).
+6. Click **Primary Kit** to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply**. Click **Secondary Kit** to configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://docs.clevertap.com/docs/brand-kit).
 
 <Image align="center" alt="Brand Kit" border={true} caption="Brand Kit" src="https://files.readme.io/664001348ea7da1a08f8185bb381e98c5c06a2d0afcf98268593042681c1a0d3-image.png" />
 
@@ -67,7 +67,7 @@ The AI Image Generator combines your prompt and Brand Kit settings to produce ca
     the generated image will use **red**, following your brand kit guidelines.  
     This ensures visual consistency and keeps all campaign creatives on-brand, regardless of the prompt details.
 
-  For more information on setting up and using brand kits, refer to Brand Kit. 
+  For more information on setting up and using brand kits, refer to [Brand Kit](https://docs.clevertap.com/docs/brand-kit). 
 </Callout>
 
 7. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
