@@ -72,11 +72,11 @@ Specify the structure of your image; where to place text, logos, or visual empha
 
 **Combine All Three Parts for Best Results**:
 
-* “Create an image for a push notification promoting a Diwali sale on home décor items at HomeStay.  
-  Use warm red and gold tones with soft festive lighting for a celebratory, premium feel.  
+* “Create an image for a push notification promoting a Diwali sale on home décor items at HomeStay. Show decor items on sale with up to 50% off.
+  Use warm red and gold tones with soft festive lighting for a celebratory, premium feel.
   Add a ‘Shop Now’ CTA at the bottom and place the HomeStay brand logo in the top-right corner.”
 
-<Image alt="Sample Prompt and Banner" border={false} src="https://files.readme.io/d0c16757fa8cfa3690a9b8d748b084630a14785b453d2d85f94d68913663477f-image.png" />
+<Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/3ec3fbd06f46a8dcc5c249b0071699d124b92e8ab8af87f6116dfee78d302357-image.png" />
 
 # Sample Prompts
 
