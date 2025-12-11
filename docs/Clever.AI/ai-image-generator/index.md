@@ -57,8 +57,6 @@ The AI Image Generator combines your prompt and Brand Kit settings to produce ca
 <Callout icon="📘" theme="info">
   **Brand Kits**
 
-  (@Meenal: can we just add a cross-reference to Brand Kit document instead of adding all these points.)
-
   * Brand kit names reflect what you set up in your account.
   * You can set up a maximum of 10 brand kits per account. You can select from the available kits.
   * If a brand kit is locked, it cannot be edited within the campaign flow.
@@ -69,7 +67,7 @@ The AI Image Generator combines your prompt and Brand Kit settings to produce ca
     the generated image will use **red**, following your brand kit guidelines.  
     This ensures visual consistency and keeps all campaign creatives on-brand, regardless of the prompt details.
 
-  For more information on setting up and using brand kits, refer to Brand Kit. (link)
+  For more information on setting up and using brand kits, refer to Brand Kit. 
 </Callout>
 
 7. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
@@ -135,7 +133,7 @@ To generate an image using this method, perform the following steps:
 
 <Image align="center" alt="Use Secondary Image to Update Primary Image" border={true} caption="Use Secondary Image to Update Primary Image" src="https://files.readme.io/879aae0c5629396861b0d7d09d4684d616f8ca0ab45eac0938ddc2a6d5ab87b1-2025-11-23_17-21-52_1.gif" />
 
-Refer to the following example prompt:  
+Refer to the following example prompt:
 
 ```
 Use the Christmas Sale banner as the primary image and the Diwali Sale banner as the secondary reference.  
@@ -201,8 +199,6 @@ All AI-generated images are automatically stored in your _CMS_, under the **AI G
 
 # Best Practices for Writing Prompts
 
-(@Meenal: add a cross-reference to "effective prompts" doc in this section - you can decide where you want to add in this section.)
-
 The following best practices will help you with writing more detailed prompts:
 
 * Be **specific** and include theme, tone, and visual intent.  
@@ -222,6 +218,8 @@ Include contextual details such as the event name, offer type, and brand tone fo
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | **Short Prompt**    | “Create a sale banner.”                                                                                                                               | Produces a generic image with limited relevance or branding.      |
 | **Detailed Prompt** | “Design a 1:1 Push Notification image for a Diwali sale using maroon and gold tones, soft festive lighting, and a ‘Shop Now’ button in brand colors.” | Produces a vibrant, on-brand image matching the campaign context. |
+
+For more information, refer to [Effective Prompts for AI Designer Agent](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
 
 # FAQs
 
