@@ -127,8 +127,8 @@ Enter the following Brand Kit details:
       </td>
 
       <td>
-        * If you want every AI-generated image or content asset to strictly follow brand guidelines, you can lock the Brand Kit. 
-        * Prompts that conflict with brand settings automatically use the brand-defined option. For example, if your Brand Kit defines a red primary color and a user’s prompt requests a blue background, the AI will use the red color. 
+        * If you want every AI-generated image or content asset to strictly follow brand guidelines, you can lock the Brand Kit.
+        * Prompts that conflict with brand settings automatically use the brand-defined option. For example, if your Brand Kit defines a red primary color and a user’s prompt requests a blue background, the AI will use the red color.
         * Only admins can unlock or update a locked kit.
       </td>
     </tr>
@@ -221,7 +221,7 @@ Enter the following Brand Kit details:
       </td>
 
       <td>
-        * You can upload via **URL** or select from the **Content Manager**. (@Meenal: Do we not support uploading logos from device storage?)
+        * You can select a file from the **Content Manager**. You can also add images to the content manager from the device storage.
         * **Supported file types**: `.png`, `.jpeg`, `.jpg`, `.pdf` (Max size: 2 MB per file).
       </td>
     </tr>
@@ -258,7 +258,7 @@ Enter the following Brand Kit details:
       </td>
 
       <td>
-        * Default: Black (#000000). 
+        * Default: Black (#000000).
         * Used for CTAs or highlights in campaign visuals.
       </td>
     </tr>
@@ -298,7 +298,6 @@ From the **Brand Kit** page, you can:
 
 * View all existing Brand Kits in a list or grid view.
 * Edit, rename, or delete kits.
-* Reassign a kit to a different team (for example, from **Team A** to **Global**). (@Meenal/Charul: Will this be Global or Default?)
 * Duplicate an existing kit to create a variant.
 
 ## Edit Brand Kit
