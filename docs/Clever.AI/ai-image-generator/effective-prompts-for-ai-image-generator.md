@@ -14,13 +14,15 @@ metadata:
 ---
 # Overview
 
-The AI Designer Agent creates brand-aligned images directly from your text descriptions. Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether it is for a sales banner, event promotion, or seasonal creative. The model interprets your text as visual intent; it does not render exact words unless space is reserved for text. For example, a prompt such as "Add a banner area for 'Shop Now' in the bottom-right corner" results in a layout with a visual placeholder, not the words themselves.
+The AI Designer Agent creates brand-aligned images directly from your text descriptions. Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether it is for a sales banner, event promotion, or seasonal creative.
 
 This document helps you write prompts that get precise, visually accurate, and on-brand results.
 
-> 📘 Private Beta
->
-> Currently, this feature is released in Private Beta. If you want to access this feature, contact your Customer Success Manager.
+<Callout icon="📘" theme="info">
+  **Private Beta**
+
+  Currently, this feature is released in Private Beta. If you want to access this feature, contact your Customer Success Manager.
+</Callout>
 
 # Writing Effective Prompts
 
@@ -37,7 +39,7 @@ Start by defining the intent of the image. This gives the AI the foundation for 
 * "Design a launch banner for a new credit card rewards program."
 * “Generate a push notification image announcing a new mobile app feature.”
 
-### Describe the Look and Feel (How It Should Feel)
+### Describe the Look and Feel (How It Should Look)
 
 Add details that capture your brand’s look and feel, mood, colors, and overall tone. Use adjectives that guide the image's lighting, energy, or emotional resonance. This helps the AI interpret the creative style accurately.
 
@@ -49,7 +51,7 @@ Add details that capture your brand’s look and feel, mood, colors, and overall
 
 ### Add Layout and Composition (Where Elements Should Appear)
 
-Specify the structure of your image; where to place text, logos, or visual emphasis. This gives the AI guidance on framing and visual hierarchy, improving clarity and usability across campaign channels.
+Specify the structure of your image, where to place text, logos, or visual emphasis. This provides the AI with guidance on framing and visual hierarchy, enhancing clarity and usability across all campaign channels.
 
 **Example prompts:**
 
@@ -58,8 +60,26 @@ Specify the structure of your image; where to place text, logos, or visual empha
 * “Add T&Cs text at the bottom in smaller font.”
 * “Place the brand logo in the top-right corner.”
 
+<Callout icon="📘" theme="info">
+  **Note**
+
+  The model interprets your text as visual intent; it does not render exact words unless space is reserved for text. For example, a prompt such as "Add a banner area for 'Shop Now' in the bottom-right corner" results in a layout with a visual placeholder, not the words themselves.
+</Callout>
+
+### Combine All Three Parts
+
+```
+Create a promotional image announcing HomeStay’s Diwali Sale on home décor items, offering up to 50% off. The image should instantly convey a festive, premium shopping experience and encourage users to click. 
+Use soft, festive lighting that evokes the spirit of Diwali celebrations. The scene should evoke a sense of luxury and invitation. 
+Include elegant home décor items, and the overall tone should be celebratory, warm, and of high quality. Place the HomeStay logo in the top-right corner. Display the featured décor items prominently in the center or foreground. Add a ‘Shop Now’ call-to-action button at the bottom of the image.
+```
+
+<br />
+
+<Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/6e690bc7befc955bccf05f4464da4861b35b65b07e5361a9bd2d53d2ae7eb001-Combined_prompt_creative.png" />
+
 <Callout icon="💡" theme="default">
-  ### **Prompt Tips**
+  **Prompt Tips**
 
   The following are some useful tips when adding visual and emotional details to your prompts:
 
@@ -69,14 +89,6 @@ Specify the structure of your image; where to place text, logos, or visual empha
   * Do not paste links or external URLs; attach or upload reference images instead.
   * Add audience or product type for fine-tuning.
 </Callout>
-
-**Combine All Three Parts for Best Results**:
-
-* “Create an image for a push notification promoting a Diwali sale on home décor items at HomeStay. Show decor items on sale with up to 50% off.
-  Use warm red and gold tones with soft festive lighting for a celebratory, premium feel.
-  Add a ‘Shop Now’ CTA at the bottom and place the HomeStay brand logo in the top-right corner.”
-
-<Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/3ec3fbd06f46a8dcc5c249b0071699d124b92e8ab8af87f6116dfee78d302357-image.png" />
 
 # Sample Prompts
 
