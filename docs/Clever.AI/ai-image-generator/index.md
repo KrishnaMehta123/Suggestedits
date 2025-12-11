@@ -67,7 +67,7 @@ The AI Image Generator combines your prompt and Brand Kit settings to produce ca
     the generated image will use **red**, following your brand kit guidelines.  
     This ensures visual consistency and keeps all campaign creatives on-brand, regardless of the prompt details.
 
-  For more information on setting up and using brand kits, refer to [Brand Kit](https://docs.clevertap.com/docs/brand-kit). 
+  For more information on setting up and using brand kits, refer to <Anchor label="Brand Kit" target="_blank" href="https://docs.clevertap.com/docs/brand-kit">Brand Kit</Anchor>.
 </Callout>
 
 7. Click **Generate**. Review the generated image and click **Insert** to add the image to your campaign.
@@ -157,10 +157,7 @@ CTA: “Shop Now” in a red or gold rounded button.
 
 # Manage Generated Images
 
-All AI-generated images can be accessed via:
-
-* [Threads](https://staging.docs.user.clevertap.net/docs/ai-image-generator#threads)
-* [AI Generated Images Folder](https://staging.docs.user.clevertap.net/docs/ai-image-generator#ai-generated-images-folder)
+All AI Generated images can be accessed via [Threads](https://docs.clevertap.com/docs/designer-agent#threads)  and [AI Generated Images Folder](https://docs.clevertap.com/docs/designer-agent#ai-generated-images-folder).
 
 ## Threads
 
@@ -210,9 +207,7 @@ The following best practices will help you with writing more detailed prompts:
   _Example: “Create a 1:1 Push Notification image for a festive Diwali campaign with maroon and gold tones, decorative lamps, and a bold ‘Shop Now’ button in brand colors.”_
 * Review and refine your prompt if the output doesn’t match your intent.
 
-The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals.  
-The more specific you are about theme, colors, layout, and mood, the better the output aligns with your campaign goals.  
-Include contextual details such as the event name, offer type, and brand tone for optimal results.
+The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, and mood, the better the output aligns with your campaign goals.  
 
 | Prompt Type         | Example                                                                                                                                               | Output Description                                                |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -272,3 +267,10 @@ Filters (such as “Cinematic,” “Minimalistic,” or “3D Render”) refine
 ### What aspect ratios are supported?
 
 Aspect ratios are pre-selected and non-editable based on your campaign channel (for example, 1:1 for Large Icon, 16:9 for Expanded Image).
+
+# Additional Resources
+
+For more information, refer to the following resources:
+
+* [Effective Prompts for AI Designer Agent](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent)
+* [Brand Kit](https://docs.clevertap.com/docs/brand-kit)
