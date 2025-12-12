@@ -71,6 +71,34 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     width: 20px;
     height: 20px;
   }
+  
+.release-note-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap; /* ⬅ critical: prevents line breaks */
+}
+
+.release-note-heading {
+  margin: 0;          /* ⬅ removes default h3 margins */
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.release-note-heading-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.badge.new-feature {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
 </style>
 
 <div class="filters">
