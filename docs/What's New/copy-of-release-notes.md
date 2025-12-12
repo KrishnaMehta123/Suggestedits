@@ -197,72 +197,44 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## December
 
 <HTMLBlock>{`
-<div
-  className="release-note article"
-  data-category="security-project-settings"
-  id="pii-tokenization"
->
+<div className="release-note article" data-category="security-project-settings" id="pii-tokenization">
   <div className="release-note-header">
-    <div className="anchor-link-icon">
-      <a href="#pii-tokenization">
-        <i className="fa-light fa-anchor" />
-      </a>
-    </div>
+    <a className="anchor-link-icon" href="#pii-tokenization" aria-label="Link to PII Tokenization">
+      <i className="fa-light fa-anchor" />
+    </a>
 
-    <div>
-      <img
-        src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg"
-        alt="Settings"
-        className="release-note-heading-icon"
-      />
-    </div>
+    <img
+      src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg"
+      alt=""
+      className="release-note-heading-icon"
+    />
 
     <h3 className="release-note-heading">PII Tokenization</h3>
+
     <div className="badge new-feature">NEW FEATURE</div>
   </div>
 
   <div className="release-note-body">
     <p>
-      You can now protect sensitive user data by ensuring that Personally
-      Identifiable Information (PII) never enters CleverTap’s environment.
-      Instead of sending identifiers such as email addresses or phone numbers,
-      you send tokens that map securely to your own vault. CleverTap then
-      processes only tokens for Segments, Engagements, and Analytics, keeping
-      all personal data fully within your control.
+      You can now protect sensitive user data by ensuring that Personally Identifiable Information (PII) never enters CleverTap’s environment.
+      Instead of sending identifiers such as email addresses or phone numbers, you send tokens that map securely to your own vault.
+      CleverTap then processes only tokens for Segments, Engagements, and Analytics, keeping all personal data fully within your control.
     </p>
 
     <p>With PII Tokenization, you can:</p>
 
     <ul>
-      <li>
-        <strong>Protect Sensitive Data:</strong> Replace PII with tokens to
-        comply with data privacy and residency regulations.
-      </li>
-      <li>
-        <strong>Choose Your Vault Model:</strong> Use CleverTap Vault or bring
-        your own for flexibility.
-      </li>
-      <li>
-        <strong>Simplify Integration:</strong> Generate and manage tokens using
-        the Vault API for seamless client-side setup.
-      </li>
-      <li>
-        <strong>Control Dispatch Models:</strong> Run the Dispatcher On-Prem
-        (no PII leaves your environment) or Off-Prem (secure, token-only
-        resolution at send time).
-      </li>
+      <li><strong>Protect Sensitive Data:</strong> Replace PII with tokens to comply with data privacy and residency regulations.</li>
+      <li><strong>Choose Your Vault Model:</strong> Use CleverTap Vault or bring your own for flexibility.</li>
+      <li><strong>Simplify Integration:</strong> Generate and manage tokens using the Vault API for seamless client-side setup.</li>
+      <li><strong>Control Dispatch Models:</strong> Run the Dispatcher On-Prem (no PII leaves your environment) or Off-Prem (secure, token-only resolution at send time).</li>
     </ul>
 
     <p>
       For more information, refer to{" "}
-      <a
-        href="https://docs.clevertap.com/docs/pii-tokenization"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://docs.clevertap.com/docs/pii-tokenization" target="_blank" rel="noopener noreferrer">
         PII Tokenization
-      </a>
-      .
+      </a>.
     </p>
   </div>
 
