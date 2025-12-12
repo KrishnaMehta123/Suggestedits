@@ -335,3 +335,169 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 </div>
 
 For the full release notes with styling and filtering functionality, view this page in the CleverTap documentation portal.
+
+<HTMLBlock>{`
+<style>
+  nav#hub-sidebar { display: none; }
+  
+  #content-head h1 {
+    font-weight: 500 !important;
+    font-size: 35px !important;
+  }
+  
+   .rm-Guides .content-body, .rm-Guides #content-head .col-xs-9 {
+      max-width: 100%;
+      width: 1000px;
+  }
+  
+  .release-heading-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .release-note-heading{
+  }
+  
+  .release-note-body img{
+    border: 1px solid rgb(0,0,0,0.2)
+  }
+  
+  .filters h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.filter-option {
+  flex: 0 0 calc(33.33% - 14px);
+  color: #4A4C4C;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+  .filter-option:hover{
+  	cursor:pointer;
+    color:#191919;
+  }
+
+.filter-option img {
+  width: 16px;
+  height: 16px;
+  color:#4A4C4C;
+}
+
+ .filter-option img:hover {
+  fill:red;
+}
+
+.content-manager {
+	display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badges {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+  
+.badge {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+  	padding:0px 4px;
+    border-radius: 5px;
+    display: inline-block;
+		min-width: max-content
+}
+  
+  .anchor-link-icon {
+  margin-left: -23px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the anchor icon on hover */
+.release-note-header:hover .anchor-link-icon {
+  opacity: 1;
+}
+ 
+ .anchor-link-icon{
+  	margin-left:-23px;
+  }
+.anchor-link-icon-inline {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+  
+.release-note-header{
+  display:flex;
+  gap:8px;
+  align-items: center;
+ }
+  
+.private-beta {
+    background-color: #B0B0B0;
+}
+  
+.beta {
+    background-color: #9E9E9E;
+}
+  
+.new-feature {
+    background-color: #4CAF50;
+}
+  
+.enhancement {
+    background-color: #2962FF;
+}
+  
+.update {
+    background-color: #673AB7;
+}
+  
+/* Hide all articles by default */
+.article {
+  display: none;
+}
+
+/* Show all articles if no filters are checked */
+body:not(:has(.filters input:checked)) .article {
+  display: block;
+}
+  
+* .rm-Guides a.suggestEdits {
+    display: none;
+  }
+
+/* Show matching articles */
+  body:has(#filter-campaigns:checked) .article[data-category="campaigns"],
+	body:has(#filter-promotions:checked) .article[data-category="promotions"],
+	body:has(#filter-conversations:checked) .article[data-category="conversations"],
+	body:has(#filter-analytics:checked) .article[data-category="analytics"],
+	body:has(#filter-segments:checked) .article[data-category="segments"],
+	body:has(#filter-journeys:checked) .article[data-category="journeys"],
+	body:has(#filter-data-and-integrations:checked) .article[data-category="data-and-integrations"],
+	body:has(#filter-product-experiences:checked) .article[data-category="product-experiences"],
+	body:has(#filter-content-manager:checked) .article[data-category="content-manager"],
+	body:has(#filter-security-project-settings:checked) .article[data-category="security-project-settings"]{
+  display: block;
+}
+  
+</style>
+`}</HTMLBlock>
+
+<br />
