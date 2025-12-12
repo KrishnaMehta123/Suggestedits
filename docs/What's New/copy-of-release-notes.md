@@ -176,7 +176,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">PII Tokenization</h3>
-<div class="badge new-feature">NEW FEATURE</div>
+<div className="badge new-feature">NEW FEATURE</div>
   </div>
   <div class="release-note-body">
     <p>You can now protect sensitive user data by ensuring that Personally Identifiable Information (PII) never enters CleverTap’s environment. Instead of sending identifiers such as email addresses or phone numbers, you send tokens that map securely to your own vault. CleverTap then processes only tokens for Segments, Engagements, and Analytics, keeping all personal data fully within your control.</p>
