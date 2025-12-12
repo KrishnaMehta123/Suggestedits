@@ -53,10 +53,11 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   }
 
   .filter-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px 32px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 24px;   /* ⬅ increase from 16px */
+  column-gap: 32px;
+}
 
   .filter-option {
     display: flex;
