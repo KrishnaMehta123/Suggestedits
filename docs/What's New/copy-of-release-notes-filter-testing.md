@@ -427,7 +427,53 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
 <div class=\"release-note article\" data-category=\"promotions\" id=\"Promotions-Add-on-for-CleverTap-Essentials-Plan\">\n  <div class=\"release-note-header\">\n    <div class=\"anchor-link-icon\">\n      <a href=\"#Promotions-Add-on-for-CleverTap-Essentials-Plan\"><i class=\"fa-light fa-anchor\"></i></a>\n    </div>\n    <div>\n      <img src=\"https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg\" alt=\"Promotions\" class=\"release-note-heading-icon\"/>\n    </div>\n    <h3 class=\"release-note-heading\">Promotions Add-on for CleverTap Essentials Plan</h3>\n    <div class=\"badge enhancement\">ENHANCEMENT</div>\n  </div>\n  <div class=\"release-note-body\">\n    <p>The Promotions Add-on is now available with the CleverTap Essentials Plan. With this add-on, you can use the Promotions feature to deliver loyalty points, discount coupons, and partner vouchers at scale, without needing external systems.</p>\n    <p>To enable the Promotions Add-on from the CleverTap dashboard, purchase the add-on, configure your loyalty wallets, coupons, partner voucher settings, and start running reward-based campaigns across apps, websites, and POS systems.</p>\n    <p>For more information, refer to <a href=\"https://docs.clevertap.com/docs/promo-campaigns\" target=\"_blank\">Promo Campaigns</a>.</p>\n    <div class=\"release-note-image\">\n    <div style=\"text-align: center;\">\n \t\t\t<img src=\"https://files.readme.io/482444a7d4b516a9647b2a4655358166a86e2a826a733d4892eea7300c5906f1-image.png\" alt=\"Promo Add-on\" style=\"max-width: 100%; height: auto;\" />\n      <p class=\"caption\">Promo Add-on</p>\n    </div>\n  </div>\n  <hr/>\n</div>
 `}</HTMLBlock>
 
-<br />
+## August
+
+<HTMLBlock>{`
+<div class=\"release-note article\" data-category=\"campaigns\" id=\"Enhanced-Generic-SMTP-Email-Integration-with-Deeper-Analytics\">\n  <div class=\"release-note-header\">\n    <div class=\"anchor-link-icon\">\n      <a href=\"#Enhanced-Generic-SMTP-Email-Integration-with-Deeper-Analytics\"><i class=\"fa-light fa-anchor\"></i></a>\n    </div>\n    <div>\n      <img src=\"https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg\" \" alt=\"Campaigns\" class=\"release-note-heading-icon\"/>\n    </div>\n    <h3 class=\"release-note-heading\">Enhanced Generic SMTP Email Integration with Deeper Analytics</h3>\n    <div class=\"badge enhancement\">ENHANCEMENT</div>\n    <div class=\"badge private-beta\">PRIVATE BETA</div>                              \n  </div>\n  <div class=\"release-note-body\">\n    <p>Generic SMTP email integration now provides deeper insights into email campaigns, enabling better decision-making and performance analysis.\n\nWith this enhancement, you can:</p>\n    <ul>\n      <li>Track successful email delivery across User Profiles, Campaign Stats, Provider Stats, Exports, and Reports.</li>\n      <li>Gain visibility into errors such as Soft Bounce, Hard Bounce, Spam, and Unsubscribed, with details available in Campaign Stats, Notification Failed Events, Exports, Reports, and Provider Stats.</li>\n      <li>Analyze email performance and make data-driven decisions with precise performance metrics.</li>\n </ul>\n<p>For more information, refer to <a href=\"https://docs.clevertap.com/docs/generic-smtp-v2-payload\"target=\"_blank\">Generic SMTP</a>.</p>\n  </div>\n  <hr/>\n</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class=\"release-note article\" data-category=\"campaigns\" id=\"Generic-HTTP-Email-Integration\">\n  <div class=\"release-note-header\">\n    <div class=\"anchor-link-icon\">\n      <a href=\"#Generic-HTTP-Email-Integration\"><i class=\"fa-light fa-anchor\"></i></a>\n    </div>\n    <div>\n      <img src=\"https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg\" alt=\"Campaigns\" \" alt=\"Campaigns\" class=\"release-note-heading-icon\"/>\n    </div>\n    <h3 class=\"release-note-heading\">Generic HTTP Email Integration</h3>\n    <div class=\"badge new-feature\">NEW FEATURE</div>\n    <div class=\"badge private-beta\">PRIVATE BETA</div>                              \n  </div>\n  <div class=\"release-note-body\">\n    <p>The new Generic HTTP Email integration makes connecting your email provider with CleverTap easy using just an API URL, key, and request body. It works with any provider that supports HTTP/HTTPS and allows you to add personalization, custom headers, and batch sends.\n\nWith this integration, you can:</p>\n    <ul>\n      <li>Track delivered, bounced, or unsubscribed events via HTTP callbacks.</li>\n      <li>View delivery success or failure across campaign stats reports, exports, and user profiles.</li>\n </ul>\n<p>For more information, refer to <a href=\"https://docs.clevertap.com/docs/generic-http\"target=\"_blank\">Generic HTTP</a>.</p>\n  </div>\n  <hr/>\n</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class=\"release-note article\" data-category=\"campaigns\" id=\"Domain Whitelisting for Data Ingestion via Web SDK\">\n  <div class=\"release-note-header\">\n    <div class=\"anchor-link-icon\">\n      <a href=\"#Domain Whitelisting for Data Ingestion via Web SDK\"><i class=\"fa-light fa-anchor\"></i></a>\n    </div>\n    <div>\n      <img src=\"https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg\" alt=\"Campaigns\" \" alt=\"Enhanced-Push-Notifications-for-Smarter,-Faster-Campaigns\" class=\"release-note-heading-icon\"/>\n    </div>\n    <h3 class=\"release-note-heading\">Domain Whitelisting for Data Ingestion via Web SDK</h3>\n    <div class=\"badge new-feature\">ENHANCEMENT</div>                           \n  </div>\n  <div class=\"release-note-body\">\n    <p>Domain Whitelisting for the Web SDK allows you to define a list of approved domains, ensuring that only trusted sources can send data into your CleverTap account.\nWhat this means for you:</p>\n    <ul>\n      <li> <strong> Secure Your Data: </strong>Only trusted domains can send data to your CleverTap project</li>\n      <li> <strong> Protect Campaigns: </strong>Prevent failures caused by unauthorized or malformed data</li>\n      <li> <strong> Support Compliance: </strong>Meet audit requirements from security and compliance teams</li>\n</ul>  \n <p> For more information, refer to <a href=\"https://docs.clevertap.com/docs/domain-whitelisting\"target=\"_blank\">Domain Whitelisting for Web SDK.</a></p>\n  </div>\n  <hr/>\n</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="Campaigns" id="Domain-Whitelisting-for-Web-SDK">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#Domain-Whitelisting-for-Web-SDK"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+    </div>
+    <h3 class="release-note-heading">Domain Whitelisting for Web SDK</h3>
+    <div class="badge new-feature">NEW FEATURE</div>
+    <div class="badge ga">GA</div>
+  </div>
+  <div class="release-note-body">
+    <p>CleverTap now supports Domain Whitelisting for data ingestion through the Web SDK. Customers can approve specific domains, ensuring only trusted sources send data to CleverTap.</p>
+    <p>This update prevents unauthorized data ingestion, reducing risks of data pollution, billing abuse, and invalid campaign triggers.</p>
+    <p>Key benefits include:</p>
+    <p>
+      <ul>
+        <li>Stronger data security by blocking unapproved domains</li>
+        <li>Safeguarded campaigns with cleaner event data</li>
+        <li>Operational control over allowed domains</li>
+        <li>Compliance support for audits and security reviews</li>
+      </ul>
+    </p>
+  </div>
+  <hr/>
+</div
+`}</HTMLBlock>
+
+<HTMLBlock>{`
+<div class=\"release-note article\" data-category=\"campaigns\" id=\"Improved-Push-Notifications-for-Smarter,-Faster-Campaigns\">\n  <div class=\"release-note-header\">\n    <div class=\"anchor-link-icon\">\n      <a href=\"#Imporved-Push-Notifications-for-Smarter,-Faster-Campaigns\"><i class=\"fa-light fa-anchor\"></i></a>\n    </div>\n    <div>\n      <img src=\"https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg\" alt=\"Campaigns\" \" alt=\"Enhanced-Push-Notifications-for-Smarter,-Faster-Campaigns\" class=\"release-note-heading-icon\"/>\n    </div>\n    <h3 class=\"release-note-heading\">Improved Push Notifications for Smarter, Faster Campaigns</h3>\n    <div class=\"badge enhancement\">ENHANCEMENT</div>\n    <div class=\"badge private-beta\">PRIVATE BETA</div>                              \n  </div>\n  <div class=\"release-note-body\">\n    <p>The Push Notification channel now includes key enhancements that make campaign creation easier and help you deliver higher-quality messages. \n\nThese key enhancements allow you to:</p>\n    <ul>\n      <li> <strong> Work with Flexible Templates:</strong> Choose from Text over Image (Zero Bezel), Advanced (Basic), Auto Carousel, Timer, and Standard templates and define CTAs.</li>\n      <li> <strong> Preview and Test your Notifications:</strong>  See real-time previews across Android/iOS versions and dark/light modes (collapsed and expanded states). Preview and Test your designs before sending.</li>\n      <li> <strong> Design with More Control:</strong>  Use the redesigned WHAT section with structured left navigation for Content, Android and iOS options, and Post Action Webhook. Fine-tune media rendering with new Image Scaling options.</li>\n </ul>\n<h3 class=\"release-note-heading\">SDK Compatibility</h3>\n                                \nTo access these enhancements, ensure that your app is integrated with the following SDK versions: </p>\n   <ul> \n   <li> Android SDK v7.3.0 and above </li>\n   <li> CT Push Templates SDK v2.1.0 and above </li>\n   <li> iOS CTNotificationContent SDK v1.1.0 and above </li>\n   </ul>\n <p> Campaigns with existing templates continue to work seamlessly. For more information, refer to <a href=\"https://docs.clevertap.com/docs/push-editor\"target=\"_blank\">Push Editor</a>, <a href= \"https://developer.clevertap.com/docs/android-push-templates\"target=\"_blank\">Android Push Templates</a>, <a href= \"https://developer.clevertap.com/docs/ios-rich-push-notifications-v2\"target=\"_blank\">iOS Rich Push Notifications</a>.</p>\n  </div>\n  <hr/>\n</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <style>
