@@ -167,8 +167,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 ## December
 
-<br />
-
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="pii-tokenization">
   <div class="release-note-header">
