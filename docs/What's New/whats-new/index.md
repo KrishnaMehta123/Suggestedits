@@ -196,8 +196,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
-<br />
-
 ## November
 
 <div class="release-note article" data-category="security-project-settings" id="automated-audit-log-exports-for-siem">
