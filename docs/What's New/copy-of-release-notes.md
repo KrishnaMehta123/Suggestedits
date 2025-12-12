@@ -193,7 +193,18 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 </div>
 `}</HTMLBlock>
 
+## November
+
+
 <br />
+
+<br />
+
+<br />
+
+<br />
+
+##
 
 <HTMLBlock>{`
 <style>
