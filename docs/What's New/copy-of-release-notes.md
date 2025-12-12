@@ -195,68 +195,16 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 ## November
 
-<HTMLBlock>{`
-<div class="release-note article" data-category="security-project-settings" id="automated-audit-log-exports-for-siem">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#automated-audit-log-exports-for-siem"><i class="fa-light fa-anchor"></i></a>
-    </div>
-    <div>
-      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
-    </div>
-    <h3 class="release-note-heading">Automated Audit Log Exports for SIEM</h3>
-<div class="badge new-feature">NEW FEATURE</div>
-  </div>
-  <div class="release-note-body">
-     <p>You can now securely export audit logs from CleverTap to your own cloud storage providers, including AWS S3, Google Cloud Storage, or Microsoft Azure Blob Storage. This self-serve feature allows you to easily manage, store, and retain audit data within your own cloud environment.</p>
-    <p>With SIEM Export, you can:</p>
-<p>
-  <ul>
-    <li><strong>Automate Secure Delivery:</strong> Receive exports every 4 hours in JSON (UTF-8) format.</li>
-    <li><strong>Ensure Continuous Visibility:</strong> Monitor all account activities in real time to strengthen compliance and security posture.</li>
-    <li><strong>Maintain Full Data Control:</strong> Store audit logs directly within your organization’s cloud to manage retention and governance.</li>
-    <li><strong>Integrate Seamlessly with SIEM Tools:</strong> Combine CleverTap’s audit data with broader operational insights across your systems.</li>
-  </ul>
-</p>
 
-<p>For more information, refer to <a href="https://docs.clevertap.com/docs/automated-audit-log-exports-for-siem" target="_blank">Automated Audit Log Exports for SIEM</a>.</p>
-</div>
-<hr/>
-</div>
-`}</HTMLBlock>
+<br />
 
-<HTMLBlock>{`
-<div class="release-note article" data-category="campaigns" id="whatsapp-flows-for-whatsapp-direct">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#whatsapp-flows-for-whatsapp-direct"><i class="fa-light fa-anchor"></i></a>
-    </div>
-    <div>
-      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
-    </div>
-    <h3 class="release-note-heading">WhatsApp Flows for WhatsApp Direct</h3>
-    <div class="badge new-feature">NEW FEATURE</div>
-    <div class="badge private-beta">PRIVATE BETA</div> 
-  </div>
-  <div class="release-note-body">
-    <p>Introducing WhatsApp Flows, a form-based experience that lets your users complete tasks such as booking a ticket or placing an order without leaving WhatsApp. CleverTap handles orchestration, analytics, and automation. Flows are created at the WhatsApp Business Account level and appear as a call-to-action button in your message. Tapping the button opens a guided, structured journey that follows Meta’s Flows specification.</p>
-    <p>With WhatsApp Flows, you can:</p>
-<p>
-      <ul>
-        <li><strong>Choose Your Setup</strong>: Use static flows, a CleverTap endpoint with customer relay, or your own endpoint for full control.</li>
-        <li><strong>
-Protect Data End to End</strong>: Keep payloads encrypted on the device and decrypt or re-encrypt according to the selected setup.</li>
-        <li><strong>Capture Outcomes in CleverTap</strong>: Record Flow events for reporting and update profile attributes for personalization and segmentation.</li>
-        <li><strong>Use Templates Seamlessly</strong>: Attach a Flow to a WhatsApp template, personalize message content, and publish in campaigns.</li>
-      </ul>
-    </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-flows" target="_blank">WhatsApp Flows.</a></p>
-</div>
-  <hr/>
-</div>
-`}</HTMLBlock>
+<br />
 
-## October
+<br />
+
+<br />
+
+##
 
 <HTMLBlock>{`
 <style>
