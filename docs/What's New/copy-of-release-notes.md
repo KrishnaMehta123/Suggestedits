@@ -197,12 +197,9 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       alt=""
       className="release-note-heading-icon"
     />
-
     <h3 className="release-note-heading">PII Tokenization</h3>
-
-    <div className="badge new-feature">NEW FEATURE</div>
+    <div class="badge new-feature">NEW FEATURE</div>
   </div>
-
   <div className="release-note-body">
     <p>
       You can now protect sensitive user data by ensuring that Personally Identifiable Information (PII) never enters CleverTap’s environment.
@@ -220,13 +217,10 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     </ul>
 
     <p>
-      For more information, refer to{" "}
-      <a href="https://docs.clevertap.com/docs/pii-tokenization" target="_blank" rel="noopener noreferrer">
-        PII Tokenization
+      For more information, refer to <a href="https://docs.clevertap.com/docs/pii-tokenization" target="_blank" rel="noopener noreferrer">PII Tokenization
       </a>.
     </p>
   </div>
-
   <hr />
 </div>
 `}</HTMLBlock>
