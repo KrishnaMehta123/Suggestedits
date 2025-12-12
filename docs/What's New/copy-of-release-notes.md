@@ -70,39 +70,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     width: 20px;
     height: 20px;
   }
-  
-/* Force icon + title + badge onto one line */
-.release-note .release-note-header {
-  display: flex !important;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: nowrap;
-}
-
-/* Kill ReadMe's heading margins */
-.release-note .release-note-heading {
-  margin: 0 !important;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-/* Prevent icon from shrinking or jumping */
-.release-note img.release-note-heading-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-}
-
-/* Keep badge inline */
-.release-note .badge.new-feature {
-  display: inline-flex !important;
-  align-items: center;
-  white-space: nowrap;
-  margin-left: 8px;
-}
-
 </style>
 
 <div class="filters">
@@ -190,46 +157,6 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       </label>
     </div>
   </div>
-</div>
-`}</HTMLBlock>
-
-<HTMLBlock>{`
-<div className="release-note article" data-category="security-project-settings" id="pii-tokenization">
-  <div
-    className="release-note-header"
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "12px",
-      flexWrap: "nowrap",
-    }}
-  >
-    <img
-      src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg"
-      alt=""
-      className="release-note-heading-icon"
-      style={{ width: "20px", height: "20px", flexShrink: 0 }}
-    />
-
-    <h3
-      className="release-note-heading"
-      style={{ margin: 0, display: "inline-flex", alignItems: "center", whiteSpace: "nowrap" }}
-    >
-      PII Tokenization
-    </h3>
-
-    <div
-      className="badge new-feature"
-      style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", marginLeft: "8px" }}
-    >
-      NEW FEATURE
-    </div>
-  </div>
-
-  <div className="release-note-body">
-    ...
-  </div>
-  <hr />
 </div>
 `}</HTMLBlock>
 
