@@ -256,6 +256,10 @@ Protect Data End to End</strong>: Keep payloads encrypted on the device and decr
 </div>
 `}</HTMLBlock>
 
+<HTMLBlock>{`
+<div class=\"release-note article\" data-category=\"campaigns\" id=\"preferred-channel-for-engagement\">\n  <div class=\"release-note-header\">\n    <div class=\"anchor-link-icon\">\n      <a href=\"#preferred-channel-for-engagement\"><i class=\"fa-light fa-anchor\"></i></a>\n    </div>\n    <div>\n     <img src=\"https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg\" alt=\"Campaigns\" />\n    </div>\n    <h3 class=\"release-note-heading\">Preferred Channel for Engagement</h3>\n    <div class=\"badge new-feature\">NEW FEATURE</div>\n    <div class=\"badge private-beta\">PRIVATE BETA</div>\n  </div>\n\n  <div class=\"release-note-body\">\n    <p>You can now deliver messages through the channel each user is most likely to engage with. Powered by Clever.AI, Preferred Channel analyzes engagement data across Push, Email, SMS, and WhatsApp over the past 90 days to predict and select the best-performing communication channel for every user.</p>\n\n    <p>With Preferred Channel, you can:</p>\n\n    <p>\n      <ul>\n        <li><strong>Leverage AI-Powered Channel Prediction</strong>: Identify the most effective communication channel for each user based on engagement history.</li>\n        <li><strong>Integrate Seamlessly Across CleverTap</strong>: Use the new Preferred Channel user property in Segmentation, Campaigns, Journeys, and Analytics.</li>\n        <li><strong>Boost Conversions and Reduce Noise</strong>: Focus on the channels that drive real engagement and results.</li>\n        <li><strong>Automate Channel Selection</strong>: Let Clever.AI optimize delivery so you can focus on content and strategy.</li>\n      </ul>\n    </p>\n    <p>For more information, refer to <a href=\"https://docs.clevertap.com/docs/preferred-channel\" target=\"_blank\">Preferred Channel</a>.</p>\n  </div>\n  <hr/>\n</div>
+`}</HTMLBlock>
+
 ## October
 
 <HTMLBlock>{`
