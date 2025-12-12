@@ -70,6 +70,39 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     width: 20px;
     height: 20px;
   }
+  
+/* Force icon + title + badge onto one line */
+.release-note .release-note-header {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+/* Kill ReadMe's heading margins */
+.release-note .release-note-heading {
+  margin: 0 !important;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Prevent icon from shrinking or jumping */
+.release-note img.release-note-heading-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Keep badge inline */
+.release-note .badge.new-feature {
+  display: inline-flex !important;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
 </style>
 
 <div class="filters">
