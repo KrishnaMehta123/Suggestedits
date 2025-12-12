@@ -33,7 +33,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 <TypesOfProductReleases />
 
 <HTMLBlock>{`
-<style>
+<style>{\`
   .filters {
     margin-top: 40px;
   }
@@ -70,88 +70,118 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     width: 20px;
     height: 20px;
   }
-</style>
+\`}</style>
 
-<div class="filters">
+<div className="filters">
   <h1>Filter By Feature</h1>
-  <div class="filter-box">
-    <div class="filter-options">
-      <label class="filter-option">
+  <div className="filter-box">
+    <div className="filter-options">
+      <label className="filter-option">
         <input type="checkbox" id="filter-security-project-settings" />
-        <span class="security-project-settings">
-          <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" />
-          Security & Project Settings
+        <span className="security-project-settings">
+          <img
+            src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg"
+            alt="Settings"
+          />
+          Security &amp; Project Settings
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-data-and-integrations" />
-        <span class="data-and-integrations">
-          <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="Data & Integrations" />
-          Data & Integrations
+        <span className="data-and-integrations">
+          <img
+            src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg"
+            alt="Data &amp; Integrations"
+          />
+          Data &amp; Integrations
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-analytics" />
-        <span class="analytics">
-          <img src="https://files.readme.io/f57aa9f8ef374b2652d21d86c7251de0e10d2f8661a4828202bcced4cb299d5f-Analytics.svg" alt="Analytics" />
+        <span className="analytics">
+          <img
+            src="https://files.readme.io/f57aa9f8ef374b2652d21d86b84f304b7499ff0b0a26f422c3cc846d70530658-Analytics.svg"
+            alt="Analytics"
+          />
           Analytics
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-segments" />
-        <span class="segments">
-          <img src="https://files.readme.io/04fe24c1114cef41af4a4e0224cab88f5be4c31160eca491d67942c689cb79c0-Segmentation.svg" alt="Segments" />
+        <span className="segments">
+          <img
+            src="https://files.readme.io/04fe24c1114cef41af4a4e0224cab88f5be4c31160eca491d67942c689cb79c0-Segmentation.svg"
+            alt="Segments"
+          />
           Segments
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-campaigns" />
-        <span class="campaigns">
-          <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" />
+        <span className="campaigns">
+          <img
+            src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg"
+            alt="Campaigns"
+          />
           Campaigns
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-journeys" />
-        <span class="journeys">
-          <img src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg" alt="Journeys" />
+        <span className="journeys">
+          <img
+            src="https://files.readme.io/51dc269788d03bb7bc0482fbc020414bedd96b6c778ac37b71884095493b93c8-Journeys.svg"
+            alt="Journeys"
+          />
           Journeys
         </span>
       </label>
 
-			<label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-promotions" />
-        <span class="promotions">
-          <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" />
+        <span className="promotions">
+          <img
+            src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg"
+            alt="Promotions"
+          />
           Promotions
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-conversations" />
-        <span class="conversations">
-          <img src="https://files.readme.io/ae95d26dd8714ac2522e7a2b39166d95ace62433496df35d5dcc4d90414527bd-Conversations.svg" alt="Conversations" />
+        <span className="conversations">
+          <img
+            src="https://files.readme.io/ae95d26dd8714ac2522e7a2b39166d95ace62433496df35d5dcc4d90414527bd-Conversations.svg"
+            alt="Conversations"
+          />
           Conversations
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-product-experiences" />
-        <span class="product-experiences">
-          <img src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg" alt="Product Experiences" />
+        <span className="product-experiences">
+          <img
+            src="https://files.readme.io/d7de531a1060998537a4e71a078198cf28076d99e1aed3e3c1bdcb5509e29d95-Product_experiences.svg"
+            alt="Product Experiences"
+          />
           Product Experiences
         </span>
       </label>
 
-      <label class="filter-option">
+      <label className="filter-option">
         <input type="checkbox" id="filter-content-manager" />
-        <span class="content-manager">
-          <img src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg" alt="Content Manager" />
+        <span className="content-manager">
+          <img
+            src="https://files.readme.io/0ed57ff4730974458d74d2a34ec4cf285aa5e84f59075a6b32550b9d1fd60ae8-Content_Manager.svg"
+            alt="Content Manager"
+          />
           Content Manager
         </span>
       </label>
@@ -167,31 +197,76 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## December
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="security-project-settings" id="pii-tokenization">
-  <div class="release-note-header">
-    <div class="anchor-link-icon">
-      <a href="#pii-tokenization"><i class="fa-light fa-anchor"></i></a>
+<div
+  className="release-note article"
+  data-category="security-project-settings"
+  id="pii-tokenization"
+>
+  <div className="release-note-header">
+    <div className="anchor-link-icon">
+      <a href="#pii-tokenization">
+        <i className="fa-light fa-anchor" />
+      </a>
     </div>
+
     <div>
-      <img src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg" alt="Settings" class="release-note-heading-icon"/>
+      <img
+        src="https://files.readme.io/01053ed2e833c5e6bb242a86b84f304b7499ff0b0a26f422c3cc846d70530658-Settings.svg"
+        alt="Settings"
+        className="release-note-heading-icon"
+      />
     </div>
-    <h3 class="release-note-heading">PII Tokenization</h3>
-<div className="badge new-feature">NEW FEATURE</div>
+
+    <h3 className="release-note-heading">PII Tokenization</h3>
+    <div className="badge new-feature">NEW FEATURE</div>
   </div>
-  <div class="release-note-body">
-    <p>You can now protect sensitive user data by ensuring that Personally Identifiable Information (PII) never enters CleverTap’s environment. Instead of sending identifiers such as email addresses or phone numbers, you send tokens that map securely to your own vault. CleverTap then processes only tokens for Segments, Engagements, and Analytics, keeping all personal data fully within your control.</p>
-<p>With PII Tokenization, you can:</p>
+
+  <div className="release-note-body">
     <p>
-      <ul>
-        <li><strong>Protect Sensitive Data:</strong> Replace PII with tokens to comply with data privacy and residency regulations.</li>
-        <li><strong>Choose Your Vault Model:</strong> Use CleverTap Vault or bring your own for flexibility.</li>
-        <li><strong>Simplify Integration:</strong> Generate and manage tokens using the Vault API for seamless client-side setup.</li>
-        <li><strong>Control Dispatch Models:</strong> Run the Dispatcher On-Prem (no PII leaves your environment) or Off-Prem (secure, token-only resolution at send time).</li>
-      </ul>
+      You can now protect sensitive user data by ensuring that Personally
+      Identifiable Information (PII) never enters CleverTap’s environment.
+      Instead of sending identifiers such as email addresses or phone numbers,
+      you send tokens that map securely to your own vault. CleverTap then
+      processes only tokens for Segments, Engagements, and Analytics, keeping
+      all personal data fully within your control.
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/pii-tokenization" target="_blank">PII Tokenization</a>.</p>
-</div>
-<hr/>
+
+    <p>With PII Tokenization, you can:</p>
+
+    <ul>
+      <li>
+        <strong>Protect Sensitive Data:</strong> Replace PII with tokens to
+        comply with data privacy and residency regulations.
+      </li>
+      <li>
+        <strong>Choose Your Vault Model:</strong> Use CleverTap Vault or bring
+        your own for flexibility.
+      </li>
+      <li>
+        <strong>Simplify Integration:</strong> Generate and manage tokens using
+        the Vault API for seamless client-side setup.
+      </li>
+      <li>
+        <strong>Control Dispatch Models:</strong> Run the Dispatcher On-Prem
+        (no PII leaves your environment) or Off-Prem (secure, token-only
+        resolution at send time).
+      </li>
+    </ul>
+
+    <p>
+      For more information, refer to{" "}
+      <a
+        href="https://docs.clevertap.com/docs/pii-tokenization"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        PII Tokenization
+      </a>
+      .
+    </p>
+  </div>
+
+  <hr />
 </div>
 `}</HTMLBlock>
 
