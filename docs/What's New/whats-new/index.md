@@ -332,6 +332,8 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <hr />
 </div>
 
+<br />
+
 For the full release notes with styling and filtering functionality, view this page in the CleverTap documentation portal.
 
 <HTMLBlock>{`
