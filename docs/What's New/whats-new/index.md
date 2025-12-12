@@ -198,6 +198,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
 ## November
 
+<HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="automated-audit-log-exports-for-siem">
   <div class="release-note-header">
     <div class="anchor-link-icon">
@@ -230,6 +231,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 
   <hr />
 </div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="whatsapp-flows-for-whatsapp-direct">
@@ -337,6 +339,10 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
   <hr />
 </div>
 `}</HTMLBlock>
+
+
+
+<br />
 
 For the full release notes with styling and filtering functionality, view this page in the CleverTap documentation portal.
 
