@@ -1,5 +1,5 @@
 ---
-title: Copy of Release Notes Filter Testing
+title: Release Notes Krishna-Bajrang
 excerpt: >-
   Stay ahead with CleverTap's latest releases in customer engagement and
   retention.
