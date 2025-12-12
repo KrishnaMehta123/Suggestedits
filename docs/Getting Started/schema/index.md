@@ -1096,6 +1096,12 @@ To link an event with a user property:
 
 <Image align="center" alt="Create Associated Event" border={true} caption="Create Linked Event" src="https://files.readme.io/f3777e6-Create_Linked_Event_for_User_Property.gif" />
 
+<Callout icon="📘" theme="info">
+  **Note**
+
+  The linked events are raised as custom events and contribute to MAU and DP usage, similar to any other custom event.
+</Callout>
+
 ### Create Linked Events in Bulk
 
 You can select multiple user properties at a time and link a required event to it.
