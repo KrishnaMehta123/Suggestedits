@@ -170,6 +170,27 @@ There are multiple ways to add users to a CleverTap project.
 
 Following is a sample JSON payload to upload a user profile:
 
+```json JSON
+{
+  "d": [
+    {
+      "identity": "1189549",       
+      "type": "profile",
+      "profileData": {
+        "Name": "Jack Montana",
+        "Email": "jack@gmail.com",
+        "Phone": "+14155551234",
+        "Gender": "M",
+        "MSG-sms": true,
+        "MSG-email":true,//called when email must be subscribed  
+        "MSG-whatsapp": true,
+       "Customer Type": "internal test user"
+      }
+    }
+  ]
+}
+```
+
 To know more about user upload APIs, refer to [Upload User Profiles](https://developer.clevertap.com/docs/upload-user-profiles-api).
 
 # Integration Steps for CleverTap Customers using Generic Integration
@@ -199,6 +220,7 @@ To configure the CleverTap dashboard:
 ![](https://files.readme.io/29282ee-Whatsapp_Common_Provider_Setup.png)  Add a WhatsApp Provider
 
 3. Enter the following details:
+
    | Field                        | Description                                                                                                                                                 |
    | :--------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | Provider                     | Select _Other (Generic)_ from the dropdown list.                                                                                                            |
