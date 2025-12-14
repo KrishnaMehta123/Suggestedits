@@ -16,6 +16,10 @@ next:
 
 Profile Exports allow you to securely export user profile data from CleverTap to external cloud storage platforms such as Amazon S3, Google Cloud Storage, or Microsoft Azure. You can configure export to centralize customer data, integrate with existing analytics workflows, and ensure the data warehouse platform always has the latest profile information.
 
+> 📘 Private Beta
+>
+> This feature is a private beta release. Reach out to your Customer Success Manager for access.
+
 With Profile Exports, you can:
 
 * **Export to Multiple Cloud Storage Platforms**: Send profile data to Amazon S3, Google Cloud Storage, or Microsoft Azure blob storage.
@@ -29,7 +33,6 @@ With Profile Exports, you can:
 # Use Cases
 
 Profile Exports support a variety of use cases across marketing, data science, and compliance functions:
-
 
 * **Data Warehousing & Business Intelligence**: Export user profiles to your data warehouse (for example, BigQuery, Snowflake, Redshift) for advanced analytics and reporting. Use daily incremental exports to sync updates efficiently, without reprocessing the full dataset.
 * **Custom Identity Reconciliation**: Export all identity fields along with the CleverTap ID to map CleverTap profiles to identifiers in your internal systems. Fallback logic ensures that each record has a usable, prioritized identifier, even if one or more fields are missing.
@@ -53,14 +56,11 @@ You must have **write** access permissions on the cloud storage platform you use
 
 To create an export, perform the following steps:
 
+1. Go to _Settings_ > _Partners_  and select _Export center_.
+2. Click **Create Export**, select _Profiles_ and click **Next**.
+3. Select the _Partner_ to which you want to send the export and click **Start**. The export setup includes the following four main steps:
 
-1. Go to *Settings* > *Partners*  and select *Export center*. 
-2. Click **Create Export**, select *Profiles* and click **Next**. 
-3. Select the *Partner* to which you want to send the export and click **Start**. The export setup includes the following four main steps:
-
-   <Image alt="Create Export" align="center" border={true} src="https://files.readme.io/e09f980fca5805d1eca3447ff04724e0799336b580ea2af71f4cc1a58ced80e2-Create_Export.gif">
-     Create Export
-   </Image>
+   <Image align="center" alt="Create Export" border={true} caption="Create Export" src="https://files.readme.io/e09f980fca5805d1eca3447ff04724e0799336b580ea2af71f4cc1a58ced80e2-Create_Export.gif" />
 
    1. **Configure Storage & File Details**: Configure the destination, folder structure, file format, and naming conventions.
    2. **Select User Identifiers**: Define which user identifiers to export and their order.
@@ -80,57 +80,62 @@ However, if you have an existing profile exports created with the legacy flow, p
 
 ## Configure Storage & File Details
 
-In this section, you will define the destination, folder organization, file format, and file naming for your export. Use the live *Preview* on the screen to validate paths and filenames as you configure them.
+In this section, you will define the destination, folder organization, file format, and file naming for your export. Use the live _Preview_ on the screen to validate paths and filenames as you configure them.
 
-
-1. **Select Storage Bucket**\
+1. **Select Storage Bucket**  
    Choose the cloud storage bucket or blob container where you want to export profile data. The dropdown displays all integrated storage destinations configured in your account.
 
-2. **Set Up Sub-folder Structure**\
+2. **Set Up Sub-folder Structure**  
    Choose how CleverTap should organize folders within your bucket or container using the following options. The folder structure preview updates in real-time as you configure each option.
 
-   * **Bucket root**: Files are stored directly in the root of your bucket with no sub-folders.\
-     *Preview:* `/{bucket-name}/file.csv.gz`  
-   * **Split by data type**: Creates top‑level folders such as `events/` and `profile/`. Profile exports will be stored under `profile/`.\
-     *Preview:* `/{bucket-name}/profile/file.csv.gz`
-   * **Split by export run date**: Partitions files by the export run date so each day’s data lands in its own folder. This is ideal for date-based ingestion pipelines.\
-     *Preview:* `/{bucket-name}/20251003/file.csv.gz`
-   * **Split by export unique ID**: Creates a sub-folder using the unique export ID assigned to each export configuration.\
-     *Preview:* `/{bucket-name}/1761650178/` 
-   * **Custom**:  Build your own folder structure using dynamic variables. Click \{\{}} to insert variables and use `/` to create subfolders.\
+   * **Bucket root**: Files are stored directly in the root of your bucket with no sub-folders.  
+     _Preview:_ `/{bucket-name}/file.csv.gz`
+   * **Split by data type**: Creates top‑level folders such as `events/` and `profile/`. Profile exports will be stored under `profile/`.  
+     _Preview:_ `/{bucket-name}/profile/file.csv.gz`
+   * **Split by export run date**: Partitions files by the export run date so each day’s data lands in its own folder. This is ideal for date-based ingestion pipelines.  
+     _Preview:_ `/{bucket-name}/20251003/file.csv.gz`
+   * **Split by export unique ID**: Creates a sub-folder using the unique export ID assigned to each export configuration.  
+     _Preview:_ `/{bucket-name}/1761650178/`
+   * **Custom**:  Build your own folder structure using dynamic variables. Click \{\{}} to insert variables and use `/` to create subfolders.  
      The following are the supported variables:
 
      * `{{Account-id}}`: Your unique CleverTap account identifier.
+
      * `{{Export-id}}`: Unique export ID assigned to each export run.
+
      * `{{Timestamp}}`: EPOCH timestamp when the export runs.
+
      * `{{Instance-id}}`: Database identifier for your account (typically 0–23).
-     * `{{Date}}`: Export run date in `yyyymmdd`.\
-       *Example*: `{{date}}/run-{{export-id}}`\
-       *Preview*: `/{bucket-name}/20251003/run-1761650178/file.csv.gz`\ <br />
+
+     * `{{Date}}`: Export run date in `yyyymmdd`.  
+       _Example_: `{{date}}/run-{{export-id}}`  
+       _Preview_: `/{bucket-name}/20251003/run-1761650178/file.csv.gz`\ <br />
 
    > 📘 Note
    >
-   > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (\_).
+   > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
 
-<Image alt="Set Up Sub-Folder Structure" align="center" border={true} src="https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png" />  Set Up Sub-Folder Structure
-3. **Select File Format**\
-   Select the file format for your exported data. To minimize post-processing, select the format that your downstream platforms can process most efficiently.\
+![](https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png)  Set Up Sub-Folder Structure
+
+3. **Select File Format**  
+   Select the file format for your exported data. To minimize post-processing, select the format that your downstream platforms can process most efficiently.  
    You can choose from the following formats:
-   * **CSV**: Flat tabular file with a header row. All selected fields are exported, even if the values are null.
-   * **JSON**: Structured JSON format, ideal for flexible data parsing
-   * **Parquet**: A compressed, column-based format designed for analytics and large-scale data storage.
-   * **XML**: A structured format suited for systems that need nested data.
+
+* **CSV**: Flat tabular file with a header row. All selected fields are exported, even if the values are null.
+* **JSON**: Structured JSON format, ideal for flexible data parsing
+* **Parquet**: A compressed, column-based format designed for analytics and large-scale data storage.
+* **XML**: A structured format suited for systems that need nested data.
 
 > 📘 Note
 >
 > * Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
 > * CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
 
-4. **Define File Name Convention**\
-   Define how each file is named inside the innermost folder created by *Sub folder structure*. If you select *Default*, CleverTap applies a standard structure. If you select *Custom*, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The *Preview* shows the exact filename based on your input.
+4. **Define File Name Convention**  
+   Define how each file is named inside the innermost folder created by _Sub folder structure_. If you select _Default_, CleverTap applies a standard structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
    * **Default file name**: The default format is `<account‑id>-<export request id>-<timestamp>-<database id>.<format>.gz`. For example, `100000000-1761651721-1761651721-0.csv.gz`.
-   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-20251003-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.\
-         The following are the supported variables:
+   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-20251003-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.  
+     The following are the supported variables:
      * `{{Account-id}}`: Your unique CleverTap account identifier.
      * `{{Export-id}}`: Unique export ID assigned to each export run.
      * `{{Timestamp}}`: Epoch timestamp when the export runs.
@@ -138,27 +143,17 @@ In this section, you will define the destination, folder organization, file form
      * `{{Date}}`: Export run date in `yyyymmdd`.
        > 📘 Note
        >
-       > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (\_).
+       > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
 
-
-<Image alt="Select File Format and Define File Name" align="center" border={true} src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" />  Select File Format and Define File Name
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png)  Select File Format and Define File Name
 
 5. Click **Next** to choose user identifiers.
 
 ## Select User identifiers
 
 Choose which user identifiers to include in the export and how they appear in the output file. These settings enable data warehouse platforms to accurately match user profiles across multiple identifiers.
-1. **Select Identity & Define Order**\
+
+1. **Select Identity & Define Order**  
    Use the dropdown to select which identifiers to export and click **Apply**. You must select at least one identifier. Options include:
 
    * **Identity**: Your account-defined user identifier
@@ -169,181 +164,71 @@ Choose which user identifiers to include in the export and how they appear in th
 
    * **Custom**: A business-specific identifier (for example, `crm_id`).
 
-   <Image alt="Select Identity" align="center" border={true} src="https://files.readme.io/1a28ae6ee64add0430f7cbc2338843b9ff4dd7633e0bf6330e72fc70f9c97f40-Select_Identity.gif">
-     Select Identity
-   </Image>
+   <Image align="center" alt="Select Identity" border={true} caption="Select Identity" src="https://files.readme.io/1a28ae6ee64add0430f7cbc2338843b9ff4dd7633e0bf6330e72fc70f9c97f40-Select_Identity.gif" />
 
    > 📘 **Note**
    >
-   > The order in which you select identifiers sets the initial priority. You can fine-tune priority under *Values to export* and *Fallback order*. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   > The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
 
-2. **Define Export Preference**\
-   Choose how identifier values are written and define priority. Drag to reorder or enter position numbers. 
+2. **Define Export Preference**  
+   Choose how identifier values are written and define priority. Drag to reorder or enter position numbers.
 
-   * **Single value with fallback**:  Exports one identifier value per profile following your priority order. If the first identifier is unavailable, CleverTap uses the next available identifier as per your defined sequence. Use the *Reorder* option to set priority by dragging rows or entering position numbers. For example, if the priority order is `Identity → Email → Phone → CRM ID [Custom properties]`, CleverTap exports the first available identifier in that order for each user.
+   * **Single value with fallback**:  Exports one identifier value per profile following your priority order. If the first identifier is unavailable, CleverTap uses the next available identifier as per your defined sequence. Use the _Reorder_ option to set priority by dragging rows or entering position numbers. For example, if the priority order is `Identity → Email → Phone → CRM ID [Custom properties]`, CleverTap exports the first available identifier in that order for each user.
 
-     <Image alt="Define Export Preference when Exporting Single Value for Identity" align="center" border={true} src="https://files.readme.io/4763bf86ff4c593bf96063be083efa00e9f86b24fd6e5940c7013dddd2a96a29-Choose_Export_Preference.gif">
-       Define Export Preference when Exporting Single Value for Identity
-     </Image>
+     <Image align="center" alt="Define Export Preference when Exporting Single Value for Identity" border={true} caption="Define Export Preference when Exporting Single Value for Identity" src="https://files.readme.io/4763bf86ff4c593bf96063be083efa00e9f86b24fd6e5940c7013dddd2a96a29-Choose_Export_Preference.gif" />
    * **Export all values**: Exports all selected identifiers in the **identity** column, listed in order of priority. Missing values are omitted. Select this option when reconciliation, deduplication, or identity joins are required downstream.
 
-3. **(Optional) Select Account-Defined User Identity**\
-   Turn ON the toggle to add **all\_identities**, which exports all [account-defined identifiers](doc:developer-go-live-checklist#define) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.\
-   *Example:* If a profile has identities user\_123, user\_456, and email [user@example.com](mailto:user@example.com), the output will be:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4. **Select CleverTap ID**\
+3. **(Optional) Select Account-Defined User Identity**  
+   Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](doc:developer-go-live-checklist#define) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.  
+   _Example:_ If a profile has identities user_123, user_456, and email [user@example.com](mailto:user@example.com), the output will be:
+
+4. **Select CleverTap ID**  
    Select this option to include the following in your export:
    * **clevertapId**: A unique, system-generated identifier assigned to each user profile. For more information, refer to [CleverTap ID](https://developer.clevertap.com/docs/user-profiles#clevertap-id).
    * **clevertapIds**: A list of all historical CleverTap IDs associated with the profile, useful for tracking users across devices and merged profiles.
-5. **Preview Output**\
+
+5. **Preview Output**  
    Review how the selected identifiers will appear in the export. The live preview updates based on your selection and priority order, allowing you to verify: Fallback behavior, Data structure, and Sample output format.
 
-   <Image alt="Preview Output" align="center" border={true} src="https://files.readme.io/5e0c6d84a15621ab608e199f8de65af4fd10e9948aedec8377d9877aa9337b37-Preview_Output.png">
-     Preview Output
-   </Image>
-6. Click **Next** to proceed to the *Properties & order* step.
+   <Image align="center" alt="Preview Output" border={true} caption="Preview Output" src="https://files.readme.io/5e0c6d84a15621ab608e199f8de65af4fd10e9948aedec8377d9877aa9337b37-Preview_Output.png" />
+
+6. Click **Next** to proceed to the _Properties & order_ step.
 
 ## Configure Properties & Order
 
 Configure which properties to include in the export, as well as how they are labeled and ordered. Use the live Preview to verify selected fields, headers, and column order.
 
-
-1. **Include Device Attributes**\
+1. **Include Device Attributes**  
    Device-level identifiers captured for the profile. This information is included by default in the export.
 
-   <Image alt="Include Device Attributes" align="center" border={true} src="https://files.readme.io/89080e6460bd1d6639605ff0ef7e5df35c8962418f704967ceeaa796c115892d-Include_Device_Attributes.png">
-     Include Device Attributes
-   </Image>
+   <Image align="center" alt="Include Device Attributes" border={true} caption="Include Device Attributes" src="https://files.readme.io/89080e6460bd1d6639605ff0ef7e5df35c8962418f704967ceeaa796c115892d-Include_Device_Attributes.png" />
 
    > 📘 Device Token Missing
    >
    > If a profile has no device token, the token column appears blank.
 
-2. **Add Communication Preferences**.\
+2. **Add Communication Preferences**.  
    Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: MSG-push, MSG-push-all (push subscription status across all devices), `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups)` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
 
-   <Image alt="Export Communication Preferences" align="center" border={true} src="https://files.readme.io/c494bcc5ab5779790e9c9a66457dd15674f31428997d95de5ddcbebf1ae7380c-Export_Communication_Preferences.gif">
-     Export Communication Preferences
-   </Image>
+   <Image align="center" alt="Export Communication Preferences" border={true} caption="Export Communication Preferences" src="https://files.readme.io/c494bcc5ab5779790e9c9a66457dd15674f31428997d95de5ddcbebf1ae7380c-Export_Communication_Preferences.gif" />
 
-3. **Select User Properties**\
+3. **Select User Properties**  
    Choose which profile properties to export:
 
    * **All user properties**: Exports all system and custom user properties. For more information, refer to [User Properties](doc:user-profiles#user-properties).
    * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, and so on. For more information, refer to [System Properties](doc:user-profiles#system-properties).
    * **Selected properties**: Pick specific fields from your schema (for example, **Email**, **Phone**, **Customer Type**). For more information, refer to [Custom Properties](doc:user-profiles#custom-properties).
 
-   <Image alt="Select User Properties to Export" align="center" border={true} src="https://files.readme.io/86580e1c39e195008221ca0c636d54717b94ff958c0e31dbf96c245927e65742-Select_User_Properties_to_Export.gif">
-     Select User Properties to Export
-   </Image>
+   <Image align="center" alt="Select User Properties to Export" border={true} caption="Select User Properties to Export" src="https://files.readme.io/86580e1c39e195008221ca0c636d54717b94ff958c0e31dbf96c245927e65742-Select_User_Properties_to_Export.gif" />
 
    > 📘 Note
    >
-   > You must select at least one user property. You cannot select the Identity and CleverTap ID configured in *Step 2: Select User Identifiers*.
+   > You must select at least one user property. You cannot select the Identity and CleverTap ID configured in _Step 2: Select User Identifiers_.
 
-4. **Rename & Reorder Properties**:\
-   Customize the column names and the order of selected properties. Use the *Selected properties* dropdown to rename or reorder the selected properties (for example, change `Phone` to `Phone Number`).
+4. **Rename & Reorder Properties**:  
+   Customize the column names and the order of selected properties. Use the _Selected properties_ dropdown to rename or reorder the selected properties (for example, change `Phone` to `Phone Number`).
 
-   <Image alt="Rename and Reorder User Properties to Export" align="center" border={true} src="https://files.readme.io/785878c2969967e4229143efedd2b4d61283bdfc8ddea7b09da7af3186c61043-Rename__Reorder_Properties.gif">
-     Rename and Reorder User Properties to Export
-   </Image>
-
+   <Image align="center" alt="Rename and Reorder User Properties to Export" border={true} caption="Rename and Reorder User Properties to Export" src="https://files.readme.io/785878c2969967e4229143efedd2b4d61283bdfc8ddea7b09da7af3186c61043-Rename__Reorder_Properties.gif" />
 
 > 📘 Points to Consider
 >
@@ -354,42 +239,33 @@ Configure which properties to include in the export, as well as how they are lab
 > * Reordering does not impact data collection or internal storage — it only affects the file structure.
 > * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
 
-5. **Manage Schema Updates**\
+5. **Manage Schema Updates**  
    Control how new properties are handled in future export creation. This option appears only when you choose to export all properties in the previous step.
-   * **Add new properties at the end**: Automatically append any new properties (system or custom) as new columns at the end of the export file. For example, if you later add a property named **loyalty\_tier**. It will be included as a new column at the end of the next export and onwards.
-   * **Lock current schema**: Keep the file structure fixed. New properties are excluded until manually added. For example, if you add **loyalty\_tier**, it will not appear in the export until you update the schema configuration.
+   * **Add new properties at the end**: Automatically append any new properties (system or custom) as new columns at the end of the export file. For example, if you later add a property named **loyalty_tier**. It will be included as a new column at the end of the next export and onwards.
+   * **Lock current schema**: Keep the file structure fixed. New properties are excluded until manually added. For example, if you add **loyalty_tier**, it will not appear in the export until you update the schema configuration.
 
-<Image alt="Manage Schema Updates" align="center" border={true} src="https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png" />  Manage Schema Updates
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png)  Manage Schema Updates
 
 > 📘 Tip
 >
-> Choose *Add new properties at the end* if you want to capture all user data automatically. Choose *Lock current schema* if your downstream pipelines require a fixed schema structure.
+> Choose _Add new properties at the end_ if you want to capture all user data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure.
 
 6. Click **Preview** to review the complete data structure and click **Next** to configure the export schedule.
 
 ## Define Schedule for Export
 
 Define how often data should be exported to your destination.
-1. **Choose Frequency**\
+
+1. **Choose Frequency**  
    Select how often the export should run:
 
    * **One-time**: Immediately runs a one-time export using the current configuration. Use this for ad-hoc analysis or initial data migration.
-   * **Recurring**: Automatically exports data every 24 hours. The frequency is fixed to once per day. Use when downstream systems expect a daily file. 
+   * **Recurring**: Automatically exports data every 24 hours. The frequency is fixed to once per day. Use when downstream systems expect a daily file.
 
-2. **Select Export Type**\
+2. **Select Export Type**  
    For recurring exports, choose how CleverTap determines which profiles to export:
 
-   * **Only profiles changed since the last run (first run is full)**: The first run exports all profiles. Future runs export the following profiles: 
+   * **Only profiles changed since the last run (first run is full)**: The first run exports all profiles. Future runs export the following profiles:
 
      * A new profile was created since the last run.
      * A profile is updated. A profile is considered updated if:
@@ -398,9 +274,7 @@ Define how often data should be exported to your destination.
        * A communication preference (for example, MSG-email, MSG-sms, MSG-push) changes.
    * **Full dataset each day**: Export all profiles in every run. Each daily run exports the complete dataset, regardless of changes. Use this if your downstream systems require a daily full refresh.
 
-   <Image alt="Create Recurring Export" align="center" border={true} src="https://files.readme.io/0afbe823816d06a3c231d2392bf02f421b4d1f493264cae95b5c5afda68a6cd9-Recurring_Export.png">
-     Create Recurring Export
-   </Image>
+   <Image align="center" alt="Create Recurring Export" border={true} caption="Create Recurring Export" src="https://files.readme.io/0afbe823816d06a3c231d2392bf02f421b4d1f493264cae95b5c5afda68a6cd9-Recurring_Export.png" />
 
 3. Click **Create** to complete the creation of your export.
 
@@ -414,7 +288,6 @@ Exported profile files follow this consistent column order:
 4. **User Properties**: System and custom properties in the order you define.
 
 ### Sample JSON & XML Export
-
 
 ```json
 {
@@ -547,7 +420,6 @@ Exported profile files follow this consistent column order:
 </root>
 ```
 
-
 ### Sample CSV Export
 
 <Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
@@ -646,7 +518,7 @@ Exported profile files follow this consistent column order:
       </td>
 
       <td>
-        * \_g1234567890
+        * _g1234567890
       </td>
 
       <td>
@@ -678,9 +550,9 @@ Exported profile files follow this consistent column order:
       </td>
 
       <td>
-        \{\
-        "group1":"Subscribed",  "group2":"Unsubscribed",\
-        "group3": "Subscribed"\
+        \{  
+        "group1":"Subscribed",  "group2":"Unsubscribed",  
+        "group3": "Subscribed"  
         }
       </td>
 
@@ -725,7 +597,6 @@ Exported profile files follow this consistent column order:
 
 ### Sample Parquet Export
 
-
 <Table align={["left","left","left","left","left"]}>
   <thead>
     <tr>
@@ -758,37 +629,37 @@ Exported profile files follow this consistent column order:
       </td>
 
       <td>
-        \{"all\_identities":\{"member0":"[XXXX,XXXX]","member1":null},\
-        "clevertapId":\{"member0":"XXXXXX","member1":null},\
+        \{"all_identities":\{"member0":"[XXXX,XXXX]","member1":null},  
+        "clevertapId":\{"member0":"XXXXXX","member1":null},  
         "clevertapIds":\{"member0":null,"member1":["XXXXX"]}}
       </td>
 
       <td>
-        \[\{token: \{\
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"\
-          }}]
+        [\{token: \{  
+        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        }}]
       </td>
 
       <td>
-        \[&#123;  
-          MSG-push: &#123;  
+        [\{  
+        MSG-push: \{  
         'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-          &#125;,  
-         MSG-push-all: &#123;  
+        },  
+        MSG-push-all: \{  
         'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-          &#125;  
-        &#125;]
+        }  
+        }]
       </td>
 
       <td>
-        \[&#123;  
-          Email: &#123;  
-         'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-          &#125;,  
-        Phone: &#123;  
+        [\{  
+        Email: \{  
+        'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        },  
+        Phone: \{  
         'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-          &#125;  
-        &#125;]
+        }  
+        }]
       </td>
     </tr>
   </tbody>
@@ -800,24 +671,14 @@ This section outlines how to track the status of your data exports, stop them wh
 
 ### Stop Export
 
-Stop a running export by hovering over the export and clicking **Stop**. The export status on the *Export center* page is displayed as **Stopped**.
+Stop a running export by hovering over the export and clicking **Stop**. The export status on the _Export center_ page is displayed as **Stopped**.
 
-<Image alt="Stop Export" align="center" border={true} src="https://files.readme.io/925d13fe3d81e2d20983b0beb6b1772daad788c46b3e74ee6b99ebda0e38da6e-Stop_Export.png" /> Stop Export
+![](https://files.readme.io/925d13fe3d81e2d20983b0beb6b1772daad788c46b3e74ee6b99ebda0e38da6e-Stop_Export.png) Stop Export
 
 ### Filter & Search Exports
 
 Use the filter bar to narrow down exports by **Partner** (S3, GCP, Azure), Data type (profile/event), **Status** (active, stopped, failed), and **Frequency** (one‑time, recurring). You can also search by export request ID or name.
-<Image alt="Filter Exports" align="center" width="35%" border={true} src="https://files.readme.io/10ce99261935856c41e06cbcf9153637975303b753ed7a45bee6aaae562daad3-Filter_Exports.png" />  Filter Exports
-
-
-
-
-
-
-
-
-
-
+![](https://files.readme.io/10ce99261935856c41e06cbcf9153637975303b753ed7a45bee6aaae562daad3-Filter_Exports.png)  Filter Exports
 
 ### Export Status
 
@@ -832,20 +693,20 @@ Each export has a status that reflects its current state in the export lifecycle
 
 Follow these best practices to ensure your profile exports are reliable, organized, and compatible with downstream systems:
 
-* **Use Clear File Naming Conventions**\
+* **Use Clear File Naming Conventions**  
   Create descriptive file names using dynamic date variables to help identify and process exports chronologically.
-* **Structure Folders by Date**\
+* **Structure Folders by Date**  
   Organize exports using date-based folders (e.g., YYYYMMDD or \{\{Date}}) to simplify processing in your data pipelines.
-* **Enable Incremental Exports**\
+* **Enable Incremental Exports**  
   Use incremental exports for large datasets to minimize processing time, enhance performance, and reduce storage costs.
 * **Manage Schema Carefully**
   * Lock the schema if downstream systems require a fixed column structure.
   * Use Add new properties at the end to automatically capture newly added data fields without affecting existing columns.
-* **Monitor Export Delivery**\
+* **Monitor Export Delivery**  
   Configure alerts in your cloud platform to detect delays or missing files and troubleshoot failures quickly.
-* **Validate Exported Data**\
+* **Validate Exported Data**  
   Run data quality checks to confirm the exported files match your expectations before loading them into downstream systems.
-* **Monitoring & Error Handling**: If your export fails: 
+* **Monitoring & Error Handling**: If your export fails:
   * Check that your storage credentials (IAM policy, service account key, or SAS token) are valid.
   * Ensure the bucket or container exists and is accessible.
   * For GCP exports, a 403 error often indicates that the service account key is invalid.
@@ -855,8 +716,9 @@ Follow these best practices to ensure your profile exports are reliable, organiz
 ### Do CleverTap data exports allow special characters?
 
 Yes, CleverTap data exports allow the following special characters:
+
 * Supports Unicode (UTF-8) character encoding.
-* Replaces Whitespace, Tab, Slash, and null (\\0) with a hyphen.
+* Replaces Whitespace, Tab, Slash, and null (\0) with a hyphen.
 * Replaces control characters with `?`.
 * Supports emoji characters; some emojis (UTF-16) may not render properly.
 
@@ -874,7 +736,7 @@ Profile Exports export all profiles in your account. To export specific segments
 
 ### How do I include deleted properties in my export?
 
-If a property is deleted from the CleverTap schema but still exists in an active export, it continues to be exported. 
+If a property is deleted from the CleverTap schema but still exists in an active export, it continues to be exported.
 
 ### What is the maximum file size for exports?
 
@@ -886,11 +748,11 @@ Profile Exports support only a 24-hour frequency for recurring exports. For more
 
 ### How are large exports chunked?
 
-We chunk the data across multiple files for larger exports. File sizes are limited to \~100 MB to make them more consumable. The file index indicates the file number in the series.
+We chunk the data across multiple files for larger exports. File sizes are limited to ~100 MB to make them more consumable. The file index indicates the file number in the series.
 
 ### How do I handle schema changes in my data warehouse?
 
-Use the *Add new properties at the end* option to append new columns automatically. Update your warehouse schema to accommodate new columns, or use the "Lock current schema" option to prevent changes.
+Use the _Add new properties at the end_ option to append new columns automatically. Update your warehouse schema to accommodate new columns, or use the "Lock current schema" option to prevent changes.
 
 ### Can I export profiles to multiple buckets
 
@@ -898,14 +760,13 @@ Currently, CleverTap allows only one recurring profile export to be created.
 
 ### Can I change the folder structure or file name after creating an export?
 
-Currently, you cannot edit the new version of the profile export. 
+Currently, you cannot edit the new version of the profile export.
 
 ### Can I schedule exports more frequently than once per day?
 
 For profile exports in the new export flow, the frequency is fixed to 24 hours. Event exports allow more frequent schedules (down to every 4 hours), but profile exports always run daily.
 
 ### How does recurring export work?
-
 
 On day one, the entire user profile data is sent. From day two onwards, only updates or additions are exported (for example, new profiles or updates to user properties/communication preferences). You can export data as frequently as every 4 hours and up to once every 24 hours.
 
@@ -926,4 +787,4 @@ If your export fails, follow these steps to troubleshoot the issue:
 ### What other ways can I export data from CleverTap?
 
 * [**Export via API**](https://developer.clevertap.com/docs/upload-user-profiles-api) (see API Overview).
-* [**Find People**](doc:find-people#download-users): Download the profile data directly from the CleverTap dashboard through *Segments* → *Find People* → **View Details** → download under **Total users**.
+* [**Find People**](doc:find-people#download-users): Download the profile data directly from the CleverTap dashboard through _Segments_ → _Find People_ → **View Details** → download under **Total users**.
