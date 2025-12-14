@@ -44,7 +44,7 @@ It is divided into two main sections:
 * **Canvas (Left Side)**: The canvas is where you design your In-App message. It is fully interactive, allowing you to drag and drop elements and adjust their position and size with ease.
 * **Controls & Styling Menu (Right Side)**: This menu contains controls and styling options for the elements on the canvas. Any changes made here instantly reflect on the canvas in real time.
 
-3. Preview and test your message.  Once you are all done setting up the content of your campaign in the _What_ section, you can test the message content and personalization. You can select from a list of test profiles to preview the message for each profile. Click the _Preview & Test_ button from the message editor to test a message. (@murtaza, please check.) For more information, see Preview and Send In-App. 
+3. Preview and test your message.  Once you are all done setting up the content of your campaign in the _What_ section, you can test the message content and personalization. You can select from a list of test profiles to preview the message for each profile. Click the _Preview & Test_ button from the message editor to test a message. (@murtaza need a popup screenshot here for showing the preview button)For more information, refer to [Preview and Send In-App](doc:send-test-personalization-in-app).
 
 ## Builder Elements
 
@@ -196,13 +196,13 @@ The Advanced In-app Builder supports **Custom Fonts** for all Text content in yo
 
 To add new elements, use the controls on the right side of the builder to drag and drop images, text, and buttons directly into the container.
 
-### Can I preview my In-App message before sending it out? 
+### Can I preview my In-App message before sending it out?
 
-Yes. The Preview and Test feature is available from Android SDK v7.7.0 and CleverTap iOS SDK v7.4.0 and later. 
+Yes. The Preview and Test feature is available from Android SDK v7.7.0 and CleverTap iOS SDK v7.4.0 and later.
 
-### Can I use personalized message content? 
+### Can I use personalized message content?
 
-Yes. You can use the [@ inline personalization](https://docs.clevertap.com/docs/personalize-message-inapp#inline-personalization) in the preview message. 
+Yes. You can use the [@ inline personalization](https://docs.clevertap.com/docs/personalize-message-inapp#inline-personalization) in the preview message.
 
 ### Are there limitations on device sizes or layouts
 
