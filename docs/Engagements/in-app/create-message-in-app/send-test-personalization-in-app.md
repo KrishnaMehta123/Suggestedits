@@ -75,7 +75,7 @@ Consider a scenario where your In-App message includes profile personalization, 
 
 ### Test Event Personalization
 
-The events selected in your message will be displayed here. You can change the values to preview the message with the updated values. For example (@murtaza need a good example here)
+The events selected in your message will be displayed here. You can change the values to preview the message with the updated values. For example (@murtaza need a screenshot here with events value change)
 
 (@murtaza, need a good image for event personalization with a good preview in demo env)
 
