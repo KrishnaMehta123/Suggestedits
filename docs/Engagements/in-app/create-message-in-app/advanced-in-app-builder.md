@@ -75,14 +75,193 @@ The container allows you to modify the following:
 * **Position**: Select a position such as Top, Center, or Bottom.
 * **Size**: Select from the available height options such as short, mid, tall, and so on.
 * **Margin**: Adjust the margin percentage to create a buffer between your popup and the device edges.
-* **Delay**: Automatically dismiss the in-app notification after the specified delay. \{@maritn, please check}
+* **Delay**: Automatically dismiss the in-app notification after the specified delay. 
 * **Container Action**:  Container actions that are executed on tap, such as the following:
   * _Close Notification_:  Close the in-app notification.
   * _Open URL_: Open the specified URL.
-  * _Key-value pairs_: Add a key and value. \{@martin to confirm this}
+  * _Key-value pairs_: Add a key and value. 
   * _App Function_: Trigger app functions such as requesting push permission or app rating. For more information on app functions, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). \{@sunil to fix the link}
 * **Background**: Apply a background color or image to your design.
 * **Border Radius**: Control the roundness of the container's edges. A higher value results in a rounder appearance.
+
+<br />
+
+***
+
+<br />
+
+### Container
+
+(@murtaza please review thsi new section)
+
+The **Container** holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
+
+(@sunil to add image)
+
+#### Container Properties
+
+<br />
+
+You can customize the following properties to control the look, behavior, and visual design of your In-App message:
+
+* **Position:** Choose where the message appears on the screen (Top, Center, or Bottom).
+* **Size:** Select from predefined size options such as Wide, Square, Tall, or Extra Tall, depending on your layout.
+* **Margin:** Adjust the margin percentage to create space between the message and the device edges.
+* **Delay:** Set a delay after which the in-app message automatically dismisses.
+  <br />
+
+#### Container Action
+
+Define what happens when users tap the container.
+
+| Action Type            | Description                                                                                     |
+| ---------------------- | ----------------------------------------------------------------------------------------------- |
+| **No Action**          | No behavior is triggered when the container is tapped.                                          |
+| **Close Notification** | Closes the in-app message.                                                                      |
+| **Open URL**           | Opens a specified URL link.                                                                     |
+| **Key–Value Pair**     | Adds a key and value pair for tracking or personalization.                                      |
+| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For details, see |
+
+<br />
+
+#### Background
+
+Apply a background color or image to your design.
+
+You can:
+
+* Choose a **solid color** using a color picker or hex code.
+  * **Upload an image** directly from your system.
+  * Add **alt text** for accessibility and search.
+
+    (@murtaza, Confirm supported image upload size limit and format restrictions (JPEG, PNG, GIF, SVG)
+
+#### Font and Text
+
+Control how text appears within your container.
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **Font** 
+      </td>
+
+      <td>
+        Select a predefined font style (for example, Arial).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Font Family**
+      </td>
+
+      <td>
+        Define the general font family (for example, sans-serif).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Fallback**
+      </td>
+
+      <td>
+        * Set an alternative font used if the main font is unavailable.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+(@murtaza, Confirm supported font families and if custom font uploads are allowed. )
+
+#### Border Radius
+
+Adjust how rounded the container’s corners appear.
+A higher value results in more rounded corners.
+
+For example: `Border Radius: 2` gives slightly curved edges, while higher values create a more pill-shaped container.
+
+#### Initial Animation
+
+Control how your container appears when the in-app message loads.
+
+| Animation Type | Description                                                       |
+| -------------- | ----------------------------------------------------------------- |
+| **Instant**    | The container appears immediately without animation.              |
+| **Dissolve**   | The container fades into view smoothly.                           |
+| **Move In**    | The container slides into the screen from a predefined direction. |
+
+> @murtaza: Confirm if additional animation types (for example, “Slide Up” or “Fade Out”) are supported or OS-specific.]
+
+***
+
+#### Size and Aspect Ratios
+
+The available container size options differ based on orientation. Use the following tables to understand each option’s aspect ratio.
+
+##### Portrait Orientation
+
+| Size Option | Aspect Ratio |
+| ----------- | ------------ |
+| Extra Short | 4:1          |
+| Short       | 7:2          |
+| Mid         | 3:1          |
+| Tall        | 2:1          |
+| Extra Tall  | 5:4          |
+| Square      | 1:1          |
+| Wide        | 16:9         |
+
+##### Landscape Orientation
+
+| Size Option | Aspect Ratio |
+| ----------- | ------------ |
+| Extra Short | 8:1          |
+| Short       | 7:1          |
+| Mid         | 6:1          |
+| Tall        | 5:1          |
+| Extra Tall  | 9:2          |
+| Square      | 1:1          |
+| Wide        | 16:9         |
+
+> **Note:** Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
+
+***
+
+#### Supported File Formats
+
+You can use the following image formats for your container backgrounds or content:
+
+| File Format                                              | Description      | **Recommended File Size**                           | **Actual Supported Limit** |
+| -------------------------------------------------------- | ---------------- | --------------------------------------------------- | -------------------------- |
+| **JPEG:** Best for photos and detailed images.           | Up to **500 KB** | @murtaza: Confirm actual limit; commonly 1 MB]      |                            |
+| **PNG:** Ideal for transparent or high-quality graphics. | Up to **1 MB**   | @murtaza: Confirm actual limit; commonly 1 MB]      |                            |
+| **GIF:** Use for lightweight animations.                 | Up to **800 KB** | @murtaza: Confirm actual limit; commonly 1 MB]      |                            |
+| **SVG:** Suitable for vector graphics (logos, icons).    | Up to **300 KB** | @murtaza: Confirm if SVG is supported and size cap] |                            |
+
+<br />
+
+<Callout icon="📘" theme="info">
+  Best Practices
+
+  Optimize your images to improve message load time and prevent rendering issues on low-performance devices.  
+  @murtaza: Confirm final list of supported formats and size caps with engineering.]
+</Callout>
+
+<br />
 
 ### Dismiss Button
 
