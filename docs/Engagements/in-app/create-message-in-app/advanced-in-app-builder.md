@@ -80,7 +80,7 @@ The container allows you to modify the following:
   * _Close Notification_:  Close the in-app notification.
   * _Open URL_: Open the specified URL.
   * _Key-value pairs_: Add a key and value. 
-  * _App Function_: Trigger app functions such as requesting push permission or app rating. For more information on app functions, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). \{@sunil to fix the link}
+  * _App Function_: Trigger app functions such as requesting push permission or app rating. For more information on app functions, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). 
 * **Background**: Apply a background color or image to your design.
 * **Border Radius**: Control the roundness of the container's edges. A higher value results in a rounder appearance.
 
@@ -92,11 +92,13 @@ The container allows you to modify the following:
 
 ### Container
 
-(@murtaza please review thsi new section)
+(@murtaza please review this new section)
 
 The **Container** holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
 
-(@sunil to add image)
+<Image align="center" alt="Design Container" border={true} caption="Design Container" src="https://files.readme.io/1626def427219d29d0892846f9c54eb4ce46a4b19a1ecb09fdd2a24c40f8d890-image.png" />
+
+<br />
 
 #### Container Properties
 
@@ -237,9 +239,11 @@ The available container size options differ based on orientation. Use the follow
 | Square      | 1:1          |
 | Wide        | 16:9         |
 
-> **Note:** Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
+<Callout icon="📘" theme="info">
+  Note
 
-***
+  Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
+</Callout>
 
 #### Supported File Formats
 
