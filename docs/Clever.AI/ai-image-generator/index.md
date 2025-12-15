@@ -41,7 +41,7 @@ The Designer Agent automatically applies your Brand Kit to ensure every generate
 
 ## Generate Image Using Prompt
 
-The Designer Agent utilizes your prompt and Brand Kit settings to create visuals that align with your campaign’s theme. By providing clear and detailed descriptions of what you need, you can quickly create on-brand images tailored to your requirements. 
+The Designer Agent utilizes your prompt and Brand Kit settings to create visuals that align with your campaign’s theme. By providing clear and detailed descriptions of what you need, you can quickly create on-brand images tailored to your requirements.
 
 To generate an image using prompts:
 
@@ -50,23 +50,23 @@ To generate an image using prompts:
 3. Click **Generate Image**. The _Generate Image_ window opens.
 4. Describe the image you want in the prompt field at the bottom. For example, refer to the below sample image for an OTT platform to promote an upcoming Premier League football match:
 
-<Image align="center" alt="Generate Image" border={true} caption="Image Generated Using Text to Image Option" src="https://files.readme.io/d536d43634a56cea46994435aa5db5450774744f0e6b8e05e2470d4c11ed7a9c-OTT_Platform_Example.png" />
+<Image align="center" alt="Generate Image" border={true} caption="Image Generated Using Text to Image Option" src="https://files.readme.io/93120c5cbdd3087d2655f8bd7cb57acb4c1dd3494788ef336f606af778c983ab-2025-12-15_17-18-58.png" />
 
 5. Click ![](https://files.readme.io/bdbfd957c9ccc6dff7284d71450e4414281705ac5d8337c238198a6d7cc896ee-Image_Settings_Icon.png) to select the _File format_ (JPEG or PNG). The Ratio/Size (that is, 1:1) is auto-selected and non-editable. The aspect ratio and size are automatically aligned with Push OS specifications (for example, 1:1 for Large Icon and 3:2 for Expanded Image) to ensure compatibility.
 
-<Image align="center" alt="Image Studio" border={true} caption="Image Studio" src="https://files.readme.io/a7f815daca070109b5ff17f4f78a54aa308f9847b073dc4a391f738344ff8e02-image.png" />
+<Image align="center" alt="Image Studio" border={true} caption="Image Studio" src="https://files.readme.io/76299ba387f6c77648bedf7a1662e6a873c48ec177356e072b809cbe2abfac32-2025-12-15_17-19-38.png" />
 
 6. Click **Primary Kit** to view your brand’s style, button colors, brand colors, and so on, for your image. Click **Apply**. Click **Secondary Kit** to configure a custom kit for the current image. For more information on setting it up, refer to [Brand Kits](https://docs.clevertap.com/docs/brand-kit).
 
-<Image align="center" alt="Brand Kit" border={true} caption="Brand Kit" src="https://files.readme.io/664001348ea7da1a08f8185bb381e98c5c06a2d0afcf98268593042681c1a0d3-image.png" />
+<Image align="center" alt="Brand Kit" border={true} caption="Brand Kit" src="https://files.readme.io/bc7427805f6d2f56db9bea66f750b3ff5cc254fbe1b952f9a99484013645d8db-2025-12-15_17-28-51.png" />
 
 <Callout icon="📘" theme="info">
   **Brand Kits**
 
-  * Brand Kit names reflect the Brand Kits configured in your account. 
+  * Brand Kit names reflect the Brand Kits configured in your account.
   * If a brand kit is locked, it cannot be edited within the campaign flow.
   * Any changes made to BrandKit through campaign flow only apply to **that thread**.
-  * If a prompt conflicts with your Brand Kit’s defined elements, such as brand colors, button styles, or tone, the AI will prioritize the Brand Kit settings. For example, If your Brand Kit specifies yellow and green as primary brand colors and the prompt requests purple, the generated image will use purple, with yellow and green as the dominant colors. 
+  * If a prompt conflicts with your Brand Kit’s defined elements, such as brand colors, button styles, or tone, the AI will prioritize the Brand Kit settings. For example, If your Brand Kit specifies yellow and green as primary brand colors and the prompt requests purple, the generated image will use purple, with yellow and green as the dominant colors.
 
   This ensures consistent, on-brand visuals across all AI-generated assets, regardless of the prompt details. For more information on setting up and using brand kits, refer to <Anchor label="Brand Kit" target="_blank" href="https://docs.clevertap.com/docs/brand-kit">Brand Kit</Anchor>.
 </Callout>
@@ -76,7 +76,7 @@ To generate an image using prompts:
    * Enter follow-up prompts in the same chat thread to refine the image.
    * To edit an existing image, go to the Message Editor, click **Upload**, and select the image. Click ![](https://files.readme.io/3dd08bfdc757b30950b16c701f01b8970b5ddec566c161e93cb3c1081ee73e60-Edit_icon.png) and describe the change you want to make (for example, Change CTA text from "Watch Live" to “Watch Now”). Each refinement creates a new version saved in your Threads history, allowing you to revisit or reuse past iterations.
 
-<Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/01e7233196e05a2a68213836230306770b3d994a7555e64bdfbfb041c577dde2-Edit_Generated_Image.gif" />
+<Image align="center" alt="Edit Generated Image" border={true} caption="Edit Generated Image" src="https://files.readme.io/ad6d7d919738b35d77b857730b33d58e74736959ac13fb6b212438a62692ca77-2025-12-15_17-34-36_2.gif" />
 
 > 📘 Why detailed prompts matter?
 >
@@ -149,7 +149,7 @@ All AI Generated images can be accessed via [Threads](https://docs.clevertap.com
 
 Once you start generating images, it automatically saves your sessions under the ![](https://files.readme.io/a973e47e78d9cb32bf7c2372bc46d90fdb6f8eb16dd6ebaa77a63c2b385438c8-Threads_icon.png) tab. Each session is stored as a **thread**, which captures your prompts, refinements, and generated outputs, helping you resume from where you left off without losing context.
 
-<Image align="center" alt="All Threads" border={true} caption="All Threads" src="https://files.readme.io/e709fdea4b216257df9129d2d2e28f798ed53f1ec2caaf0bf946eba64d51bf18-image.png" />
+<Image align="center" alt="All Threads" border={true} caption="All Threads" src="https://files.readme.io/0e05c785c60b63a20c9756c7e7bbfbe2a8a0da893640be845546ba46c8646ea9-2025-12-15_17-30-48.png" />
 
 ### How Threads Work
 
@@ -158,7 +158,7 @@ Threads are scoped to your **Account**, **Agent**, and **User**, ensuring that y
 If multiple users from the same account use AI tools:
 
 * Each user sees only their own threads and the latest image generation session that they have participated in.
-* Threads are separate for Segmentation, Analytics, Designer Agent, and Copywriter Agent, even under the same account. 
+* Threads are separate for Segmentation, Analytics, Designer Agent, and Copywriter Agent, even under the same account.
 
 ### Manage Threads
 
@@ -199,24 +199,6 @@ For more information, refer to [Effective Prompts for AI Designer Agent](https:/
 
 # FAQs
 
-### Can I edit the generated image after inserting it?
-
-Yes. You can prompt it to “change background,” “update offer text,” “replace image”, and so on. These edits happen directly in the chat interface.
-
-### What image formats are supported?
-
-The generator currently supports **JPEG** and **PNG** formats.
-
-@meenal - for below, brand guidelines apply even if the kit is locked or not locked may be we can rephrase the question what if i dont want anyone to override the brand guidelines everytime they generate images
-
-### What if I want my brand guidelines applied every time I generate an image?
-
-You can lock your Brand Kit from the BrandKit section. 
-
-### What if I want to make sure no one overrides my brand guidelines?
-
-Brand guidelines are automatically applied to every generated image, whether your Brand Kit is locked or not. However, if you want to prevent anyone from changing or overriding these settings during image generation, you can lock the Brand Kit from the BrandKit section. When locked, the selected kit’s styles (colors, buttons, etc.) are automatically applied to every generated image, and cannot be overridden in the campaign flow. For more information, refer to [Brand Kit](https://docs.clevertap.com/docs/brand-kit).
-
 ### Does CleverTap store or reuse the images I generate?
 
 Yes, the images you generate are stored securely within your account’s CMS so you can access them later. However, CleverTap does not reuse, resell, or redistribute your images in any way. The generated output remains unique to your prompt and campaign inputs. Images are stored only for your reuse and are never shared across accounts.
@@ -244,6 +226,24 @@ No. The Designer Agent does not support links or URLs pasted in the prompt, as i
 ### What aspect ratios are supported?
 
 Aspect ratios are pre-selected and non-editable based on your campaign channel (for example, 3:2 for Expanded image and 1:1 for Large icon).
+
+### Can I edit the generated image after inserting it?
+
+Yes. You can prompt it to “change background,” “update offer text,” “replace image”, and so on. These edits happen directly in the chat interface.
+
+### What image formats are supported?
+
+The generator currently supports **JPEG** and **PNG** formats.
+
+@meenal - for below, brand guidelines apply even if the kit is locked or not locked may be we can rephrase the question what if i dont want anyone to override the brand guidelines everytime they generate images
+
+### What if I want my brand guidelines applied every time I generate an image?
+
+You can lock your Brand Kit from the BrandKit section.
+
+### What if I want to make sure no one overrides my brand guidelines?
+
+Brand guidelines are automatically applied to every generated image, whether your Brand Kit is locked or not. However, if you want to prevent anyone from changing or overriding these settings during image generation, you can lock the Brand Kit from the BrandKit section. When locked, the selected kit’s styles (colors, buttons, etc.) are automatically applied to every generated image, and cannot be overridden in the campaign flow. For more information, refer to [Brand Kit](https://docs.clevertap.com/docs/brand-kit).
 
 # Additional Resources
 
