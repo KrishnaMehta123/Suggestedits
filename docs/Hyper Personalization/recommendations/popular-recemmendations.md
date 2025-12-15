@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-The Popular Recommendations feature allows marketers and product teams to deliver relevant, high-performing product suggestions to end-users. This guide explains how to configure, manage, and use the Popular Recommendations setup within the CleverTap platform.
+The Popular Recommendations feature allows you to deliver relevant, high-performing product suggestions to end-users. This guide explains how to configure, manage, and use the Popular Recommendations setup within the CleverTap platform.
 
 Popular Recommendations are automatically generated based on real user engagement data such as views, purchases, or other tracked interactions over a configurable time window.
 
@@ -38,7 +38,7 @@ Before setting up Popular Recommendations, ensure the following:
 
 # Setting Up a Popular Recommendation
 
-Follow these steps to create and configure a Popular Recommendation setup for your account.  
+Follow these steps to create and configure a Popular Recommendation setup for your account.
 
 1. Select the Recommendation Type
 2. Configure Setup Parameters
