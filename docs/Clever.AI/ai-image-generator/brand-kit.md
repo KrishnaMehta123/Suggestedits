@@ -23,7 +23,7 @@ The **Brand Kit** helps ensure consistency across all generated assets, includin
 The following are the benefits of using a Brand Kit for your assets:
 
 * Ensures automatic application of brand-specific colors, typography, and styles, maintaining a consistent look and feel across all content and visuals.
-* Reduces back-and-forth during reviews by enforcing brand rules upfront, ensuring faster approvals and on-brand creative output. 
+* Reduces back-and-forth during reviews by enforcing brand rules upfront, ensuring faster approvals and on-brand creative output.
 * Scales campaign creation across regions and teams without diluting brand identity.
 * Smarter content reuse with Campaign Lookback (for content only), enabling the AI to learn from past campaign tone and messaging patterns.
 * Reduced dependency on the Copy and Design teams, enabling faster campaign iterations.
@@ -75,8 +75,6 @@ To create a new Brand Kit, perform the following steps:
 <Image align="center" alt="Add Brand Kit" border={true} caption="Add Brand Kit" src="https://files.readme.io/ff5a845b1c5609c09b13c0208e9c02c23ba4279706f9364e99f3915a9471763b-Screenshot_2025-12-03_at_1.12.58PM.png" />
 
 2. Enter the brand details such as _Setup, Content Guidelines, and Image Guidelines_ and click **Create**.
-
-<br />
 
 <Image align="center" alt="Create Brand Kit" border={true} caption="Enter Brand Kit Details" src="https://files.readme.io/548eaa09b6a7d5a205a8c05c4ece1c0231da09853628eabe8baae985c62757b9-image.png" width="65% " />
 
@@ -138,7 +136,7 @@ Enter the following Brand Kit details:
       <td>
         * If you want every AI-generated image or content asset to strictly follow brand guidelines, you can lock the Brand Kit.
         * When prompts include details that differ from your Brand Kit, the AI will automatically follow the Brand Kit settings.
-        * Only users with Brand Kit access can unlock or update a locked kit. 
+        * Only users with Brand Kit access can unlock or update a locked kit.
       </td>
     </tr>
 
@@ -212,7 +210,7 @@ Enter the following Brand Kit details:
       </td>
 
       <td>
-        Content and Image Guidelines each have a 500-character limit.  
+        Content and Image Guidelines each have a 500-character limit.
 
         **Example**: “Use active voice, prefer ‘affordable’ over ‘cheap,’ avoid gendered or racial terms.”
       </td>
@@ -299,7 +297,7 @@ Enter the following Brand Kit details:
 
   * Maximum **10 Brand Kits** can be configured per account.
   * Each Brand Kit is stored at the **account level** and applies across all channels once enabled.
-  * Create separate Brand Kits for each brand, region, or business unit. 
+  * Create separate Brand Kits for each brand, region, or business unit.
   * Use clear, meaningful names to help teams quickly identify the right kit when creating campaigns, for example, InstantMart, Insurance, or Ticket Booking.
 </Callout>
 
@@ -331,7 +329,7 @@ Follow these best practices listed below when defining your Brand Kit guidelines
 
 * Define your brand’s tone and communication style. Describe how your brand should sound and feel (for example, trustworthy, conversational, premium, inspiring, and so on). This helps the AI maintain consistent tonality across all content and imagery.
 * Add clear instructions for copy and image generation. The more details you provide, the more accurately the AI can generate brand-aligned content and images.
-* Clarify visual intent for images, such as mood, color direction, and overall feel (for example, clean, modern, high-contrast). 
+* Clarify visual intent for images, such as mood, color direction, and overall feel (for example, clean, modern, high-contrast).
 * Note any boundaries or must-avoid areas, including regulatory or compliance requirements.
 
 ## Sample Instructions
@@ -351,7 +349,7 @@ These are example instruction sets you can pre-fill in the Instructions field un
 
 ### Can I edit or clone a Brand Kit later?
 
-Yes. If you have access to edit the Brand Kit, then you can edit all fields or clone a kit to create a new variant with similar settings. 
+Yes. If you have access to edit the Brand Kit, then you can edit all fields or clone a kit to create a new variant with similar settings.
 
 ### How many Brand Kits can I create?
 
