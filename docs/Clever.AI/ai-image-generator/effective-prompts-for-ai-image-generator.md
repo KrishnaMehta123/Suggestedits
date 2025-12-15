@@ -1,8 +1,8 @@
 ---
-title: Effective Prompts for AI Designer Agent
+title: Generate On-Brand Images with Effective Prompts
 excerpt: >-
-  Learn how to write clear, structured prompts to generate high-quality,
-  on-brand campaign images using the AI Designer Agent.
+  Create stunning, on-brand campaign visuals with the AI Designer Agent using
+  effective prompts. 
 deprecated: false
 hidden: false
 link:
@@ -26,45 +26,21 @@ This document helps you write prompts that get precise, visually accurate, and o
 
 # Writing Effective Prompts
 
-Writing a clear, focused prompt helps the AI Designer Agent understand what you want to create and where it will be used. A good prompt explains the intent, visual feel, and layout composition, ensuring the generated image aligns with your campaign purpose and brand identity.
+Writing a clear, focused prompt helps the AI Designer Agent understand what you want to create, why you are creating it, and where it will be used. A good prompt explains the intent of the campaign (what you want to achieve with this image), the visual feel, and the layout composition, ensuring the final design looks on-brand and aligns with your campaign goals.
 
 You can follow this simple structure to describe your image idea in a way the Designer Agent understands easily:
 
-### Define the Purpose (What You Want to Show)
+### Define the Purpose (What the Image Is Meant to Do)
 
-Start by defining the intent of the image. This gives the AI the foundation for your creative direction, whether it is a product launch, a discount banner, or a festive greeting. The agent uses this initial instruction to determine the type of image to create (for example, product-focused, event-driven, or brand-awareness).
+Start by defining the intent of the image. This gives the AI the foundation for your creative direction, whether it is a product launch, a discount banner, or a festive greeting. The agent uses this initial instruction to determine the type of image to create (such as product-focused, event-driven, or brand-awareness). For example, _"Design a launch banner for a new credit card rewards program."_
 
-**Example prompts:**
+### Describe the Look and Feel (How the Image Should Feel)
 
-* "Design a launch banner for a new credit card rewards program."
-* “Generate a push notification image announcing a new mobile app feature.”
+Add details that capture your brand’s look and feel, mood, colors, and overall tone. Use adjectives that guide the image's lighting, energy, or emotional resonance. This helps the AI interpret the creative style accurately. For example, _“Use warm, festive lighting with red and gold accents for a celebratory feel.”_
 
-### Describe the Look and Feel (How It Should Look)
+### Add Layout and Composition (Where Key Elements Should Appear)
 
-Add details that capture your brand’s look and feel, mood, colors, and overall tone. Use adjectives that guide the image's lighting, energy, or emotional resonance. This helps the AI interpret the creative style accurately.
-
-**Example prompts:**
-
-* “Use warm, festive lighting with red and gold accents for a celebratory feel.”
-* “Apply cool blue gradients and clean white space for a professional, modern tone.”
-* “Add natural green and white tones for a healthy, fresh look.”
-
-### Add Layout and Composition (Where Elements Should Appear)
-
-Specify the structure of your image, where to place text, logos, or visual emphasis. This provides the AI with guidance on framing and visual hierarchy, enhancing clarity and usability across all campaign channels.
-
-**Example prompts:**
-
-* “Add a header and subheader for the main message.”
-* “Include space at the bottom for a ‘Shop Now’ CTA button.”
-* “Add T&Cs text at the bottom in smaller font.”
-* “Place the brand logo in the top-right corner.”
-
-<Callout icon="📘" theme="info">
-  **Note**
-
-  The model interprets your text as visual intent; it does not render exact words unless space is reserved for text. For example, a prompt such as "Add a banner area for 'Shop Now' in the bottom-right corner" results in a layout with a visual placeholder, not the words themselves.
-</Callout>
+Specify the structure of your image, where to place text, logos, or visual emphasis. This provides the AI with guidance on framing and visual hierarchy, enhancing clarity and usability across all campaign channels. For example, _“Add T&Cs text at the bottom in smaller font.”_
 
 ### Combine All Three Parts
 
@@ -74,17 +50,16 @@ Specify the structure of your image, where to place text, logos, or visual empha
 
 <Image align="center" border={true} caption="Sample Image" src="https://files.readme.io/6e690bc7befc955bccf05f4464da4861b35b65b07e5361a9bd2d53d2ae7eb001-Combined_prompt_creative.png" />
 
-<Callout icon="💡" theme="default">
-  **Prompt Tips**
+## **Prompt Tips**
 
-  The following are some useful tips when adding visual and emotional details to your prompts:
+The following are some useful tips when adding visual and emotional details to your prompts:
 
-  * Describe mood or emotion (for example, warm, premium, playful, trustworthy).
-  * Mention lighting or visual treatment (for example, soft light, gradient glow, high contrast).
-  * Avoid mixing contradictory styles (“vibrant and minimal”).
-  * Do not paste links or external URLs; attach or upload reference images instead.
-  * Add audience or product type for fine-tuning.
-</Callout>
+* Describe mood or emotion (for example, warm, premium, playful, trustworthy).
+* Mention lighting or visual treatment (for example, soft light, gradient glow, high contrast).
+* Be specific and describe what the image should show and why. Avoid short or vague inputs like “banner” or “sale.” For example: “Create a festive Diwali banner with gold lamps, warm lighting, and a red background.”
+* Keep tone and brand cues consistent. Choose one style, for example, either “bold and expressive” or “clean and minimal.” Ensure color choices align with your Brand Kit. Avoid mixing contradictory styles (“vibrant and minimal”).
+* Specify the text placement and exact text for the image, as the AI renders only the text stated in your prompt. Without text, AI may add placeholder content. For example: “Add the text ‘Shop Now’ at the bottom center in bold white.”
+* Upload reference images directly instead of pasting URLs, as external links are not supported.
 
 # Sample Prompts
 
@@ -142,47 +117,29 @@ The following sample prompts show how detailed prompts improve image quality, to
 **Prompt:**
 
 > Design a clean banner for a home loan offer in the FinTech domain.
-> Use a calm, trustworthy color palette with blues, soft neutrals, and subtle gradients. Show a young couple or homeowner looking confident, secure, and financially empowered, with realistic, non-exaggerated expressions. Use modern FinTech styling with soft shadows, clean lines, and minimal icons.
->
-> CTA button at the bottom center, with rounded corners and solid blue fill, containing bold white text that reads “Apply Now”.
->
+> Use a calm, trustworthy color palette with blues, soft neutrals, and subtle gradients. Show a young couple or homeowner looking confident, secure, and financially empowered, with realistic, non-exaggerated expressions. Use modern FinTech styling with soft shadows, clean lines, and minimal icons.  
+> CTA button at the bottom center, with rounded corners and solid blue fill, containing bold white text that reads “Apply Now”.  
 > Headline: “Your Dream Home Awaits”
-> Subtext: “Apply for low-interest home loans today.”
+> Subtext: “Apply for low-interest home loans today.”  
+> Add fine-print below the CTA: “Terms and conditions apply.”
 
 **Result:**
 
-<Image align="center" alt="Fintech" border={true} caption="FinTech Example" src="https://files.readme.io/659f63bc5b4481ae1f4fb990f784d0d9867f326272e7dc49a13ad3f24f21119c-FinTech_Creative.png" />
-
-**Prompt:**
-
-> Create a clean, modern FinTech banner using a light-blue and white palette only (no red). Use minimal line icons in soft blue or gold, and keep icon count very small. Place centered text:
-> Headline: “Earn 30% Returns Annually.”
-> Subheadline: “Smart Investments with Gold Credit Card That Work for You.”
->
-> Add a bottom-center CTA button with rounded corners, a blue fill, and bold white text: “Start Investing.”
-> Include a premium gold credit card visual on the right.
-> Add fine-print below the CTA: “*Investments are subject to market risks. Terms and conditions apply.”
-> Keep the layout calm, uncluttered, and trustworthy.
-
-**Result:**
-
-<Image align="center" border={true} caption="FinTech Example" src="https://files.readme.io/55a35ab3f89b46c89a56dad1a85d52e96666fe127b3321f378ecf2cbbd572ea8-FinTech_2.png" />
+<Image align="center" alt="Fintech" border={true} caption="FinTech Example" src="https://files.readme.io/14cd225222c3583dea5d8ab998cd8cceafe9e1b5974a9f9e8f7c87e7eb15852d-2025-12-15_16-53-34.png" />
 
 ## Food Delivery
 
 **Prompt:**
 
-> Create a photorealistic banner for a festive desserts promotion. Show real-looking traditional Indian sweets such as barfi and laddoos placed on golden plates with marigold decorations in the background. Use natural soft festive lighting, realistic textures, and true-to-life colors — no AI-styled, plastic, or overly perfect food textures. The sweets must look authentic, fresh, and appetizing, as seen in real food photography.
->
-> Place text at the bottom center:
+> Create a photorealistic festive banner for a dessert brand named "TreatsOn.” Show authentic Indian sweets such as barfi, laddoos, and jalebi arranged neatly on golden plates with marigold flowers and festive lights in the background.
+> Use warm, celebratory colors like saffron, gold, and deep orange. The sweets should look fresh, real, and appetizing, as seen in professional food photography, not stylized or artificial. Add text clearly and prominently in the center-right area with high visibility:
 > Headline: “Sweet Treats Incoming!”
-> Subheadline: “Celebrate with Delicious Festive Specials.”
->
-> Maintain a warm, high-quality design that aligns with the visuals of the food delivery industry.
+> Subheadline: “Celebrate the Festival with TreatsOn.”
+> Include the TreatsOn logo in the top-left corner for brand presence. Ensure text has ample contrast and focus, balanced equally with visuals. The overall layout should feel modern, premium, and festive, inspired by food delivery and quick-commerce brand campaigns.
 
 **Result:**
 
-<Image align="center" alt="Food Delivery" border={true} caption="Food Delivery Example" src="https://files.readme.io/74a82e46ef9101f624a0832fe3d77ad60949b1e71dabff1bed55babd366ef0aa-Food_Delivery_Creative.png" />
+<Image align="center" alt="Food Delivery" border={true} caption="Food Delivery Example" src="https://files.readme.io/4b71430df7cd28bdc0cf8c5e50c4aebd7c52710ad9425f78250784010284eb47-2025-12-15_16-50-39.png" />
 
 ## Gaming
 
@@ -213,87 +170,3 @@ For more information on generating and editing images, along with step-by-step i
 
   This ensures every generated image stays brand-compliant and visually consistent with your defined design standards.
 </Callout>
-
-# Common Prompt Issues
-
-Refer to the following table for common prompt-related issues and how to fix them for the best results:
-
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Common Prompt Issue
-      </th>
-
-      <th>
-        Why It Causes Issues
-      </th>
-
-      <th>
-        How to Fix
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        **Vague Prompt**
-      </td>
-
-      <td>
-        The AI Designer Agent lacks clear direction for layout, tone, or subject. Short, generic inputs like “banner” or “sale” don’t provide enough detail for a meaningful image.
-      </td>
-
-      <td>
-        Be specific about what you want to show.   
-
-        Example: “Create a festive banner for Diwali with red and gold tones and decorative lamps.”
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Conflicting Brand or Tone**
-      </td>
-
-      <td>
-        Opposite visual or emotional cues (for example, “vibrant yet minimal”) or color requests that differ from your Brand Kit confuse the AI and result in mismatched visuals.
-      </td>
-
-      <td>
-        Keep tone and brand cues consistent. Choose one style, for example, either “bold and expressive” or “clean and minimal.” Ensure color choices align with your Brand Kit.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Using URLs**
-      </td>
-
-      <td>
-        The AI cannot interpret external links or embedded design references from tools such as Figma.
-      </td>
-
-      <td>
-        Upload or attach the reference image directly within the generator instead of pasting URLs.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Misunderstanding Text in Images**
-      </td>
-
-      <td>
-        The AI interprets your text as layout guidance, not literal copy. Only the text you explicitly include in your prompt will appear. If no text is provided, the AI may automatically generate its own creative placeholders.
-      </td>
-
-      <td>
-        Specify exact words if you want them visible.   
-
-        Example: “Add the text ‘Shop Now’ at the bottom in a bold white font.”
-      </td>
-    </tr>
-  </tbody>
-</Table>
