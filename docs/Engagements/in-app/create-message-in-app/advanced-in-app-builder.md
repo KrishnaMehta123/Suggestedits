@@ -66,35 +66,7 @@ The overlay allows you to modify the following:
 
 ### Container
 
-The container holds all the content, such as text, images, and buttons, representing your In-App message.
-
-<Image align="center" alt="Design Container" border={true} caption="Design Container" src="https://files.readme.io/5bfa6d94186faec41d0174d18216cfc6f18523e775e8f84ffb13839a93c75047-image.png" />
-
-The container allows you to modify the following:
-
-* **Position**: Select a position such as Top, Center, or Bottom.
-* **Size**: Select from the available height options such as short, mid, tall, and so on.
-* **Margin**: Adjust the margin percentage to create a buffer between your popup and the device edges.
-* **Delay**: Automatically dismiss the in-app notification after the specified delay.
-* **Container Action**:  Container actions that are executed on tap, such as the following:
-  * _Close Notification_:  Close the in-app notification.
-  * _Open URL_: Open the specified URL.
-  * _Key-value pairs_: Add a key and value.
-  * _App Function_: Trigger app functions such as requesting push permission or app rating. For more information on app functions, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions).
-* **Background**: Apply a background color or image to your design.
-* **Border Radius**: Control the roundness of the container's edges. A higher value results in a rounder appearance.
-
-<br />
-
-***
-
-<br />
-
-### Container
-
-(@murtaza please review this new section)
-
-The **Container** holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
+The *Container* holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
 
 <Image align="center" alt="Design Container" border={true} caption="Design Container" src="https://files.readme.io/1626def427219d29d0892846f9c54eb4ce46a4b19a1ecb09fdd2a24c40f8d890-image.png" />
 
@@ -192,71 +164,12 @@ The available container size options vary depending on the orientation of the co
     | Wide        | 16:9         |
   </Tab>
 
-  <Callout icon="📘" theme="info">
-    Best Practices
 
-    Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
-  </Callout>
 </Tabs>
 
-<br />
+#### Supported Media
 
-<Callout icon="📘" theme="info">
-  Best Practices
-
-  Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
-</Callout>
-
-#### Supported File Formats
-
-You can use the following image formats for your container backgrounds or content:
-
-| File Format                                              | Max Supported Limit       |
-| -------------------------------------------------------- | ------------------------- |
-| **JPEG:** Best for photos and detailed images.           | 1 MB. @murtaza to confirm |
-| **PNG:** Ideal for transparent or high-quality graphics. | 1 MB. @murtaza to confirm |
-| **GIF:** Use for lightweight animations.                 | 1 MB. @murtaza to confirm |
-| **Video:**Use for short videos.                          | 1 MB. @murtaza to confirm |
-
-<br />
-
-### Image Size and Aspect Ratios
-
-The available container size options vary depending on the orientation. Use the following tables to understand the aspect ratio of each option.
-
-#### Portrait Orientation
-
-| Size Option | Aspect Ratio |
-| ----------- | ------------ |
-| Extra Short | 4:1          |
-| Short       | 7:2          |
-| Mid         | 3:1          |
-| Tall        | 2:1          |
-| Extra Tall  | 5:4          |
-| Square      | 1:1          |
-| Wide        | 16:9         |
-
-#### Landscape Orientation
-
-| Size Option | Aspect Ratio |
-| ----------- | ------------ |
-| Extra Short | 8:1          |
-| Short       | 7:1          |
-| Mid         | 6:1          |
-| Tall        | 5:1          |
-| Extra Tall  | 9:2          |
-| Square      | 1:1          |
-| Wide        | 16:9         |
-
-<Callout icon="📘" theme="info">
-  Note
-
-  Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
-</Callout>
-
-#### Supported File Formats
-
-You can use the following image formats for your container backgrounds or content:
+You can use the following media for your content:
 
 | File Format                                              | Max Supported Limit       |
 | -------------------------------------------------------- | ------------------------- |
