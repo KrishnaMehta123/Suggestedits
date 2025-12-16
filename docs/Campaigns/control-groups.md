@@ -56,9 +56,11 @@ You can create 4 different types of Control Groups:-
 
 2. You can choose to apply the Control Group to existing running campaigns and journeys by checking the box to _Apply to all current campaigns and journeys_.
 
-> 🚧 Important Note
->
-> After you make this selection, you cannot change it.
+<Callout icon="🚧" theme="warn">
+  **Important Note**
+
+  After you make this selection, you cannot change it.
+</Callout>
 
 <Image align="center" alt={703} border={true} caption="Apply System Control Group to All Journeys and Campaigns" title="Apply System Control Group to all Journeys and Campaigns." src="https://files.readme.io/1af5b41-Screenshot_2020-06-09_at_4.36.00_PM.png" />
 
@@ -68,15 +70,17 @@ You can create 4 different types of Control Groups:-
 
 # Creating a Custom Control Group
 
-> 📘 Note
->
-> Custom Control Group can be created only after you have a created a System Control Group.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  Custom Control Group can be created only after you have a created a System Control Group.
+</Callout>
 
 1. When you move to _Custom Control Group_ and create a new custom control group, a new group will be created for you.
 
 <Image align="center" alt={985} border={true} caption="Create a Custom Control Group" title="Create a Custom Control Group on CleverTap dashboard." src="https://files.readme.io/e15bc24-Screenshot_2020-06-09_at_4.39.47_PM.png" />
 
-2. Once you click on **+ Create New**, you asked to provide a name, purpose, and control group size
+2. Once you click on **+ Create New**, you are asked to provide a name, purpose, and control group size
 
 <Image align="center" alt={458} border={true} caption="Enter Details for Custom Control Group" title="Enter details for Custom Control Group in CleverTap dashboard." src="https://files.readme.io/3243bbf-Screenshot_2018-12-28_at_4.13.51_PM.png" />
 
@@ -85,16 +89,20 @@ You can create 4 different types of Control Groups:-
 
 <Image align="center" alt={1247} border={true} caption="View Details of all Custom Control Groups" title="View details of all Custom Control Groups" src="https://files.readme.io/3b2b04fd3ad400b21a5b4e90a43871496f56da9f2ef403f2bb73f29dcfdfb61f-Custom_Control_Group.png" />
 
-> 🚧 API and Clever Campaigns
->
-> * Control Groups are not applicable to campaigns created via APIs.
-> * Control Groups are not applied to Clever Campaigns.
+<Callout icon="🚧" theme="warn">
+  **API and Clever Campaigns**
+
+  * Control Groups are not applicable to campaigns created via APIs.
+  * Control Groups are not applied to Clever Campaigns.
+</Callout>
 
 # Campaign and Journey Creation
 
-> ❗️ Removing System Control Group
->
-> Although CleverTap provides the option to remove the System Control Group, we recommend to only use this option for transactional messages. Removing the System Control Group will impact the campaign and journey reports
+<Callout icon="❗️" theme="error">
+  **Removing System Control Group**
+
+  Although CleverTap provides the option to remove the System Control Group, we recommend to only use this option for transactional messages. Removing the System Control Group will impact the campaign and journey reports
+</Callout>
 
 ## Campaign Creation
 
@@ -142,9 +150,11 @@ In the entry node of the Journey, you are given the option to add/remove the Con
 
 **Note**: If the _Campaign_ or _Journey_ qualifies a very small user base, there may be a condition, that no user from the qualified based is a part of the Control Group. In that case, we will not showcase the Control Group stats for that campaign.
 
-> 🚧 Deleting Control Group
->
-> If a Control Group is deleted when campaigns and journeys are running with the Control Group, the corresponding campaign and journey report will be impacted
+<Callout icon="🚧" theme="warn">
+  **Deleting Control Group**
+
+  If a Control Group is deleted when campaigns and journeys are running with the Control Group, the corresponding campaign and journey report will be impacted
+</Callout>
 
 Once a campaign or a journey is created with a Control Group, the stats for it can be viewed on the stats page  
 Here you can see -
@@ -158,9 +168,11 @@ Here you can see -
 
 # Control Group Exports
 
-> 📘 Exports Disabled
->
-> Currently, the Journey Control Group exports option is disabled. If you want to enable this option, contact your Customer Success Manager.
+<Callout icon="📘" theme="info">
+  **Exports Disabled**
+
+  Currently, the Journey Control Group exports option is disabled. If you want to enable this option, contact your Customer Success Manager.
+</Callout>
 
 Control group users can be exported to AWS S3. The option is available via _Settings_ > _Partners_ > _Exports_. To export control groups:
 
