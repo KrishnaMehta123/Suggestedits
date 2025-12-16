@@ -102,8 +102,6 @@ The **Container** holds all the content in your In-App message, such as text, im
 
 #### Container Properties
 
-<br />
-
 You can customize the following properties to control the look, behavior, and visual design of your In-App message:
 
 * **Position:** Choose where the message appears on the screen (Top, Center, or Bottom).
@@ -128,9 +126,7 @@ Define what happens when users tap the container.
 
 #### Background
 
-Apply a background color or image to your design.
-
-You can:
+Apply a background color or image to your design. You can do the following:
 
 * Choose a **solid color** using a color picker or hex code.
 * **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](<docs: advanced-in-app-builder#size-and-aspect-ratios>).
@@ -157,7 +153,7 @@ Control how your container appears when the in-app message loads.
 
 ### Image Size and Aspect Ratios
 
-The available container size options vary depending on the orientation. Use the following tables to understand the aspect ratio of each option.
+The available container size options vary depending on the orientation of the container. Use the following tables to understand the aspect ratio of each option.
 
 <br />
 
@@ -194,17 +190,22 @@ The available container size options vary depending on the orientation. Use the 
     | Extra Tall  | 9:2          |
     | Square      | 1:1          |
     | Wide        | 16:9         |
+  </Tab>
 
-</Tab>
+  <Callout icon="📘" theme="info">
+    Best Practices
+
+    Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
+  </Callout>
+</Tabs>
+
+<br />
 
 <Callout icon="📘" theme="info">
   Best Practices
 
   Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
 </Callout>
-
-
-</Tabs>
 
 #### Supported File Formats
 
