@@ -132,14 +132,3 @@ No. Nested Objects are not exported through API-based data exports.
 ### Does this feature affect performance?
 
 When used within the defined limits, Nested Objects do not affect overall system performance. Nested queries may take longer to process.
-
-***
-
-# Next Step
-
-If you want:
-
-1. A **clean final version without “[UPDATED]” markers**, or
-2. A **version formatted for your documentation system** (Markdown, HTML, ReadMe, Confluence),
-
-tell me and I will prepare it.
