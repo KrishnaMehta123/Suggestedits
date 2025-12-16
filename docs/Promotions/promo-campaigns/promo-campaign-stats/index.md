@@ -38,6 +38,20 @@ The KPIs in this section help you understand how actively rewards were issued du
 
 <Image align="center" border={true} caption="KPIs for Promo Campaign with Loyalty Wallet Rewards" src="https://files.readme.io/7bbbd5a59eb1604a797ef115f65e89fe0db97a47a8ac64793961116be082cd31-image.png" />
 
+The _Loyalty Wallets_ rewards KPIs also include two line chart that shows how rewards distribution changed throughout the campaign. These charts help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity.
+
+For example, if users were rewarded on multiple days the chart will show recurring spikes corresponding to user qualification.
+
+### Rewards Distributed Chart
+
+This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
+
+* **Y-axis:** Represents the total number of times rewards were distributed.
+* **Chart aggregation:** You can aggregate chart data by _Day_, _Week_, or _Month_ using the dropdown in the top-right corner of the chart.
+* **Hover interaction:** When you hover over any data point, the chart displays the exact number of rewards issued for that period along with the percentage change compared to the previous period (Day/Week/Month based on selection). This helps you quickly identify spikes, drops, or stable trends in reward distribution over time.
+
+<Image align="center" border={true} src="https://files.readme.io/0099b8772a477101867024a8c5f4247eafe3f64bd9932c39b712c6117d6732fb-image.png" className="border" />
+
 ### Points Distributed
 
 This line chart illustrates the number of loyalty points issued on each date within the campaign range. It highlights distribution trends, such as reward bursts on high-activity days or consistent distribution throughout the campaign.
@@ -100,21 +114,5 @@ The KPIs in this section help you evaluate the effectiveness of the webhook inte
 These KPIs help determine whether reward delivery failures stem from configuration issues, endpoint downtime, or external service limitations.
 
 <Image align="center" border={true} src="https://files.readme.io/8715ca9cc75e88be4302d5ff0ae6d9575e601b9a2069b68111f17883c479af06-image.png" className="border" />
-
-# View Rewards Distribution KPI Chart
-
-The _Rewards Distribution_ tab also includes a line chart that shows how rewards distribution changed throughout the campaign. This chart help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity.
-
-For example, if users were rewarded on multiple days the chart will show recurring spikes corresponding to user qualification.
-
-### Rewards Distributed Chart
-
-This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
-
-* **Y-axis:** Represents the total number of times rewards were distributed.
-* **Chart aggregation:** You can aggregate chart data by _Day_, _Week_, or _Month_ using the dropdown in the top-right corner of the chart.
-* **Hover interaction:** When you hover over any data point, the chart displays the exact number of rewards issued for that period along with the percentage change compared to the previous period (Day/Week/Month based on selection). This helps you quickly identify spikes, drops, or stable trends in reward distribution over time.
-
-<Image align="center" border={true} src="https://files.readme.io/0099b8772a477101867024a8c5f4247eafe3f64bd9932c39b712c6117d6732fb-image.png" className="border" />
 
 <br />
