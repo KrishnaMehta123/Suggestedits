@@ -116,13 +116,13 @@ You can customize the following properties to control the look, behavior, and vi
 
 Define what happens when users tap the container.
 
-| Action Type            | Description                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------------------- |
-| **No Action**          | No behavior is triggered when the container is tapped.                                          |
-| **Close Notification** | Closes the in-app message.                                                                      |
-| **Open URL**           | Opens a specified URL link.                                                                     |
-| **Key–Value Pair**     | Adds a key and value pair for tracking or personalization.                                      |
-| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For details, see |
+| Action Type            | Description                                                                                                                                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                                   |
+| **Close Notification** | Closes the in-app message.                                                                                                                                                               |
+| **Open URL**           | Opens a specified URL link.                                                                                                                                                              |
+| **Key–Value Pair**     | Adds a key and value pair for tracking or personalization.                                                                                                                               |
+| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions) . |
 
 <br />
 
@@ -173,7 +173,7 @@ Control how your container appears when the in-app message loads.
 
 #### Size and Aspect Ratios
 
-The available container size options differ based on orientation. Use the following tables to understand each option’s aspect ratio.
+The available container size options vary depending on the orientation. Use the following tables to understand the aspect ratio of each option.
 
 ##### Portrait Orientation
 
