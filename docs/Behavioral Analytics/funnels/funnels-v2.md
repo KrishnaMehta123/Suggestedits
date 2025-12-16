@@ -30,7 +30,7 @@ To create a funnel, perform the following steps:
 2. Select the events in the desired order to create up to an eight-step funnel.
 3. Select event properties for each event to constrain the analysis for the users who performed that event/property combination.
 
-<Image align="center" alt="Create a Funnel " border={true} caption="Create a Funnel" src="https://files.readme.io/83e833954c171c8e655df786784d081f722d5b0aca7590b1322027f72b9ba95c-image.png" width="50% " />
+<Image align="center" border={true} caption="Create a Funnel" src="https://files.readme.io/faaf9f7324fbebfb9ff37c673b5faa520920895bdbf0014a17516ce5b49e43d7-image.png" width="50% " />
 
 4. You can also duplicate a step or add multiple events for the step by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic between them in Step 1 of the Funnel to ensure you capture your entire user base.
 
@@ -85,7 +85,7 @@ The default view shows cumulative conversions per step for the selected time ran
 
 You can split a funnel by profile properties for sessions, geographies, and technographics or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more.
 
-To breakdown by property, perform the following steps:
+To break down by property, perform the following steps:
 
 1. Click **Analytics** > **Funnel**.
 2. Add _Funnel_ steps and click **View Funnel**.
@@ -95,30 +95,6 @@ To breakdown by property, perform the following steps:
 <Image align="center" alt="Split funnel by event property" border={true} caption="Split Funnel by Event Property" src="https://files.readme.io/765e14575db123f3fbf0d28e7c1d8174c0ad9e4c4ccdbbecccbbfcea3c41dfc9-image.png" />
 
 <Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
-
-# Funnel Computation Methods
-
-This section covers two types of funnel computation methods: the default and strict ordering methods. The strict order does not count the users who repeat a step. Conversely, the default order counts the users even if they repeat a step.
-
-## Default Order
-
-By default, funnels will count all users who perform all the specified steps in order, regardless of whether they loop back to an earlier step or move forward to a later step in the funnel.
-
-For example, if our funnel steps are defined as:
-
-* Funnel Steps: Step A → Step B → Step C → Step D
-
-In the scenarios below, we can analyze whether different users are counted as converting depending on the order in which each progresses through the funnel steps.
-
-* User 1: Step A → Step B → Step C → Step D
-* User 2: Step A  → Step C → Step D
-* User 3: Step A → Step C → Step B → Step D
-* User 4:  Step A → Step B → Step A → Step C → Step D
-
-User 1 is counted since she progresses through the funnel steps in order.  
-User 2 is not counted since she did not perform Step B.  
-User 3 is not counted since she completed the steps out of order.  
-User 4 is counted since she completed the steps in order, although she looped back and performed Step A twice.
 
 ## Strict Order
 
@@ -141,6 +117,64 @@ Here, only User 1 will be counted as converting, as the strict order restricts a
 * User B: App Launched, Login Attempted, Logged In
 
 A strict order can help identify if users are having trouble logging in.
+
+# Funnel Computation Methods
+
+Funnels support two computation methods:
+
+* Flexible Order and
+* Strict Order
+
+These methods determine how users are counted as they progress through funnel steps, especially when steps are repeated or performed out of sequence.
+
+## Flexible Order
+
+By default, funnels count users who complete all defined steps in the correct sequence. Users may repeat earlier steps or temporarily move ahead and return, but they are counted as converted as long as they eventually complete each step in order.
+
+### Example Funnel
+
+For example, if a funnel's steps are defined as:
+
+Step A → Step B → Step C → Step D
+
+The following are the ways and the reasoning for how different users are counted as converting depending on the order in which each progresses through the funnel steps:
+
+| User   | Action Sequence                            | Counted in Funnel? | Reason                                                                |
+| ------ | ------------------------------------------ | ------------------ | --------------------------------------------------------------------- |
+| User 1 | Step A → Step B → Step C → Step D          | Yes                | Completes all funnel steps in the correct order.                      |
+| User 2 | Step A → Step C → Step D                   | No                 | Skips Step B, which is required in the funnel.                        |
+| User 3 | Step A → Step C → Step B → Step D          | No                 | Performs funnel steps out of sequence.                                |
+| User 4 | Step A → Step B → Step A → Step C → Step D | Yes                | Repeats Step A but still completes all steps in the correct sequence. |
+
+## Strict Order
+
+When _Strict Order_ is enabled, funnels count users only if they complete every step exactly in the defined sequence. Any repetition of a funnel step or deviation from the specified order disqualifies the user from being counted as converted.
+
+### Example Funnel
+
+For example, if a funnel's steps are defined as:
+
+Step A → Step B → Step C → Step D
+
+The following table explains how different users are counted based on how they progress through the funnel steps:
+
+| User   | Action Sequence                            | Counted in Funnel? | Reason                                                     |
+| ------ | ------------------------------------------ | ------------------ | ---------------------------------------------------------- |
+| User 1 | Step A → Step B → Step C → Step D          | Yes                | Completes all funnel steps exactly in the specified order. |
+| User 2 | Step A → Step C → Step D                   | No                 | Skips Step B, breaking the required step sequence.         |
+| User 3 | Step A → Step C → Step B → Step D          | No                 | Performs funnel steps out of order.                        |
+| User 4 | Step A → Step B → Step A → Step C → Step D | No                 | Repeats Step A, which violates strict ordering rules.      |
+
+## Why Use Strict Order?
+
+Strict ordering is useful when you want to identify friction or unexpected behavior within a process.
+
+For example, let's take a look at the following Login Flow of two users in an app:
+
+* **User A:** App Launched → Login Attempted → Login Attempted → Login Attempted → Logged In
+* **User B:** App Launched → Login Attempted → Logged In
+
+With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments.
 
 # Table View
 
