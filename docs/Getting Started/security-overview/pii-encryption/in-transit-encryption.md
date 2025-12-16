@@ -16,9 +16,11 @@ PII Encryption for API provides an additional security layer for customers who n
 
 The feature preserves existing API behavior, constraints, and performance expectations while adding optional payload-level encryption for customers operating in highly regulated or security-sensitive environments.
 
-> 📘 **Private Beta**
->
-> This feature is available in Private Beta. To enable PII Encryption for API on your account, contact your Customer Success Manager.
+<Callout icon="📘" theme="info">
+  **Private Beta**
+
+  This feature is available in Private Beta. To enable PII Encryption for API on your account, contact your Customer Success Manager.
+</Callout>
 
 ## Capabilities of PII Encryption for API
 
@@ -72,7 +74,7 @@ Encryption is optional. Encrypted and plaintext requests can coexist until you c
 
 # Request and Response Lifecycle
 
-1. The client encrypts the request payload using its HPKE public key.\
+1. The client encrypts the request payload using its HPKE public key.  
    The encrypted payload is sent as raw bytes with the HPKE content type.
 
 2. CleverTap decrypts the payload using the customer’s registered HPKE keyset.
