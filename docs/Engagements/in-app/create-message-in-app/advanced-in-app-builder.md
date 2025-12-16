@@ -133,27 +133,15 @@ Apply a background color or image to your design.
 You can:
 
 * Choose a **solid color** using a color picker or hex code.
-  * **Upload an image** directly from your system.
-  * Add **alt text** for accessibility and search.
-
-    (@murtaza, Confirm supported image upload size limit and format restrictions (JPEG, PNG, GIF, SVG)
+* **Upload an image** directly from your system and add **alt text** for accessibility and search. For more information on images, refer to [Image Size and Aspect Ratios](<docs: advanced-in-app-builder#size-and-aspect-ratios>).
 
 #### Font and Text
 
-Control how text appears within your container.
-
-| Property        | Description                                                   |
-| --------------- | ------------------------------------------------------------- |
-| **Font**        | Select a predefined font style (for example, Arial).          |
-| **Font Family** | Define the general font family (for example, sans-serif).     |
-| **Fallback**    | Set an alternative font used if the main font is unavailable. |
-
-(@murtaza, Confirm supported font families and if custom font uploads are allowed. )
+Control how text appears within your container. For more information, refer to [Custom Fonts](docs:advanced-in-app-builder#custom-fonts)
 
 #### Border Radius
 
-Adjust how rounded the container’s corners appear.
-A higher value results in more rounded corners.
+Adjust how rounded the container’s corners appear. A higher value results in more rounded corners.
 
 For example: `Border Radius: 2` gives slightly curved edges, while higher values create a more pill-shaped container.
 
@@ -167,11 +155,9 @@ Control how your container appears when the in-app message loads.
 | **Dissolve**   | The container fades into view smoothly.                           |
 | **Move In**    | The container slides into the screen from a predefined direction. |
 
-> @murtaza: Confirm if additional animation types (for example, “Slide Up” or “Fade Out”) are supported or OS-specific.]
+<br />
 
-***
-
-#### Size and Aspect Ratios
+#### Image Size and Aspect Ratios
 
 The available container size options vary depending on the orientation. Use the following tables to understand the aspect ratio of each option.
 
@@ -209,19 +195,19 @@ The available container size options vary depending on the orientation. Use the 
 
 You can use the following image formats for your container backgrounds or content:
 
-| File Format                                              | ** Supported Limit** |
-| -------------------------------------------------------- | -------------------- |
-| **JPEG:** Best for photos and detailed images.           | @murtaza to provide  |
-| **PNG:** Ideal for transparent or high-quality graphics. | @murtaza to provide  |
-| **GIF:** Use for lightweight animations.                 | @murtaza to provide  |
-| **Video:**                                               | @murtaza to provide  |
+| File Format                                              | Max Supported Limit       |
+| -------------------------------------------------------- | ------------------------- |
+| **JPEG:** Best for photos and detailed images.           | 1 MB. @murtaza to confirm |
+| **PNG:** Ideal for transparent or high-quality graphics. | 1 MB. @murtaza to confirm |
+| **GIF:** Use for lightweight animations.                 | 1 MB. @murtaza to confirm |
+| **Video:**Use for short videos.                          | 1 MB. @murtaza to confirm |
 
 <br />
 
 <Callout icon="📘" theme="info">
   Best Practices
 
-  Optimize your images to improve message load time and prevent rendering issues on low-performance devices.  
+  Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
 </Callout>
 
 <br />
