@@ -15,7 +15,7 @@ next:
 ---
 # Overview
 
-The **Rewards Distribution** tab under **Stats** page of a Promo Campaign provides a comprehensive overview of campaign performance, displaying real-time and historical analytics for user engagement, reward distribution, and redemption activity. The metrics and charts displayed depend on the _Reward type_ selected when creating the campaign.
+The **Rewards Distribution** tab under Promo Campaign Stats provides a comprehensive overview of campaign performance, displaying real-time and historical analytics for user engagement, reward distribution, and redemption activity. The metrics and charts displayed depend on the _Reward type_ selected when creating the campaign.
 
 Each reward type includes:
 
@@ -40,7 +40,7 @@ The KPIs in this section help you understand how actively rewards were issued du
 
 The _Loyalty Wallets_ rewards KPIs also include two line charts that show how reward distribution changed throughout the campaign. These charts help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity. For example, if users were rewarded on multiple days, the charts show recurring spikes corresponding to the distribution of rewards and points.
 
-### Rewards Distributed Chart
+### Rewards Distributed
 
 This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
 
