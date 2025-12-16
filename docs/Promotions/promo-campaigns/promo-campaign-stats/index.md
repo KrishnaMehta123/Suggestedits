@@ -67,19 +67,6 @@ The KPIs in this section help you understand how frequently coupon rewards were 
 
 <Image align="center" border={true} src="https://files.readme.io/2fe7319573af245958699e24da8b6dc7b772d0c677f99c071bc27b3efa59182a-image.png" className="border" />
 
-## Coupons Distributed Over Time
-
-The **Rewards Distributed** line chart visualizes how coupon issuance changed over the course of the campaign.
-
-* Displays the number of coupons distributed for each selected time interval.
-* Supports aggregation by **Day**, **Week**, or **Month** using the dropdown in the top-right corner.
-* On hover, the chart shows:
-
-  * The exact number of coupons distributed for that period
-  * The percentage change compared to the previous period
-
-This chart helps you quickly identify trends such as high-distribution days, promotional spikes, or periods of low activity. For example, if a coupon was issued only on October 28, the chart displays a sharp spike on that date with a flat trend on other days.
-
 # Partner Voucher Campaign Stats
 
 Partner Voucher campaigns track the distribution of unique voucher codes sourced from external providers. These analytics help you understand how many vouchers were issued and how distribution patterns evolved during the campaign.
