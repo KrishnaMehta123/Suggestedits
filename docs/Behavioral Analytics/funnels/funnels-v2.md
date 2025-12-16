@@ -30,6 +30,10 @@ To create a funnel, perform the following steps:
 2. Select the events in the desired order to create up to an eight-step funnel.
 3. Select event properties for each event to constrain the analysis for the users who performed that event/property combination.
 
+<Image align="center" border={true} width="50% " src="https://files.readme.io/de1b286dcda584e174fc4d4edb9b177d47232785f91810731941c97bd91a0c13-image.png" className="border" />
+
+<br />
+
 <Image align="center" alt="Create a Funnel " border={true} caption="Create a Funnel" src="https://files.readme.io/83e833954c171c8e655df786784d081f722d5b0aca7590b1322027f72b9ba95c-image.png" width="50% " />
 
 4. You can also duplicate a step or add multiple events for the step by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic between them in Step 1 of the Funnel to ensure you capture your entire user base.
