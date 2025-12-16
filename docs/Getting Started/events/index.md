@@ -167,15 +167,15 @@ System events are events recorded automatically after you integrate our SDK.
 
     <tr>
       <td>
-        <p>Notification Viewed</p>
+        Notification Viewed
       </td>
 
       <td>
-        <p>This event is tracked when a user views an email, in-app notification, native display or a web notification sent from CleverTap. Note: Native display rendering is handled by the customer. CT will only track the event for native display if the customer raises an event. For more information, refer to  [Android Native Display](https://developer.clevertap.com/docs/android-native-display#raise-events-for-tracking) and [iOS Native Display](https://developer.clevertap.com/docs/native-display-ios). </p>
+        This event is tracked when a user views an email, in-app notification, native display, or a web notification sent from CleverTap.
       </td>
 
       <td>
-        <p>The CleverTap SDK recognizes when a notification sent via CleverTap is viewed by a user.</p><p><em>Notification Viewed</em> is available for email, web push, in-app, web popup, native display, and app inbox.</p><p>Important Properties:</p><ul><li>Variant: String value containing an A/B testing campaign's variant name.</li></ul>
+        The CleverTap SDK recognizes when a notification sent via CleverTap is viewed by a user.<br /><br />_Notification Viewed_ is available for email, web push, in-app, web popup, native display, and app inbox.<br /><br />Important Properties:<br />Variant: String value containing an A/B testing campaign's variant name.<br /><br />**Note**: Native display rendering is handled by the customer. CT will only track the event for native display if the customer raises an event. For more information, refer to  [Android Native Display](https://developer.clevertap.com/docs/android-native-display#raise-events-for-tracking)   and [iOS Native Display](https://developer.clevertap.com/docs/native-display-ios)  .
       </td>
     </tr>
 
