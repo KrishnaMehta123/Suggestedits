@@ -20,7 +20,7 @@ For example, marketers can send a personalized In-App message that highlights a 
 
 Once you are all done setting up the content of your campaign in the _What_ section, you have the option to send an In-App notification to any CleverTap user profile that you have marked as a _Test profile_.
 
-<Image align="center" alt="Preview & Test Popup" border={true} caption="Preview & Test Popup (@murtaza, need a full screen of the preview and test popup)" src="https://files.readme.io/9d49427-Sent_Test_Popup.gif" />
+<Image align="center" alt="Preview & Test Popup " border={true} caption="Preview and Test Popup" src="https://files.readme.io/c60bdecc62f23f4d53aff611f15455e4014855a6ea3c00026910064ebcedcc79-2025-12-16_20-14-45.gif" />
 
 > 📘 Note
 >
@@ -32,11 +32,9 @@ Select the _Notification channel_ to send your test message. You can test your m
 
 ## By Devices
 
-In this case, you can focus your test on specific devices.
+With this option, you can focus your test on specific devices. In the _Send test on_ section, click _Device tokens_.  The Android and iOS device token sections are displayed.  This is useful when a user has multiple devices, and you want to validate the In-App experience on specific form factors (for example, phone vs. tablet) or operating systems.
 
-In the _Send test on_ section, click _Device tokens_.  The Android and iOS device token sections are displayed.  This is useful when a user has multiple devices, and you want to validate the In-App experience on specific form factors (for example, phone vs. tablet) or operating systems.
-
-<Image align="center" alt="Test by Device Tokens" border={true} caption="Test by Device Tokens (@murtaza, need the same or equivalent image for device tokens with a good preview in demo env)" src="https://files.readme.io/7e3f964d50fed866ddc4f57401afb5b60515150cb838b1cdff68b72564b4bb8e-image.png" />
+<Image align="center" border={true} caption="Test by Device Tokens" src="https://files.readme.io/6aa61633450e919bb48083b7c179c924781f6fb0b8ebc8cb2749ce4a26ea2807-image.png" />
 
 <br />
 
@@ -51,19 +49,27 @@ CleverTap provides the following options to select the users to send a personali
 
 You can select multiple [profiles that are marked as test profiles](doc:user-profiles#mark-a-user-profile-as-a-test-profile) and send a test In-App message to them. Test profiles are ideally your internal users.
 
-<Image align="center" alt="Select Test Profiles" border={true} caption="Select Test Profiles (@murtaza, need the same or equivalent image for Test Profiles tab with a good preview in demo env)" src="https://files.readme.io/e59d77eb5d9f4d5f7243687891c7876343e218afb63b015f561353657db92031-image.png" />
+<Image align="center" alt="Select Test Profiles" border={true} caption="Select Test Profiles" src="https://files.readme.io/a43124a1b696fbab0cca6d91c0105397d7e44d26a62615b0a3294a04c90cf4ee-image.png" />
+
+<br />
 
 ### From Any Profile
 
 Search for a user profile from _Select from Profiles_. In this case, you can search for any recipient profile that is already present on your dashboard and send them a test In-App message by email address, CleverTap ID, or identity.
 
-<Image align="center" alt="Search Users for Testing" border={true} caption="Search Users for Testing (@murtaza, need the same or equivalent image for search users with a good preview in demo env)" src="https://files.readme.io/18f37944c31a2efa4a256e3dd5ae39aabc53b3237c0981f69fb981bd1a949a7b-image.png" />
+<Image align="center" alt="Search Users for Testing" border={true} caption="Search Users for Testing" src="https://files.readme.io/124b167cc46c04717ff61ca624f2e8c7c5c5297f37036444c2972cb6f10bc7d8-image.png" />
+
+<br />
+
+<br />
 
 ### Test Devices
 
 You can further filter the messaging by devices for each selected user and send them a test message. The _Test Devices_ section lists only devices where your app is installed. So you test only on devices that can actually render the In-App message.
 
-<Image align="center" alt="Select Devices for User Profiles" border={true} caption="Select Devices for User Profiles (@murtaza, need the same or equivalent image with devices listed for a user with a good preview in demo env)" src="https://files.readme.io/e1ed505561d727f98b3dafb96f65e40a55fbf026e01b483ee178673fb1b31a27-image.png" />
+<br />
+
+<Image align="center" alt="Select Test Devices" border={true} caption="Select Test Devices" src="https://files.readme.io/6d04d8e1f53daf36afda0ce83973c135b524abda0bae88a4f649bb249fbc0cbd-image.png" />
 
 <br />
 
@@ -84,5 +90,3 @@ The events selected in your message will be displayed here. You can change the v
 If the user you want to test is not listed in the preview section, or if you are unsure who matches your criteria, enter the email address, CleverTap ID, or identity of a profile for which you have the details. This will give you an instant preview of your message with the applied personalization.
 
 (@murtaza, need a good image for custom user personalization with a good preview in demo env)
-
-<br />
