@@ -14,7 +14,7 @@ metadata:
 ---
 # Overview
 
-The AI Designer Agent creates brand-aligned images directly from your text descriptions. Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether it is for a sales banner, event promotion, or seasonal creative.
+The AI Designer Agent creates brand-aligned images directly from your prompts. Writing a clear, structured prompt ensures that the generated image accurately reflects your intent, whether it is for a sales banner, event promotion, or seasonal creative.
 
 This document helps you write prompts that get precise, visually accurate, and on-brand results.
 
@@ -32,15 +32,15 @@ You can follow this simple structure to describe your image idea in a way the De
 
 ### Define the Purpose (What the Image Is Meant to Do)
 
-Start by defining the intent of the image. This gives the AI the foundation for your creative direction, whether it is a product launch, a discount banner, or a festive greeting. The agent uses this initial instruction to determine the type of image to create (such as product-focused, event-driven, or brand-awareness). For example, _"Design a launch banner for a new credit card rewards program."_
+Start by defining the intent of the image. This gives the AI the foundation for your creative direction, whether it is a product launch, a discount banner, or a festive greeting. The agent uses this initial instruction to determine the type of image to create (such as product-focused, event-driven, or brand-awareness). For example, _"Create a promotional image announcing Diwali Sale on home décor items, offering up to 50% off."_
 
 ### Describe the Look and Feel (How the Image Should Feel)
 
-Add details that capture your brand’s look and feel, mood, colors, and overall tone. Use adjectives that guide the image's lighting, energy, or emotional resonance. This helps the AI interpret the creative style accurately. For example, _“Use warm, festive lighting with red and gold accents for a celebratory feel.”_
+Add details that capture your brand’s look and feel, mood, colors, and overall tone. Use adjectives that guide the image's lighting, energy, or emotional resonance. This helps the AI interpret the creative style accurately. For example, _“Use soft, festive lighting that evokes the spirit of Diwali celebrations.”_
 
 ### Add Layout and Composition (Where Key Elements Should Appear)
 
-Specify the structure of your image, where to place text, logos, or visual emphasis. This provides the AI with guidance on framing and visual hierarchy, enhancing clarity and usability across all campaign channels. For example, _“Add T&Cs text at the bottom in smaller font.”_
+Specify the structure of your image, where to place text, logos, or visual emphasis. This provides the AI with guidance on framing and visual hierarchy, enhancing clarity and usability across all campaign channels. For example, _“Place the logo in the top-right corner.”_
 
 ### Combine All Three Parts
 
