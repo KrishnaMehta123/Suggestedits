@@ -80,7 +80,7 @@ To generate an image using prompts:
 
 > 📘 Why detailed prompts matter?
 >
-> The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, or mood, the better the output will align with your campaign goals. Include contextual details (like event name, offer type, or brand tone) for best results. For more information, refer [Effective Prompts for AI Designer Agent](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
+> The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, or mood, the better the output will align with your campaign goals. Include contextual details (like event name, offer type, or brand tone) for best results. For more information, refer [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
 
 ## Generate Using Reference Image
 
@@ -195,7 +195,7 @@ The following best practices will help you with writing more detailed prompts:
 
 The Designer Agent relies on the clarity of your description to produce accurate, high-quality visuals. The more specific you are about theme, colors, layout, and mood, the better the output aligns with your campaign goals.
 
-For more information, refer to [Effective Prompts for AI Designer Agent](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
+For more information, refer to [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent).
 
 # FAQs
 
@@ -235,9 +235,7 @@ Yes. You can prompt it to “change background,” “update offer text,” “r
 
 The generator currently supports **JPEG** and **PNG** formats.
 
-@meenal - for below, brand guidelines apply even if the kit is locked or not locked may be we can rephrase the question what if i dont want anyone to override the brand guidelines everytime they generate images
-
-### What if I want my brand guidelines applied every time I generate an image?
+### What if I don't want any user to override my brand guidelines?
 
 You can lock your Brand Kit from the BrandKit section.
 
@@ -249,5 +247,5 @@ Brand guidelines are automatically applied to every generated image, whether you
 
 For more information, refer to the following resources:
 
-* [Effective Prompts for AI Designer Agent](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent)
+* [Generate On-Brand Images with Effective Prompts](https://docs.clevertap.com/docs/effective-prompts-for-ai-designer-agent)
 * [Brand Kit](https://docs.clevertap.com/docs/brand-kit)
