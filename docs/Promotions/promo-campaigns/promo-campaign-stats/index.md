@@ -15,7 +15,7 @@ next:
 ---
 # Overview
 
-The **Stats** tab of a Promo Campaign provides a comprehensive overview of campaign performance, displaying real-time and historical analytics for user engagement, reward distribution, and redemption activity. The metrics and charts displayed depend on the _Reward type_ selected when creating the campaign.
+The **Rewards Distribution** tab under **Stats** page of a Promo Campaign provides a comprehensive overview of campaign performance, displaying real-time and historical analytics for user engagement, reward distribution, and redemption activity. The metrics and charts displayed depend on the _Reward type_ selected when creating the campaign.
 
 Each reward type includes:
 
