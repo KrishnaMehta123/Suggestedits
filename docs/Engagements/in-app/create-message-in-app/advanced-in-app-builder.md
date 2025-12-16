@@ -141,7 +141,7 @@ Control how text appears within your container. For more information, refer to [
 
 #### Border Radius
 
-Adjust how rounded the container’s corners appear. A higher value results in more rounded corners.
+Adjust the level of rounding on the container’s corners. A higher value results in more rounded corners.
 
 For example: `Border Radius: 2` gives slightly curved edges, while higher values create a more pill-shaped container.
 
@@ -155,13 +155,44 @@ Control how your container appears when the in-app message loads.
 | **Dissolve**   | The container fades into view smoothly.                           |
 | **Move In**    | The container slides into the screen from a predefined direction. |
 
-<br />
+<Tabs>
+  <Tab title="Portrait Orientation">
+    Welcome to the content that you can only see inside the first Tab.
+| Size Option | Aspect Ratio |
+| ----------- | ------------ |
+| Extra Short | 4:1          |
+| Short       | 7:2          |
+| Mid         | 3:1          |
+| Tall        | 2:1          |
+| Extra Tall  | 5:4          |
+| Square      | 1:1          |
+| Wide        | 16:9         |
 
-#### Image Size and Aspect Ratios
+  </Tab>
+
+  <Tab title="Landscape Orientation">
+    Here's content that's only inside the second Tab.
+| Size Option | Aspect Ratio |
+| ----------- | ------------ |
+| Extra Short | 8:1          |
+| Short       | 7:1          |
+| Mid         | 6:1          |
+| Tall        | 5:1          |
+| Extra Tall  | 9:2          |
+| Square      | 1:1          |
+| Wide        | 16:9         |
+  </Tab>
+
+  <Tab title="Third Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
+
+### Image Size and Aspect Ratios
 
 The available container size options vary depending on the orientation. Use the following tables to understand the aspect ratio of each option.
 
-##### Portrait Orientation
+#### Portrait Orientation
 
 | Size Option | Aspect Ratio |
 | ----------- | ------------ |
@@ -173,7 +204,7 @@ The available container size options vary depending on the orientation. Use the 
 | Square      | 1:1          |
 | Wide        | 16:9         |
 
-##### Landscape Orientation
+#### Landscape Orientation
 
 | Size Option | Aspect Ratio |
 | ----------- | ------------ |
