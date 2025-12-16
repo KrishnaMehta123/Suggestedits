@@ -14,9 +14,9 @@ next:
 
 Nested Objects allow you to represent rich, structured information about your users, such as subscriptions, insurance policies, or shopping carts, without breaking it into multiple flat properties. Instead of managing dozens of separate fields, you can organize the related details inside a single structured user property.
 
-**[UPDATED]** Nested Objects are now supported for custom events and event properties, allowing structured data ingestion across more schema types.
+**[UPDATED]** Nested Objects are now supported for custom events and event properties, allowing for the ingestion of structured data across more schema types.
 
-For more information on implementation, including schema definitions and JSON examples, refer to Ingesting Nested Objects via CleverTap APIs.
+For more information on implementation, including schema definitions and JSON examples, refer to [Ingesting Nested Objects via CleverTap APIs](https://staging.docs.dev.clevertap.net/docs/ingesting-nested-objects-via-clevertap-apis).
 
 <Callout icon="📘" theme="info">
   **Public Beta**
