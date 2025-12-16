@@ -186,6 +186,24 @@ Control how your container appears when the in-app message loads.
   </Tab>
 
 </Tabs>
+#### Supported File Formats
+
+You can use the following image formats for your container backgrounds or content:
+
+| File Format                                              | Max Supported Limit       |
+| -------------------------------------------------------- | ------------------------- |
+| **JPEG:** Best for photos and detailed images.           | 1 MB. @murtaza to confirm |
+| **PNG:** Ideal for transparent or high-quality graphics. | 1 MB. @murtaza to confirm |
+| **GIF:** Use for lightweight animations.                 | 1 MB. @murtaza to confirm |
+| **Video:**Use for short videos.                          | 1 MB. @murtaza to confirm |
+
+<br />
+
+<Callout icon="📘" theme="info">
+  Note
+
+  Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
+</Callout>
 
 ### Image Size and Aspect Ratios
 
