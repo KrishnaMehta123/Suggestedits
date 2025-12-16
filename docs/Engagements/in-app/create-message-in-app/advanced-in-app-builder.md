@@ -156,6 +156,17 @@ Control how your container appears when the in-app message loads.
 | **Move In**    | The container slides into the screen from a predefined direction. |
 
 ### Image Size and Aspect Ratios
+
+The available container size options vary depending on the orientation. Use the following tables to understand the aspect ratio of each option.
+
+<br />
+
+<Callout icon="📘" theme="info">
+  Note
+
+  Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
+</Callout>
+
 <Tabs>
   <Tab title="Portrait Orientation">
     Welcome to the content that you can only see inside the first Tab.
@@ -183,9 +194,18 @@ Control how your container appears when the in-app message loads.
     | Extra Tall  | 9:2          |
     | Square      | 1:1          |
     | Wide        | 16:9         |
-  </Tab>
+
+</Tab>
+
+<Callout icon="📘" theme="info">
+  Best Practices
+
+  Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
+</Callout>
+
 
 </Tabs>
+
 #### Supported File Formats
 
 You can use the following image formats for your container backgrounds or content:
@@ -198,12 +218,6 @@ You can use the following image formats for your container backgrounds or conten
 | **Video:**Use for short videos.                          | 1 MB. @murtaza to confirm |
 
 <br />
-
-<Callout icon="📘" theme="info">
-  Note
-
-  Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
-</Callout>
 
 ### Image Size and Aspect Ratios
 
