@@ -28,12 +28,6 @@ The following are the benefits of using a Brand Kit for your assets:
 * Smarter content reuse with Campaign Lookback (for content only), enabling the AI to learn from past campaign tone and messaging patterns.
 * Reduced dependency on the Copy and Design teams, enabling faster campaign iterations.
 
-<Callout icon="📘" theme="info">
-  **Modifying Brand Kit**
-
-  Any updates made to a Brand Kit apply automatically across AI Copywriter and Designer Agent once published.
-</Callout>
-
 # Accessing Brand Kit
 
 You can access and manage Brand Kits from the Content Manager section of your account. Only users with CMS Brand Kit access can view or edit Brand Kits. Brand Kit permissions are managed through CMS Role-Based Access Control (RBAC) as follows:
@@ -134,8 +128,8 @@ Enter the following Brand Kit details:
       </td>
 
       <td>
-        * If you want every AI-generated image or content asset to strictly follow brand guidelines, you can lock the Brand Kit.
-        * When prompts include details that differ from your Brand Kit, the AI will automatically follow the Brand Kit settings.
+        * If you want to prevent users from overriding brand settings, you can lock the Brand Kit.
+        * When prompts include details that conflict with your Brand Kit, the AI will give precedence to the Brand Kit settings.
         * Only users with Brand Kit access can unlock or update a locked kit.
       </td>
     </tr>
@@ -296,9 +290,9 @@ Enter the following Brand Kit details:
   **Note**
 
   * Maximum **10 Brand Kits** can be configured per account.
-  * Each Brand Kit is stored at the **account level** and applies across all channels once enabled.
-  * Create separate Brand Kits for each brand, region, or business unit.
-  * Use clear, meaningful names to help teams quickly identify the right kit when creating campaigns, for example, InstantMart, Insurance, or Ticket Booking.
+  * Each Brand Kit is stored at the **account level** and applies across all AI generated content once enabled.
+  * Any updates made to a Brand Kit apply automatically across AI Copywriter and Designer Agent once published.
+  * Create separate Brand Kits for each brand, region, or business unit. Use clear, meaningful names to help teams quickly identify the right kit when creating campaigns, for example, InstantMart, Insurance, or Ticket Booking.
 </Callout>
 
 # Manage Brand Kits
