@@ -38,19 +38,20 @@ The KPIs in this section help you understand how actively rewards were issued du
 
 <Image align="center" border={true} caption="KPIs for Promo Campaign with Loyalty Wallet Rewards" src="https://files.readme.io/7bbbd5a59eb1604a797ef115f65e89fe0db97a47a8ac64793961116be082cd31-image.png" />
 
-The _Loyalty Wallets_ rewards KPIs also include two line chart that shows how rewards distribution changed throughout the campaign. These charts help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity.
-
-For example, if users were rewarded on multiple days the chart will show recurring spikes corresponding to user qualification.
+The _Loyalty Wallets_ rewards KPIs also include two line charts that show how reward distribution changed throughout the campaign. These charts help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity. For example, if users were rewarded on multiple days, the charts show recurring spikes corresponding to the distribution of rewards and points.
 
 ### Rewards Distributed Chart
 
 This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
 
-* **Y-axis:** Represents the total number of times rewards were distributed.
-* **Chart aggregation:** You can aggregate chart data by _Day_, _Week_, or _Month_ using the dropdown in the top-right corner of the chart.
-* **Hover interaction:** When you hover over any data point, the chart displays the exact number of rewards issued for that period along with the percentage change compared to the previous period (Day/Week/Month based on selection). This helps you quickly identify spikes, drops, or stable trends in reward distribution over time.
+* **X-axis**: Represents the Date or Month for the selected duration.
+* **Y-axis**: Represents the total number of loyalty points distributed during that period.
+* **Chart aggregation**: You can aggregate chart data by Day, Week, or Month using the dropdown in the top-right corner of the chart.
+* **Hover interaction**: When you hover over any data point, the chart displays:
+  * The exact number of points distributed for that period, and
+  * The percentage change compared to the previous period (Day/Week/Month based on the selected aggregation).
 
-<Image align="center" border={true} src="https://files.readme.io/0099b8772a477101867024a8c5f4247eafe3f64bd9932c39b712c6117d6732fb-image.png" className="border" />
+<Image align="center" border={true} caption="Rewards Distributed Over Time in Loyalty Wallets" src="https://files.readme.io/0099b8772a477101867024a8c5f4247eafe3f64bd9932c39b712c6117d6732fb-image.png" />
 
 ### Points Distributed
 
