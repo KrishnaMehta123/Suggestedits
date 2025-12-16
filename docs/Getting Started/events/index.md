@@ -171,7 +171,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is tracked when a user views an email, in-app notification, or a web notification sent from CleverTap.</p>
+        <p>This event is tracked when a user views an email, in-app notification, native display or a web notification sent from CleverTap. Note: Native display rendering is handled by the customer. CT will only track the event for native display if the customer raises an event. For more information, refer to  [Android Native Display](https://developer.clevertap.com/docs/android-native-display#raise-events-for-tracking) and [iOS Native Display](https://developer.clevertap.com/docs/native-display-ios). </p>
       </td>
 
       <td>
