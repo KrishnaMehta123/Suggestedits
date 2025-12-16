@@ -80,61 +80,9 @@ Once the setup is saved and published:
   * Error, generation failed.
   * Ready to Serve (Partial), generated fewer items than expected.
 
-# Using the Popular Recommendations API
-
-Once configured, you can invoke Popular Recommendations through a unified API endpoint.
-
-### Endpoint
-
-```bash
-GET /getRecommendations
-```
-
-### Parameters
-
-| Parameter | Type    | Description                                               |
-| --------- | ------- | --------------------------------------------------------- |
-| reco_type | string  | Recommendation type such as popular_by_category.          |
-| category  | string  | Category name or ID, mandatory for category-based setups. |
-| count     | integer | Number of items requested.                                |
-| cursor    | string  | Used for pagination.                                      |
-| rules     | object  | Optional serving rules, such as exclude blacklisted=true. |
-
-### Example Request
-
-```bash
-GET /getRecommendations?reco_type=popular_by_category&category=Shoes&count=10
-```
-
-### Example Response
-
-```json
-{
-  "status": "success",
-  "items": [
-    {
-      "id": "12345",
-      "name": "AirZoom Running Shoes",
-      "price": 89.99,
-      "image_url": "https://example.com/item12345.jpg"
-    }
-  ]
-}
-```
-
-### Error Codes
-
-| Error Code               | Description                                           |
-| ------------------------ | ----------------------------------------------------- |
-| UNKNOWN_RECO_TYPE        | Invalid or disabled recommendation type.              |
-| MISSING_MANDATORY_FILTER | Required parameter missing, such as category.         |
-| INVALID_FILTER           | Provided filter value is invalid.                     |
-| CURSOR_INVALIDATED       | Pagination request invalidated due to dataset change. |
-| NO_CONTENT               | No items found for given parameters.                  |
-
 # Personalization
 
-If personalization is enabled, you can pass the CleverTap user identity with the API request. The system applies user-specific context, for example preferences or exclusions, and tailors recommendations by attributes such as gender, language, or size.
+If personalization is enabled, you can pass the CleverTap user identity with the API request. The system applies user-specific context, for example, preferences or exclusions, and tailors recommendations by attributes such as gender, language, or size.
 
 # Troubleshooting
 
