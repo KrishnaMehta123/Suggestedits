@@ -38,9 +38,7 @@ CleverTap encrypts PII using multiple layers of protection, making sensitive val
 
 This layered protection ensures data confidentiality, integrity, and compliance without compromising usability.
 
-<Image alt="PII Encryption" align="center" border={true} src="https://files.readme.io/20d467a044d271b9071dfb8c94cd6538bbe4661da3a2562f3e0268f706a33dfa-image.png">
-  PII Encryption
-</Image>
+<Image align="center" alt="PII Encryption" border={true} caption="PII Encryption" src="https://files.readme.io/20d467a044d271b9071dfb8c94cd6538bbe4661da3a2562f3e0268f706a33dfa-image.png" />
 
 ## Default vs. Custom Encryption
 
@@ -120,15 +118,11 @@ To encrypt an individual event property, follow these steps:
 3. Click the ellipsis menu and select **Encrypt**.
 4. In the confirmation dialog, click **Encrypt**.
 
-<Image alt="Encrypt PII Values" align="center" border={true} src="https://files.readme.io/243c2b2174e002539b50012bb92c9ddea518580dfc437c609e6f298d9c489d42-2025-07-17_13-47-26_1.gif">
-  Encrypt PII Values
-</Image>
+<Image align="center" alt="Encrypt PII Values" border={true} caption="Encrypt PII Values" src="https://files.readme.io/243c2b2174e002539b50012bb92c9ddea518580dfc437c609e6f298d9c489d42-2025-07-17_13-47-26_1.gif" />
 
 The following image shows the encrypted PII properties:
 
-<Image alt="Encrypted Properties" align="center" border={true} src="https://files.readme.io/fd5aeb3c96ab14bada82f33000502147d8d8985f199ef19f2ed13844eacd08f0-image.png">
-  Encrypted Properties
-</Image>
+<Image align="center" alt="Encrypted Properties" border={true} caption="Encrypted Properties" src="https://files.readme.io/fd5aeb3c96ab14bada82f33000502147d8d8985f199ef19f2ed13844eacd08f0-image.png" />
 
 ## Encrypt Multiple Event Properties
 
@@ -140,16 +134,26 @@ To encrypt multiple properties, follow these steps:
 4. Click the ellipsis menu and select **Encrypt**.
 5. In the confirmation dialog, click **Encrypt**.
 
-CleverTap queues the selected fields for encryption and displays the encrypted fields as *Encrypted*.
+CleverTap queues the selected fields for encryption and displays the encrypted fields as _Encrypted_.
 
-<Image alt="Bulk Encryption" align="center" border={true} src="https://files.readme.io/ec06009cee093f2b52eba568fd2c6ac23d45381460b3f27d300636c188c7cb05-2025-08-14_19-43-21_1.gif">
-  Bulk Encryption
-</Image>
+<Image align="center" alt="Bulk Encryption" border={true} caption="Bulk Encryption" src="https://files.readme.io/ec06009cee093f2b52eba568fd2c6ac23d45381460b3f27d300636c188c7cb05-2025-08-14_19-43-21_1.gif" />
 
-> 📘 Viewing Encrypted Values
->
-> Only Admins and authorized users can view or download encrypted values.\
-> The visibility of encrypted values on the **Segment** and **Analytics** pages depends on your role. For roles without encryption access, these values remain hidden. Roles with encryption permissions can view and use the encrypted values for segmentation and analytics.
+<Callout icon="📘" theme="info">
+  **Viewing Encrypted Values**
+
+  Only Admins and authorized users can view or download encrypted values.  
+  The visibility of encrypted values on the **Segment** and **Analytics** pages depends on your role. For roles without encryption access, these values remain hidden. Roles with encryption permissions can view and use the encrypted values for segmentation and analytics.
+</Callout>
+
+<Callout icon="📘" theme="info">
+  **Download Restriction on PII Values**
+
+  CSV downloads respect encrypted PII access permissions.
+
+  For system profile attributes, users without encrypted PII access cannot select encrypted fields in the CSV download confirmation pop-up. Admin users and users with encrypted PII access via custom roles can download these fields without restriction.
+
+  For custom profile attributes, users without encrypted PII access receive the column in the CSV with blank values. Admin users and users with encrypted PII access via custom roles receive actual values.
+</Callout>
 
 # Supported Entities
 
@@ -174,9 +178,7 @@ Follow the steps below to create a Segment using encrypted properties:
 
 The system applies permission checks to ensure only authorized users can view or segment these properties. Segments created with encrypted fields are usable across analytics and engagement workflows.
 
-<Image alt="Encrypted Values in Segment Builder" align="center" width="70% " border={true} src="https://files.readme.io/b2295177bba75adbf5e8c668a88a6c56ba136b7d4cc4a9cd05aedf90ea96ef14-image.png">
-  Encrypted Values in Segment Builder
-</Image>
+<Image align="center" alt="Encrypted Values in Segment Builder" border={true} caption="Encrypted Values in Segment Builder" src="https://files.readme.io/b2295177bba75adbf5e8c668a88a6c56ba136b7d4cc4a9cd05aedf90ea96ef14-image.png" width="70% " />
 
 ### Find People
 
@@ -184,9 +186,7 @@ If you have permission to access encrypted data, you can search for users using 
 
 The following image shows how to set up an event filter rule in an analytics or engagement platform. The rule builder offers additional filtering by narrowing down event properties. When users without decryption access query encrypted fields, the list displays **This is an encrypted value** to indicate restricted visibility.
 
-<Image alt="Query using Encrypted Values" align="center" border={true} src="https://files.readme.io/c81c5c53494c9ab72866bace1d2b39fa3bb3ca0931ef1937d37dd2d38d4e1769-image.png">
-  Query using Encrypted Values in Find People
-</Image>
+<Image align="center" alt="Query using Encrypted Values" border={true} caption="Query using Encrypted Values in Find People" src="https://files.readme.io/c81c5c53494c9ab72866bace1d2b39fa3bb3ca0931ef1937d37dd2d38d4e1769-image.png" />
 
 For more details on user permissions and access, refer to [Role-Based Access Control: Advanced Governance Limits](https://docs.clevertap.com/docs/role-based-access-control-advanced-governance-limits#engagement-permissions).
 
@@ -203,9 +203,7 @@ Follow the steps below to create a Campaign using encrypted properties:
 
 The following image shows the list indicating that the selected event property is encrypted:
 
-<Image alt="Filter using Encrypted Values in Campaigns" align="center" border={true} src="https://files.readme.io/706634a1ed9f9c1c195c3f0b9ac108d8a54a22ad517158349083a8f041319c11-image.png">
-  Filter using Encrypted Values in Campaigns
-</Image>
+<Image align="center" alt="Filter using Encrypted Values in Campaigns" border={true} caption="Filter using Encrypted Values in Campaigns" src="https://files.readme.io/706634a1ed9f9c1c195c3f0b9ac108d8a54a22ad517158349083a8f041319c11-image.png" />
 
 If the campaign user role permits access, you can use personalization fields such as email and phone. Campaign messages sent via email or push will use encrypted data securely.
 
@@ -222,9 +220,7 @@ Use encrypted data fields for decision splits and personalization based on permi
 
 Users with appropriate permissions can query events using encrypted values. The list in the following image displays **This is an encrypted value**, ensuring PII remains protected and usable for analytics.
 
-<Image alt="Query using Encrypted Values in Analytics" align="center" border={true} src="https://files.readme.io/3f77c0333db9af68ad1e1a6d62e35339ae3a6c74fa7a92ddcf8b507d78510d9e-image.png">
-  Query using Encrypted Values in Analytics
-</Image>
+<Image align="center" alt="Query using Encrypted Values in Analytics" border={true} caption="Query using Encrypted Values in Analytics" src="https://files.readme.io/3f77c0333db9af68ad1e1a6d62e35339ae3a6c74fa7a92ddcf8b507d78510d9e-image.png" />
 
 > 📘 Require Permission
 >
@@ -232,9 +228,7 @@ Users with appropriate permissions can query events using encrypted values. The 
 
 The following image shows the message displayed when access is restricted:
 
-<Image alt="Restricted Access" align="center" border={true} src="https://files.readme.io/24217dba1ca61abb4006cd5cfa51e6a9553f69ad82f888e5702441cf5bac8be1-image.png">
-  Restricted Access
-</Image>
+<Image align="center" alt="Restricted Access" border={true} caption="Restricted Access" src="https://files.readme.io/24217dba1ca61abb4006cd5cfa51e6a9553f69ad82f888e5702441cf5bac8be1-image.png" />
 
 # Manage Entities with Encrypted Data
 
