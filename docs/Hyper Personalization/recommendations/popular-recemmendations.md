@@ -105,3 +105,9 @@ Yes, overwrites and extensions are allowed for rules, fallback rules, and counts
 ### What happens if there are fewer recommendations than requested?
 
 The system fills missing items using fallback rules or default items.
+
+# Reference
+
+For more information on the Recommendations API, refer to [Popular Recommendations API](https://staging.docs.dev.clevertap.net/update/docs/popular-recommendations-api)
+
+<br />
