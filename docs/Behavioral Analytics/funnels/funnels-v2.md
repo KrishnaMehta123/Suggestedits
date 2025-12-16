@@ -30,11 +30,7 @@ To create a funnel, perform the following steps:
 2. Select the events in the desired order to create up to an eight-step funnel.
 3. Select event properties for each event to constrain the analysis for the users who performed that event/property combination.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/de1b286dcda584e174fc4d4edb9b177d47232785f91810731941c97bd91a0c13-image.png" className="border" />
-
-<br />
-
-<Image align="center" alt="Create a Funnel " border={true} caption="Create a Funnel" src="https://files.readme.io/83e833954c171c8e655df786784d081f722d5b0aca7590b1322027f72b9ba95c-image.png" width="50% " />
+<Image align="center" border={true} caption="Create a Funnel" src="https://files.readme.io/de1b286dcda584e174fc4d4edb9b177d47232785f91810731941c97bd91a0c13-image.png" width="50% " />
 
 4. You can also duplicate a step or add multiple events for the step by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic between them in Step 1 of the Funnel to ensure you capture your entire user base.
 
@@ -48,13 +44,13 @@ To set a conversion window:
 
 1. Go to _Analytics_ > _Funnels_.
 2. Select the required events.
-3. Under the _Metric_ section, select the Conversion window.
+3. Under the _MEASURED BY_ section, select the _Conversion window_.
+
+<Image align="center" border={true} caption="Set Conversion Window" src="https://files.readme.io/25e96965fb19df284a72492c304d00646f1eba0f9f8b42479f2c6ff668ca1ac4-image.png" width="50% " />
 
 > 📘 Time Interval for Conversion Window
 >
 > CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
-
-<Image align="center" alt="Set Conversion Window" border={true} caption="Set Conversion Window" src="https://files.readme.io/d4b4a9c1425395ea28c7160e36f5036b4fbe26aa9060cf40d643bc2166e122df-image.png" width="70% " />
 
 ## Compare by Segments
 
@@ -64,7 +60,7 @@ To compare conversion across segments, perform the following steps:
 
 1. Go to _Analytics_ > _Funnels_.
 2. Select the steps to analyze and view the conversion funnel.
-3. From the SEGMENT section, select the required segments. Select a segment from the list or create an ad-hoc segment. For more information, refer to [Segments](doc:segments).
+3. From the _SEGMENT_ section, select the required segments. Select a segment from the list or create an ad-hoc segment. For more information, refer to [Segments](doc:segments).
 4. Click **View Analysis**.
 
 <Image align="center" alt="Segment Comparison Results" border={true} caption="Segment Comparison Results" src="https://files.readme.io/e9b8925214cf689ea3b18dce80dab48b64854c033f93eb6f3616c02eaa540eeb-image.png" />
