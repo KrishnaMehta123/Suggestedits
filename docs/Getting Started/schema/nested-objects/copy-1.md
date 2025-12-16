@@ -10,18 +10,18 @@ metadata:
 next:
   description: ''
 ---
-<br />
-
 # Overview
 
 Nested Objects allow you to represent rich, structured information about your users, such as subscriptions, insurance policies, or shopping carts, without breaking it into multiple flat properties. Instead of managing dozens of separate fields, you can organize the related details inside a single structured user property.
 
-[UPDATED] Nested Objects are now supported not only for **user properties** but also for **custom events** and **event properties**, allowing structured data ingestion across more schema types.
+**[UPDATED]** Nested Objects are now supported for custom events and event properties, allowing structured data ingestion across more schema types.
 
 For more information on implementation, including schema definitions and JSON examples, refer to Ingesting Nested Objects via CleverTap APIs.
 
-> Public Beta
-> This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or CleverTap Support.
+<Callout icon="📘" theme="info">
+  **Public Beta**
+  This feature is released in Public Beta. For more information about this feature, contact your Customer Success Manager or CleverTap Support.
+</Callout>
 
 ## Advantages
 
@@ -70,9 +70,9 @@ Image: Nested Objects in Segment Builder
 
 # [UPDATED] Ingesting Nested Objects for Custom Events and Event Properties
 
-You can now send Nested Objects inside **custom events** and **event property objects**, enabling structured event-level data without flattening.
+You can now send Nested Objects inside custom events and event property objects, enabling structured event-level data without flattening.
 
-Examples include:
+For example,
 
 * Sending an event such as `PolicyRenewed` with nested policy details
 * Sending `OrderPlaced` with nested product line items
@@ -87,7 +87,7 @@ This enhancement expands nested object support beyond user attributes, enabling 
 CleverTap enforces some system limits to maintain performance and stability. The following table lists the limits applied during nested object ingestion to ensure consistent data handling.
 
 [UPDATED lead-in sentence]
-The limits apply to nested objects in **user properties, custom events, and event properties.**
+The limits apply to nested objects in user properties, custom events, and event properties.
 
 | Limit Type                   | Maximum Value                       |
 | ---------------------------- | ----------------------------------- |
@@ -115,7 +115,7 @@ Follow these practices to maintain data quality:
 ### Can I use Nested Objects in SDK, CSV, or SFTP uploads?
 
 [UPDATED]
-Nested Objects are supported through the REST API and will now also be supported through SDK ingestion. CSV and SFTP uploads do not support nested ingestion.
+Nested Objects are supported through the REST API and SDK ingestion. CSV and SFTP uploads do not support nested ingestion.
 
 ### Can I query deeply nested fields in segmentation?
 
