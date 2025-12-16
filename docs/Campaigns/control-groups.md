@@ -234,6 +234,8 @@ JSON format Example (Journey control group user) -
 
 # Video Tutorials
 
+### Understanding Control Groups
+
 <HTMLBlock>{`
 <div
               style="
@@ -252,5 +254,28 @@ JSON format Example (Journey control group user) -
               allow="autoplay; fullscreen"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 `}</HTMLBlock>
+
+### Using Control Groups
+
+<HTMLBlock>{`
+<div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                border-radius: 0;
+                box-shadow: 0 15px 40px rgba(63,58,79,.3);
+                overflow: hidden;
+                min-width:320px"><iframe
+              src="https://clevertap.portal.trainn.co/share/cKjWmj3wAAyCxYiQ2jeFZA/embed?autoplay=false"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              allow="autoplay; fullscreen"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`}</HTMLBlock>
+
+<br />
 
 <br />
