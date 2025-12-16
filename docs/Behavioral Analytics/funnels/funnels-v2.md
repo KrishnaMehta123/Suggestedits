@@ -63,7 +63,7 @@ To compare conversion across segments, perform the following steps:
 3. From the _SEGMENT_ section, select the required segments. Select a segment from the list or create an ad-hoc segment. For more information, refer to [Segments](doc:segments).
 4. Click **View Analysis**.
 
-<Image align="center" alt="Segment Comparison Results" border={true} caption="Segment Comparison Results" src="https://files.readme.io/e9b8925214cf689ea3b18dce80dab48b64854c033f93eb6f3616c02eaa540eeb-image.png" />
+<Image align="center" border={true} caption="Segment Comparison Results" src="https://files.readme.io/db9e91450c33e1a00480fb14730ef050bbc70a54ad3308f65eadc5f53e89e1c1-image.png" />
 
 ## Advanced Filtering
 
@@ -96,48 +96,24 @@ To break down by property, perform the following steps:
 
 <Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
 
-## Strict Order
-
-By checking _Enforce Strict Order,_ users will only be counted if they complete the funnel steps in exactly the specified order without performing another one of the funnel steps out of order.
-
-Consider the same example as above where the funnel steps defined are:
-
-* Funnel Steps: Step A → Step B → Step C → Step D
-
-If we analyze the users below:
-
-* User 1: Step A → Step B → Step C → Step D
-* User 2: Step A  → Step C → Step D
-* User 3: Step A → Step C → Step B → Step D
-* User 4:  Step A → Step B → Step A → Step C → Step D
-
-Here, only User 1 will be counted as converting, as the strict order restricts any deviation from the specified steps in the funnel. The other users (2, 3, and 4) are breaking the strict ordering, so they do not qualify. The advantage of strict ordering is that it can detect any deviations. For example, consider the following user actions:
-
-* User A: App Launched, Login Attempted, Login Attempted, Login Attempted, Login Attempted, Logged In
-* User B: App Launched, Login Attempted, Logged In
-
-A strict order can help identify if users are having trouble logging in.
-
 # Funnel Computation Methods
 
 Funnels support two computation methods:
 
-* Flexible Order and
-* Strict Order
+* [Flexible Order](doc:funnels-v2#flexible-order) 
+* [Strict Order](doc:funnels-v2#strict-order) 
 
 These methods determine how users are counted as they progress through funnel steps, especially when steps are repeated or performed out of sequence.
 
 ## Flexible Order
 
-By default, funnels count users who complete all defined steps in the correct sequence. Users may repeat earlier steps or temporarily move ahead and return, but they are counted as converted as long as they eventually complete each step in order.
-
-### Example Funnel
+By default, funnels count users who complete all defined steps in the specified sequence. Users may repeat earlier steps, but they must still complete every funnel step to be counted as converted. If a user completes a later step before a required earlier step, the funnel does not count that user as converted.
 
 For example, if a funnel's steps are defined as:
 
-Step A → Step B → Step C → Step D
+**Step A → Step B → Step C → Step D**
 
-The following are the ways and the reasoning for how different users are counted as converting depending on the order in which each progresses through the funnel steps:
+The following table explains how different users are counted based on how they progress through the funnel steps:
 
 | User   | Action Sequence                            | Counted in Funnel? | Reason                                                                |
 | ------ | ------------------------------------------ | ------------------ | --------------------------------------------------------------------- |
@@ -150,11 +126,9 @@ The following are the ways and the reasoning for how different users are counted
 
 When _Strict Order_ is enabled, funnels count users only if they complete every step exactly in the defined sequence. Any repetition of a funnel step or deviation from the specified order disqualifies the user from being counted as converted.
 
-### Example Funnel
-
 For example, if a funnel's steps are defined as:
 
-Step A → Step B → Step C → Step D
+**Step A → Step B → Step C → Step D**
 
 The following table explains how different users are counted based on how they progress through the funnel steps:
 
