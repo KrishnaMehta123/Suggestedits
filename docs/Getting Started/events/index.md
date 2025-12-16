@@ -16,24 +16,24 @@ metadata:
 ---
 # Overview
 
-Events track what individual actions users perform in your app or website. Some examples of events include a user launching an app, viewing a product, listening to a song, sharing a photo, making a purchase, or favoriting an item. 
+Events track what individual actions users perform in your app or website. Some examples of events include a user launching an app, viewing a product, listening to a song, sharing a photo, making a purchase, or favoriting an item.
 
-By tracking events in your app, you can better understand what users are doing. In CleverTap, you can analyze these events in many different ways, such as getting aggregated metrics of a specific event or measuring how a specific event type trends over time. You can also engage with your users based on these events by creating campaigns in CleverTap that are triggered by them. 
+By tracking events in your app, you can better understand what users are doing. In CleverTap, you can analyze these events in many different ways, such as getting aggregated metrics of a specific event or measuring how a specific event type trends over time. You can also engage with your users based on these events by creating campaigns in CleverTap that are triggered by them.
 
-<Image title="events1.png" alt={898} align="center" className="border" width="80%" border={true} src="https://files.readme.io/40b874a-events1.png" />
+<Image align="center" alt={898} border={true} width="80%" src="https://files.readme.io/40b874a-events1.png" title="events1.png" className="border" />
 
 ## Event Categories
 
 CleverTap has two categories of events:
 
-* System events: Events recorded automatically after you integrate our SDK. 
+* System events: Events recorded automatically after you integrate our SDK.
 * Custom events: Events you define and track with our SDK or API.
 
 ## Event Properties
 
-Events have details that describe the action taking place called properties. 
+Events have details that describe the action taking place called properties.
 
-For example, while recording the *Product viewed* event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
+For example, while recording the _Product viewed_ event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
 
 # System Events
 
@@ -41,33 +41,26 @@ For example, while recording the *Product viewed* event, you could also store ev
 >
 > You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
 
-System events are events recorded automatically after you integrate our SDK. 
-
+System events are events recorded automatically after you integrate our SDK.
 
 <Table align={["left","left","left"]}>
   <thead>
     <tr>
       <th>
         <p>
-
-        Event Name
-
+          Event Name
         </p>
       </th>
 
       <th>
         <p>
-
-        Description
-
+          Description
         </p>
       </th>
 
       <th>
         <p>
-
-        How Event is Tracked
-
+          How Event is Tracked
         </p>
       </th>
     </tr>
@@ -168,7 +161,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <ul><li>Campaign ID: It helps identify the specific campaign associated with the error.</li><li>Campaign Type: It indicates the type of campaign (for example, WhatsApp, SMS, Email, and so on).</li><li>Error: It displays the error message for the error observed in the campaign.</li><li>Label: It denotes the specific label associated with the campaign.</li><li>Variant: It helps identify the errors for a specific campaign variant in the case of A/B, split delivery, or multi-variant campaigns.</li></ul>For detailed information on WhatsApp errors, refer to [WhatsApp Error Stats.]({'<>'}). **Note**: This event is currently in Private Beta. Contact your account manager to enable it.
+        <ul><li>Campaign ID: It helps identify the specific campaign associated with the error.</li><li>Campaign Type: It indicates the type of campaign (for example, WhatsApp, SMS, Email, and so on).</li><li>Error: It displays the error message for the error observed in the campaign.</li><li>Label: It denotes the specific label associated with the campaign.</li><li>Variant: It helps identify the errors for a specific campaign variant in the case of A/B, split delivery, or multi-variant campaigns.</li></ul>For detailed information on WhatsApp errors, refer to [WhatsApp Error Stats.](\{'\<>'}). **Note**: This event is currently in Private Beta. Contact your account manager to enable it.
       </td>
     </tr>
 
@@ -182,7 +175,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>The CleverTap SDK recognizes when a notification sent via CleverTap is viewed by a user.</p><p><em>Notification Viewed</em> is available for email, web push, in-app, web popup, and app inbox.</p><p>Important Properties:</p><ul><li>Variant: String value containing an A/B testing campaign's variant name.</li></ul>
+        <p>The CleverTap SDK recognizes when a notification sent via CleverTap is viewed by a user.</p><p><em>Notification Viewed</em> is available for email, web push, in-app, web popup, native display, and app inbox.</p><p>Important Properties:</p><ul><li>Variant: String value containing an A/B testing campaign's variant name.</li></ul>
       </td>
     </tr>
 
@@ -364,7 +357,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        This event is tracked when the *CT App version* system property for an app launch is different from the next app launch.
+        This event is tracked when the _CT App version_ system property for an app launch is different from the next app launch.
       </td>
     </tr>
 
@@ -388,7 +381,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        This is an event raised only for *Lifecycle Optimizer*.This event is recorded when a user transitions from one stage to another.
+        This is an event raised only for _Lifecycle Optimizer_.This event is recorded when a user transitions from one stage to another.
       </td>
 
       <td>
@@ -582,99 +575,15 @@ System events are events recorded automatically after you integrate our SDK.
 
 # Debug Events
 
-Debug events are events recorded automatically after you integrate our SDK. These events are raised at certain lifecycle stages in your integration and help you track and manage your integration. These events are available on any profile page and *Find People* page by adding a parameter to the end of the URL `?showDebugEvents=true`.  
+Debug events are events recorded automatically after you integrate our SDK. These events are raised at certain lifecycle stages in your integration and help you track and manage your integration. These events are available on any profile page and _Find People_ page by adding a parameter to the end of the URL `?showDebugEvents=true`.
 
-
-<Table align={["left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        <p>Event Name</p>
-      </th>
-
-      <th>
-        <p>Description</p>
-      </th>
-
-      <th>
-        <p>When is it raised</p>
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <p>Identity Set</p>
-      </td>
-
-      <td>
-        <p>This debug event is raised when a new user is identified on a customer's app or an identified user pushes another identity.</p>
-      </td>
-
-      <td>
-        <p>This event monitors the status and data points that are important for the identification and engagement of users. This event is for monitoring and debugging only.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Identity Reset</p>
-      </td>
-
-      <td>
-        <p>This debug event is raised when a profile is demerged (after demerged, a new profile for every device is created and identities are dropped) either from the dashboard (click on the <em>Profile</em> page to reset identities) or through the <em>Demerge Profile API</em>.</p>
-      </td>
-
-      <td>
-        <p>It monitors the reset of identities and handles unnecessary merges. This event is used for monitoring and debugging only.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Identity Error</p>
-      </td>
-
-      <td>
-        <p>This debug event is raised when an existing identity is associated incorrectly with another identity. The former identity is now declared as invalid for the latter's profile.</p>
-      </td>
-
-      <td>
-        <p>This event is for monitoring and debugging when identity merges are invalid.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Reachable By</p>
-      </td>
-
-      <td>
-        <p>This debug event is raised when a user becomes reachable by a communication channel such as SMS, email, mobile push, or when there are changes to the existing communication channel.</p>
-      </td>
-
-      <td>
-        <p>Tracked for a profile when:</p><ul><li>Push token is added/changed.</li><li>Email ID is added/changed.</li><li>Phone number is added/changed. </li></ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>Push Unregistered</p>
-      </td>
-
-      <td>
-        <p>This event tracks the removal of a mobile push token. It is also raised when FCM returns a 404 Unregistered error for stale tokens from devices that have not connected to FCM for 270 days or for users who uninstall the app.</p>
-      </td>
-
-      <td>
-        <p>This event is raised when an existing mobile push token is removed for a profile.</p><p>Tracked for a profile when:</p><ul><li><p>A user logs out of the device, and another user logs in. Applicable only if the <code>onUserLogin()</code> method is implemented. </p></li><li><p>When a push token is removed using the <code>pushFcmRegisterationId("token",false)</code> method. Applicable only for Android.</p></li><li> FCM returns a [404 Unregistered error](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app.</li></ul>
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
+| <p>Event Name</p>        | <p>Description</p>                                                                                                                                                                                                                                                                  | <p>When is it raised</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>Identity Set</p>      | <p>This debug event is raised when a new user is identified on a customer's app or an identified user pushes another identity.</p>                                                                                                                                                  | <p>This event monitors the status and data points that are important for the identification and engagement of users. This event is for monitoring and debugging only.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| <p>Identity Reset</p>    | <p>This debug event is raised when a profile is demerged (after demerged, a new profile for every device is created and identities are dropped) either from the dashboard (click on the <em>Profile</em> page to reset identities) or through the <em>Demerge Profile API</em>.</p> | <p>It monitors the reset of identities and handles unnecessary merges. This event is used for monitoring and debugging only.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| <p>Identity Error</p>    | <p>This debug event is raised when an existing identity is associated incorrectly with another identity. The former identity is now declared as invalid for the latter's profile.</p>                                                                                               | <p>This event is for monitoring and debugging when identity merges are invalid.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| <p>Reachable By</p>      | <p>This debug event is raised when a user becomes reachable by a communication channel such as SMS, email, mobile push, or when there are changes to the existing communication channel.</p>                                                                                        | <p>Tracked for a profile when:</p><ul><li>Push token is added/changed.</li><li>Email ID is added/changed.</li><li>Phone number is added/changed. </li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| <p>Push Unregistered</p> | <p>This event tracks the removal of a mobile push token. It is also raised when FCM returns a 404 Unregistered error for stale tokens from devices that have not connected to FCM for 270 days or for users who uninstall the app.</p>                                              | <p>This event is raised when an existing mobile push token is removed for a profile.</p><p>Tracked for a profile when:</p><ul><li><p>A user logs out of the device, and another user logs in. Applicable only if the <code>onUserLogin()</code> method is implemented. </p></li><li><p>When a push token is removed using the <code>pushFcmRegisterationId("token",false)</code> method. Applicable only for Android.</p></li><li> FCM returns a [404 Unregistered error](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) for stale tokens from devices that have not connected to FCM for 270 days or for users who have uninstalled the app.</li></ul> |
 
 # Custom Events
 
@@ -684,12 +593,12 @@ Custom events are events you define and track with our SDK or API. For more info
 
 CleverTap also records transactions or purchases using a special event called **Charged**. Clevertap enriches this special event with additional information such as items sold, their categories, transaction amount, transaction ID, and information about your users. Recording a purchase against a user marks them as a customer in CleverTap and enables you to compare your funnel reports between customers and other users .
 
-When recording customer purchases, you can also record the following: 
+When recording customer purchases, you can also record the following:
 
-* Items Sold\
+* Items Sold  
   You must use the Items collection to record a list of items sold. Along with the product name, you can add properties such as size, color, category, etc.
 
-* Transaction Amount\
+* Transaction Amount  
   The transaction total or subscription charge must be recorded in an event property called Amount.
 
 For more information about recording a Charged event, refer to [Events](https://developer.clevertap.com/docs/events#recording-customer-purchases) under developer documentation.
@@ -708,7 +617,7 @@ The following are the advantages of Charged event:
 
 You can personalize the message for customers who purchase multiple items in a single transaction. You can do so by using liquid tags from the CleverTap dashboard, as shown in the following sample codes:
 
-* **Using for Loops in Liquid Tags** 
+* **Using for Loops in Liquid Tags**
 
 ```liquid
 {% for item in Event.Items %}
@@ -717,7 +626,7 @@ You can personalize the message for customers who purchase multiple items in a s
 {% endfor %}
 ```
 
-* **Using Manual Indexing in Liquid Tags** 
+* **Using Manual Indexing in Liquid Tags**
 
 ```liquid
 Product name: {{ Event.Items[0].product_name }}
@@ -732,15 +641,15 @@ Product price: {{ Event.Items[2].price }}
 
 `Event.items` is a custom array property that you can use to store additional information about items associated with an event. It allows you to include item-specific details when tracking events. For example, if an event called "Charged" represents a user making a purchase, you can use the `Charged.Items` array to store information about the specific items purchased within that event. Each item in the array can have its own properties, such as name, price, quantity, and so.
 
-You can personalize the message for any number of items in the `Event.items` array. For example, you want to send an email including order details to the customers who bought three books from your e-commerce website. The `Event.items` array, in this case, would include three items, and you can send a personalized message for all three items. 
+You can personalize the message for any number of items in the `Event.items` array. For example, you want to send an email including order details to the customers who bought three books from your e-commerce website. The `Event.items` array, in this case, would include three items, and you can send a personalized message for all three items.
 
-<Image alt="Charged Event Personalization" align="center" border={true} src="https://files.readme.io/aef5e4b-Charged_Event_Personalization.png" />
+<Image align="center" alt="Charged Event Personalization" border={true} src="https://files.readme.io/aef5e4b-Charged_Event_Personalization.png" className="border" />
 
 In the case of manual indexing, you can ensure that the index is smaller than the size of the Items array using `Event.Items.size`. If the index value exceeds the size of the Items array, the message is NOT dispatched and is marked against errors.
 
 > 📘 Charged Event Personalization for App Inbox Campaigns
 >
-> * In the case of App Inbox campaigns, event personalization for `Charged.Items` is not enabled. 
+> * In the case of App Inbox campaigns, event personalization for `Charged.Items` is not enabled.
 > * However, if you use event personalization with `Charged.Items`, the default values for the items are displayed in the case of App Inbox campaigns.
 > * If you use event personalization with `Charged.Items` when creating a combination of Push Notification and App Inbox campaigns, the personalized values for the items are displayed for Push and default values are displayed for App Inbox.
 
@@ -766,201 +675,39 @@ For every recorded event, CleverTap records the following standard metadata:
 * The referring site and the source of the user visit if it was from an external source.
 
 In addition, CleverTap keeps the user profiles updated with the latest:
+
 * Geographic information like their city, region, country, and latitude/longitude (if available).
 * Browser, device make, or model used to access the website or app.
 
 # System Properties
 
-CleverTap tracks the following system properties automatically from the mobile SDK. All the system properties are prefixed by *CT* indicating that they are provided by CleverTap. 
+CleverTap tracks the following system properties automatically from the mobile SDK. All the system properties are prefixed by _CT_ indicating that they are provided by CleverTap.
 
 The following properties are tracked automatically on all events:
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        <p>System Property</p>
-      </th>
+| <p>System Property</p> | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <p>CT App Version</p>  | <p>This is the current version of your application installed on the user device.</p>                                                                                                                                                                                                                                                                                                                                                        |
+| <p>CT Latitude</p>     | <p>The user location identified by the latitude.</p>                                                                                                                                                                                                                                                                                                                                                                                        |
+| <p>CT Longitude</p>    | <p>The user location identified by the longitude.</p>                                                                                                                                                                                                                                                                                                                                                                                       |
+| <p>CT Source</p>       | <p>The source of the event.</p><p>For example, the event may originate from a Mobile SDK or an API.</p><p>All possible values:</p><ul><li>Mobile (Mobile SDK)</li><li>MobileWeb (Web SDK)</li><li>Web (Web SDK)</li><li>API</li><li>segment</li><li>appsflyer</li><li>apsalar</li><li>branch</li><li>tune</li><li>System (for events generated by CleverTap)</li><li>SendGrid</li><li> Infobip</li><li>Amazon SES</li><li>Generic</li></ul> |
 
-      <th>
-        <p>Description</p>
-      </th>
-    </tr>
-  </thead>
+The following properties are available on the _App Launched_ event:
 
-  <tbody>
-    <tr>
-      <td>
-        <p>CT App Version</p>
-      </td>
-
-      <td>
-        <p>This is the current version of your application installed on the user device.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Latitude</p>
-      </td>
-
-      <td>
-        <p>The user location identified by the latitude.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Longitude</p>
-      </td>
-
-      <td>
-        <p>The user location identified by the longitude.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Source</p>
-      </td>
-
-      <td>
-        <p>The source of the event.</p><p>For example, the event may originate from a Mobile SDK or an API.</p><p>All possible values:</p><ul><li>Mobile (Mobile SDK)</li><li>MobileWeb (Web SDK)</li><li>Web (Web SDK)</li><li>API</li><li>segment</li><li>appsflyer</li><li>apsalar</li><li>branch</li><li>tune</li><li>System (for events generated by CleverTap)</li><li>SendGrid</li><li> Infobip</li><li>Amazon SES</li><li>Generic</li></ul>
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-The following properties are available on the *App Launched* event:
-
-
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        <p>System Property</p>
-      </th>
-
-      <th>
-        <p>Description</p>
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <p>CT App Version</p>
-      </td>
-
-      <td>
-        <p>This is the current version of your application installed on the user device.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Latitude</p>
-      </td>
-
-      <td>
-        <p>The user location identified by the latitude.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Longitude</p>
-      </td>
-
-      <td>
-        <p>The user location identified by the longitude.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT OS Version</p>
-      </td>
-
-      <td>
-        <p>The operating system of the device.<br />For example,  1.0.0.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT SDK Version</p>
-      </td>
-
-      <td>
-        <p>The CleverTap SDK version. For example, 30501.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Network Carrier</p>
-      </td>
-
-      <td>
-        <p>The network carrier of the device.<br />For example, AT&T, Vodafone.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Network Type</p>
-      </td>
-
-      <td>
-        <p>The network type of the device.<br />For example, 4G.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Connected To WiFi</p>
-      </td>
-
-      <td>
-        <p>Indicates if the device is connected to the Wi-FI.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Bluetooth Version</p>
-      </td>
-
-      <td>
-        <p>The Bluetooth version of the device.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Bluetooth Enabled</p>
-      </td>
-
-      <td>
-        <p>Indicates if Bluetooth is enabled on the device.</p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p>CT Source</p>
-      </td>
-
-      <td>
-        <p>The source of the event.</p><p>For example, the event may originate from a Mobile SDK or an API.</p><p>All possible values:</p><ul><li>Mobile (Mobile SDK)</li><li>MobileWeb (Web SDK)</li><li>Web (Web SDK)</li><li>API</li><li>segment</li><li>appsflyer</li><li>apsalar</li><li>branch</li><li>tune</li><li>System (for events generated by CleverTap)</li></ul>
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
+| <p>System Property</p>      | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                     |
+| :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>CT App Version</p>       | <p>This is the current version of your application installed on the user device.</p>                                                                                                                                                                                                                                                                                   |
+| <p>CT Latitude</p>          | <p>The user location identified by the latitude.</p>                                                                                                                                                                                                                                                                                                                   |
+| <p>CT Longitude</p>         | <p>The user location identified by the longitude.</p>                                                                                                                                                                                                                                                                                                                  |
+| <p>CT OS Version</p>        | <p>The operating system of the device.<br />For example,  1.0.0.</p>                                                                                                                                                                                                                                                                                                   |
+| <p>CT SDK Version</p>       | <p>The CleverTap SDK version. For example, 30501.</p>                                                                                                                                                                                                                                                                                                                  |
+| <p>CT Network Carrier</p>   | <p>The network carrier of the device.<br />For example, AT&T, Vodafone.</p>                                                                                                                                                                                                                                                                                            |
+| <p>CT Network Type</p>      | <p>The network type of the device.<br />For example, 4G.</p>                                                                                                                                                                                                                                                                                                           |
+| <p>CT Connected To WiFi</p> | <p>Indicates if the device is connected to the Wi-FI.</p>                                                                                                                                                                                                                                                                                                              |
+| <p>CT Bluetooth Version</p> | <p>The Bluetooth version of the device.</p>                                                                                                                                                                                                                                                                                                                            |
+| <p>CT Bluetooth Enabled</p> | <p>Indicates if Bluetooth is enabled on the device.</p>                                                                                                                                                                                                                                                                                                                |
+| <p>CT Source</p>            | <p>The source of the event.</p><p>For example, the event may originate from a Mobile SDK or an API.</p><p>All possible values:</p><ul><li>Mobile (Mobile SDK)</li><li>MobileWeb (Web SDK)</li><li>Web (Web SDK)</li><li>API</li><li>segment</li><li>appsflyer</li><li>apsalar</li><li>branch</li><li>tune</li><li>System (for events generated by CleverTap)</li></ul> |
 
 > 📘 Latitude and Longitude
 >
-> The system properties *latitude* and *longitude* are captured and sent from the SDK only if the user gives consent on your app.
+> The system properties _latitude_ and _longitude_ are captured and sent from the SDK only if the user gives consent on your app.
