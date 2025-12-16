@@ -75,12 +75,12 @@ The container allows you to modify the following:
 * **Position**: Select a position such as Top, Center, or Bottom.
 * **Size**: Select from the available height options such as short, mid, tall, and so on.
 * **Margin**: Adjust the margin percentage to create a buffer between your popup and the device edges.
-* **Delay**: Automatically dismiss the in-app notification after the specified delay. 
+* **Delay**: Automatically dismiss the in-app notification after the specified delay.
 * **Container Action**:  Container actions that are executed on tap, such as the following:
   * _Close Notification_:  Close the in-app notification.
   * _Open URL_: Open the specified URL.
-  * _Key-value pairs_: Add a key and value. 
-  * _App Function_: Trigger app functions such as requesting push permission or app rating. For more information on app functions, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). 
+  * _Key-value pairs_: Add a key and value.
+  * _App Function_: Trigger app functions such as requesting push permission or app rating. For more information on app functions, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions).
 * **Background**: Apply a background color or image to your design.
 * **Border Radius**: Control the roundness of the container's edges. A higher value results in a rounder appearance.
 
@@ -142,51 +142,11 @@ You can:
 
 Control how text appears within your container.
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Property
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        **Font** 
-      </td>
-
-      <td>
-        Select a predefined font style (for example, Arial).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Font Family**
-      </td>
-
-      <td>
-        Define the general font family (for example, sans-serif).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Fallback**
-      </td>
-
-      <td>
-        * Set an alternative font used if the main font is unavailable.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Property        | Description                                                   |
+| --------------- | ------------------------------------------------------------- |
+| **Font**        | Select a predefined font style (for example, Arial).          |
+| **Font Family** | Define the general font family (for example, sans-serif).     |
+| **Fallback**    | Set an alternative font used if the main font is unavailable. |
 
 (@murtaza, Confirm supported font families and if custom font uploads are allowed. )
 
@@ -249,12 +209,12 @@ The available container size options differ based on orientation. Use the follow
 
 You can use the following image formats for your container backgrounds or content:
 
-| File Format                                              | Description      | **Recommended File Size**                           | **Actual Supported Limit** |
-| -------------------------------------------------------- | ---------------- | --------------------------------------------------- | -------------------------- |
-| **JPEG:** Best for photos and detailed images.           | Up to **500 KB** | @murtaza: Confirm actual limit; commonly 1 MB]      |                            |
-| **PNG:** Ideal for transparent or high-quality graphics. | Up to **1 MB**   | @murtaza: Confirm actual limit; commonly 1 MB]      |                            |
-| **GIF:** Use for lightweight animations.                 | Up to **800 KB** | @murtaza: Confirm actual limit; commonly 1 MB]      |                            |
-| **SVG:** Suitable for vector graphics (logos, icons).    | Up to **300 KB** | @murtaza: Confirm if SVG is supported and size cap] |                            |
+| File Format                                              | ** Supported Limit** |
+| -------------------------------------------------------- | -------------------- |
+| **JPEG:** Best for photos and detailed images.           | @murtaza to provide  |
+| **PNG:** Ideal for transparent or high-quality graphics. | @murtaza to provide  |
+| **GIF:** Use for lightweight animations.                 | @murtaza to provide  |
+| **Video:**                                               | @murtaza to provide  |
 
 <br />
 
@@ -262,7 +222,6 @@ You can use the following image formats for your container backgrounds or conten
   Best Practices
 
   Optimize your images to improve message load time and prevent rendering issues on low-performance devices.  
-  @murtaza: Confirm final list of supported formats and size caps with engineering.]
 </Callout>
 
 <br />
