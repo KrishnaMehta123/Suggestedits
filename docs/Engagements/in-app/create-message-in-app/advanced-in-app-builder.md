@@ -155,37 +155,36 @@ Control how your container appears when the in-app message loads.
 | **Dissolve**   | The container fades into view smoothly.                           |
 | **Move In**    | The container slides into the screen from a predefined direction. |
 
+### Image Size and Aspect Ratios
 <Tabs>
   <Tab title="Portrait Orientation">
     Welcome to the content that you can only see inside the first Tab.
-| Size Option | Aspect Ratio |
-| ----------- | ------------ |
-| Extra Short | 4:1          |
-| Short       | 7:2          |
-| Mid         | 3:1          |
-| Tall        | 2:1          |
-| Extra Tall  | 5:4          |
-| Square      | 1:1          |
-| Wide        | 16:9         |
 
+    | Size Option | Aspect Ratio |
+    | ----------- | ------------ |
+    | Extra Short | 4:1          |
+    | Short       | 7:2          |
+    | Mid         | 3:1          |
+    | Tall        | 2:1          |
+    | Extra Tall  | 5:4          |
+    | Square      | 1:1          |
+    | Wide        | 16:9         |
   </Tab>
 
   <Tab title="Landscape Orientation">
     Here's content that's only inside the second Tab.
-| Size Option | Aspect Ratio |
-| ----------- | ------------ |
-| Extra Short | 8:1          |
-| Short       | 7:1          |
-| Mid         | 6:1          |
-| Tall        | 5:1          |
-| Extra Tall  | 9:2          |
-| Square      | 1:1          |
-| Wide        | 16:9         |
+
+    | Size Option | Aspect Ratio |
+    | ----------- | ------------ |
+    | Extra Short | 8:1          |
+    | Short       | 7:1          |
+    | Mid         | 6:1          |
+    | Tall        | 5:1          |
+    | Extra Tall  | 9:2          |
+    | Square      | 1:1          |
+    | Wide        | 16:9         |
   </Tab>
 
-  <Tab title="Third Tab">
-    Here's content that's only inside the third Tab.
-  </Tab>
 </Tabs>
 
 ### Image Size and Aspect Ratios
