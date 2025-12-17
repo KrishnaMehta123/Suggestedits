@@ -49,7 +49,7 @@ You can create a system domain to quickly start using branded links in your What
 
 3. Enter the following details:
 
-   <Image align="center" alt="System Domain Creation" border={true} caption="System Domain Creation" src="https://files.readme.io/ca255b39acc146166fcf684f36a410fa508fc0c33d442e82d50fb7beeb0d07f0-Add_System_Domain.png" />
+   <Image align="center" alt="System Domain Creation" border={true} caption="Add System Domain" src="https://files.readme.io/ca255b39acc146166fcf684f36a410fa508fc0c33d442e82d50fb7beeb0d07f0-Add_System_Domain.png" />
 
    <br />
 
@@ -114,8 +114,8 @@ You can create a system domain to quickly start using branded links in your What
          <td>
            The base domain used for branding and tracking.
 
-           * For **System Domains**, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping. (@Amrita: add the cross-reference.) 
-           * For **Custom Domains**, enter your own subdomain.The domain is auto-filled based on your account region. 
+           * For **System Domains**, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
+           * For **Custom Domains**, enter your own subdomain.
          </td>
        </tr>
 
@@ -146,7 +146,7 @@ You can create a system domain to quickly start using branded links in your What
          </td>
 
          <td>
-           The page users see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency. Click Preview Error Page to view and verify the error before the domain becomes active.
+           The page users see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency even in error scenarios. Click _Preview Error Page_ to view and verify the error before the domain becomes active.
          </td>
        </tr>
      </tbody>
@@ -156,7 +156,7 @@ You can create a system domain to quickly start using branded links in your What
 
 4. Click **Save**. The domain status is be set to **Active** immediately.
 
-### System Domain and Account Region Mapping
+**System Domain and Account Region Mapping**
 
 | Dashboard URL                | System Domain | Region      | Example URL   |
 | :--------------------------- | :------------ | :---------- | :------------ |
@@ -169,16 +169,47 @@ You can create a system domain to quickly start using branded links in your What
 
 ## Add Custom Domain
 
-Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
+Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns. 
 
-<Image align="center" alt="Custom Domain Creation" border={true} caption="Custom Domain Creation" src="https://files.readme.io/a96ff7313f6c1a553f982b0ce5f798cccb8d3e04a1eb43b0b076a40443785aa4-image.png" />
+### For WhatsApp/SMS & RCS
 
-To configure your custom domain, follow these steps:
+To add custom domain, perform the following steps:
+
+1.  Repeat steps _1_ through _3_ except that select _Domain Type_ as _Custom_.
+2. Click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately and DNS Records are generated to configure it on your Domain provider dashboard.
+
+<Image align="center" alt="Custom Domain Creation" border={true} caption="Custom Domain Creation" src="https://files.readme.io/7915e7432f0a7c1851decf9bff092a9b55eadf127645140bb2aa3ce4b7e2147a-Add_Custom_Domain_for_WhatsAppSMS__RCS.png" />
+
+## For Email
+
+To configure your custom domain, perform the following steps:
+
+1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
+
+2. Click **Add Domain**, select _WhatsApp_, and click **Continue**. The _Add Domain_ page opens.   
+
+3. Enter the following details:  _Nickname_ and _Domain_.
+
+   <Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/ece7c12d5494a02f09b09dfafe7d7f699078afcbd719d219dc54c92eea6b5147-Add_Custom_Domain_for_Email.png" />
+
+4. Click **Save & Generate DNS**. 
+
+<br />
+
+<br />
+
+<br />
+
+<br />
 
 1. Go to _Settings > Set Up > Branded Domain_.
+
 2. Click **+ Domain**, and select **Custom Domain**.
+
 3. **Add a Nickname**: Provide a name to identify the domain (for example, "Sales Campaign").
+
 4. Enter your preferred **Domain** (for example, links.yourbrand.com)
+
 5. Enter the **Adjoiner**: The adjoiner is a brand-specific path segment (for example, `/yourbrand`).
    * **URL structure** : `yourdomain/adjoiner/shortKey`
    * **Example**: `track.zipfood.com/clevertap/abc123`
@@ -189,11 +220,14 @@ To configure your custom domain, follow these steps:
        * End with an alphanumeric character (a–z or 0–9).
        * Cannot include special characters such as `@`, `_`, `&`, etc.
        * Must be unique per domain.
+
 6. Review the **URL Preview** to ensure that it appears as expected.
+
 7. Choose your **404 Error Page**:  
    The 404 error page configuration allows you to customize the page displayed when a link is expired or no longer valid. This ensures that even in error scenarios, your brand's consistency is maintained, offering a user-friendly experience.
    * **System**: CleverTap  provider [system error page](https://ct.io).
    * **Custom URL**: Provide your own error page URL.
+
 8. **Click Save**.The domain status will be set to **Pending Verification** immediately and DNS Records will be generated for you to configure with your Domain provider.
 
 > 📘 Note
