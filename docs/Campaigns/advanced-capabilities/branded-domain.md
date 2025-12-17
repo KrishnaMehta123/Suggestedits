@@ -246,9 +246,9 @@ After adding the domain, you can perform the folloeing operations by hovering ov
 
 ## FAQs
 
-(@Jithendra/Shreejith: IMO, we can remove a few FAQs here as most of it is already covered in the content. We can retain the best Practices & the Link Preview question. Rest is repeated information. I haven't reviewed the FAQs content, though.) 
+(@Jithendra/Shreejith: IMO, we can remove a few FAQs here as most of it is already covered in the content. We can retain the best Practices & the Link Preview question. Rest is repeated information. I haven't reviewed the FAQs content, though.)
 
-### What is a branded domain, and why should I set it up?  
+### What is a branded domain, and why should I set it up?
 
 A branded domain is a custom or customized URL that tracks clicks from your SMS, WhatsApp, or RCS campaigns. It helps build brand trust, improves click-through rates, and complies with regulations such as **DLT Whitelisting** (especially in India).
 
@@ -265,31 +265,31 @@ Example:
 * **Path-based**: `ct3.io/yourbrand/abc123`
 * **Query-based**: `ct3.io?key=yourbrand&sk=abc123`
 
-### **Can I use special characters in the adjoiner?**  
+### **Can I use special characters in the adjoiner?**
 
 No. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters such as `@`, `#`, `&`, and so on.
 
-### **Can I switch between path-based and query-based adjoiners?**  
+### **Can I switch between path-based and query-based adjoiners?**
 
 No, you must choose one format per domain — either **path-based** (`/yourbrand/`) or **query-based** (`?key=yourbrand`). You cannot mix both formats in a single domain configuration.
 
-### **What happens if a user clicks an expired link?**  
+### **What happens if a user clicks an expired link?**
 
 If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links.
 
-### **What is the default domain and how does it work?**  
+### **What is the default domain and how does it work?**
 
 The **Default Domain** is automatically used to wrap and track links in **SMS**, **RCS**, and **WhatsApp** campaigns (including template buttons). You can override the **Default Domain** per campaign by selecting a different domain from the dropdown when creating new campaigns.
 
-### **Will old campaigns use the new branded domain?**  
+### **Will old campaigns use the new branded domain?**
 
 No. Campaigns created before you set up a branded domain will continue using the **System Domain** unless you manually edit or recreate them with the new branded domain.
 
-### **How long does domain verification take?**  
+### **How long does domain verification take?**
 
 Custom domains require **DNS record configuration**. While CleverTap fetches DNS updates automatically, it may take up to **24 hours** for DNS changes to propagate globally. You can click the **refresh** icon to retry verification.
 
-### **I configured the DNS records, but my domain has still not been verified. What should I do?**  
+### **I configured the DNS records, but my domain has still not been verified. What should I do?**
 
 Check the following:
 
