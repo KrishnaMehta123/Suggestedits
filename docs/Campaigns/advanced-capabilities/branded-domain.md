@@ -19,6 +19,15 @@ Branded Domains in CleverTap help you apply your brand to tracking across Email,
 
 Using branded domains improves user trust and can boost engagement rates.
 
+# Domain Types
+
+CleverTap supports two types of branded domains:
+
+* **System Domain:** Provided by CleverTap, where you can customize the system-generated short links with your brand's prefix for easy integration without the need for DNS configuration.
+* **Custom Domain:** Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking.
+
+Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs.
+
 # Supported Domain Types by Channel
 
 Branded domain behavior varies by channel as follows:
@@ -27,8 +36,6 @@ Branded domain behavior varies by channel as follows:
 | ------------------------ | ----------------------- | ------------------------------------- |
 | **Email**                | Custom Domain only      | Tracked links and open-tracking pixel |
 | **SMS / WhatsApp / RCS** | System or Custom Domain | Short tracking links                  |
-
-#
 
 ## Manage Domains on CleverTap
 
@@ -43,11 +50,7 @@ CleverTap helps you add and manage branded domains for your campaigns. You can e
 
 This section provides information about creating a branded domain for your campaigns. You can choose between two types of domains:
 
-**System Domain:** Provided by CleverTap, where you can customize the system generated short links with your brand's prefix for easy integration without the need for DNS configuration.
-
-**Custom Domain:** Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking.
-
-Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs.
+<br />
 
 To create new System and Custom domains, follow the steps below:
 
@@ -113,7 +116,7 @@ To configure your custom domain, follow these steps:
      * Between the slashes, the string must:
        * Begin with a lowercase alphabetic character (a–z).
        * End with an alphanumeric character (a–z or 0–9).
-       * Cannot include special characters like `@`, `_`, `&`, etc.
+       * Cannot include special characters such as `@`, `_`, `&`, etc.
        * Must be unique per domain.
 6. Review the **URL Preview** to ensure that it appears as expected.
 7. Choose your **404 Error Page**:  
