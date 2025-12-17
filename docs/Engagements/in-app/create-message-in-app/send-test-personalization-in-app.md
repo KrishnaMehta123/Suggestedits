@@ -65,23 +65,19 @@ Search for a user profile from _Select from Profiles_. In this case, you can sea
 
 <br />
 
-<br />
-
-<br />
-
 <Image align="center" border={true} caption="Search Additional Users for Testing" src="https://files.readme.io/658964c28f6632b34ab661b66eb1a7832b10ae9296f34f7c75b7f46a6014b6ff-image.png" />
 
 <br />
 
 ### Test Devices
 
-You can further filter the messaging by devices for each selected user and send them a test message. The "Test Devices" section lists only devices on which your app is installed. So you test only on devices that can actually render the In-App message.
+You can further filter the messaging by devices for each selected user and send them a test message. The _Test Devices_ section lists only devices on which your app is installed. So you test only on devices that can actually render the In-App message.
 
 <br />
 
-<Image align="center" alt="Select Test Devices" border={true} caption="Select Test Devices" src="https://files.readme.io/6d04d8e1f53daf36afda0ce83973c135b524abda0bae88a4f649bb249fbc0cbd-image.png" />
-
 <br />
+
+<Image align="center" border={true} caption="Select Devices for Selected Profiles" src="https://files.readme.io/244d35c8029f378ac5816168bba4cb4184f58aed020666efbc827220d7df6c63-image.png" />
 
 After configuring all the required fields, you can preview the In-App campaign with personalized values for the selected user profile before sending the message. If you select multiple profiles, you can select the user from the list under the _Preview_ section on the right to test the rendering for each profile (refer to the following image).
 
