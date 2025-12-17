@@ -20,11 +20,15 @@ For example, marketers can send a personalized In-App message that highlights a 
 
 Once you are all done setting up the content of your campaign in the _What_ section, you have the option to send an In-App notification to any CleverTap user profile that you have marked as a _Test profile_.
 
-<Image align="center" alt="Preview & Test Popup " border={true} caption="Preview and Test Popup" src="https://files.readme.io/c60bdecc62f23f4d53aff611f15455e4014855a6ea3c00026910064ebcedcc79-2025-12-16_20-14-45.gif" />
+<Image align="center" border={false} caption="Preview and Test Popup" src="https://files.readme.io/b3dd6c42a81215da3451bda8fe61def4514507530a0768fb8e1f8120dd5df0c9-image.png" />
 
-> 📘 Note
->
-> The Preview & Test feature for sending tests on a real device requires minimum SDK versions (Android SDK v7.7.0 and CleverTap iOS SDK v7.4.0 or later). For lower SDK versions, send the campaign exclusively to a specific user for testing, then recreate and send it to your full audience. (@murtaza is this note better now?)
+<br />
+
+<Callout icon="📘" theme="info">
+  #### &#x20;Note
+
+  The Preview & Test feature for sending tests on a real device requires minimum SDK versions (Android SDK v7.7.0 and CleverTap iOS SDK v7.4.0 or later). For lower SDK versions, send the campaign exclusively to a specific user for testing, then recreate and send it to your full audience. (@murtaza is this note better now?)
+</Callout>
 
 # Test by Users and Devices
 
@@ -34,9 +38,9 @@ Select the _Notification channel_ to send your test message. You can test your m
 
 With this option, you can focus your test on specific devices. In the _Send test on_ section, click _Device tokens_.  The Android and iOS device token sections are displayed.  This is useful when a user has multiple devices, and you want to validate the In-App experience on specific form factors (for example, phone vs. tablet) or operating systems.
 
-<Image align="center" border={true} caption="Test by Device Tokens" src="https://files.readme.io/6aa61633450e919bb48083b7c179c924781f6fb0b8ebc8cb2749ce4a26ea2807-image.png" />
-
 <br />
+
+<Image align="center" border={true} caption="Test by Device Tokens" src="https://files.readme.io/840b7a81f738f2a8f77e5c04c4ced6eb18caa7e0f624cb52b0ac6fce69a29425-image.png" />
 
 ## By User
 
@@ -49,7 +53,9 @@ CleverTap provides the following options to select the users to send a personali
 
 You can select multiple [profiles that are marked as test profiles](doc:user-profiles#mark-a-user-profile-as-a-test-profile) and send a test In-App message to them. Test profiles are ideally your internal users.
 
-<Image align="center" alt="Select Test Profiles" border={true} caption="Select Test Profiles" src="https://files.readme.io/a43124a1b696fbab0cca6d91c0105397d7e44d26a62615b0a3294a04c90cf4ee-image.png" />
+<br />
+
+<Image align="center" border={false} caption="Select Test Profiles" src="https://files.readme.io/46023949c5e927e96692bfa9b04ebd42de857a51a3f9edcfa19e16e3ab304850-image.png" />
 
 <br />
 
@@ -57,15 +63,19 @@ You can select multiple [profiles that are marked as test profiles](doc:user-pro
 
 Search for a user profile from _Select from Profiles_. In this case, you can search for any recipient profile that is already present on your dashboard and send them a test In-App message by email address, CleverTap ID, or identity.
 
-<Image align="center" alt="Search Users for Testing" border={true} caption="Search Users for Testing" src="https://files.readme.io/124b167cc46c04717ff61ca624f2e8c7c5c5297f37036444c2972cb6f10bc7d8-image.png" />
+<br />
 
 <br />
+
+<br />
+
+<Image align="center" border={true} caption="Search Additional Users for Testing" src="https://files.readme.io/658964c28f6632b34ab661b66eb1a7832b10ae9296f34f7c75b7f46a6014b6ff-image.png" />
 
 <br />
 
 ### Test Devices
 
-You can further filter the messaging by devices for each selected user and send them a test message. The _Test Devices_ section lists only devices where your app is installed. So you test only on devices that can actually render the In-App message.
+You can further filter the messaging by devices for each selected user and send them a test message. The "Test Devices" section lists only devices on which your app is installed. So you test only on devices that can actually render the In-App message.
 
 <br />
 
