@@ -1,7 +1,7 @@
 ---
 title: Branded Domain
 excerpt: >-
-  Learn how to configure system and custom domains to generate branded tracking
+  Learn how to Configure system and custom domains to generate branded tracking
   links to boost engagement.
 deprecated: false
 hidden: true
@@ -217,40 +217,33 @@ To configure your custom domain, perform the following steps:
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
 3. Click the **Refresh** icon next to your domain. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
 
-## Manage Domains on CleverTap
+# Manage Branded Domains
 
-CleverTap helps you add and manage branded domains for your campaigns. You can either use a system domain provided by CleverTap that is customizable with your brand prefix, or a custom domain, which allows you to configure your own subdomain for complete branding control. Once your domain is added, you can manage various settings, including selecting a default domain, customizing a 404 error page, and verifying the domain’s status.
+The Domain Listing page allows you to view and manage all your configured domains. You can easily edit domain settings, view DNS records, and make any necessary updates to check if your domains are properly set up and functioning.
 
-1. **Add Domain**: This option allows you to either create a system domain provided by CleverTap or configure a custom domain for your brand. The system domain can be customized with your brand prefix, while the custom domain lets you use your own subdomain for complete brand visibility.
-   * **System Domain**: A domain provided by CleverTap (such as `ct3.io`), which can be customized with a brand prefix without the need for DNS configuration.
-   * **Custom Domain**: A fully custom subdomain (such as`links.yourbrand.com`) that you configure via your DNS provider to have complete control over the branding and tracking.
-2. **Domain Listing and Operations**: Once your domain is set up, you can manage it by editing settings such as choosing a default domain, setting a custom 404 error page, or verifying the domain status.
+Go to _Settings_ > _Set Up_ > _Branded Domains_. You can see a list of all your domains (system or custom), including the following details:
 
-# Domain Listing
+<Image align="center" border={true} caption="Branded Domains Page" src="https://files.readme.io/2fbb49c4e3a18c0744338f8f2db30ae4f28a3babf5c0f3eb1289f175dc099f41-Branded_Domain_Listing_Page.png" />
 
-The Domain Listing section allows you to view and manage all your configured domains. You can easily edit domain settings, view DNS records, and make any necessary updates to check if your domains are properly set up and functioning.
+| Column            | Description                                                                                                                |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| _Nickname_        | A user-defined name for identifying the domain (for example, "Sales Campaign").                                            |
+| _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`, `track.yourdomain.com`). |
+| _Created By_      | The user who created the domain.                                                                                           |
+| _Status_          | The current status of the domain  can be **Active** or **Pending Verification**.                                           |
+| _Last Updated On_ | The date when the domain settings were last updated.                                                                       |
 
-Go to _Settings > Set Up > Branded Domain_. You’ll see a list of all your domains (system or custom), including the following details:
+After adding the domain, you can perform the folloeing operations by hovering over the branded domain:
 
-| Field             | Description                                                                                        |
-| ----------------- | -------------------------------------------------------------------------------------------------- |
-| _Domain Nickname_ | A user-defined name for identifying the domain (for example, "Sales Campaign").                    |
-| _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`). |
-| _Created By_      | The user who created the domain.                                                                   |
-| _Status_          | The current status of the domain  can be **Active** or **Pending Verification**.                   |
-| _Last Updated On_ | The date when the domain settings were last updated.                                               |
+<Image align="center" border={true} caption="Manage Branded Domains" src="https://files.readme.io/a4ad7fef6b3c58d079a57876f5c3d45be43447b1298499d715bdf28d0e2dbafd-Manage_Branded_Domains.gif" />
 
-## Key Domain Operations
+* **Set as Default**: You can set any verified domain as the default. This domain is automatically used for wrapping and tracking links in SMS, WhatsApp, RCS, and Email campaigns (including template buttons). You can override it per campaign when creating new ones.
 
-Once you’ve added a domain, you can perform various operations on it:
+* **Edit**: For each domain (except system defaults), you can set a custom 404 error page. This page is displayed if users click on expired links (older than 7 days).
 
-* **Set Default Domain**: You can set any verified domain as the default. This domain will automatically be used for wrapping and tracking links in SMS, WhatsApp, and RCS campaigns (including template buttons). You can override it per campaign while creating new ones.
+* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the icon next to the domain to retry.
 
-* **Edit Domains**: For each domain (except system defaults), you can set a custom 404 error page. This page is displayed if users click on expired links (older than 7 days).
-
-* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the refresh icon next to the domain to retry.
-
-* **View DNS Records:** You can  access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
+* **View DNS Records**: You can  access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
 
 ## FAQs
 
