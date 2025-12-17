@@ -27,7 +27,7 @@ Once you are all done setting up the content of your campaign in the _What_ sect
 <Callout icon="📘" theme="info">
   #### &#x20;Note
 
-  The Preview & Test feature for sending tests on a real device requires minimum SDK versions (Android SDK v7.7.0 and CleverTap iOS SDK v7.4.0 or later). For lower SDK versions, send the campaign exclusively to a specific user for testing, then recreate and send it to your full audience. (@murtaza is this note better now?)
+  The Preview & Test feature for sending tests on a real device requires minimum SDK versions (Android SDK v7.7.0 and CleverTap iOS SDK v7.4.0 or later). For lower SDK versions, send the campaign exclusively to a specific user for testing, then recreate and send it to your full audience. 
 </Callout>
 
 # Test by Users and Devices
@@ -79,20 +79,22 @@ You can further filter the messaging by devices for each selected user and send 
 
 <Image align="center" border={true} caption="Select Devices for Selected Profiles" src="https://files.readme.io/244d35c8029f378ac5816168bba4cb4184f58aed020666efbc827220d7df6c63-image.png" />
 
-After configuring all the required fields, you can preview the In-App campaign with personalized values for the selected user profile before sending the message. If you select multiple profiles, you can select the user from the list under the _Preview_ section on the right to test the rendering for each profile (refer to the following image).
-
-<Image align="center" alt="Preview Users from List" border={true} caption="Preview Users from List (@murtaza, need  a preview with the list of users in the right pane. It should show the personalized values on the screen)" src="https://files.readme.io/d59c5de6d18c5449d84805a7328c8c6449a71fedd2b68af538dd7b00d20dac2f-image.png" />
+After configuring all the required fields, you can preview the In-App campaign with personalized values for the selected user profile before sending the message. If you select multiple profiles, you can select the user from the list under the _Preview_ section on the right to test the rendering for each profile.
 
 Consider a scenario where your In-App message includes profile personalization, meaning you want to send an In-App message to each user based on their native language.  You can test the rendering of this message for each language based on the selected user in the list. This also allows you to detect issues early; for example, the message may exceed the character limit in German, but it displays correctly in other languages.
 
 ### Test Event Personalization
 
-The events selected in your message will be displayed here. You can change the values to preview the message with the updated values. For example (@murtaza need a screenshot here with events value change)
+The events selected in your message will be displayed here. You can change the values to preview the message with the updated values. For example, change the discount value and preview it.
 
-(@murtaza, need a good image for event personalization with a good preview in demo env)
+<Image align="center" border={true} caption="Change and Preview Event Values" src="https://files.readme.io/078b3be86763413d9731b255816e2a21555048097e22e4b1c898195385f7a00b-image.png" />
+
+<br />
 
 ### Test Custom User Personalization
 
 If the user you want to test is not listed in the preview section, or if you are unsure who matches your criteria, enter the email address, CleverTap ID, or identity of a profile for which you have the details. This will give you an instant preview of your message with the applied personalization.
 
-(@murtaza, need a good image for custom user personalization with a good preview in demo env)
+<Image align="center" border={true} caption="Change and Preview User Profile Values" src="https://files.readme.io/2d070f6c7d5603825efd1ca8354506cdbf9570cebe9bece3b52004f34e40c22c-image.png" />
+
+<br />
