@@ -1,6 +1,8 @@
 ---
 title: Branded Domain
-excerpt: Learn how to leverage Branded Domains to create engaging customer experiences.
+excerpt: >-
+  Learn how to configure system and custom domains to generate branded tracking
+  links to boost engagement.
 deprecated: false
 hidden: true
 metadata:
@@ -28,7 +30,14 @@ CleverTap supports two types of branded domains:
 
 Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs.
 
-# Supported Domain Types by Channel
+# Add Domain
+
+This section provides information about creating a branded system and a custom domain for your campaigns. 
+
+You can choose between two domain types:
+
+* **System Domain**: CleverTap-provided domain for SMS, WhatsApp, and RCS.
+* **Custom Domain**: Your own subdomain for Email, SMS, WhatsApp, and RCS.
 
 Branded domain behavior varies by channel as follows:
 
@@ -37,24 +46,7 @@ Branded domain behavior varies by channel as follows:
 | **Email**                | Custom Domain only      | Tracked links and open-tracking pixel |
 | **SMS / WhatsApp / RCS** | System or Custom Domain | Short tracking links                  |
 
-## Manage Domains on CleverTap
-
-CleverTap helps you add and manage branded domains for your campaigns. You can either use a system domain provided by CleverTap that is customizable with your brand prefix, or a custom domain, which allows you to configure your own subdomain for complete branding control. Once your domain is added, you can manage various settings, including selecting a default domain, customizing a 404 error page, and verifying the domain’s status.
-
-1. **Add Domain**: This option allows you to either create a system domain provided by CleverTap or configure a custom domain for your brand. The system domain can be customized with your brand prefix, while the custom domain lets you use your own subdomain for complete brand visibility.
-   * **System Domain**: A domain provided by CleverTap (such as `ct3.io`), which can be customized with a brand prefix without the need for DNS configuration.
-   * **Custom Domain**: A fully custom subdomain (such as`links.yourbrand.com`) that you configure via your DNS provider to have complete control over the branding and tracking.
-2. **Domain Listing and Operations**: Once your domain is set up, you can manage it by editing settings such as choosing a default domain, setting a custom 404 error page, or verifying the domain status.
-
-## Add Domain
-
-This section provides information about creating a branded domain for your campaigns. You can choose between two types of domains:
-
-<br />
-
-To create new System and Custom domains, follow the steps below:
-
-## Add a System Domain
+## Add System Domain
 
 You can create a system domain to quickly start using branded links without DNS configuration. Follow these steps:
 
@@ -96,7 +88,7 @@ You can create a system domain to quickly start using branded links without DNS 
    * **Custom URL**: Provide your own error page URL.
 8. **Click Save**. The domain status will be set to **Active** immediately.
 
-## Add a Custom Domain
+## Add Custom Domain
 
 Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
@@ -162,6 +154,15 @@ Once your DNS records are saved:
 2. Click the **Refresh** icon next to your domain.
 
 DNS propagation may take up to 24 hours. If verification fails, check your DNS configuration with your domain provider. If the settings are correct, try refreshing after some time.
+
+## Manage Domains on CleverTap
+
+CleverTap helps you add and manage branded domains for your campaigns. You can either use a system domain provided by CleverTap that is customizable with your brand prefix, or a custom domain, which allows you to configure your own subdomain for complete branding control. Once your domain is added, you can manage various settings, including selecting a default domain, customizing a 404 error page, and verifying the domain’s status.
+
+1. **Add Domain**: This option allows you to either create a system domain provided by CleverTap or configure a custom domain for your brand. The system domain can be customized with your brand prefix, while the custom domain lets you use your own subdomain for complete brand visibility.
+   * **System Domain**: A domain provided by CleverTap (such as `ct3.io`), which can be customized with a brand prefix without the need for DNS configuration.
+   * **Custom Domain**: A fully custom subdomain (such as`links.yourbrand.com`) that you configure via your DNS provider to have complete control over the branding and tracking.
+2. **Domain Listing and Operations**: Once your domain is set up, you can manage it by editing settings such as choosing a default domain, setting a custom 404 error page, or verifying the domain status.
 
 # Domain Listing
 
