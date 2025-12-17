@@ -23,8 +23,8 @@ Using branded domains improves user trust and can boost engagement rates.
 
 CleverTap supports two types of branded domains:
 
-* **System Domain:** Provided by CleverTap, where you can customize the system-generated short links with your brand's prefix for easy integration without the need for DNS configuration.
-* **Custom Domain:** Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking.
+* **System Domain**: Provided by CleverTap, where you can customize the system-generated short links with your brand's prefix for easy integration without the need for DNS configuration.
+* **Custom Domain**: Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking.
 
 Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs.
 
