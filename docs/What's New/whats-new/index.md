@@ -25,8 +25,6 @@ metadata:
     - ' product changelog'
   robots: index
 ---
-<br />
-
 Stay updated with CleverTap's latest feature releases, cutting-edge feature enhancements, and performance enhancements to help you optimize your experience.
 
 View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/release-notes-2024).
@@ -168,6 +166,36 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 # 2025
 
 ## December
+
+<HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="whatsapp-template-cloning-and-enhanced-editing">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#whatsapp-template-cloning-and-enhanced-editing"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+   </div>
+    <h3 class="release-note-heading">WhatsApp Template Cloning and Enhanced Editing</h3>
+<div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge beta">BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now create and manage WhatsApp Direct message templates faster with new cloning and rich editing options. These enhancements help you maintain consistency across WhatsApp Business Accounts (WABAs) and reduce time spent recreating or reformatting templates.</p>
+
+    <p>With these enhancements, you can:</p>
+    <p>
+      <ul>
+        <li>Clone templates easily by duplicating any existing template within the same or another WABA configured with WhatsApp Direct. All fields are pre-filled, so you can rename, edit content, and resubmit for approval without rebuilding the template.</li>
+        <li>Edit templates with rich formatting using bold, italics, strikethrough, and emojis to create clear, expressive messages aligned with WhatsApp formatting rules.</li>
+      </ul>
+    </p>
+<p>For more information, refer to <a href="https://docs.clevertap.com/docs/whatsapp-message-templates" target="_blank">WhatsApp Message Templates.</a></p>
+
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
 
 <HTMLBlock>{`
 <div class="release-note article" data-category="security-project-settings" id="pii-tokenization">
