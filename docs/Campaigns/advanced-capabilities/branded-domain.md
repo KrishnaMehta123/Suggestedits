@@ -153,7 +153,7 @@ You can create a system domain to quickly start using branded links in your What
 
    <br />
 
-4. Click **Save**. The domain status is be set to **Active** immediately.
+4. Click **Save**. The domain status is set to **Active** immediately.
 
 **System Domain and Account Region Mapping**
 
@@ -214,7 +214,7 @@ To configure your custom domain, perform the following steps:
 `.
 
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
-3. Click the **Refresh** icon next to your domain. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
+3. Click the ![](https://files.readme.io/c637417f8cac230dcf67387780cea85c586b965f8272fea35db6d1d6141c1ecb-Screenshot_2025-12-17_at_9.37.30_PM.png) icon next to your domain. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
 
 # Manage Branded Domains
 
@@ -240,53 +240,64 @@ After adding the domain, you can perform the folloeing operations by hovering ov
 
 * **Edit**: For each domain (except system defaults), you can set a custom 404 error page. This page is displayed if users click on expired links (older than 7 days).
 
-* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the icon next to the domain to retry.
+* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the ![](https://files.readme.io/c5163a3fa40adb8519750791f8de9e7a6736bfe7a28cdbe65c5de3281357911f-Screenshot_2025-12-17_at_9.37.30_PM.png) icon next to the domain to retry.
 
-* **View DNS Records**: You can  access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
+* **View DNS Records**: You can access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
 
 ## FAQs
 
-1. **What is a branded domain, and why should I set it up?**  
-   A branded domain is a custom or customized URL that tracks clicks from your SMS, WhatsApp, or RCS campaigns. It helps build brand trust, improves click-through rates, and complies with regulations like **DLT whitelisting** (especially in India).
+(@Jithendra/Shreejith: IMO, we can remove a few FAQs here as most of it is already covered in the content. We can retain the best Practices & the Link Preview question. Rest is repeated information. I haven't reviewed the FAQs content, though.) 
 
-2. **What’s the difference between a system domain and a custom domain?**
+### What is a branded domain, and why should I set it up?  
+
+A branded domain is a custom or customized URL that tracks clicks from your SMS, WhatsApp, or RCS campaigns. It helps build brand trust, improves click-through rates, and complies with regulations such as **DLT Whitelisting** (especially in India).
+
+### What’s the difference between a system domain and a custom domain?
 
 * **System Domain**: Provided by CleverTap (for example, `ct3.io`) and ready to use. You can customize the path (`/brand/`) or query parameter (`?key=brand`) to brand it.
 * **Custom Domain**: Your own subdomain (for example, `links.yourbrand.com`) that you configure via your domain provider with DNS settings.
 
-3. **What is an Adjoiner, and why is it needed?**  
-   An **Adjoiner** is the part of the URL that appears between the domain and the short key. It adds brand identity and structure to the tracking URL. The adjoiner is required to create a valid branded domain URL.  
-   Example:
+### What is an Adjoiner, and why is it needed?
+
+An **Adjoiner** is the part of the URL that appears between the domain and the short key. It adds brand identity and structure to the tracking URL. The adjoiner is required to create a valid branded domain URL.  
+Example:
 
 * **Path-based**: `ct3.io/yourbrand/abc123`
 * **Query-based**: `ct3.io?key=yourbrand&sk=abc123`
 
-4. **Can I use special characters in the adjoiner?**  
-   No. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters like `@`, `#`, `&`, and so on.
+### **Can I use special characters in the adjoiner?**  
 
-5. **Can I switch between path-based and query-based adjoiners?**  
-   No, you must choose one format per domain — either **path-based** (`/yourbrand/`) or **query-based** (`?key=yourbrand`). You cannot mix both formats in a single domain configuration.
+No. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters such as `@`, `#`, `&`, and so on.
 
-6. **What happens if a user clicks an expired link?**  
-   If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links.
+### **Can I switch between path-based and query-based adjoiners?**  
 
-7. **What is the default domain and how does it work?**  
-   The **Default Domain** is automatically used to wrap and track links in **SMS**, **RCS**, and **WhatsApp** campaigns (including template buttons). You can override the **Default Domain** per campaign by selecting a different domain from the dropdown when creating new campaigns.
+No, you must choose one format per domain — either **path-based** (`/yourbrand/`) or **query-based** (`?key=yourbrand`). You cannot mix both formats in a single domain configuration.
 
-8. **Will old campaigns use the new branded domain?**  
-   No. Campaigns created before you set up a branded domain will continue using the **System Domain** unless you manually edit or recreate them with the new branded domain.
+### **What happens if a user clicks an expired link?**  
 
-9. **How long does domain verification take?**  
-   Custom domains require **DNS record configuration**. While CleverTap fetches DNS updates automatically, it may take up to **24 hours** for DNS changes to propagate globally. You can click the **refresh** icon to retry verification.
+If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links.
 
-10. **I configured the DNS records, but my domain has still not been verified. What should I do?**  
-    Check the following:
+### **What is the default domain and how does it work?**  
+
+The **Default Domain** is automatically used to wrap and track links in **SMS**, **RCS**, and **WhatsApp** campaigns (including template buttons). You can override the **Default Domain** per campaign by selecting a different domain from the dropdown when creating new campaigns.
+
+### **Will old campaigns use the new branded domain?**  
+
+No. Campaigns created before you set up a branded domain will continue using the **System Domain** unless you manually edit or recreate them with the new branded domain.
+
+### **How long does domain verification take?**  
+
+Custom domains require **DNS record configuration**. While CleverTap fetches DNS updates automatically, it may take up to **24 hours** for DNS changes to propagate globally. You can click the **refresh** icon to retry verification.
+
+### **I configured the DNS records, but my domain has still not been verified. What should I do?**  
+
+Check the following:
 
 * **DNS records** are entered exactly as shown in the CleverTap dashboard.
 * You’ve entered only the required prefix in the **Key** field (for example, short, not short.clevertap.com)
 * Wait up to 24 hours, then try refreshing again
 
-11. **What are the best practices for adding a branded domain in CleverTap?**
+### What are the best practices for adding a branded domain in CleverTap?
 
 Here are some tips to ensure your branded domain setup is effective and compliant:
 
@@ -320,7 +331,7 @@ Here are some tips to ensure your branded domain setup is effective and complian
 > * If your brand is **MobiKart**, consider domains like **mobkt.in**, **mobik.in**, or **mkrt.co**.
 > * If your brand is **FreshBite**, try **frsbt.com**, **frbite.in**, etc.
 
-11. When will a link preview be shown for my branded domain link?
+### When will a link preview be shown for my branded domain link?
 
 A link preview is generated when the messaging platform (such as SMS, WhatsApp, or RCS) scans the URL included in your message and detects the required Open Graph metadata on the destination page. The following tags must be present and properly configured in the page’s HTML:
 
