@@ -86,26 +86,28 @@ The _Stopped_ state indicates that the journey has been permanently deactivated.
 
 ## Automatic Journey Stoppage
 
-CleverTap can automatically identify and stop journeys that are no longer active. This helps maintain performance and optimize system resources.
+CleverTap can automatically identify and stop journeys that are in the Completed State, that is, when no new users can enter, and all existing users have exited. This helps maintain performance and optimize system resources.
 
-* **Past Behavior (PBS) Journeys**
+**Journey moves to a Completed State when the user entry for the journey finishes**, based on its configuration. This can happen in the following scenarios:
 
-  A PBS Journey is typically designed to target users based on historical actions or custom lists. Once these predefined conditions are met, no new users can qualify. A PBS Journey is considered inactive and eligible for stoppage when:
+* The journey is configured as a One-Time Entry journey.
+* The journey is a recurring PBS journey with a defined entry end date.
+* The journey is a Live journey with a defined end date.
 
-  * The **entry criteria** have been fully processed. For example, all users from the selected past behavior segment have entered the journey.
-  * The **entry end date** (if defined) has passed.
-  * All qualified users have **completed their journey paths or timed out** within the defined nodes.
+In all these cases, once the entry closes, no new users can qualify for the journey.
 
-  When these conditions are met, the journey automatically transitions to the **Stopped** state, ensuring completed PBS campaigns no longer occupy active processing slots.
-* **Live Journeys**
+### Criteria for Automatic Journey Stoppage
 
-  Live Journeys continuously evaluate user behavior in real time and allow new users to qualify based on triggers or conditions. A Live Journey is considered inactive when:
+A journey in the Completed state becomes eligible for automatic stoppage when all users who entered the journey have fully exited it. This means: 
 
-  * The defined **entry period** or **end date** has passed.
-  * The journey has **no recent user entries or movement** for a sustained period.
-  * All existing users in the flow have **completed or timed out**, with no pending scheduled actions.
+* All users have:
+  * Reached an end node, or
+  * Completed all applicable paths, or
+  * Timed out from the Delay nodes.
+* There are no users currently active in any journey node.
+* No pending scheduled actions remain for any user.
 
-  When these conditions are met, CleverTap marks the journey as inactive and automatically transitions it to the **Stopped** state.
+Once these conditions are met, CleverTap automatically transitions the journey from **Completed** to **Stopped**, ensuring completed journeys no longer occupy active processing slots.
 
 Journeys that stop automatically behave the same as those that are stopped manually; no new users can enter, and existing users exit over time.
 
