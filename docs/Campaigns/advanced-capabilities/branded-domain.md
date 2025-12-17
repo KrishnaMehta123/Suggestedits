@@ -32,14 +32,7 @@ Both options allow you to define specific settings, such as the URL structure an
 
 # Add Domain
 
-This section provides information about creating a branded system and a custom domain for your campaigns. 
-
-You can choose between two domain types:
-
-* **System Domain**: CleverTap-provided domain for SMS, WhatsApp, and RCS.
-* **Custom Domain**: Your own subdomain for Email, SMS, WhatsApp, and RCS.
-
-Branded domain behavior varies by channel as follows:
+This section provides information about creating a branded system and a custom domain for your campaigns. Branded domain behavior varies by channel as follows:
 
 | Channel                  | Supported Domain Types  | What Gets Branded                     |
 | ------------------------ | ----------------------- | ------------------------------------- |
@@ -48,45 +41,131 @@ Branded domain behavior varies by channel as follows:
 
 ## Add System Domain
 
-You can create a system domain to quickly start using branded links without DNS configuration. Follow these steps:
+You can create a system domain to quickly start using branded links in your WhatsApp camapigns without DNS configuration. To add a system domain, perform the following steps:
 
-<Image align="center" alt="System Domain Creation" border={true} caption="System Domain Creation" src="https://files.readme.io/9bc74aeb0814633f881aa3b1ddaadca049e395bb61df7f9f55379bad0c76a63c-image.png" width="75% " />
+1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 
-1. Go to _Settings > Set Up > Branded Domain_.
+2. Click **Add Domain**, select *WhatsApp*, and click **Continue**. The _Add Domain_ page opens.
 
-2. Click **+ Domain**, and select **System Domain**.
+3. Enter the following details:
 
-3. **Add a Nickname**: Provide a name to identify the domain (for example, "Sales Campaign").
+   <Image align="center" alt="System Domain Creation" border={true} caption="System Domain Creation" src="https://files.readme.io/ca255b39acc146166fcf684f36a410fa508fc0c33d442e82d50fb7beeb0d07f0-Add_System_Domain.png" />
 
-4. The domain is auto-filled based on your account region. Below is the list of account regions and system domains mapping.
+   <br />
 
-   | Dashboard URL                | System Domain | Region      | Example URL   |
-   | :--------------------------- | :------------ | :---------- | :------------ |
-   | eu1.dashboard.clevertap.com  | ct1.io        | EU          | ct1.io/25AlJz |
-   | in1.dashboard.clevertap.com  | ct3.io        | IN          | ct3.io/52KlAz |
-   | sg1.dashboard.clevertap.com  | ct4.io        | SG          | ct4.io/25ZlAz |
-   | us1.dashboard.clevertap.com  | ct5.io        | US          | ct5.io/52ZlKa |
-   | mec1.dashboard.clevertap.com | ct8.io        | Middle East | ct8.io/25ZaJz |
-   | aps3.dashboard.clevertap.com | ct9.io        | Indonesia   | ct9.io/52KJz  |
+   <Table align={["left","left"]}>
+     <thead>
+       <tr>
+         <th>
+           Field
+         </th>
 
-5. Enter the **Adjoiner**: The adjoiner is a brand-specific path segment that connects the domain and short key, helping personalize your URLs. (for example, `/yourbrand`, `/clevertap/`).
+         <th>
+           Description
+         </th>
+       </tr>
+     </thead>
 
-* **URL structure** : `domain/adjoiner/shortKey`
-* **Example**: `ct3.io/clevertap/abc123`
-* **Valid Adjoiner Rules:**
-  * Must start and end with a slash (`/`). For example, `/yourbrand/`, `/promo2024/`.
-  * Between the slashes you can add the string. The string must:
-    * Begin with a lowercase alphabetic character (a–z).
-    * End with an alphanumeric character (a–z or 0–9).
-    * Cannot include special characters such as `@`, `_`, `&`, and so on.
-    * Must be unique per domain.
+     <tbody>
+       <tr>
+         <td>
+           Nickname
+         </td>
 
-6. Review the **URL Preview** to ensure that it appears as expected.
-7. Choose your **404 Error Page**:  
-   The 404 error page configuration allows you to customize the page displayed when a link is expired or no longer valid. This ensures that even in error scenarios, your brand's consistency is maintained, offering a user-friendly experience.
-   * **System**: CleverTap  provider [system error page](https://ct.io).
-   * **Custom URL**: Provide your own error page URL.
-8. **Click Save**. The domain status will be set to **Active** immediately.
+         <td>
+           Provide a name to identify the domain (for example, "Sales Campaign").
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           Channel
+         </td>
+
+         <td>
+           The channel where this branded domain will be used.  
+
+           * **Email**: Used for branded links and open-tracking pixels.
+           * **WhatsApp/SMS & RCS**: Used for branded click-tracking links in messages.
+
+             
+           **Note**: Email campaigns support only Custom Domains.
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           Domain Type
+         </td>
+
+         <td>
+           The type of branded domain you’re adding.
+
+           * **System Domain**: A CleverTap-provided domain that can be customized with your brand prefix. No DNS setup required.
+           * **Custom Domain**: Your own subdomain (for example, links.yourbrand.com) that requires DNS configuration.
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           Domain
+         </td>
+
+         <td>
+           The base domain used for branding and tracking.
+
+           * For **System Domains**, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping. (@Amrita: add the cross-reference.) 
+           * For **Custom Domains**, enter your own subdomain.The domain is auto-filled based on your account region. 
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           Branded URL Schema
+         </td>
+
+         <td>
+           Defines how the branded tracking URL is structured:   
+
+           URL Structure: `domain/adjoiner/Shortkey`
+
+           This includes the following:  
+
+           * **Domain**: 
+           * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs.
+           * **Shortkey**: A unique, auto-generated code added to the branded domain, helping track clicks on links within campaigns. 
+
+
+           For example, `ct3.io/clevertap/abc123`
+         </td>
+       </tr>
+
+       <tr>
+         <td>
+           Error Page
+         </td>
+
+         <td>
+           The page users see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency. Click Preview Error Page to view and verify the error before the domain becomes active.
+         </td>
+       </tr>
+     </tbody>
+   </Table>
+
+   <br />
+
+4. Click **Save**. The domain status is be set to **Active** immediately.
+
+### System Domain and Account Region Mapping
+
+| Dashboard URL                | System Domain | Region      | Example URL   |
+| :--------------------------- | :------------ | :---------- | :------------ |
+| eu1.dashboard.clevertap.com  | ct1.io        | EU          | ct1.io/25AlJz |
+| in1.dashboard.clevertap.com  | ct3.io        | IN          | ct3.io/52KlAz |
+| sg1.dashboard.clevertap.com  | ct4.io        | SG          | ct4.io/25ZlAz |
+| us1.dashboard.clevertap.com  | ct5.io        | US          | ct5.io/52ZlKa |
+| mec1.dashboard.clevertap.com | ct8.io        | Middle East | ct8.io/25ZaJz |
+| aps3.dashboard.clevertap.com | ct9.io        | Indonesia   | ct9.io/52KJz  |
 
 ## Add Custom Domain
 
