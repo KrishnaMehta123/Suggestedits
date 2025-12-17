@@ -1,7 +1,7 @@
 ---
 title: Branded Domain
 excerpt: >-
-  Learn how to Configure system and custom domains to generate branded tracking
+  Learn how to configure system and custom domains to generate branded tracking
   links to boost engagement.
 deprecated: false
 hidden: true
@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns. 
+Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns.
 
 * For **SMS**, **WhatsApp**, and **RCS** campaigns, branded domains are used to generate short, trackable links.
 * For **Email**, branded domains are used to track email open-tracking pixel.
@@ -45,7 +45,7 @@ You can create a system domain to quickly start using branded links in your What
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 
-2. Click **Add Domain**, select *WhatsApp*, and click **Continue**. The _Add Domain_ page opens.
+2. Click **Add Domain**, select _WhatsApp_, and click **Continue**. The _Add Domain_ page opens.
 
 3. Enter the following details:
 
@@ -83,12 +83,12 @@ You can create a system domain to quickly start using branded links in your What
          </td>
 
          <td>
-           The channel where this branded domain will be used.  
+           The channel where this branded domain will be used.
 
            * **Email**: Used for branded links and open-tracking pixels.
+
            * **WhatsApp/SMS & RCS**: Used for branded click-tracking links in messages.
 
-             
            **Note**: Email campaigns support only Custom Domains.
          </td>
        </tr>
@@ -125,16 +125,15 @@ You can create a system domain to quickly start using branded links in your What
          </td>
 
          <td>
-           Defines how the branded tracking URL is structured:   
+           Defines how the branded tracking URL is structured:
 
            URL Structure: `domain/adjoiner/Shortkey`
 
-           This includes the following:  
+           This includes the following:
 
-           * **Domain**: 
+           * **Domain**:
            * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs. (@Shreejith/Jithendra: removed validation rules, as they will be shown to the users on the dashboard.)
-           * **Shortkey**: A unique, auto-generated code added to the branded domain, helping track clicks on links within campaigns. 
-
+           * **Shortkey**: A unique, auto-generated code added to the branded domain, helping track clicks on links within campaigns.
 
            For example, `ct3.io/clevertap/abc123`
          </td>
@@ -169,7 +168,7 @@ You can create a system domain to quickly start using branded links in your What
 
 ## Add Custom Domain
 
-Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns. 
+Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
 > 📘 Custom Domain
 >
@@ -179,7 +178,7 @@ Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand vi
 
 To add custom domain, perform the following steps:
 
-1.  Repeat steps _1_ through _3_ under Add System Domain. except that select _Domain Type_ as _Custom_.
+1. Repeat steps _1_ through _3_ under Add System Domain. except that select _Domain Type_ as _Custom_.
 2. Click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately and DNS Records are generated to configure it on your Domain provider dashboard.
 
 <Image align="center" alt="Custom Domain Creation" border={true} caption="Custom Domain Creation" src="https://files.readme.io/7915e7432f0a7c1851decf9bff092a9b55eadf127645140bb2aa3ce4b7e2147a-Add_Custom_Domain_for_WhatsAppSMS__RCS.png" />
@@ -190,7 +189,7 @@ To configure your custom domain, perform the following steps:
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 
-2. Click **Add Domain**, select _WhatsApp_, and click **Continue**. The _Add Domain_ page opens.   
+2. Click **Add Domain**, select _WhatsApp_, and click **Continue**. The _Add Domain_ page opens.
 
 3. Enter the following details:  _Nickname_ and _Domain_.
 
@@ -202,9 +201,9 @@ To configure your custom domain, perform the following steps:
 
 ### Verify Custom Domain
 
-(@Shreejith, does this apply for Email as well. If yes, I will add a cross-reference to this section.)
+(@Shreejith, This applies to Email as well, so adding a cross-reference to this section.)
 
-1. Go to the domain provider dashboard and configure the following DNS records. When configuring the DNS records with your domain provider, **enter only the prefix part** in the **Name** field. The prefix is the portion before the main domain starts. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.short.clevertap.com`, enter `_c58ebcb5c******5f03bb6b174349.short` in the Name field.  
+1. Go to the domain provider dashboard and configure the following DNS records. When configuring DNS records with your domain provider, enter only the prefix part in the Name field. The prefix is the part that precedes the main domain. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.short.clevertap.com`, enter `_c58ebcb5c******5f03bb6b174349.short` in the Name field.
 
 | Type  | Description                                               | Key (Name)                                         | Value                                                      |
 | ----- | --------------------------------------------------------- | -------------------------------------------------- | :--------------------------------------------------------- |
@@ -230,7 +229,7 @@ Go to _Settings_ > _Set Up_ > _Branded Domains_. You can see a list of all your 
 | _Nickname_        | A user-defined name for identifying the domain (for example, "Sales Campaign").                                            |
 | _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`, `track.yourdomain.com`). |
 | _Created By_      | The user who created the domain.                                                                                           |
-| _Status_          | The current status of the domain  can be **Active** or **Pending Verification**.                                           |
+| _Status_          | The current status of the domain can be **Active** or **Pending Verification**.                                            |
 | _Last Updated On_ | The date when the domain settings were last updated.                                                                       |
 
 After adding the domain, you can perform the folloeing operations by hovering over the branded domain:
