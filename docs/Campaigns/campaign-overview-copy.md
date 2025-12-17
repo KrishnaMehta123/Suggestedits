@@ -16,10 +16,6 @@ Campaigns promote products through various media types and are designed with spe
 
 The campaign listing page in CleverTap helps you manage all your campaigns efficiently. It allows you to filter them, edit columns, view performance, organize using labels, and more. This guide walks you through all key operations on the new campaigns page.
 
-> 📘 Private Beta
->
-> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
-
 # Campaigns Operations
 
 You can perform different actions on the campaigns from the _All Campaigns_ page, including filtering, labeling, editing, archiving, stopping, cloning, and analyzing performance. The following sections briefly discuss each operation.
@@ -38,215 +34,21 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
 
 Filters are divided into two main sections, Active and Archived. Refer to the table below for filter operations:
 
-<Table align={["left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Filter Section
-      </th>
-
-      <th>
-        Filter Description
-      </th>
-
-      <th>
-        Options
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        **Saved Filters**
-      </td>
-
-      <td>
-        Select from a list of saved filters. In that case, all the fields will be automatically populated. You can also create a new filter and click
-
-        **Save**
-
-        . Filters are saved at the account level and are available for the Active campaigns.
-      </td>
-
-      <td>
-        * <br />
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Status**
-      </td>
-
-      <td>
-        <li>Filters campaigns based on their current status. These options are available for **active** campaigns. </li><li>Possible values: Scheduled, Running, Stopped, Completed, Approval Pending, Rejected, Draft, Awaiting Next Run.</li> For more information, refer to [Campaign States]().
-      </td>
-
-      <td>
-        * <br />
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Time Period**
-      </td>
-
-      <td>
-        Filters based on the time period when the campaigns were created or started. The list is automatically sorted in descending order, based on either the start time or the creation date, depending on the selected filter.
-      </td>
-
-      <td>
-        Campaigns Created / Started
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Stats Period**
-      </td>
-
-      <td>
-        Filters based on the stats period of the campaigns.
-      </td>
-
-      <td>
-        Choose stats duration
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Mobile Channel**
-      </td>
-
-      <td>
-        Filters based on the type of mobile channel used.
-      </td>
-
-      <td>
-        Push Notification, In-App Message, App Inbox, Native Display
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Web Channel**
-      </td>
-
-      <td>
-        Filters based on the type of web channel used.
-      </td>
-
-      <td>
-        Web Popup, Exit Intent, Web Push Notification, Web Native Display, Web Inbox
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Direct-to-User Channel**
-      </td>
-
-      <td>
-        Filters based on the type of Direct-to-User channel used.
-      </td>
-
-      <td>
-        Email, SMS, WhatsApp, Unified Inbox
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Streaming Channel**
-      </td>
-
-      <td>
-        Filters based on the type of streaming channel used.
-      </td>
-
-      <td>
-        Facebook Audiences, Webhook, Google Adwords, Amazon EB, mParticle, Segment, TikTok
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Created By**
-      </td>
-
-      <td>
-        Filters based on the email ID of the person who created the campaign.
-      </td>
-
-      <td>
-        Filter by email ID of campaign creator
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Label**
-      </td>
-
-      <td>
-        Filters based on the labels assigned to the campaign. Clicking
-
-        **Manage Labels**
-
-        will redirect you to the labels page in account setup. You can create or manage labels as per your assigned roles.
-      </td>
-
-      <td>
-        Based on labels assigned to campaigns
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Delivery Type**
-      </td>
-
-      <td>
-        Filters based on the delivery type of the campaign.
-      </td>
-
-      <td>
-        One Time, Recurring, Multiple Dates
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **Segment Type**
-      </td>
-
-      <td>
-        Filters based on the type of segment used.
-      </td>
-
-      <td>
-        In-Action, Action, On Date/Time, External Trigger
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        **External Campaigns**
-      </td>
-
-      <td>
-        Filters based on the type of external campaign.
-      </td>
-
-      <td>
-        API Campaigns, Bulletins, Notification via Server API
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Filter Section             | Filter Description                                                                                                                                                                                                                         | Options                                                                                      |
+| :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| **Saved Filters**          | Select from a list of saved filters. In that case, all the fields will be automatically populated. You can also create a new filter and click **Save**. Filters are saved at the account level and are available for the Active campaigns. | List of Custom Filters                                                                       |
+| **Status**                 | Filters campaigns based on their current status. These options are available only for **active** campaigns. For more information, refer to [Campaign States]().                                                                            | Scheduled, Running, Stopped, Completed, Approval Pending, Rejected, Draft, Awaiting Next Run |
+| **Time Period**            | Filters based on the time period when the campaigns were created or started. The list is automatically sorted in descending order, based on either the start time or the creation date, depending on the selected filter.                  | Campaigns Created, Started                                                                   |
+| **Stats Period**           | Filters based on the stats period of the campaigns.                                                                                                                                                                                        | Choose stats duration                                                                        |
+| **Mobile Channel**         | Filters based on the type of mobile channel used.                                                                                                                                                                                          | Push Notification, In-App Message, App Inbox, Native Display                                 |
+| **Web Channel**            | Filters based on the type of web channel used.                                                                                                                                                                                             | Web Popup, Exit Intent, Web Push Notification, Web Native Display, Web Inbox                 |
+| **Direct-to-User Channel** | Filters based on the type of Direct-to-User channel used.                                                                                                                                                                                  | Email, SMS, WhatsApp, Unified Inbox                                                          |
+| **Streaming Channel**      | Filters based on the type of streaming channel used.                                                                                                                                                                                       | Facebook Audiences, Webhook, Google Adwords, Amazon EB, mParticle, Segment, TikTok           |
+| **Created By**             | Filters based on the email ID of the person who created the campaign.                                                                                                                                                                      | Filter by email ID of campaign creator                                                       |
+| **Label**                  | Filters based on the labels assigned to the campaign. Clicking **Manage Labels** will redirect you to the labels page in account setup. You can create or manage labels as per your assigned roles.                                        | Based on labels assigned to campaigns                                                        |
+| **Delivery Type**          | Filters based on the delivery type of the campaign.                                                                                                                                                                                        | One Time, Recurring, Multiple Dates                                                          |
+| **Segment Type**           | Filters based on the type of segment used.                                                                                                                                                                                                 | In-Action, Action, On Date/Time, External Trigger                                            |
+| **External Campaigns**     | Filters based on the type of external campaign.                                                                                                                                                                                            | API Campaigns, Bulletins, Notification via Server API                                        |
 
 > 📘 Time Period Filters
 >
@@ -374,9 +176,7 @@ You can also click this icon to open the campaign in a new tab and edit it. In c
 <Callout icon="📘" theme="info">
   # Role-Based Access Control (RBAC) enforcement for campaign actions
 
-  The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions.
-
-  A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
+  The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions. A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
 
   * Read access: If users have read access to Push Campaigns, they can view content for all Push Campaigns.
   * Write access: If users have write access to certain Campaigns, they can create, edit, clone, publish, or delete content, but only for channels where they have been explicitly granted channel-level write access.
@@ -401,22 +201,37 @@ You can also click this icon to open the campaign in a new tab and edit it. In c
 
 # Campaign States
 
-Campaign Status helps track progress and manage campaigns efficiently. Each campaign state has distinct characteristics that determine what actions can be performed. The following are the campaign states:
+Campaign Status helps track progress and manage campaigns efficiently. Each campaign state has distinct characteristics that determine what actions can be performed. 
 
-* _Draft_: Indicates that the campaign is still not published.
-* _Scheduled_: Indicates that the campaign is set to go live in the future.
-* _Awaiting Next Run_: Indicates that the recurring campaign is waiting for its subsequent scheduled execution.
-* _Running_: Indicates that the campaign is actively being executed.
-* _Pending for Approval_: Indicates that the campaign with Creator Approver workflow is awaiting review and approval from the designated approver before it can be published or scheduled for execution
-* _Rejected_: Indicates that the campaign with Creator Approver workflow has not been approved by the designated approver.
-* _Stopped_: Indicates that the campaign has been permanently halted.
-* _Completed_: Indicates that the campaign has finished running and is no longer active.
+### Campaign Lifecycle States
+
+The following are the campaign states:
+
+| State                 | Description                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------- |
+| **Draft**             | Campaign is created but not yet published.                                              |
+| **Scheduled**         | Campaign is set to go live at a future time.                                            |
+| **Running**           | Campaign is currently live and executing.                                               |
+| **Awaiting Next Run** | Recurring campaign has completed a run and is waiting for the next scheduled execution. |
+| **Completed**         | Campaign has finished running and is no longer active.                                  |
+| **Stopped**           | Campaign has been permanently halted.                                                   |
+
+### Approval-related States
+
+These states apply only when the Creator–Approver workflow is enabled.
+
+| State                    | What it means                                                                                                  |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Pending for Approval** | Campaign is awaiting review and approval from the designated approver before it can be published or scheduled. |
+| **Rejected**             | Campaign is not approved by the designated approver.                                                           |
 
 For Campaigns Scheduled for Later, you can edit the following sections of the campaign: Who, What, and When.
 
 For Live Campaigns Awaiting Next Run, you can edit the following: _What_ section, Campaign name, and Message labels.
 
-For Campaigns with Creator Approver Workflow, refer to the following table:
+### Creator-Approver Workflow
+
+For Campaigns with Creator-Approver Workflow, refer to the following table:
 
 | Campaign State           | Scenario                                           | Creator's Action                                                                                                                                                   | Approver's Action                                                                                                                                                                                                                                              |
 | :----------------------- | :------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
