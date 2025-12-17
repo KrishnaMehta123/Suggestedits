@@ -347,7 +347,7 @@ If these tags are available and valid, the platform may display a visual preview
 
 To validate whether your Open Graph metadata is implemented correctly, use any metadata testing tool or Open Graph debugger.
 
-12. How do link previews work on iOS devices, and why might they not appear?
+### How do link previews work on iOS devices, and why might they not appear?
 
 iOS devices running version 10 or above support link previews in the native Messages application. These previews may still appear for SMS-based messages, but several conditions must be met for reliable rendering.
 
