@@ -54,7 +54,7 @@ To set a conversion window:
 
 ## Compare by Segments
 
-You can compare your conversions across different segments [to analyze..}. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in the conversion trends could reveal differences in your users' behavior in each segment and result in invaluable insight.
+You can compare your conversions across different segments [to analyze..} (@bajrang, some issue here, please check). For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in the conversion trends could reveal differences in your users' behavior in each segment and result in invaluable insight.
 
 To compare conversion across segments, perform the following steps:
 
@@ -83,7 +83,7 @@ The default view shows cumulative conversions per step for the selected time ran
 
 ## Split by Property
 
-You can split a funnel by profile properties for sessions, geographies, and technographics or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more.
+You can split a funnel by profile properties for sessions, geographies, and technographics, or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more.
 
 To break down by property, perform the following steps:
 
@@ -100,8 +100,8 @@ To break down by property, perform the following steps:
 
 Funnels support two computation methods:
 
-* [Flexible Order](doc:funnels-v2#flexible-order) 
-* [Strict Order](doc:funnels-v2#strict-order) 
+* [Flexible Order](doc:funnels-v2#flexible-order)
+* [Strict Order](doc:funnels-v2#strict-order)
 
 These methods determine how users are counted as they progress through funnel steps, especially when steps are repeated or performed out of sequence.
 
@@ -113,9 +113,9 @@ For example, if a funnel's steps are defined as:
 
 **Step A → Step B → Step C → Step D**
 
-The following table explains how different users are counted based on how they progress through the funnel steps:
+The following table explains how different users are counted based on their progress through the funnel steps:
 
-| User   | Action Sequence                            | Counted in Funnel? | Reason                                                                |
+| User   | Step Sequence                              | Counted in Funnel? | Reason                                                                |
 | ------ | ------------------------------------------ | ------------------ | --------------------------------------------------------------------- |
 | User 1 | Step A → Step B → Step C → Step D          | Yes                | Completes all funnel steps in the correct order.                      |
 | User 2 | Step A → Step C → Step D                   | No                 | Skips Step B, which is required in the funnel.                        |
@@ -132,7 +132,7 @@ For example, if a funnel's steps are defined as:
 
 The following table explains how different users are counted based on how they progress through the funnel steps:
 
-| User   | Action Sequence                            | Counted in Funnel? | Reason                                                     |
+| User   | Step Sequence                              | Counted in Funnel? | Reason                                                     |
 | ------ | ------------------------------------------ | ------------------ | ---------------------------------------------------------- |
 | User 1 | Step A → Step B → Step C → Step D          | Yes                | Completes all funnel steps exactly in the specified order. |
 | User 2 | Step A → Step C → Step D                   | No                 | Skips Step B, breaking the required step sequence.         |
@@ -148,7 +148,7 @@ For example, let's take a look at the following Login Flow of two users in an ap
 * **User A:** App Launched → Login Attempted → Login Attempted → Login Attempted → Logged In
 * **User B:** App Launched → Login Attempted → Logged In
 
-With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments.
+With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments. 
 
 # Table View
 
