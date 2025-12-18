@@ -197,7 +197,7 @@ To configure your custom domain, perform the following steps:
 
    <Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/ece7c12d5494a02f09b09dfafe7d7f699078afcbd719d219dc54c92eea6b5147-Add_Custom_Domain_for_Email.png" />
 
-4. Click **Save & Generate DNS**. The domain status is be set to **Pending Verification** immediately and DNS Records will be generated for you to configure with your Domain provider.
+4. Click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately, and DNS Records will be generated for you to configure with your Domain provider.
 
 <Image align="center" border={true} caption="DNS Records Generated" src="https://files.readme.io/6d90a8eaa27f1d56aae290b66bf962fcd1b1ee164bddfe3bc0779a7a310d4f48-image.png" />
 
@@ -216,7 +216,7 @@ To configure your custom domain, perform the following steps:
 `.
 
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
-3. Click the ![](https://files.readme.io/c637417f8cac230dcf67387780cea85c586b965f8272fea35db6d1d6141c1ecb-Screenshot_2025-12-17_at_9.37.30_PM.png) icon next to your domain. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
+3. Click the ![](https://files.readme.io/c637417f8cac230dcf67387780cea85c586b965f8272fea35db6d1d6141c1ecb-Screenshot_2025-12-17_at_9.37.30_PM.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
 
 # Manage Branded Domains
 
@@ -228,13 +228,13 @@ Go to _Settings_ > _Set Up_ > _Branded Domains_. You can see a list of all your 
 
 | Column            | Description                                                                                                                |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| _Nickname_        | A user-defined name for identifying the domain (for example, "Sales Campaign").                                            |
+| _Nickname_        | A user-defined name to help you identify the domain (for example, "Sales Campaign").                                       |
 | _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`, `track.yourdomain.com`). |
-| _Created By_      | The user who created the domain.                                                                                           |
-| _Status_          | The current status of the domain can be **Active** or **Pending Verification**.                                            |
+| _Created By_      | The email address of the user who created the domain.                                                                      |
+| _Status_          | The current status of the domain can be **Active**, **Failed**, or **Pending Verification**.                               |
 | _Last Updated On_ | The date when the domain settings were last updated.                                                                       |
 
-After adding the domain, you can perform the folloeing operations by hovering over the branded domain:
+After adding the domain, you can perform the following operations by hovering over the branded domain:
 
 <Image align="center" border={true} caption="Manage Branded Domains" src="https://files.readme.io/a4ad7fef6b3c58d079a57876f5c3d45be43447b1298499d715bdf28d0e2dbafd-Manage_Branded_Domains.gif" />
 
