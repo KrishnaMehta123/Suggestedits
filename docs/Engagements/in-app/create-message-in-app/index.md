@@ -264,9 +264,9 @@ Alternatively, you can display the campaign **exactly** when the user completes 
 
 #### In-App Delay
 
-The campaign is triggered after a specified delay once the user qualifies. You can set the number of seconds (maximum 1200) to wait before showing the popup. 
+The campaign is triggered after a specified delay once the user qualifies. You can set the number of seconds (maximum 1200) to wait before showing the popup.
 
-<Image align="center" alt="Triggers for Campaign Delivery" border={true} caption="Triggers for Campaign Delivery (@murtaza, need a new screen, the screen you provided does not show any other triggers)" src="https://files.readme.io/1b6924a-Delivery_preferences_web_triggers.jpg" />
+<Image align="center" alt="In-App Delay" border={true} caption="In-App Delay" src="https://files.readme.io/53ef58cd405aacea6c1136cc7a5ff8f0a67abc4f4d42b998ee79882f1025b195-image.png" />
 
 <br />
 
