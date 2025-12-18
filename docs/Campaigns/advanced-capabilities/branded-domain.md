@@ -170,13 +170,15 @@ You can create a system domain to quickly start using branded links in your What
 
 Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
-> 📘 Custom Domain
->
-> You can add up to 5 unique custom domains per account.
+<Callout icon="📘" theme="info">
+  #### Custom Domain
+
+  You can add up to 5 unique custom domains per account per channel.
+</Callout>
 
 ### For WhatsApp/SMS & RCS
 
-To add custom domain, perform the following steps:
+To add a custom domain, perform the following steps:
 
 1. Repeat steps _1_ through _3_ under Add System Domain. except that select _Domain Type_ as _Custom_.
 2. Click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately and DNS Records are generated to configure it on your Domain provider dashboard.
@@ -189,7 +191,7 @@ To configure your custom domain, perform the following steps:
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 
-2. Click **Add Domain**, select _WhatsApp_, and click **Continue**. The _Add Domain_ page opens.
+2. Click **Add Domain**, select _Email_, and click **Continue**. The _Add Domain_ page opens.
 
 3. Enter the following details:  _Nickname_ and _Domain_.
 
