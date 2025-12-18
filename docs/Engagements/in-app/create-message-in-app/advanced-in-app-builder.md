@@ -169,12 +169,12 @@ The available container size options vary depending on the orientation of the co
 
 You can use the following media for your content:
 
-| File Format                                              | Max Supported Limit       |
-| -------------------------------------------------------- | ------------------------- |
-| **JPEG:** Best for photos and detailed images.           | 1 MB. @murtaza to confirm |
-| **PNG:** Ideal for transparent or high-quality graphics. | 1 MB. @murtaza to confirm |
-| **GIF:** Use for lightweight animations.                 | 1 MB. @murtaza to confirm |
-| **Video:**Use for short videos.                          | 1 MB. @murtaza to confirm |
+| File Format                                              |
+| -------------------------------------------------------- |
+| **JPEG:** Best for photos and detailed images.           |
+| **PNG:** Ideal for transparent or high-quality graphics. |
+| **GIF:** Use for lightweight animations.                 |
+| **Video:**Use for short videos (Upto 50 MB).             |
 
 <br />
 
