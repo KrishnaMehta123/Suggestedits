@@ -44,7 +44,7 @@ It is divided into two main sections:
 * **Canvas (Left Side)**: The canvas is where you design your In-App message. It is fully interactive, allowing you to drag and drop elements and adjust their position and size with ease.
 * **Controls & Styling Menu (Right Side)**: This menu contains controls and styling options for the elements on the canvas. Any changes made here instantly reflect on the canvas in real time.
 
-3. Preview and test your message.  Once you are all done setting up the content of your campaign in the _What_ section, you can test the message content and personalization. You can select from a list of test profiles to preview the message for each profile. Click the _Preview & Test_ button from the message editor to test a message. (@murtaza need a popup screenshot here for showing the preview button)For more information, refer to [Preview and Send In-App](doc:send-test-personalization-in-app).
+3. Preview and test your message.  Once you are all done setting up the content of your campaign in the _What_ section, you can test the message content and personalization. You can select from a list of test profiles to preview the message for each profile. Click the _Preview & Test_ button from the message editor to test a message. For more information, refer to [Preview and Send In-App](doc:send-test-personalization-in-app).
 
 ## Builder Elements
 
@@ -66,7 +66,7 @@ The overlay allows you to modify the following:
 
 ### Container
 
-The *Container* holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
+The _Container_ holds all the content in your In-App message, such as text, images, and buttons, and defines how the message appears on a user’s screen.
 
 <Image align="center" alt="Design Container" border={true} caption="Design Container" src="https://files.readme.io/1626def427219d29d0892846f9c54eb4ce46a4b19a1ecb09fdd2a24c40f8d890-image.png" />
 
@@ -163,8 +163,6 @@ The available container size options vary depending on the orientation of the co
     | Square      | 1:1          |
     | Wide        | 16:9         |
   </Tab>
-
-
 </Tabs>
 
 #### Supported Media
