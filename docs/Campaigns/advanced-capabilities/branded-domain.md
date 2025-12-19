@@ -202,13 +202,13 @@ To configure your custom domain, perform the following steps:
 
 (@Shreejith, This applies to Email as well, so adding a cross-reference to this section.)
 
-1. Go to the domain provider dashboard and configure the following DNS records. When configuring DNS records with your domain provider, enter only the prefix part in the Name field. The prefix is the part that precedes the main domain. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.short.clevertap.com`, enter `_c58ebcb5c******5f03bb6b174349.short` in the Name field.
+1. Go to the domain provider dashboard and configure the following DNS records. When configuring DNS records with your domain provider, enter only the prefix part in the Name field. The prefix is the part that precedes the main domain. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.track.yourdomain.com`, enter `_c58ebcb5c******5f03bb6b174349.track` in the Name field.
 
-| Type  | Description                                               | Key (Name)                                         | Value                                                      |
-| ----- | --------------------------------------------------------- | -------------------------------------------------- | :--------------------------------------------------------- |
-| CNAME | Used for domain ownership verification.                   | _c58ebcb5c******5f03bb6b174349.short.clevertap.com | _0f8561a2dc*******9ef25e32f6.xl****vlj.acm-validations.aws |
-| CNAME | Redirects branded links to CleverTap's short URL service. | short.clevertap.com                                | short-clevertap-com.cltap.com                              |
-| TXT   | Verifies domain association with CleverTap.               | _txt-6**-R**-R47Z.short.clevertap.com              | ct0.co=2c1f96426804                                        |
+| Type  | Description                                                                                                                                           | Key (Name)                                          | Value                                                      |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :--------------------------------------------------------- |
+| CNAME | Used for domain ownership verification.                                                                                                               | _c58ebcb5c******5f03bb6b174349.track.yourdomain.com | _0f8561a2dc*******9ef25e32f6.xl****vlj.acm-validations.aws |
+| CNAME | Redirects branded links to CleverTap's short URL service in the case of WhatsApp/SMS & RCS campaigns. Tracks clicks and opens in the Email campaigns. | track.yourdomain.com                                | track-yourdomain-com.cltap.com                             |
+| TXT   | Verifies domain association with CleverTap.                                                                                                           | _txt-6**-R**-R47Z.track.yourdomain.com              | 2c1f96426804 (@amrita to change this.)                     |
 
 `.
 
