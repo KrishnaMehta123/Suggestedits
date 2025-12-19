@@ -242,7 +242,7 @@ After adding the domain, you can perform the following operations by hovering ov
 
 * **Edit**: For each domain (except system defaults), you can set a custom 404 error page. This page is displayed if users click on expired links (older than 7 days).
 
-* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the ![](https://files.readme.io/c5163a3fa40adb8519750791f8de9e7a6736bfe7a28cdbe65c5de3281357911f-Screenshot_2025-12-17_at_9.37.30_PM.png) icon next to the domain to retry.
+* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the ![](https://files.readme.io/af7a9009c220dbcfb129f0528f3669b976d0d7f0de86557dca6e52c1444d6aed-Refresh_icon.png) icon next to the domain to retry.
 
 * **View DNS Records**: You can access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
 
