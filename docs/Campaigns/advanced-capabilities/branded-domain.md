@@ -216,7 +216,7 @@ To configure your custom domain, perform the following steps:
 `.
 
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
-3. Click the ![](https://files.readme.io/c637417f8cac230dcf67387780cea85c586b965f8272fea35db6d1d6141c1ecb-Screenshot_2025-12-17_at_9.37.30_PM.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
+3. Click the ![](https://files.readme.io/36be013543cabc562d762f02fd1eebc007f2caad03f95519a37dfff4f6e4c7ed-Refresh_icon.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
 
 # Manage Branded Domains
 
