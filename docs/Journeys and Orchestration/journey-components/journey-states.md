@@ -98,12 +98,13 @@ In all these cases, once the entry closes, no new users can qualify for the jour
 
 ### Criteria for Automatic Journey Stoppage
 
-A journey in the Completed state becomes eligible for automatic stoppage when all users who entered the journey have fully exited it. This means: 
+A journey in the Completed state becomes eligible for automatic stoppage when all users who entered the journey have fully exited it. This means:
 
-* All users have:
-  * Reached an end node, or
-  * Completed all applicable paths, or
-  * Timed out from the Delay nodes.
+* All users have exited the journey:
+  * Either they met the goal
+  * They timeout of the journey
+  * They exited the journey via Force exit
+  * No new users are entering the journey
 * There are no users currently active in any journey node.
 * No pending scheduled actions remain for any user.
 
