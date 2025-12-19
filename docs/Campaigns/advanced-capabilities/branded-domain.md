@@ -337,48 +337,41 @@ After adding the domain, you can perform the following operations by hovering ov
 
 (@Jithendra/Shreejith: IMO, we can remove a few FAQs here as most of it is already covered in the content. We can retain the best Practices & the Link Preview question. Rest is repeated information. I haven't reviewed the FAQs content, though.)
 
-### What is a branded domain, and why should I set it up?
-
-A branded domain is a custom or customized URL that tracks clicks from your SMS, WhatsApp, or RCS campaigns. It helps build brand trust, improves click-through rates, and complies with regulations such as **DLT Whitelisting** (especially in India).
-
-### What’s the difference between a system domain and a custom domain?
-
-* **System Domain**: Provided by CleverTap (for example, `ct3.io`) and ready to use. You can customize the path (`/brand/`) or query parameter (`?key=brand`) to brand it.
-* **Custom Domain**: Your own subdomain (for example, `links.yourbrand.com`) that you configure via your domain provider with DNS settings.
-
-### What is an Adjoiner, and why is it needed?
-
-An **Adjoiner** is the part of the URL that appears between the domain and the short key. It adds brand identity and structure to the tracking URL. The adjoiner is required to create a valid branded domain URL.  
-Example:
-
-* **Path-based**: `ct3.io/yourbrand/abc123`
-* **Query-based**: `ct3.io?key=yourbrand&sk=abc123`
-
-### **Can I use special characters in the adjoiner?**
+### Can I use special characters in the adjoiner?
 
 No. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters such as `@`, `#`, `&`, and so on.
 
-### **Can I switch between path-based and query-based adjoiners?**
+### Can I switch between path-based and query-based adjoiners?
 
 No, you must choose one format per domain — either **path-based** (`/yourbrand/`) or **query-based** (`?key=yourbrand`). You cannot mix both formats in a single domain configuration.
 
-### **What happens if a user clicks an expired link?**
+### What happens if a user clicks an expired link?
 
 If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links.
 
-### **What is the default domain and how does it work?**
+### What is the default domain, and how does it work?
 
 The **Default Domain** is automatically used to wrap and track links in **SMS**, **RCS**, and **WhatsApp** campaigns (including template buttons). You can override the **Default Domain** per campaign by selecting a different domain from the dropdown when creating new campaigns.
 
-### **Will old campaigns use the new branded domain?**
+### What happens if my custom domain becomes unverified?
+
+If a branded domain used for Email moves from Active to Pending Verification or Failed:
+
+* CleverTap sends an email alert to inform you of the status change
+* CleverTap automatically falls back to the system domain for email click and open tracking
+* Email campaigns continue to send without interruption
+
+Once the domain is verified again, it can be reused in future campaigns.
+
+### Will old campaigns use the new branded domain?
 
 No. Campaigns created before you set up a branded domain will continue using the **System Domain** unless you manually edit or recreate them with the new branded domain.
 
-### **How long does domain verification take?**
+### How long does domain verification take?
 
 Custom domains require **DNS record configuration**. While CleverTap fetches DNS updates automatically, it may take up to **24 hours** for DNS changes to propagate globally. You can click the **refresh** icon to retry verification.
 
-### **I configured the DNS records, but my domain has still not been verified. What should I do?**
+### I configured the DNS records, but my domain has still not been verified. What should I do?
 
 Check the following:
 
@@ -393,7 +386,7 @@ Here are some tips to ensure your branded domain setup is effective and complian
 * **For System Domains** (like `ct3.io/yourbrand/abc123`):
   * Choose a short and meaningful **Adjoiner** that clearly represents your brand or campaign type.
   * Use lowercase letters and hyphens (`-`) if needed (for example, `/clevertap/`, `/new-user/`, `/sale2024/`).
-  * Keep it concise: Aim for 5–8 characters in the **Adjoiner** (excluding the slashes) to avoid long URLs in **SMS** or **WhatsApp** messages.
+  * Keep it concise: Aim for 5–8 characters in the **Adjoiner** (excluding the slashes) to avoid long URLs in campaigns.
   * Avoid vague terms like `/track/` or `/link/` — use something unique to your brand.
 * **For Custom Domains** (like `links.yourbrand.com`):
   * Use a subdomain such as **links.**, **click.**, or **promo.** (for example,`links.yourbrand.com`, `click.yourbrand.com`).
@@ -454,3 +447,9 @@ iOS devices running version 10 or above support link previews in the native Mess
 * Certain third-party messaging apps may block previews by default unless explicitly enabled in settings.
 
 These constraints can lead to inconsistent preview rendering on iOS devices even when metadata is correctly configured.
+
+<br />
+
+<br />
+
+<br />
