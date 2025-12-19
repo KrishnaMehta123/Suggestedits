@@ -223,13 +223,13 @@ Go to _Settings_ > _Set Up_ > _Branded Domains_. You can see a list of all your 
 
 <Image align="center" border={true} caption="Branded Domains Page" src="https://files.readme.io/2fbb49c4e3a18c0744338f8f2db30ae4f28a3babf5c0f3eb1289f175dc099f41-Branded_Domain_Listing_Page.png" />
 
-| Column            | Description                                                                                                                |
-| :---------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| _Nickname_        | A user-defined name to help you identify the domain (for example, "Sales Campaign").                                       |
-| _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`, `track.yourdomain.com`). |
-| _Created By_      | The email address of the user who created the domain.                                                                      |
-| _Status_          | The current status of the domain can be **Active**, **Failed**, or **Pending Verification**.                               |
-| _Last Updated On_ | The date when the domain settings were last updated.                                                                       |
+| Column            | Description                                                                                                                                                                                                                                                                                                                       |
+| :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Nickname_        | A user-defined name to help you identify the domain (for example, "Sales Campaign").                                                                                                                                                                                                                                              |
+| _Domain URL_      | The full URL of the domain being used for tracking links (for example, `ct3.io/clevertap/abc123`, `track.yourdomain.com`).                                                                                                                                                                                                        |
+| _Created By_      | The email address of the user who created the domain.                                                                                                                                                                                                                                                                             |
+| _Status_          | The current status of the domain. It can be: <ul><li>**Active**: Domain is verified and ready to be used in campaigns.</li><li>**Pending Verification**: Domain is awaiting DNS verification and cannot be used until verified.</li><li>**Failed**: Domain verification failed due to incorrect or missing DNS records.</li></ul> |
+| _Last Updated On_ | The date when the domain settings were last updated.                                                                                                                                                                                                                                                                              |
 
 After adding the domain, you can perform the following operations by hovering over the branded domain:
 
@@ -239,7 +239,7 @@ After adding the domain, you can perform the following operations by hovering ov
 
 * **Edit**: For each domain (except system defaults), you can set a custom 404 error page. This page is displayed if users click on expired links (older than 7 days).
 
-* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the ![](https://files.readme.io/af7a9009c220dbcfb129f0528f3669b976d0d7f0de86557dca6e52c1444d6aed-Refresh_icon.png) icon next to the domain to retry.
+* **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the ![](https://files.readme.io/af7a9009c220dbcfb129f0528f3669b976d0d7f0de86557dca6e52c1444d6aed-Refresh_icon.png) icon next to the domain to retry after making the necessary corrections.
 
 * **View DNS Records**: You can access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
 
