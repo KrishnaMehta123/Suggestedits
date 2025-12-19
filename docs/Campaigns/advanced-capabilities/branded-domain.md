@@ -129,7 +129,7 @@ You can create a system domain to quickly start using branded links in your What
            This includes the following:
 
            * **Domain**:
-           * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs. (@Shreejith/Jithendra: removed validation rules, as they will be shown to the users on the dashboard.)
+           * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs.
            * **Shortkey**: A unique, auto-generated code added to the branded domain, helping track clicks on links within campaigns.
 
            For example, `ct3.io/clevertap/abc123`
@@ -152,16 +152,18 @@ You can create a system domain to quickly start using branded links in your What
 
 4. Click **Save**. The domain status is set to **Active** immediately.
 
-**System Domain and Account Region Mapping**
+<Callout icon="📘" theme="info">
+  #### Domain and Account Region Mapping for WhatsApp/SMS & RCS
 
-| Dashboard URL                | System Domain | Region      | Example URL   |
-| :--------------------------- | :------------ | :---------- | :------------ |
-| eu1.dashboard.clevertap.com  | ct1.io        | EU          | ct1.io/25AlJz |
-| in1.dashboard.clevertap.com  | ct3.io        | IN          | ct3.io/52KlAz |
-| sg1.dashboard.clevertap.com  | ct4.io        | SG          | ct4.io/25ZlAz |
-| us1.dashboard.clevertap.com  | ct5.io        | US          | ct5.io/52ZlKa |
-| mec1.dashboard.clevertap.com | ct8.io        | Middle East | ct8.io/25ZaJz |
-| aps3.dashboard.clevertap.com | ct9.io        | Indonesia   | ct9.io/52KJz  |
+  | Dashboard URL                | Region      | System Domain | Example URL   |
+  | :--------------------------- | :---------- | :------------ | :------------ |
+  | eu1.dashboard.clevertap.com  | EU          | ct1.io        | ct1.io/25AlJz |
+  | in1.dashboard.clevertap.com  | IN          | ct3.io        | ct3.io/52KlAz |
+  | sg1.dashboard.clevertap.com  | SG          | ct4.io        | ct4.io/25ZlAz |
+  | us1.dashboard.clevertap.com  | US          | ct5.io        | ct5.io/52ZlKa |
+  | mec1.dashboard.clevertap.com | Middle East | ct8.io        | ct8.io/25ZaJz |
+  | aps3.dashboard.clevertap.com | Indonesia   | ct9.io        | ct9.io/52KJz  |
+</Callout>
 
 ## Add Custom Domain
 
@@ -204,16 +206,104 @@ To configure your custom domain, perform the following steps:
 
 1. Go to the domain provider dashboard and configure the following DNS records. When configuring DNS records with your domain provider, enter only the prefix part in the Name field. The prefix is the part that precedes the main domain. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.track.yourdomain.com`, enter `_c58ebcb5c******5f03bb6b174349.track` in the Name field.
 
-| Type  | Description                                                                                                                                           | Key (Name)                                          | Value                                                      |
-| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | :--------------------------------------------------------- |
-| CNAME | Used for domain ownership verification.                                                                                                               | _c58ebcb5c******5f03bb6b174349.track.yourdomain.com | _0f8561a2dc*******9ef25e32f6.xl****vlj.acm-validations.aws |
-| CNAME | Redirects branded links to CleverTap's short URL service in the case of WhatsApp/SMS & RCS campaigns. Tracks clicks and opens in the Email campaigns. | track.yourdomain.com                                | track-yourdomain-com.cltap.com                             |
-| TXT   | Verifies domain association with CleverTap.                                                                                                           | _txt-6**-R**-R47Z.track.yourdomain.com              | 2c1f96426804 (@amrita to change this.)                     |
+<Table align={[null,null,null,"left"]}>
+  <thead>
+    <tr>
+      <th>
+        Type
+      </th>
 
-`.
+      <th>
+        Description
+      </th>
+
+      <th>
+        Name
+      </th>
+
+      <th>
+        Value
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        CNAME
+      </td>
+
+      <td>
+        Used for domain ownership verification.
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: _c58ebcb5c**5f03bb6b174349.short.clevertap.com
+        * Email: _c58ebcb5c******5f03bb6b174349.track.yourdomain.com
+      </td>
+
+      <td>
+        _0f8561a2dc*******9ef25e32f6.xl****vlj.acm-validations.aws
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        CNAME
+      </td>
+
+      <td>
+        Redirects branded links to CleverTap's short URL service in the case of WhatsApp/SMS & RCS campaigns. Tracks clicks and opens in the Email campaigns.
+      </td>
+
+      <td>
+        *   WhatsApp/SMS & RCS: short.clevertap.com
+        * Email: track.yourdomain.com
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: short-clevertap-com.cltap.com
+        * Email: track-yourdomain-com.cltap.com
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        TXT
+      </td>
+
+      <td>
+        Verifies domain association with CleverTap.
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: _txt-6-R-R47Z.short.clevertap.com
+        * Email: _txt-6**-R**-R47Z.track.yourdomain.com
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: ct0.co=2c1f96426804
+        * Email: \<\account-region\>\.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. to identify the region of your accpount, refer to Domain and Account Region Mapping. 
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
 3. Click the ![](https://files.readme.io/36be013543cabc562d762f02fd1eebc007f2caad03f95519a37dfff4f6e4c7ed-Refresh_icon.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
+
+<Callout icon="📘" theme="info">
+  #### Domain and Account Region Mapping for Email
+
+  | Dashboard URL                | Region      | Example TXT                                                                              |
+  | :--------------------------- | :---------- | :--------------------------------------------------------------------------------------- |
+  | eu1.dashboard.clevertap.com  | EU          | eu1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | in1.dashboard.clevertap.com  | IN          | in1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | sg1.dashboard.clevertap.com  | SG          | sg1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | us1.dashboard.clevertap.com  | US          | us1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | mec1.dashboard.clevertap.com | Middle East | mec1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. |
+  | aps3.dashboard.clevertap.com | Indonesia   | aps3.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. |
+</Callout>
 
 # Manage Branded Domains
 
