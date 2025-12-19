@@ -34,7 +34,7 @@ Both options allow you to define specific settings, such as the URL structure an
 
 # Add Domain
 
-This section provides information about creating a branded system and a custom domain for your campaigns. 
+This section provides information about creating a branded system and a custom domain for your campaigns.
 
 ## Add System Domain
 
@@ -257,7 +257,7 @@ To configure your custom domain, perform the following steps:
       </td>
 
       <td>
-        *   WhatsApp/SMS & RCS: short.clevertap.com
+        * WhatsApp/SMS & RCS: short.clevertap.com
         * Email: track.yourdomain.com
       </td>
 
@@ -283,7 +283,7 @@ To configure your custom domain, perform the following steps:
 
       <td>
         * WhatsApp/SMS & RCS: ct0.co=2c1f96426804
-        * Email: \<\account-region\>\.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. to identify the region of your accpount, refer to Domain and Account Region Mapping. 
+        * Email: \<account-region>.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. to identify the region of your accpount, refer to Domain and Account Region Mapping.
       </td>
     </tr>
   </tbody>
