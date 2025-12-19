@@ -16,8 +16,8 @@ next:
 
 Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns.
 
-* For **SMS**, **WhatsApp**, and **RCS** campaigns, branded domains are used to generate short, trackable links.
-* For **Email**, branded domains are used to track email open-tracking pixel.
+* For **SMS**, **WhatsApp**, and **RCS campaigns**, it is used to generate short, trackable links.
+* For **Email campaigns**, it is used to brand links and open-tracking pixels with a custom domain.
 
 Using branded domains improves user trust and can boost engagement rates.
 
@@ -25,23 +25,20 @@ Using branded domains improves user trust and can boost engagement rates.
 
 CleverTap supports two types of branded domains:
 
-* **System Domain**: Provided by CleverTap, where you can customize the system-generated short links with your brand's prefix for easy integration without the need for DNS configuration.
-* **Custom Domain**: Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking.
+| Domain        | Description                                                                                                                                                                                                                         | Supported Channels         |
+| :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------- |
+| System Domain | Provided by CleverTap, where you can customize the system-generated short links with your brand's prefix for easy integration without the need for DNS configuration.                                                               | WhatsApp, SMS & RCS        |
+| Custom Domain | Enables you to use your own subdomain for complete control over your branding and tracking. To use a custom domain, you will need to configure DNS records with your domain provider for proper verification and campaign tracking. | Email, WhatsApp, SMS & RCS |
 
 Both options allow you to define specific settings, such as the URL structure and 404 error page, ensuring your branded domain is set up to suit your needs.
 
 # Add Domain
 
-This section provides information about creating a branded system and a custom domain for your campaigns. Branded domain behavior varies by channel as follows:
-
-| Channel                  | Supported Domain Types  | What Gets Branded                     |
-| ------------------------ | ----------------------- | ------------------------------------- |
-| **Email**                | Custom Domain only      | Tracked links and open-tracking pixel |
-| **SMS / WhatsApp / RCS** | System or Custom Domain | Short tracking links                  |
+This section provides information about creating a branded system and a custom domain for your campaigns. 
 
 ## Add System Domain
 
-You can create a system domain to quickly start using branded links in your WhatsApp camapigns without DNS configuration. To add a system domain, perform the following steps:
+You can create a system domain to quickly start using branded links in your WhatsApp campaigns without DNS configuration. To add a system domain, perform the following steps:
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 
