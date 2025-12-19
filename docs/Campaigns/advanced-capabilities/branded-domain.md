@@ -327,7 +327,7 @@ After adding the domain, you can perform the following operations by hovering ov
 
 * **Set as Default**: You can set any verified domain as the default. This domain is automatically used for wrapping and tracking links in SMS, WhatsApp, RCS, and Email campaigns (including template buttons). You can override it per campaign when creating new ones.
 
-* **Edit**: For WhatsApp/ SMS & RCS, you can set a custom 404 error page each for domain (except system defaults). This page is displayed if users click on expired links (older than 7 days).
+* **Edit**:  You can edit the nickname of the domain. Additionally, for WhatsApp/SMS & RCS campaigns, you can set a custom 404 error page (except for system defaults).
 
 * **Verify Domain**: You can manually verify the domain by checking the status. If the verification fails, you can click the ![](https://files.readme.io/af7a9009c220dbcfb129f0528f3669b976d0d7f0de86557dca6e52c1444d6aed-Refresh_icon.png) icon next to the domain to retry after making the necessary corrections.
 
