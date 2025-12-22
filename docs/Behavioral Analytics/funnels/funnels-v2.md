@@ -40,7 +40,7 @@ To create a funnel, perform the following steps:
 
 ## Setting Conversion Window
 
-Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversion.
+Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
 
 To set a conversion window:
 
