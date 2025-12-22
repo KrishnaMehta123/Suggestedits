@@ -18,9 +18,11 @@ Funnels show users' progress through defined paths in your app and pinpoint wher
 
 A typical example is a user onboarding flow, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase flow, where a user progresses through a shopping cart experience to a purchase event.
 
-> 📘 Private Beta
->
-> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+<Callout icon="📘" theme="info">
+  #### Private Beta
+
+  Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+</Callout>
 
 # Creating a Funnel
 
@@ -48,9 +50,11 @@ To set a conversion window:
 
 <Image align="center" border={true} caption="Set Conversion Window" src="https://files.readme.io/25e96965fb19df284a72492c304d00646f1eba0f9f8b42479f2c6ff668ca1ac4-image.png" width="50% " />
 
-> 📘 Time Interval for Conversion Window
->
-> CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
+<Callout icon="📘" theme="info">
+  #### Time Interval for Conversion Window
+
+  CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
+</Callout>
 
 ## Compare by Segments
 
@@ -148,7 +152,7 @@ For example, let's take a look at the following Login Flow of two users in an ap
 * **User A:** App Launched → Login Attempted → Login Attempted → Login Attempted → Logged In
 * **User B:** App Launched → Login Attempted → Logged In
 
-With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments. 
+With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments.
 
 # Table View
 
