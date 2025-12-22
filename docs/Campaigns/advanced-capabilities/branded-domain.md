@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns.
+Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns. They behave slightly differently across channels, which is explained throughout this document.
 
 * For **SMS**, **WhatsApp**, and **RCS campaigns**, it is used to generate short, trackable links.
 * For **Email campaigns**, it is used to brand links and open-tracking pixels with a custom domain.
