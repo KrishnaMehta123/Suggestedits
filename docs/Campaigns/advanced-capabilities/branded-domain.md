@@ -14,10 +14,10 @@ next:
 ---
 # Overview
 
-Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns. They behave slightly differently across channels, which is explained throughout this document.
+Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns. 
 
 * For **SMS**, **WhatsApp**, and **RCS campaigns**, it is used to generate short, trackable links.
-* For **Email campaigns**, it is used to brand links and open-tracking pixels with a custom domain.
+* For **Email campaigns**, it is used to brand links and open-tracking pixels using a custom domain.
 
 Using branded domains improves user trust and can boost engagement rates.
 
@@ -38,11 +38,13 @@ This section provides information about creating a branded system and a custom d
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 2. Click **Add Domain** and select the channel.
-3. Enter the following details that you are prompted to enter based on the selected channel. For more information, refer to []() and [Custom Domain]().
+3. Enter the details you are prompted to provide based on the selected channel. For more information, refer to []() and [Custom Domain]().
 
 <Image align="center" border={true} caption="Add Domain" src="https://files.readme.io/e3b88c267d2ff3601ff7e683443c73d9339f2eabce70810a1a9ad7c3522277ed-Add_Domain.png" />
 
-3. Click **Save**. If it is a system domain, the status is set to **Active** immediately. If it is a custom domain, the status is set to **Pending Verification**, and DNS Records are generated for you to configure with your Domain provider.
+3. Click **Save**. 
+   * For a System Domain, the status is set to Active immediately.
+   * For a Custom Domain, the status is set to Pending Verification, and DNS records are generated for you to configure with your domain provider.
 
 ## Add System Domain
 
@@ -98,7 +100,7 @@ You can create a system domain to quickly start using branded links in your What
       </td>
 
       <td>
-        \The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
+         The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
       </td>
     </tr>
 
