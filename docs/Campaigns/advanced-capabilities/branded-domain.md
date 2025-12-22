@@ -34,7 +34,12 @@ Both options allow you to define specific settings, such as the URL structure an
 
 # Add Domain
 
-This section provides information about creating a branded system and a custom domain for your campaigns.
+This section provides information about creating a branded system and a custom domain for your campaigns. To add a domain, perform the following steps:
+
+1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
+2. Click **Add Domain** and select the channel.
+3. Enter the following details:  
+   1.
 
 ## Add System Domain
 
