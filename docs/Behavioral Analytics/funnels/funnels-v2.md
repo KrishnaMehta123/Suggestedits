@@ -19,9 +19,9 @@ Funnels show users' progress through defined paths in your app and pinpoint wher
 A typical example is a user onboarding flow, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase flow, where a user progresses through a shopping cart experience to a purchase event.
 
 <Callout icon="📘" theme="info">
-  #### Private Beta
+  #### Public Beta
 
-  Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
 </Callout>
 
 # Creating a Funnel
@@ -58,7 +58,7 @@ To set a conversion window:
 
 ## Compare by Segments
 
-You can compare your conversions across different segments [to analyze..} (@bajrang, some issue here, please check). For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in the conversion trends could reveal differences in your users' behavior in each segment and result in invaluable insight.
+You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in the conversion trends could reveal differences in your users' behavior in each segment and result in invaluable insight.
 
 To compare conversion across segments, perform the following steps:
 
