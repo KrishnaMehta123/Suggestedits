@@ -159,6 +159,15 @@ Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand vi
 
 <Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/2acf43bea0d00e25c5cd81df909397b67f55d6b4e84bc3b68d22b44a1ea10a92-image.png" />
 
+| Field              | Description                                                                                                                                                                                                                                                                                                                                                             |
+| :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nickname           | Provide a name to identify the domain (for example, "Sales Campaign").                                                                                                                                                                                                                                                                                                  |
+| Channel            | The channel this branded domain will be used for.                                                                                                                                                                                                                                                                                                                       |
+| Domain Type        | Your own subdomain (for example, links.yourbrand.com) that requires DNS configuration.                                                                                                                                                                                                                                                                                  |
+| Domain             | Enter your own subdomain to be used for branding and tracking                                                                                                                                                                                                                                                                                                           |
+| Branded URL Schema | This is required when adding a custom domain for WhatsApp/SMS & RCS channels. It defines the structure of the branded tracking URL.                                                                                                                                                                                                                                     |
+| Error Page         | Optional field. Available only for WhatsApp/SMS & RCS channels. Provide the page you want users to see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency even in error scenarios. Click _Preview Error Page_ to view and verify the error before the domain becomes active. |
+
 Once you enter all the details, click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately, and DNS Records are generated to configure it on your Domain provider dashboard.
 
 <Image align="center" border={true} caption="DNS Records Generated for Email" src="https://files.readme.io/6d90a8eaa27f1d56aae290b66bf962fcd1b1ee164bddfe3bc0779a7a310d4f48-image.png" />
@@ -173,15 +182,15 @@ Once you enter all the details, click **Save & Generate DNS**. The domain status
 
 ### Verify Custom Domain
 
-Once the DNS Records are generated, verify these records so that the domain becomes active and available for use
+After DNS records are generated, verify them so the domain becomes active and available for use. To do so, perform the following steps:
 
 1. Go to the domain provider dashboard and configure the following DNS records. When configuring DNS records with your domain provider, enter only the prefix part in the Name field. The prefix is the part that precedes the main domain. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.track.yourdomain.com`, enter `_c58ebcb5c******5f03bb6b174349.track` in the Name field.
 
-| Type  | Description                                                                                                                                           |
-| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CNAME | Used for domain ownership verification.                                                                                                               |
-| CNAME | Redirects branded links to CleverTap's short URL service in the case of WhatsApp/SMS & RCS campaigns. Tracks clicks and opens in the Email campaigns. |
-| TXT   | Verifies domain association with CleverTap.                                                                                                           |
+| Type  | Description                                                                                                                                          |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CNAME | Used for domain ownership verification.                                                                                                              |
+| CNAME | Redirects branded links to CleverTap's short URL service for WhatsApp/SMS & RCS campaigns. For Email campaigns, it supports click and open tracking. |
+| TXT   | Verifies domain association with CleverTap.                                                                                                          |
 
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
 3. Click the ![](https://files.readme.io/36be013543cabc562d762f02fd1eebc007f2caad03f95519a37dfff4f6e4c7ed-Refresh_icon.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS verification may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
@@ -200,7 +209,7 @@ Here are some tips to ensure your branded domain setup is effective and complian
   * Keep the **Subdomain** short, relevant, and easy to remember.
   * Avoid complex words, long phrases, or special characters in the **Subdomain** name.
   * Ensure you configure **DNS records** exactly as shown after setup to avoid delays in verification.
-* You must avoid the following:
+* Avoid the following:
   * Using more than 20 characters in the **Adjoiner** or **Subdomain**.
   * Starting or ending **Adjoiners** with hyphens.
   * Using non-brand-specific generic terms.
@@ -236,7 +245,7 @@ Go to _Settings_ > _Set Up_ > _Branded Domains_. You can see a list of all your 
 | _Status_          | The current status of the domain. It can be: <ul><li>**Active**: Domain is verified and ready to be used in campaigns.</li><li>**Pending Verification**: Domain is awaiting DNS verification and cannot be used until verified.</li><li>**Failed**: Domain verification failed due to incorrect or missing DNS records.</li></ul> |
 | _Last Updated On_ | The timestamp when the domain settings were last updated.                                                                                                                                                                                                                                                                         |
 
-After adding the domain, you can perform the following operations by hovering over the branded domain:
+After adding the domain, you can perform the following operations by hovering it:
 
 <Image align="center" border={true} caption="Manage Branded Domains" src="https://files.readme.io/a4ad7fef6b3c58d079a57876f5c3d45be43447b1298499d715bdf28d0e2dbafd-Manage_Branded_Domains.gif" />
 
