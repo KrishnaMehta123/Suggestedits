@@ -63,18 +63,16 @@ All filters except the _Delivery Type_ and _Segment Type_ filters also have indi
 
 ## Edit Columns
 
-(@Meenal: Is this still Edit or has it been changed to Manage?)
-
 You can customize the campaign listing view to match your preferences. Click the _Edit Columns_ icon to select and reorder the columns you want to show on the campaign list page. You can view up to 2000 campaigns on the listing page.
 
-The _Sent_ column is toggled off by default. An Engagement Rate column is available to show channel-specific stats. (@meenal: Why are we specifically talking about the "Engagement Rate" column here??)
+The _Sent_ column is toggled off by default. 
 
 <Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" />
 
 <Callout icon="📘" theme="info">
   #### Note
 
-  * In the All Campaigns view, each campaign shows the associated Team. (@Meenal: this is Private Beta - we should mention it accordingly and also add a cross-reference to the respective page.)
+  * In the All Campaigns view, each campaign shows the associated Team. This enhancement is currently available as part of a Private Beta. For more information, refer to [Teams Setup](https://docs.clevertap.com/docs/teams-setup).
   * Users can view and manage only the campaigns tied to their respective teams. This ensures visibility and access are aligned with your RBAC configuration.
 </Callout>
 
@@ -165,7 +163,7 @@ All active campaigns except those in the _Stopped_, _Completed_, _Rejected_, or 
 
 <Image align="center" alt="Edit" border={true} caption="Edit" src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" />
 
-You can also click this (@Meenal: icon is missing here. Please add.) icon to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics. (@meenal: also, do we need a screenshot for this?)
+3. You can also click to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics.
 
 <Image align="center" alt="Open in new tab" border={true} src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" className="border" />
 
