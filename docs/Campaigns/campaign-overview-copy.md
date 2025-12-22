@@ -53,8 +53,8 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
 <Callout icon="📘" theme="info">
   #### Time Period Filters
 
-  * When viewing campaigns from the list page, the default date range is set to _All time_
-  * When viewing campaign **Stats**, the default date range is set to _last 30 days_.
+  * By default, the date range for **Created** campaigns is _All time_.
+  * When viewing campaign **Stats**, the default date range is set to _last 30 days_. 
   * Resetting reverts the Time Period filters to default values.
   * Date ranges saved in filters are relative to the current date. For example, a _past 2 days_ filter saved on July 2nd shows July 1st–2nd as the date range. When the same filter is applied on July 20th, it automatically shows July 19th–20th as the date range.
 </Callout>
@@ -65,7 +65,7 @@ All filters except the _Delivery Type_ and _Segment Type_ filters also have indi
 
 You can customize the campaign listing view to match your preferences. Click the _Edit Columns_ icon to select and reorder the columns you want to show on the campaign list page. You can view up to 2000 campaigns on the listing page.
 
-The _Sent_ column is toggled off by default. 
+The _Sent_ column is toggled off by default.
 
 <Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" />
 
@@ -175,7 +175,7 @@ Click **Subscribe to Reports** and configure the columns you want to include in 
 
 <Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" />
 
-You can also email a report by selecting the campaign and clicking **Send Report** from the Campaign Reports window or by clicking the ![]() icon from the campaign listing page. (@Meenal: pls include the icon in this statement.)
+You can also email a report by selecting the campaign and clicking **Send Report** from the Campaign Reports window or by clicking the ![](https://files.readme.io/3baffd15a3c21d3330adf829d5e4fd8add811ad98f9b850f3e8ef2d3317f592b-reports_icon.png) icon from the campaign listing page. 
 
 <Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" />
 
@@ -222,7 +222,7 @@ Campaign Status helps track progress and manage campaigns efficiently as follows
 
 **For Campaigns with Creator-Approver Workflow**
 
-These states apply only when the campaigns are created with the Creator-Approver workflow: (@meenal: these are the additional states - right? We should rephrase the intor statement accordingly.)
+The following campaign states are specific to campaigns created with the Creator-Approver workflow enabled. These states help track approval progress before a campaign goes live.
 
 | State                    | What it means                                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
@@ -235,9 +235,7 @@ For Live Campaigns Awaiting Next Run, you can edit the following: _What_ section
 
 # Editing Rules by Campaign State
 
-Each campaign state has distinct characteristics that determine what actions can be performed, as follows
-
-(@Meenal: Is this reviewed and approved by Suvidhi?)
+Each campaign state has distinct characteristics that determine what actions can be performed, as follows:
 
 | Campaign State           | Scenario                                           | Creator's Action                                                                                                                                                   | Approver's Action                                                                                                                                                                                                                                                       |
 | :----------------------- | :------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
