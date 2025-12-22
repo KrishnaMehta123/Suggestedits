@@ -153,9 +153,9 @@ Once you enter all the details, click **Save**. The status is set to **Active** 
 
 Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
-<Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/2acf43bea0d00e25c5cd81df909397b67f55d6b4e84bc3b68d22b44a1ea10a92-image.png" />
-
 <Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/d32553105c9a4741e7f40da5c67c0da19416e440ae75a24f00e08132f5b20651-image.png" />
+
+<Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/2acf43bea0d00e25c5cd81df909397b67f55d6b4e84bc3b68d22b44a1ea10a92-image.png" />
 
 Once you enter all the details, click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately, and DNS Records are generated to configure it on your Domain provider dashboard.
 
@@ -184,7 +184,7 @@ Once the DNS Records are generated, verify these records so that the domain beco
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
 3. Click the ![](https://files.readme.io/36be013543cabc562d762f02fd1eebc007f2caad03f95519a37dfff4f6e4c7ed-Refresh_icon.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS verification may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
 
-# Best Practices for Adding Domain
+# Best Practices for Adding Domain in CleverTap
 
 Here are some tips to ensure your branded domain setup is effective and compliant:
 
@@ -220,7 +220,7 @@ Here are some tips to ensure your branded domain setup is effective and complian
 
 # Manage Branded Domains
 
-The Domain Listing page allows you to view and manage all your configured domains. You can easily edit domain settings, view DNS records, and make any necessary updates to check if your domains are properly set up and functioning.
+The Domain Listing page allows you to view and manage all your configured domains. You can easily edit domain settings, view DNS records, and make any necessary updates to check if your domains are correctly set up and functioning.
 
 Go to _Settings_ > _Set Up_ > _Branded Domains_. You can see a list of all your domains (system or custom), including the following details:
 
