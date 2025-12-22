@@ -29,74 +29,67 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
 
 <Image align="center" alt="Filter Campaigns" border={true} caption="Filter Campaigns" src="https://files.readme.io/8cd9b547d48c83a96dd0269e92389e13d056f0c79334e187826806ab27e6d39a-listing.png" />
 
-3. Select the required filters and click **Apply** to view results on the _All Campaigns_ page.
-4. Click **Reset** to reset all the applied filters.
+3. Select the required filters and click **Apply** to view results on the _All Campaigns_ page. If you create a filter and do not select **Apply**, the filter criteria are still displayed but not applied directly in the listing view. Filters are organized separately for Active and Archived campaigns.   
 
-Filters are divided into two main sections, Active and Archived. Refer to the table below for filter operations:
+   Refer to the table below for filter operations:  
 
-| Filter Section             | Filter Description                                                                                                                                                                                                                         | Options                                                                                      |
-| :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| **Saved Filters**          | Select from a list of saved filters. In that case, all the fields will be automatically populated. You can also create a new filter and click **Save**. Filters are saved at the account level and are available for the Active campaigns. | List of Custom Filters                                                                       |
-| **Status**                 | Filters campaigns based on their current status. These options are available only for **active** campaigns. For more information, refer to [Campaign States]().                                                                            | Scheduled, Running, Stopped, Completed, Approval Pending, Rejected, Draft, Awaiting Next Run |
-| **Time Period**            | Filters based on the time period when the campaigns were created or started. The list is automatically sorted in descending order, based on either the start time or the creation date, depending on the selected filter.                  | Campaigns Created, Started                                                                   |
-| **Stats Period**           | Filters based on the stats period of the campaigns.                                                                                                                                                                                        | Choose stats duration                                                                        |
-| **Mobile Channel**         | Filters based on the type of mobile channel used.                                                                                                                                                                                          | Push Notification, In-App Message, App Inbox, Native Display                                 |
-| **Web Channel**            | Filters based on the type of web channel used.                                                                                                                                                                                             | Web Popup, Exit Intent, Web Push Notification, Web Native Display, Web Inbox                 |
-| **Direct-to-User Channel** | Filters based on the type of Direct-to-User channel used.                                                                                                                                                                                  | Email, SMS, WhatsApp, Unified Inbox                                                          |
-| **Streaming Channel**      | Filters based on the type of streaming channel used.                                                                                                                                                                                       | Facebook Audiences, Webhook, Google Adwords, Amazon EB, mParticle, Segment, TikTok           |
-| **Created By**             | Filters based on the email ID of the person who created the campaign.                                                                                                                                                                      | Filter by email ID of campaign creator                                                       |
-| **Label**                  | Filters based on the labels assigned to the campaign. Clicking **Manage Labels** will redirect you to the labels page in account setup. You can create or manage labels as per your assigned roles.                                        | Based on labels assigned to campaigns                                                        |
-| **Delivery Type**          | Filters based on the delivery type of the campaign.                                                                                                                                                                                        | One Time, Recurring, Multiple Dates                                                          |
-| **Segment Type**           | Filters based on the type of segment used.                                                                                                                                                                                                 | In-Action, Action, On Date/Time, External Trigger                                            |
-| **External Campaigns**     | Filters based on the type of external campaign.                                                                                                                                                                                            | API Campaigns, Bulletins, Notification via Server API                                        |
+   | Filter Section             | Options                                                                                      | Filter Description                                                                                                                                                                                                                         |
+   | :------------------------- | :------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Saved Filters**          | List of Custom Filters                                                                       | Select from a list of saved filters. In that case, all the fields will be automatically populated. You can also create a new filter and click **Save**. Filters are saved at the account level and are available for the Active campaigns. |
+   | **Status**                 | Scheduled, Running, Stopped, Completed, Approval Pending, Rejected, Draft, Awaiting Next Run | Filters campaigns based on their current status. These options are available only for **active** campaigns. For more information, refer to [Campaign States]().                                                                            |
+   | **Time Period**            | Campaigns Created, Started                                                                   | Filters based on the time period when the campaigns were created or started. The list is automatically sorted in descending order, based on either the start time or the creation date, depending on the selected filter.                  |
+   | **Stats Period**           | Choose stats duration                                                                        | Filters based on the stats period of the campaigns.                                                                                                                                                                                        |
+   | **Mobile Channel**         | Push Notification, In-App Message, App Inbox, Native Display                                 | Filters based on the type of mobile channel used.                                                                                                                                                                                          |
+   | **Web Channel**            | Web Popup, Exit Intent, Web Push Notification, Web Native Display, Web Inbox                 | Filters based on the type of web channel used.                                                                                                                                                                                             |
+   | **Direct-to-User Channel** | Email, SMS, WhatsApp, Unified Inbox                                                          | Filters based on the type of Direct-to-User channel used.                                                                                                                                                                                  |
+   | **Streaming Channel**      | Facebook Audiences, Webhook, Google Adwords, Amazon EB, mParticle, Segment, TikTok           | Filters based on the type of streaming channel used.                                                                                                                                                                                       |
+   | **Created By**             | Filter by email ID of campaign creator                                                       | Filters based on the email ID of the person who created the campaign.                                                                                                                                                                      |
+   | **Label**                  | Based on labels assigned to campaigns                                                        | Filters based on the labels assigned to the campaign. Clicking **Manage Labels** will redirect you to the _Labels_ page under Account Setup. You can create or manage labels as per your assigned roles.                                   |
+   | **Delivery Type**          | One Time, Recurring, Multiple Dates                                                          | Filters based on the campaign delivery type.                                                                                                                                                                                               |
+   | **Segment Type**           | In-Action, Action, On Date/Time, External Trigger                                            | Filters based on the type of segment used.                                                                                                                                                                                                 |
+   | **External Campaigns**     | API Campaigns, Bulletins, Notification via Server API                                        | Filters based on the type of external campaign.                                                                                                                                                                                            |
+4. Click **Reset** to reset all the applied filters.  
 
-> 📘 Time Period Filters
->
-> * By default, the date range for **Created** campaigns is _All time_.
-> * By default, the date range for **Stats** campaigns is the _last 30 days_. The _All time range_ is unavailable for Stats.
-> * Resetting reverts the Time Period filters to default values.
-> * Date ranges saved in filters are relative to the current date. For example, a _past 2 days_ filter saved on July 2nd will show July 1st–2nd as the date range. When applied on July 20th, it shows July 19th–20th as the date range.
 
-Filters are only applied after you click **Apply**. If you create a filter and do not select **Apply**, the filter criteria are still displayed but not applied directly in the listing view.
+<Callout icon="📘" theme="info">
+  #### Time Period Filters
 
-All filters except the _Delivery Type_ and _Segment Type_ filters also have individual reset options. You can reset a specific filter and click **Apply** to immediately see the updated results in the campaign list.
+  * When viewing campaigns from the list page, the default date range is set to _All time_
+  * When viewing campaign **Stats**, the default date range is set to _last 30 days_.
+  * Resetting reverts the Time Period filters to default values.
+  * Date ranges saved in filters are relative to the current date. For example, a _past 2 days_ filter saved on July 2nd shows July 1st–2nd as the date range. When the same filter is applied on July 20th, it automatically shows July 19th–20th as the date range.
+</Callout>
+
+All filters except the _Delivery Type_ and _Segment Type_ filters also have individual reset options. You can reset a specific filter and click **Apply** to view the updated results in the campaign list immediately.
 
 ## Edit Columns
 
-You can customize the campaign listing view to match your preferences. Click the _Edit Columns_ icon to select and reorder the columns you want displayed on the campaign list. You can view up to 2000 campaigns on the listing page.
+(@Meenal: Is this still Edit or has it been changed to Manage?)
 
-The Sent column is toggled off by default. An Engagement Rate column is available to show channel-specific stats.
+You can customize the campaign listing view to match your preferences. Click the _Edit Columns_ icon to select and reorder the columns you want to show on the campaign list page. You can view up to 2000 campaigns on the listing page.
+
+The _Sent_ column is toggled off by default. An Engagement Rate column is available to show channel-specific stats. (@meenal: Why are we specifically talking about the "Engagement Rate" column here??)  
 
 <Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" />
 
-> 📘 Note
->
-> * In the All Campaigns view, each campaign shows the associated Team.
-> * Users can view and manage only the campaigns tied to their respective teams. This ensures visibility and access are aligned with your RBAC configuration.
+<Callout icon="📘" theme="info">
+  #### Note
 
-## Campaign Reports
-
-Selecting _Campaigns_ from the CleverTap Dashboard opens the Campaign Reports table where you can see all your campaigns across every channel in one consolidated view. Campaign Reports include the channel, delivery status, and key statistics to assess and compare performance.
-
-Click Subscribe to reports and enter the details.
-
-<Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" />
-
-You can also email a report by selecting the campaign and clicking the email report icon.
-
-<Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" />
-
-If the report section opens with _All Time_ as the selected time period, requesting the report will automatically adjust the date range to ±15 days. A warning message will be displayed to inform the user of this change. For more details, refer to [Campaign Reports](https://staging.docs.user.clevertap.net/docs/campaign-reports-copy).
+  * In the All Campaigns view, each campaign shows the associated Team. (@Meenal: this is Private Beta - we should mention it accordingly and also add a cross-reference to the respective page.)
+  * Users can view and manage only the campaigns tied to their respective teams. This ensures visibility and access are aligned with your RBAC configuration.
+</Callout>
 
 ## Add Labels
 
-Labels allow you to tag campaigns with descriptive names or themes. Once applied, labels allow you to group your various messaging campaigns so that you can view their performance or identify user behaviors. For example, you can create a label called _Onboarding_ to identify all the messaging campaigns (across all channels) related to onboarding your new users.
+Labels allow you to tag campaigns with descriptive names or themes. Once applied, labels enable you to group your various messaging campaigns, allowing you to view their performance or identify user behaviors. For example, you can create a label called _Onboarding_ to identify all the messaging campaigns (across all channels) related to onboarding your new users.
 
 You can select up to 10 labels for a campaign. If a campaign already has more than 10 labels assigned from earlier configurations, they will still be visible under _Selected Labels_. However, in such cases, the user will not be able to select any additional labels.
 
-> 📘 Naming Labels
->
-> The labels cannot start with or contain the following symbols: ”, , %, >, \<, and !.
+<Callout icon="📘" theme="info">
+  #### Naming Labels
+
+  The labels cannot start with or contain the following symbols: ”, , %, >, \<, and !.
+</Callout>
 
 You can create and apply labels from the _All Campaigns_ or the _All Journeys_ page. Labels can be applied to individual campaigns from the All Campaigns page during creation. To do so:
 
@@ -107,12 +100,14 @@ You can create and apply labels from the _All Campaigns_ or the _All Journeys_ p
 
 <Image align="center" alt="Create Multiple Message Labels" border={true} caption="Create and Assign Multiple Message Labels" src="https://files.readme.io/3dd944e95bec99bc93eba8c1d3a729042e52cc3085530098ae42ee79e531f8fa-2025-12-11_18-49-11_1.gif" />
 
-> 📘 Note
->
-> * When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
-> * To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
->
-> <Image align="center" border={true} src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" className="border" />
+<Callout icon="📘" theme="info">
+  #### Note
+
+  * When applying labels in bulk, the selected labels are applied to _all_ selected campaigns. However, if you later select an individual campaign from that group, the bulk-applied labels do not automatically appear in the _Selected Tag ID_ section.
+  * To view or manage the labels for a specific campaign, click the **Labels** icon next to the campaign.
+
+  <Image align="center" border={true} src="https://files.readme.io/5ca549107a2598ece1d563f64e3d7e96bc164fa520e76bbe7ced774f45d0dbdd-labelsss.png" className="border" />
+</Callout>
 
 You can view and export all labels to a CSV file from the _Settings_ >  _Setup_  > _Labels_  page. You can also edit or delete labels from this page.
 
@@ -134,7 +129,7 @@ Running campaigns cannot be archived.
 >
 > * Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
 > * Archived campaigns cannot be unarchived.
-> * All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **schedule**, or **publish** the cloned (new) campaign.
+> * All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
 
 ## Stop Campaigns
 
@@ -153,7 +148,7 @@ Once a campaign is published, you can stop it, but you cannot pause it. Click th
 
 ## Clone Campaign
 
-Cloning a campaign helps create a new campaign from an existing one with minor or no modifications. To do so:
+Cloning a campaign allows you to create a new campaign from an existing one with minimal or no modifications. To do so:
 
 1. Go to _Messages_ > _Campaigns_ from the CleverTap dashboard. The _All Campaigns_ page opens.
 2. Click the ![](https://files.readme.io/0477193c16626ee55e9ef861d13f6cabfcec39dd80e79424384f83c6a9884089-Menu.png)  icon for the campaign you want to clone and click **Clone**.
@@ -169,12 +164,26 @@ All active campaigns except those in the _Stopped_, _Completed_, _Rejected_, or 
 
 <Image align="center" alt="Edit" border={true} caption="Edit" src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" />
 
-You can also click this icon to open the campaign in a new tab and edit it. In case the campaign is completed, you can view stats.
+You can also click this (@Meenal: icon is missing here. Please add.) icon to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics. (@meenal: also, do we need a screenshot for this?)
 
-<Image align="center" alt="Open in new tab" border={true} caption="Open in new tab" src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" />
+<Image align="center" alt="Open in new tab" border={true} src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" className="border" />
+
+# Campaign Reports
+
+Selecting _Campaigns_ from the CleverTap Dashboard opens the Campaign Reports table, where you can see all your campaigns across every channel in one consolidated view. Campaign Reports include the channel, delivery status, and key statistics to assess and compare performance.
+
+Click **Subscribe to Reports** and configure the columns you want to include in the report.
+
+<Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" />
+
+You can also email a report by selecting the campaign and clicking **Send Report** from the Campaign Reports window or by clicking the ![]() icon from the campaign listing page. (@Meenal: pls include the icon in this statement.)
+
+<Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" />
+
+If the report section opens with _All Time_ as the selected time period, requesting the report automatically adjusts the date range to ±15 days. A warning message is displayed to inform the user of this change. For more information, refer to [Campaign Reports](https://staging.docs.user.clevertap.net/docs/campaign-reports-copy).
 
 <Callout icon="📘" theme="info">
-  # Role-Based Access Control (RBAC) enforcement for campaign actions
+  #### Role-Based Access Control (RBAC) enforcement for campaign actions
 
   The campaign listing page supports Role-Based Access Control (RBAC) to ensure users can only perform actions that align with their assigned roles and team permissions. A user should first have access to the Campaigns or Journeys in general. From there, their channel-level permissions determine their role within each channel:
 
@@ -183,7 +192,7 @@ You can also click this icon to open the campaign in a new tab and edit it. In c
 
   For more information, refer to [Channel Level Access](https://docs.clevertap.com/docs/role-based-access-control#channel-level-access).
 
-  ### Access Behavior
+  #### Access Behavior
 
   Refer to the following table for access behaviour. This applies to all actions across both Active and Archived campaigns.
 
@@ -192,20 +201,16 @@ You can also click this icon to open the campaign in a new tab and edit it. In c
   | **Write Access** | Full control over campaigns: Create, Edit, Clone, Archive, Stop, Start, Add Labels |
   | **Read Access**  | View campaign details, apply filters, and email campaign reports                   |
 
-  ### Error Handling
+  #### Error Handling
 
   If a user attempts an action they don’t have permission for (for example, editing a campaign without write access), an error message is shown indicating insufficient permissions.
 
-  <Image align="center" border={true} caption="Limited Access" src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" width="50% " />
+  <Image align="center" border={true} caption="Limited Access" src="https://files.readme.io/1f2e8a9d5b7534801b2b98cae50d54fa9074989f927dfbb6a33aa0ba36796dd8-image.png" width="35% " />
 </Callout>
 
 # Campaign States
 
-Campaign Status helps track progress and manage campaigns efficiently. Each campaign state has distinct characteristics that determine what actions can be performed. 
-
-### Campaign Lifecycle States
-
-The following are the campaign states:
+Campaign Status helps track progress and manage campaigns efficiently as follows:
 
 | State                 | Description                                                                             |
 | --------------------- | --------------------------------------------------------------------------------------- |
@@ -216,9 +221,9 @@ The following are the campaign states:
 | **Completed**         | Campaign has finished running and is no longer active.                                  |
 | **Stopped**           | Campaign has been permanently halted.                                                   |
 
-### Approval-related States
+**For Campaigns with Creator-Approver Workflow**
 
-These states apply only when the Creator–Approver workflow is enabled.
+These states apply only when the campaigns are created with the Creator-Approver workflow: (@meenal: these are the additional states - right? We should rephrase the intor statement accordingly.)
 
 | State                    | What it means                                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
@@ -229,27 +234,29 @@ For Campaigns Scheduled for Later, you can edit the following sections of the ca
 
 For Live Campaigns Awaiting Next Run, you can edit the following: _What_ section, Campaign name, and Message labels.
 
-### Creator-Approver Workflow
+# Editing Rules by Campaign State
 
-For Campaigns with Creator-Approver Workflow, refer to the following table:
+Each campaign state has distinct characteristics that determine what actions can be performed, as follows
 
-| Campaign State           | Scenario                                           | Creator's Action                                                                                                                                                   | Approver's Action                                                                                                                                                                                                                                              |
-| :----------------------- | :------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Scheduled**            | Before scheduled time                              | Can edit all campaign information and send it for approval.                                                                                                        | Can edit all campaign information and publish.                                                                                                                                                                                                                 |
-|                          | After scheduled time                               | Cannot edit; popup indicating discarded changes displays                                                                                                           | Can only approve; popup indicating discarded changes..                                                                                                                                                                                                         |
-|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                |
-| **Awaiting Next Run**    | Before scheduled time                              | Can modify only the _What_ section and send it for approval.                                                                                                       | Can modify only the _What_ section and publish.                                                                                                                                                                                                                |
-|                          | After scheduled time                               | Cannot edit; popup indicating discarded changes displays.                                                                                                          | Can only approve; popup indicating discarded changes.                                                                                                                                                                                                          |
-|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                |
-| **Running**              | During execution                                   | Can modify only the _What_ section of Live campaigns and send them for approval.                                                                                   | Can modify only the _What_ section of Live campaigns and publish.                                                                                                                                                                                              |
-|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                |
-| **Pending For Approval** | Before First run                                   | Can edit all campaign information before and after the scheduled time and send it for approval.                                                                    | <li>Can edit all the campaign information **before the scheduled time** and approve the campaign.</li><li>Popup indicating that the campaign was scheduled in the past time; The approver can edit all the campaign information and publish the campaign.</li> |
-|                          | First run was completed, and awaiting the next run | Can only edit the _What_ section before the next scheduled time.                                                                                                   |                                                                                                                                                                                                                                                                |
-|                          |                                                    | The creator can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                 | The approver can edit only the WHAT section **before the scheduled time** and publish the campaign.                                                                                                                                                            |
-|                          |                                                    | If the creator tries to edit the campaign **after the scheduled time**, a popup opens. The popup indicates that the changes made by the creator will be discarded. | If the approver tries to edit the campaign **after the scheduled time**, a popup opens. The popup indicates that the changes made by the creator will be discarded.                                                                                            |
-|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                |
-| **Rejected**             | First run is yet to start                          | The creator can edit all the campaign information **before the scheduled time** and send it to the approver for approval.                                          | The approver can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                                                                                                            |
-|                          |                                                    | The creator can edit all the campaign information **after the scheduled time** and send it to the approver for approval.                                           | If the approver tries to edit the campaign **after the scheduled time**, a popup opens. The popup indicates that the changes made by the approver will be discarded.                                                                                           |
-|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                |
-|                          | First run was completed, and awaiting the next run | The creator can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                 | The approver can edit only the WHAT section **before the scheduled time** and publish the campaign.                                                                                                                                                            |
-|                          |                                                    | If the creator tries to edit the campaign **after the scheduled time**, they can edit only the WHAT section and send it to the approver for approval.              | The approver can only edit the WHAT section of the campaign after the scheduled time. Also, a popup indicates that the campaign can be run today or tomorrow.                                                                                                  |
+(@Meenal: Is this reviewed and approved by Suvidhi?)
+
+| Campaign State           | Scenario                                           | Creator's Action                                                                                                                                                   | Approver's Action                                                                                                                                                                                                                                                       |
+| :----------------------- | :------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Scheduled**            | Before scheduled time                              | Can edit all campaign information and send it for approval.                                                                                                        | Can edit all campaign information and publish.                                                                                                                                                                                                                          |
+|                          | After scheduled time                               | Cannot edit; popup indicating discarded changes displays                                                                                                           | Can only approve; popup indicating discarded changes..                                                                                                                                                                                                                  |
+|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                         |
+| **Awaiting Next Run**    | Before scheduled time                              | Can modify only the _What_ section and send it for approval.                                                                                                       | Can modify only the _What_ section and publish.                                                                                                                                                                                                                         |
+|                          | After scheduled time                               | Cannot edit; popup indicating discarded changes displays.                                                                                                          | Can only approve; popup indicating discarded changes.                                                                                                                                                                                                                   |
+|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                         |
+| **Running**              | During execution                                   | Can modify only the _What_ section of Live campaigns and send them for approval.                                                                                   | Can modify only the _What_ section of Live campaigns and publish.                                                                                                                                                                                                       |
+|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                         |
+| **Pending For Approval** | Before First run                                   | Can edit all campaign information before and after the scheduled time and send it for approval.                                                                    | <ul><li>Can edit all the campaign information **before the scheduled time** and approve the campaign.</li><li>Popup indicating that the campaign was scheduled in the past time; The approver can edit all the campaign information and publish the campaign.</li></ul> |
+|                          | First run was completed, and awaiting the next run | Can only edit the _What_ section before the next scheduled time.                                                                                                   |                                                                                                                                                                                                                                                                         |
+|                          |                                                    | The creator can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                 | The approver can edit only the WHAT section **before the scheduled time** and publish the campaign.                                                                                                                                                                     |
+|                          |                                                    | If the creator tries to edit the campaign **after the scheduled time**, a popup opens. The popup indicates that the changes made by the creator will be discarded. | If the approver tries to edit the campaign **after the scheduled time**, a popup opens. The popup indicates that the changes made by the creator will be discarded.                                                                                                     |
+|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                         |
+| **Rejected**             | First run is yet to start                          | The creator can edit all the campaign information **before the scheduled time** and send it to the approver for approval.                                          | The approver can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                                                                                                                     |
+|                          |                                                    | The creator can edit all the campaign information **after the scheduled time** and send it to the approver for approval.                                           | If the approver tries to edit the campaign **after the scheduled time**, a popup opens. The popup indicates that the changes made by the approver will be discarded.                                                                                                    |
+|                          |                                                    |                                                                                                                                                                    |                                                                                                                                                                                                                                                                         |
+|                          | First run was completed, and awaiting the next run | The creator can edit only the WHAT section **before the scheduled time** and send it to the approver for approval.                                                 | The approver can edit only the WHAT section **before the scheduled time** and publish the campaign.                                                                                                                                                                     |
+|                          |                                                    | If the creator tries to edit the campaign **after the scheduled time**, they can edit only the WHAT section and send it to the approver for approval.              | The approver can only edit the WHAT section of the campaign after the scheduled time. Also, a popup indicates that the campaign can be run today or tomorrow.                                                                                                           |
