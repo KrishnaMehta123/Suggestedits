@@ -222,7 +222,7 @@ Campaign Status helps track progress and manage campaigns efficiently as follows
 
 **For Campaigns with Creator-Approver Workflow**
 
-The following campaign states are specific to campaigns created with the Creator-Approver workflow enabled. These states help track approval progress before a campaign goes live.
+The following campaign states are specific to campaigns created with the Creator-Approver workflow enabled. These states help track approval progress before a campaign goes live. (@Meenal: I had added a comment here - stating these are additional states which are only for approver workflow - please rephrase accordingly)
 
 | State                    | What it means                                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
