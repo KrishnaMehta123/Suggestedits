@@ -222,7 +222,7 @@ Campaign Status helps track progress and manage campaigns efficiently as follows
 
 **For Campaigns with Creator-Approver Workflow**
 
-The following campaign states are specific to campaigns created with the Creator-Approver workflow enabled. These states help track approval progress before a campaign goes live. (@Meenal: I had added a comment here - stating these are additional states which are only for approver workflow - please rephrase accordingly)
+The following additional states apply only to campaigns created with the Creator-Approver workflow. These additional states help track the approval status of a campaign before it goes live. 
 
 | State                    | What it means                                                                                                  |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
@@ -231,7 +231,9 @@ The following campaign states are specific to campaigns created with the Creator
 
 For Campaigns Scheduled for Later, you can edit the following sections of the campaign: Who, What, and When.
 
-For Live Campaigns Awaiting Next Run, you can edit the following: _What_ section, Campaign name, and Message labels.
+For Live Campaigns Awaiting Next Run, you can edit the following: _What_ section, Campaign name, and Message labels. 
+
+(@Meenal: Why are we adding the above 2 sentences as we have a dedicated table for that? Please check this.) 
 
 # Editing Rules by Campaign State
 
