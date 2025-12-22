@@ -54,7 +54,7 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
   #### Time Period Filters
 
   * By default, the date range for **Created** campaigns is _All time_.
-  * When viewing campaign **Stats**, the default date range is set to _last 30 days_. 
+  * When viewing campaign **Stats**, the default date range is set to _last 30 days_.
   * Resetting reverts the Time Period filters to default values.
   * Date ranges saved in filters are relative to the current date. For example, a _past 2 days_ filter saved on July 2nd shows July 1st–2nd as the date range. When the same filter is applied on July 20th, it automatically shows July 19th–20th as the date range.
 </Callout>
@@ -163,9 +163,9 @@ All active campaigns except those in the _Stopped_, _Completed_, _Rejected_, or 
 
 <Image align="center" alt="Edit" border={true} caption="Edit" src="https://files.readme.io/57c10e73ccc5ba961fff9979c67d1fa1f8020d2baf1f0400522e78a252c7400c-2025-12-11_18-54-21.png" />
 
-3. You can also click to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics.
+3. You can also click ![](https://files.readme.io/128fa7ea6dcc154592d66b7d4780e18a45e5675822a2b0a443eeeb0824472a71-new_clone.png) icon to open the campaign in a new tab and edit it. If the campaign is completed, you can view the statistics.
 
-<Image align="center" alt="Open in new tab" border={true} src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" className="border" />
+<Image align="center" alt="Open in new tab" border={true} caption="Open Campaigns" src="https://files.readme.io/ac1b1098e0325f2b3628a62366e0f4027f5396a06c35904cd6e110c0ef23302a-labelsss.png" />
 
 # Campaign Reports
 
@@ -175,7 +175,7 @@ Click **Subscribe to Reports** and configure the columns you want to include in 
 
 <Image align="center" alt={1422} border={true} caption="Filter Campaigns and View Campaign Reports" title="Filter Campaigns and view Campaign reports on CleverTap dashboard." src="https://files.readme.io/4179196a7509ec3d78977a0a4dee6e936edd8ae82e008a16a471d33cfbac1d64-2025-12-11_18-42-58.png" />
 
-You can also email a report by selecting the campaign and clicking **Send Report** from the Campaign Reports window or by clicking the ![](https://files.readme.io/3baffd15a3c21d3330adf829d5e4fd8add811ad98f9b850f3e8ef2d3317f592b-reports_icon.png) icon from the campaign listing page. 
+You can also email a report by selecting the campaign and clicking **Send Report** from the Campaign Reports window or by clicking the ![](https://files.readme.io/3baffd15a3c21d3330adf829d5e4fd8add811ad98f9b850f3e8ef2d3317f592b-reports_icon.png) icon from the campaign listing page.
 
 <Image align="center" alt="Email Report" border={true} caption="Email Report" src="https://files.readme.io/815637006b08ebe05fae735f88e536af058eac46685c9c7e3e7b3fd57187d474-2025-12-11_18-46-35.png" />
 
