@@ -214,8 +214,8 @@ Here are some tips to ensure your branded domain setup is effective and complian
 
   **Examples**:
 
-  * If your brand is **MobiKart**, consider domains like **mobkt.in**, **mobik.in**, or **mkrt.co**.
-  * If your brand is **FreshBite**, try **frsbt.com**, **frbite.in**, etc.
+  * If your brand name is long (for example, **ExampleStore**), consider short domain options like **exstr.in**, **exsto.co**, or **exst.co**.
+  * For multi-word brand names (for example, **Example Food Market**), you could use shortened versions such as **exfdmr.com**, **efmkt.in**, or **xfmk.co**.
 </Callout>
 
 # Manage Branded Domains
