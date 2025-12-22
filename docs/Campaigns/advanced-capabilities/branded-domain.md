@@ -98,7 +98,7 @@ You can create a system domain to quickly start using branded links in your What
       </td>
 
       <td>
-        The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
+        \The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
       </td>
     </tr>
 
@@ -203,10 +203,7 @@ Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand vi
       </td>
 
       <td>
-        The base domain used for branding and tracking.
-
-        * For **System Domains**, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
-        * For **Custom Domains**, enter your own subdomain.
+        Enter your own subdomain to be used for branding and tracking
       </td>
     </tr>
 
@@ -216,7 +213,7 @@ Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand vi
       </td>
 
       <td>
-        Defines how the branded tracking URL is structured:
+        This is requied when adding a custom domain for WhatsApp/SMS & RCS channels. It defines how the branded tracking URL is structured:
 
         URL Structure: `domain/adjoiner/Shortkey`
 
@@ -236,7 +233,7 @@ Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand vi
       </td>
 
       <td>
-        The page users see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency even in error scenarios. Click _Preview Error Page_ to view and verify the error before the domain becomes active.
+        Optional field available only for WhatsApp/SMS & RCS channels. Provide the page you want users to see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency even in error scenarios. Click _Preview Error Page_ to view and verify the error before the domain becomes active.
       </td>
     </tr>
   </tbody>
