@@ -305,9 +305,9 @@ iOS devices running version 10 or above support link previews in the native Mess
 
 * iOS delays metadata fetching until after the message is delivered, and in some cases, until the user interacts with the message.
 * Devices may display cached metadata even after updates have been made to the page’s Open Graph tags.
-* Certain third-party messaging apps may block previews by default unless explicitly enabled in settings.
+* Certain third-party messaging apps may block previews by default, unless they are explicitly enabled in the settings.
 
-These constraints can lead to inconsistent preview rendering on iOS devices even when metadata is correctly configured.
+These constraints can lead to inconsistent preview rendering on iOS devices, even when metadata is correctly configured.
 
 <br />
 
