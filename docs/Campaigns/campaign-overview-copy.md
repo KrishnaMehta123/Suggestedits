@@ -29,9 +29,9 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
 
 <Image align="center" alt="Filter Campaigns" border={true} caption="Filter Campaigns" src="https://files.readme.io/8cd9b547d48c83a96dd0269e92389e13d056f0c79334e187826806ab27e6d39a-listing.png" />
 
-3. Select the required filters and click **Apply** to view results on the _All Campaigns_ page. If you create a filter and do not select **Apply**, the filter criteria are still displayed but not applied directly in the listing view. Filters are organized separately for Active and Archived campaigns.   
+3. Select the required filters and click **Apply** to view results on the _All Campaigns_ page. If you create a filter and do not select **Apply**, the filter criteria are still displayed but not applied directly in the listing view. Filters are organized separately for Active and Archived campaigns.
 
-   Refer to the table below for filter operations:  
+   Refer to the table below for filter operations:
 
    | Filter Section             | Options                                                                                      | Filter Description                                                                                                                                                                                                                         |
    | :------------------------- | :------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,8 +48,7 @@ You can use filters to quickly search your campaigns by Status, Channel, Time Pe
    | **Delivery Type**          | One Time, Recurring, Multiple Dates                                                          | Filters based on the campaign delivery type.                                                                                                                                                                                               |
    | **Segment Type**           | In-Action, Action, On Date/Time, External Trigger                                            | Filters based on the type of segment used.                                                                                                                                                                                                 |
    | **External Campaigns**     | API Campaigns, Bulletins, Notification via Server API                                        | Filters based on the type of external campaign.                                                                                                                                                                                            |
-4. Click **Reset** to reset all the applied filters.  
-
+4. Click **Reset** to reset all the applied filters.
 
 <Callout icon="📘" theme="info">
   #### Time Period Filters
@@ -68,7 +67,7 @@ All filters except the _Delivery Type_ and _Segment Type_ filters also have indi
 
 You can customize the campaign listing view to match your preferences. Click the _Edit Columns_ icon to select and reorder the columns you want to show on the campaign list page. You can view up to 2000 campaigns on the listing page.
 
-The _Sent_ column is toggled off by default. An Engagement Rate column is available to show channel-specific stats. (@meenal: Why are we specifically talking about the "Engagement Rate" column here??)  
+The _Sent_ column is toggled off by default. An Engagement Rate column is available to show channel-specific stats. (@meenal: Why are we specifically talking about the "Engagement Rate" column here??)
 
 <Image align="center" alt="Edit Columns" border={true} caption="Edit Columns" src="https://files.readme.io/be3e0d05ae3e25119258ccd03b2cbf862937e840c4991064f92c2dbf0f0b1599-2025-12-11_18-40-00_1.gif" />
 
@@ -125,11 +124,13 @@ Running campaigns cannot be archived.
 
 <Image align="center" alt="Archive Selected Campaigns" border={true} caption="Archive Selected Campaigns" src="https://files.readme.io/99629a5f98ff342e202d24b02c1cadc12487899a05aba35b50bef7086acb34d9-2025-12-11_18-46-35.png" />
 
-> 📘 Note
->
-> * Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
-> * Archived campaigns cannot be unarchived.
-> * All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  * Campaigns in Completed or Stopped state are automatically archived after 6 months. To view archived campaigns, click _Filters_ and select the _Archived_ filter.
+  * Archived campaigns cannot be unarchived.
+  * All archived campaigns (including drafts) are read‑only and cannot be published. To continue working on an archived campaign, clone it. The clone is treated as a new campaign. You can **Save as draft**, **Schedule**, or **Publish** the cloned campaign.
+</Callout>
 
 ## Stop Campaigns
 
