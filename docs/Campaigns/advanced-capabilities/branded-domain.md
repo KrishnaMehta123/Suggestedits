@@ -115,7 +115,7 @@ You can create a system domain to quickly start using branded links in your What
         This includes the following:
 
         * **Domain**: The domain entered above is prepopulated here.
-        * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters such as `@`, `#`, `&`, and so on.
+        * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs.
         * **Shortkey**: A unique, auto-generated code added to the branded domain, helping track clicks on links within campaigns.
 
         For example, `ct3.io/clevertap/abc123`
@@ -153,15 +153,91 @@ Once you enter all the details, click **Save**. The status is set to **Active** 
 
 Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
-<Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/2acf43bea0d00e25c5cd81df909397b67f55d6b4e84bc3b68d22b44a1ea10a92-image.png" />
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Field
+      </th>
 
-<Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/d32553105c9a4741e7f40da5c67c0da19416e440ae75a24f00e08132f5b20651-image.png" />
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
 
-Once you enter all the details, click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately, and DNS Records are generated to configure it on your Domain provider dashboard.
+  <tbody>
+    <tr>
+      <td>
+        Nickname
+      </td>
 
-<Image align="center" border={true} caption="DNS Records Generated for Email" src="https://files.readme.io/6d90a8eaa27f1d56aae290b66bf962fcd1b1ee164bddfe3bc0779a7a310d4f48-image.png" />
+      <td>
+        Provide a name to identify the domain (for example, "Sales Campaign").
+      </td>
+    </tr>
 
-<Image align="center" border={true} caption="DNS Records Generated for WhatsApp/SMS & RCS" src="https://files.readme.io/36972d396aadc92d070754a236802c008846a6a5f96c0b64a8b08268fc9eb8b3-DNS_Verification_for_WASMS__RCS.png" />
+    <tr>
+      <td>
+        Channel
+      </td>
+
+      <td>
+        Displays the channel for which the branded domain is being created.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Domain Type
+      </td>
+
+      <td>
+        Your own subdomain (for example, links.yourbrand.com) that requires DNS configuration.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Domain
+      </td>
+
+      <td>
+        Enter your own subdomain to be used for branding and tracking
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Branded URL Schema
+      </td>
+
+      <td>
+        This is requied when adding a custom domain for WhatsApp/SMS & RCS channels. It defines how the branded tracking URL is structured:
+
+        URL Structure: `domain/adjoiner/Shortkey`
+
+        This includes the following:
+
+        * **Domain**: The domain entered above is prepopulated here.
+        * **Adjoiner**: A brand-specific path separator that connects the Domain and Shortkey, helping personalize and group URLs.
+        * **Shortkey**: A unique, auto-generated code added to the branded domain, helping track clicks on links within campaigns.
+
+        For example, `ct3.io/clevertap/abc123`
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Error Page
+      </td>
+
+      <td>
+        Optional field available only for WhatsApp/SMS & RCS channels. Provide the page you want users to see if a tracking link is invalid or has expired. You can use CleverTap’s system error page or provide a custom URL to maintain brand consistency even in error scenarios. Click _Preview Error Page_ to view and verify the error before the domain becomes active.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <Callout icon="📘" theme="info">
   #### Custom Domain
@@ -169,53 +245,134 @@ Once you enter all the details, click **Save & Generate DNS**. The domain status
   You can add up to 5 unique custom domains per account per channel.
 </Callout>
 
+### For WhatsApp/SMS & RCS
+
+To add a custom domain, perform the following steps:
+
+1. Repeat steps _1_ through _3_ under Add System Domain. except that select _Domain Type_ as _Custom_.
+2. Click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately and DNS Records are generated to configure it on your Domain provider dashboard.
+
+<Image align="center" alt="Custom Domain Creation" border={true} caption="Custom Domain Creation" src="https://files.readme.io/7915e7432f0a7c1851decf9bff092a9b55eadf127645140bb2aa3ce4b7e2147a-Add_Custom_Domain_for_WhatsAppSMS__RCS.png" />
+
+### For Email
+
+To configure your custom domain, perform the following steps:
+
+1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
+
+2. Click **Add Domain**, select _Email_, and click **Continue**. The _Add Domain_ page opens.
+
+3. Enter the following details:  _Nickname_ and _Domain_.
+
+   <Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/ece7c12d5494a02f09b09dfafe7d7f699078afcbd719d219dc54c92eea6b5147-Add_Custom_Domain_for_Email.png" />
+
+4. Click **Save & Generate DNS**. The domain status is set to **Pending Verification** immediately, and DNS Records will be generated for you to configure with your Domain provider.
+
+<Image align="center" border={true} caption="DNS Records Generated" src="https://files.readme.io/6d90a8eaa27f1d56aae290b66bf962fcd1b1ee164bddfe3bc0779a7a310d4f48-image.png" />
+
 ### Verify Custom Domain
 
-Once the DNS Records are generated, verify these records so that the domain becomes active and available for use
+(@Shreejith, This applies to Email as well, so adding a cross-reference to this section.)
 
 1. Go to the domain provider dashboard and configure the following DNS records. When configuring DNS records with your domain provider, enter only the prefix part in the Name field. The prefix is the part that precedes the main domain. For example, if the CNAME is `_c58ebcb5c******5f03bb6b174349.track.yourdomain.com`, enter `_c58ebcb5c******5f03bb6b174349.track` in the Name field.
 
-| Type  | Description                                                                                                                                           |
-| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CNAME | Used for domain ownership verification.                                                                                                               |
-| CNAME | Redirects branded links to CleverTap's short URL service in the case of WhatsApp/SMS & RCS campaigns. Tracks clicks and opens in the Email campaigns. |
-| TXT   | Verifies domain association with CleverTap.                                                                                                           |
+<Table align={[null,null,null,"left"]}>
+  <thead>
+    <tr>
+      <th>
+        Type
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Name
+      </th>
+
+      <th>
+        Value
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        CNAME
+      </td>
+
+      <td>
+        Used for domain ownership verification.
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: _c58ebcb5c**5f03bb6b174349.short.clevertap.com
+        * Email: _c58ebcb5c******5f03bb6b174349.track.yourdomain.com
+      </td>
+
+      <td>
+        _0f8561a2dc*******9ef25e32f6.xl****vlj.acm-validations.aws
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        CNAME
+      </td>
+
+      <td>
+        Redirects branded links to CleverTap's short URL service in the case of WhatsApp/SMS & RCS campaigns. Tracks clicks and opens in the Email campaigns.
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: short.clevertap.com
+        * Email: track.yourdomain.com
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: short-clevertap-com.cltap.com
+        * Email: track-yourdomain-com.cltap.com
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        TXT
+      </td>
+
+      <td>
+        Verifies domain association with CleverTap.
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: _txt-6-R-R47Z.short.clevertap.com
+        * Email: _txt-6**-R**-R47Z.track.yourdomain.com
+      </td>
+
+      <td>
+        * WhatsApp/SMS & RCS: ct0.co=2c1f96426804
+        * Email: \<account-region>.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. to identify the region of your accpount, refer to Domain and Account Region Mapping.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 2. Once your DNS records are saved, go back to the **Branded Domain** page on the CleverTap dashboard.
-3. Click the ![](https://files.readme.io/36be013543cabc562d762f02fd1eebc007f2caad03f95519a37dfff4f6e4c7ed-Refresh_icon.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS verification may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
-
-# Best Practices for Adding Domain
-
-Here are some tips to ensure your branded domain setup is effective and compliant:
-
-* **For System Domains** (like `ct3.io/yourbrand/abc123`):
-  * Choose a short and meaningful **Adjoiner** that clearly represents your brand or campaign type.
-  * Use lowercase letters and hyphens (`-`) if needed (for example, `/clevertap/`, `/new-user/`, `/sale2024/`).
-  * Keep it concise: Aim for 5–8 characters in the **Adjoiner** (excluding the slashes) to avoid long URLs in campaigns.
-  * Avoid vague terms like `/track/` or `/link/` — use something unique to your brand.
-* **For Custom Domains** (like `links.yourbrand.com`):
-  * Use a subdomain such as **links.**, **click.**, or **promo.** (for example,`links.yourbrand.com`, `click.yourbrand.com`).
-  * Keep the **Subdomain** short, relevant, and easy to remember.
-  * Avoid complex words, long phrases, or special characters in the **Subdomain** name.
-  * Ensure you configure **DNS records** exactly as shown after setup to avoid delays in verification.
-* You must avoid the following:
-  * Using more than 20 characters in the **Adjoiner** or **Subdomain**.
-  * Starting or ending **Adjoiners** with hyphens.
-  * Using non-brand-specific generic terms.
+3. Click the ![](https://files.readme.io/36be013543cabc562d762f02fd1eebc007f2caad03f95519a37dfff4f6e4c7ed-Refresh_icon.png) icon next to your domain to verify your domain and refresh the status on the CleverTap dashboard. DNS propagation may take up to 24 hours to complete. If verification fails, check your DNS configuration with your domain provider to ensure it is accurate. If the settings are correct, try refreshing after some time.
 
 <Callout icon="📘" theme="info">
-  #### Pro Tip: Buy New Short Domain for Campaigns
+  #### Domain and Account Region Mapping for Email
 
-  If your existing domain is long or complex, consider purchasing a new, short domain for marketing messages. Ideally, the domain must be 5–8 characters long and phonetically similar to your brand name. This improves:
-
-  * Link trustworthiness
-  * User recall and voice-based sharing (for example, over phone or radio)
-  * Visual clarity in messages and notifications
-
-  **Examples**:
-
-  * If your brand is **MobiKart**, consider domains like **mobkt.in**, **mobik.in**, or **mkrt.co**.
-  * If your brand is **FreshBite**, try **frsbt.com**, **frbite.in**, etc.
+  | Dashboard URL                | Region      | Example TXT                                                                              |
+  | :--------------------------- | :---------- | :--------------------------------------------------------------------------------------- |
+  | eu1.dashboard.clevertap.com  | EU          | eu1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | in1.dashboard.clevertap.com  | IN          | in1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | sg1.dashboard.clevertap.com  | SG          | sg1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | us1.dashboard.clevertap.com  | US          | us1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b.  |
+  | mec1.dashboard.clevertap.com | Middle East | mec1.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. |
+  | aps3.dashboard.clevertap.com | Indonesia   | aps3.wizrocketmail.net=0807358b2f16d42927e6cba6341fb156c612b401b216d535b8422c51c0d7cf4b. |
 </Callout>
 
 # Manage Branded Domains
@@ -246,11 +403,25 @@ After adding the domain, you can perform the following operations by hovering ov
 
 * **View DNS Records**: You can access and review the DNS settings associated with your domain. This includes details such as CNAME and TXT records, which are essential for domain verification and proper tracking. By viewing these records, you can ensure that the domain is correctly configured with your DNS provider for seamless integration and functionality.
 
-# FAQs
+## FAQs
+
+(@Jithendra/Shreejith: IMO, we can remove a few FAQs here as most of it is already covered in the content. We can retain the best Practices & the Link Preview question. Rest is repeated information. I haven't reviewed the FAQs content, though.)
+
+### Can I use special characters in the adjoiner?
+
+No. The **Adjoiner** can only contain lowercase letters, numbers, and hyphens. It must not start or end with a hyphen, and cannot contain special characters such as `@`, `#`, `&`, and so on.
 
 ### Can I switch between path-based and query-based adjoiners?
 
 No, you must choose one format per domain — either **path-based** (`/yourbrand/`) or **query-based** (`?key=yourbrand`). You cannot mix both formats in a single domain configuration.
+
+### What happens if a user clicks an expired link?
+
+If a link is older than 7 days, it expires. You can configure a **404 Error Page URL** for each domain, which will be shown to users who click on expired links.
+
+### What is the default domain, and how does it work?
+
+The **Default Domain** is automatically used to wrap and track links in **SMS**, **RCS**, and **WhatsApp** campaigns (including template buttons). You can override the **Default Domain** per campaign by selecting a different domain from the dropdown when creating new campaigns.
 
 ### What happens if my custom domain becomes unverified?
 
@@ -266,6 +437,10 @@ Once the domain is verified again, it can be reused in future campaigns.
 
 No. Campaigns created before you set up a branded domain will continue using the **System Domain** unless you manually edit or recreate them with the new branded domain.
 
+### How long does domain verification take?
+
+Custom domains require **DNS record configuration**. While CleverTap fetches DNS updates automatically, it may take up to **24 hours** for DNS changes to propagate globally. You can click the **refresh** icon to retry verification.
+
 ### I configured the DNS records, but my domain has still not been verified. What should I do?
 
 Check the following:
@@ -273,6 +448,40 @@ Check the following:
 * **DNS records** are entered exactly as shown in the CleverTap dashboard.
 * You’ve entered only the required prefix in the **Key** field (for example, short, not short.clevertap.com)
 * Wait up to 24 hours, then try refreshing again
+
+### What are the best practices for adding a branded domain in CleverTap?
+
+Here are some tips to ensure your branded domain setup is effective and compliant:
+
+* **For System Domains** (like `ct3.io/yourbrand/abc123`):
+  * Choose a short and meaningful **Adjoiner** that clearly represents your brand or campaign type.
+  * Use lowercase letters and hyphens (`-`) if needed (for example, `/clevertap/`, `/new-user/`, `/sale2024/`).
+  * Keep it concise: Aim for 5–8 characters in the **Adjoiner** (excluding the slashes) to avoid long URLs in campaigns.
+  * Avoid vague terms like `/track/` or `/link/` — use something unique to your brand.
+* **For Custom Domains** (like `links.yourbrand.com`):
+  * Use a subdomain such as **links.**, **click.**, or **promo.** (for example,`links.yourbrand.com`, `click.yourbrand.com`).
+  * Keep the **Subdomain** short, relevant, and easy to remember.
+  * Avoid complex words, long phrases, or special characters in the **Subdomain** name.
+  * Ensure you configure **DNS records** exactly as shown after setup to avoid delays in verification.
+
+**Avoid**:
+
+* Using more than 20 characters in the **Adjoiner** or **Subdomain**
+* Starting or ending **Adjoiners** with hyphens
+* Using non-brand-specific generic terms
+
+> 📘 Pro Tip: Buy a new short domain for campaigns
+>
+> If your existing domain is long or complex, consider purchasing a new, short domain for marketing messages. Ideally, the domain must be 5–8 characters long and phonetically similar to your brand name. This improves:
+>
+> * Link trustworthiness
+> * User recall and voice-based sharing (for example, over phone or radio)
+> * Visual clarity in messages and notifications
+>
+> **Examples**:
+>
+> * If your brand is **MobiKart**, consider domains like **mobkt.in**, **mobik.in**, or **mkrt.co**.
+> * If your brand is **FreshBite**, try **frsbt.com**, **frbite.in**, etc.
 
 ### When will a link preview be shown for my branded domain link?
 
@@ -294,14 +503,14 @@ To validate whether your Open Graph metadata is implemented correctly, use any m
 
 iOS devices running version 10 or above support link previews in the native Messages application. These previews may still appear for SMS-based messages, but several conditions must be met for reliable rendering.
 
-**Preview Requirements**
+**Preview requirements**
 
 * Only one link should be included in the message. Messages with multiple links will not generate a preview.
 * The link must be the final element in the message. No text, punctuation, or symbols should follow the link.
 * The domain must be served over HTTPS and use a valid SSL certificate. Self-signed, expired, or incomplete certificates will block preview generation.
 * The recipient must tap _Tap to Load Preview_ for metadata to be fetched.
 
-**iOS-specific Behaviors and Limitations**
+**iOS-specific behaviors and limitations**
 
 * iOS delays metadata fetching until after the message is delivered, and in some cases, until the user interacts with the message.
 * Devices may display cached metadata even after updates have been made to the page’s Open Graph tags.
