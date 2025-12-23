@@ -24,7 +24,8 @@ With this feature, you can:
 
 > 📘 Prerequisites
 >
-> Before you begin, ensure that you have access and write permissions for both the source and destination projects. And, the campaign or journey you want to copy is published in the source project.
+> * Before you begin, ensure that you have access and write permissions for both the source and destination projects. 
+> * The campaign or journey you want to copy is published in the source project.
 
 To copy an existing campaign or journey from one CleverTap project to another, perform the following steps:
 
@@ -57,9 +58,11 @@ The copy process involves the following three key steps:
   After creating the copy, CleverTap verifies that all required events, user properties, and event properties are present in the destination project.  
   If any dependencies are missing, the system displays validation messages highlighting the fields that must be updated before publishing.
 
-> 📘 Supported Channels
->
-> You can copy engagements for the following five channels: Push Notifications, In-App Messages, Email, App Inbox, and Webhook.
+<Callout icon="📘" theme="info">
+  #### Supported Channels
+
+  You can copy engagements for the following five channels: Push Notifications, In-App Messages, Email, App Inbox, and Webhook.
+</Callout>
 
 ## For Campaigns
 
@@ -69,7 +72,7 @@ The following table explains how each campaign component behaves during the copy
 | Campaign Component                                        | Behavior in Copied Campaign                                                                                                       | Additional Notes                                                                        |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | Campaign Name                                             | CleverTap prefixes the copied campaign name with _Clone of_ to help you identify duplicates. The name remains editable.           | This helps differentiate the copy from the original.                                    |
-| Labels                                                    | All labels from the source are retained. If a label does not exist in the destination project, CleverTap adds it automatically.   | Ensures labeling consistency across projects.                                           |
+| Labels                                                    | All labels from the source are retained. If a label does not exist in the destination project, CleverTap automatically adds it.   | Ensures labeling consistency across projects.                                           |
 | Campaign Type                                             | Past Behavior Segment (PBS), External Trigger, and Live campaigns are copied exactly as in the source campaign.                   | If a trigger type is not supported in the destination, validation highlights the field. |
 | Conversion Event and Goal Settings                        | Conversion events and goals are **not copied**.                                                                                   | You must map or recreate the missing event before publishing.                           |
 | Conversion Event Properties/ Time/Revenue Property        | These fields are **not copied**.                                                                                                  | Review and update missing fields before publishing.                                     |
