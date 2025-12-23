@@ -32,12 +32,14 @@ To copy an existing campaign or journey from one CleverTap project to another, p
 2. Select the campaign or journey you want to copy.
 3. Click the ![](https://files.readme.io/95b4b611bf40ffcaaeace0bb9dc184cb8401f87e194fe61fce38dd8354a98aab-ellipses_icon.png) icon and select _Clone_ from the available actions. The _Clone Campaign_ popup opens.
 4. Select _Current project_ to copy the engagement to the same project, or select Another project to copy the engagement to another project of your CleverTap dashboard.
-5. Select the project where you want to create a copy. The copied campaign or journey appears as a draft in the destination project. For more information, refer to [How Copy Engagement Works](doc:copy-engagements-across-projects#how-copy-engagement-works).
+5. Select the project where you want to create a copy. The copied campaign or journey appears as a draft in the destination project. For more information, refer to [How Copy Engagement Works](doc:copy-engagements-across-projects#how-copy-engagement-works).  
+
+   <Image align="center" border={true} caption="Clone Journey" src="https://files.readme.io/27c148ae9eed66b3c23f72fff0cba549f30965fd51228ffbfad867ae09239e1f-Cloen_Journey.gif" />
 
    <Callout icon="📘" theme="info">
      #### Note
 
-     You can copy your engagements to one or more projects. CleverTap prefixes the name of the copied  engagement with "Copy" to help you identify duplicates. You can rename the engagement later.
+     You can copy your engagements to one or more projects. CleverTap prefixes the name of the copied  engagement with "Clone of" to help you identify duplicates. You can rename the engagement later.
    </Callout>
 6. Click **Clone**. You can choose to open the cloned engagement in a new tab. If the destination project does not include required events, segments, or user properties, CleverTap flags them for review. You can fix them directly in the destination project and publish them.
 
