@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns. 
+Branded Domains in CleverTap help you apply your brand to tracking across Email, SMS, WhatsApp, and RCS campaigns.
 
 * For **SMS**, **WhatsApp**, and **RCS campaigns**, it is used to generate short, trackable links.
 * For **Email campaigns**, it is used to brand links and open-tracking pixels using a custom domain.
@@ -38,17 +38,17 @@ This section provides information about creating a branded system and a custom d
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 2. Click **Add Domain** and select the channel.
-3. Enter the details you are prompted to provide based on the selected channel. For more information, refer to []() and [Custom Domain]().
+3. Enter the details you are prompted to provide based on the selected channel. For more information, refer to [System Domain]() and [Custom Domain]().
 
 <Image align="center" border={true} caption="Add Domain" src="https://files.readme.io/e3b88c267d2ff3601ff7e683443c73d9339f2eabce70810a1a9ad7c3522277ed-Add_Domain.png" />
 
-3. Click **Save**. 
+3. Click **Save**.
    * For a System Domain, the status is set to Active immediately.
    * For a Custom Domain, the status is set to Pending Verification, and DNS records are generated for you to configure with your domain provider.
 
 ## Add System Domain
 
-You can create a system domain to quickly start using branded links in your WhatsApp campaigns without DNS configuration. To add a system domain, enter the following details:
+You can create a system domain to quickly start using branded links in your WhatsApp/SMS & RCS campaigns without DNS configuration. To add a system domain, enter the following details:
 
 <Table align={["left","left"]}>
   <thead>
@@ -70,7 +70,7 @@ You can create a system domain to quickly start using branded links in your What
       </td>
 
       <td>
-        Provide a name to identify the domain (for example, "Sales Campaign").
+        Provide a name to identify the domain (for example, "Marketing").
       </td>
     </tr>
 
@@ -90,7 +90,7 @@ You can create a system domain to quickly start using branded links in your What
       </td>
 
       <td>
-        A CleverTap-provided system domain that can be customized with your brand prefix. No DNS setup required. This is available only for WhatsApp/SMS $ RCS channels.
+        A CleverTap-provided system domain that can be customized with your brand prefix. No DNS setup required. This is available only for WhatsApp/SMS & RCS channels.
       </td>
     </tr>
 
@@ -100,7 +100,7 @@ You can create a system domain to quickly start using branded links in your What
       </td>
 
       <td>
-         The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
+        The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
       </td>
     </tr>
 
@@ -155,7 +155,7 @@ Once you enter all the details, click **Save**. The status is set to **Active** 
 
 Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand visibility. This option allows you to fully control the branding and tracking for your campaigns.
 
-<Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/d32553105c9a4741e7f40da5c67c0da19416e440ae75a24f00e08132f5b20651-image.png" />
+<Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/8d921a0e9d530293aae02e8a11a57cb149a0cbec5a2e240c0d66704ff999bbb6-Add_Email_Custom_Domain.png" />
 
 <Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/2acf43bea0d00e25c5cd81df909397b67f55d6b4e84bc3b68d22b44a1ea10a92-image.png" />
 
