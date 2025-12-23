@@ -1,5 +1,5 @@
 ---
-title: Personalize Campaigns with Linked Content URL and Body Personalization
+title: Linked Content URL and Request Body Personalization
 excerpt: ''
 deprecated: false
 hidden: false
