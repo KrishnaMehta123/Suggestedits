@@ -50,6 +50,8 @@ This section provides information about creating a branded system and a custom d
 
 You can create a system domain to quickly start using branded links in your WhatsApp/SMS & RCS campaigns without DNS configuration. To add a system domain, enter the following details:
 
+<Image align="center" border={true} caption="Add System Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/e3ebb61fb60d716b8bf202001ecf73288241023274516357412e960838056f86-Add_System_Domian_for_WASMS__RCS.png" />
+
 <Table align={["left","left"]}>
   <thead>
     <tr>
@@ -157,7 +159,7 @@ Use your own subdomain (for example, `sales.yourbrand.com`) for maximum brand vi
 
 <Image align="center" border={true} caption="Add Custom Domain for Email" src="https://files.readme.io/8d921a0e9d530293aae02e8a11a57cb149a0cbec5a2e240c0d66704ff999bbb6-Add_Email_Custom_Domain.png" />
 
-<Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/2acf43bea0d00e25c5cd81df909397b67f55d6b4e84bc3b68d22b44a1ea10a92-image.png" />
+<Image align="center" border={true} caption="Add Custom Domain for WhatsApp/SMS & RCS" src="https://files.readme.io/f45e4906647bd7da1393c6e5433801296310555e301bf619b8e8d22e1825d782-Add_Custom_Domain_for_WASMS__RCS.png" />
 
 | Field              | Description                                                                                                                                                                                                                                                                                                                                                             |
 | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -249,7 +251,7 @@ After adding the domain, you can perform the following operations by hovering it
 
 <Image align="center" border={true} caption="Manage Branded Domains" src="https://files.readme.io/a4ad7fef6b3c58d079a57876f5c3d45be43447b1298499d715bdf28d0e2dbafd-Manage_Branded_Domains.gif" />
 
-* **Set as Default**: You can set any verified domain as the default. This domain is automatically used for wrapping and tracking links in SMS, WhatsApp, RCS, and Email campaigns (including template buttons). You can override it per campaign when creating new ones.
+* **Set as Default**: You can set one verified domain as the default for WhatsApp, SMS, and RCS, and a different verified domain as the default for Email. This domain is automatically used for wrapping and tracking links in SMS, WhatsApp, RCS, and Email campaigns (including template buttons). You can override it per campaign when creating new ones.
 
 * **Edit**:  You can edit the nickname of the domain. Additionally, for WhatsApp/SMS & RCS campaigns, you can set a custom 404 error page (except for system defaults).
 
