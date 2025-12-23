@@ -38,7 +38,7 @@ This section provides information about creating a branded system and a custom d
 
 1. Go to _Settings_ > _Set Up_ > _Branded Domain_.
 2. Click **Add Domain** and select the channel.
-3. Enter the details you are prompted to provide based on the selected channel. For more information, refer to [System Domain]() and [Custom Domain]().
+3. Enter the details you are prompted to provide based on the selected channel. For more information, refer to [System Domain](doc:branded-domain#add-system-domain) and [Custom Domain](doc:branded-domain#add-custom-domain).
 
 <Image align="center" border={true} caption="Add Domain" src="https://files.readme.io/e3b88c267d2ff3601ff7e683443c73d9339f2eabce70810a1a9ad7c3522277ed-Add_Domain.png" />
 
@@ -102,7 +102,7 @@ You can create a system domain to quickly start using branded links in your What
       </td>
 
       <td>
-        The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to System Domain and Region Mapping below the table.
+        The base domain used for branding and tracking. When adding a system domain, this is auto-filled based on your account region. For more information, refer to _Domain and Account Region Mapping for WhatsApp/SMS & RCS_ below the table.
       </td>
     </tr>
 
