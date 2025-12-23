@@ -48,6 +48,20 @@ To copy an existing campaign or journey from one CleverTap project to another, p
 
 When you copy a campaign or journey, CleverTap recreates the structure and logic in the selected destination project. This section explains how different components of campaigns and journeys behave after they are copied, including what is copied and validated during the process.
 
+<Callout icon="📘" theme="info">
+  #### Exclusions
+
+  The following configurations are not cloned and must be set up again in the destination project:
+
+  * Service Provider configurations
+  * Webhook endpoint configurations
+  * File assets (attachments)
+  * Subscription Groups and opt-out settings
+  * Multi-App or project-specific integrations
+
+  CleverTap highlights missing or incomplete configuration where applicable and prevents publishing until required setup is complete.
+</Callout>
+
 The copy process involves the following three key steps:
 
 * **Access Validation**:  
@@ -69,31 +83,32 @@ The copy process involves the following three key steps:
 When you copy a campaign across projects, CleverTap carries over its core configuration, targeting, and personalization details from the source project to the destination.  
 The following table explains how each campaign component behaves during the copy process, and what actions you may need to take before publishing.
 
-| Campaign Component                                        | Behavior in Copied Campaign                                                                                                       | Additional Notes                                                                        |
-| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Campaign Name                                             | CleverTap prefixes the copied campaign name with _Clone of_ to help you identify duplicates. The name remains editable.           | This helps differentiate the copy from the original.                                    |
-| Labels                                                    | All labels from the source are retained. If a label does not exist in the destination project, CleverTap automatically adds it.   | Ensures labeling consistency across projects.                                           |
-| Campaign Type                                             | Past Behavior Segment (PBS), External Trigger, and Live campaigns are copied exactly as in the source campaign.                   | If a trigger type is not supported in the destination, validation highlights the field. |
-| Conversion Event and Goal Settings                        | Conversion events and goals are **not copied**.                                                                                   | You must map or recreate the missing event before publishing.                           |
-| Conversion Event Properties/ Time/Revenue Property        | These fields are **not copied**.                                                                                                  | Review and update missing fields before publishing.                                     |
-| Service Provider/Webhook/Multi-App                        | These settings are **not copied**.                                                                                                | You must manually re-enter them after you have copied the campaign                      |
-| Target Segments                                           | The Who section is **not copied**.                                                                                                | Select a valid segment before you publish the copied campaign.                          |
-| Constant Event Properties and Control Groups              | These elements are copied only if they exist. If not, they appear unchecked or blank.                                             | Prevents invalid or incomplete configuration states.                                    |
-| Subscription Groups and Opt-Out Settings                  | Subscription group and opt-out preferences are **not copied** from the source project.                                            | Maintains compliance alignment.                                                         |
-| Message Type, A/B Test, and Split Delivery                | These are **not copied** from the source campaign.                                                                                | If the configuration is missing, the field remains empty.                               |
-| Content, Deep Links, and Files                            | Files are not copied, but the Deep link and content are copied.                                                                   | Review all message assets after copying.                                                |
-| Personalization (Liquid, Catalog, Scribe, Recommendation) | Personalization rules are copied from the source. If any linked field or token is missing, CleverTap displays a validation error. | The copy cannot be published until all personalization tokens are resolved.             |
-| When (Delivery, Recurrence, DND, TTL)                     | Delivery, recurrence, and Do Not Disturb (DND) settings are copied from the source. Empty fields stay empty.                      | Fixed-time and best-time scheduling are retained; errors display if time has passed.    |
-| Cut-Off Time and Best Time Settings                       | Fixed time campaigns copy as-is. If _Best Time_ is enabled and unsupported in the destination, CleverTap reverts to fixed-time.   | Adjust the schedule before publishing.                                                  |
+| Campaign Component                                        | Behavior in Copied Campaign                                                                                                                 | Additional Notes                                                                        |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Campaign Name                                             | CleverTap prefixes the copied campaign name with _Clone of_ to help you identify duplicates. The name remains editable.                     | This helps differentiate the copy from the original.                                    |
+| Labels                                                    | All labels from the source are retained. If a label does not exist in the destination project, CleverTap automatically creates and adds it. | Ensures labeling consistency across projects.                                           |
+| Campaign Type                                             | Past Behavior Segment (PBS), External Trigger, and Live campaigns are copied exactly as they appear in the source campaign.                 | If a trigger type is not supported in the destination, validation highlights the field. |
+| Conversion Event and Goal Settings                        | Conversion events and goals are copied from the source campaign.                                                                            | Missing goal events or properties are highlighted.                                      |
+| Conversion Event Properties/ Time/Revenue Property        | These fields are copied from the source campaign.                                                                                           | Review and update missing fields before publishing.                                     |
+| Target Segments                                           | The Who section is **not copied**.                                                                                                          | Missing events, event properties, or user properties are highlighted.                   |
+| Constant Event Properties and Control Groups              | These elements are copied only if they exist. If not, they appear unchecked or blank.                                                       | Prevents invalid or incomplete configuration states.                                    |
+| Subscription Groups and Opt-Out Settings                  | Subscription group and opt-out preferences are **not copied** from the source project.                                                      | Maintains compliance alignment.                                                         |
+| Message Type, A/B Test, and Split Delivery                | These are **not copied** from the source campaign.                                                                                          | If the configuration is missing, the field remains empty.                               |
+| Content, Deep Links, and Files                            | Files are not copied, but the Deep link and content are copied.                                                                             | Review all message assets after copying.                                                |
+| Personalization (Liquid, Catalog, Scribe, Recommendation) | Personalization rules are copied from the source. If any linked field or token is missing, CleverTap displays a validation error.           | The copy cannot be published until all personalization tokens are resolved.             |
+| When (Delivery, Recurrence, DND, TTL)                     | Delivery, recurrence, and Do Not Disturb (DND) settings are copied from the source. Empty fields stay empty.                                | Fixed-time and best-time scheduling are retained; errors display if time has passed.    |
+| Cut-Off Time and Best Time Settings                       | Fixed time campaigns copy as-is. If _Best Time_ is enabled and unsupported in the destination, CleverTap reverts to fixed-time.             | Adjust the schedule before publishing.                                                  |
 
 ## For Journeys
 
 When you copy a journey, CleverTap duplicates its flow structure, nodes, and entry criteria from the source project into the destination project.
 
-> 📘 Points to Consider
->
-> * You cannot copy a journey that includes either IntelliNODE or Conditional Split Node.
-> * Journeys that include engagement nodes for unsupported channels (such as SMS, WhatsApp, or Web Push) cannot be copied.
+<Callout icon="📘" theme="info">
+  #### Points to Consider
+
+  * You cannot copy a journey that includes either IntelliNODE or Conditional Split Node.
+  * Journeys that include engagement nodes for unsupported channels (such as SMS, WhatsApp, or Web Push) cannot be copied.
+</Callout>
 
 The following table describes how each journey component behaves, including which parts are retained, validated, or excluded from the copy:
 
