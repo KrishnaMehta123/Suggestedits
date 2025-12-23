@@ -10,9 +10,9 @@ metadata:
 next:
   description: ''
 ---
-# Linked Content URL Personalization
+# Overview
 
-You can dynamically generate URLs with parameters based on user preferences or profile data. For instance, if you are using an API to fetch weather information for a specific city, instead of setting up separate Linked Content endpoint URLs for every location, you can configure a single, flexible endpoint by personalizing parts of the URL. In this case, the endpoint URL will be as follows:
+You can dynamically generate URLs with parameters based on user preferences or profile data. For instance, if you're using an API to fetch weather information for a specific city, instead of setting up separate Linked Content endpoint URLs for every location, you can configure a single, flexible endpoint by personalizing parts of the URL. In this case, the endpoint URL will be as follows:
 
 ```
 https://api.example.com/weather-management?location-name={{locname}}&location-weather={{locweather}}
@@ -22,9 +22,11 @@ In this example, the values of location-name and location-weather are dynamicall
 
 <Image align="center" alt="Example for Linked Content URL Personalization" border={true} caption="Example for Linked Content URL Personalization" src="https://files.readme.io/7dab31c-Example_for_Linked_Content_URL_Personalization.png" />
 
+# Parameters
+
 The endpoint URL consists of the following parameters:
 
-### Path Parameters
+## Path Parameters
 
 These parameters help specify variable parts of the URL path, allowing APIs to target specific resources or actions dynamically based on the values provided within the URL path itself. Path parameter, when present in the endpoint URL, becomes a mandatory parameter.
 
@@ -32,9 +34,9 @@ You can include the path parameter as shown in the following image:
 
 <Image align="center" alt="Path Parameter Example" border={true} caption="Path Parameter Example" src="https://files.readme.io/1c6e77f-Example_for_Path_Parameters.png" />
 
-### Query Parameters
+## Query Parameters
 
-Query parameters are key-value pairs appended to the end of a URL that provide additional information to an API endpoint. They are used to modify the behavior or content returned by the server. Query parameters are separated from the base URL by a question mark (?), and multiple parameters are separated by an ampersand (&). 
+Query parameters are key-value pairs appended to the end of a URL that provides additional information to an API endpoint. They are used to modify the behavior or content returned by the server. Query parameters are separated from the base URL by a question mark (?), and multiple parameters are separated by an ampersand (&).
 
 If we refer to the following image, the query parameters will be: `articletopic` and `user`.
 
@@ -63,9 +65,11 @@ While another user might send:
 https://movie-recommendation-api.com/recommendations?preferredGenre=Action&area=Texas
 ```
 
-The keys and values change based on user input or data stored in a user profile, allowing the API to deliver personalized recommendations tailored to the individual's genre preferences and location.
+So, the keys and values change based on user input or data stored in a user profile, allowing the API to deliver personalized recommendations tailored to the individual's genre preference and location.
 
 <Image align="center" alt="Personalize Both Keys and Values in Query Parameters" border={true} caption="Personalize Both Keys and Values in Query Parameters" src="https://files.readme.io/2fab433-Personalize_Both_Keys_and_Values_in_Query_Parameters.png" />
+
+<br />
 
 # Linked Content Request Body Personalization
 
