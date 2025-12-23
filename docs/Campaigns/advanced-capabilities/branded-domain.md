@@ -140,7 +140,7 @@ You can create a system domain to quickly start using branded links in your What
 
 Once you enter all the details, click **Save**. The status is set to **Active** immediately
 
-<Callout icon="📘" theme="info">
+<Callout icon="📘">
   #### Domain and Account Region Mapping for WhatsApp/SMS & RCS
 
   | Dashboard URL                | Region      | System Domain | Example URL   |
@@ -176,7 +176,7 @@ Once you enter all the details, click **Save & Generate DNS**. The domain status
 
 <Image align="center" border={true} caption="DNS Records Generated for WhatsApp/SMS & RCS" src="https://files.readme.io/36972d396aadc92d070754a236802c008846a6a5f96c0b64a8b08268fc9eb8b3-DNS_Verification_for_WASMS__RCS.png" />
 
-<Callout icon="📘" theme="info">
+<Callout icon="📘">
   #### Custom Domain
 
   You can add up to 5 unique custom domains per account per channel.
@@ -216,7 +216,7 @@ Here are some tips to ensure your branded domain setup is effective and complian
   * Starting or ending **Adjoiners** with hyphens.
   * Using non-brand-specific generic terms.
 
-<Callout icon="📘" theme="info">
+<Callout icon="📘">
   #### Pro Tip: Buy New Short Domain for Campaigns
 
   If your existing domain is long or complex, consider purchasing a new, short domain for marketing messages. Ideally, the domain must be 5–8 characters long and phonetically similar to your brand name. This improves:
