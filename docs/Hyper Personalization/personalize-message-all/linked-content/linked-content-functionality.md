@@ -10,6 +10,8 @@ metadata:
 next:
   description: ''
 ---
+@Meenal: Not reviewing the document. But., I suggest we change the doc title to "Linked Content: Performance and Caching")
+
 # Overview
 
 CleverTap fetches dynamic content from external sources in real-time when delivering personalized messages using Linked Content. The speed and efficiency of this process depend on how the content is personalized and how caching is utilized.
@@ -36,7 +38,7 @@ This significantly reduces the API load and speeds up message delivery for campa
 
 # Timeout
 
-Every request made to fetch Linked Content has a maximum wait time, known as a timeout. The timeout for each API request is **5 seconds**. 
+Every request made to fetch Linked Content has a maximum wait time, known as a timeout. The timeout for each API request is **5 seconds**.
 
 If a request does not complete within 5 seconds, it is considered failed. There is no retry mechanism for failed requests, so ensure that the API you are connecting to is reliable and responsive.
 
@@ -52,13 +54,13 @@ If a request does not complete within 5 seconds, it is considered failed. There 
 
 Imagine you want to include weather information based on each user’s region in your email campaign.
 
-* **Best Case (Caching Effective):**\
+* **Best Case (Caching Effective):**  
   If all users are from the same city, Linked Content fetches the weather data once every 5 minutes and reuses it for all users. Emails are sent very quickly.
 
-* **Good Case (Moderate Personalization):**\
+* **Good Case (Moderate Personalization):**  
   If users are spread across a few cities, Linked Content makes about **10–15 API requests** for different regions. The campaign experiences only a slight delay.
 
-* **Worst Case (Full Personalization):**\
+* **Worst Case (Full Personalization):**  
   If every user is from a different region, a **unique API call** is made for each user. This leads to significant delays, depending on third-party API response times.
 
 > 📘 **Key Consideration:**
