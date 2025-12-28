@@ -168,6 +168,37 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## December
 
 <HTMLBlock>{`
+<div class="release-note article" data-category="campaigns" id="template-import-for-whatsApp-connect-providers">
+  <div class="release-note-header">
+    <div class="anchor-link-icon">
+      <a href="#template-import-for-whatsApp-connect-providers"><i class="fa-light fa-anchor"></i></a>
+    </div>
+    <div>
+      <img src="https://files.readme.io/370216d2a5ec47fd419bc47a95762d51295730db345b40f825b3de7115e6e667-Campaigns.svg" alt="Campaigns" class="release-note-heading-icon"/>
+   </div>
+    <h3 class="release-note-heading">Template Import for WhatsApp Connect Providers</h3>
+<div class="badge enhancement">ENHANCEMENT</div>
+    <div class="badge beta">BETA</div>
+  </div>
+  <div class="release-note-body">
+    <p>You can now import WhatsApp message templates directly from your WhatsApp Connect providers into CleverTap, eliminating the need to recreate templates manually. This enhancement helps reduce setup time and prevents configuration errors when managing WhatsApp templates at scale.</p>
+
+    <p>With this update, you can:</p>
+    <p>
+      <ul>
+        <li>Import templates seamlessly from supported WhatsApp Connect providers during provider setup. Templates are fetched directly from the vendor using their template import API, with all required fields populated automatically.</li>
+        <li>Ensure consistency and compliance by importing templates that follow Meta’s approved template format, reducing the risk of formatting or field mismatches.</li>
+<li>Accelerate onboarding and scaling by leveraging vendor-provided API endpoints, authentication details, import limits, and click-tracking configuration.</li>
+      </ul>
+    </p>
+<p>For more information, refer to<a href="https://docs.clevertap.com/docs/generic-whatsapp#import-templates" target="_blank">WhatsApp Message Templates.</a></p>
+
+  </div>
+  <hr/>
+</div>
+`}</HTMLBlock>
+
+<HTMLBlock>{`
 <div class="release-note article" data-category="campaigns" id="whatsapp-template-cloning-and-enhanced-editing">
   <div class="release-note-header">
     <div class="anchor-link-icon">
