@@ -27,7 +27,7 @@ By monitoring these errors, you can take targeted actions, such as updating rewa
 
 This tab is available for all campaign types and displays historical error logs for the selected date range.
 
-<Image align="center" border={true} src="https://files.readme.io/b4306397c0fc8c480f018c5ab3b411f7bce911d99d7f38ee60870b4c142cdccb-image.png" className="border" />
+<Image align="center" border={true} caption="Promo Campaign Errors" src="https://files.readme.io/b4306397c0fc8c480f018c5ab3b411f7bce911d99d7f38ee60870b4c142cdccb-image.png" />
 
 # Total Errors
 
@@ -43,39 +43,39 @@ Errors vary depending on the reward type selected in the campaign:
 
 The following errors may occur when distributing _Loyalty Points_ through a wallet.
 
-| Error Type                              | Description                                                                                     |
-| --------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Invalid wallet configuration            | Reward ID or wallet details are invalid.                                                        |
-| Inactive user wallet                    | User’s wallet is inactive or does not exist.                                                    |
-| Invalid points calculated               | Calculated points are less than 0 or not a numeric value.                                       |
-| User’s reward recurrence limit exceeded | User has already been rewarded the maximum number of times allowed per user from this campaign. |
-| Campaign’s points budget exceeded       | Campaign has reached the maximum points distribution budget.                                    |
-| User’s points budget exceeded           | User has already been rewarded the maximum number of points allowed per user in this campaign.  |
-| Points credit failed                    | Failed to credit points due to a system error.                                                  |
+| Error Type                                  | Description                                                                                     |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Invalid wallet configuration**            | Reward ID or wallet details are invalid.                                                        |
+| **Inactive user wallet**                    | User’s wallet is inactive or does not exist.                                                    |
+| **Invalid points calculated**               | Calculated points are less than 0 or not a numeric value.                                       |
+| **User’s reward recurrence limit exceeded** | User has already been rewarded the maximum number of times allowed per user from this campaign. |
+| **Campaign’s points budget exceeded**       | Campaign has reached the maximum points distribution budget.                                    |
+| **User’s points budget exceeded**           | User has already been rewarded the maximum number of points allowed per user in this campaign.  |
+| **Points credit failed**                    | Failed to credit points due to a system error.                                                  |
 
 ## Coupon Errors
 
 The following errors may occur for _Single Code_ or _Bulk Code_ coupon rewards.
 
-| Error Type                                | Description                                                                     |
-| ----------------------------------------- | ------------------------------------------------------------------------------- |
-| _Invalid coupon configuration_            | Reward ID or coupon details are invalid.                                        |
-| _Inactive coupon_                         | Coupon has expired or is inactive.                                              |
-| _Campaign’s coupon limit exceeded_        | Campaign has reached the maximum number of coupons that can be rewarded.        |
-| _User’s coupon limit exceeded_            | User has reached the maximum coupon rewards allowed per user for this campaign. |
-| _Codes from bulk coupon series exhausted_ | All possible codes from the bulk series have been distributed.                  |
-| _Coupon redemption limit exceeded_        | Coupon has reached its maximum redemption limit.                                |
-| _Coupon assignment failed_                | Failed to assign a coupon due to a system error.                                |
+| Error Type                                  | Description                                                                     |
+| ------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Invalid coupon configuration**            | Reward ID or coupon details are invalid.                                        |
+| **Inactive coupon**                         | Coupon has expired or is inactive.                                              |
+| **Campaign’s coupon limit exceeded**        | Campaign has reached the maximum number of coupons that can be rewarded.        |
+| **User’s coupon limit exceeded**            | User has reached the maximum coupon rewards allowed per user for this campaign. |
+| **Codes from bulk coupon series exhausted** | All possible codes from the bulk series have been distributed.                  |
+| **Coupon redemption limit exceeded**        | Coupon has reached its maximum redemption limit.                                |
+| **Coupon assignment failed**                | Failed to assign a coupon due to a system error.                                |
 
 ## Partner Voucher Errors
 
 The following errors may occur when the reward type is a _Partner Voucher List_.
 
-| Error Type                               | Description                                                                      |
-| ---------------------------------------- | -------------------------------------------------------------------------------- |
-| _Invalid voucher configuration_          | Reward ID or voucher details are invalid.                                        |
-| _Inactive voucher list_                  | Voucher list has expired or is inactive.                                         |
-| _Campaign’s voucher code limit exceeded_ | Campaign has reached the maximum number of vouchers that can be rewarded.        |
-| _User’s voucher code limit exceeded_     | User has reached the maximum voucher rewards allowed per user for this campaign. |
-| _Codes from voucher list exhausted_      | All codes from the uploaded voucher list have been distributed.                  |
-| _Voucher code assignment failed_         | Failed to assign voucher code due to a system error.                             |
+| Error Type                                 | Description                                                                      |
+| ------------------------------------------ | -------------------------------------------------------------------------------- |
+| Invalid voucher configuration              | Reward ID or voucher details are invalid.                                        |
+| Inactive voucher list                      | Voucher list has expired or is inactive.                                         |
+| **Campaign’s voucher code limit exceeded** | Campaign has reached the maximum number of vouchers that can be rewarded.        |
+| _**User’s voucher code limit exceeded**_   | User has reached the maximum voucher rewards allowed per user for this campaign. |
+| **Codes from voucher list exhausted**      | All codes from the uploaded voucher list have been distributed.                  |
+| **Voucher code assignment failed**         | Failed to assign voucher code due to a system error.                             |
