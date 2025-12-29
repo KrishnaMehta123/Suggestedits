@@ -38,13 +38,11 @@ Loyalty Points campaigns display wallet-based reward performance, tracking the n
 
 <Image align="center" border={true} caption="KPIs for Promo Campaign with Loyalty Wallet Rewards" src="https://files.readme.io/7bbbd5a59eb1604a797ef115f65e89fe0db97a47a8ac64793961116be082cd31-image.png" />
 
+## Trend Graph
+
 The _Loyalty Wallets_ rewards KPIs also include two line charts that show how reward distribution changed throughout the campaign. These charts help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity. For example, if users were rewarded on multiple days, the charts show recurring spikes corresponding to the distribution of rewards and points.
 
-### Trend Graph
-
-* **Rewards Distributed**
-
-  This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
+* **Rewards Distributed**: This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
 
   * **X-axis**: Represents the Date or Month for the selected duration.
   * **Y-axis**: Represents the total number of rewards distributed during that period.
@@ -54,8 +52,7 @@ The _Loyalty Wallets_ rewards KPIs also include two line charts that show how re
 
 <Image align="center" border={true} caption="Rewards Distributed Over Time in Loyalty Wallets" src="https://files.readme.io/0099b8772a477101867024a8c5f4247eafe3f64bd9932c39b712c6117d6732fb-image.png" />
 
-* **Points Distributed**  
-  This line chart illustrates the number of loyalty points issued on each date within the campaign range, as well as distribution trends, such as reward bursts on high-activity days or consistent distribution throughout the campaign.
+* **Points Distributed**: This line chart illustrates the number of loyalty points issued on each date within the campaign range, as well as distribution trends, such as reward bursts on high-activity days or consistent distribution throughout the campaign.
 
 <Image align="center" alt="Points Distributed Over Time in Loyalty Wallets" border={true} caption="Points Distributed Over Time in Loyalty Wallets" src="https://files.readme.io/6d2e0f2c8a263c3755b20a527328bdeb2bbb41749ae1dffbccf064c12da2e4a7-image.png" />
 
