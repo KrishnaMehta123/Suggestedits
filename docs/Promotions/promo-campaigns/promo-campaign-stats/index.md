@@ -31,14 +31,14 @@ Each reward type includes:
 
 # Loyalty Points Campaign Stats
 
-Loyalty Points campaigns display wallet-based reward performance, tracking the number of users who received points and the total number of points distributed. These KPIs help you assess the frequency of rewards and the overall point volume during the campaign as follows:
+Loyalty Points campaigns display wallet-based reward performance and the total number of points distributed. These KPIs help you assess the frequency of rewards and the overall point volume during the campaign as follows:
 
 * **Rewards Distributed**: Represents the total number of times a reward was distributed during the campaign. For example, if rewards were triggered multiple times for the same user, each instance is counted toward the total.
 * **Points Distributed**: Indicates the total number of loyalty points issued to all qualifying users. For example, a total of 6,132 loyalty points were distributed.
 
 <Image align="center" border={true} caption="KPIs for Promo Campaign with Loyalty Wallet Rewards" src="https://files.readme.io/7bbbd5a59eb1604a797ef115f65e89fe0db97a47a8ac64793961116be082cd31-image.png" />
 
-## Trend Graph
+## View Trends
 
 The _Loyalty Wallets_ rewards KPIs also include two line charts that show how reward distribution changed throughout the campaign. These charts help you visually identify patterns such as high-engagement days, reward spikes, or periods of inactivity. For example, if users were rewarded on multiple days, the charts show recurring spikes corresponding to the distribution of rewards and points.
 
@@ -85,13 +85,13 @@ Partner Voucher campaigns track the distribution of unique voucher codes sourced
 
 The KPIs for Partner Voucher campaigns help you track the number of voucher codes assigned and overall engagement with voucher rewards.
 
-* **Voucher Codes Distributed**: Indicates the total number of partner voucher codes assigned to users during the campaign. This KPI tracks every voucher issuance event, regardless of whether a user receives multiple vouchers.
+* **Voucher Codes Distributed**: Indicates the total number of partner voucher codes assigned to users during the campaign.
 
 <Image align="center" border={true} src="https://files.readme.io/a53f44e93a25ebc9c4c278c31eb483bd8140a68c19a9c64ee3a8b0ba34db8f7c-image.png" className="border" />
 
 * **Rewards Distributed**: Includes a line chart that displays voucher distribution patterns over time. This helps you analyze days with higher voucher issuance and spot trends or anomalies in campaign performance. For example, a spike on a specific date indicates higher voucher issuance compared to surrounding days.
 
-### Trend Graph
+## View Trends
 
 This _Voucher Codes Distributed_ chart illustrates the distribution of voucher codes across each day, week, or month within the selected date range. It provides a clear view of distribution frequency and peak issuance dates.
 
@@ -106,8 +106,6 @@ The KPIs in this section help you evaluate webhook performance and identify any 
 * **Webhook Credits Rewarded**: Represents the total credits successfully issued through webhook calls when _Self-Managed Wallet Credits_ are used as the reward type. This KPI does not apply to _Physical & Digital Rewards_.
 * **Webhook Sent**: Indicates the total number of webhook requests triggered from CleverTap to the external endpoint.
 * **Webhook Failed**: Shows the number of webhook requests that failed due to issues such as endpoint failures, timeouts, or invalid payloads.
-
-Together, these KPIs help identify whether reward delivery issues stem from configuration errors, endpoint downtime, or external service limitations.
 
 <Image align="center" border={true} src="https://files.readme.io/8715ca9cc75e88be4302d5ff0ae6d9575e601b9a2069b68111f17883c479af06-image.png" className="border" />
 
