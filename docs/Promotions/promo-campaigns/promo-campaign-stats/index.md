@@ -73,11 +73,11 @@ The KPIs in this section help you understand how frequently coupon rewards were 
 
 * **Discount Redeemed**: Applicable only for discount coupons, this KPI shows the total value of discounts redeemed using coupons issued by the campaign.
 
-<Image align="center" border={true} src="https://files.readme.io/f9d21685c45fb6d2761947cb6de699685f90106148397936392fa326f62bade7-image.png" className="border" />
+<Image align="center" border={true} caption="KPIs for Promo Campaigns with Coupon Rewards" src="https://files.readme.io/f9d21685c45fb6d2761947cb6de699685f90106148397936392fa326f62bade7-image.png" />
 
 * **Cashback Points Credited**: Applicable only to cashback coupons, this KPI shows the total number of cashback points credited to users’ wallets from coupon redemptions. For example, the campaign may show **5,000 cashback points credited** during the selected period.
 
-<Image align="center" border={true} src="https://files.readme.io/2fe7319573af245958699e24da8b6dc7b772d0c677f99c071bc27b3efa59182a-image.png" className="border" />
+<Image align="center" border={true} caption="Cashback Points Credited KPI for Cashback Coupon Types" src="https://files.readme.io/2fe7319573af245958699e24da8b6dc7b772d0c677f99c071bc27b3efa59182a-image.png" />
 
 # Partner Voucher Campaign Stats
 
@@ -85,17 +85,16 @@ Partner Voucher campaigns track the distribution of unique voucher codes sourced
 
 The KPIs for Partner Voucher campaigns help you track the number of voucher codes assigned and overall engagement with voucher rewards.
 
+* **Rewards Distributed**: Includes a line chart that displays voucher distribution patterns over time. This helps you analyze days with higher voucher issuance and spot trends or anomalies in campaign performance. For example, a spike on a specific date indicates higher voucher issuance compared to surrounding days.
 * **Voucher Codes Distributed**: Indicates the total number of partner voucher codes assigned to users during the campaign.
 
-<Image align="center" border={true} src="https://files.readme.io/a53f44e93a25ebc9c4c278c31eb483bd8140a68c19a9c64ee3a8b0ba34db8f7c-image.png" className="border" />
-
-* **Rewards Distributed**: Includes a line chart that displays voucher distribution patterns over time. This helps you analyze days with higher voucher issuance and spot trends or anomalies in campaign performance. For example, a spike on a specific date indicates higher voucher issuance compared to surrounding days.
+<Image align="center" border={true} caption="KPIs for Promo Campaigns with Partner Voucher Rewards" src="https://files.readme.io/a53f44e93a25ebc9c4c278c31eb483bd8140a68c19a9c64ee3a8b0ba34db8f7c-image.png" />
 
 ## View Trends
 
 This _Voucher Codes Distributed_ chart illustrates the distribution of voucher codes across each day, week, or month within the selected date range. It provides a clear view of distribution frequency and peak issuance dates.
 
-<Image align="center" border={true} src="https://files.readme.io/9db18f74caff43027141697e3a2a0188d895c1b67b90e3128782d4c1a56f3f75-image.png" className="border" />
+<Image align="center" border={true} caption="Vouchers Distributed Over Time in Partner Vouchers" src="https://files.readme.io/9db18f74caff43027141697e3a2a0188d895c1b67b90e3128782d4c1a56f3f75-image.png" />
 
 # Custom Rewards Campaign Stats
 
@@ -107,6 +106,6 @@ The KPIs in this section help you evaluate webhook performance and identify any 
 * **Webhook Sent**: Indicates the total number of webhook requests triggered from CleverTap to the external endpoint.
 * **Webhook Failed**: Shows the number of webhook requests that failed due to issues such as endpoint failures, timeouts, or invalid payloads.
 
-<Image align="center" border={true} src="https://files.readme.io/8715ca9cc75e88be4302d5ff0ae6d9575e601b9a2069b68111f17883c479af06-image.png" className="border" />
+<Image align="center" border={true} caption="KPIs for Promo Campaigns with Custom Rewards" src="https://files.readme.io/8715ca9cc75e88be4302d5ff0ae6d9575e601b9a2069b68111f17883c479af06-image.png" />
 
 <br />
