@@ -36,7 +36,7 @@ To create a funnel, perform the following steps:
 
 4. You can also duplicate a step or add multiple events for the step by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic between them in Step 1 of the Funnel to ensure you capture your entire user base.
 
-<Image align="center" alt="Select Multiple Events" border={true} caption="Select Multiple Events" src="https://files.readme.io/4bb245c3bd7e1c55d271354270052226658bf057accf2ee77e3a683657255db8-image.png" width="60% " />
+<Image align="center" border={true} caption="Select Multiple Events" src="https://files.readme.io/eb857d35662821e5a1b02109b5eb98b07a551fba1a2f98302bff07f647e11124-image.png" />
 
 ## Set Conversion Window
 
