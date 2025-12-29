@@ -14,18 +14,18 @@ next:
 ---
 # Overview
 
-Promo Campaigns are a flexible and powerful feature that enables businesses to engage their users by distributing targeted rewards. Campaigns can be triggered based on users' past behavior or in real time based on their actions (or inactions). The Promo Campaigns system support various types of rewards, including wallet points, coupons, and partner vouchers.
+Promo Campaigns are a flexible and powerful feature that enables businesses to engage their users by distributing targeted rewards. Campaigns can be triggered based on users' past behavior or in real time based on their actions (or inactions). The Promo Campaigns system supports various types of rewards, including wallet points, coupons, and partner vouchers.
 
 # Example Use Cases
 
 The following are some of the examples that illustrate how Promo Campaigns can deliver its value:
 
 * **E-commerce**: Reward high spenders with percentage-based wallet points or offer discount coupons when users abandon their cart.
-* **Delivery**: Distribute cashback wallet points for orders placed during off-peak hours or send discount coupons to users who have not ordered in the last 30 days.
-* **Travel and Hospitality**: Offer loyalty points for bookings over a certain value or run a promo campaign offering coupons for early-bird or last-minute hotel bookings.
-* **Fintech**: Provide wallet points or vouchers for users who complete their first UPI transaction or run reward campaigns based on bill payments. For example, reward 100 points to users when they deposit $100.
+* **Delivery**: Distribute cashback wallet points to users for orders placed during off-peak hours, or send discount coupons to those who have not ordered in the last 30 days.
+* **Travel and Hospitality**: Offer loyalty points for bookings exceeding a specific value, or run a promotional campaign offering coupons for early-bird or last-minute hotel bookings.
+* **Fintech**: Provide wallet points or vouchers to users who complete their first UPI transaction or run reward campaigns based on bill payments. For example, reward users 100 points when they deposit $100.
 * **Gaming and Entertainment**: Offer 10% off on movie ticket bookings or distribute partner vouchers when users perform specific in-app actions, such as watching a trailer or making a purchase.
-* **Healthcare and Wellness**: Give wallet points for booking health checkups or consultations or run promotional campaigns offering vouchers for app signups or referrals.
+* **Healthcare and Wellness**: Offer wallet points for booking health checkups or consultations, or run promotional campaigns offering vouchers for app signups or referrals.
 
 # Features
 
@@ -36,13 +36,13 @@ The following is the set of features designed to help you build, manage, and opt
   * **Live Action Campaigns**: Triggered in real-time based on user actions, or inactions, within a defined time window, helping you respond instantly to user behavior.
 * **Reward Types:** Offers a wide variety of rewards to engage your users meaningfully. You can distribute Single-Code Coupons for broad usage, Bulk Coupon Codes for individual redemptions, Wallet Points to encourage loyalty, or Partner Vouchers to reward your users with popular third-party brand offers.
 * **Segment Rule Builders:** Enables audience segmentation using predefined filters, custom user lists, and or uploaded custom lists. Segments can be created based on real-time and historical user data.
-* **Campaign Management**: Provides full control over live and scheduled campaigns. You can pause, edit, or stop campaigns at any time. The campaign list view includes filters and key campaign details such as status, type, reward, and creator.
+* **Campaign Management**: Provides complete control over live and scheduled campaigns. You can pause, edit, or stop campaigns at any time. The campaign list view includes filters and key campaign details such as status, type, reward, and creator.
 
 # FAQs
 
 Find answers to the following common questions about using ̉Promo Campaigns:
 
-### Can I target both live actions and past behavior in one campaign?
+## Can I target both live actions and past behavior in a single campaign?
 
 No, each campaign supports only one type of segmentation: Past Behavior, Live Actions, or Custom Lists.
 
