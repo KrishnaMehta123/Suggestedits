@@ -38,7 +38,7 @@ To create a funnel, perform the following steps:
 
 <Image align="center" alt="Select Multiple Events" border={true} caption="Select Multiple Events" src="https://files.readme.io/4bb245c3bd7e1c55d271354270052226658bf057accf2ee77e3a683657255db8-image.png" width="60% " />
 
-## Setting Conversion Window
+## Set Conversion Window
 
 Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
 
@@ -69,22 +69,6 @@ To compare conversion across segments, perform the following steps:
 
 <Image align="center" border={true} caption="Segment Comparison Results" src="https://files.readme.io/db9e91450c33e1a00480fb14730ef050bbc70a54ad3308f65eadc5f53e89e1c1-image.png" />
 
-## Advanced Filtering
-
-Advanced filters help restrict your analysis to a specific user segment. You can create a segment based on any combination of past behaviors and user properties.
-
-> 📘 Advanced Filters
->
-> Advanced filters is a general feature for all analytics and most campaigns. For more information, refer to [Segments](doc:segments).
-
-# Reading Funnel Charts
-
-Funnel charts enable you to quickly determine how many users progress through each step of the funnel.
-
-The default view shows cumulative conversions per step for the selected time range. It can be viewed as an absolute count of users completing each step or a percentage.
-
-<Image align="center" alt="Funnel Charts" border={true} caption="Funnel Charts" src="https://files.readme.io/004bcc51afc2a74579c288ffc3915fe73e0e85963c02da2f961c6939f8e346e0-image.png" />
-
 ## Split by Property
 
 You can split a funnel by profile properties for sessions, geographies, and technographics, or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more.
@@ -99,6 +83,43 @@ To break down by property, perform the following steps:
 <Image align="center" alt="Split funnel by event property" border={true} caption="Split Funnel by Event Property" src="https://files.readme.io/765e14575db123f3fbf0d28e7c1d8174c0ad9e4c4ccdbbecccbbfcea3c41dfc9-image.png" />
 
 <Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
+
+## Measure By
+
+The **Measured By** option defines how funnel conversions are calculated and displayed. It determines whether funnel performance is shown as a single aggregated value or as a trend over time.
+
+You can choose one of the following measurement modes:
+
+* [Total Conversion](doc:funnels-v2#total-conversion) 
+* [Trends](doc:funnels-v2#trends) 
+
+### Total Conversion
+
+Selecting **Total Conversion** allows you to view the aggregate conversion count or rate for the specified time range. This option does not break results down by time.
+
+<Image align="center" border={true} caption="Measured By Total Conversion" src="https://files.readme.io/bb8d24cbf8632ce064c529da93367986bb336bc6c72260c1b96edbc0716de140-image.png" />
+
+Use the Total Conversion option when you want to:
+
+* Get a high-level summary of funnel performance
+* Compare overall conversion rates across segments
+* Report a single conversion metric for a given period
+
+For example, compare the total conversion rate of _All Users_ versus _Engaged Users_ for a checkout funnel.
+
+### Trends
+
+Selecting **Trends** allows you to analyze how funnel conversions change over time. When **Trends** is selected, you must also choose a time granularity, i.e., Day, Week, or Month, to view the trend.
+
+<Image align="center" border={true} caption="Measured By Trends" src="https://files.readme.io/fdac5620cbf09d1ee9a53999b384fd1785d0826c2159c92dc4f7e2e27f91ff8b-image.png" />
+
+Use the Trends option when you want to:
+
+* Track conversion performance over time
+* Identify spikes, drops, or seasonality in funnel conversions
+* Compare trends across segments or properties
+
+For example, analyze daily conversion trends for the funnel _App Installed → App Launched → Added to Cart_ over the last 30 days.
 
 # Funnel Computation Methods
 
@@ -153,6 +174,22 @@ For example, let's take a look at the following Login Flow of two users in an ap
 * **User B:** App Launched → Login Attempted → Logged In
 
 With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments.
+
+## Advanced Filtering
+
+Advanced filters help restrict your analysis to a specific user segment. You can create a segment based on any combination of past behaviors and user properties.
+
+> 📘 Advanced Filters
+>
+> Advanced filters is a general feature for all analytics and most campaigns. For more information, refer to [Segments](doc:segments).
+
+# Reading Funnel Charts
+
+Funnel charts enable you to quickly determine how many users progress through each step of the funnel.
+
+The default view shows cumulative conversions per step for the selected time range. It can be viewed as an absolute count of users completing each step or a percentage.
+
+<Image align="center" alt="Funnel Charts" border={true} caption="Funnel Charts" src="https://files.readme.io/004bcc51afc2a74579c288ffc3915fe73e0e85963c02da2f961c6939f8e346e0-image.png" />
 
 # Table View
 
