@@ -39,21 +39,19 @@ Errors vary depending on the reward type selected in the campaign:
 * [Coupon Errors](doc:promo-campaign-errors#coupon-errors)
 * [Partner Voucher Errors](doc:promo-campaign-errors#partner-voucher-errors)
 
-(@Bajrang: in the tables, we put the first column in bold and never in italics.)
-
 ## Loyalty Wallet Errors
 
 The following errors may occur when distributing _Loyalty Points_ through a wallet.
 
-| Error Type                                | Description                                                                                     |
-| ----------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| _Invalid wallet configuration_            | Reward ID or wallet details are invalid.                                                        |
-| _Inactive user wallet_                    | User’s wallet is inactive or does not exist.                                                    |
-| _Invalid points calculated_               | Calculated points are less than 0 or not a numeric value.                                       |
-| _User’s reward recurrence limit exceeded_ | User has already been rewarded the maximum number of times allowed per user from this campaign. |
-| _Campaign’s points budget exceeded_       | Campaign has reached the maximum points distribution budget.                                    |
-| _User’s points budget exceeded_           | User has already been rewarded the maximum number of points allowed per user in this campaign.  |
-| _Points credit failed_                    | Failed to credit points due to a system error.                                                  |
+| Error Type                              | Description                                                                                     |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Invalid wallet configuration            | Reward ID or wallet details are invalid.                                                        |
+| Inactive user wallet                    | User’s wallet is inactive or does not exist.                                                    |
+| Invalid points calculated               | Calculated points are less than 0 or not a numeric value.                                       |
+| User’s reward recurrence limit exceeded | User has already been rewarded the maximum number of times allowed per user from this campaign. |
+| Campaign’s points budget exceeded       | Campaign has reached the maximum points distribution budget.                                    |
+| User’s points budget exceeded           | User has already been rewarded the maximum number of points allowed per user in this campaign.  |
+| Points credit failed                    | Failed to credit points due to a system error.                                                  |
 
 ## Coupon Errors
 
