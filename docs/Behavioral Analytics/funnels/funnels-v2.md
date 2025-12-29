@@ -24,41 +24,23 @@ A typical example is a user onboarding flow, where a user progresses from the ap
   This feature is released in Public Beta. For more information about this feature or any queries, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
 </Callout>
 
-# Creating a Funnel
+# Create a Funnel
 
-To create a funnel, perform the following steps:
+To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following steps:
 
-1. Go to _Analytics_ > _Funnels Beta_.
-2. Select the events in the desired order to create up to an eight-step funnel.
-3. Select event properties for each event to constrain the analysis for the users who performed that event/property combination.
+## Select Events
+
+Select the events in the desired order to create up to an eight-step funnel. You can also select event properties for each event to constrain the analysis for the users who performed that event/property combination.
 
 <Image align="center" border={true} caption="Create a Funnel" src="https://files.readme.io/de1b286dcda584e174fc4d4edb9b177d47232785f91810731941c97bd91a0c13-image.png" width="50% " />
 
-4. You can also duplicate a step or add multiple events for the step by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic between them in Step 1 of the Funnel to ensure you capture your entire user base.
+You can also clone a step or add multiple events for the step by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic in a step of the Funnel.
 
 <Image align="center" border={true} caption="Select Multiple Events" src="https://files.readme.io/eb857d35662821e5a1b02109b5eb98b07a551fba1a2f98302bff07f647e11124-image.png" />
 
-## Set Conversion Window
-
-Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
-
-To set a conversion window:
-
-1. Go to _Analytics_ > _Funnels_.
-2. Select the required events.
-3. Under the _MEASURED BY_ section, select the _Conversion window_.
-
-<Image align="center" border={true} caption="Set Conversion Window" src="https://files.readme.io/25e96965fb19df284a72492c304d00646f1eba0f9f8b42479f2c6ff668ca1ac4-image.png" width="50% " />
-
-<Callout icon="📘" theme="info">
-  #### Time Interval for Conversion Window
-
-  CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
-</Callout>
-
 ## Compare by Segments
 
-You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in the conversion trends could reveal differences in your users' behavior in each segment and result in invaluable insight.
+You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights.
 
 To compare conversion across segments, perform the following steps:
 
@@ -120,6 +102,24 @@ Use the Trends option when you want to:
 * Compare trends across segments or properties
 
 For example, analyze daily conversion trends for the funnel _App Installed → App Launched → Added to Cart_ over the last 30 days.
+
+## Set Conversion Window
+
+Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
+
+To set a conversion window:
+
+1. Go to _Analytics_ > _Funnels_.
+2. Select the required events.
+3. Under the _MEASURED BY_ section, select the _Conversion window_.
+
+<Image align="center" border={true} caption="Set Conversion Window" src="https://files.readme.io/25e96965fb19df284a72492c304d00646f1eba0f9f8b42479f2c6ff668ca1ac4-image.png" width="50% " />
+
+<Callout icon="📘" theme="info">
+  #### Time Interval for Conversion Window
+
+  CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
+</Callout>
 
 # Funnel Computation Methods
 
