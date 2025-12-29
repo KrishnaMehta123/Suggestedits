@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-CleverTap's Advanced In-App Builder enables the creation of visually appealing and engaging mobile In-App messages that align with your brand's aesthetics. This document walks you through the main features of the In-App Editor and its usage to help you maximize this feature's potential.
+CleverTap's Advanced In-App Builder enables the creation of visually appealing and engaging mobile In-App messages that align with your brand's aesthetics. This document guides you through the main features of the In-App Editor and its usage, helping you maximize the feature's potential.
 
 <Image align="center" alt="Sample In-App with Advanced Builder" border={false} caption="Sample In-App Message with Advanced Editor" src="https://files.readme.io/70dd7cd5e206879de2a4edbe492e11ab7d733e3879aedc4cae3a553d6121405b-Starting-image-1.png" width="40% " />
 
@@ -70,8 +70,6 @@ The _Container_ holds all the content in your In-App message, such as text, imag
 
 <Image align="center" alt="Design Container" border={true} caption="Design Container" src="https://files.readme.io/1626def427219d29d0892846f9c54eb4ce46a4b19a1ecb09fdd2a24c40f8d890-image.png" />
 
-<br />
-
 #### Container Properties
 
 You can customize the following properties to control the look, behavior, and visual design of your In-App message:
@@ -80,7 +78,6 @@ You can customize the following properties to control the look, behavior, and vi
 * **Size:** Select from predefined size options such as Wide, Square, Tall, or Extra Tall, depending on your layout.
 * **Margin:** Adjust the margin percentage to create space between the message and the device edges.
 * **Delay:** Set a delay after which the in-app message automatically dismisses.
-  <br />
 
 #### Container Action
 
@@ -178,8 +175,6 @@ You can use the following media for your content:
   Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
 </Callout>
 
-<br />
-
 ### Dismiss Button
 
 The _Dismiss Button_ allows users to close the In-App message.
@@ -194,10 +189,10 @@ Click **Add** on the canvas to add _Text_, _Image_, or _Button_.
 
 You can enhance your In-App message by adding the following elements inside the container:
 
-* **Text**: Add text to convey your message. Use the available styling options to ensure it fits your brand's style.
+* **Text**: Add text to convey your message. Use the available styling options to ensure it aligns with your brand's style.
 * **Image**: Incorporate visuals or branding images to create an engaging experience.
   * The builder supports multiple image elements, which you can stack on top of each other.
-  * Image elements can also function as buttons, enabling call-to-actions directly from the image.
+  * Image elements can also function as buttons, enabling a call-to-action directly from the image.
 * **Button**: Create call-to-action buttons, such as _Shop Now_ or _Learn More_, with precise control over the design and positioning.
 
 ### Display Element Over or Behind an Element
@@ -208,7 +203,7 @@ When working with stacked elements such as images, text boxes, or buttons, the _
 
 ## Add Animations
 
-The builder provides built-in animation options to improve the flow of the user experience. Animations are configured from the Container element.
+The builder offers built-in animation options to enhance the user experience flow. Animations are configured from the Container element.
 
 <Image align="center" alt="Animation" border={true} caption="Design Animation" src="https://files.readme.io/e3e774a3fdb678a01416ff17dbfd20226ab3fa857e7359e2551ae55449bd0a40-scheenrecording-1.gif" />
 
@@ -216,7 +211,7 @@ You can enhance user interaction with the help of various animation options as f
 
 * **Animation types**: Choose from Instant (default), Dissolve, or Move In animations.  
   The Duration is set in milliseconds, allowing you to experiment with different values and observe the effect in the canvas.
-* The **Duration** value can be set in milliseconds, and you can try different settings and see how they behave in the Canvas
+* The **Duration** value can be set in milliseconds, and you can try different settings and see how they behave in the Canvas.
 * The **Repeat** button replays the animation in the Canvas.
 
 # Banners
@@ -259,32 +254,28 @@ The Advanced In-app Builder supports **Custom Fonts** for all Text content in yo
 
 4. Enter the following details to create your Custom Font:
 
-   <br />
-
-   | **Field Name**  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-   | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   | **Font Name**   | Uniquely identifies the font. This field has a limit of up to 50 characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-   | **Font Family** | Defines the style applied to the font. This field has a limit of up to 50 characters. The custom font family must match the name of the font face in the CSS file.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-   | **Fallback to** | If the Custom Font fails to load on the device, we will use one of the FallBack Fonts to render the In-app Campaign.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   | **Font URL**    | If the font is not on your local system, you can select this option to add the URL for the required font. The URL must point to a CSS file.<br />- If your custom font is a public font available on the web, you can add the URL for the font.<br />- If you upload the font to your private server, check that CORS is enabled on the server to provide the custom font file.<br /><br />The custom font file must have the following header: `Access-Control-Allow-Origin: *`. When defining font URLs in the `src` attribute, utilizing the `https` protocol is important. Refer to the sample CSS code. |
-   | **Upload Font** | If you already have a font file on your local system, choose **Upload Font**, and click **Upload** to upload the CSS file for your custom font. The file size should be a maximum of 1 MB.                                                                                                                                                                                                                                                                                                                                                                                                                   |
-
-   ## Sample CSS code
+   | **Field Name**  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+   | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Font Name**   | Uniquely identifies the font. This field has a limit of up to 50 characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+   | **Font Family** | Defines the style applied to the font. This field has a limit of up to 50 characters. The custom font family must match the name of the font face in the CSS file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+   | **Fallback to** | If the Custom Font fails to load on the device, we will use one of the FallBack Fonts to render the In-app Campaign.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+   | **Font URL**    | If the font is not on your local system, you can select this option to add the URL for the required font. The URL must point to a CSS file.<br />- If your custom font is a public font available on the web, you can add the URL for the font.<br />- If you upload the font to your private server, check that CORS is enabled on the server to provide the custom font file.<br /><br />The custom font file must have the following header: `Access-Control-Allow-Origin: *`. When defining font URLs in the `src` attribute, utilizing the `https` protocol is essential. Refer to the sample CSS code. (@meenal: add a cross-reference to the section.) |
+   | **Upload Font** | If you already have a font file on your local system, choose **Upload Font**, and click **Upload** to upload the CSS file for your custom font. The file size should be a maximum of 1 MB.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
    <br />
 
-   ```css CSS
-   @font-face {
-     font-family: 'Dancing Script';
-     font-style: normal;
-     font-weight: 400;
-     font-display: swap;
-     src: url(https://fonts.gstatic.com/s/dancingscript/v25/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format('woff2');
-     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-   }
-   ```
+## Sample CSS Code
 
-   <br />
+```css CSS
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v25/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+```
 
 # FAQs
 
@@ -298,7 +289,7 @@ Yes. The Preview and Test feature is available from Android SDK v7.7.0 and Cleve
 
 ### Can I use personalized message content?
 
-Yes. You can use the [@ inline personalization](https://docs.clevertap.com/docs/personalize-message-inapp#inline-personalization) in the preview message.
+Yes. You can use the [Inline Personalization](doc:personalize-message-inapp#inline-personalization) in the preview message.
 
 ### Are there limitations on device sizes or layouts
 
