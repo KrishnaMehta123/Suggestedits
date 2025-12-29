@@ -21,7 +21,7 @@ Promo Campaigns are a flexible and powerful feature that enables businesses to e
 The following are some of the examples that illustrate how Promo Campaigns can deliver its value:
 
 * **E-commerce**: Reward high spenders with percentage-based wallet points or offer discount coupons when users abandon their cart.
-* **Delivery**: Distribute cashback wallet points to users for orders placed during off-peak hours, or send discount coupons to those who have not ordered in the last 30 days.
+* **Delivery**: Distribute cashback wallet points to users for orders placed during off-peak hours, or send discount coupons to those who have not placed an order in the last 30 days.
 * **Travel and Hospitality**: Offer loyalty points for bookings exceeding a specific value, or run a promotional campaign offering coupons for early-bird or last-minute hotel bookings.
 * **Fintech**: Provide wallet points or vouchers to users who complete their first UPI transaction or run reward campaigns based on bill payments. For example, reward users 100 points when they deposit $100.
 * **Gaming and Entertainment**: Offer 10% off on movie ticket bookings or distribute partner vouchers when users perform specific in-app actions, such as watching a trailer or making a purchase.
