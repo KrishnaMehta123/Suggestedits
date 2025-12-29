@@ -19,11 +19,9 @@ The **Errors** tab displays all failed reward distribution attempts for a Promo 
 These errors also help you:
 
 * Diagnose reward delivery failures.
-* Verify whether limits such as _user-level_, _campaign-level_, or _redemption limits_ are being reached.
+* Verify whether limits such as user-level, campaign-level, or redemption limits are being reached.
 * Identify configuration issues with wallets, coupons, vouchers, or reward setups.
-* Detect system-level failures such as assignment failures, _parsing errors_, or _inactive reward systems_.   
-
-  (@Bajrang: terms are inconsistently italicized. Please check.)
+* Detect system-level failures such as assignment failures, _parsing errors_, or _inactive reward systems_.
 
 By monitoring these errors, you can take targeted actions, such as updating reward configurations, increasing budgets, replacing exhausted code lists, or troubleshooting webhook integrations.
 
