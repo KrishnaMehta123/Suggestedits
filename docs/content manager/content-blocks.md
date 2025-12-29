@@ -186,15 +186,15 @@ The following are considerations when nesting content blocks:
 
 Before using Content Blocks, refer to these essential guidelines for supported personalization. These help you understand which personalization types are supported and how to use them effectively in your campaigns.
 
-| Personalization Type | Supported? | Description                                                                                                                                                                                                                                                                                                                                               |
-| :------------------- | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Profile              | Yes        | You can use profile attributes                                                                                                                                                                                                                                                                                                                            |
-| Conditional Tags     | Yes        | You can create a _write once use multiple times_ message by adding conditional variations based on user attributes or behavior. For more information, refer to [Liquid Tags](doc:liquid-tags).                                                                                                                                                            |
-| Event                | Yes        | You can manually add event personalization tags. These automatically resolve based on the associated user event data. Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Event Personalization](https://docs.clevertap.com/docs/designer-agent?isFramePreview=true#using-event-personalization) . |
-| Reminders            | Yes        | You can manually add reminder personalization tags. Reminder personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Reminder Personalization](https://docs.clevertap.com/docs/designer-agent?isFramePreview=true#using-reminder-personalization).                                                           |
-| Linked Content       | No         | -                                                                                                                                                                                                                                                                                                                                                         |
-| Catalog Send-Time    | No         | -                                                                                                                                                                                                                                                                                                                                                         |
-| Campaign             | No         | -                                                                                                                                                                                                                                                                                                                                                         |
+| Personalization Type | Supported? | Description                                                                                                                                                                                                                                                                                                                                         |
+| :------------------- | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profile              | Yes        | You can use profile attributes                                                                                                                                                                                                                                                                                                                      |
+| Conditional Tags     | Yes        | You can create a _write once use multiple times_ message by adding conditional variations based on user attributes or behavior. For more information, refer to [Liquid Tags](doc:liquid-tags).                                                                                                                                                      |
+| Event                | Yes        | You can manually add event personalization tags. These automatically resolve based on the associated user event data. Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Event Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-event-personalization) . |
+| Reminders            | Yes        | You can manually add reminder personalization tags. Reminder personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Reminder Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-reminder-personalization).                                                           |
+| Linked Content       | No         | -                                                                                                                                                                                                                                                                                                                                                   |
+| Catalog Send-Time    | No         | -                                                                                                                                                                                                                                                                                                                                                   |
+| Campaign             | No         | -                                                                                                                                                                                                                                                                                                                                                   |
 
 ### Using Event Personalization
 
@@ -258,8 +258,7 @@ To add reminder-based personalization in a Content Block:
 Tags must be typed exactly as required. Use the following format to insert reminder-based values:
 
 ```liquid
-{{ Reminder.flight_booking.date }}
-{{ Reminder.flight_booking.seat_number | default: "NA" }}
+{{ Reminder.<reminder_entity>.<property_name> | default: "<fallback_value>" }}
 ```
 
 #### Example
@@ -280,9 +279,9 @@ Your flight is scheduled on your upcoming travel date.
 Seat number: to be assigned
 ```
 
-> ⚠️ **Notes**
+> ⚠️ Note
 >
-> * **Single reminder entity:** A Content Block can reference only one reminder entity. For example, `Reminder.flight_booking` and `Reminder.hotel_booking` cannot be used together in the same block. 
+> * **Single reminder entity:** A Content Block can reference only one reminder entity. For example, `Reminder.flight_booking` and `Reminder.hotel_booking` cannot be used together in the same block.
 > * **No mixed personalization:** Reminder (`Reminder.*`) and event (`Event.*`) tags cannot be used in the same Content Block.
 > * **Nested blocks:** When nesting Content Blocks, both the parent and child blocks must reference the same reminder entity. For example, if the parent block uses `Reminder.flight_booking`, and the nested child block uses `Reminder.hotel_booking`, personalization will not work as blocks with different reminder entities cannot be nested. The nested child block can use `Reminder.flight_booking.seat_number`.
 > * **Campaign compatibility:** A Content Block can be used in a reminder campaign only if the reminder entity used in the block matches the reminder entity selected in the campaign.
