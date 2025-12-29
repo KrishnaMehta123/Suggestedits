@@ -15,7 +15,7 @@ next:
 ---
 # Overview
 
-The **Rewards Distribution** tab under Promo Campaign Stats provides a comprehensive overview of Promo campaign performance, displaying real-time (@Bjarang: is this really real-time??) and historical analytics for user engagement, reward distribution, and redemption activity. The metrics and charts displayed depend on the _Reward type_ selected when creating the campaign.
+The **Rewards Distribution** tab under Promo Campaign Stats provides a comprehensive overview of Promo campaign performance, displaying real-time and historical analytics for user engagement, reward distribution, and redemption activity. The metrics and charts displayed depend on the _Reward type_ selected when creating the campaign.
 
 Each reward type includes:
 
@@ -33,7 +33,7 @@ Each reward type includes:
 
 Loyalty Points campaigns display wallet-based reward performance, tracking the number of users who received points and the total number of points distributed. These KPIs help you assess the frequency of rewards and the overall point volume during the campaign as follows:
 
-* **Rewards Distributed**: Represents the total number of times a reward was distributed during the campaign. For example, if rewards were triggered multiple times for the same user, each instance is counted toward the total. 
+* **Rewards Distributed**: Represents the total number of times a reward was distributed during the campaign. For example, if rewards were triggered multiple times for the same user, each instance is counted toward the total.
 * **Points Distributed**: Indicates the total number of loyalty points issued to all qualifying users. For example, a total of 6,132 loyalty points were distributed.
 
 <Image align="center" border={true} caption="KPIs for Promo Campaign with Loyalty Wallet Rewards" src="https://files.readme.io/7bbbd5a59eb1604a797ef115f65e89fe0db97a47a8ac64793961116be082cd31-image.png" />
@@ -42,12 +42,13 @@ The _Loyalty Wallets_ rewards KPIs also include two line charts that show how re
 
 ### Trend Graph
 
-* **Rewards Distributed**  
+* **Rewards Distributed**
 
   This line chart illustrates the frequency of rewards issued on each day, week, or month within the selected date range.
+
   * **X-axis**: Represents the Date or Month for the selected duration.
   * **Y-axis**: Represents the total number of rewards distributed during that period.
-  You can aggregate chart data by Day, Week, or Month using the dropdown in the top-right corner of the chart. When you hover over any data point, the chart displays:
+    You can aggregate chart data by Day, Week, or Month using the dropdown in the top-right corner of the chart. When you hover over any data point, the chart displays:
   * The exact number of rewards distributed for that period, and
   * The percentage change compared to the previous period (Day/Week/Month based on the selected aggregation).
 
@@ -66,17 +67,18 @@ The _Rewards Distribution_ tab adapts based on the Coupon Type (Single Code or B
 
 The KPIs in this section help you understand how frequently coupon rewards were issued, how coupons were distributed, and the total value redeemed by users.
 
-* **Rewards Distributed**: Represents the total number of times a coupon reward was issued during the campaign. Each reward trigger is counted, including repeat rewards issued to the same user. (@bajrang: removed example as it was not adding any value here.)
+* **Rewards Distributed**: Represents the total number of times a coupon reward was issued during the campaign. Each reward trigger is counted, including repeat rewards issued to the same user.
 
 * **Coupons Distributed**: Indicates how coupon codes were distributed, based on the type of coupon used in the campaign.
 
   * **Single Code Coupon**: Shows the number of times the same coupon code was shared with users.
-  * **Bulk Code Coupon**: Shows how many unique coupon codes from the bulk series were distributed. Each campaign trigger assigns a new code to the user. (@bajrang: removed example as it was not adding any value.)
-  * **Discount Redeemed**: Applicable only for discount coupons, this KPI shows the total value of discounts redeemed using coupons issued by the campaign.54
+  * **Bulk Code Coupon**: Shows how many unique coupon codes from the bulk series were distributed. Each campaign trigger assigns a new code to the user.
+
+* **Discount Redeemed**: Applicable only for discount coupons, this KPI shows the total value of discounts redeemed using coupons issued by the campaign.
 
 <Image align="center" border={true} src="https://files.readme.io/f9d21685c45fb6d2761947cb6de699685f90106148397936392fa326f62bade7-image.png" className="border" />
 
-* **Cashback Points Credited**: Applicable only to cashback coupons, this KPI shows the total number of cashback points credited to users’ wallets from coupon redemptions. For example, the campaign may show **5,000 cashback points credited** during the selected period. (@bajrang: not adding any value. It should show the difference between issued vs. credited points; otherwise, remove it completely.)
+* **Cashback Points Credited**: Applicable only to cashback coupons, this KPI shows the total number of cashback points credited to users’ wallets from coupon redemptions. For example, the campaign may show **5,000 cashback points credited** during the selected period.
 
 <Image align="center" border={true} src="https://files.readme.io/2fe7319573af245958699e24da8b6dc7b772d0c677f99c071bc27b3efa59182a-image.png" className="border" />
 
@@ -86,13 +88,11 @@ Partner Voucher campaigns track the distribution of unique voucher codes sourced
 
 The KPIs for Partner Voucher campaigns help you track the number of voucher codes assigned and overall engagement with voucher rewards.
 
-* **Voucher Codes Distributed**: Indicates the total number of partner voucher codes assigned to users during the campaign. This KPI tracks every voucher issuance event, regardless of whether a user receives multiple vouchers.  (@bajrang: caption is missing)
+* **Voucher Codes Distributed**: Indicates the total number of partner voucher codes assigned to users during the campaign. This KPI tracks every voucher issuance event, regardless of whether a user receives multiple vouchers.
 
 <Image align="center" border={true} src="https://files.readme.io/a53f44e93a25ebc9c4c278c31eb483bd8140a68c19a9c64ee3a8b0ba34db8f7c-image.png" className="border" />
 
-* **Rewards Distributed**: Includes a line chart that displays voucher distribution patterns over time. This helps you analyze days with higher voucher issuance and spot trends or anomalies in campaign performance. (@Bajrang: I dont see a graph under Rewards Distributed. Please check.)
-
-For example, a spike on a specific date indicates higher voucher issuance compared to surrounding days.
+* **Rewards Distributed**: Includes a line chart that displays voucher distribution patterns over time. This helps you analyze days with higher voucher issuance and spot trends or anomalies in campaign performance. For example, a spike on a specific date indicates higher voucher issuance compared to surrounding days.
 
 ### Trend Graph
 
