@@ -53,24 +53,3 @@ The system stops distributing rewards once the limit is reached. For bulk coupon
 ### Can I reuse a coupon series in multiple campaigns?
 
 Yes, you can reuse the same bulk coupon series across multiple campaigns. The system always assigns a unique code to each eligible user, even if they qualify in different campaigns using the same series. This ensures that users will never receive duplicate codes from the same series across campaigns.
-
-# Resources
-
-Refer to the following documents to understand CleverTap's Promo Campaigns feature:
-
-<HTMLBlock>{`
- <div class="two-col-container">
-  <div class="link-content">
-    <ul>
-      <li><a class="links" href="https://staging.docs.user.clevertap.net/docs/view-promo-campaigns" target="_blank" rel="noopener noreferrer">View Promo Campaigns</a></li>
-      <li><a class="links" href="https://staging.docs.user.clevertap.net/docs/promo-campaign-operations" target="_blank" rel="noopener noreferrer">Promo Campaign Operations</a></li>
-    </ul>
-  </div>
-  
-  <div class="link-content">
-    <ul>
-      <li><a class="links" href="https://staging.docs.user.clevertap.net/docs/create-promo-campaigns" target="_blank" rel="noopener noreferrer">Create Promo Campaigs</a></li>
-    </ul>
-  </div>
-</div>
-`}</HTMLBlock>
