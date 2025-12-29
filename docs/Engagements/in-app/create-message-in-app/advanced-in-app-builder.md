@@ -42,9 +42,9 @@ The Advanced In-App Builder has a _What You See Is What You Get (WYSIWYG)_ inter
 It is divided into two main sections:
 
 * **Canvas (Left Side)**: The canvas is where you design your In-App message. It is fully interactive, allowing you to drag and drop elements and adjust their position and size with ease.
-* **Controls & Styling Menu (Right Side)**: This menu contains controls and styling options for the elements on the canvas. Any changes made here instantly reflect on the canvas in real time.
+* **Controls & Styling Menu (Right Side)**: This menu contains controls and styling options for the elements on the canvas. Any changes made here are instantly reflected on the canvas in real-time.
 
-3. Preview and test your message.  Once you are all done setting up the content of your campaign in the _What_ section, you can test the message content and personalization. You can select from a list of test profiles to preview the message for each profile. Click the _Preview & Test_ button from the message editor to test a message. For more information, refer to [Preview and Send In-App](doc:send-test-personalization-in-app).
+3. Preview and test your message.  Once you have completed setting up the content of your campaign in the _What_ section, you can test the message content and personalization. You can select from a list of test profiles to preview the message for each profile. Click the _Preview & Test_ button from the message editor to test a message. For more information, refer to [Preview and Send In-App](doc:send-test-personalization-in-app).
 
 ## Builder Elements
 
@@ -86,15 +86,13 @@ You can customize the following properties to control the look, behavior, and vi
 
 Define what happens when users tap the container.
 
-| Action Type            | Description                                                                                                                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                                   |
-| **Close Notification** | Closes the in-app message.                                                                                                                                                               |
-| **Open URL**           | Opens a specified URL link.                                                                                                                                                              |
-| **Key–Value Pair**     | Adds a key and value pair for tracking or personalization.                                                                                                                               |
-| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions) . |
-
-<br />
+| Action Type            | Description                                                                                                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **No Action**          | No behavior is triggered when the container is tapped.                                                                                                                                  |
+| **Close Notification** | Closes the in-app message.                                                                                                                                                              |
+| **Open URL**           | Opens a specified URL link.                                                                                                                                                             |
+| **Key–Value Pair**     | Adds a key-value pair for tracking or personalization.                                                                                                                                  |
+| **App Function**       | Triggers app-level functions such as requesting push permission or app rating. For more information, refer to [App Functions](doc:user.clevertap.net/docs/in-app-editor#app-functions). |
 
 #### Background
 
@@ -105,7 +103,7 @@ Apply a background color or image to your design. You can do the following:
 
 #### Font and Text
 
-Control how text appears within your container. For more information, refer to [Custom Fonts](docs:advanced-in-app-builder#custom-fonts)
+Control how text appears within your container. For more information, refer to [Custom Fonts](docs:advanced-in-app-builder#custom-fonts).
 
 #### Border Radius
 
@@ -127,10 +125,8 @@ Control how your container appears when the in-app message loads.
 
 The available container size options vary depending on the orientation of the container. Use the following tables to understand the aspect ratio of each option.
 
-<br />
-
 <Callout icon="📘" theme="info">
-  Note
+  #### Note
 
   Aspect ratios ensure your in-app content appears correctly across different devices and orientations. Confirm the correct orientation before finalizing your design.
 </Callout>
@@ -169,17 +165,15 @@ The available container size options vary depending on the orientation of the co
 
 You can use the following media for your content:
 
-| File Format                                              |
-| -------------------------------------------------------- |
-| **JPEG:** Best for photos and detailed images.           |
-| **PNG:** Ideal for transparent or high-quality graphics. |
-| **GIF:** Use for lightweight animations.                 |
-| **Video:**Use for short videos (Upto 50 MB).             |
-
-<br />
+| File Format | Description                                     |
+| ----------- | :---------------------------------------------- |
+| **JPEG**    | Best for photos and detailed images.            |
+| **PNG**     | Ideal for transparent or high-quality graphics. |
+| **GIF**     | Use for lightweight animations.                 |
+| **Video:**  | Use for short videos (up to 50 MB).             |
 
 <Callout icon="📘" theme="info">
-  Best Practices
+  #### Best Practices
 
   Optimize your images to improve message load time and prevent rendering issues on low-performance devices.
 </Callout>
