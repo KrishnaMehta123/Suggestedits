@@ -44,3 +44,7 @@ To create a journey using prompts, perform the following steps:
 5. Click **Publish** once you have reviewed your journey and are ready to activate your journey.
 
 <br />
+
+<br />
+
+<br />
