@@ -34,13 +34,13 @@ To create a journey using prompts, perform the following steps:
 2. Select _Build with AI_ if you want to create your journey using text prompts or select _Build Manually_ to create your journey from scratch.
 3. In the AskAI prompt input field, enter your journey description. For example, “Create a win-back journey for users who haven’t opened the app in 14 days.” The system will generate a visual flow with:  
 
-   * Entry: the event or condition that starts the journey (for example, Inactivity > 14 days).
-   * Actions: Users receive a Push Notification. 
+   * **Entry**: the event or condition that starts the journey (for example, Inactivity > 14 days).
+   * **Actions**: Users receive a Push Notification. 
 
    <Image align="center" border={true} caption="Sample Winback Journey Using Prompts" src="https://files.readme.io/9d48134853b1d30c1845858622a59f759daa8de7d20c4a35ddf545e730fc8ad3-Winback_Journey_using_Prompts.gif" />
-4. Edit or rearrange nodes as needed using drag-and-drop. For example, you can build up on this journey by sending a follow-up message to users who do not engage with the Push Notification. And for those who click the notification, they receive a "Welcome Back" message.  
+4. Edit or rearrange nodes as needed using drag-and-drop. For example, you can build on this journey by sending a follow-up message to users who do not engage with the Push Notification. And for those who click the notification, they receive a "Welcome Back" message.  
 
-   <Image border={false} />
+   <Image align="center" border={true} caption="Review and Modify Journey Built Using Journey Agent" src="https://files.readme.io/d70fdd041b54b057549fc2ad476ed3ddd9f729254bb58d021efb0a72ea5b3e6e-Review_and_Modify_Journey_Built_Using_Journey_Agent.png" />
 5. Click **Publish** once you have reviewed your journey and are ready to activate your journey.
 
 <br />
