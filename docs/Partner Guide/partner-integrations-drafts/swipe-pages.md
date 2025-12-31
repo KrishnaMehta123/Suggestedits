@@ -45,11 +45,11 @@ CleverTap uses a header-based authentication model to authenticate requests to t
 
 To create a landing page in Swipe Pages where form submissions will be collected. To do so, perform the following steps:
 
-1. Log in to your [Swipe Pages](https://app.swipepages.com/signup) dashboard. 
-2. Go to _Integrations_ > _Landing Pages_ from the left panel. (@Akshay: Is this Integration or something else that the user needs to select from the left nav?)
-3. Click **Create New Page** to create your landing pages. (@Akshay: add a cross-reference to the Swipe Pages document to create a new page.)
+1. Log in to your [Swipe Pages](https://app.swipepages.com/signup) dashboard.
+2. Go to _Integrations_ > _Landing Pages_ from the left panel.
+3. Click **Create New Page** to create your landing pages. Refer to [Creating a new landing page in Swipe Pages](https://docs.swipepages.com/en/articles/4761649-creating-a-new-landing-page).
 
-<Image align="center" alt="Create Landing Page in Swipe Pages" border={true} caption="Create Landing Page in Swipe Pages" src="https://files.readme.io/eb23182763d908e0300e2c6c4731698fa791677d9bd8c11358b0088393a867ea-image.png" />
+<Image align="center" alt="Create Landing Page in Swipe Pages" border={true} caption="Create a Landing Page in Swipe Pages" src="https://files.readme.io/eb23182763d908e0300e2c6c4731698fa791677d9bd8c11358b0088393a867ea-image.png" />
 
 ## Configure Zapier in Swipe Pages
 
@@ -60,7 +60,7 @@ Zapier acts as the automation bridge between Swipe Pages and CleverTap. To enabl
 
 <Image align="center" alt="Configure Zapier in Swipe Pages" border={true} caption="Configure Zapier in Swipe Pages" src="https://files.readme.io/dd48f2d3928df662f5ee7e13cab401695bfe39b8e735874b566828eefd4083fc-image.png" />
 
-3. To create the connection, you will be provided with a Swipe Pages API key here. (@Akshay: need this 
+3. To create the connection, you will be provided with a Swipe Pages API key here.
 4. Copy it and keep it safe.
 
 Now that Zapier is configured in Swipe Pages, proceed further to set up the Zapier workflow with [Swipe Pages as the trigger](doc:swipe-pages#set-up-swipe-pages-trigger) and [CleverTap as the action](doc:swipe-pages#set-up-clevertap-action).
@@ -69,7 +69,7 @@ Now that Zapier is configured in Swipe Pages, proceed further to set up the Zapi
 
 A trigger determines when your Zap will run. In this case, the trigger is a form submission on your Swipe Pages landing page. To set up swipe pages as a trigger, perform the following steps:
 
-1. Set the **Trigger App** as _Swipe Pages_. (@Akshay:  Where can the user find this Zapier dashboard or Swipe Pages dashboard?)
+1. Set the **Trigger App** as _Swipe Pages_.
 2. Select the _Trigger Event_. In this case, select _New Form Submission_ from the dropdown. This ensures the Zap is triggered every time a user submits a form on your Swipe Pages.
 
 <Image align="center" alt="Set Up Swipe Pages Trigger" border={true} caption="Set Up Swipe Pages Trigger" src="https://files.readme.io/98b0004f3361e4ef45f170e4ccab762a3d9efa615406798032a6bb0536810d1a-image.png" width="65% " />
