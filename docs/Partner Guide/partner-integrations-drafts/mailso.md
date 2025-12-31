@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-Mail.so is an email infrastructure platform that provides reliable tools for sending, receiving, and validating emails. It helps businesses ensure that user email addresses are accurate, deliverable, and safe to use.
+[Mail.so](https://mails.so/) is an email infrastructure platform that provides reliable tools for sending, receiving, and validating emails. It helps businesses ensure that user email addresses are accurate, deliverable, and safe to use.
 
 When integrated with CleverTap, Mail.so enables real-time email validation through Linked Content. This allows marketers and developers to verify email addresses dynamically during campaign execution or user interactions. The integration ensures that campaigns reach valid users, improves engagement accuracy, and reduces the chances of sending messages to invalid or disposable addresses.
 
@@ -162,7 +162,7 @@ With Linked Content set up, you can now use it inside a campaign. This example d
 
 1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Push Notification_ from the list of messaging channels.
 2. Define the campaign’s target segment, qualification criteria, and delivery schedule.
-3. Click **Go to Editor** under the _What_ section.  
+3. Click **Go to Editor** under the _What_ section.
    1. Click **Personalization** in the top-right corner.
    2. Select the Linked Content configured in [Configure Linked Content](doc:mailso#configure-linked-content).
    3. Map the email parameter to:
