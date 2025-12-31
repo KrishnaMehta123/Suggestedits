@@ -2,7 +2,7 @@
 title: Salesforce CRM (via Zapier)
 excerpt: Customer Relationship Management
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
