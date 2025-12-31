@@ -1,6 +1,6 @@
 ---
 title: Swipe Pages
-excerpt: '@shreyans to conform the catagory'
+excerpt: Customer Relationship Management
 deprecated: false
 hidden: false
 metadata:
