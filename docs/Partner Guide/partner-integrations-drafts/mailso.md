@@ -146,11 +146,11 @@ To configure Linked Content:
 }
 ```
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/d36834cdf3040ca49a7d0ebab85629522e18cddf38c6367926657441afd91c58-image.png" className="border" />
+<Image align="center" alt="Linked Content Setup" border={true} caption="Linked Content Setup" src="https://files.readme.io/d36834cdf3040ca49a7d0ebab85629522e18cddf38c6367926657441afd91c58-image.png" width="75% " />
 
 4. Click **Autofill Objects with Response** to map the data automatically.
 
-<Image align="center" border={true} width="45% " src="https://files.readme.io/a2234f9f6d4912a49e4c8daf056d1f2d341fe341afcb94bdb9ce881b43486e49-image.png" className="border" />
+<Image align="center" alt="Autofill Objects with Response" border={true} caption="Autofill Objects with Response" src="https://files.readme.io/a2234f9f6d4912a49e4c8daf056d1f2d341fe341afcb94bdb9ce881b43486e49-image.png" width="45% " />
 
 5. Click **Test and Save** to complete your Linked Content configuration.
 
@@ -158,55 +158,53 @@ To configure Linked Content:
 
 ## Configure the Campaign in CleverTap
 
-With Linked Content set up, you can now use it inside a campaign. This example demonstrates how to incorporate Mail.so verification results into a **Push Notification campaign** in CleverTap.
+With Linked Content set up, you can now use it inside a campaign. This example demonstrates how to incorporate Mail.so verification results into a _Push Notification campaign_ in CleverTap.
 
-1. In your **CleverTap Dashboard**, navigate to **Campaigns → + Campaign**.
+1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Push Notification_ from the list of messaging channels.
+2. Define the campaign’s target segment, qualification criteria, and delivery schedule.
+3. Click **Go to Editor** under the _What_ section.  
+   1. Click **Personalization** in the top-right corner.
+   2. Select the Linked Content configured in [Configure Linked Content](doc:mailso#configure-linked-content).
+   3. Map the email parameter to:
 
-2. Select **Push Notification** as the campaign type.
+```
+{{ Profile.Email | default: "NULL" }}
+```
 
-3. Configure campaign parameters such as audience, trigger conditions, and delivery preferences.
+This mapping ensures that CleverTap passes the user’s email to Mail.so for verification each time the campaign is triggered.
 
-4. Under the **What** section, click the **API** icon.
+<Image align="center" alt="Personalization Setup" border={true} caption="Personalization Setup" src="https://files.readme.io/42dd7cfd83c1fb92de1cc7414dbe3e2b1f3aba3ba6ab21ded6062bedb81d5d60-image.png" />
 
-5. From the dropdown, select the **Linked Content** configuration you created earlier.
-
-6. Map the email parameter to:
-
-   ```
-   {{ Profile.Email | default: "NULL" }}
-   ```
-
-7. In the **Title** or **Message** field, type `{{` to access Linked Content data.
-
-8. Use **Liquid tags** to personalize the message based on Mail.so’s verification result:
+4. Use [Liquid tags](doc:personalize-message-all#liquid-tags) to personalize your message based on email validity. For example:
 
 ```liquid
-{% if Linked["Mail.so"].result == "deliverable" %}
-Email verified successfully.
+{% assign emailStatus = linkedcontent.result %}
+{% if emailStatus == "deliverable" %}
+  The email address you provided is valid and deliverable.
 {% else %}
-Invalid email address provided. Please enter a valid email.
+  The email address you entered is invalid or undeliverable. Please check and try again.
 {% endif %}
 ```
 
-> ⚠️ **Note:**
+This logic dynamically displays different messages depending on the verification result returned by Mail.so.
+
+> 📘 Note
 >
-> This logic customizes the push message depending on the email verification result returned by Mail.so.
+> When using _Linked Content_ responses, extract only the specific fields needed for display to maintain clarity and prevent unnecessary data exposure.
 
-9. Click **Preview and Test** to confirm the campaign behavior.
-10. Once validated, click **Publish** to make the campaign live.
+<Image align="center" alt="Linked Content" border={true} caption="Linked Content" src="https://files.readme.io/2b6a55dbbd951c9989440e468890a00f3e2ac99e6c0df2174b044ae7393a0213-image.png" width="75% " />
 
-## Expected Outcome
+5. Click **Preview and Test** to verify that the response values from Mail.so appear as expected.
+6. Once confirmed, click **Publish** to activate the campaign.
 
-When the campaign runs:
+When triggered:
 
-* **For valid emails:** Users receive a success message such as _“Email verified successfully.”_
-* **For invalid emails:** Users receive a prompt such as _“Invalid email address provided. Please enter a valid email.”_
+* If the email address is **not valid**, the user receives a notification indicating the issue.
 
-This flow ensures data accuracy and improves the overall user experience.
+<Image align="center" alt="Push Notification - Invalid Email" border={true} caption="Push Notification - Invalid Email" src="https://files.readme.io/ac39b0aff3968bb9f30dac2af4700aefcce173bbc9ee7c231c40f5b15a707942-image.png" width="35% " />
 
-[Placeholder: Screenshots showing valid and invalid email notification examples]
+* If the email address is **valid**, a confirmation message is sent.
 
-## Conclusion
+<Image align="center" alt="Push Notification - Valid Email" border={true} caption="Push Notification - Valid Email" src="https://files.readme.io/81491d54f1ca1249709b3b8a43f750fd25ab8c6fea9b1aee43d52d58a7b85395-image.png" width="35% " />
 
-This integration allows CleverTap to validate user emails dynamically through Mail.so and tailor messaging accordingly.  
-It strengthens data accuracy, enhances user engagement, and ensures a cleaner, more reliable contact database.
+This integration allows CleverTap to validate user emails dynamically through Mail.so and tailor messaging accordingly. It strengthens data accuracy, enhances user engagement, and ensures a cleaner, more reliable contact database.
