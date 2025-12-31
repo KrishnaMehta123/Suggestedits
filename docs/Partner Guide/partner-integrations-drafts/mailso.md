@@ -1,8 +1,8 @@
 ---
 title: Mail.so
-excerpt: ''
+excerpt: Email Validator
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
