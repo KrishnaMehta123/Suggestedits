@@ -41,9 +41,9 @@ This section explains how to connect Mail.so with CleverTap using Linked Content
 
 The process includes three key configurations:
 
-1. [Obtain the Mail.so API Key]()
-2. [Configure Linked Content]()
-3. [Configure Campaign in CleverTap]()
+1. [Obtain the Mail.so API Key](https://staging.docs.user.clevertap.net/docs/mailso#obtain-the-mailso-api-key)
+2. [Configure Linked Content](https://staging.docs.user.clevertap.net/docs/mailso#configure-linked-content)
+3. [Configure Campaign in CleverTap](https://staging.docs.user.clevertap.net/docs/mailso#configure-the-campaign-in-clevertap)
 
 ## Obtain the Mail.so API Key
 
