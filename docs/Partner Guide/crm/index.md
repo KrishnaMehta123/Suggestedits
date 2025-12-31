@@ -24,5 +24,5 @@ CleverTap currently supports the following partner platforms:
 * [LeadSquared](doc:leadsquared)
 * [Pipedrive](doc:pipedrive-via-zapier)
 * [Salesforce](doc:salesforce-via-zapier)
-* [Swipe Pages]()
+* [Swipe Pages](doc:swipe-pages)
 * [Zoho Form](doc:zoho-form-via-zapier)
