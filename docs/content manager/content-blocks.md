@@ -163,9 +163,9 @@ Preview the message and verify the content before sending it. The content will b
 
 Check for the following considerations to use Content Blocks in your messaging campaigns optimally.
 
-> 📘 Supported Channels
->
-> Currently, you can use a content block for [Email campaigns](doc:create-message-email) only. However, only Text Content Block is supported for [AMP for Email](https://docs.clevertap.com/docs/ampforemail). You can stay tuned to our [Release Notes](https://docs.clevertap.com/docs/whats-new)   and [Changelog](https://developer.clevertap.com/docs/changelog)  about frequent updates and enhancements.
+## Supported Channels
+
+Currently, you can use a content block for [Email campaigns](doc:create-message-email) only. However, only Text Content Block is supported for [AMP for Email](https://docs.clevertap.com/docs/ampforemail). You can stay tuned to our [Release Notes](https://docs.clevertap.com/docs/whats-new)   and [Changelog](https://developer.clevertap.com/docs/changelog)  about frequent updates and enhancements.
 
 ## Content Block Specification
 
