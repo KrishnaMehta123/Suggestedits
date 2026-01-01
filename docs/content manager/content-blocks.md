@@ -20,10 +20,6 @@ A Content Block is a reusable part of content that can be used across different 
 
 Content Blocks also allow marketers to reuse the same content for different campaigns, saving time and effort while matching the brand’s identity. For example, a Content Block can serve as a footer with clickable social media icons for users to follow the brand. Marketers can easily add or remove social media links as needed in a footer, making this change dynamically effective across all campaigns that use this Content Block. For example, if you are a travel app sending messages to users, an update to an email footer about an updated Instagram account can be replicated across footers sent in other campaigns.
 
-> 📘 Supported Channels
->
-> Currently, you can use a content block for [Email campaigns](doc:create-message-email) only. However, only Text Contet Block is supported for [AMP for Email](https://docs.clevertap.com/docs/ampforemail). You can stay tuned to our [Release Notes](https://docs.clevertap.com/docs/whats-new)   and [Changelog](https://developer.clevertap.com/docs/changelog)  about frequent updates and enhancements.
-
 <Image align="center" alt="Standardization with Content Blocks" border={true} caption="Footer Standardization with Content Blocks" src="https://files.readme.io/89622623ff70128b43826e2e2c67459119524f19f1a5bd1f1aef4b07c678d388-image.png" />
 
 # Content Blocks Video Tutorial
@@ -45,11 +41,7 @@ You can select a content block based on your messaging requirements, whether you
 
 ## Text Content Block
 
-This is a Text-based Content Block you can reuse for your messaging requirements. It is useful when you want to create a message quickly. The [Inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) includes only profile personalization.
-
-> 📘 Text Block Specifications
->
-> Currently, we support up to 500 characters in a content block.
+This is a Text-based Content Block you can reuse for your messaging requirements. It is useful when you want to create a message quickly. The [Inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) includes only profile personalization. 
 
 Here is a sample of a personalized Text Content Block that encourages the user to upgrade the plan for an OTT app. The [Conditional Tags](doc:liquid-tags#conditional-tags) help deliver the message based on the current subscription plan of the user:
 
@@ -110,17 +102,26 @@ To preview a content block:
 1. Go to _Content Manager_ > _Content Blocks_.
 2. Select a Content Block and double-click to preview it.
 
-The content block displays information such as name, label, and so on.
+The content block displays information such as name and labels.
 
 <Image align="center" alt="Content Block Preview" border={true} caption="Content Block Preview" src="https://files.readme.io/9b4a67b0830157d3afc2ac1c06ff6067005ae32c7642cdba3a9d2a7f312428ed-image.png" />
 
-# Use Content Block (in a campaign)
+# Use Content Block 
 
-Currently, you can use a content block only in [Email campaigns](doc:create-message-email) to standardize and reuse content in email messaging. Follow these steps to use a content block:
+You can use Content Blocks in two ways:
+
+* As reusable content sections, inserted directly into the message body.
+* With Liquid Tag personalization, to dynamically control which Content Block is rendered.
+
+## Use Content Blocks in Campaigns, Journeys, Reminders
+
+You can use a content block in campaigns, journeys, and reminders. Follow these steps to use a content block in 
+
+[Email campaigns](doc:create-message-email):
 
 1. From the dashboard, select _Campaigns_.
 2. Click **+ Campaign**.
-3. From the _Messaging Channels_ list, select the Email messaging channel—the Campaign page displays.
+3. From the _Messaging Channels_ list, select the Email messaging channel. The Campaign page displays.
 4. From the _What_ section on the Campaign page, select the message type and click **Go To Editor**.
 5. Select any template from the _Basic Templates_ tab.
 6. In the editor, enter _\{\{_  to add the content block.  Select the content block from the list.
@@ -129,7 +130,7 @@ Currently, you can use a content block only in [Email campaigns](doc:create-mess
 
 7. Continue with the campaign creation flow.
 
-## Personalization in Liquid Tags
+## Use Content Blocks with Liquid Tag Personalization
 
 When creating a campaign, you can personalize content using content blocks further with the help of Liquid Tag personalization. For example, you can email users tempting offers based on their food preferences. Using Liquid Tags, you can add multiple Content Blocks for each cuisine to ensure that end users receive the relevant menu options and images in their emails. Follow these steps to add liquid tags to content blocks:
 
@@ -162,6 +163,10 @@ Preview the message and verify the content before sending it. The content will b
 
 Check for the following considerations to use Content Blocks in your messaging campaigns optimally.
 
+> 📘 Supported Channels
+>
+> Currently, you can use a content block for [Email campaigns](doc:create-message-email) only. However, only Text Content Block is supported for [AMP for Email](https://docs.clevertap.com/docs/ampforemail). You can stay tuned to our [Release Notes](https://docs.clevertap.com/docs/whats-new)   and [Changelog](https://developer.clevertap.com/docs/changelog)  about frequent updates and enhancements.
+
 ## Content Block Specification
 
 Before creating content blocks, carefully review the specifications and considerations.
@@ -186,19 +191,19 @@ The following are considerations when nesting content blocks:
 
 Before using Content Blocks, refer to these essential guidelines for supported personalization. These help you understand which personalization types are supported and how to use them effectively in your campaigns.
 
-| Personalization Type | Supported? | Description                                                                                                                                                                                                                                                                                                                                                    |
-| :------------------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Profile              | Yes        | You can use profile attributes                                                                                                                                                                                                                                                                                                                                 |
-| Conditional Tags     | Yes        | You can create a _write once use multiple times_ message by adding conditional variations based on user attributes or behavior. For more information, refer to [Liquid Tags](doc:liquid-tags).                                                                                                                                                                 |
-| Event                | Yes        | You can manually add event personalization tags. These automatically resolve based on the associated user event data. Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Event Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-event-personalization) (add link) . |
-| Reminders            | Yes        | You can manually add reminder personalization tags. Reminder personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Reminder Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-reminder-personalization) (add link).                                                           |
-| Linked Content       | No         | -                                                                                                                                                                                                                                                                                                                                                              |
-| Catalog Send-Time    | No         | -                                                                                                                                                                                                                                                                                                                                                              |
-| Campaign             | No         | -                                                                                                                                                                                                                                                                                                                                                              |
+| Personalization Type | Supported? | Description                                                                                                                                                                                                                                                                                          |
+| :------------------- | :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profile              | Yes        | You can use profile attributes.                                                                                                                                                                                                                                                                      |
+| Conditional Tags     | Yes        | You can create a _write once use multiple times_ message by adding conditional variations based on user attributes or behavior. For more information, refer to [Liquid Tags](doc:liquid-tags).                                                                                                       |
+| Event                | Yes        | You can manually add event personalization tags. Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Event Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-event-personalization) (add link) .            |
+| Reminders            | Yes        | You can manually add reminder personalization tags. Reminder personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Reminder Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-reminder-personalization) (add link). |
+| Campaign             | Yes        | You can use campaign-level personalization attributes in Content Blocks.                                                                                                                                                                                                                             |
+| Linked Content       | No         | -                                                                                                                                                                                                                                                                                                    |
+| Catalog Send-Time    | No         | -                                                                                                                                                                                                                                                                                                    |
 
 ### Using Event Personalization
 
-To add event-based personalization in an email Content Block:
+You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data. To add event-based personalization in an email Content Block:
 
 1. Open the Content Block you want to edit (HTML or Text).
 2. Type the event tag manually, ensuring the correct syntax is used.
@@ -233,15 +238,6 @@ You watched your favorite series
 ```
 
 This ensures your message always appears complete, even if some event properties are unavailable.
-
-> ⚠️ Note
->
-> * **Event matching:** Check that the event used for personalization in the Content Block is the same as the event selected in the trigger criteria of the event-triggered campaign.
-> * **Nested blocks:** The event used in a nested Content Block must be the same as the event in the parent Content Block. For example, if `App Launched` is used in the parent block, it must also be used in the nested block.
-> * **Availability:** This feature is currently supported only for Campaigns.
-> * **Validation:** While typing in the email editor, event validation ensures that only compatible Content Blocks appear. For example, if you type a tag in the email body:
->   * Content Blocks with matching event personalization appear in the dropdown.
->   * Content Blocks with no personalization also appear in the dropdown.
 
 ### Using Reminder Personalization
 
@@ -281,14 +277,16 @@ Seat number: to be assigned
 
 > ⚠️ Note
 >
-> * **Single reminder entity:** A Content Block can reference only one reminder entity. For example, `Reminder.flight_booking` and `Reminder.hotel_booking` cannot be used together in the same block.
+> * **Event matching:** Check that the event used for personalization in the Content Block is the same as the event selected in the trigger criteria of the event-triggered campaign.
 > * **No mixed personalization:** Reminder (`Reminder.*`) and event (`Event.*`) tags cannot be used in the same Content Block.
-> * **Nested blocks:** When nesting Content Blocks, both the parent and child blocks must reference the same reminder entity. For example, if the parent block uses `Reminder.flight_booking`, and the nested child block uses `Reminder.hotel_booking`, personalization will not work as blocks with different reminder entities cannot be nested. The nested child block can use `Reminder.flight_booking.seat_number`.
+> * **Single reminder entity:** A Content Block can reference only one reminder entity. For example, `Reminder.flight_booking` and `Reminder.hotel_booking` cannot be used together in the same block.
+> * **Nested blocks:**
+>   * For event personalization, the event used in a nested Content Block must be the same as the event in the parent Content Block. For example, if `App Launched` is used in the parent block, it must also be used in the nested block.
+>   * For reminder personalization, both the parent and nested Content Blocks must reference the same reminder entity. For example, if the parent block uses `Reminder.flight_booking`, the nested child block must also use `Reminder.flight_booking` (for example, `Reminder.flight_booking.seat_number`). Blocks with different reminder entities cannot be nested.
+> * **Validation:**
+>   * While typing in the email editor, event validation ensures that only compatible Content Blocks appear. Content Blocks with matching event personalization and Content Blocks with no personalization appear in the dropdown.
+>   * When inserting Content Blocks into a reminder campaign, only compatible blocks are shown. Content Blocks with matching reminder personalization and Content Blocks with no personalization are shown, while blocks containing event personalization or a different reminder entity are hidden.
 > * **Campaign compatibility:** A Content Block can be used in a reminder campaign only if the reminder entity used in the block matches the reminder entity selected in the campaign.
-> * **Validation:** When inserting Content Blocks into a reminder campaign, only compatible blocks are shown:
->   * Content Blocks with matching reminder personalization are shown.
->   * Content Blocks with no personalization are also shown.
->   * Content Blocks containing event personalization or a different reminder entity are hidden.
 
 ## Content Block Operations
 
