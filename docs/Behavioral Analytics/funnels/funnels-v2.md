@@ -60,22 +60,9 @@ To compare conversion across segments, perform the following steps:
 
 You can split a funnel by profile properties for sessions, geographies, and technographics, or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more.
 
-To break down by property, perform the following steps:
-
-1. Click **Analytics** > **Funnel**.
-2. Add _Funnel_ steps and click **View Funnel**.
-3. Select a user property or an event property to split the funnel.
-4. Click **View Analysis** to view the funnel.
-
 <Image align="center" border={true} caption="Split Funnel by Event Property" src="https://files.readme.io/db0c4c73ebfd5874869ae362b54bde3ea5cb834b4e87dae943fc51f8756b3bcd-image.png" />
 
-<br />
-
-<Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
-
 <Image align="center" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/959e4ab3fcef7f905082f8930ddbd5746f506e1e76fe3f02c2cc59492a105cab-image.png" />
-
-<br />
 
 # Select Measured By Options
 
@@ -127,12 +114,6 @@ For example, analyze daily conversion trends for the funnel _App Installed → A
 ## Conversion Window
 
 Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
-
-To set a conversion window:
-
-1. Go to _Analytics_ > _Funnels_.
-2. Select the required events.
-3. Under the _MEASURED BY_ section, select the _Conversion window_.
 
 <Image align="center" border={true} caption="Set Conversion Window" src="https://files.readme.io/25e96965fb19df284a72492c304d00646f1eba0f9f8b42479f2c6ff668ca1ac4-image.png" width="50% " />
 
