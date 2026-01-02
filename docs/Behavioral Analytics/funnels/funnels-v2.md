@@ -24,9 +24,13 @@ A typical example is a user onboarding flow, where a user progresses from the ap
   This feature is released in Public Beta. For more information about this feature or any queries, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
 </Callout>
 
-# Create a Funnel
+# Creating a Funnel
 
 To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following steps:
+
+* [Select Events](doc:funnels-v2#select-events)
+* [Select Segments](doc:funnels-v2#select-segments) 
+* [Split by Property](doc:funnels-v2#split-by-property) 
 
 ## Select Events
 
@@ -38,7 +42,7 @@ You can also clone a step or add multiple events for the step by clicking the el
 
 <Image align="center" border={true} caption="Select Multiple Events" src="https://files.readme.io/eb857d35662821e5a1b02109b5eb98b07a551fba1a2f98302bff07f647e11124-image.png" />
 
-## Compare by Segments
+## Select by Segments
 
 You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights.
 
@@ -72,8 +76,8 @@ The **Measured By** option defines how funnel conversions are calculated and dis
 
 You can choose one of the following measurement modes:
 
-* [Total Conversion](doc:funnels-v2#total-conversion) 
-* [Trends](doc:funnels-v2#trends) 
+* [Total Conversion](doc:funnels-v2#total-conversion)
+* [Trends](doc:funnels-v2#trends)
 
 ### Total Conversion
 
