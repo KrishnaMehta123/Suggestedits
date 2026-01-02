@@ -31,7 +31,7 @@ To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following
 * [Select Events](doc:funnels-v2#select-events)
 * [Select Segments](doc:funnels-v2#select-segments)
 * [Split By Property](doc:funnels-v2#split-by-property)
-* [Select Metric]() 
+* [Select Metric]()
 
 ## Select Events
 
@@ -71,9 +71,20 @@ To break down by property, perform the following steps:
 
 <Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
 
-## Select Measure By Options
+# Select Measured By Options
 
-The **Measured By** option defines how funnel conversions are calculated and displayed. It determines whether funnel performance is shown as a single aggregated value or as a trend over time.
+The _MEASURED BY_ section controls how funnel conversions are calculated, grouped, and evaluated. These settings directly impact how users are counted and how funnel results are displayed.
+
+From the _MEASURED BY_ section, you can configure:
+
+* How conversions are measured (Total Conversion or Trends)
+* The time granularity for trend analysis
+* The conversion window
+* The step order for funnel computation
+
+## Measurement Mode
+
+The measurement mode determines whether funnel performance is displayed as a single aggregated value or as a trend over time.
 
 You can choose one of the following measurement modes:
 
@@ -82,7 +93,7 @@ You can choose one of the following measurement modes:
 
 ### Total Conversion
 
-Selecting **Total Conversion** allows you to view the aggregate conversion count or rate for the specified time range. This option does not break results down by time.
+Selecting **Total Conversion** allows you to view the aggregate conversion count or conversion rate for the selected time range. Results are shown as a single value and are not broken down by time.
 
 <Image align="center" border={true} caption="Measured By Total Conversion" src="https://files.readme.io/bb8d24cbf8632ce064c529da93367986bb336bc6c72260c1b96edbc0716de140-image.png" />
 
@@ -108,7 +119,7 @@ Use the Trends option when you want to:
 
 For example, analyze daily conversion trends for the funnel _App Installed → App Launched → Added to Cart_ over the last 30 days.
 
-## Set Conversion Window
+## Conversion Window
 
 Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
 
@@ -126,16 +137,16 @@ To set a conversion window:
   CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
 </Callout>
 
-# Funnel Computation Methods
+## Step Order
 
-Funnels support two computation methods:
+The _Step Order_ setting determines how strictly users must follow the defined sequence of funnel steps to be counted as converted. These orders determine how users are counted as they progress through funnel steps, primarily when steps are repeated or performed out of sequence.
+
+You can choose one of the following options:
 
 * [Flexible Order](doc:funnels-v2#flexible-order)
 * [Strict Order](doc:funnels-v2#strict-order)
 
-These methods determine how users are counted as they progress through funnel steps, especially when steps are repeated or performed out of sequence.
-
-## Flexible Order
+### Flexible Order
 
 By default, funnels count users who complete all defined steps in the specified sequence. Users may repeat earlier steps, but they must still complete every funnel step to be counted as converted. If a user completes a later step before a required earlier step, the funnel does not count that user as converted.
 
@@ -152,9 +163,9 @@ The following table explains how different users are counted based on their prog
 | User 3 | Step A → Step C → Step B → Step D          | No                 | Performs funnel steps out of sequence.                                |
 | User 4 | Step A → Step B → Step A → Step C → Step D | Yes                | Repeats Step A but still completes all steps in the correct sequence. |
 
-## Strict Order
+### Strict Order
 
-When _Strict Order_ is enabled, funnels count users only if they complete every step exactly in the defined sequence. Any repetition of a funnel step or deviation from the specified order disqualifies the user from being counted as converted.
+When _Strict Order_ is selected, funnels count users only if they complete every step exactly in the defined sequence. Any repetition of a funnel step or deviation from the specified order disqualifies the user from being counted as converted.
 
 For example, if a funnel's steps are defined as:
 
