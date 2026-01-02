@@ -32,7 +32,7 @@ The following are the prerequisites for this integration:
 
 The integration involves the following four major steps:
 
-1. [Create a Passcode on the CleverTap Dashboard](doc:smashpops#create-a-passcode-on-the-clevertap-dashboard)
+1. [Create Passcode on CleverTap Dashboard](doc:smashpops#create-passcode-on-clevertap-dashboard)
 2. [Create Game in SmashPops](doc:smashpops#create-game-in-smashpops)
 3. [Connect SmashPops and CleverTap via Zapier](doc:smashpops#connect-smashpops-and-clevertap-via-zapier)
 4. [Add Integration Code to Your Website](doc:smashpops#add-integration-code-to-website)
