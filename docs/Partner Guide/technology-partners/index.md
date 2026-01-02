@@ -3925,6 +3925,17 @@ next:
 <body>
     <div class="grid">
       <!-- use this card below for replication and change the link to the desired one -->
+  <a href="https://staging.docs.user.clevertap.net/docs/airtable">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/188ca5ed90d7628340704344432b9df335b3af85f4d07083f078bbad728286aa-airtable_logo.jpeg" alt="Airtable" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Airtable</div>
+            <div class="category">Workflow Automation</div>
+        </div>
+    </div>
+ </a> 
 <a href="https://staging.docs.user.clevertap.net/docs/apxor">
     <div class="integration-card">
         <div class="logo-container">
@@ -3968,7 +3979,18 @@ next:
             <div class="category">Workflow Automation</div>
         </div>
     </div>
- </a>
+</a>
+ <a href="https://staging.docs.user.clevertap.net/docs/sheetdb">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/f5fe97a86c27e955081ae67da59024d0282370f2ee7cf6a6f4708e431de6240d-sheetdb.io.png" alt="SheetDB" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">SheetDB</div>
+            <div class="category">Workflow Automation</div>
+         </div>
+    </div>
+</a>
 <a href="https://staging.docs.user.clevertap.net/docs/sheetlabs">
     <div class="integration-card">
         <div class="logo-container">
@@ -3977,7 +3999,18 @@ next:
         <div class="content">
             <div class="name">Sheetlabs</div>
             <div class="category">Workflow Automation</div>
-                </div>
+         </div>
+    </div>
+</a>
+<a href="https://staging.docs.user.clevertap.net/docs/smashpops">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/cb48640086300861d82b9aa9cca212d5a5522f3ad858b21865b9d750972e63c4-smashpops_logo.png" alt="Smashpops" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Smashpops</div>
+            <div class="category">Workflow Automation</div>
+         </div>
     </div>
 </a>
 <a href="https://staging.docs.user.clevertap.net/docs/zapier">
