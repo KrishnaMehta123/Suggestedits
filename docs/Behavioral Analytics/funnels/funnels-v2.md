@@ -180,14 +180,6 @@ For example, let's take a look at the following Login Flow of two users in an ap
 
 With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments.
 
-## Advanced Filtering
-
-Advanced filters help restrict your analysis to a specific user segment. You can create a segment based on any combination of past behaviors and user properties.
-
-> 📘 Advanced Filters
->
-> Advanced filters is a general feature for all analytics and most campaigns. For more information, refer to [Segments](doc:segments).
-
 # Reading Funnel Charts
 
 Funnel charts enable you to quickly determine how many users progress through each step of the funnel.
