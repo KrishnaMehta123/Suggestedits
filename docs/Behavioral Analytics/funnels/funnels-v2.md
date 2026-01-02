@@ -43,7 +43,7 @@ You can also clone a step or add multiple events for the step by clicking the el
 
 <Image align="center" border={true} caption="Select Multiple Events" src="https://files.readme.io/eb857d35662821e5a1b02109b5eb98b07a551fba1a2f98302bff07f647e11124-image.png" />
 
-## Select by Segments
+## Select Segments
 
 You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights.
 
