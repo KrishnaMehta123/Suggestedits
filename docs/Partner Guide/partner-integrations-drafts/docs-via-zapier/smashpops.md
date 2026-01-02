@@ -61,11 +61,11 @@ Consider an example where you want to run a gamified pop-up on your website, col
 
 <Image align="center" alt="Accept Invite & Build a Zap" border={true} caption="Accept Invite & Build a Zap" src="https://files.readme.io/51e7bcbea8255782dbb2b6159a106886118e12d733c39a2431095a99485a9df3-Screen_Recording_2025-06-30_at_11.26.40_AM_1.gif" width="65% " />
 
-Once Zapier is integrated into Smashpop, it can connect to SmashPops with CleverTap via Zapier.
+Once Zapier is integrated into Smashpops, it can connect to SmashPops with CleverTap via Zapier.
 
 ## Connect SmashPops and CleverTap via Zapier
 
-Zapier acts as the automation bridge between SmashPops and CleverTap. Each time a user plays a game, SmashPops sends the interaction data to CleverTap through Zapier. This enables businesses to either:
+Zapier acts as the automation bridge between SmashPops and CleverTap. Each time a user plays a game, SmashPops sends interaction data to CleverTap through Zapier. This enables businesses to either:
 
 * **Create or update user profiles** with player details such as email, coupons, or scores.
 
@@ -105,7 +105,7 @@ Consider an example where you want to sync game player data into CleverTap so th
 4. Click **Publish**.
 5. **Select the Action** that the zap must perform after the trigger event occurs. To do so, perform the following steps:
    1. Select _CleverTap_ from the _App_ dropdown.
-   2. Select _Create/Update User Profile_ from the Action event dropdown. This implies that whenever a new data is generated, a new user profile is created, or an existing user profile is updated with the new information on the CleverTap dashboard.
+   2. Select _Create/Update User Profile_ from the Action event dropdown. This implies that whenever new data is generated, a new user profile is created, or an existing user profile is updated with the new information on the CleverTap dashboard.
    3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create Passcode on CleverTap Dashboard](doc:smashpops#create-passcode-on-clevertap-dashboard) step.
    4. Click **Continue** after your account is successfully connected.
 
@@ -126,7 +126,7 @@ Consider an example where you want to sync game player data into CleverTap so th
   You can keep the Identity field blank if you provide an Object ID, and vice versa.
 </Callout>
 
-7. Click **Continue**, and click **Test Step** to test the zap after mapping the files.
+7. Click **Continue**, and click **Test Step** to test the Zap after mapping the fields.
 
 <Image align="center" alt="Test Zap" border={true} caption="Test Zap" src="https://files.readme.io/6354738a5f26e47ce1cf2ca78e532e2759399140945b80179171586117f28f54-6fa41f8d-5816-4b2e-a294-d708b88257d2.png" width="75% " />
 
@@ -140,7 +140,7 @@ Consider an example where you want to sync game player data into CleverTap so th
 
 Consider an example where you want to track game interactions in CleverTap as events, rather than updating user profiles. This ensures each play is logged for analytics, segmentation, and engagement campaigns. To do so, perform the following steps:
 
-1. Follow _Step 1_ to _Step 4_ from [Create/Update User Profiles](doc:smashpops#createupdate-user-profiles) to configure SmashPops as the trigger.
+1. Follow _Step 1_ to _Step 4_ from [Create or Update User Profiles](doc:smashpops#create-or-update-user-profiles) to configure SmashPops as the trigger.
 2. **Select the Action** that the zap must perform after the trigger event occurs. To do so, perform the following steps:
 
    1. Select _CleverTap_ from the _App_ dropdown.
@@ -156,7 +156,7 @@ Consider an example where you want to track game interactions in CleverTap as ev
 | ---------------- | ----------------------------------------------------------------------------------------------------- |
 | User ID          | Email or unique identifier.                                                                           |
 | Event Name       | Descriptive event name, such as `"Game Played"` or `"Reward Won"`.                                    |
-| Creation Date    | Date/time of game play.                                                                               |
+| Creation Date    | Date or time of gameplay.                                                                             |
 | Event Properties | Event data in JSON format (for example, `{"reward": "10%OFF", "score": 450, "level": "Spin Wheel"}`). |
 
 <Callout icon="🚧" theme="warn">
@@ -165,7 +165,7 @@ Consider an example where you want to track game interactions in CleverTap as ev
   You can keep the Identity field blank if you provide an Object ID, and vice versa.
 </Callout>
 
-4. Click **Continue** and click **Test Step** to test the zap after mapping the files.
+4. Click **Continue** and click **Test Step** to test the zap after mapping the fields.
 5. Click **Publish**.
 
 Once published, each SmashPops play will be logged as an event in CleverTap.
