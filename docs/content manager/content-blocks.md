@@ -1,5 +1,5 @@
 ---
-title: Content Blocks - Standardize Messaging
+title: 'Content Blocks: Standardize Messaging'
 excerpt: Learn how to reuse content and standardize your messaging with content blocks.
 deprecated: false
 hidden: false
@@ -12,13 +12,15 @@ next:
 ---
 # Overview
 
-A Content Block is a reusable part of content that can be used across different campaigns. It helps maintain a consistent experience for users as they view a consistent branding tone and colors across your messaging. This messaging can include text, images, or calls to action (CTAs) buttons that you can standardize across messages. By using standard messaging, marketers can maintain a clear tone and style, which builds trust and consistency in brand communications.
+A Content Block is a reusable part of content that can be used across different campaigns. It helps maintain a consistent experience for users as they view a consistent branding tone and colors across your messaging. This messaging can include text, images, or calls to action (CTA) buttons that you can standardize across messages. By using standard messaging, marketers can maintain a consistent tone and style, which builds trust and reinforces brand consistency in their communications.
 
-> 📘 Public Beta
->
-> This feature is currently a Public Beta Release. If you want access to it, contact your Account Manager.
+<Callout icon="📘" theme="info">
+  #### Public Beta
 
-Content Blocks also allow marketers to reuse the same content for different campaigns, saving time and effort while matching the brand’s identity. For example, a Content Block can serve as a footer with clickable social media icons for users to follow the brand. Marketers can easily add or remove social media links as needed in a footer, making this change dynamically effective across all campaigns that use this Content Block. For example, if you are a travel app sending messages to users, an update to an email footer about an updated Instagram account can be replicated across footers sent in other campaigns.
+  This feature is currently a Public Beta Release. If you want access to it, contact your Account Manager.
+</Callout>
+
+Content Blocks also enable marketers to reuse the same content for multiple campaigns, saving time and effort while maintaining the brand’s identity. For example, a Content Block can serve as a footer with clickable social media icons for users to follow the brand. Marketers can easily add or remove social media links as needed in a footer, making this change dynamically effective across all campaigns that use this Content Block. For example, if you are a travel app sending messages to users, an update to an email footer about an updated Instagram account can be replicated across footers sent in other campaigns.
 
 <Image align="center" alt="Standardization with Content Blocks" border={true} caption="Footer Standardization with Content Blocks" src="https://files.readme.io/89622623ff70128b43826e2e2c67459119524f19f1a5bd1f1aef4b07c678d388-image.png" />
 
@@ -34,24 +36,24 @@ Discover the video tutorial for an overview of Content Blocks and a sample use c
 
 There are two types of content blocks:
 
-* Text Content Block - Simple text-based messages mostly to communicate information, updates and so on.
-* HTML Content Block -  Engaging, dynamic messages to upsell and quickly engage the users.
+* **Text Content Block**: Simple text-based messages mainly to communicate information, updates, and so on.
+* **HTML Content Block**:  Engaging, dynamic messages to upsell and quickly engage the users.
 
 You can select a content block based on your messaging requirements, whether you want to send a plain text message or an engaging, colorful message.
 
 ## Text Content Block
 
-This is a Text-based Content Block you can reuse for your messaging requirements. It is useful when you want to create a message quickly. The [Inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) includes only profile personalization. 
+This is a text-based Content Block you can reuse for your messaging requirements. It is useful when you want to create a message quickly. The [Inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) includes only profile personalization.
 
-Here is a sample of a personalized Text Content Block that encourages the user to upgrade the plan for an OTT app. The [Conditional Tags](doc:liquid-tags#conditional-tags) help deliver the message based on the current subscription plan of the user:
+Here is a sample of a personalized Text Content Block that encourages users to upgrade their plan for an OTT app. Use [Conditional Tags](doc:liquid-tags#conditional-tags) to deliver the message based on the current subscription plan of the user:
 
-<Image align="center" alt="Sample Text Content Block" border={true} caption="Sample Content Block - Text" src="https://files.readme.io/42281df9b000b3b1bc70ec90ad727c7cce69bf65cb887f408478cc9e519b430a-image.png" />
+<Image align="center" alt="Sample Text Content Block" border={true} caption="Sample Text Content Block" src="https://files.readme.io/42281df9b000b3b1bc70ec90ad727c7cce69bf65cb887f408478cc9e519b430a-image.png" />
 
 ## HTML Content Block
 
-The HTML Content Block allows you to create visually appealing and dynamic messages, providing you with the capability to import and paste your HTML code. The HTML code helps design and customize your message’s layout, style, and interactivity, helping you deliver a more engaging experience for your audience.
+The HTML Content Block enables you to create visually appealing and dynamic messages, providing the capability to import and paste your HTML code. The HTML code helps design and customize your message’s layout, style, and interactivity, helping you deliver a more engaging experience for your audience.
 
-Here is a sample HTML Content Block that nudges the user to upgrade the plan for an OTT app. The [Conditional Tags](doc:liquid-tags#conditional-tags) help deliver the message based on the current subscription plan of the user:
+Here is a sample HTML Content Block that nudges the user to upgrade the plan for an OTT app. Use [Conditional Tags](doc:liquid-tags#conditional-tags) to deliver the message based on the current subscription plan of the user:
 
 <Image align="center" alt="Sample HTML Content Block" border={true} caption="Sample Content Block -  HTML" src="https://files.readme.io/c94ed28109426e3a91754c428c8b474d8e24cb16ed4ad6894fdf156694e645db-image.png" />
 
@@ -59,22 +61,24 @@ Here is a sample HTML Content Block that nudges the user to upgrade the plan for
 
 You can create Content Blocks from the CleverTap Dashboard.
 
-> 📘 Content Blocks Via API
->
-> You can also create and manage your Content Blocks via the CleverTap [Content Blocks API](docs:content-blocks-api) when you want to update or create Content Blocks at scale.
+<Callout icon="📘" theme="info">
+  #### Content Blocks Via API
 
-Follow the steps to create a content block:
+  You can also create and manage your Content Blocks via the CleverTap [Content Blocks API](docs:content-blocks-api) when you want to update or create Content Blocks at scale.
+</Callout>
+
+To create a content block, perform the following steps:
 
 1. Go to _Content Manager_ > _Content Blocks_.
 
 <Image align="center" alt="Create a Content Block" border={true} caption="Create a Content Block" src="https://files.readme.io/a9f13e16ffcf9b9f8561cc02a6a5744fb167a2be2704c902b6b29a4ea98c6292-image.png" />
 
 2. Click **New** and select the type of _Content Block_ [Content Block](doc:content-blocks#content-block-types).
-3. Select the type of Content Block, that is, Text or HTML.
+3. Select the type of Content Block, that is, Text or HTML. (@Meenal: second part of step 2 is ssame as step 3 - pls check.)
 
 <Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/a94c81ea360432f27cbdaafe8bd37214d191265536bc33cca545d3ece87e433a-image.png" />
 
-3. You can also [nest content blocks](docs:nesting-considerations) within another content block. Click **\{\{}}**from the editor to select an available content block.
+3. Click **\{\{}}**from the editor to [nest content blocks](docs:nesting-considerations) within another content block and select an available content block. 
 
 <Image align="center" alt="Nest Multiple Content Blocks" border={true} caption="Nest Multiple Content Blocks" src="https://files.readme.io/444e1b6e3fa2349d38e754650d5bedb0d0cab2645f0d5eaf92a6eabc05f12902-image.png" />
 
@@ -91,7 +95,9 @@ Follow the steps to create a content block:
 > Content Block names can include letters, numbers (0-9), underscores (_), periods (.), hyphens (-), and spaces. The name must begin with a letter. Additionally, the Content Block name must be unique.
 
 4. From the list of labels, select the appropriate labels to organize and identify your content block.
-5. Click **Done**.
+5. Click **Done**. 
+
+(@Meenal: checking number of steps.)
 
 ## Preview Content Block
 
@@ -106,7 +112,7 @@ The content block displays information such as name and labels.
 
 <Image align="center" alt="Content Block Preview" border={true} caption="Content Block Preview" src="https://files.readme.io/9b4a67b0830157d3afc2ac1c06ff6067005ae32c7642cdba3a9d2a7f312428ed-image.png" />
 
-# Use Content Block 
+# Use Content Block
 
 You can use Content Blocks in two ways:
 
@@ -115,7 +121,7 @@ You can use Content Blocks in two ways:
 
 ## Use Content Blocks in Campaigns, Journeys, Reminders
 
-You can use a content block in campaigns, journeys, and reminders. Follow these steps to use a content block in 
+You can use a content block in campaigns, journeys, and reminders. Follow these steps to use a content block in
 
 [Email campaigns](doc:create-message-email):
 
