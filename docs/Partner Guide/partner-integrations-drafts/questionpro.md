@@ -42,17 +42,17 @@ You can use CleverTap campaigns to distribute QuestionPro surveys through suppor
 
 ## Create Survey in QuestionPro
 
-Start by creating a survey in QuestionPro that you’ll later embed in a CleverTap campaign.
+Start by creating a survey in QuestionPro that you’ll later embed in a CleverTap campaign. To do so, follow these steps:
 
 1. Log in to your **QuestionPro** account.
-2. Click **+ New Survey** and either start from a blank template or select from the available templates.
+2. Click **+ New Survey** and either start from a blank template or select from the available templates. For more information, refer to [QuestionPro Create a Survey](https://www.questionpro.com/help/create-survey.html) .
 
 <Image align="center" alt="Create New Survey" border={true} caption="Create New Survey" src="https://files.readme.io/a03cdc38887da4192c137264f9de0b21ed9534f4b5c2b56ff45ae123b5d97dcc-image.png" width="65% " />
 
 3. Add your desired question types, such as NPS, CSAT, or multiple-choice.
 4. When ready, locate the **Survey URL** in the top-right corner of your dashboard.
 
-<Image align="center" alt="Survey URL in QuestionPro" border={false} caption="Survey URL in QuestionPro" src="https://files.readme.io/f22e4d33ce04703c19acce592be2e9050b2f02dabaddd32e23d889f9d541da28-image.png" />
+<Image align="center" alt="Survey URL in QuestionPro" border={true} caption="Survey URL in QuestionPro" src="https://files.readme.io/f22e4d33ce04703c19acce592be2e9050b2f02dabaddd32e23d889f9d541da28-image.png" width="65% " />
 
 5. Copy the **Survey URL**. You’ll use it to distribute your survey via CleverTap campaigns.
 
@@ -60,7 +60,7 @@ Add custom variables (such as, `Name`, `Email`) to personalize survey links and 
 
 ## Configure CleverTap Campaign with Survey Link
 
-The [QuestionPro survey](doc:questionpro#create-a-survey-in-surveymonkey) can be used in any CleverTap messaging channel that supports HTML or image URLs. While this guide includes an example for an [email campaign](doc:questionpro#configure-email-campaign-in-clevertap), you can also use QuestionPro content in [Push Notification](doc:create-message-push), [In-App campaigns](doc:create-message-in-app), and other CleverTap messaging channels that support dynamic visuals.
+The [QuestionPro survey](doc:questionpro#create-a-survey-in-questionpro) can be used in any CleverTap messaging channel that supports HTML or image URLs. While this guide includes an example for an email campaign, you can also use QuestionPro content in [Push Notification](doc:create-message-push), [In-App campaigns](doc:create-message-in-app), and other CleverTap messaging channels that support dynamic visuals.
 
 To integrate a QuestionPro survey into your CleverTap Email campaign, perform the following steps:
 
@@ -68,7 +68,7 @@ To integrate a QuestionPro survey into your CleverTap Email campaign, perform th
 2. Click **Go to Editor** under the _What_ section.
    1. Select a _Basic Template_ or _Saved Template_.
    2. Switch to **Source** mode in the email editor to edit the HTML code of the email body.
-3. Paste the HTML Snippet copied in _step 5_ of [ Create a Survey in QuestionPro](doc:questionpro#create-a-survey-in-questionpro) inside the `<body>` tag.
+3. Paste the HTML Snippet copied in _step 5_ of [Create a Survey in QuestionPro](doc:questionpro#create-a-survey-in-questionpro) inside the `<body>` tag.
 
 <Image align="center" alt="Insert the HTML Code Snippet" border={true} caption="Insert the HTML Code Snippet" src="https://files.readme.io/82a52d9f81856a7df6178eae5e9d585735b7aef4410cd90c67a1250f316d9bc3-2025-05-11_21-52-41_1.gif" width="75% " />
 
