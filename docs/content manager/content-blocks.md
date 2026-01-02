@@ -43,7 +43,7 @@ You can select a content block based on your messaging requirements, whether you
 
 ## Text Content Block
 
-This is a text-based Content Block you can reuse for your messaging requirements. It is useful when you want to create a message quickly. The [Inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) includes only profile personalization.
+This content block is useful when you want to create a message quickly. The [Inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) includes only profile personalization.
 
 Here is a sample of a personalized Text Content Block that encourages users to upgrade their plan for an OTT app. Use [Conditional Tags](doc:liquid-tags#conditional-tags) to deliver the message based on the current subscription plan of the user:
 
@@ -73,8 +73,8 @@ To create a content block, perform the following steps:
 
 <Image align="center" alt="Create a Content Block" border={true} caption="Create a Content Block" src="https://files.readme.io/a9f13e16ffcf9b9f8561cc02a6a5744fb167a2be2704c902b6b29a4ea98c6292-image.png" />
 
-2. Click **New** and select the type of _Content Block_ [Content Block](doc:content-blocks#content-block-types).
-3. Select the type of Content Block, that is, Text or HTML. (@Meenal: second part of step 2 is the same as step 3 - pls check.)
+2. Click **New** and select the type of _Content Block_ [Content Block](doc:content-blocks#content-block-types). 
+3. Select the type of Content Block, that is, Text or HTML. (@Meenal: second part of step 2 is the same as step 3 - pls check. Instead rephrase it: Click New and select the Content Block type (Text or HTML).)
 
 <Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/a94c81ea360432f27cbdaafe8bd37214d191265536bc33cca545d3ece87e433a-image.png" />
 
@@ -160,7 +160,7 @@ To add liquid tags to content blocks, perform the following steps:
 1. Select the message type from the _What_ section on the Campaign page and click **Go To Editor**.
 2. Select any _drag and drop_ template from the _Basic Templates_ tab.
 3. Drag and drop a text block and double-click it to display the formatting options:
-4. Select _Customize with Liquid tags_ from the _More_ list in the toolbar. In addition to Content Blocks, you can use user attributes, event properties, and system fields from the `{{ }}` menu to further personalize your messages.
+4. Select _Customize with Liquid tags_ from the _More_ list in the toolbar. 
 
 <Image align="center" alt="Customize Text Block with Liquid Tags" border={true} caption="Customize Text Block Liquid Tags" src="https://files.readme.io/46c8e6115ee531ecb87300772d00a449df8712559463a73cb4f2456165bbf202-image.png" />
 
@@ -203,7 +203,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
   <tbody>
     <tr>
       <td>
-        Profile
+        Inline Personalization
       </td>
 
       <td>
@@ -283,7 +283,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        * <br />
+        -
       </td>
     </tr>
 
@@ -297,7 +297,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        * <br />
+        -
       </td>
     </tr>
   </tbody>
@@ -305,7 +305,9 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
 # Personalize Content Blocks Using Event Personalization
 
-You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data. To add event-based personalization in an email Content Block:
+You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data. 
+
+To add event-based personalization in an email Content Block, perform the following steps:
 
 1. Open the Content Block you want to edit (HTML or Text).
 2. Type the event tag manually, ensuring the correct syntax is used.
@@ -449,7 +451,7 @@ Choose your plan: Basic Plan for $5/month or Premium Plan for $15/month.
 
 ## Update Footer
 
-You can change the footer in a running campaign to reflect new content. For example, a footer displays icons for various social media such as _TikTok_, _Facebook_, _WhatsApp_, and _Instagram_. You can change the footer in the outgoing messages by removing or adding icons in this footer. Once you change the icons, the change will be reflected in all outgoing messaging.
+You can change the footer in a running campaign to reflect new content. Marketers can easily add or remove social media links as needed in a footer, making this change dynamically effective across all campaigns that use this Content Block. 
 
 <Image align="center" alt="HTML Code for Footer" border={true} caption="HTML Code for Footer" src="https://files.readme.io/669b9b25ec2da9c3e5360bc694538dc3d9098be24596dbadc230a617ef54f845-HTML_code_for_footer.jpg" />
 
