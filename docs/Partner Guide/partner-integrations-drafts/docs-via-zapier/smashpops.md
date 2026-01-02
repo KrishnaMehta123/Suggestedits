@@ -62,7 +62,7 @@ Once Zapier is integrated into Smashpop, it can connect to SmashPops with Clever
 
 ## Connect SmashPops and CleverTap via Zapier
 
-Zapier acts as the automation bridge between SmashPops and CleverTap. Every time a user plays a game, Zapier captures the interaction and sends the data to CleverTap in real time. This enables businesses to either:
+Zapier acts as the automation bridge between SmashPops and CleverTap. Each time a user plays a game, SmashPops sends the interaction data to CleverTap through Zapier. This enables businesses to either:
 
 * **Create or update user profiles** with player details such as email, coupons, or scores, or
 * **Log each play as an event** to power segmentation, analytics, and personalized engagement campaigns.
