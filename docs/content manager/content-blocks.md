@@ -73,7 +73,7 @@ To create a content block, perform the following steps:
 
 <Image align="center" alt="Create a Content Block" border={true} caption="Create a Content Block" src="https://files.readme.io/a9f13e16ffcf9b9f8561cc02a6a5744fb167a2be2704c902b6b29a4ea98c6292-image.png" />
 
-2. Click **New** and select the type of Content Block type (Text or HTML). 
+2. Click **New** and select the type of Content Block type (Text or HTML).
 
 <Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/a94c81ea360432f27cbdaafe8bd37214d191265536bc33cca545d3ece87e433a-image.png" />
 
@@ -236,7 +236,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        You can add event personalization tags. 
+        You can add event personalization tags.
         **Note**: Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Event Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-event-personalization) (add link) .
       </td>
     </tr>
@@ -258,7 +258,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
     <tr>
       <td>
-        Campaign 
+        Campaign
       </td>
 
       <td>
@@ -311,7 +311,7 @@ To add event-based personalization in an email Content Block, perform the follow
 3. Preview or test send to verify the tag.
 4. Publish the campaign.
 
-<Image align="center" border={true} caption="Event Personalization" src="https://files.readme.io/b08a5a39e5ce4da36ff42955ab90f0cec91bbc2dccc3798e5479f98794387dd8-2026-01-02_15-21-26_1.gif" />
+<Image align="center" border={true} caption="Event Personalization" src="https://files.readme.io/b5269510850372301c8a54f43c746a3464a6093c259c135698f05afe59ffe5d0-2026-01-02_15-28-44_1.gif" />
 
 ### Syntax
 
