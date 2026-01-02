@@ -14,9 +14,9 @@ next:
 ---
 # Overview
 
-Funnels show users' progress through defined paths in your app and pinpoint where they drop off between steps. Funnels are a series of events a user performs in a particular order.
+Funnels show users' progress through defined paths in your app and pinpoint where they drop off between steps. Funnels are a series of events that a user performs in a particular order.
 
-A typical example is a user onboarding flow, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase flow, where a user progresses through a shopping cart experience to a purchase event.
+A typical example is a user onboarding flow, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase flow, where a user progresses through a shopping cart experience to complete a purchase.
 
 <Callout icon="📘" theme="info">
   #### Public Beta
@@ -29,8 +29,9 @@ A typical example is a user onboarding flow, where a user progresses from the ap
 To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following steps:
 
 * [Select Events](doc:funnels-v2#select-events)
-* [Select Segments](doc:funnels-v2#select-segments) 
-* [Split by Property](doc:funnels-v2#split-by-property) 
+* [Select Segments](doc:funnels-v2#select-segments)
+* [Split By Property](doc:funnels-v2#split-by-property)
+* [Select Metric]() 
 
 ## Select Events
 
