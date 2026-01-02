@@ -74,13 +74,13 @@ To integrate a QuestionPro survey into your CleverTap Email campaign, perform th
 
 4. If you have defined any custom variables while creating the survey in QuestionPro, append those variables to the survey URL. For example:
 
-```
+```html
 SURVEY_URL?Name=
 ```
 
 Use [CleverTap Liquid Tags](doc:personalize-message-all#liquid-tags) to dynamically populate values for the custom variables. Always set a default value to ensure a fallback is displayed when the data is unavailable. For example:
 
-```
+```html
 SURVEY_URL?Name={{ Profile.name | default: 'Human' }}
 ```
 
@@ -92,11 +92,7 @@ If no custom variables are defined, you can directly paste the survey link into 
 
 6. Publish the email campaign once verification is complete. Users will receive personalized emails based on the configured Liquid Tags and settings.
 
-Combining SurveyMonkey's dynamic content capabilities with CleverTap’s advanced segmentation and messaging allows you to create timely, relevant interactions that resonate with every user. For more information about using personalization in CleverTap, refer to [CleverTap Liquid Tags](doc:personalize-message-all#liquid-tags).
-
-<br />
-
-***
+Using CleverTap Liquid Tags with QuestionPro survey links enables personalized survey distribution across campaigns. For more information, refer to [CleverTap Liquid Tags](doc:personalize-message-all#liquid-tags).
 
 ## Best Practices
 
