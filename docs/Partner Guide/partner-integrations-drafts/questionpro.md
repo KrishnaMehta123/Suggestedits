@@ -88,7 +88,7 @@ If no custom variables are defined, you can directly paste the survey link into 
 
 5. Send a test email to verify personalization and ensure the QuestionPro integration functions correctly.
 
-<Image align="center" alt="Send a test email" border={true} caption="Send a Test Email" src="https://files.readme.io/02d8203166c9269b9fa1eeb2819004a173fe7b554d916caa6decaabb05df8524-image.png" width="75% " />
+<Image align="center" alt="Send a test email" border={true} caption="Send Test Email" src="https://files.readme.io/843f0d45b3fe5e33f3591b663bdd9fcf2b03d458566a7a322e3a791d534c2330-image.png" width="65% " />
 
 6. Publish the email campaign once verification is complete. Users will receive personalized emails based on the configured Liquid Tags and settings.
 
