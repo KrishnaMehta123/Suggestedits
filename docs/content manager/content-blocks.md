@@ -73,22 +73,21 @@ To create a content block, perform the following steps:
 
 <Image align="center" alt="Create a Content Block" border={true} caption="Create a Content Block" src="https://files.readme.io/a9f13e16ffcf9b9f8561cc02a6a5744fb167a2be2704c902b6b29a4ea98c6292-image.png" />
 
-2. Click **New** and select the type of _Content Block_ [Content Block](doc:content-blocks#content-block-types). 
-3. Select the type of Content Block, that is, Text or HTML. (@Meenal: second part of step 2 is the same as step 3 - pls check. Instead rephrase it: Click New and select the Content Block type (Text or HTML).)
+2. Click **New** and select the type of Content Block type (Text or HTML). 
 
 <Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/a94c81ea360432f27cbdaafe8bd37214d191265536bc33cca545d3ece87e433a-image.png" />
 
-3. Click **\{\{}}**from the editor to [nest content blocks](docs:nesting-considerations) within another content block and select an available content block. 
+4. Click **\{\{}}**from the editor to [nest content blocks](docs:nesting-considerations) within another content block and select an available content block.
 
 <Image align="center" alt="Nest Multiple Content Blocks" border={true} caption="Nest Multiple Content Blocks" src="https://files.readme.io/444e1b6e3fa2349d38e754650d5bedb0d0cab2645f0d5eaf92a6eabc05f12902-image.png" />
 
-4. From the editor, click **\{\{}}**  to use [inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) and [Conditional Tags](https://docs.clevertap.com/docs/liquid-tags) to personalize the _Content Block_.
-5. Click **Preview** to preview the content block.
+5. From the editor, click **\{\{}}**  to use [inline personalization](https://docs.clevertap.com/docs/personalize-message-all#inline-personalization) and [Conditional Tags](https://docs.clevertap.com/docs/liquid-tags) to personalize the _Content Block_.
+6. Click **Preview** to preview the content block.
 
 <Image align="center" alt="Preview content block" border={true} caption="Preview Content Block" src="https://files.readme.io/d4862eae25783ab2d1facd6210a58e93c59bed9a9f2c8cc864681ff955e80b85-image.png" />
 
-4. Click **Save** to save your _Content Block_.
-5. Enter a name for your Content Block.
+7. Click **Save** to save your _Content Block_.
+8. Enter a name for your Content Block.
 
 <Callout icon="📘" theme="info">
   #### Content Block Specification
@@ -108,10 +107,8 @@ To create a content block, perform the following steps:
     * Any edits to the main or child content block will reflect in the nested content block.
 </Callout>
 
-4. From the list of labels, select the appropriate labels to organize and identify your content block.
-5. Click **Done**. 
-
-(@Meenal: check step numbering.)
+9. From the list of labels, select the appropriate labels to organize and identify your content block.
+10. Click **Done**.
 
 # Preview Content Block
 
@@ -120,7 +117,7 @@ You can preview the Content Blocks from the Content Blocks page or during the Co
 To preview a content block, perform the following steps:
 
 1. Go to _Content Manager_ > _Content Blocks_.
-2. Select a Content Block and double-click to preview it (@Meenal: Is it select and then double-click or just double click??). The content block displays information such as name and labels.
+2. Double-click on a Content Block to preview it. The content block displays information such as name and labels.
 
 <Image align="center" alt="Content Block Preview" border={true} caption="Content Block Preview" src="https://files.readme.io/9b4a67b0830157d3afc2ac1c06ff6067005ae32c7642cdba3a9d2a7f312428ed-image.png" />
 
@@ -160,7 +157,7 @@ To add liquid tags to content blocks, perform the following steps:
 1. Select the message type from the _What_ section on the Campaign page and click **Go To Editor**.
 2. Select any _drag and drop_ template from the _Basic Templates_ tab.
 3. Drag and drop a text block and double-click it to display the formatting options:
-4. Select _Customize with Liquid tags_ from the _More_ list in the toolbar. 
+4. Select _Customize with Liquid tags_ from the _More_ list in the toolbar.
 
 <Image align="center" alt="Customize Text Block with Liquid Tags" border={true} caption="Customize Text Block Liquid Tags" src="https://files.readme.io/46c8e6115ee531ecb87300772d00a449df8712559463a73cb4f2456165bbf202-image.png" />
 
@@ -239,7 +236,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        You can manually add event personalization tags.  (@Meenal: why are we adding the term "manually"?
+        You can add event personalization tags. 
         **Note**: Event Personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Event Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-event-personalization) (add link) .
       </td>
     </tr>
@@ -254,14 +251,14 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        You can manually add reminder personalization tags.   (@Meenal: why are we adding the term "manually"?)
+        You can add reminder personalization tags.  
         **Note**: Reminder personalization for Content Blocks is currently in **Private Beta**. For more information, refer to [Reminder Personalization](https://staging.docs.user.clevertap.net/?isFramePreview=true#using-reminder-personalization) (add link).
       </td>
     </tr>
 
     <tr>
       <td>
-        Campaign (@Meenal: You mean Campaign ID personalization?)
+        Campaign 
       </td>
 
       <td>
@@ -283,7 +280,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
 
@@ -297,7 +294,7 @@ Before using Content Blocks, refer to these essential guidelines for supported p
       </td>
 
       <td>
-        -
+        * <br />
       </td>
     </tr>
   </tbody>
@@ -305,16 +302,16 @@ Before using Content Blocks, refer to these essential guidelines for supported p
 
 # Personalize Content Blocks Using Event Personalization
 
-You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data. 
+You can use event-based personalization in Content Blocks across campaigns and journeys. Event tags resolve automatically based on the associated user event data.
 
 To add event-based personalization in an email Content Block, perform the following steps:
 
 1. Open the Content Block you want to edit (HTML or Text).
-2. Type the event tag manually, ensuring the correct syntax is used.
+2. Type the event tag, ensuring the correct syntax is used.
 3. Preview or test send to verify the tag.
 4. Publish the campaign.
 
-(@Meenal: Please add screenshots/gifs.) 
+<Image align="center" border={true} caption="Event Personalization" src="https://files.readme.io/b08a5a39e5ce4da36ff42955ab90f0cec91bbc2dccc3798e5479f98794387dd8-2026-01-02_15-21-26_1.gif" />
 
 ### Syntax
 
@@ -348,12 +345,12 @@ You watched your favorite series
 To add reminder-based personalization in a Content Block:
 
 1. Create or open a Content Block (HTML or Text).
-2. Add reminder personalization tags using the supported `Reminder.*` syntax. (@Meenal: Reminder.* ?? What does * denote??/)
+2. Add reminder personalization tags, ensuring the correct syntax is used.
 3. Save the Content Block once validation passes.
 4. Insert the Content Block into a reminder campaign. For more information, refer to [Create Campaign using Reminders](https://docs.clevertap.com/docs/reminders#create-campaign-using-reminders).
 5. Publish the campaign.
 
-(@Meenal: Please add screenshots/gifs.)
+<Image align="center" border={false} caption="Reminder Personalization" src="https://files.readme.io/bcd06fb0a69e340306c0833f956a4d844e36b723b39a600ff5ee7c9b56e8896e-2026-01-02_15-25-00_1.gif" />
 
 ### Syntax
 
@@ -384,8 +381,8 @@ Seat number: to be assigned
 <Callout icon="⚠️" theme="warn">
   #### Note
 
-  * **Event matching**: 
-    * Check that the event used for personalization in the Content Block is the same as the event selected in the trigger criteria of the event-triggered campaign. 
+  * **Event matching**:
+    * Check that the event used for personalization in the Content Block is the same as the event selected in the trigger criteria of the event-triggered campaign.
     * A Content Block can be used in a reminder campaign only if the reminder entity in the block matches the reminder entity selected in the campaign.
   * **No mixed personalization**: Reminder (`Reminder.*`) and event (`Event.*`) tags cannot be used in the same Content Block.
   * **Single reminder entity**: A Content Block can reference only one reminder entity. For example, `Reminder.flight_booking` and `Reminder.hotel_booking` cannot be used together in the same block.
@@ -399,7 +396,7 @@ Seat number: to be assigned
     * In reminder campaigns, the dropdown shows:
       * Blocks with matching reminder personalization
       * Blocks without personalization
-      Blocks with event personalization or a different reminder entity are hidden.
+        Blocks with event personalization or a different reminder entity are hidden.
 </Callout>
 
 # Content Block Operations
@@ -451,7 +448,7 @@ Choose your plan: Basic Plan for $5/month or Premium Plan for $15/month.
 
 ## Update Footer
 
-You can change the footer in a running campaign to reflect new content. Marketers can easily add or remove social media links as needed in a footer, making this change dynamically effective across all campaigns that use this Content Block. 
+You can change the footer in a running campaign to reflect new content. Marketers can easily add or remove social media links as needed in a footer, making this change dynamically effective across all campaigns that use this Content Block.
 
 <Image align="center" alt="HTML Code for Footer" border={true} caption="HTML Code for Footer" src="https://files.readme.io/669b9b25ec2da9c3e5360bc694538dc3d9098be24596dbadc230a617ef54f845-HTML_code_for_footer.jpg" />
 
