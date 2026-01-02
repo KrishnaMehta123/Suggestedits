@@ -71,7 +71,7 @@ To break down by property, perform the following steps:
 
 <Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
 
-## Measure By
+## Select Measure By Options
 
 The **Measured By** option defines how funnel conversions are calculated and displayed. It determines whether funnel performance is shown as a single aggregated value or as a trend over time.
 
