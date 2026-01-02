@@ -34,8 +34,6 @@ Before setting up the integration, ensure you have access to both platforms and 
 >
 > This integration is maintained by **QuestionPro**. It has been validated for performance and reliability. For technical issues or troubleshooting, contact [QuestionPro Support](https://www.questionpro.com/help/).
 
-***
-
 ## Integrate QuestionPro with CleverTap
 
 You can use CleverTap campaigns to distribute QuestionPro surveys through supported messaging channels, such as **Email** or **In-App Messages**.
@@ -44,9 +42,7 @@ Follow these two primary steps to implement the integration:
 1. [Create a Survey in QuestionPro](doc:questionpro#create-a-survey-in-questionpro)
 2. [Configure CleverTap Campaign with Survey Link](doc:questionpro#configure-clevertap-campaign-with-survey-link)
 
-***
-
-### Create a Survey in QuestionPro
+## Create a Survey in QuestionPro
 
 Start by creating a survey in QuestionPro that you’ll later embed in a CleverTap campaign.
 
@@ -63,9 +59,32 @@ Start by creating a survey in QuestionPro that you’ll later embed in a CleverT
   ### **Tip:** Add custom variables (e.g., `Name`, `Email`) to personalize survey links and track individual responses. For details, see [QuestionPro Custom Variables Guide](https://www.questionpro.com/help/).
 </Callout>
 
+## Configure CleverTap Campaign with Survey Link
+
+The [SurveyMonkey survey](doc:surveymonkey#create-a-survey-in-surveymonkey) can be used in any CleverTap messaging channel that supports HTML or image URLs. While this guide includes an example for an [email campaign](doc:surveymonkey#configure-email-campaign-in-clevertap), you can also use SurveyMonkey content in [Push Notification](doc:create-message-push), [In-App campaigns](doc:create-message-in-app), and other CleverTap messaging channels that support dynamic visuals.
+
+To integrate a SurveyMonkey survey into your CleverTap Email campaign, perform the following steps:
+
+1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Email_ from the list of messaging channels.
+2. Click **Go to Editor** under the _What_ section.
+   1. Select a _Basic Template_ or _Saved Template_.
+   2. Switch to **Source** mode in the email editor to edit the HTML code of the email body.
+3. Paste the HTML Snippet copied in _step 5_ of [ Create a Survey in SurveyMonkey](doc:surveymonkey#create-a-survey-in-surveymonkey) inside the `<body>` tag.
+
+<Image align="center" alt="Insert the HTML Code Snippet" border={true} caption="Insert the HTML Code Snippet" src="https://files.readme.io/82a52d9f81856a7df6178eae5e9d585735b7aef4410cd90c67a1250f316d9bc3-2025-05-11_21-52-41_1.gif" width="75% " />
+
+4. Replace the `MERGE_TAG` with the appropriate [CleverTap Liquid Tag](doc:personalize-message-all#liquid-tags) for personalization. Set default values to ensure a fallback is displayed when specific data is not available (for example, `{{Profile.name | default: "User"}}` will display "User" if the name field is empty). For more information, refer to [SurveyMonkey Merge Tags](https://help.surveymonkey.com/en/getfeedback/builder/merge-fields-logic/).
+5. Send a test email to verify personalization and ensure the SurveyMonkey integration functions correctly.
+
+<Image align="center" alt="Send a test email" border={true} caption="Send a Test Email" src="https://files.readme.io/02d8203166c9269b9fa1eeb2819004a173fe7b554d916caa6decaabb05df8524-image.png" width="75% " />
+
+6. Publish the email campaign once verification is complete. Users will receive personalized emails based on the configured Liquid Tags and settings.
+
+Combining SurveyMonkey's dynamic content capabilities with CleverTap’s advanced segmentation and messaging allows you to create timely, relevant interactions that resonate with every user. For more information about using personalization in CleverTap, refer to [CleverTap Liquid Tags](doc:personalize-message-all#liquid-tags).
+
 ***
 
-### Configure CleverTap Campaign with Survey Link
+<br />
 
 Once your survey is ready, you can insert the QuestionPro survey link into any CleverTap campaign that supports HTML or hyperlinks.
 The following examples show how to include the survey in both **Email** and **In-App** campaigns.
