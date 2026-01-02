@@ -27,36 +27,36 @@ Trigger a QuestionPro feedback survey two days after a user's first purchase to 
 The following are the prerequisites for QuestionPro:
 
 * A valid **QuestionPro** account with survey creation and distribution access.
-* A **CleverTap** account with campaign creation privileges.
+* Ensure you have a **CleverTap** account.
 
-> 🚧 **Support for Integration**
+> 🚧 Support for Integration
 >
-> This integration is maintained by **QuestionPro**. It has been validated for performance and reliability. For technical issues or troubleshooting, contact [QuestionPro Support](https://www.questionpro.com/help/).
+> This integration is managed and continuously improved by QuestionPro. The CleverTap and QuestionPro integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [QuestionPro](https://www.questionpro.com/help/) for support and resolution.
 
 ## Integrate QuestionPro with CleverTap
 
-You can use CleverTap campaigns to distribute QuestionPro surveys through supported messaging channels, such as **Email** or **In-App Messages**.
-Follow these two primary steps to implement the integration:
+You can use CleverTap campaigns to distribute QuestionPro surveys through supported messaging channels, such as Email or In-App Messages. Follow these two major steps:
 
-1. [Create a Survey in QuestionPro](doc:questionpro#create-a-survey-in-questionpro)
+1. [Create Survey in QuestionPro](doc:questionpro#create-survey-in-questionpro)
 2. [Configure CleverTap Campaign with Survey Link](doc:questionpro#configure-clevertap-campaign-with-survey-link)
 
-## Create a Survey in QuestionPro
+## Create Survey in QuestionPro
 
 Start by creating a survey in QuestionPro that you’ll later embed in a CleverTap campaign.
 
 1. Log in to your **QuestionPro** account.
-2. Click **Create Survey**, and either start from a blank template or choose from available templates.
-3. Add your desired question types—such as NPS, CSAT, or multiple-choice.
-4. When ready, click **Collect Responses** and locate the **Survey URL** in the top-right corner of your dashboard.
+2. Click **+ New Survey** and either start from a blank template or select from the available templates.
 
-<Image align="center" alt="Survey URL in QuestionPro" border={true} caption="Locate the Survey URL in QuestionPro" src="https://files.readme.io/placeholder-questionpro-url.png" width="75%" />
+<Image align="center" alt="Create New Survey" border={true} caption="Create New Survey" src="https://files.readme.io/a03cdc38887da4192c137264f9de0b21ed9534f4b5c2b56ff45ae123b5d97dcc-image.png" width="65% " />
+
+3. Add your desired question types, such as NPS, CSAT, or multiple-choice.
+4. When ready, locate the **Survey URL** in the top-right corner of your dashboard.
+
+<Image align="center" alt="Survey URL in QuestionPro" border={false} caption="Survey URL in QuestionPro" src="https://files.readme.io/f22e4d33ce04703c19acce592be2e9050b2f02dabaddd32e23d889f9d541da28-image.png" />
 
 5. Copy the **Survey URL**. You’ll use it to distribute your survey via CleverTap campaigns.
 
-<Callout icon="💡" theme="default">
-  ### **Tip:** Add custom variables (e.g., `Name`, `Email`) to personalize survey links and track individual responses. For details, see [QuestionPro Custom Variables Guide](https://www.questionpro.com/help/).
-</Callout>
+Add custom variables (such as, `Name`, `Email`) to personalize survey links and track individual responses. For details, refer to [QuestionPro Custom Variables Guide](https://www.questionpro.com/help/).
 
 ## Configure CleverTap Campaign with Survey Link
 
