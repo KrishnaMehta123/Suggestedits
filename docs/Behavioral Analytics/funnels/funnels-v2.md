@@ -67,9 +67,15 @@ To break down by property, perform the following steps:
 3. Select a user property or an event property to split the funnel.
 4. Click **View Analysis** to view the funnel.
 
-<Image align="center" alt="Split funnel by event property" border={true} caption="Split Funnel by Event Property" src="https://files.readme.io/765e14575db123f3fbf0d28e7c1d8174c0ad9e4c4ccdbbecccbbfcea3c41dfc9-image.png" />
+<Image align="center" border={true} caption="Split Funnel by Event Property" src="https://files.readme.io/db0c4c73ebfd5874869ae362b54bde3ea5cb834b4e87dae943fc51f8756b3bcd-image.png" />
+
+<br />
 
 <Image align="center" alt="Split Funnel by User Property" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/43c847997049c7db2488cb2a08c2417a6fb9d37029765d8251a0f280e2022e1b-image.png" />
+
+<Image align="center" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/959e4ab3fcef7f905082f8930ddbd5746f506e1e76fe3f02c2cc59492a105cab-image.png" />
+
+<br />
 
 # Select Measured By Options
 
@@ -77,10 +83,9 @@ The _MEASURED BY_ section controls how funnel conversions are calculated, groupe
 
 From the _MEASURED BY_ section, you can configure:
 
-* How conversions are measured (Total Conversion or Trends)
-* The time granularity for trend analysis
-* The conversion window
-* The step order for funnel computation
+* [Measurement Mode](doc:funnels-v2#measurement-mode)
+* [Conversion Window](doc:funnels-v2#conversion-window)
+* [Step Order](doc:funnels-v2#step-order)
 
 ## Measurement Mode
 
