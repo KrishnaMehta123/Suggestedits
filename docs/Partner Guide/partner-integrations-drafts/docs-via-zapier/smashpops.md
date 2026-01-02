@@ -33,7 +33,7 @@ The following are the prerequisites for this integration:
 The integration involves the following four major steps:
 
 1. [Create a Passcode on the CleverTap Dashboard](doc:smashpops#create-a-passcode-on-the-clevertap-dashboard)
-2. [Create a Game in SmashPops](doc:smashpops#create-a-game-in-smashpops)
+2. [Create Game in SmashPops](doc:smashpops#create-game-in-smashpops)
 3. [Connect SmashPops and CleverTap via Zapier](doc:smashpops#connect-smashpops-and-clevertap-via-zapier)
 4. [Add Integration Code to Your Website](doc:smashpops#add-integration-code-to-your-website)
 
@@ -49,11 +49,14 @@ Consider an example where you want to run a gamified pop-up on your website, col
 
 <Image align="center" alt="SmashPops Dashboard" border={true} caption="SmashPops Dashboard" src="https://files.readme.io/62c81ffa2e3d303de8115aba4db428370b1dd2d0bfadc1f9c70aca6ac7b1c1ed-image.png" width="65% " />
 
-2. Configure game rules such as display settings, coupon codes, and reward weights. (@akshay: how do I add these rules from the SmashPops dashboard - we should show that in the screenshot.)
+2. Configure game rules such as display settings, coupon codes, and reward weights.
 
 <Image align="center" alt="Configure Game" border={true} caption="Configure Game" src="https://files.readme.io/19547a71155fda053868eafc9a114304d7f79a5aa575b8f3ee56c256481025f1-image.png" width="65% " />
 
-3. Go to the **Data Collection** (@akshay: cannot see Data Collection) section, click **+ Link Another Integration**, and select **Zapier**.
+3. Go to the **Data Collection** section, click **+ Link Another Integration**, and select **Zapier**.
+
+<Image align="center" alt="Link Another Integration" border={true} caption="Link Another Integration" src="https://files.readme.io/88543d5857dea21b17dc4ae55e17c61d1292a9501281a3c10987a72bcbab1af1-image.png" width="65% " />
+
 4. You will be invited to Zapier. Click **Accept Invite & Build a Zap**.
 
 <Image align="center" alt="Accept Invite & Build a Zap" border={true} caption="Accept Invite & Build a Zap" src="https://files.readme.io/51e7bcbea8255782dbb2b6159a106886118e12d733c39a2431095a99485a9df3-Screen_Recording_2025-06-30_at_11.26.40_AM_1.gif" width="65% " />
@@ -64,12 +67,15 @@ Once Zapier is integrated into Smashpop, it can connect to SmashPops with Clever
 
 Zapier acts as the automation bridge between SmashPops and CleverTap. Each time a user plays a game, SmashPops sends the interaction data to CleverTap through Zapier. This enables businesses to either:
 
-* **Create or update user profiles** with player details such as email, coupons, or scores, or
+* **Create or update user profiles** with player details such as email, coupons, or scores.
+
+OR
+
 * **Log each play as an event** to power segmentation, analytics, and personalized engagement campaigns.
 
 The integration supports two options depending on your use case:
 
-* [Create or Update User Profiles](doc:smashpops#createupdate-user-profiles)
+* [Create or Update User Profiles](doc:smashpops#create-or-update-user-profiles)
 * [Upload Event](doc:smashpops#upload-event)
 
 ### Create or Update User Profiles
@@ -93,13 +99,13 @@ Consider an example where you want to sync game player data into CleverTap so th
 <Callout icon="📘" theme="info">
   #### Skip Test if Trigger Fails
 
-  If Zapier cannot pull sample data during the test, click **Skip Test**. The Zap will still run correctly once published and connected to live data. (@Akshay: are you sure - IMO, testing is important - it helps ensure the setup is correctly done.)
+  If Zapier cannot pull sample data during the test, click **Skip Test**. The Zap will still run correctly once published and connected to live data.
 </Callout>
 
 4. Click **Publish**.
 5. **Select the Action** that the zap must perform after the trigger event occurs. To do so, perform the following steps:
    1. Select _CleverTap_ from the _App_ dropdown.
-   2. Select _Create/Update User Profile_ from the Action event dropdown. This implies that whenever a new response (@akshay: new response - what response is this ??) is generated, a new user profile is created, or an existing user profile is updated with the new information on the CleverTap dashboard.
+   2. Select _Create/Update User Profile_ from the Action event dropdown. This implies that whenever a new data is generated, a new user profile is created, or an existing user profile is updated with the new information on the CleverTap dashboard.
    3. Select _Account_ to connect the CleverTap account. The Zapier window opens. Enter all the required details to connect to the CleverTap account. Enter the same passcode you obtained during the [Create Passcode on CleverTap Dashboard](doc:smashpops#create-passcode-on-clevertap-dashboard) step.
    4. Click **Continue** after your account is successfully connected.
 
@@ -166,8 +172,6 @@ Once published, each SmashPops play will be logged as an event in CleverTap.
 
 ## Add Integration Code to Website
 
-(@Akshay: shouldn't this come much earlier in the integration??)
-
 For the integration to work as intended, you must add the SmashPops integration code to your website. To do so, perform the following steps:
 
 1. In your SmashPops account, go to _Settings_ > _My Account_ > _Show Integration Code_.
@@ -177,7 +181,7 @@ For the integration to work as intended, you must add the SmashPops integration 
 2. Copy the snippet and paste it into your website’s HTML (`<head>` or end of `<body>`). Ensure the website URL you configure in SmashPops matches the domain where you deploy the snippet. SmashPops only works on the registered domain.
 3. Once added, your game will display according to the rules you have configured, and user actions will be tracked in the CleverTap dashboard.
 
-<Image align="center" alt="Test" border={true} caption="Test" src="https://files.readme.io/2f31702ceae16594ce4f72542b3446a15b78bc95c2567914481259dada02c93d-Screen_Recording_2025-06-30_at_11.20.27_AM_1.gif" width="75% " />
+<Image align="center" alt="Example workflow" border={true} caption="Example workflow" src="https://files.readme.io/2f31702ceae16594ce4f72542b3446a15b78bc95c2567914481259dada02c93d-Screen_Recording_2025-06-30_at_11.20.27_AM_1.gif" width="75% " />
 
 You can also set up coupon codes and configure weights or chances of each reward in the SmashPops game settings.
 
