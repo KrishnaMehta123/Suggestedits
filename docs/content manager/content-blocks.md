@@ -350,7 +350,7 @@ To add reminder-based personalization in a Content Block:
 4. Insert the Content Block into a reminder campaign. For more information, refer to [Create Campaign using Reminders](https://docs.clevertap.com/docs/reminders#create-campaign-using-reminders).
 5. Publish the campaign.
 
-<Image align="center" border={false} caption="Reminder Personalization" src="https://files.readme.io/bcd06fb0a69e340306c0833f956a4d844e36b723b39a600ff5ee7c9b56e8896e-2026-01-02_15-25-00_1.gif" />
+<Image align="center" border={true} caption="Reminder Personalization" src="https://files.readme.io/bcd06fb0a69e340306c0833f956a4d844e36b723b39a600ff5ee7c9b56e8896e-2026-01-02_15-25-00_1.gif" />
 
 ### Syntax
 
