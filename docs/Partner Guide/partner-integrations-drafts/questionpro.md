@@ -61,20 +61,33 @@ Start by creating a survey in QuestionPro that you’ll later embed in a CleverT
 
 ## Configure CleverTap Campaign with Survey Link
 
-The [SurveyMonkey survey](doc:surveymonkey#create-a-survey-in-surveymonkey) can be used in any CleverTap messaging channel that supports HTML or image URLs. While this guide includes an example for an [email campaign](doc:surveymonkey#configure-email-campaign-in-clevertap), you can also use SurveyMonkey content in [Push Notification](doc:create-message-push), [In-App campaigns](doc:create-message-in-app), and other CleverTap messaging channels that support dynamic visuals.
+The [QuestionPro survey](doc:questionpro#create-a-survey-in-surveymonkey) can be used in any CleverTap messaging channel that supports HTML or image URLs. While this guide includes an example for an [email campaign](doc:questionpro#configure-email-campaign-in-clevertap), you can also use QuestionPro content in [Push Notification](doc:create-message-push), [In-App campaigns](doc:create-message-in-app), and other CleverTap messaging channels that support dynamic visuals.
 
-To integrate a SurveyMonkey survey into your CleverTap Email campaign, perform the following steps:
+To integrate a QuestionPro survey into your CleverTap Email campaign, perform the following steps:
 
 1. Go to the _Campaigns_ page, click **+ Campaign**, and select _Email_ from the list of messaging channels.
 2. Click **Go to Editor** under the _What_ section.
    1. Select a _Basic Template_ or _Saved Template_.
    2. Switch to **Source** mode in the email editor to edit the HTML code of the email body.
-3. Paste the HTML Snippet copied in _step 5_ of [ Create a Survey in SurveyMonkey](doc:surveymonkey#create-a-survey-in-surveymonkey) inside the `<body>` tag.
+3. Paste the HTML Snippet copied in _step 5_ of [ Create a Survey in QuestionPro](doc:questionpro#create-a-survey-in-questionpro) inside the `<body>` tag.
 
 <Image align="center" alt="Insert the HTML Code Snippet" border={true} caption="Insert the HTML Code Snippet" src="https://files.readme.io/82a52d9f81856a7df6178eae5e9d585735b7aef4410cd90c67a1250f316d9bc3-2025-05-11_21-52-41_1.gif" width="75% " />
 
-4. Replace the `MERGE_TAG` with the appropriate [CleverTap Liquid Tag](doc:personalize-message-all#liquid-tags) for personalization. Set default values to ensure a fallback is displayed when specific data is not available (for example, `{{Profile.name | default: "User"}}` will display "User" if the name field is empty). For more information, refer to [SurveyMonkey Merge Tags](https://help.surveymonkey.com/en/getfeedback/builder/merge-fields-logic/).
-5. Send a test email to verify personalization and ensure the SurveyMonkey integration functions correctly.
+4. If you have defined any custom variables while creating the survey in QuestionPro, append those variables to the survey URL. For example:
+
+```
+SURVEY_URL?Name=
+```
+
+Use [CleverTap Liquid Tags](doc:personalize-message-all#liquid-tags) to dynamically populate values for the custom variables. Always set a default value to ensure a fallback is displayed when the data is unavailable. For example:
+
+```
+SURVEY_URL?Name={{ Profile.name | default: 'Human' }}
+```
+
+If no custom variables are defined, you can directly paste the survey link into the URL placeholder.
+
+5. Send a test email to verify personalization and ensure the QuestionPro integration functions correctly.
 
 <Image align="center" alt="Send a test email" border={true} caption="Send a Test Email" src="https://files.readme.io/02d8203166c9269b9fa1eeb2819004a173fe7b554d916caa6decaabb05df8524-image.png" width="75% " />
 
