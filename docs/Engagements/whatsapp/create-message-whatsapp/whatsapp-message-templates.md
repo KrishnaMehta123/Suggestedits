@@ -58,11 +58,39 @@ Utility templates are triggered by a user action or request. They must include d
 * **Opt-In Management on WhatsApp:** Confirm opt-in or opt-out preferences.
 * **Order Management:** Confirm, update, or cancel orders with specific details.
 * **Account Alerts or Updates:** Send important account updates and alerts.
-* **Feedback Surveys :**Collect feedback on orders or interactions. 
+* **Feedback Surveys :**Collect feedback on orders or interactions.
 
 ## Template Library
 
-<br />
+Template Library displays WhatsApp templates that are already created and approved in the Meta WhatsApp Business Manager. These templates are synced to CleverTap and can be selected while creating a new WhatsApp template for **WhatsApp Direct**.
+
+Templates available in the Template Library include all languages, components, and configurations defined in Meta. For more information on WhatsApp message templates and their structure, refer to Meta’s documentation on [WhatsApp Message Templates](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
+
+### Create a Template Using Template Library
+
+To create a template using the Template Library, follow these steps:
+
+1. From the dashboard, navigate to _Account > Settings > Engage > Channels > WhatsApp_.
+2. Select the _Provider Type_ as **WhatsApp Direct**.
+3. Select the required WABA account.
+4. Navigate to the _Templates_ tab and click **+ Template**.
+5. In _Select Template Type_, click **Template Library**.
+
+After you select a template, CleverTap opens the template editor with the content pre-filled from Meta.
+
+* The **template structure**, **category**, and **components** are retained from Meta.
+* All **language variants** configured in Meta are available for selection. For language rules and requirements, see Meta’s documentation on [Template Languages](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/overview#languages).
+* Placeholders and formatting remain unchanged.
+* You can update **sample values** and the **Template Name** for internal identification in CleverTap.
+
+Proceed using the same editor flow described in [Create WhatsApp Template](doc:whatsapp-message-templates#create-whatsapp-template).
+
+<Callout icon="📘" theme="info">
+  **Template Approval**
+  Templates selected from the Template Library are already approved in Meta. Saving them in CleverTap does not trigger a new approval request. For details on Meta’s template review process, see [Template Approval Guidelines](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-review).
+</Callout>
+
+##
 
 ## Support for Authentication Templates
 
