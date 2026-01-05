@@ -93,7 +93,7 @@ In this section, you will define the destination, folder organization, file form
    * **Split by data type**: Creates top‑level folders such as `events/` and `profile/`. Profile exports will be stored under `profile/`.  
      _Preview:_ `/{bucket-name}/profile/file.csv.gz`
    * **Split by export run date**: Partitions files by the export run date so each day’s data lands in its own folder. This is ideal for date-based ingestion pipelines.  
-     _Preview:_ `/{bucket-name}/20251003/file.csv.gz`
+     _Preview:_ `/{bucket-name}/2025-10-03/file.csv.gz`
    * **Split by export unique ID**: Creates a sub-folder using the unique export ID assigned to each export configuration.  
      _Preview:_ `/{bucket-name}/1761650178/`
    * **Custom**:  Build your own folder structure using dynamic variables. Click \{\{}} to insert variables and use `/` to create subfolders.  
@@ -107,9 +107,9 @@ In this section, you will define the destination, folder organization, file form
 
      * `{{Instance-id}}`: Database identifier for your account (typically 0–23).
 
-     * `{{Date}}`: Export run date in `yyyymmdd`.  
+     * `{{Date}}`: Export run date in `yyyy-mm-dd`.  
        _Example_: `{{date}}/run-{{export-id}}`  
-       _Preview_: `/{bucket-name}/20251003/run-1761650178/file.csv.gz`\ <br />
+       _Preview_: `/{bucket-name}/2025-10-03/run-1761650178/file.csv.gz`\ <br />
 
    > 📘 Note
    >
@@ -134,13 +134,13 @@ In this section, you will define the destination, folder organization, file form
 4. **Define File Name Convention**  
    Define how each file is named inside the innermost folder created by _Sub folder structure_. If you select _Default_, CleverTap applies a standard structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
    * **Default file name**: The default format is `<account‑id>-<export request id>-<timestamp>-<database id>.<format>.gz`. For example, `100000000-1761651721-1761651721-0.csv.gz`.
-   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-20251003-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.  
+   * **Custom**:  Create a custom filename using supported dynamic variables. Click **\{\{ }}** to insert variables and combine them with fixed text. For example, the custom file name convention `profiles-{{date}}-{{export-id}}.csv.gz` resolves to `profiles-2025-10-03-1761651721.csv.gz`). By default, the timestamp and instance ID are always appended to the end of the filename to ensure that the content is not overridden.  
      The following are the supported variables:
      * `{{Account-id}}`: Your unique CleverTap account identifier.
      * `{{Export-id}}`: Unique export ID assigned to each export run.
      * `{{Timestamp}}`: Epoch timestamp when the export runs.
      * `{{Instance-id}}`: Database identifier for your CleverTap account (typically 0–23).
-     * `{{Date}}`: Export run date in `yyyymmdd`.
+     * `{{Date}}`: Export run date in `yyyy-mm-dd`.
        > 📘 Note
        >
        > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
@@ -208,7 +208,7 @@ Configure which properties to include in the export, as well as how they are lab
    > If a profile has no device token, the token column appears blank.
 
 2. **Add Communication Preferences**.  
-   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: MSG-push, MSG-push-all (push subscription status across all devices), `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups)` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
+   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups) ` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
 
    <Image align="center" alt="Export Communication Preferences" border={true} caption="Export Communication Preferences" src="https://files.readme.io/c494bcc5ab5779790e9c9a66457dd15674f31428997d95de5ddcbebf1ae7380c-Export_Communication_Preferences.gif" />
 
@@ -216,7 +216,7 @@ Configure which properties to include in the export, as well as how they are lab
    Choose which profile properties to export:
 
    * **All user properties**: Exports all system and custom user properties. For more information, refer to [User Properties](doc:user-profiles#user-properties).
-   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, and so on. For more information, refer to [System Properties](doc:user-profiles#system-properties).
+   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, and so on. For more information, refer to [System Properties](doc:user-profiles#system-properties). (@krishna to add 7-8 specifc name, gender, email, phone number, age)
    * **Selected properties**: Pick specific fields from your schema (for example, **Email**, **Phone**, **Customer Type**). For more information, refer to [Custom Properties](doc:user-profiles#custom-properties).
 
    <Image align="center" alt="Select User Properties to Export" border={true} caption="Select User Properties to Export" src="https://files.readme.io/86580e1c39e195008221ca0c636d54717b94ff958c0e31dbf96c245927e65742-Select_User_Properties_to_Export.gif" />
@@ -321,7 +321,10 @@ Exported profile files follow this consistent column order:
   "Blood Group": "XXXXXXX"
 }
 ```
-```xml
+
+### Sample XML file
+
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <Profile>
@@ -419,6 +422,8 @@ Exported profile files follow this consistent column order:
     </Profile>
 </root>
 ```
+
+<br />
 
 ### Sample CSV Export
 
@@ -595,7 +600,48 @@ Exported profile files follow this consistent column order:
   </tbody>
 </Table>
 
-### Sample Parquet Export
+### Schema for Parquet File
+
+@KRSIHNA TO ADD ELADIN 
+
+```json
+[
+  {
+    "column_name": "identity",
+    "column_type": "VARCHAR",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "device",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "commPrefs",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "profileProps",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  }
+]
+```
+
+### Sample Parquet File
 
 <Table align={["left","left","left","left","left"]}>
   <thead>
