@@ -75,7 +75,7 @@ To create a content block, perform the following steps:
 
 2. Click **New** and select the type of Content Block type (Text or HTML).
 
-<Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/5956ad5a5f4bdc452c1a645b2f8730d1f84ab3a0c6b690328202168cafe619ea-2026-01-05_11-21-23.png" />
+<Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/842f647383c41b796d71c7439335f2536885d92d2a12c367d1bd3d32444e1ffc-Screenshot_2026-01-05_at_4.17.02_PM.png" />
 
 4. Click **\{\{}}**from the editor to [nest content blocks](docs:nesting-considerations) within another content block and select an available content block.
 
@@ -135,8 +135,8 @@ You can use Content Blocks in **Campaigns**, **Journeys**, and **Reminders** to 
 
 You can use Content Blocks in two ways when creating your message:
 
-* Insert Content Blocks Directly in a Message 
-* Use Content Blocks with Liquid Tags 
+* Insert Content Blocks Directly in a Message
+* Use Content Blocks with Liquid Tags
 
 ## Insert Content Blocks Directly in a Message
 
