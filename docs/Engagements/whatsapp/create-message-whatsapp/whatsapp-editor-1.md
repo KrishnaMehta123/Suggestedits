@@ -48,6 +48,7 @@ The selected template opens in the WhatsApp Editor with content populated based 
 
 <Callout icon="📘" theme="info">
   **Template Approval**
+
   Templates selected from the Template Library are already approved in the Meta dashboard. Selecting and using these templates in the WhatsApp Editor does not trigger a new approval request.  
   For more information, refer to Meta documentation on [WhatsApp Message Templates](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
 </Callout>
