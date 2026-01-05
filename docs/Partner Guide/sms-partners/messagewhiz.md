@@ -24,10 +24,7 @@ Integrating MessageWhiz with CleverTap combines real-time messaging power with i
 
 Before integrating, ensure the following:
 
-* You have an active **MessageWhiz account** with access to:
-  * **Account ID**
-  * **API Key**
-  * **Sender ID** (approved by MessageWhiz)
+* You have an active **MessageWhiz account** with access to **Account ID**, **API Key** and **Sender ID** (approved by MessageWhiz).
 * You have a **CleverTap account** with SMS setup enabled.
 * Your account and templates comply with **local regulations** (for example, DLT in India).
 
@@ -39,9 +36,9 @@ Before integrating, ensure the following:
 
 To integrate MessageWhiz with CleverTap, complete the following steps:
 
-1. [Find MessageWhiz API Credentials](#find-messagewhiz-api-credentials)
-2. [Set Up CleverTap Dashboard](#set-up-clevertap-dashboard)
-3. [Send a Test SMS](#send-a-test-sms)
+1. [Find MessageWhiz API Credentials](doc:messagewhiz#find-messagewhiz-api-credentials)
+2. [Set Up CleverTap Dashboard](doc:messagewhiz#set-up-clevertap-dashboard)
+3. [Send a Test SMS](doc:messagewhiz#send-a-test-sms)
 
 ## Find MessageWhiz API Credentials
 
@@ -54,8 +51,10 @@ To set up the integration, gather your credentials from the MessageWhiz portal:
 To retrieve these details:
 
 1. Log in to your [MessageWhiz Portal](https://portal.messagewhiz.com/) .
-2. Navigate to _Settings_ > _API Settings_.
+2. Go to _Settings_ > _API Settings_.
 3. Copy the **API Key**, **Account ID**, and **Sender ID**.
+
+For additional details, refer to the [MessageWhiz API Documentation](https://sms.messagewhiz.com/api-doc) where you can view authentication setup, request parameters, and usage examples.
 
 ## Set Up CleverTap Dashboard
 
@@ -98,7 +97,7 @@ Set up the CleverTap dashboard to connect and authenticate the MessageWhiz SMS p
       </td>
 
       <td>
-        Enter this URL in the MessageWhiz portal to receive delivery reports. Refer to [Set Up SMS Callbacks]().
+        Enter this URL in the MessageWhiz portal to receive delivery reports. Refer to [Set Up SMS Callbacks](doc:messagewhiz#set-up-sms-callbacks).
       </td>
     </tr>
 
@@ -149,7 +148,7 @@ Set up the CleverTap dashboard to connect and authenticate the MessageWhiz SMS p
 
 <Image align="center" alt="Set Headers" border={true} caption="Set Headers" title="Set Headers" src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" width="65% " />
 
-5. Under _Parameters_, select `JSON` as the request type for the POST request. Refer to the sample payload below for the expected structure.
+5. Under _Parameters_, select `JSON` as the request type for the `POST` request. Refer to the sample payload below for the expected structure.
 
 ##### Sample Payload Structure (JSON)
 
@@ -181,7 +180,7 @@ Explanation of variables:
 
 7. Click on **Save**. A pop-up box will appear, prompting you to [Send Test SMS](doc:messagewhiz#send-test-sms).
 
-### Send Test SMS
+## Send Test SMS
 
 Sending a test SMS helps confirm that your MessageWhiz integration is working before launching a live campaign. This ensures the API endpoint is correctly configured, authentication is valid, and messages can be delivered.
 
@@ -203,8 +202,8 @@ If the configuration is correct, the test message will be delivered, and Message
 To track SMS requests, copy the Delivery report callback URL from CleverTap and add it in the JSON payload
 
 1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider  
-   Setup page _Settings_ > _Channels_ > _SMS_ > _Provider Nickname_
-2. Add it to the JSON payload
+   Setup page _Settings_ > _Channels_ > _SMS_ > _Provider Nickname_.
+2. Add it to the JSON payload.
 
 <Image align="center" alt="Set Up SMS Callbacks" border={true} caption="Set Up SMS Callbacks" src="https://files.readme.io/27be1e248b9101270026cf9be1bc09c56248d3f3b3c6cbbb4feef98e3bb6c85f-image.png" width="65% " />
 
