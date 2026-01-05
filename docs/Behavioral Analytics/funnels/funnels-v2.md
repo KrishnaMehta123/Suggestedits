@@ -14,19 +14,21 @@ next:
 ---
 # Overview
 
-Funnels show users' progress through defined paths in your app and pinpoint where they drop off between steps. Funnels are a series of events that a user performs in a particular order.
+Funnels are a series of actions that a user performs in a particular order. They show users' progress through defined paths in your app and identify where they drop off between steps. 
 
 A typical example is a user onboarding flow, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase flow, where a user progresses through a shopping cart experience to complete a purchase.
 
 <Callout icon="📘" theme="info">
   #### Public Beta
 
-  This feature is released in Public Beta. For more information about this feature or any queries, contact your Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new). (@bajrang, verify this note with other public beta notes for standardization)
 </Callout>
 
 # Creating a Funnel
 
-To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following steps:
+(@bajrang, lead in sentence)
+
+To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following steps(if the steps are sequential, then they need to be numbered):
 
 * [Select Events](doc:funnels-v2#select-events)
 * [Select Segments](doc:funnels-v2#select-segments)
@@ -35,27 +37,27 @@ To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following
 
 ## Select Events
 
-Select the events in the desired order to create up to an eight-step funnel. You can also select event properties for each event to constrain the analysis for the users who performed that event/property combination.
+Select the events in the desired order to create a funnel with up to eight steps. You can also select event properties for each event to limit the analysis to the users who performed the selected event with the associated properties.  
 
 <Image align="center" border={true} caption="Select Funnel Events" src="https://files.readme.io/698381e8f564ec79290e3f589d750385dd98ee602cf9aa6c8a883c7778728895-image.png" />
 
-You can also add multiple events (up to four) with an OR condition by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic in a step of the Funnel.
+You can also add multiple events (up to four) with an OR condition (@bajrang, explain the "why" for OR condition, maybe with an example) by clicking the ellipsis menu. For example, you can add Mobile Login and Website Login as two events with OR logic in a step of the Funnel. (@bajrang, the image does not show ellipsis here)
 
 <Image align="center" border={true} caption="Add Multiple Events with an OR Condition" src="https://files.readme.io/43b1604c14a3fd8b3cee34c3b5563dec6f22a49b165b065382c7db87e94de83c-image.png" />
 
 ## Select Segments
 
-You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights.
+You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights. (@Bajrang, it would be helpful if we could tell the reader what insights we are drawing from this image. that will add relevance)
 
 <Image align="center" border={true} caption="Segment Comparison Results" src="https://files.readme.io/94ae0749e8e0b36aa53ec6e7860b0625b1b3e6111fae76b3d5215e978f4e8634-image.png" />
 
 ## Split by Property
 
-You can split a funnel by profile properties for sessions, geographies, and technographics, or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more.
+You can split a funnel by profile properties for sessions, geographies, and technographics, or by an event property associated with any event. This lets you compare your conversion flows across product categories, geographies, devices, and more. @Bajrang, it would be helpful if we could tell the reader what insights we are drawing from this image. that will add relevance)
 
 <Image align="center" border={true} caption="Split Funnel by Event Property" src="https://files.readme.io/db0c4c73ebfd5874869ae362b54bde3ea5cb834b4e87dae943fc51f8756b3bcd-image.png" />
 
-<Image align="center" border={true} caption="Split Funnel by User Property" src="https://files.readme.io/959e4ab3fcef7f905082f8930ddbd5746f506e1e76fe3f02c2cc59492a105cab-image.png" />
+<Image align="center" border={true} caption="Split Funnel by User Property @Bajrang, it would be helpful if we could tell the reader what insights we are drawing from this image. that will add relevance)" src="https://files.readme.io/959e4ab3fcef7f905082f8930ddbd5746f506e1e76fe3f02c2cc59492a105cab-image.png" />
 
 ## Select Measured By Options
 
@@ -92,7 +94,7 @@ For example, compare the total conversion rate of _All Users_ versus _Engaged Us
 
 ### Trends
 
-Selecting **Trends** allows you to analyze how funnel conversions change over time. When **Trends** is selected, you must also choose a time granularity, i.e., Day, Week, or Month, to view the trend.
+Selecting **Trends** allows you to analyze how funnel conversions change over time. When **Trends** is selected, you must also choose a time granularity, that is, Day, Week, or Month, to view the trend.
 
 <Image align="center" border={true} caption="Measured By Trends" src="https://files.readme.io/fdac5620cbf09d1ee9a53999b384fd1785d0826c2159c92dc4f7e2e27f91ff8b-image.png" />
 
@@ -102,38 +104,38 @@ Use the Trends option when you want to:
 * Identify spikes, drops, or seasonality in funnel conversions
 * Compare trends across segments or properties
 
-For example, analyze daily conversion trends for the funnel _App Installed → App Launched → Added to Cart_ over the last 30 days.
+For example, analyze daily conversion trends for the funnel _App Installed → App Launched → Added to Cart_ over the last 30 days. (@bajrang, why ?  what will it reveal?)
 
 ## Conversion Window
 
-Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions.
+Funnels are calculated based on a specified conversion window (set to five days by default). The conversion window is the total elapsed time for the user to complete all the steps in the funnel (that is, to convert)(@bajrang, make it active voice). Shorter duration windows generally result in fewer users completing the funnel steps, whereas longer windows result in more user conversions. (@bajrang, tey dont result in more conversion. They allow you to view more conversion over a higher time period)
 
 <Image align="center" border={true} caption="Set Conversion Window" src="https://files.readme.io/97a73f12ec359477da234ef50ad379553f6bf28f38c59a1e6f165e2c9908aa9b-image.png" />
 
 <Callout icon="📘" theme="info">
   #### Time Interval for Conversion Window
 
-  CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance.
+  CleverTap recommends setting the _Conversion Window_ to a duration shorter than the _Actual Date Range_ to avoid data variance. (@bajrang, there is no context for Actual Date Range here)
 </Callout>
 
 ## Step Order
 
-The _Step Order_ setting determines how strictly users must follow the defined sequence of funnel steps to be counted as converted. These orders determine how users are counted as they progress through funnel steps, primarily when steps are repeated or performed out of sequence.
+The _Step Order_ setting determines whether users must follow the predefined sequence of funnel steps to be counted as converted. This order determines how users are counted as they progress through funnel steps, primarily when steps are repeated or performed out of sequence.
 
 <Image align="center" border={true} caption="Funnel Step Order" src="https://files.readme.io/0a03b55656f6066ebb8ff9e59b3fe3344e6526a45ad37a317c64bff3fef5fcd2-image.png" />
 
-You can choose one of the following options:
+You can select one of the following options:
 
 * [Flexible Order](doc:funnels-v2#flexible-order)
 * [Strict Order](doc:funnels-v2#strict-order)
 
 ### Flexible Order
 
-By default, funnels count users who complete all defined steps in the specified sequence. Users may repeat earlier steps, but they must still complete every funnel step to be counted as converted. If a user completes a later step before a required earlier step, the funnel does not count that user as converted.
+By default, funnels count users who complete _all_ defined steps in the specified sequence. Users may repeat earlier steps, but they must still complete every funnel step to be counted as converted. If a user skips a required step and then completes it later, the funnel does not count that user as converted.
 
-For example, if a funnel's steps are defined as:
+For example, a funnel's steps are defined in the following sequence:
 
-**Step A → Step B → Step C → Step D**
+**Step A → Step B → Step C → Step D**(@bajrang, common comment, replace -> with  > to avoid breaking it in the future in case of syntax changes)
 
 The following table explains how different users are counted based on their progress through the funnel steps:
 
@@ -146,11 +148,11 @@ The following table explains how different users are counted based on their prog
 
 #### Why Use Flexible Order?
 
-Flexible ordering is useful when you want to measure overall funnel completion without penalizing users for repeated or exploratory behavior.
+Flexible ordering is useful when you want to measure overall funnel completion without ignoring users for repeated or exploratory behavior.
 
-In many user journeys, users may repeat steps, go back and forth between screens, or perform actions multiple times before moving forward. Flexible Order ensures that these natural behaviors do not prevent users from being counted as converted, as long as they eventually complete all required steps in the correct sequence.
+In many user journeys, users may repeat steps, navigate back and forth between screens, or perform actions multiple times before progressing. Flexible Order ensures that these natural behaviors do not prevent users from being counted as converted, as long as they eventually complete all required steps in the correct sequence.
 
-For example, consider the following Conversion flow of two users in an app:
+For example, consider the following conversion flow (@bajrang, lets call it sequence everywhere because flow is a separate feature) of two users in an app:
 
 **User A**: App Launched → Viewed Product → Viewed Product → Added to Cart → Viewed Product → Purchased
 
@@ -162,7 +164,7 @@ With Flexible Order enabled, both users are counted as converted because they co
 
 When _Strict Order_ is selected, funnels count users only if they complete every step exactly in the defined sequence. Any repetition of a funnel step or deviation from the specified order disqualifies the user from being counted as converted.
 
-For example, if a funnel's steps are defined as:
+For example, a funnel's steps are defined as follows:
 
 **Step A → Step B → Step C → Step D**
 
@@ -184,19 +186,19 @@ For example, consider the following Login Flow of two users in an app:
 * **User A:** App Launched → Login Attempted → Login Attempted → Login Attempted → Logged In
 * **User B:** App Launched → Login Attempted → Logged In
 
-With strict order enabled, User A would not be counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments.
+With strict order enabled, User A is not counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments. (@bajrang a funnel drop off image here will really help explain the concept)
 
 # Reading Funnel Analysis
 
-CleverTap provides multiple views to help you interpret funnel performance effectively. Depending on whether you want a visual overview or a detailed comparison, you can analyze funnel data using [Chart View](doc:funnels-v2#chart-view) or [Table View.](doc:funnels-v2#chart-view) Each view highlights different aspects of user progression and conversion behavior.
+CleverTap offers multiple views to help you effectively interpret funnel performance. Based on whether you want a visual overview or a detailed comparison, you can analyze funnel data using [Chart View](doc:funnels-v2#chart-view) or [Table View.](doc:funnels-v2#chart-view) Each view highlights different aspects of user progression and conversion behavior.
 
 ## Chart View
 
-Chart View provides a visual representation of how users progress through each step of the funnel, making it easy to identify drop-offs and overall conversion trends at a glance.
+Chart View offers a visual representation of how users progress through each step of the funnel, allowing for easy identification of drop-offs and overall conversion trends at a glance.
 
 The default chart shows cumulative conversions per step for the selected time range. You can view the data either as an absolute count of users completing each step or as a percentage.
 
-<Image align="center" border={true} caption="Chart View of Funnel Analysis" src="https://files.readme.io/25abe447ff6abb54742459f0155ec8215a73ac47fa07a1e2bf3d1bcc076eaf5f-image.png" />
+<Image align="center" border={true} caption="Chart View of Funnel Analysis (@bajrang, crop the bottom of the image)" src="https://files.readme.io/25abe447ff6abb54742459f0155ec8215a73ac47fa07a1e2bf3d1bcc076eaf5f-image.png" />
 
 ## Table View
 
@@ -215,9 +217,9 @@ In the example shown below, sorting the table reveals that English speakers have
 
 # Bookmark a Funnel Analysis
 
-You can bookmark any Funnel analysis to quickly revisit it later. Bookmarks are user-specific; only the logged-in user can view their saved bookmarks on the CleverTap dashboard.
+You can bookmark any Funnel analysis to revisit it later quickly. Bookmarks are user-specific; only the logged-in user can view their saved bookmarks on the CleverTap dashboard.
 
-Bookmarks are especially useful for tracking frequently accessed conversion journeys. For example, if you regularly monitor funnel steps such as _App Launched_ > _Product Viewed_ >  _Charged_, bookmarking it lets you instantly return to the same setup without recreating the funnel each time.
+Bookmarks are especially useful for tracking frequently accessed conversion journeys. For example, if you regularly monitor funnel steps such as _App Launched_ > _Product Viewed_ > _Charged_, bookmarking it allows you to instantly return to the same setup without recreating the funnel each time.
 
 To bookmark a Funnel:
 
@@ -227,12 +229,12 @@ To bookmark a Funnel:
 
 <Image align="center" border={true} caption="Bookmark a Funnel Analysis" src="https://files.readme.io/0a95c2524453a5d5e5b88f4d133534cefadfa02b54ced32746f4b63b34aa6eb7-2026-01-02_15-18-05_1.gif" />
 
-You can add up to 50 bookmarks.
+<br />
 
 <Callout icon="📘" theme="info">
   #### Note
 
-  Funnels are accessible only to the user who created them. You can access all your saved bookmarks from the bookmark list under the _Funnels_ section.
+  You can add up to 50 bookmarks. Funnels are accessible only to the user who created them. You can access all your saved bookmarks from the bookmark list under the _Funnels_ section.
 </Callout>
 
 # FAQ
@@ -249,7 +251,7 @@ If a user completes the funnel multiple times within the selected date range, on
 
 ### What If a User Does Not Complete All Funnel Steps?
 
-Users who do not complete all defined funnel steps within the specified conversion window are not considered converted. They are included only in the steps they successfully completed, which helps identify drop-off points in the funnel.
+Users who do not complete all defined funnel steps within the specified conversion window are not considered to have been converted. They are included only in the steps they completed, which helps identify drop-off points in the funnel.
 
 ### How Does the Conversion Window Affect Funnel Results?
 
@@ -261,7 +263,7 @@ Yes. You can modify funnel settings such as events, segments, measurement mode, 
 
 ### Are Funnel Results Calculated in Real Time?
 
-Funnel results are near real-time but may have a short processing delay depending on data volume and query complexity. Recently ingested events may take a few minutes to appear in funnel analysis.
+Funnel results are near real-time, but may experience a short processing delay due to varying data volumes and query complexities. Recently ingested events may take a few minutes to appear in funnel analysis.
 
 ### Can I Compare Funnels Across Different Date Ranges?
 
