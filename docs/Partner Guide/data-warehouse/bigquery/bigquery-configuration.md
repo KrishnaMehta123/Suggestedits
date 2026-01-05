@@ -21,21 +21,21 @@ Configuring Google BigQuery with CleverTap enables seamless data import, ensurin
 # Quick Start Guide for Existing Users
 
 <details>
+  <summary>Expand for quick setup if your BigQuery environment is already configured.</summary>
 
-<summary>Expand for quick setup if your BigQuery environment is already configured.</summary>
-<hr />
-This section is intended for users who already have a configured BigQuery project, dataset, and service account with the required permissions.
+  <hr />
 
-## Prerequisites
+  This section is intended for users who already have a configured BigQuery project, dataset, and service account with the required permissions.
 
-Before you begin, ensure you already have the following details:
+  ## Prerequisites
 
-* **Project ID**
-* **Dataset ID**
-* **Google Service Account JSON Key** (file or JSON text)
+  Before you begin, ensure you already have the following details:
 
-Once you have these values, you can now proceed to add them in CleverTap (see *Set Up CleverTap Dashboard for Integration*).
+  * **Project ID**
+  * **Dataset ID**
+  * **Google Service Account JSON Key** (file or JSON text)
 
+  Once you have these values, you can now proceed to add them in CleverTap (see *Set Up CleverTap Dashboard for Integration*).
 </details>
 
 # Prerequisites for Integration
@@ -60,7 +60,7 @@ If you are setting up BigQuery for the first time, ensure you have the following
 
 You can set up BigQuery using one of the following options:
 
-* For new users who need to provision resources from scratch: 
+* For new users who need to provision resources from scratch:
   * [Create a Service Account](#create-service-account),
   * [Assign BigQuery Permissions](#assign-bigquery-permissions),
   * [Create a Dataset](#create-dataset),
@@ -80,9 +80,10 @@ To create each resource, perform the following steps:
 4. [Create a Service Account JSON Key](#create-service-account-json-key)
 
 ### Create Service Account
+
 To allow CleverTap to access your BigQuery environment, first create a dedicated service account:
 
-1. In the Google Cloud Console, navigate to *IAM & Admin > Service Accounts*.
+1. In the Google Cloud Console, navigate to _IAM & Admin > Service Accounts_.
 2. Click **Create Service Account**.
 3. Enter a **Service account name** (for example, `clevertap-bq-sa`).
 4. Click **Create and continue**, then **Done**.
@@ -91,8 +92,8 @@ To allow CleverTap to access your BigQuery environment, first create a dedicated
 
 Assign the required roles to the service account:
 
-1. Go to *IAM & Admin > IAM*. Go to the *Service account*.
-2. Locate the service account and click **Manage Permissions**. 
+1. Go to _IAM & Admin > IAM_. Go to the _Service account_.
+2. Locate the service account and click **Manage Permissions**.
 3. Click on **Manager Access**.
 4. Add the following roles:
 
@@ -104,7 +105,7 @@ Assign the required roles to the service account:
 
 Generate a JSON key that CleverTap will use for authentication:
 
-1. In *IAM & Admin > Service Accounts*, select the service account.
+1. In _IAM & Admin > Service Accounts_, select the service account.
 2. Open the **Keys** tab.
 3. Click **Add key > Create new key**.
 4. Select **JSON** and click **Create**.
@@ -114,7 +115,7 @@ Generate a JSON key that CleverTap will use for authentication:
 
 Create a dataset for CleverTap to store and query data:
 
-1. Go to *BigQuery* in the Google Cloud Console.
+1. Go to _BigQuery_ in the Google Cloud Console.
 2. Select your project and click **Create dataset**.
 3. Enter:
 
@@ -124,82 +125,9 @@ Create a dataset for CleverTap to store and query data:
 
 Or use SQL:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```sql
+CREATE SCHEMA IF NOT EXISTS `[ProjectID].[DatasetID]`;
+```
 
 ## Use Existing BigQuery Resources
 
@@ -212,93 +140,19 @@ If your project already has datasets and service accounts configured, follow the
 
 ### Find Existing Dataset ID
 
-1. Go to *BigQuery*.
+1. Go to _BigQuery_.
 2. Expand your project to view datasets.
 3. Select the dataset you intend to use with CleverTap.
 
 Or use SQL:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```sql
+SELECT schema_name FROM `projectID`.INFORMATION_SCHEMA.SCHEMATA;
+```
 
 ### Find a Service Account
 
-1. Navigate to *IAM & Admin > Service Accounts*.
+1. Navigate to _IAM & Admin > Service Accounts_.
 2. Select an existing service account with sufficient permissions, or create a new one.
 
 ### Download or Create a Service Account JSON Key
@@ -311,20 +165,9 @@ Or use SQL:
 
 After preparing your BigQuery project, dataset, and service account, connect BigQuery to CleverTap using the collected values.
 
+![](https://files.readme.io/90a4cea28203917d02cabc0c6ea3483bd5344657ba5d867f4446f0b1b1d5d9ac-image_74.png) Integrate BigQuery with CleverTap
 
-<Image alt="Integrate BigQuery with CleverTap" align="center" border={true} src="https://files.readme.io/90a4cea28203917d02cabc0c6ea3483bd5344657ba5d867f4446f0b1b1d5d9ac-image_74.png" /> Integrate BigQuery with CleverTap
-
-
-
-
-
-
-
-
-
-
-
-1. Go to *Settings > Partners > BigQuery* and select **Add Database**.
+1. Go to _Settings > Partners > BigQuery_ and select **Add Database**.
 2. Enter the following details:
 
 | Field                          | Description                                                                                                                                                                                                                                |
@@ -339,16 +182,17 @@ After preparing your BigQuery project, dataset, and service account, connect Big
    * **Test Connection:** Verifies project access, dataset validity, and service account permissions.
    * **Save:** Stores the connection for use with imports.
 
-4. After saving the connection, navigate to *[Create Import](doc:data-warehouse-import)* in the *Import Connections* dashboard.
+4. After saving the connection, navigate to _[Create Import](doc:data-warehouse-import)_ in the _Import Connections_ dashboard.
 
 # FAQs
 
 ### How can I delete a connection that has running imports?
-Go to *Import Connections*, select the connection, click **Delete**, review the running imports, and confirm deletion. This stops all active imports associated with the connection.
+
+Go to _Import Connections_, select the connection, click **Delete**, review the running imports, and confirm deletion. This stops all active imports associated with the connection.
 
 ### How can I filter import connections?
 
-Use the filters on *Import Connections* to refine the list:
+Use the filters on _Import Connections_ to refine the list:
 
 * **Connected On**: Filter by creation date.
 * **Connected By**: Filter by the user who created the connection.
