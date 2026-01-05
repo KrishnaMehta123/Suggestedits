@@ -128,22 +128,20 @@ Set up the CleverTap dashboard to connect and authenticate the MessageWhiz SMS p
       </td>
 
       <td>
-        Select `No Authentication`.
+        Select `No Authentication` (authentication will be handled via headers).
       </td>
     </tr>
   </tbody>
 </Table>
 
+4. Enter the following details under the _Headers_ section.
+
+| Key           | Value                        |
+| ------------- | ---------------------------- |
+| Authorization | `<YOUR_MESSAGEWHIZ_API_KEY>` |
+| Content-Type  | `application/json`           |
+
 <br />
-
-#### Set Headers
-
-Under the **Headers** section, add the following key–value pairs:
-
-| Key            | Value                        |
-| -------------- | ---------------------------- |
-| `apikey`       | `<YOUR_MESSAGEWHIZ_API_KEY>` |
-| `Content-Type` | `application/json`           |
 
 > 📘 **Note**
 >
