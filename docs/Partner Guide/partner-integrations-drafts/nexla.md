@@ -43,31 +43,28 @@ To integrate Nexla with CleverTap, perform the following five major steps:
 
 Use Data Warehouse Exports in CleverTap to send campaign interaction data to supported destinations such as:
 
-* Google Cloud Storage
-* Amazon S3 Exports
+* BigQuery (@akshay: Add doc cross-reference here.)
+* Amazon S3 Exports (@akshay: Add doc cross-reference here.)
 
 <Image align="center" alt="Create Export" border={true} caption="Create Export" src="https://files.readme.io/d2bd87a881b08611cf192e3ce42e5875793ac33c1830a6eabfe5fdbd6f7cac3b-image.png" width="75% " />
 
-Once configured, Nexla can pull this data directly from the connected source. Refer to the [Data Warehouse Export Guide](doc:data-warehouse) for setup instructions.
+Once configured, Nexla can pull this data directly from the connected source.
 
 ## Add Data Source in Nexla
 
 To configure your data source, perform the following steps:
 
 1. Log in to the Nexla dashboard.
-2. Add the appropriate warehouse (such as BigQuery or Amazon S3).
+2. Add the appropriate warehouse (such as BigQuery or Amazon S3). For more information, refer to [Add a Data Source in Nexla](https://docs.nexla.com/user-guides/data-sources/add-data-source).
 3. Authenticate using your access credentials.
 
 Once connected, Nexla begins ingesting the exported CleverTap data.
 
-For more information, refer to [Add a Data Source in Nexla](https://docs.nexla.com/user-guides/data-sources/how-to-add-a-data-source).
-
 ## (Optional) Send Webhook Data from CleverTap to Nexla 
 
-You can optionally use Webhook campaigns in CleverTap to push event data to Nexla in real time:
+You can optionally use Webhook campaigns in CleverTap to push event data to Nexla in real time. You can do so by creating a connector webhook campaign with Nexla’s webhook URL as the endpoint. 
 
-* In CleverTap, create a Connector Campaign with Nexla’s webhook URL as the endpoint.
-* Use this approach if you want immediate data delivery without waiting for exports.
+Use this approach if you want immediate data delivery without waiting for exports.
 
 To configure Webhooks, refer to [Send Webhooks from CleverTap](doc:create-message-webhook) and [Nexla Webhook Reference](https://docs.nexla.com/user-guides/connectors/webhook).
 
@@ -95,8 +92,8 @@ You can send data from Nexla into CleverTap using one of the following options:
 ### Nexla REST API Destination
 
 * Configure [Nexla](https://docs.nexla.com/user-guides/connectors/rest-api/rest-api-generic#3-data-destination) to use [CleverTap’s Upload Users or Events API](https://developer.clevertap.com/docs/api-overview).
-* Format the JSON payload to match the API’s requirements.
-* Ensure the following headers are set: (@Akshay: please check this - header block is incorrect IMO. I think it should be as follows:    
+* Format the JSON payload to match the API requirements.
+* Ensure the following headers are set: (@Akshay: Please check this - header block is incorrect IMO. I think it should be as follows:    
   ```http
   X-CleverTap-Account-Id: <Your Account ID>
   X-CleverTap-Passcode: <Your Passcode>
@@ -114,7 +111,7 @@ Content-Type: application/json
 <Callout icon="⚠️" theme="warn">
   #### Note
 
-  Disable Nexla’s credential validation. Set header values manually using your CleverTap credentials.
+  Select _Skip Credential Validation_  to set up header values manually using your CleverTap credentials.
 </Callout>
 
 ### Using SFTP Imports
@@ -130,8 +127,8 @@ For more information, refer to [SFTP Import](https://developer.clevertap.com/doc
 
 Once your data flow is set up:
 
-* Nexla monitors source and destination schema changes
-* Errors are flagged and visible in the Nexla dashboard
-* Any edits to the flow (such as sources, transformations, and destinations) are reflected automatically
+* Nexla monitors source and destination schema changes.
+* Errors are flagged and visible in the Nexla dashboard.
+* Any edits to the flow (such as sources, transformations, and destinations) are reflected automatically.
 
 This enables a fully automated, scalable, and error-resilient integration between Nexla and CleverTap.
