@@ -135,8 +135,8 @@ You can use Content Blocks in **Campaigns**, **Journeys**, and **Reminders** to 
 
 You can use Content Blocks in two ways when creating your message:
 
-* Insert Content Blocks Directly in a Message (as reusable sections)
-* Use Content Blocks with Liquid Tags (to dynamically control which blocks are rendered for users)
+* Insert Content Blocks Directly in a Message 
+* Use Content Blocks with Liquid Tags 
 
 ## Insert Content Blocks Directly in a Message
 
