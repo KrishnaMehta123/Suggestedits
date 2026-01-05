@@ -38,7 +38,7 @@ To integrate MessageWhiz with CleverTap, complete the following steps:
 
 1. [Find MessageWhiz API Credentials](doc:messagewhiz#find-messagewhiz-api-credentials)
 2. [Set Up CleverTap Dashboard](doc:messagewhiz#set-up-clevertap-dashboard)
-3. [Send a Test SMS](doc:messagewhiz#send-a-test-sms)
+3. [Send a Test SMS](doc:messagewhiz#send-test-sms)
 
 ## Find MessageWhiz API Credentials
 
