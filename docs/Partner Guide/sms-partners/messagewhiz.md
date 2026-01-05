@@ -50,9 +50,8 @@ To set up the integration, gather your credentials from the MessageWhiz portal:
 
 To retrieve these details:
 
-1. Log in to your [MessageWhiz Portal](https://portal.messagewhiz.com/) .
-2. Go to _Settings_ > _API Settings_.
-3. Copy the **API Key**, **Account ID**, and **Sender ID**.
+1. Go to _Settings_ > _API Settings_ in the MessageWhiz dashboard.
+2. Copy the **API Key**, **Account ID**, and **Sender ID**.
 
 For additional details, refer to the [MessageWhiz API Documentation](https://sms.messagewhiz.com/api-doc) where you can view authentication setup, request parameters, and usage examples.
 
