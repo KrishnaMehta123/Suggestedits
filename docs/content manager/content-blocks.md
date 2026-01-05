@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-A Content Block is a reusable part of content that can be used across different campaigns. It helps maintain a consistent experience for users as they view a consistent branding tone and colors across your messaging. This messaging can include text, images, or calls to action (CTA) buttons that you can standardize across messages. By using standard messaging, marketers can maintain a consistent tone and style, which builds trust and reinforces brand consistency in their communications.
+A Content Block is a reusable content section that can be used across multiple campaigns. It helps maintain a consistent brand tone and visual style in your messaging. Content Blocks can include text, images, or call-to-action (CTA) buttons that you can standardize across messages.
 
 <Callout icon="📘" theme="info">
   #### Public Beta
@@ -75,7 +75,7 @@ To create a content block, perform the following steps:
 
 2. Click **New** and select the type of Content Block type (Text or HTML).
 
-<Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/a94c81ea360432f27cbdaafe8bd37214d191265536bc33cca545d3ece87e433a-image.png" />
+<Image align="center" alt="Content Block Editor" border={true} caption="Content Block Editor" src="https://files.readme.io/5956ad5a5f4bdc452c1a645b2f8730d1f84ab3a0c6b690328202168cafe619ea-2026-01-05_11-21-23.png" />
 
 4. Click **\{\{}}**from the editor to [nest content blocks](docs:nesting-considerations) within another content block and select an available content block.
 
@@ -133,6 +133,13 @@ You can use Content Blocks in **Campaigns**, **Journeys**, and **Reminders** to 
   Stay tuned to our Release Notes and Changelog for updates on new capabilities and enhancements.
 </Callout>
 
+You can use Content Blocks in two ways when creating your message:
+
+* Insert Content Blocks directly as reusable sections in your message.
+* Use Content Blocks with Liquid Tags to dynamically control which blocks are rendered for users.
+
+## Insert Content Blocks Directly in a Message
+
 To use Content Blocks as reusable sections that you can directly insert into your message, perform the following steps:
 
 1. From the dashboard, select _Campaigns_ and click **+ Campaign**.
@@ -145,7 +152,7 @@ To use Content Blocks as reusable sections that you can directly insert into you
 
 7. Continue with the campaign creation flow and click **Publish** once you are done creating the campaign.
 
-# Personalize Content Blocks Using Liquid Tags
+## Use Content Blocks with Liquid Tags
 
 You can personalize your messages by combining Content Blocks with Liquid Tags to dynamically control which content is rendered for users.
 
