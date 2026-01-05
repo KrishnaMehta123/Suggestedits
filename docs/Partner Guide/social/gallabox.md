@@ -5,17 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-Got it ✅
-The validation error is due to **improperly nested HTML tags** and inconsistent `<br />` placement inside Markdown. The `<br />` tags shouldn’t be used inside `<Table>` elements or before closing tags (`</td>`), and some `<Callout>` sections weren’t properly closed.
-
-Here’s a **clean, validated, and Markdown-safe version** of your document — it uses consistent spacing and eliminates the invalid HTML nesting.
-You can paste this safely into your documentation system (like ReadMe.io or CleverTap Docs CMS).
-
----
-
-# Integrate Gallabox with CleverTap
-
-## Overview
+# Overview
 
 [Gallabox](https://gallabox.com/) offers a native integration with CleverTap that enables businesses to send WhatsApp broadcasts, transactional messages, and automated journeys directly from the CleverTap dashboard using Meta-approved WhatsApp templates.
 
@@ -26,13 +16,12 @@ This integration connects CleverTap’s engagement engine with Gallabox’s What
 * Track delivery, read, and response metrics within CleverTap analytics.
 
 > 🚧 **Support for Integration**
+>
 > This integration is managed and continuously improved by **Gallabox**.
 > The CleverTap and Gallabox integration has undergone stringent testing to ensure seamless functionality.
 > For questions or issues, contact [Gallabox Support](mailto:support@gallabox.com).
 
----
-
-## Prerequisites for Integration
+# Prerequisites for Integration
 
 Before starting the integration, ensure that you have the following:
 
@@ -42,11 +31,10 @@ Before starting the integration, ensure that you have the following:
 * At least one **Meta-approved WhatsApp message template** in Gallabox.
 
 > 📘 **Enable the CleverTap Add-on**
+>
 > Check that you have enabled the **CleverTap Integration Add-on** from the Gallabox dashboard before proceeding.
 
----
-
-## Integrate Gallabox with CleverTap
+# Integrate Gallabox with CleverTap
 
 The integration process involves three steps:
 
@@ -54,9 +42,7 @@ The integration process involves three steps:
 2. [Configure the CleverTap Dashboard](#configure-the-clevertap-dashboard)
 3. [Set Up CleverTap Callbacks in Gallabox](#set-up-clevertap-callbacks-in-gallabox)
 
----
-
-### Create a CleverTap Passcode
+## Create a CleverTap Passcode
 
 CleverTap uses **Account ID** and **Passcode** headers to authenticate API calls. You must create a passcode from your CleverTap dashboard to allow Gallabox to send WhatsApp messages via CleverTap’s API.
 
@@ -71,16 +57,14 @@ To create a passcode:
    * **Passcode**
 5. For more information, refer to [Create Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
 
----
-
-### Configure the CleverTap Dashboard
+## Configure the CleverTap Dashboard
 
 To set up Gallabox as your WhatsApp provider in CleverTap:
 
 1. Go to **Settings → Channels → WhatsApp → WhatsApp Connect** in the CleverTap dashboard.
 2. Click **+ Add Provider** and select **Generic (Other)** from the Provider list.
 
-![Provider Setup](https://files.readme.io/e451b36150e189f94b3d4082226e5ef5b9a8517791b6774746a9137ad43370e9-image.png "Provider Setup")
+<Image alt="Provider Setup" border={false} src="https://files.readme.io/e451b36150e189f94b3d4082226e5ef5b9a8517791b6774746a9137ad43370e9-image.png" title="Provider Setup" />
 
 3. Enter the following details:
 
@@ -101,14 +85,12 @@ To set up Gallabox as your WhatsApp provider in CleverTap:
 > 📘 **Note**
 > The Webhook URL and any required headers are provided by Gallabox during setup. You do not need to manually generate API credentials.
 
-5. (Optional) Select *Mark this as default* to make Gallabox your primary WhatsApp provider.
-6. (Optional) Enable *Auto-reply for untracked users* to respond automatically to users who message on WhatsApp but are not tracked in CleverTap.
-7. Set the *Maximum Concurrent API Requests* according to your usage needs (recommended range: **30–1000**).
+5. (Optional) Select _Mark this as default_ to make Gallabox your primary WhatsApp provider.
+6. (Optional) Enable _Auto-reply for untracked users_ to respond automatically to users who message on WhatsApp but are not tracked in CleverTap.
+7. Set the _Maximum Concurrent API Requests_ according to your usage needs (recommended range: **30–1000**).
 8. Click **Save** and send a **Test Message** to validate the setup.
 
----
-
-### Set Up CleverTap Callbacks in Gallabox
+## Set Up CleverTap Callbacks in Gallabox
 
 Callbacks ensure two-way synchronization between CleverTap and Gallabox. These allow CleverTap to track message delivery, read receipts, and inbound WhatsApp responses.
 
@@ -124,11 +106,9 @@ To configure callbacks:
 5. Paste both URLs into the Gallabox integration form under the corresponding fields.
 6. Click **Submit** to save the configuration.
 
-![Callback URLs](https://files.readme.io/931f649e1d2a8e6a9c805ef928b38b661294cc92d1d2597d120df3702259a820-image.png "Callback URLs")
+<Image alt="Callback URLs" border={false} src="https://files.readme.io/931f649e1d2a8e6a9c805ef928b38b661294cc92d1d2597d120df3702259a820-image.png" title="Callback URLs" />
 
 Once configured, Gallabox will sync message delivery statuses and inbound user replies with CleverTap in real time.
-
----
 
 ## Add WhatsApp Message Templates
 
@@ -145,9 +125,7 @@ To manage templates:
 > 📘 **Note**
 > Template names and languages must be unique for each provider configuration.
 
-![Create Template](https://files.readme.io/70d1653-non_CT_approved_templates.jpg "Create Template")
-
----
+<Image alt="Create Template" border={false} src="https://files.readme.io/70d1653-non_CT_approved_templates.jpg" title="Create Template" />
 
 ## Create a WhatsApp Campaign
 
@@ -155,15 +133,11 @@ You can now send personalized WhatsApp campaigns via Gallabox using CleverTap.
 
 For step-by-step instructions, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
 
----
-
 ## Create a WhatsApp Journey
 
 Automate user engagement through journeys powered by Gallabox.
 
 To learn how to add Gallabox as your provider in a journey, refer to [Create a WhatsApp Journey](https://docs.clevertap.com/docs/engagement-nodes-whatsapp).
-
----
 
 ## Verification
 
@@ -173,11 +147,3 @@ Your integration is considered successful when:
 * Delivery and read receipts appear in CleverTap analytics.
 * Inbound messages from users are reflected in Gallabox and CleverTap logs.
 * No authentication or payload errors appear in the provider configuration.
-
----
-
-✅ **Validated:**
-All HTML and Markdown elements now follow proper structure and spacing.
-There are no `<br />` nesting errors, `<td>` mismatches, or unclosed `<Callout>` blocks.
-
-Would you like me to put this cleaned version into your Canva workspace for easy copy-paste?
