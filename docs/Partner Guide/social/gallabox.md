@@ -1,5 +1,6 @@
 ---
 title: Gallabox
+excerpt: WIP
 deprecated: false
 hidden: false
 metadata:
