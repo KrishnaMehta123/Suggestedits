@@ -44,7 +44,7 @@ The selected template opens in the WhatsApp Editor with content populated based 
 
 * [Basic Templates](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#basic-templates)
 * [Limited Time Offer Template](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#limited-time-offer-template)
-* [Carousel Template](https://docs.clevertap.com/docs/create-message-whatsapp#carousel-template)
+* [Carousel Template](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#carousel-template)
 
 <Callout icon="📘" theme="info">
   **Template Approval**
