@@ -289,108 +289,106 @@ Exported profile files follow this consistent column order:
 
 <Tabs>
   <Tab title="Sample JSON File">
+    ```json
+    <?xml version="1.0" encoding="UTF-8"?>
+    <root>
+        <Profile>
+            <identity>XXXXXXX</identity>
+            <profileIdentities>
+                <entry>
+                    <key>all_identities</key>
+                    <value>[XXXXXXX]</value>
+                </entry>
+                <entry>
+                    <key>clevertapId</key>
+                    <value>__g1234567890</value>
+                </entry>
+                <entry>
+                    <key>clevertapIds</key>
+                    <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
+                </entry>
+            </profileIdentities>
+            <device>
+                <entry>
+                    <key>token</key>
+                    <value>XXXXXXX</value>
+                </entry>
+            </device>
+            <commPrefs>
+                <entry>
+                    <key>MSG-push</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-push-all</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-email</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-sms</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-whatsapp</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>subscriptionGroups</key>
+                    <value>
+                    {
+                          "group1": "Subscribed",
+                          "group2": "Unsubscribed",
+                          "group3": "Subscribed"
+                    }
+                    </value>
+                </entry>
+            </commPrefs>
+            <profileProps>
+                <entry>
+                    <key>Email</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Phone</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Name</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Gender</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>DOB</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Photo</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Favouties Game</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Designation</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Blood Group</key>
+                    <value>XXXXXXX</value>
+                </entry>
+            </profileProps>
+        </Profile>
+    </root>
+    ```
 
-```json
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <Profile>
-        <identity>XXXXXXX</identity>
-        <profileIdentities>
-            <entry>
-                <key>all_identities</key>
-                <value>[XXXXXXX]</value>
-            </entry>
-            <entry>
-                <key>clevertapId</key>
-                <value>__g1234567890</value>
-            </entry>
-            <entry>
-                <key>clevertapIds</key>
-                <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
-            </entry>
-        </profileIdentities>
-        <device>
-            <entry>
-                <key>token</key>
-                <value>XXXXXXX</value>
-            </entry>
-        </device>
-        <commPrefs>
-            <entry>
-                <key>MSG-push</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-push-all</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-email</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-sms</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-whatsapp</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>subscriptionGroups</key>
-                <value>
-                {
-                      "group1": "Subscribed",
-                      "group2": "Unsubscribed",
-                      "group3": "Subscribed"
-                }
-                </value>
-            </entry>
-        </commPrefs>
-        <profileProps>
-            <entry>
-                <key>Email</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Phone</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Name</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Gender</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>DOB</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Photo</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Favouties Game</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Designation</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Blood Group</key>
-                <value>XXXXXXX</value>
-            </entry>
-        </profileProps>
-    </Profile>
-</root>
-```
-
-<br />
-
+    <br />
   </Tab>
 
   <Tab title="Second Tab">
@@ -815,7 +813,7 @@ Exported profile files follow this consistent column order:
 
 ### Schema for Parquet File
 
-@KRSIHNA TO ADD ELADIN 
+@KRSIHNA TO ADD ELADIN
 
 ```json
 [
@@ -932,12 +930,7 @@ This section outlines how to track the status of your data exports, stop them wh
 
 Stop a running export by hovering over the export and clicking **Stop**. The export status on the _Export center_ page is displayed as **Stopped**.
 
-![](https://files.readme.io/925d13fe3d81e2d20983b0beb6b1772daad788c46b3e74ee6b99ebda0e38da6e-Stop_Export.png) Stop Export
-
-### Filter & Search Exports
-
-Use the filter bar to narrow down exports by **Partner** (S3, GCP, Azure), Data type (profile/event), **Status** (active, stopped, failed), and **Frequency** (one‑time, recurring). You can also search by export request ID or name.
-![](https://files.readme.io/10ce99261935856c41e06cbcf9153637975303b753ed7a45bee6aaae562daad3-Filter_Exports.png)  Filter Exports
+![](https://files.readme.io/925d13fe3d81e2d20983b0beb6b1772daad788c46b3e74ee6b99ebda0e38da6e-Stop_Export.png) Stop Export (edit button should not be visible, change the screenshot @krishna)
 
 ### Export Status
 
