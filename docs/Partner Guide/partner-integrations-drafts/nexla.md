@@ -116,10 +116,7 @@ Content-Type: application/json
 
 ### Using SFTP Imports
 
-* Export the transformed dataset from Nexla to a supported destination (for example, SFTP).
-* Configure CleverTap to import the data using its native import capability.
-
-For more information, refer to [SFTP Import](https://developer.clevertap.com/docs/imports-via-sftp).
+Export the transformed dataset from Nexla to a supported destination (for example, SFTP). Configure CleverTap to import the data using the native import capability. For more information, refer to [SFTP Import](https://developer.clevertap.com/docs/imports-via-sftp).
 
 <Image align="center" alt="SFTP Imports" border={true} caption="SFTP Imports" src="https://files.readme.io/63788bc898378ab2ed85fc3bbdd67d7e5ad990db37e0d1db7ea80dad09df3db7-image.png" width="55% " />
 
