@@ -84,11 +84,11 @@ To create each resource, perform the following steps:
 To allow CleverTap to access your BigQuery environment, first create a dedicated service account:
 
 1. In the Google Cloud Console, click on ![](https://files.readme.io/cfd2c44400c28fea69ef0071381f439904b5e3678672e6b8a60a7f94422edd3f-Big_query_1.png)  navigate to _IAM & Admin > Service Accounts_.
-2. Click **Create Service Account**. 
+2. Click **Create Service Account**.
 
    <Image align="center" border={true} caption="Create Service Account" src="https://files.readme.io/ebdda5aa27f331774b22fc80c051edcfc30150b4971c511f27b1c69d13decc38-big_query_2.png" />
 3. Enter a **Service account name** (for example, `clevertap-bq-sa`).
-4. Click **Create and continue**, then **Done**. 
+4. Click **Create and continue**, then **Done**.
 
    <Image align="center" border={true} caption="Service Account Name" src="https://files.readme.io/f8accc2410e1ca0aed7e62389cffd088719090482f032fa10bd06fa87650ff4e-big_query_3.png" />
 
@@ -97,16 +97,16 @@ To allow CleverTap to access your BigQuery environment, first create a dedicated
 Assign the required roles to the service account:
 
 1. In the Google Cloud Console, click on ![](https://files.readme.io/cfd2c44400c28fea69ef0071381f439904b5e3678672e6b8a60a7f94422edd3f-Big_query_1.png)  navigate to _IAM & Admin > Service Accounts_.
-2. Locate the service account and click **Manage Permissions**. 
+2. Locate the service account and click **Manage Permissions**.
 
    <Image align="center" border={true} caption="Manage Permissions" src="https://files.readme.io/c8cfdb534f2fc6a74ec903b6a6a91d7e4425f00bade1498b8c074bbba69baa97-Big_Query_4.png" />
-3. Click on **Manage Access**. 
+3. Click on **Manage Access**.
 
    <Image align="center" border={true} caption="Manage Access" src="https://files.readme.io/1fc3eb1a644816830b4647391aaefa7d195c168fff00608cb6efef4ed7616fc4-Big_Query_5.png" />
 4. Add the following roles:
 
    * **BigQuery Job User**
-   * **BigQuery Data Editor** 
+   * **BigQuery Data Editor**
 
      <Image align="center" border={true} caption="Add Roles" src="https://files.readme.io/2fb32a730950cf71532b5a3d7b8feb42df8c4c5d753b69ca8cb8e3b3b3642a82-big_query_6.png" />
 5. Click **Save**.
@@ -116,9 +116,13 @@ Assign the required roles to the service account:
 Generate a JSON key that CleverTap will use for authentication:
 
 1. In the Google Cloud Console, click on ![](https://files.readme.io/cfd2c44400c28fea69ef0071381f439904b5e3678672e6b8a60a7f94422edd3f-Big_query_1.png)  navigate to _IAM & Admin > Service Accounts_.
-2. Open the **Keys** tab. 
-3. Click **Add key > Create new key**.
-4. Select **JSON** and click **Create**.
+2. Open the **Keys** tab.
+3. Click **Add key > Create new key**. 
+
+   <Image align="center" border={true} caption="Create new key" src="https://files.readme.io/493ab42bf9ecd411c3441c09c35d3f30ab2484ff50331c97639a072ea116f334-Big_query_8.png" />
+4. Select **JSON** and click **Create**. 
+
+   <Image align="center" border={true} width="75% " src="https://files.readme.io/cda52a9b26d122363c1a73efc4f23abed6480d2cd9832fd76908b4a03d8113dc-Big_Query_9.png" className="border" />
 5. Download and securely store the JSON file.
 
 ### Create Dataset
