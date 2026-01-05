@@ -65,7 +65,7 @@ To integrate a Common Ninja Scratch Card into your CleverTap Email campaign, per
 2. Click **Go to Editor** under the _What_ section.
    1. Select a _Basic Template_ or _Saved Template_.
    2. Switch to **Source** mode in the email editor to edit the HTML code of the email body.
-3. Paste the HTML Snippet copied in _step 4_ of [Create and Configure Scratch Card in Common Ninja]() inside the `<body>` tag.
+3. Paste the HTML Snippet copied in _step 4_ of [Create and Configure Scratch Card in Common Ninja](doc:common-ninja#create-and-configure-scratch-card-in-common-ninja) inside the `<body>` tag.
 
 <Image align="center" alt="Insert the HTML Code Snippet" border={true} caption="Insert the HTML Code Snippet" src="https://files.readme.io/82a52d9f81856a7df6178eae5e9d585735b7aef4410cd90c67a1250f316d9bc3-2025-05-11_21-52-41_1.gif" width="75% " />
 
@@ -73,7 +73,7 @@ To integrate a Common Ninja Scratch Card into your CleverTap Email campaign, per
 
 <Image align="center" alt="Test Email" border={true} caption="Test Email" src="https://files.readme.io/c99dd845be09e5a1793a2e42bdb126202445c00de0d112b5f05a8e0895b4a659-image.png" width="75% " />
 
-5. Publish the campaign only after configuring the Zap as [Upload Event](doc:formless#upload-event).
+5. Publish the campaign only after configuring the Zap as an Upload Event.
 
 ## Connect Common Ninja and CleverTap via Zapier
 
@@ -96,7 +96,7 @@ Only the **Upload Event** action is supported for this integration.
 4. **Set up the Action**:
    1. Select _CleverTap_ from the App dropdown.
    2. Select _Upload Event_ as the Action Event. This ensures that each submission is recorded as an event in CleverTap.
-   3. Connect your CleverTap account using the Account ID and Passcode obtained in [Create a Passcode on the CleverTap Dashboard](doc:formless#create-a-passcode-on-the-clevertap-dashboard).
+   3. Connect your CleverTap account using the Account ID and Passcode obtained in [Create a Passcode on the CleverTap Dashboard](doc:common-ninja#create-a-passcode-on-the-clevertap-dashboard).
 
 <Image align="center" alt="Set up the Action" border={true} caption="Set up the Action" src="https://files.readme.io/439bce205fd7cd04599cb29160b8db2c0bbd20865a620bf3beefdbb8bfa008bb-2026-01-05_11-50-36_1.gif" width="65% " />
 
@@ -115,7 +115,7 @@ Only the **Upload Event** action is supported for this integration.
 > You can keep the Identity field blank if you provide an Object ID, and vice versa.
 
 6. Click **Continue**, then click **Test Step** to validate that the event is sent successfully to CleverTap.
-7. Click **Publish**. Also publish the campaign created in [Configure CleverTap Campaign]().
+7. Click **Publish**. Also publish the campaign created in [Configure CleverTap Campaign](doc:common-ninja#configure-clevertap-campaign).
 
 In the example campaign, when users scratch the card and reveal their reward, CleverTap records an event (for example, `Reward_Won`) that can be used for segmentation or follow-up emails.
 
