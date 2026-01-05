@@ -40,16 +40,17 @@ To select a template from the Template Library:
 4. Browse or search for the required template.
 5. Select the template.
 
-The selected template opens in the WhatsApp Editor with content populated based on the configuration defined in Meta.
+The selected template opens in the WhatsApp Editor with content populated based on the configuration defined in Meta. You can personalize placeholder values and configure supported fields using the same editor flow described in the following sections:
 
-You can personalize placeholder values and configure supported fields using the same editor flow described in the following sections:
-- [Basic Templates](https://docs.clevertap.com/docs/create-message-whatsapp#basic-templates)
-- [Limited Time Offer Template](https://docs.clevertap.com/docs/create-message-whatsapp#limited-time-offer-template)
-- [Carousel Template](https://docs.clevertap.com/docs/create-message-whatsapp#carousel-template)
+* [Basic Templates](https://docs.clevertap.com/docs/create-message-whatsapp#basic-templates)
+* [Limited Time Offer Template](https://docs.clevertap.com/docs/create-message-whatsapp#limited-time-offer-template)
+* [Carousel Template](https://docs.clevertap.com/docs/create-message-whatsapp#carousel-template)
 
-> 📘 Template Approval  
-> Templates selected from the Template Library are already approved in the Meta dashboard. Selecting and using these templates in the WhatsApp Editor does not trigger a new approval request.  
-> For more information, refer to Meta documentation on [WhatsApp Message Templates](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
+<Callout icon="📘" theme="info">
+  **Template Approval**
+  Templates selected from the Template Library are already approved in the Meta dashboard. Selecting and using these templates in the WhatsApp Editor does not trigger a new approval request.  
+  For more information, refer to Meta documentation on [WhatsApp Message Templates](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
+</Callout>
 
 There are three types of templates available for creating campaigns:
 
