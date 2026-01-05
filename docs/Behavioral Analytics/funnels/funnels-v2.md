@@ -237,6 +237,8 @@ You can add up to 50 bookmarks.
 
 # FAQ
 
+Find answers to the following common questions about using ̉Funnels:
+
 ### How Are Users Counted?
 
 Each user is counted once per funnel evaluation period.
