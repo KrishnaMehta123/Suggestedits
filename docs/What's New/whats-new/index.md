@@ -178,7 +178,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
     </div>
     <h3 class="release-note-heading">Promo Campaign Analytics</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge private-beta">BETA</div> 
+    <div class="badge beta">BETA</div> 
   </div>
   <div class="release-note-body">
     <p>Introducing Promo Campaign Analytics, a powerful new way to measure the performance of your Promo Campaigns across rewards, engagement, and errors. This helps you evaluate campaign effectiveness, identify high-performing reward types, and optimize ROI through improved visibility into user engagement and system performance. Promo Analytics provides you with complete visibility into what’s working, what’s failing, and why, enabling you to optimize campaign performance with confidence.</p>
