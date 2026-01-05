@@ -42,7 +42,7 @@ To select a template from the Template Library:
 
 The selected template opens in the WhatsApp Editor with content populated based on the configuration defined in Meta. You can personalize placeholder values and configure supported fields using the same editor flow described in the following sections:
 
-* [Basic Templates](https://docs.clevertap.com/docs/create-message-whatsapp#basic-templates)
+* [Basic Templates](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#basic-templates)
 * [Limited Time Offer Template](https://docs.clevertap.com/docs/create-message-whatsapp#limited-time-offer-template)
 * [Carousel Template](https://docs.clevertap.com/docs/create-message-whatsapp#carousel-template)
 
