@@ -1,5 +1,6 @@
 ---
 title: MessageWhiz
+excerpt: SMS Provider
 deprecated: false
 hidden: false
 metadata:
@@ -146,13 +147,9 @@ Set up the CleverTap dashboard to connect and authenticate the MessageWhiz SMS p
 > Ensure the API key is copied exactly as shown in your MessageWhiz dashboard.
 > Incorrect keys will result in a `401 Unauthorized` response.
 
-<Image align="center" alt="Set Headers" border={true} width="65% " src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" title="Set Headers" className="border" />
+<Image align="center" alt="Set Headers" border={true} caption="Set Headers" title="Set Headers" src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" width="65% " />
 
-<br />
-
-<br />
-
-<br />
+5. Under _Parameters_, select `JSON` as the request type for the POST request. Refer to the sample payload below for the expected structure.
 
 ##### Sample Payload Structure (JSON)
 
@@ -170,98 +167,53 @@ Explanation of variables:
 
 | Parameter    | Description                                                    | Required |
 | ------------ | -------------------------------------------------------------- | -------- |
-| `from`       | Sender ID registered in MessageWhiz.                           | ✅        |
-| `to`         | Recipient’s mobile number. Use `$$To` for dynamic replacement. | ✅        |
-| `text`       | Message text content. Use `$$Body`.                            | ✅        |
-| `client_ref` | Unique message ID (CleverTap replaces this dynamically).       | ✅        |
+| `from`       | Sender ID registered in MessageWhiz.                           | Yes      |
+| `to`         | Recipient’s mobile number. Use `$$To` for dynamic replacement. | Yes      |
+| `text`       | Message text content. Use `$$Body`.                            | Yes      |
+| `client_ref` | Unique message ID (CleverTap replaces this dynamically).       | Yes      |
 | `callback`   | CleverTap Delivery Report Callback URL.                        | Optional |
 
-***
+6. Select the Batch checkbox and fill in the details as required.
 
-### Send a Test SMS
+> 📘 Single Batch Limit
+>
+> A single batch can have a maximum of 1,000 records.
 
-<br />
+7. Click on **Save**. A pop-up box will appear, prompting you to [Send Test SMS](doc:messagewhiz#send-test-sms).
+
+### Send Test SMS
+
+Sending a test SMS helps confirm that your MessageWhiz integration is working before launching a live campaign. This ensures the API endpoint is correctly configured, authentication is valid, and messages can be delivered.
 
 To verify that the integration works:
 
-1. In the CleverTap dashboard, click **Send Test SMS**.
+1. Click the **Send Test SMS** hyperlink before creating SMS campaigns and journeys.
+2. Enter the following details:  
+   * _Country Code and Mobile Number_: Enter the country code and mobile number to which you want to send the message.
+   * _Message_: Enter sample text, such as `This is a test message powered by MessageWhiz.`
 
-   2. Enter the following:
+<Image align="center" alt="Send a Test SMS" border={true} caption="Send a Test SMS" src="https://files.readme.io/58adde1828bfba405e3cca9f4290259ed2176abeaaad5e0f7218ff2e142c23ef-4141da97af121d16805772fb980f0888272958269467d79efd1a0a9f5f7c7dab-image.png" width="65% " />
 
-   * **Country Code and Mobile Number**
-     * **Message:** “This is a test message powered by MessageWhiz.”
+3. Click **Send Test**.
 
-       3. Click **Send Test**.
-
-       <br />
-
-       If configured correctly:
-
-       * The test SMS will be delivered to the specified number.
-         * CleverTap will display a success confirmation.
-           * A DLR (Delivery Receipt) will be sent from MessageWhiz to the CleverTap callback URL.
-
-             <br />
-
-             If an error occurs, check:
-
-             * The **API Key** in headers.
-               * The **endpoint URL** (`https://sms.messagewhiz.com/sms`).
-                 * The **payload structure** (ensure required parameters are included).
-
-                   <Image alt="Send a Test SMS" border={false} src="https://files.readme.io/440d338366857bc07cb488cff8ce0b667c10fe20e57ca880cb2b9e4689cdff65-image.png" title="Send a Test SMS" />
-
-                   ***
+If the configuration is correct, the test message will be delivered, and MessageWhiz will return a DLR update. If there is an error (for example, incorrect credentials or endpoint), CleverTap will display a failure notification.
 
 ### Set Up SMS Callbacks
 
-<br />
+To track SMS requests, copy the Delivery report callback URL from CleverTap and add it in the JSON payload
 
-To track delivery reports and message statuses:
+1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider  
+   Setup page _Settings_ > _Channels_ > _SMS_ > _Provider Nickname_
+2. Add it to the JSON payload
 
-1. In CleverTap, go to
-   _Settings_ → _Channels_ → _SMS_ → _Provider Nickname_.
-
-   2. Copy the **Delivery Report Callback URL**.
-      3. Log in to your [MessageWhiz Portal](https://portal.messagewhiz.com/) .
-         4. Go to **Settings → API Settings**.
-            5. Paste the CleverTap Callback URL into the **Callback** field.
-
-   <Image alt="Set Up SMS Callbacks" border={false} src="https://files.readme.io/27be1e248b9101270026cf9be1bc09c56248d3f3b3c6cbbb4feef98e3bb6c85f-image.png" title="Set Up SMS Callbacks" />
-
-   ***
+<Image align="center" alt="Set Up SMS Callbacks" border={true} caption="Set Up SMS Callbacks" src="https://files.readme.io/27be1e248b9101270026cf9be1bc09c56248d3f3b3c6cbbb4feef98e3bb6c85f-image.png" width="65% " />
 
 ### Verifying Successful Integration
 
-<br />
-
-Your integration is considered successful when:
+Your integration is considered successful when the following criteria are met:
 
 * The test SMS is delivered to the intended mobile number.
-  * CleverTap receives a DLR callback from MessageWhiz with delivery status (`DELIVERED`, `FAILED`, or `QUEUED`).
-    * No errors appear in CleverTap’s message logs related to payload or authentication.
-      <br />
-      Once verified, you can begin building [SMS campaigns](doc:create-message-sms)  or [Journeys](doc:journeys)  using MessageWhiz as your provider.
-      <br />
-      ***
-      <br />
-      <br />
+* You receive a DLR (Delivery Report) callback from MessageWhiz at the configured CleverTap callback URL, indicating delivery, failure, or queue status.
+* CleverTap logs show no errors related to authentication, payload structure, or message transmission.
 
-## Open Questions
-
-1. [ ] Confirm if **DLT parameters** (`entity_id`, `template_id`) are required for Indian traffic.
-
-   2. [ ] Verify **callback response format** expected from MessageWhiz for CleverTap parsing.
-      3. [ ] Confirm **batch sending** support (multiple recipients in one request).
-
-   ***
-
-### Style & Validation Summary
-
-<br />
-
-✅ Clean heading hierarchy (H1 → H2 → H3 → H4).
-✅ Logical doc flow: Overview → Prerequisites → Setup → Test → Callbacks → Verification.
-✅ Tables, code blocks, and images follow Markdown best practices.
-✅ Internal cross-links match CleverTap documentation convention.
-✅ Consistent use of termino
+Once these conditions are met, you can proceed to build and launch [SMS campaigns](doc:create-message-sms) or set up [Journeys](doc:journeys) using MessageWhiz as your SMS provider.
