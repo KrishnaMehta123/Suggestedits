@@ -172,6 +172,8 @@ Explanation of variables:
 | `client_ref` | Unique message ID (CleverTap replaces this dynamically).       | Yes      |
 | `callback`   | CleverTap Delivery Report Callback URL.                        | Optional |
 
+<Image align="center" alt="Set Parameters" border={true} caption="Set Parameters" src="https://files.readme.io/4eab04e531dbbf3dc25169984b38734ff42560ad76cfd4d1a4b415a5b40ba1d7-image.png" width="65% " />
+
 6. Select the Batch checkbox and fill in the details as required.
 
 > 📘 Single Batch Limit
