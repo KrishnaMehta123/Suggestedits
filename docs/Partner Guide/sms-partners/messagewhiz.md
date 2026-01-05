@@ -141,22 +141,16 @@ Set up the CleverTap dashboard to connect and authenticate the MessageWhiz SMS p
 | Authorization | `<YOUR_MESSAGEWHIZ_API_KEY>` |
 | Content-Type  | `application/json`           |
 
-<br />
-
-> 📘 **Note**
+> 📘 Note
 >
 > Ensure the API key is copied exactly as shown in your MessageWhiz dashboard.
-> Incorrect keys will result in a “401 Unauthorized” response.
+> Incorrect keys will result in a `401 Unauthorized` response.
 
-<Image alt="Set Headers" border={false} src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" title="Set Headers" />
-
-***
-
-#### Configure Parameters (JSON Payload)
+<Image align="center" alt="Set Headers" border={true} width="65% " src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" title="Set Headers" className="border" />
 
 <br />
 
-Under **Parameters**, choose **JSON** as the request format for the POST call.
+<br />
 
 <br />
 
