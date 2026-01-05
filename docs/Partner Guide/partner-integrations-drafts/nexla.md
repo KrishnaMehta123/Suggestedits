@@ -16,8 +16,8 @@ next:
 
 With the CleverTap and Nexla integration, you can:
 
-* Export campaign interaction events from CleverTap to data warehouses using *Data Warehouse Exports* or *Webhook campaigns*.
-* Transform and forward enriched data from Nexla to CleverTap using *Amazon S3*, *SFTP Imports*, or *Nexla’s REST API*.
+* Export campaign interaction events from CleverTap to data warehouses using _Data Warehouse Exports_ or _Webhook campaigns_.
+* Transform and forward enriched data from Nexla to CleverTap using _Amazon S3_, _SFTP Imports_, or _Nexla’s REST API_.
 
 This integration enables real-time, high-quality data flow between CleverTap and your enterprise data stack, powering personalized engagement and advanced analytics.
 
@@ -25,9 +25,9 @@ This integration enables real-time, high-quality data flow between CleverTap and
 
 Ensure the following before starting the integration:
 
-* An active [Nexla](https://www.nexla.com) account
-* Automated *Data Warehouse Exports* or *Webhook campaigns* configured in CleverTap
-* Access to your *BigQuery* , or *Amazon S3* account
+* An active Nexla account.
+* Automated _Data Warehouse Exports_ or _Webhook campaigns_ configured in CleverTap.
+* Access to your _BigQuery_ , or _Amazon S3_ account.
 
 # Integrating Nexla with CleverTap
 
@@ -35,7 +35,7 @@ To integrate Nexla with CleverTap, perform the following five major steps:
 
 1. [Export Data from CleverTap](doc:nexla#export-data-from-clevertap-to-your-data-warehouse)
 2. [Add Data Source in Nexla](doc:nexla#add-data-source-in-nexla)
-3. [Send Webhook Data from CleverTap to Nexla](doc:nexla#send-webhook-data-from-clevertap-to-nexla-optional) (Optional)
+3. (Optional) [Send Webhook Data from CleverTap to Nexla](doc:nexla#send-webhook-data-from-clevertap-to-nexla-optional)
 4. [Transform Data in Nexla](doc:nexla#transform-data-in-nexla)
 5. [Import Data Back into CleverTap](doc:nexla#import-data-back-into-clevertap)
 
@@ -46,9 +46,7 @@ Use Data Warehouse Exports in CleverTap to send campaign interaction data to sup
 * Google Cloud Storage
 * Amazon S3 Exports
 
-<Image alt="Create Export" align="center" width="75% " border={true} src="https://files.readme.io/d2bd87a881b08611cf192e3ce42e5875793ac33c1830a6eabfe5fdbd6f7cac3b-image.png">
-  Create Export
-</Image>
+<Image align="center" alt="Create Export" border={true} caption="Create Export" src="https://files.readme.io/d2bd87a881b08611cf192e3ce42e5875793ac33c1830a6eabfe5fdbd6f7cac3b-image.png" width="75% " />
 
 Once configured, Nexla can pull this data directly from the connected source. Refer to the [Data Warehouse Export Guide](doc:data-warehouse) for setup instructions.
 
@@ -56,74 +54,79 @@ Once configured, Nexla can pull this data directly from the connected source. Re
 
 To configure your data source, perform the following steps:
 
-1. Log in to the Nexla console.
+1. Log in to the Nexla dashboard.
 2. Add the appropriate warehouse (such as BigQuery or Amazon S3).
 3. Authenticate using your access credentials.
-4. Once connected, Nexla will begin ingesting the exported CleverTap data.
 
-Refer to the [Add a Data Source in Nexla](https://docs.nexla.com/user-guides/data-sources/how-to-add-a-data-source) for details.
+Once connected, Nexla begins ingesting the exported CleverTap data.
 
-## Send Webhook Data from CleverTap to Nexla (Optional)
+For more information, refer to [Add a Data Source in Nexla](https://docs.nexla.com/user-guides/data-sources/how-to-add-a-data-source).
+
+## (Optional) Send Webhook Data from CleverTap to Nexla 
 
 You can optionally use Webhook campaigns in CleverTap to push event data to Nexla in real time:
 
 * In CleverTap, create a Connector Campaign with Nexla’s webhook URL as the endpoint.
 * Use this approach if you want immediate data delivery without waiting for exports.
 
-To configure Webhooks, refer to [Send Webhooks from CleverTap](doc:create-message-webhook) and [Nexla Webhook Reference](https://docs.nexla.com/user-guides/connectors/webhook)
+To configure Webhooks, refer to [Send Webhooks from CleverTap](doc:create-message-webhook) and [Nexla Webhook Reference](https://docs.nexla.com/user-guides/connectors/webhook).
 
 ## Transform Data in Nexla
 
 To apply custom logic or formatting before sending data to CleverTap, perform the following steps:
 
 1. Locate the dataset in Nexla and click **Transform**.
-2. Use the *Transform Builder* to:
+2. Use the _Transform Builder_ to:
 
    * Rename fields
    * Apply conditions or filters
    * Add computed fields or enrichments
 3. Click **Save** to transform the dataset.
 
-For more information, refer to [Using the Transform Builder](https://docs.nexla.com/user-guides/transformations)
+For more information, refer to [Using the Transform Builder](https://docs.nexla.com/dev-guides/modifying-data/transforms/transforms).
 
 ## Import Data Back into CleverTap
 
-You can send data from Nexla into CleverTap using two options:
+You can send data from Nexla into CleverTap using one of the following options:
 
-1. [Nexla REST API Destination](doc:nexla#option-a-nexla-rest-api-destination)
-2. [Using SFTP Imports](doc:nexla#option-b-using-sftp-imports)
+* [Nexla REST API Destination](doc:nexla#option-a-nexla-rest-api-destination)
+* [Using SFTP Imports](doc:nexla#option-b-using-sftp-imports)
 
-### Option A: Nexla REST API Destination
+### Nexla REST API Destination
 
 * Configure [Nexla](https://docs.nexla.com/user-guides/connectors/rest-api/rest-api-generic#3-data-destination) to use [CleverTap’s Upload Users or Events API](https://developer.clevertap.com/docs/api-overview).
 * Format the JSON payload to match the API’s requirements.
-* Ensure the following headers are set:
+* Ensure the following headers are set: (@Akshay: please check this - header block is incorrect IMO. I think it should be as follows:    
+  ```http
+  X-CleverTap-Account-Id: <Your Account ID>
+  X-CleverTap-Passcode: <Your Passcode>
+  Content-Type: application/json
+  ```
+  ) 
 
 ```
 Authorization: <Account ID + Passcode>
 Content-Type: application/json
 ```
 
-<Image alt="Edit Credentials" align="center" width="55% " border={true} src="https://files.readme.io/8e3197252c1565d94e0d79b56d15ba19467068d788e52ac40a4245dc9990cd94-image.png">
-  Edit Credentials
-</Image>
+<Image align="center" alt="Edit Credentials" border={true} caption="Edit Credentials" src="https://files.readme.io/8e3197252c1565d94e0d79b56d15ba19467068d788e52ac40a4245dc9990cd94-image.png" width="55% " />
 
-> ⚠️ Note
->
-> Disable Nexla’s credential validation. Set header values manually using your CleverTap credentials.
+<Callout icon="⚠️" theme="warn">
+  #### Note
 
-### Option B: Using SFTP Imports
+  Disable Nexla’s credential validation. Set header values manually using your CleverTap credentials.
+</Callout>
+
+### Using SFTP Imports
 
 * Export the transformed dataset from Nexla to a supported destination (for example, SFTP).
 * Configure CleverTap to import the data using its native import capability.
 
-Refer to [SFTP Import Documentation](https://developer.clevertap.com/docs/imports-via-sftp)
+For more information, refer to [SFTP Import](https://developer.clevertap.com/docs/imports-via-sftp).
 
-<Image alt="SFTP Imports" align="center" width="55% " border={true} src="https://files.readme.io/63788bc898378ab2ed85fc3bbdd67d7e5ad990db37e0d1db7ea80dad09df3db7-image.png">
-  SFTP Imports
-</Image>
+<Image align="center" alt="SFTP Imports" border={true} caption="SFTP Imports" src="https://files.readme.io/63788bc898378ab2ed85fc3bbdd67d7e5ad990db37e0d1db7ea80dad09df3db7-image.png" width="55% " />
 
-# Verify the Integration
+# Verify Integration
 
 Once your data flow is set up:
 
