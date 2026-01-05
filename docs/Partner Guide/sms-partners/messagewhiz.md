@@ -146,7 +146,7 @@ Set up the CleverTap dashboard to connect and authenticate the MessageWhiz SMS p
 > Ensure the API key is copied exactly as shown in your MessageWhiz dashboard.
 > Incorrect keys will result in a `401 Unauthorized` response.
 
-<Image align="center" alt="Set Headers" border={true} caption="Set Headers" title="Set Headers" src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" width="65% " />
+<Image align="center" alt="Set Headers" border={true} caption="Set Headers" title="Set Headers" src="https://files.readme.io/2d150958aebb2dd35c5b3971d8cca19650dd768e4b387c106c726777c9adfb2e-image.png" width="55% " />
 
 5. Under _Parameters_, select `JSON` as the request type for the `POST` request. Refer to the sample payload below for the expected structure.
 
@@ -189,11 +189,11 @@ Sending a test SMS helps confirm that your MessageWhiz integration is working be
 To verify that the integration works:
 
 1. Click the **Send Test SMS** hyperlink before creating SMS campaigns and journeys.
-2. Enter the following details:  
+2. Enter the following details:
    * _Country Code and Mobile Number_: Enter the country code and mobile number to which you want to send the message.
    * _Message_: Enter sample text, such as `This is a test message powered by MessageWhiz.`
 
-<Image align="center" alt="Send a Test SMS" border={true} caption="Send a Test SMS" src="https://files.readme.io/58adde1828bfba405e3cca9f4290259ed2176abeaaad5e0f7218ff2e142c23ef-4141da97af121d16805772fb980f0888272958269467d79efd1a0a9f5f7c7dab-image.png" width="65% " />
+<Image align="center" alt="Send a Test SMS" border={true} caption="Send a Test SMS" src="https://files.readme.io/e7e63cd39f78b8fc3b9e1afb937653a43940bd341d37c130e909eddce89c45ba-test_.png" width="65% " />
 
 3. Click **Send Test**.
 
@@ -201,7 +201,7 @@ If the configuration is correct, the test message will be delivered, and Message
 
 ### Set Up SMS Callbacks
 
-To track SMS requests, copy the Delivery report callback URL from CleverTap and add it in the JSON payload
+To track SMS requests, copy the Delivery report callback URL from CleverTap and add it to the JSON payload
 
 1. You can find the Delivery report callback URL on the CleverTap dashboard under the Provider  
    Setup page _Settings_ > _Channels_ > _SMS_ > _Provider Nickname_.
