@@ -234,3 +234,33 @@ You can add up to 50 bookmarks.
 
   Funnels are accessible only to the user who created them. You can access all your saved bookmarks from the bookmark list under the _Funnels_ section.
 </Callout>
+
+# FAQ
+
+### How Are Users Counted?
+
+Each user is counted once per funnel evaluation period.
+
+### What Happens If a User Completes the Funnel Multiple Times?
+
+If a user completes the funnel multiple times within the selected date range, only the first valid conversion within the conversion window is counted. Subsequent completions by the same user are ignored for that analysis.
+
+### What If a User Does Not Complete All Funnel Steps?
+
+Users who do not complete all defined funnel steps within the specified conversion window are not considered converted. They are included only in the steps they successfully completed, which helps identify drop-off points in the funnel.
+
+### How Does the Conversion Window Affect Funnel Results?
+
+The conversion window defines the maximum time allowed for a user to complete all funnel steps. If a user exceeds this time, the funnel does not count them as converted, even if they eventually complete all steps. A shorter window results in stricter conversion criteria, while a longer window allows more users to qualify.
+
+### Can I Change Funnel Settings After Viewing Results?
+
+Yes. You can modify funnel settings such as events, segments, measurement mode, conversion window, or step order at any time. However, changing these settings triggers a new funnel calculation, and previously generated results are not retained.
+
+### Are Funnel Results Calculated in Real Time?
+
+Funnel results are near real-time but may have a short processing delay depending on data volume and query complexity. Recently ingested events may take a few minutes to appear in funnel analysis.
+
+### Can I Compare Funnels Across Different Date Ranges?
+
+Yes. You can change the date range and re-run the same funnel configuration to compare performance across different periods. For trend-based analysis, using the Trends measurement mode is recommended.
