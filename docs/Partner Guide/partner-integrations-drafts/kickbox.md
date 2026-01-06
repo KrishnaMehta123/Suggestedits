@@ -12,24 +12,22 @@ next:
 ---
 # Overview
 
-[Kickbox](https://kickbox.com) helps verify email addresses in real time to ensure that only valid and deliverable emails enter your database. By integrating Kickbox with CleverTap, you can automatically validate email addresses entered through forms, sign-ups, or other data collection points.
+[Kickbox](https://kickbox.com) enables businesses to verify email addresses in real time and ensure that only valid, deliverable emails are used in marketing communication. Integrating Kickbox with CleverTap helps you validate and enrich email addresses stored in your CleverTap user profiles, improving deliverability, sender reputation, and engagement rates.
 
-This integration helps maintain clean and reliable email lists, improve campaign deliverability, and prevent invalid or disposable email addresses from being added to your marketing database.
+This integration allows you to:
 
-The Kickbox integration helps verify emails instantly at multiple entry points, such as:
+* Verify and enrich existing email addresses before launching campaigns.
+* Prevent messages from being sent to invalid or disposable email addresses.
+* Personalize communication based on email verification results.
 
-* Account creation
-* Mobile app registration
-* Newsletter subscription
-* Reservation or demo request forms
-* Any other form that collects user email addresses
+Use the Kickbox integration to validate email addresses dynamically when triggering CleverTap email or In-App campaigns, ensuring clean and reliable data across your engagement workflows.
 
 For more information about Kickbox response parameters, refer to the [Kickbox API documentation](https://docs.kickbox.com/docs).
 
 <Callout icon="🚧" theme="warn">
   #### Support for Integration
 
-  This integration is managed and continuously improved by Kickbox. The CleverTap and Kickbox integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Kickbox](https://kickbox.com/contact/) for support and resolution. (@Akshay: just confirm with Parth if we need this for this document.)
+  This integration is managed and continuously improved by Kickbox. The CleverTap and Kickbox integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Kickbox](https://kickbox.com/contact/) for support and resolution.
 </Callout>
 
 # Prerequisites for Integration
@@ -42,13 +40,13 @@ The following are the prerequisites:
 
 # Integrate Kickbox with CleverTap
 
-Integrating Kickbox with CleverTap allows you to verify user email addresses in real time as part of your CleverTap campaigns. The setup involves connecting CleverTap to Kickbox’s verification API through Linked Content and then utilizing the connection in a campaign to validate user data dynamically.
+Integrating Kickbox with CleverTap allows you to verify user email addresses dynamically using Linked Content. When a campaign is triggered, CleverTap calls the Kickbox API in real time to validate the email address associated with each recipient and can adjust messaging accordingly.
 
 The process includes the following three key steps:
 
 1. [Obtain Kickbox API Key](doc:kickbox#obtain-kickbox-api-key)
 2. [Configure Linked Content](doc:kickbox#configure-linked-content)
-3. [Configure Campaign in CleverTap](doc:kickbox#configure-the-campaign-in-clevertap)
+3. [Use Kickbox Verification in Campaigns]()
 
 ## Obtain Kickbox API Key
 
@@ -57,7 +55,7 @@ Begin the integration by generating an API Key in Kickbox. This key will authent
 1. Log in to your Kickbox Dashboard.
 2. Go to _Settings_ > _API Keys_.
 3. Click **Generate API Key** to create a new key.
-4. Assign permissions as required for your use case. For this example, full permissions are granted. (@Akshay: Which example are we referring to here?)
+4. Assign permissions as required for your use case. For this example, full permissions are granted.
 
 <Image align="center" alt="Obtain Kickbox API Key" border={true} caption="Obtain Kickbox API Key" src="https://files.readme.io/37c1b638e9e07285f2cd8821829f7ccc489440b607e563e0b02a1fc7860846e6-Screen_Recording_2025-07-01_at_1.29.40PM_1.gif" width="75% " />
 
@@ -65,7 +63,7 @@ The API Key acts as your authentication token, allowing CleverTap to securely co
 
 ## Configure Linked Content
 
-Once you have the API Key, set up a Linked Content configuration in CleverTap. This enables CleverTap to call the Kickbox API whenever it needs to validate an email address in real time.
+Linked Content allows CleverTap to fetch dynamic data from external APIs at message rendering time. Here, it’s used to query Kickbox and verify the validity of each user’s email before sending a message.
 
 To configure Linked Content:
 
@@ -112,10 +110,10 @@ To configure Linked Content:
       </td>
 
       <td>
-        Enter the following endpoint URL: `https://api.kickbox.com/v2/verify?email={{Profile.Email}}&apikey=API_KEY`
+        Enter the following endpoint URL: `https://api.kickbox.com/v2/verify?email={{Profile.Email}}&apikey=YOUR_API_KEY`
 
-        * The `email` parameter is dynamically mapped from CleverTap’s user profile data.
-        * The `apikey` must be replaced with the Kickbox API Key generated earlier.
+        * Replace `YOUR_API_KEY` with your actual Kickbox API key.
+        * `{{Profile.Email}}` dynamically passes each user’s email to Kickbox for validation.
       </td>
     </tr>
   </tbody>
@@ -142,6 +140,8 @@ This response confirms that the connection between CleverTap and Kickbox is acti
 4. Click **Test and Save** to complete your Linked Content configuration.
 
 <Image align="center" alt="Test and Save" border={true} caption="Test and Save" src="https://files.readme.io/f3c8d36cb3a3c519913e7ce1264832eb7b72bfda7d84994768ac5441f5834d8c-image.png" width="45% " />
+
+CleverTap can now access the Kickbox API response dynamically within campaigns.
 
 ## Configure Campaign in CleverTap
 
@@ -182,7 +182,7 @@ This logic dynamically displays different messages depending on the verification
 
 5. Click **Preview and Test** to verify that the response values from Kickbox appear as expected.
 6. Once confirmed, click **Publish** to activate the campaign. When triggered: (@Akshay: captions are missing for all the images. Please check.)
-   * If the email address is **not valid**, the user receives a notification indicating the issue.  
+   * If the email address is **not valid**, the user receives a notification indicating the issue.
 
      <Image align="center" border={true} width="35% " src="https://files.readme.io/e871eaa0751902bd255276e32501eb846d285341da8cdde3683145f027bff433-image.png" className="border" />
    * If the email address is **valid**, a confirmation message is sent.
