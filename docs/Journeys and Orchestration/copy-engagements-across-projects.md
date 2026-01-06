@@ -57,7 +57,7 @@ When you copy a campaign or journey, CleverTap recreates the structure and logic
   * Service Provider configurations
   * Webhook endpoint configurations
   * Segments that use include or exclude conditions
-  * Email attachments and CMS-managed assets
+  * Email attachments and Content Manager System (CMS) assets
   * Subscription Groups and opt-out settings
   * Multi-App or project-specific integrations
 
@@ -72,7 +72,7 @@ The copy process involves the following three key steps:
   Once access is validated, CleverTap immediately copies the campaign or journey to the destination project. The copied engagement appears as a draft.
 * **Post-Copy Validation**:  
   After creating the copy, CleverTap verifies that all required events, user properties, and event properties are present in the destination project.  
-  If any dependencies are missing, the system displays validation messages highlighting the fields that must be updated before publishing.  
+  If any dependencies are missing, the system displays validation messages highlighting the fields that must be updated before publishing.
 
   <Image align="center" border={true} caption="Validation Error Post Cloning" src="https://files.readme.io/292b6f3dad0539afe794b70342c4ad250222e9f9d4a54f6d039e1d6d15ac2b13-Post_Copy_Validation_Error.png" />
 
@@ -112,11 +112,11 @@ When you copy a journey, CleverTap duplicates its flow structure, nodes, and ent
 
   * Journeys that include engagement nodes for unsupported channels cannot be copied.
   * If required events, event properties, user properties, segments, subscription groups, or goals are missing in the destination project, CleverTap clones the journey but highlights affected nodes with validation errors. You must resolve these before publishing.
-  * **Partially-Filled Nodes**    
+  * **Partially-Filled Nodes**
 
-    When you clone a journey across projects, some nodes may appear in a partially filled state if required dependencies (such as events, segments, or user properties) are missing in the destination project.  
+    When you clone a journey across projects, some nodes may appear in a partially filled state if required dependencies (such as events, segments, or user properties) are missing in the destination project.
 
-    Partially filled nodes are visually greyed out and indicate that the node structure was copied, but its configuration is incomplete. You must review and fix the highlighted fields before publishing the journey. **Journeys with partially filled nodes cannot be published.**  
+    Partially filled nodes are visually greyed out and indicate that the node structure was copied, but its configuration is incomplete. You must review and fix the highlighted fields before publishing the journey. **Journeys with partially filled nodes cannot be published.**
 
     <Image align="center" border={true} caption="Partially-Filled Nodes in a Cloned Journey" src="https://files.readme.io/8b4546da14274d99ce447bccb831e94baf5e97968ede53b8060880276a480267-Partially-filled_Nodes.png" />
 
