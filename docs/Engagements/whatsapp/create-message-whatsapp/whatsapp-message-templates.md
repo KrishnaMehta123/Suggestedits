@@ -71,10 +71,10 @@ The templates include predefined components such as structure, placeholders, and
 To create a template using the Template Library, follow these steps:
 
 1. From the dashboard, navigate to _Account_ > _Settings_ > _Engage_ > _Channels_ > _WhatsApp_.
-2. Select the Provider Type as _WhatsApp Direct_.
-3. Select the required WABA account.
+2. Select the Provider Type as **WhatsApp Direct**.
+3. Select the required _WABA account_.
 4. Navigate to the Templates tab and click **+ Template**.
-5. In Select Template Type, click _Template Library_.
+5. In Select Template Type, click **Template Library**.
 
 After you select a template, CleverTap opens the template editor with the predefined content populated.
 
