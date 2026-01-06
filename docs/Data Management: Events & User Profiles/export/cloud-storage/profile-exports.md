@@ -292,101 +292,101 @@ Exported profile files follow this consistent column order:
     <pre>
       <code className="language-xml">
         {`<?xml version="1.0" encoding="UTF-8"?>
-                <root>
-                    <Profile>
-                        <identity>XXXXXXX</identity>
-                        <profileIdentities>
-                            <entry>
-                                <key>all_identities</key>
-                                <value>[XXXXXXX]</value>
-                            </entry>
-                            <entry>
-                                <key>clevertapId</key>
-                                <value>__g1234567890</value>
-                            </entry>
-                            <entry>
-                                <key>clevertapIds</key>
-                                <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
-                            </entry>
-                        </profileIdentities>
-                        <device>
-                            <entry>
-                                <key>token</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                        </device>
-                        <commPrefs>
-                            <entry>
-                                <key>MSG-push</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-push-all</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-email</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-sms</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-whatsapp</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>subscriptionGroups</key>
-                                <value>
-                                {
-                                      "group1": "Subscribed",
-                                      "group2": "Unsubscribed",
-                                      "group3": "Subscribed"
-                                }
-                                </value>
-                            </entry>
-                        </commPrefs>
-                        <profileProps>
-                            <entry>
-                                <key>Email</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Phone</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Name</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Gender</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>DOB</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Photo</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Favouties Game</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Designation</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Blood Group</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                        </profileProps>
-                    </Profile>
-                </root>`}
+                        <root>
+                            <Profile>
+                                <identity>XXXXXXX</identity>
+                                <profileIdentities>
+                                    <entry>
+                                        <key>all_identities</key>
+                                        <value>[XXXXXXX]</value>
+                                    </entry>
+                                    <entry>
+                                        <key>clevertapId</key>
+                                        <value>__g1234567890</value>
+                                    </entry>
+                                    <entry>
+                                        <key>clevertapIds</key>
+                                        <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
+                                    </entry>
+                                </profileIdentities>
+                                <device>
+                                    <entry>
+                                        <key>token</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                </device>
+                                <commPrefs>
+                                    <entry>
+                                        <key>MSG-push</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-push-all</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-email</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-sms</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-whatsapp</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>subscriptionGroups</key>
+                                        <value>
+                                        {
+                                              "group1": "Subscribed",
+                                              "group2": "Unsubscribed",
+                                              "group3": "Subscribed"
+                                        }
+                                        </value>
+                                    </entry>
+                                </commPrefs>
+                                <profileProps>
+                                    <entry>
+                                        <key>Email</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Phone</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Name</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Gender</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>DOB</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Photo</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Favouties Game</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Designation</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Blood Group</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                </profileProps>
+                            </Profile>
+                        </root>`}
       </code>
     </pre>
 
@@ -397,108 +397,279 @@ Exported profile files follow this consistent column order:
     <pre>
       <code className="language-xml">
         {`<?xml version="1.0" encoding="UTF-8"?>
-                <root>
-                    <Profile>
-                        <identity>XXXXXXX</identity>
-                        <profileIdentities>
-                            <entry>
-                                <key>all_identities</key>
-                                <value>[XXXXXXX]</value>
-                            </entry>
-                            <entry>
-                                <key>clevertapId</key>
-                                <value>__g1234567890</value>
-                            </entry>
-                            <entry>
-                                <key>clevertapIds</key>
-                                <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
-                            </entry>
-                        </profileIdentities>
-                        <device>
-                            <entry>
-                                <key>token</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                        </device>
-                        <commPrefs>
-                            <entry>
-                                <key>MSG-push</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-push-all</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-email</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-sms</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>MSG-whatsapp</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>subscriptionGroups</key>
-                                <value>
-                                {
-                                      "group1": "Subscribed",
-                                      "group2": "Unsubscribed",
-                                      "group3": "Subscribed"
-                                }
-                                </value>
-                            </entry>
-                        </commPrefs>
-                        <profileProps>
-                            <entry>
-                                <key>Email</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Phone</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Name</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Gender</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>DOB</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Photo</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Favouties Game</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Designation</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                            <entry>
-                                <key>Blood Group</key>
-                                <value>XXXXXXX</value>
-                            </entry>
-                        </profileProps>
-                    </Profile>
-                    </root>`}
+                        <root>
+                            <Profile>
+                                <identity>XXXXXXX</identity>
+                                <profileIdentities>
+                                    <entry>
+                                        <key>all_identities</key>
+                                        <value>[XXXXXXX]</value>
+                                    </entry>
+                                    <entry>
+                                        <key>clevertapId</key>
+                                        <value>__g1234567890</value>
+                                    </entry>
+                                    <entry>
+                                        <key>clevertapIds</key>
+                                        <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
+                                    </entry>
+                                </profileIdentities>
+                                <device>
+                                    <entry>
+                                        <key>token</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                </device>
+                                <commPrefs>
+                                    <entry>
+                                        <key>MSG-push</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-push-all</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-email</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-sms</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>MSG-whatsapp</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>subscriptionGroups</key>
+                                        <value>
+                                        {
+                                              "group1": "Subscribed",
+                                              "group2": "Unsubscribed",
+                                              "group3": "Subscribed"
+                                        }
+                                        </value>
+                                    </entry>
+                                </commPrefs>
+                                <profileProps>
+                                    <entry>
+                                        <key>Email</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Phone</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Name</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Gender</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>DOB</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Photo</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Favouties Game</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Designation</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                    <entry>
+                                        <key>Blood Group</key>
+                                        <value>XXXXXXX</value>
+                                    </entry>
+                                </profileProps>
+                            </Profile>
+                            </root>`}
       </code>
     </pre>
   </Tab>
+<Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        identity
+      </th>
 
-  <Tab title="Sample CSV Export">
+      <th>
+        all_identities
+      </th>
 
-  </Tab>
+      <th>
+        clevertapId
+      </th>
+
+      <th>
+        clevertapIds
+      </th>
+
+      <th>
+        device
+      </th>
+
+      <th>
+        MSG-push
+      </th>
+
+      <th>
+        MSG-push-all
+      </th>
+
+      <th>
+        MSG-email
+      </th>
+
+      <th>
+        MSG-sms
+      </th>
+
+      <th>
+        MSG-whatsapp
+      </th>
+
+      <th>
+        subscriptionGroups
+      </th>
+
+      <th>
+        Email
+      </th>
+
+      <th>
+        Phone
+      </th>
+
+      <th>
+        Name
+      </th>
+
+      <th>
+        Gender
+      </th>
+
+      <th>
+        DOB
+      </th>
+
+      <th>
+        Photo
+      </th>
+
+      <th>
+        Favouties Game
+      </th>
+
+      <th>
+        Designation
+      </th>
+
+      <th>
+        Blood Group
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        XXXXXXX
+      </td>
+
+      <td>
+        [ "XXXXXXX" ]
+      </td>
+
+      <td>
+        * _g1234567890
+      </td>
+
+      <td>
+        [__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]
+      </td>
+
+      <td>
+        \{"token":"XXXXXXX"}
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        \{  
+        "group1":"Subscribed",  "group2":"Unsubscribed",  
+        "group3": "Subscribed"  
+        }
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+
+      <td>
+        XXXXX
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+  <Tab title="Sample CSV Export" />
+
 </Tabs>
 
 ### Sample JSON & XML Export
