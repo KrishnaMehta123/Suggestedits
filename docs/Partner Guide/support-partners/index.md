@@ -10,4 +10,4 @@ metadata:
 next:
   description: ''
 ---
-This integration allows you to create a support ticket on your support platform from the CleverTap dashboard. Currently, CleverTap partners with [Zendesk](doc:zendesk) to create a support ticket on Zendesk from within the CleverTap dashboard. A ticket is created whenever a user provides negative feedback through the Rating In-app campaign.
+This integration allows customers to create a support ticket in their Zendesk account when a user provides negative feedback. Currently, CleverTap partners with [Zendesk](doc:zendesk) to enable support ticket creation from within the CleverTap dashboard. A ticket is created whenever a user submits negative feedback through a Rating In-app campaign.
