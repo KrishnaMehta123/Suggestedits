@@ -115,7 +115,7 @@ In this section, you will define the destination, folder organization, file form
    >
    > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
 
-![](https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png)  Set Up Sub-Folder Structure
+<Image align="center" border={true} caption="Set Up Sub-Folder Structure" src="https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png" />
 
 3. **Select File Format**  
    Select the file format for your exported data. To minimize post-processing, select the format that your downstream platforms can process most efficiently.  
@@ -145,7 +145,9 @@ In this section, you will define the destination, folder organization, file form
        >
        > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
 
-![](https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png)  Select File Format and Define File Name
+![](https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png) Select File Format and Define File Name
+
+<Image align="center" alt="Select File Format and Define File Name" border={true} caption="Select File Format and Define File Name" src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" />
 
 5. Click **Next** to choose user identifiers.
 
