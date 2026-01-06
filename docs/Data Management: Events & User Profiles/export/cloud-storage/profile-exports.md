@@ -75,10 +75,12 @@ However, if you have an existing profile exports created with the legacy flow, p
 2. Verify the new export runs successfully and produces the expected output.
 3. Update your data warehouse systems to process files from the new export location.
 
-> 📘 Migration from Legacy Exports
->
-> * Legacy exports continue to run without interruption. You can view and edit legacy exports using the Switch to legacy option.
-> * You cannot migrate legacy exports to the new flow directly. You must stop the legacy export and create a new export using the enhanced flow.
+<Callout icon="📘" theme="info">
+  #### Migration from Legacy Exports
+
+  * Legacy exports continue to run without interruption. You can view and edit legacy exports using the Switch to legacy option.
+  * You cannot migrate legacy exports to the new flow directly. You must stop the legacy export and create a new export using the enhanced flow.
+</Callout>
 
 ## Configure Storage & File Details
 
@@ -113,9 +115,11 @@ In this section, you will define the destination, folder organization, file form
        _Example_: `{{date}}/run-{{export-id}}`  
        _Preview_: `/{bucket-name}/2025-10-03/run-1761650178/file.csv.gz`\ <br />
 
-   > 📘 Note
-   >
-   > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+   <Callout icon="📘" theme="info">
+     #### Note
+
+     Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+   </Callout>
 
 <Image align="center" border={true} caption="Set Up Sub-Folder Structure" src="https://files.readme.io/a77ce23417eb8525f39e6d8cad5e0bb24e209b8b6b3e5e6ea4c0a6575606ac6e-Set_Up_Sub-Folder_Structure.png" />
 
