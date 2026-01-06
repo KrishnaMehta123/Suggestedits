@@ -10,6 +10,8 @@ metadata:
 next:
   description: ''
 ---
+<Image align="center" border={false} src="https://files.readme.io/fa95947d06d3fbcd09511b0c59fea7546fd26918e45bf5e3c23d14e8c3d1c977-Kickbox.jpeg" />
+
 <Image align="center" border={false} width="25% " src="https://files.readme.io/cb48640086300861d82b9aa9cca212d5a5522f3ad858b21865b9d750972e63c4-smashpops_logo.png" />
 
 <Image align="center" border={false} src="https://files.readme.io/8350ba1a2b9d505475589a006cdaf87dd89758e86e7b0d89f1b811f55109bf80-Swipe_pages_.jpeg" />
