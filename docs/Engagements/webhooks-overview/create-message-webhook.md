@@ -76,7 +76,7 @@ You can define the control group to compare and measure the results of your camp
 <Callout icon="📘" theme="info">
   **Note**
 
-  The control group for Webhook campaigns is enabled only if the **Webhook Delivered** event is available for your account. To enable the Webhook Delivered event, contact your Customer Success Manager.
+  The control group for Webhook campaigns is enabled only if the **Webhook Delivered** system event is available for your account. To enable the Webhook Delivered event, contact your Customer Success Manager.
 </Callout>
 
 <Image align="center" alt="Define Control Group" border={false} caption="Define Control Group" title="Control Group and Target Cap" src="https://files.readme.io/b4eb37d-Control_Group_and_Target_Cap.png" />
