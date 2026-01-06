@@ -2116,6 +2116,17 @@ next:
         </div>
     </div>
 </a>
+   <a href="https://staging.docs.user.clevertap.net/docs/kickbox">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/fa95947d06d3fbcd09511b0c59fea7546fd26918e45bf5e3c23d14e8c3d1c977-Kickbox.jpeg" alt="KickBox" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">KickBox</div>
+            <div class="category">Email Validator</div>
+        </div>
+    </div>
+</a>
     </div>
 </body>
 </html>
