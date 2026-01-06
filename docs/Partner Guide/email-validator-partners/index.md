@@ -1,5 +1,5 @@
 ---
-title: Email Validator
+title: Email Validator Partner
 excerpt: ''
 deprecated: false
 hidden: false
