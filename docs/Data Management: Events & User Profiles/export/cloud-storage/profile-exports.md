@@ -132,10 +132,12 @@ In this section, you will define the destination, folder organization, file form
 * **Parquet**: A compressed, column-based format designed for analytics and large-scale data storage.
 * **XML**: A structured format suited for systems that need nested data.
 
-> 📘 Note
->
-> * Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
-> * CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  * Parquet files are saved as .parquet by default (without additional compression). If compression is enabled, they are saved as .parquet.gz.
+  * CSV, JSON, and XML files are automatically compressed using Gzip and saved as .gz files.
+</Callout>
 
 4. **Define File Name Convention**  
    Define how each file is named inside the innermost folder created by _Sub folder structure_. If you select _Default_, CleverTap applies a standard structure. If you select _Custom_, the input field and dynamic variable picker are enabled. Ensure that required variables are included and correctly separated. The _Preview_ shows the exact filename based on your input.
