@@ -90,7 +90,30 @@ Proceed using the same editor flow described in [Create WhatsApp Template](doc:w
   Templates selected from the Template Library are already approved in Meta. Saving them in CleverTap does not trigger a new approval request. For details on Meta’s template review process, see [Template Approval Guidelines](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-review).
 </Callout>
 
-##
+## Template Library
+
+For WhatsApp Direct, Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without starting from scratch. 
+
+The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to [Meta’s documentation](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
+
+### Create a Template Using Template Library
+
+To create a template using the Template Library, follow these steps:
+
+1. From the dashboard, navigate to _Account_ > _Settings_ > _Engage_ > _Channels_ > _WhatsApp_.
+2. Select the Provider Type as _WhatsApp Direct_.
+3. Select the required WABA account.
+4. Navigate to the Templates tab and click **+ Template**.
+5. In Select Template Type, click _Template Library_.
+
+After you select a template, CleverTap opens the template editor with the predefined content populated.
+
+* The template structure, category, and components are populated based on the selected template.
+* All available language variants are displayed for selection. For language rules and requirements, refer to [Meta’s documentation on Template Languages](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/overview#languages).
+* Placeholders and formatting are populated by default.
+* You can update sample values and the Template Name for internal identification in CleverTap.
+
+Proceed using the same editor flow described in Create WhatsApp Template.
 
 ## Support for Authentication Templates
 
