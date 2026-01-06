@@ -149,9 +149,11 @@ In this section, you will define the destination, folder organization, file form
      * `{{Timestamp}}`: Epoch timestamp when the export runs.
      * `{{Instance-id}}`: Database identifier for your CleverTap account (typically 0–23).
      * `{{Date}}`: Export run date in `yyyy-mm-dd`.
-       > 📘 Note
-       >
-       > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+       <Callout icon="📘" theme="info">
+         #### Note
+
+         Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
+       </Callout>
 
 <Image align="center" alt="Select File Format and Define File Name" border={true} caption="Select File Format and Define File Name" src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" />
 
