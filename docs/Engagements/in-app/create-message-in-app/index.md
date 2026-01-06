@@ -218,7 +218,7 @@ Consider a scenario where the two In-App campaigns are triggered on the _App Lau
 
 #### Set Frequency
 
-You can define the preferred days in a week and the time frame to deliver your campaign. Select _Set frequency_ and mark the days on which you want to deliver the campaign.
+You can define the preferred days of the week and the time frame to deliver your campaign. Select _Set frequency_ and mark the days on which you want to deliver the campaign.
 
 <Image align="center" alt="Set Delivery Frequency " border={true} caption="Set Delivery Frequency" src="https://files.readme.io/9484a9e-Freq2.png" />
 
@@ -250,7 +250,7 @@ The campaign message is delivered twice in a session and once per week. The mess
 >
 > Additionally, seconds, minutes, and hours are calculated based on the total number of seconds.
 
-Suppose the gaming app wants to send a rewarding In-App message to its user after completing **every** three levels. In that case, this can be achieved by configuring the _Display when a trigger occurs_ condition, as shown in the image below. Configuring the Display rule allows you to define the Trigger conditions in which the campaign needs to be displayed to a qualified end user.
+Suppose the gaming app wants to send a rewarding In-App message to its user after completing **every** three levels. In this case, the configuration can be achieved by setting the _Display when a trigger occurs_ condition, as shown in the image below. Configuring the Display rule enables you to define the Trigger conditions under which the campaign must be displayed to a qualified end user.
 
 <Image align="center" alt="Display Trigger." border={true} caption="Display Trigger." src="https://files.readme.io/48cf7a1-display_rule.png" />
 
@@ -264,7 +264,7 @@ Alternatively, you can display the campaign **exactly** when the user completes 
 
 #### In-App Delay
 
-The campaign is triggered after a specified delay once the user qualifies. You can set the number of seconds (maximum 1200) to wait before showing the popup.
+The campaign is triggered after a specified delay once the user meets the qualification criteria. You can set the number of seconds (maximum 1200) to wait before showing the popup.
 
 <Image align="center" alt="In-App Delay" border={true} caption="In-App Delay" src="https://files.readme.io/53ef58cd405aacea6c1136cc7a5ff8f0a67abc4f4d42b998ee79882f1025b195-image.png" />
 
