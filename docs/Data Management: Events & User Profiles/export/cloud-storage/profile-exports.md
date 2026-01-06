@@ -721,7 +721,9 @@ This section outlines how to track the status of your data exports, stop them wh
 
 ### Stop Export
 
-Stop a running export by hovering over the export and clicking **Stop**. The export status on the _Export center_ page is displayed as **Stopped**.
+Stop a running export by hovering over the export and clicking **Stop**. The export status on the _Export center_ page is displayed as **Stopped**. 
+
+<Image align="center" border={true} caption="Stop Export" src="https://files.readme.io/3dd0385254e9a5a9afbe298f9772424c280a0f7c81bfe1f1e20829274a5069dd-Stop_export.png" />
 
 ### Export Status
 
