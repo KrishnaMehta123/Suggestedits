@@ -64,7 +64,9 @@ Utility templates are triggered by a user action or request. They must include d
 
 For WhatsApp Direct, Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without starting from scratch. 
 
-The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to [Meta’s documentation](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
+The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to [Meta’s documentation](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/). 
+
+<Image align="center" border={true} caption="Template Library" src="https://files.readme.io/c404fffa2a64aed639553bdd7275d6ab5becd10cd4282d26d4a6ce7dc6603095-Template_Library.png" />
 
 ### Create a Template Using Template Library
 
