@@ -285,449 +285,436 @@ Exported profile files follow this consistent column order:
 1. **User Identifiers**: Identity, All Identities, CleverTap ID based on the configuration done in Step 2.
 2. **Device Information**: Device Token
 3. **Communication Preferences**: MSG-push, MSG-push-all, MSG-email, MSG-sms, MSG-whatsapp, subscriptionGroups (if selected).
-4. **User Properties**: System and custom properties in the order you define. 
+4. **User Properties**: System and custom properties in the order you define.
 
 <Tabs>
   <Tab title="Sample JSON">
+    ```
+    {
+      "identity": "XXXXXXX",
+      "all_identities": [
+      "XXXXXXX"
+    ],
+      "clevertapId": "__g1234567890",
+      "clevertapIds": "[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]",
+      "device": {
+      "token": "XXXXXXX"
+    },
+      "MSG-push": "XXXXXXX",
+      "MSG-push-all": "XXXXXXX",
+      "MSG-email": "XXXXXXX",
+      "MSG-sms": "XXXXXXX",
+      "MSG-whatsapp": "XXXXXXX",
+      "subscriptionGroups": {
+      "group1": "Subscribed",
+      "group2": "Unsubscribed",
+      "group3": "Subscribed"
+    },
+      "Email": "XXXXXXX",
+      "Phone": "XXXXXXX",
+      "Name": "XXXXXXX",
+      "Gender": "XXXXXXX",
+      "DOB": "XXXXXXX",
+      "Photo": "XXXXXXX",
+      "Favouties Game": "XXXXXXX",
+      "Designation": "XXXXXXX",
+      "Blood Group": "XXXXXXX"
+    }
+    ```
 
-```
-{
-  "identity": "XXXXXXX",
-  "all_identities": [
-  "XXXXXXX"
-],
-  "clevertapId": "__g1234567890",
-  "clevertapIds": "[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]",
-  "device": {
-  "token": "XXXXXXX"
-},
-  "MSG-push": "XXXXXXX",
-  "MSG-push-all": "XXXXXXX",
-  "MSG-email": "XXXXXXX",
-  "MSG-sms": "XXXXXXX",
-  "MSG-whatsapp": "XXXXXXX",
-  "subscriptionGroups": {
-  "group1": "Subscribed",
-  "group2": "Unsubscribed",
-  "group3": "Subscribed"
-},
-  "Email": "XXXXXXX",
-  "Phone": "XXXXXXX",
-  "Name": "XXXXXXX",
-  "Gender": "XXXXXXX",
-  "DOB": "XXXXXXX",
-  "Photo": "XXXXXXX",
-  "Favouties Game": "XXXXXXX",
-  "Designation": "XXXXXXX",
-  "Blood Group": "XXXXXXX"
-}
-```
-
-<br />
-
-</Tab>
+    <br />
+  </Tab>
 
   <Tab title="Sample XML">
+    ```
+    <?xml version="1.0" encoding="UTF-8"?>
+    <root>
+        <Profile>
+            <identity>XXXXXXX</identity>
+            <profileIdentities>
+                <entry>
+                    <key>all_identities</key>
+                    <value>[XXXXXXX]</value>
+                </entry>
+                <entry>
+                    <key>clevertapId</key>
+                    <value>__g1234567890</value>
+                </entry>
+                <entry>
+                    <key>clevertapIds</key>
+                    <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
+                </entry>
+            </profileIdentities>
+            <device>
+                <entry>
+                    <key>token</key>
+                    <value>XXXXXXX</value>
+                </entry>
+            </device>
+            <commPrefs>
+                <entry>
+                    <key>MSG-push</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-push-all</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-email</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-sms</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>MSG-whatsapp</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>subscriptionGroups</key>
+                    <value>
+                    {
+                          "group1": "Subscribed",
+                          "group2": "Unsubscribed",
+                          "group3": "Subscribed"
+                    }
+                    </value>
+                </entry>
+            </commPrefs>
+            <profileProps>
+                <entry>
+                    <key>Email</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Phone</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Name</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Gender</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>DOB</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Photo</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Favouties Game</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Designation</key>
+                    <value>XXXXXXX</value>
+                </entry>
+                <entry>
+                    <key>Blood Group</key>
+                    <value>XXXXXXX</value>
+                </entry>
+            </profileProps>
+        </Profile>
+    </root>
+    ```
 
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <Profile>
-        <identity>XXXXXXX</identity>
-        <profileIdentities>
-            <entry>
-                <key>all_identities</key>
-                <value>[XXXXXXX]</value>
-            </entry>
-            <entry>
-                <key>clevertapId</key>
-                <value>__g1234567890</value>
-            </entry>
-            <entry>
-                <key>clevertapIds</key>
-                <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
-            </entry>
-        </profileIdentities>
-        <device>
-            <entry>
-                <key>token</key>
-                <value>XXXXXXX</value>
-            </entry>
-        </device>
-        <commPrefs>
-            <entry>
-                <key>MSG-push</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-push-all</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-email</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-sms</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>MSG-whatsapp</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>subscriptionGroups</key>
-                <value>
-                {
-                      "group1": "Subscribed",
-                      "group2": "Unsubscribed",
-                      "group3": "Subscribed"
-                }
-                </value>
-            </entry>
-        </commPrefs>
-        <profileProps>
-            <entry>
-                <key>Email</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Phone</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Name</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Gender</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>DOB</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Photo</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Favouties Game</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Designation</key>
-                <value>XXXXXXX</value>
-            </entry>
-            <entry>
-                <key>Blood Group</key>
-                <value>XXXXXXX</value>
-            </entry>
-        </profileProps>
-    </Profile>
-</root>
-```
-
-<br />
-
+    <br />
   </Tab>
 
   <Tab title="Sample CSV">
+    <Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
+      <thead>
+        <tr>
+          <th style={{ textAlign: "left" }}>
+            identity
+          </th>
 
-<Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        identity
-      </th>
+          <th style={{ textAlign: "left" }}>
+            all\_identities
+          </th>
 
-      <th>
-        all_identities
-      </th>
+          <th style={{ textAlign: "left" }}>
+            clevertapId
+          </th>
 
-      <th>
-        clevertapId
-      </th>
+          <th style={{ textAlign: "left" }}>
+            clevertapIds
+          </th>
 
-      <th>
-        clevertapIds
-      </th>
+          <th style={{ textAlign: "left" }}>
+            device
+          </th>
 
-      <th>
-        device
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-push
+          </th>
 
-      <th>
-        MSG-push
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-push-all
+          </th>
 
-      <th>
-        MSG-push-all
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-email
+          </th>
 
-      <th>
-        MSG-email
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-sms
+          </th>
 
-      <th>
-        MSG-sms
-      </th>
+          <th style={{ textAlign: "left" }}>
+            MSG-whatsapp
+          </th>
 
-      <th>
-        MSG-whatsapp
-      </th>
+          <th style={{ textAlign: "left" }}>
+            subscriptionGroups
+          </th>
 
-      <th>
-        subscriptionGroups
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Email
+          </th>
 
-      <th>
-        Email
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Phone
+          </th>
 
-      <th>
-        Phone
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Name
+          </th>
 
-      <th>
-        Name
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Gender
+          </th>
 
-      <th>
-        Gender
-      </th>
+          <th style={{ textAlign: "left" }}>
+            DOB
+          </th>
 
-      <th>
-        DOB
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Photo
+          </th>
 
-      <th>
-        Photo
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Favouties Game
+          </th>
 
-      <th>
-        Favouties Game
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Designation
+          </th>
 
-      <th>
-        Designation
-      </th>
+          <th style={{ textAlign: "left" }}>
+            Blood Group
+          </th>
+        </tr>
+      </thead>
 
-      <th>
-        Blood Group
-      </th>
-    </tr>
-  </thead>
+      <tbody>
+        <tr>
+          <td style={{ textAlign: "left" }}>
+            XXXXXXX
+          </td>
 
-  <tbody>
-    <tr>
-      <td>
-        XXXXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \[ "XXXXXXX" ]
+          </td>
 
-      <td>
-        [ "XXXXXXX" ]
-      </td>
+          <td style={{ textAlign: "left" }}>
+            * \_g1234567890
+          </td>
 
-      <td>
-        * _g1234567890
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \[\_\_g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]
+          </td>
 
-      <td>
-        [__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \{"token":"XXXXXXX"}
+          </td>
 
-      <td>
-        \{"token":"XXXXXXX"}
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            \{\
+            "group1":"Subscribed",  "group2":"Unsubscribed",\
+            "group3": "Subscribed"\
+            }
+          </td>
 
-      <td>
-        \{  
-        "group1":"Subscribed",  "group2":"Unsubscribed",  
-        "group3": "Subscribed"  
-        }
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
 
-      <td>
-        XXXXX
-      </td>
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+        </tr>
+      </tbody>
+    </Table>
 
-      <td>
-        XXXXX
-      </td>
-    </tr>
-  </tbody>
-</Table>
+    <br />
+  </Tab>
 
-<br />
+  <Tab title="Schema for Parquet File">
+    ```
+    [
+      {
+        "column_name": "identity",
+        "column_type": "VARCHAR",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      },
+      {
+        "column_name": "device",
+        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      },
+      {
+        "column_name": "commPrefs",
+        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      },
+      {
+        "column_name": "profileProps",
+        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+        "nullValue": "YES",
+        "key": null,
+        "defaultValue": null,
+        "extra": null
+      }
+    ]
+    ```
+  </Tab>
 
-</Tab>
-<Tab title="Schema for Parquet File">
+  <Tab title="Sample Parquet File">
+    <Table align={["left","left","left","left","left"]}>
+      <thead>
+        <tr>
+          <th style={{ textAlign: "left" }}>
+            identity
+          </th>
 
-```
-[
-  {
-    "column_name": "identity",
-    "column_type": "VARCHAR",
-    "nullValue": "YES",
-    "key": null,
-    "defaultValue": null,
-    "extra": null
-  },
-  {
-    "column_name": "device",
-    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
-    "nullValue": "YES",
-    "key": null,
-    "defaultValue": null,
-    "extra": null
-  },
-  {
-    "column_name": "commPrefs",
-    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
-    "nullValue": "YES",
-    "key": null,
-    "defaultValue": null,
-    "extra": null
-  },
-  {
-    "column_name": "profileProps",
-    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
-    "nullValue": "YES",
-    "key": null,
-    "defaultValue": null,
-    "extra": null
-  }
-]
-```
+          <th style={{ textAlign: "left" }}>
+            profileIdentities
+          </th>
 
-</Tab>
+          <th style={{ textAlign: "left" }}>
+            device
+          </th>
 
+          <th style={{ textAlign: "left" }}>
+            commPrefs
+          </th>
 
-<br />
+          <th style={{ textAlign: "left" }}>
+            profileProps
+          </th>
+        </tr>
+      </thead>
 
-<Tab title="First Tab">
-    Welcome to the content that you can only see inside the first Tab.
+      <tbody>
+        <tr>
+          <td style={{ textAlign: "left" }}>
+            XXXXXXX
+          </td>
 
-<Table align={["left","left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        identity
-      </th>
+          <td style={{ textAlign: "left" }}>
+            \{"all\_identities":\{"member0":"\[XXXX,XXXX]","member1":null},
+            "clevertapId":\{"member0":"XXXXXX","member1":null},
+            "clevertapIds":\{"member0":null,"member1":\["XXXXX"]}}
+          </td>
 
-      <th>
-        profileIdentities
-      </th>
+          <td style={{ textAlign: "left" }}>
+            \[\{token: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            }}]
+          </td>
 
-      <th>
-        device
-      </th>
+          <td style={{ textAlign: "left" }}>
+            \[\{
+            MSG-push: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            },
+            MSG-push-all: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            }
+            }]
+          </td>
 
-      <th>
-        commPrefs
-      </th>
+          <td style={{ textAlign: "left" }}>
+            \[\{
+            Email: \{
+            'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            },
+            Phone: \{
+            'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
+            }
+            }]
+          </td>
+        </tr>
+      </tbody>
+    </Table>
 
-      <th>
-        profileProps
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        XXXXXXX
-      </td>
-
-      <td>
-        \{"all_identities":\{"member0":"[XXXX,XXXX]","member1":null},  
-        "clevertapId":\{"member0":"XXXXXX","member1":null},  
-        "clevertapIds":\{"member0":null,"member1":["XXXXX"]}}
-      </td>
-
-      <td>
-        [\{token: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        }}]
-      </td>
-
-      <td>
-        [\{  
-        MSG-push: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        },  
-        MSG-push-all: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        }  
-        }]
-      </td>
-
-      <td>
-        [\{  
-        Email: \{  
-        'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        },  
-        Phone: \{  
-        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
-        }  
-        }]
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
-<br />
-
-</Tab>
+    <br />
+  </Tab>
 </Tabs>
 
 # Manage Export
