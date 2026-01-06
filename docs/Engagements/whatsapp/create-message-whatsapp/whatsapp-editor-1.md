@@ -24,11 +24,9 @@ Select the template from the template window and start editing it. The mandatory
 
 ## Template Library
 
-Template Library allows you to select WhatsApp templates that are already created and approved in the Meta WhatsApp Business Manager while building a WhatsApp message in CleverTap.
+For CleverTap Provider (WhatsApp Direct), Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. You can use these templates as a starting point to create a new WhatsApp template in CleverTap. Templates selected from the Template Library follow the same structure and editor behavior based on their underlying template type: **Basic**, **Limited-Time Offer**, or **Carousel**. 
 
-This option is available only for **CleverTap Provider (WhatsApp Direct)**.
-
-Templates selected from the Template Library follow the same structure and editor behavior based on their underlying template type—**Basic**, **Limited-Time Offer**, or **Carousel**.
+<Image align="center" border={true} caption="Template Library - Editor" src="https://files.readme.io/15bf76496a6c4887db69cc9edbe4072b445d0b220527e947cd6c0af764b49ef6-template_library_-_editor_.png" />
 
 ### Select a Template from Template Library
 
@@ -40,20 +38,13 @@ To select a template from the Template Library:
 4. Browse or search for the required template.
 5. Select the template.
 
-The selected template opens in the WhatsApp Editor with content populated based on the configuration defined in Meta. You can personalize placeholder values and configure supported fields using the same editor flow described in the following sections:
+The selected template opens in the WhatsApp Editor with the predefined structure and default content populated. You can update the content, personalize placeholder values, and configure supported fields using the same editor flow described in the following sections:
 
 * [Basic Templates](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#basic-templates)
 * [Limited Time Offer Template](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#limited-time-offer-template)
 * [Carousel Template](https://staging.docs.user.clevertap.net/docs/whatsapp-editor-1#carousel-template)
 
-<Callout icon="📘" theme="info">
-  **Template Approval**
-
-  Templates selected from the Template Library are already approved in the Meta dashboard. Selecting and using these templates in the WhatsApp Editor does not trigger a new approval request.  
-  For more information, refer to Meta documentation on [WhatsApp Message Templates](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/).
-</Callout>
-
-There are three types of templates available for creating campaigns:
+For more information on WhatsApp message templates and their structure, refer to the [Meta documentation](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/). There are three types of templates available for creating campaigns:
 
 * Basic Templates
 * Limited-Time Offer Templates
