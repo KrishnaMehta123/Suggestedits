@@ -106,6 +106,6 @@ The KPIs in this section help you evaluate webhook performance and identify any 
 * **Webhook Sent**: Indicates the total number of webhook requests triggered from CleverTap to the external endpoint.
 * **Webhook Failed**: Shows the number of webhook requests that failed due to issues such as endpoint failures, timeouts, or invalid payloads.
 
-<Image align="center" border={true} caption="KPIs for Promo Campaigns with Custom Rewards" src="https://files.readme.io/8715ca9cc75e88be4302d5ff0ae6d9575e601b9a2069b68111f17883c479af06-image.png" />
+<Image align="center" border={true} caption="KPIs for Promo Campaigns with Custom Rewards" src="https://files.readme.io/f46379a95de6ffe4e7c24e535e0ba03836e111ed13c628605ecdd8fc09b9a3d2-image.png" />
 
 <br />
