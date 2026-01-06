@@ -14,7 +14,7 @@ metadata:
 
 [Zendesk Support Suite](https://www.zendesk.com/support-suite/) (ZSS) allows businesses to have natural conversations with their customers through omnichannel support using email, webchat, voice, or social messaging applications. Zendesk offers a streamlined ticketing system that tracks and prioritizes interactions, allowing businesses to have a unified historical view of their customers.
 
-This integration helps you to create a support ticket using a CleverTap webhook. For example, you send out a CleverTap [Rating In-app](https://docs.clevertap.com/docs/create-message-inapp#ratings-template) campaign, and the customer provides negative feedback. CleverTap can create a support ticket on Zendesk for this feedback automatically, which allows your support team to follow up with the customer.
+This integration helps you to create a support ticket using a CleverTap webhook. For example, you send out a CleverTap [Rating In-app](https://docs.clevertap.com/docs/create-message-inapp#ratings-template) campaign, and the customer provides negative feedback. CleverTap can automatically create a support ticket on Zendesk for this feedback, allowing your support team to follow up with the customer.
 
 # Prerequisites for Integration
 
@@ -138,7 +138,7 @@ Define Target Audience for Webhook Campaign
 
 2. **Define the campaign content.**  
    a. Click **Go To Editor** to create your message.  
-   b. Select _Custom JSON Body_ and use the following example to help structure your payload and enter the desired fields:    
+   b. Select _Custom JSON Body_ and use the following example to help structure your payload and enter the desired fields:
    <br />
    ```json
 
