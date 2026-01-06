@@ -712,8 +712,6 @@ Exported profile files follow this consistent column order:
         </tr>
       </tbody>
     </Table>
-
-    <br />
   </Tab>
 </Tabs>
 
