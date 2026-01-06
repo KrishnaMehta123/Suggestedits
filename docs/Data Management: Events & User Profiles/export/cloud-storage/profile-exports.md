@@ -176,9 +176,11 @@ Choose which user identifiers to include in the export and how they appear in th
 
    <Image align="center" alt="Select Identity" border={true} caption="Select Identity" src="https://files.readme.io/1a28ae6ee64add0430f7cbc2338843b9ff4dd7633e0bf6330e72fc70f9c97f40-Select_Identity.gif" />
 
-   > 📘 **Note**
-   >
-   > The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   <Callout icon="📘" theme="info">
+     #### Note
+
+     The order in which you select identifiers sets the initial priority. You can fine-tune priority under _Values to export_ and _Fallback order_. Ensure **Phone** values use E.164 format (for example, `+15551234567`) to avoid downstream validation issues.
+   </Callout>
 
 2. **Define Export Preference**  
    Choose how identifier values are written and define priority. Drag to reorder or enter position numbers.
@@ -213,9 +215,11 @@ Configure which properties to include in the export, as well as how they are lab
 
    <Image align="center" alt="Include Device Attributes" border={true} caption="Include Device Attributes" src="https://files.readme.io/89080e6460bd1d6639605ff0ef7e5df35c8962418f704967ceeaa796c115892d-Include_Device_Attributes.png" />
 
-   > 📘 Device Token Missing
-   >
-   > If a profile has no device token, the token column appears blank.
+   <Callout icon="📘" theme="info">
+     #### Device Token Missing
+
+     If a profile has no device token, the token column appears blank.
+   </Callout>
 
 2. **Add Communication Preferences**.  
    Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups) ` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
@@ -231,23 +235,27 @@ Configure which properties to include in the export, as well as how they are lab
 
    <Image align="center" alt="Select User Properties to Export" border={true} caption="Select User Properties to Export" src="https://files.readme.io/86580e1c39e195008221ca0c636d54717b94ff958c0e31dbf96c245927e65742-Select_User_Properties_to_Export.gif" />
 
-   > 📘 Note
-   >
-   > You must select at least one user property. You cannot select the Identity and CleverTap ID configured in _Step 2: Select User Identifiers_.
+   <Callout icon="📘" theme="info">
+     #### Note
+
+     You must select at least one user property. You cannot select the Identity and CleverTap ID configured in _Step 2: Select User Identifiers_.
+   </Callout>
 
 4. **Rename & Reorder Properties**:  
    Customize the column names and the order of selected properties. Use the _Selected properties_ dropdown to rename or reorder the selected properties (for example, change `Phone` to `Phone Number`).
 
    <Image align="center" alt="Rename and Reorder User Properties to Export" border={true} caption="Rename and Reorder User Properties to Export" src="https://files.readme.io/785878c2969967e4229143efedd2b4d61283bdfc8ddea7b09da7af3186c61043-Rename__Reorder_Properties.gif" />
 
-> 📘 Points to Consider
->
-> * Renaming only affects the column header in the export; it does not change the original property name.
-> * Use the search bar to find specific fields.
-> * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
-> * If a property is missing for a profile, the column still appears but remains blank.
-> * Reordering does not impact data collection or internal storage — it only affects the file structure.
-> * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
+<Callout icon="📘" theme="info">
+  #### Points to Consider
+
+  * Renaming only affects the column header in the export; it does not change the original property name.
+  * Use the search bar to find specific fields.
+  * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
+  * If a property is missing for a profile, the column still appears but remains blank.
+  * Reordering does not impact data collection or internal storage — it only affects the file structure.
+  * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
+</Callout>
 
 5. **Manage Schema Updates**  
    Control how new properties are handled in future export creation. This option appears only when you choose to export all properties in the previous step.
@@ -256,9 +264,11 @@ Configure which properties to include in the export, as well as how they are lab
 
 <Image align="center" alt="Manage Schema Updates" border={true} caption="Manage Schema Updates" src="https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png" />
 
-> 📘 Tip
->
-> Choose _Add new properties at the end_ if you want to capture all user data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure.
+<Callout icon="📘" theme="info">
+  #### Tip
+
+  Choose _Add new properties at the end_ if you want to capture all user data automatically. Choose _Lock current schema_ if your downstream pipelines require a fixed schema structure.
+</Callout>
 
 6. Click **Preview** to review the complete data structure and click **Next** to configure the export schedule.
 
