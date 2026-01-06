@@ -12,7 +12,7 @@ next:
 ---
 # Overview
 
-[Kickbox](https://kickbox.com) enables businesses to verify email addresses in real time and ensure that only valid, deliverable emails are used in marketing communication. Integrating Kickbox with CleverTap lets you use real-time _Email verification in In-App messages_, helping you display dynamic feedback to users based on the validity of their stored email addresses.
+[Kickbox](https://kickbox.com) enables businesses to verify email addresses in real time and ensure that only valid, deliverable emails are used in marketing communication. Integrating Kickbox with CleverTap lets you verify user email addresses in real time within _In-App Messages_, helping you display dynamic feedback to users based on email validity.
 
 This integration allows you to:
 
