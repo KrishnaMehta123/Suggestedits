@@ -610,7 +610,7 @@ Exported profile files follow this consistent column order:
 <br />
 
 </Tab>
-<Tab title="Sample Parquet">
+<Tab title="Schema for Parquet File">
 
 ```
 [
@@ -650,9 +650,85 @@ Exported profile files follow this consistent column order:
 ```
 
 </Tab>
-</Tabs>
 
-### Sample JSON & XML Export
+
+<br />
+
+<Tab title="First Tab">
+    Welcome to the content that you can only see inside the first Tab.
+
+<Table align={["left","left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        identity
+      </th>
+
+      <th>
+        profileIdentities
+      </th>
+
+      <th>
+        device
+      </th>
+
+      <th>
+        commPrefs
+      </th>
+
+      <th>
+        profileProps
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        XXXXXXX
+      </td>
+
+      <td>
+        \{"all_identities":\{"member0":"[XXXX,XXXX]","member1":null},  
+        "clevertapId":\{"member0":"XXXXXX","member1":null},  
+        "clevertapIds":\{"member0":null,"member1":["XXXXX"]}}
+      </td>
+
+      <td>
+        [\{token: \{  
+        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        }}]
+      </td>
+
+      <td>
+        [\{  
+        MSG-push: \{  
+        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        },  
+        MSG-push-all: \{  
+        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        }  
+        }]
+      </td>
+
+      <td>
+        [\{  
+        Email: \{  
+        'member0': "XXXXXX",'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        },  
+        Phone: \{  
+        'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"  
+        }  
+        }]
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<br />
+
+</Tab>
+</Tabs>
 
 ```json
 {
