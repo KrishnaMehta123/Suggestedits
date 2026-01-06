@@ -145,8 +145,6 @@ In this section, you will define the destination, folder organization, file form
        >
        > Use forward slashes (/) to create sub-folders. You can include letters (a-z, A-Z), numbers (0-9), slashes (/), hyphens (-), and underscore (_).
 
-![](https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png) Select File Format and Define File Name
-
 <Image align="center" alt="Select File Format and Define File Name" border={true} caption="Select File Format and Define File Name" src="https://files.readme.io/574aeb96345953e27aee4ff4e007b9362d967255ef41270d87e97b98a5e36ca5-Define_File_Name_Convention.png" />
 
 5. Click **Next** to choose user identifiers.
@@ -246,7 +244,7 @@ Configure which properties to include in the export, as well as how they are lab
    * **Add new properties at the end**: Automatically append any new properties (system or custom) as new columns at the end of the export file. For example, if you later add a property named **loyalty_tier**. It will be included as a new column at the end of the next export and onwards.
    * **Lock current schema**: Keep the file structure fixed. New properties are excluded until manually added. For example, if you add **loyalty_tier**, it will not appear in the export until you update the schema configuration.
 
-![](https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png)  Manage Schema Updates
+<Image align="center" alt="Manage Schema Updates" border={true} caption="Manage Schema Updates" src="https://files.readme.io/e9dd4ed68144deefe6f7f3e9bdc3bd0ad7e28688f97466f55b662c6148f5ca0e-Manage_Schema_Updates.png" />
 
 > 📘 Tip
 >
