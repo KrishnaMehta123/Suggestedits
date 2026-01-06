@@ -285,12 +285,154 @@ Exported profile files follow this consistent column order:
 1. **User Identifiers**: Identity, All Identities, CleverTap ID based on the configuration done in Step 2.
 2. **Device Information**: Device Token
 3. **Communication Preferences**: MSG-push, MSG-push-all, MSG-email, MSG-sms, MSG-whatsapp, subscriptionGroups (if selected).
-4. **User Properties**: System and custom properties in the order you define.
+4. **User Properties**: System and custom properties in the order you define. 
 
 <Tabs>
-  <Tab title="First Tab">
+  <Tab title="Sample JSON">
 
-### Sample CSV Export
+```
+{
+  "identity": "XXXXXXX",
+  "all_identities": [
+  "XXXXXXX"
+],
+  "clevertapId": "__g1234567890",
+  "clevertapIds": "[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]",
+  "device": {
+  "token": "XXXXXXX"
+},
+  "MSG-push": "XXXXXXX",
+  "MSG-push-all": "XXXXXXX",
+  "MSG-email": "XXXXXXX",
+  "MSG-sms": "XXXXXXX",
+  "MSG-whatsapp": "XXXXXXX",
+  "subscriptionGroups": {
+  "group1": "Subscribed",
+  "group2": "Unsubscribed",
+  "group3": "Subscribed"
+},
+  "Email": "XXXXXXX",
+  "Phone": "XXXXXXX",
+  "Name": "XXXXXXX",
+  "Gender": "XXXXXXX",
+  "DOB": "XXXXXXX",
+  "Photo": "XXXXXXX",
+  "Favouties Game": "XXXXXXX",
+  "Designation": "XXXXXXX",
+  "Blood Group": "XXXXXXX"
+}
+```
+
+<br />
+
+</Tab>
+
+  <Tab title="Sample XML">
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Profile>
+        <identity>XXXXXXX</identity>
+        <profileIdentities>
+            <entry>
+                <key>all_identities</key>
+                <value>[XXXXXXX]</value>
+            </entry>
+            <entry>
+                <key>clevertapId</key>
+                <value>__g1234567890</value>
+            </entry>
+            <entry>
+                <key>clevertapIds</key>
+                <value>[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]</value>
+            </entry>
+        </profileIdentities>
+        <device>
+            <entry>
+                <key>token</key>
+                <value>XXXXXXX</value>
+            </entry>
+        </device>
+        <commPrefs>
+            <entry>
+                <key>MSG-push</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>MSG-push-all</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>MSG-email</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>MSG-sms</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>MSG-whatsapp</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>subscriptionGroups</key>
+                <value>
+                {
+                      "group1": "Subscribed",
+                      "group2": "Unsubscribed",
+                      "group3": "Subscribed"
+                }
+                </value>
+            </entry>
+        </commPrefs>
+        <profileProps>
+            <entry>
+                <key>Email</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Phone</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Name</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Gender</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>DOB</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Photo</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Favouties Game</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Designation</key>
+                <value>XXXXXXX</value>
+            </entry>
+            <entry>
+                <key>Blood Group</key>
+                <value>XXXXXXX</value>
+            </entry>
+        </profileProps>
+    </Profile>
+</root>
+```
+
+<br />
+
+  </Tab>
+
+  <Tab title="Sample CSV">
 
 <Table align={["left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left","left"]}>
   <thead>
@@ -465,15 +607,49 @@ Exported profile files follow this consistent column order:
   </tbody>
 </Table>
 
-  </Tab>
+<br />
 
-  <Tab title="Second Tab">
-    Here's content that's only inside the second Tab.
-  </Tab>
+</Tab>
+<Tab title="Sample Parquet">
 
-  <Tab title="Third Tab">
-    Here's content that's only inside the third Tab.
-  </Tab>
+```
+[
+  {
+    "column_name": "identity",
+    "column_type": "VARCHAR",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "device",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "commPrefs",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  },
+  {
+    "column_name": "profileProps",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+  }
+]
+```
+
+</Tab>
 </Tabs>
 
 ### Sample JSON & XML Export
