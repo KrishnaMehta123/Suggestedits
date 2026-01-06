@@ -723,8 +723,6 @@ This section outlines how to track the status of your data exports, stop them wh
 
 Stop a running export by hovering over the export and clicking **Stop**. The export status on the _Export center_ page is displayed as **Stopped**.
 
-![](https://files.readme.io/925d13fe3d81e2d20983b0beb6b1772daad788c46b3e74ee6b99ebda0e38da6e-Stop_Export.png) Stop Export (edit button should not be visible, change the screenshot @krishna)
-
 ### Export Status
 
 Each export has a status that reflects its current state in the export lifecycle as follows:
