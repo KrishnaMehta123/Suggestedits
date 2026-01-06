@@ -16,7 +16,7 @@ next:
 
 Funnels are a series of actions that a user performs in a particular order. They show users' progress through defined paths in your app and identify where they drop off between steps.
 
-A typical example is a user onboarding flow, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase flow, where a user progresses through a shopping cart experience to complete a purchase.
+A typical example is a user onboarding sequence, where a user progresses from the app's initial launch through activities such as registration, profile completion, and orientation. Another example is a purchase sequence, where a user progresses through a shopping cart experience to complete a purchase.
 
 <Callout icon="📘" theme="info">
   #### Public Beta
@@ -28,7 +28,7 @@ A typical example is a user onboarding flow, where a user progresses from the ap
 
 To analyze how users progress through a defined sequence of events, you can create a funnel using the Funnels feature in CleverTap.
 
-To create a funnel, go to _Analytics_ > _Funnels Beta_ and perform the following steps:
+To create a funnel, go to _Analytics > Funnels Beta_ and perform the following steps:
 
 * [Select Events](doc:funnels-v2#select-events)
 * [Select Segments](doc:funnels-v2#select-segments)
@@ -45,13 +45,13 @@ Select the events in the desired order to create a funnel with up to eight steps
 
 You can add multiple events (up to four) within a single funnel step using an OR condition. This is useful when the same user action can be represented by different events but should be treated as a single step in the funnel.
 
-For example, if users can log in either through a mobile app or a website, you can group the Mobile Login and Website Login events into one funnel step using OR logic. This ensures that users are counted as having completed the step regardless of the platform they used, providing a more accurate view of user progression.
+For example, if users can log in through either a mobile app or a website, you can group the Mobile Login and Website Login events into a single funnel step using OR logic. This ensures that users are counted as having completed the step regardless of the platform they used, providing a more accurate view of user progression.
 
 <Image align="center" border={true} caption="Add Multiple Events with an OR Condition" src="https://files.readme.io/43b1604c14a3fd8b3cee34c3b5563dec6f22a49b165b065382c7db87e94de83c-image.png" />
 
 ## Select Segments
 
-You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched_ > _Product Viewed_ > _Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights.
+You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, compare the funnel for _App Launched > Product Viewed > Charged_ across the _All Users_ and the _Engaged Users_ segments. The differences in conversion trends could reveal variations in your users' behavior across each segment and result in invaluable insights.
 
 You can compare funnel conversions across different user segments to analyze how behavior varies between user groups. For example, you can compare the funnel _App Launched > Product Viewed > Charged_ across the _All Users_ and _Engaged Users_ segments to understand how engagement level impacts conversion.
 
@@ -108,6 +108,8 @@ You can choose one of the following measurement modes:
 
 Selecting **Total Conversion** allows you to view the aggregate conversion count or conversion rate for the selected time range. Results are shown as a single value and are not broken down by time.
 
+For example, selecting total conversion for the funnel _App Installed > App Launched > Added to Cart_ over the last 30 days shows the overall percentage and number of users who completed the entire funnel during that period. This provides a quick snapshot of how effectively users convert from the first step to the final step, without focusing on daily or weekly fluctuations.
+
 <Image align="center" border={true} caption="Measured By Total Conversion" src="https://files.readme.io/bb8d24cbf8632ce064c529da93367986bb336bc6c72260c1b96edbc0716de140-image.png" />
 
 Use the Total Conversion option when you want to:
@@ -115,8 +117,6 @@ Use the Total Conversion option when you want to:
 * Get a high-level summary of funnel performance
 * Compare overall conversion rates across segments
 * Report a single conversion metric for a given period
-
-For example, compare the total conversion rate of _All Users_ versus _Engaged Users_ for a checkout funnel.
 
 ### Trends
 
@@ -182,7 +182,7 @@ Flexible ordering is useful when you want to measure overall funnel completion w
 
 In many user journeys, users may repeat steps, navigate back and forth between screens, or perform actions multiple times before progressing. Flexible Order ensures that these natural behaviors do not prevent users from being counted as converted, as long as they eventually complete all required steps in the correct sequence.
 
-For example, consider the following conversion flow (@bajrang, lets call it sequence everywhere because flow is a separate feature) of two users in an app:
+For example, consider the following conversion sequence of two users in an app:
 
 **User A**: App Launched > Viewed Product > Viewed Product > Added to Cart > Viewed Product > Purchased
 
@@ -211,12 +211,12 @@ The following table explains how different users are counted based on how they p
 
 Strict ordering is useful when you want to identify friction or unexpected behavior within a process.
 
-For example, consider the following Login Flow of two users in an app:
+For example, consider the following Login sequence of two users in an app:
 
 * **User A:** App Launched > Login Attempted > Login Attempted > Login Attempted > Logged In
 * **User B:** App Launched > Login Attempted > Logged In
 
-With strict order enabled, User A is not counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical flows such as authentication, onboarding, or payments. (@bajrang a funnel drop off image here will really help explain the concept)
+With strict order enabled, User A is not counted as a clean conversion, highlighting repeated login attempts and potential user friction. This makes strict order particularly valuable for diagnosing issues in critical sequences such as authentication, onboarding, or payments.
 
 # Reading Funnel Analysis
 
