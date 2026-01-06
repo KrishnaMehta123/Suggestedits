@@ -54,7 +54,7 @@ Clever.AI gives higher weight to the most recent interactions. When two channels
 
 ### Assigns and Refreshes
 
-After identifying the most relevant channel using engagement and recency signals, Clever.AI saves that channel as the user’s Preferred Channel property. This value updates automatically as users continue to engage with messages and refreshes  daily to ensure it always reflects the latest interaction trends.
+After identifying the most relevant channel using engagement and recency signals, Clever.AI saves that channel as the user’s Preferred Channel property. This value updates automatically as users continue to engage with messages and refreshes daily to ensure it always reflects the latest interaction trends.
 
 > 📘 **Optimizing Preferred Channel Through Re-Engagement**
 >
