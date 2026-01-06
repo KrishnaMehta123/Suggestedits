@@ -74,9 +74,11 @@ To link a new account:
 
 After you connect your Facebook account, configure the mapping between Facebook’s export attributes and your CleverTap user properties. Mapping ensures that the correct profile data is exported to Facebook when creating a remarketing audience. If an attribute is not mapped to a CleverTap user property, its column will be blank in the exported audience file, and the option will appear disabled in the campaign setup flow. 
 
-> 📘 Note
->
-> If the _CleverTap user properties_ are not mapped in _Settings > Channels > Remarketing > Facebook Audiences > Map Properties_, these options will appear disabled and their columns will be blank in the exported audience file.
+<Callout icon="📘" theme="info">
+  **Note**
+
+  If the _CleverTap user properties_ are not mapped in _Settings > Channels > Remarketing > Facebook Audiences > Map Properties_, these options will appear disabled and their columns will be blank in the exported audience file.
+</Callout>
 
 ### Assign User Properties
 
