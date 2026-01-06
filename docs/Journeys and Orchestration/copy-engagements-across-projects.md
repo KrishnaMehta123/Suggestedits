@@ -16,7 +16,7 @@ You can clone engagements across projects to quickly duplicate existing campaign
 
 With this feature, you can:
 
-* **Reduce Campaign Creation Time**: You can save effort by instantly copying existing campaigns and journeys across projects instead of recreating them from scratch. For example, a FinTech marketer can duplicate a validated onboarding journey from a test project to the production project within minutes.
+* **Reduce Campaign Creation Time**: You can save effort by instantly copying existing campaigns and journeys across projects instead of recreating them from scratch. For example, a marketer from a global ECommerce company can duplicate a validated onboarding journey from a test project to the production project within minutes.
 * **Work Efficiently Across Projects**:  
   Reuse high-performing engagement campaigns across multiple production projects or business units. For example, a marketer from a global ECommerce company can copy a “Welcome Offer” campaign from the India project to the UAE and Singapore projects to ensure consistent onboarding experiences.
 
@@ -74,7 +74,7 @@ The copy process involves the following three key steps:
   After creating the copy, CleverTap verifies that all required events, user properties, and event properties are present in the destination project.  
   If any dependencies are missing, the system displays validation messages highlighting the fields that must be updated before publishing.
 
-  <Image align="center" border={true} caption="Validation Error Post Cloning" src="https://files.readme.io/292b6f3dad0539afe794b70342c4ad250222e9f9d4a54f6d039e1d6d15ac2b13-Post_Copy_Validation_Error.png" />
+  <Image align="center" border={true} caption="Validation Error Post Cloning" src="https://files.readme.io/3c3f9f938fe4876b8237fecf23dca18eae58f4c8da7b6bc022dfac8f1691a6cb-Validation_Error_for_Cloned_Journey.png" />
 
 <Callout icon="📘" theme="info">
   #### Supported Channels
@@ -112,15 +112,15 @@ When you copy a journey, CleverTap duplicates its flow structure, nodes, and ent
 
   * Journeys that include engagement nodes for unsupported channels cannot be copied.
   * If required events, event properties, user properties, segments, subscription groups, or goals are missing in the destination project, CleverTap clones the journey but highlights affected nodes with validation errors. You must resolve these before publishing.
-  * **Partially-Filled Nodes**
+  * **Partially-Filled Nodes**  
 
-    When you clone a journey across projects, some nodes may appear in a partially filled state if required dependencies (such as events, segments, or user properties) are missing in the destination project.
+    When you clone a journey across projects, some nodes may appear in a **partially filled state** because the destination project does not have the same **events, user properties, or segments** used in the source journey.  
 
-    Partially filled nodes are visually greyed out and indicate that the node structure was copied, but its configuration is incomplete. You must review and fix the highlighted fields before publishing the journey. **Journeys with partially filled nodes cannot be published.**
+    These nodes are visually greyed out, indicating that the structure was copied but the configuration could not be fully resolved. You must update the missing or invalid fields before publishing. **Journeys with partially filled nodes cannot be published.**
 
-    <Image align="center" border={true} caption="Partially-Filled Nodes in a Cloned Journey" src="https://files.readme.io/8b4546da14274d99ce447bccb831e94baf5e97968ede53b8060880276a480267-Partially-filled_Nodes.png" />
+  <Image align="center" border={true} caption="Partially-Filled Nodes in a Cloned Journey" src="https://files.readme.io/8b4546da14274d99ce447bccb831e94baf5e97968ede53b8060880276a480267-Partially-filled_Nodes.png" />
 
-    <br />
+
 </Callout>
 
 The following table describes how each journey component behaves, including which parts are retained, validated, or excluded from the copy:
