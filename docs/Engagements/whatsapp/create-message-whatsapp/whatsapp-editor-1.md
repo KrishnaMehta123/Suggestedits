@@ -188,8 +188,6 @@ Thank you for choosing ACME airlines as your flying partner for the journey from
   * **Visit Website** -  The Visit Website button redirects your users to the desired web page.  
     The _Visit Website_ CTA button supports static and dynamic redirection URLs. Static Redirection URLs are defined in the templates and cannot be changed in the campaigns. WhatsApp allows users to use dynamic links that can be customized while creating the campaigns. The URL prefix must be defined during template creation, and the URL suffix can be customized during campaign creation.
 
-<br />
-
 # Quick Reply
 
 You can add up to ten custom quick reply buttons and a Marketing opt-out button. It is recommended to add a marketing opt-out button to raise your reputation with WhatsApp.  Use _Body_ to give clear instructions for Opt-outs, such as 'Tap Stop to Opt-out.' The Marketing opt-out button does not automatically unsubscribe users.  You must configure one of the [unsubscription flows](https://docs.clevertap.com/docs/whatsapp-subscription-management) based on incoming keywords.
