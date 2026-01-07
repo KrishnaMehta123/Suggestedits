@@ -47,7 +47,7 @@ In addition to Drag-and-Drop templates, the Basic Templates library also include
 
 You can filter Basic Templates to narrow down and view templates based on the following: _Industry_, _Goal_, or _Type_. This makes it easier to browse the template library and quickly find the most relevant template for your campaign.
 
-<Image align="center" border={true} caption="Filter Basic Templates" src="https://files.readme.io/88b6208372ea2fd0a4dc1ee987892256d32121fd0297e1c59db354dac9ba998e-Filter_Bssic_Templates.gif" />
+<Image align="center" border={true} caption="Filter Basic Templates" src="https://files.readme.io/1a47deacc49ac2ac63e91f5f723362694b4774b4e96d2e09cdb6d5a6c142e4e9-Filter_Bssic_Templates.gif" />
 
 ## Rich Media Template
 
