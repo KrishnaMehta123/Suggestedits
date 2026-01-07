@@ -1,6 +1,5 @@
 ---
 title: Nexla
-excerpt: '@shreyans to conform the catagory'
 deprecated: false
 hidden: false
 metadata:
