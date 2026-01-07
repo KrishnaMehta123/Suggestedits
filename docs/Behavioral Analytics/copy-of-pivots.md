@@ -1,5 +1,5 @@
 ---
-title: Copy of Pivots
+title: Pivots 2.0
 excerpt: Understand what are Pivots in CleverTap.
 deprecated: false
 hidden: false
@@ -8,182 +8,248 @@ metadata:
 ---
 # Overview
 
-Pivots provide the capability to derive significance and insights from your user data. The pivot analysis tool summarizes your data with the help of tables and other data visualizations. When dealing with a large volume of data, this useful tool helps marketers create incisive summaries and view custom reports to glean user insights.
+Pivots enables you to explore, compare, and analyze user behavior across multiple dimensions using flexible, interactive tables and visualizations. It helps you break down large volumes of event data into meaningful patterns, allowing you to answer what is happening, where it is happening, and why it is happening.
 
-A pivot analysis helps answer questions, such as:
+With Pivotd, you can quickly identify trends, outliers, and correlations across user segments, properties, and time without writing complex queries.
 
-* Which categories of my products are selling best, and at what time of the day?
-* In which city are my sales for Nike shoes the lowest?
-* How many minutes of sports content do my platinum customers consume each day of the week?
+# Key Benefits
 
-# Pivot Video Tutorial
+Pivots help you answer questions such as:
 
-Discover the video tutorial for the Pivot overview and a sample use case.
+* Which products, categories, or content types perform best?
+* How does user behavior vary across cities, devices, or languages?
+* Which user segments generate the highest revenue or engagement?
+* At what times or days does a specific action peak or drop?
 
-<HTMLBlock>{`
-<div style=" position: relative; padding-bottom: 56.25%; height: 0; border-radius: 0; box-shadow: 0 15px 40px rgba(63,58,79,.3); overflow: hidden; min-width:320px"><iframe src="https://clevertap.portal.trainn.co/share/U5SSOkOXuV6Cg17hr43l7w/embed?autoplay=false" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay; fullscreen" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-`}</HTMLBlock>
+By slicing and aggregating event data across dimensions, Pivots transform raw events into actionable insights.
 
-# Getting Started with Pivots
+# Getting Started
 
-Let's start exploring Pivots together. To do so:
+To create a pivot analysis:
 
-## Pick Your Event
+1. Navigate to _Analytics > Pivots_
+2. Select the **event** you want to analyze
+3. Apply **filters and segments** (optional)
+4. Choose **properties to pivot on**
+5. Select a **measurement** and **visualization**
+6. Run the analysis to explore insights
 
-To pick your event:
+## Select an Event
 
-1. Navigate to *Analytics* > *Pivots*.
-2. Select the event you want to analyze. 
+Start by selecting the event you want to analyze. This event forms the foundation of your pivot analysis.
 
-This event forms the basis of your analytics that can be coupled with its properties along with all the information CleverTap has for your users.
+The selected event determines:
 
-<Image title="Select Pivot Options and Click Calculate Button" alt={1189} align="center" border={true} src="https://files.readme.io/f2319fd-Pivots_select_event.png">
-  Select Pivot Calculation Options
-</Image>
+* The dataset being analyzed
+* The event properties available for pivoting
+* The measurements that can be applied
 
-## Select Your Segment
+For example:
 
-After you have selected the event to analyze, decide if you want to analyze this event for all your users or for a particular segment of users. This feature is useful as the behavior for users varies across segments. 
+* `Product Viewed`
+* `Video Watched`
+* `Charged`
+* `App Launched`
 
-> 👍 Content Consumption Example
->
-> The content consumption for a new user segment will be very different from the consumption of people who have already consumed at least 50 hours of content.
+## Apply Segments (Optional)
 
-<Image title="Create Segment for Pivot Analysis" alt={870} align="center" border={true} src="https://files.readme.io/9ed3243-Pivots_segments_create.png">
-  Select Segment
-</Image>
+You can restrict the pivot analysis to a specific user segment or compare behavior across segments.
 
-## Picking the Properties to Pivot On
+Segmenting helps you understand how different groups of users behave differently for the same event.
 
-Select the properties to analyze, such as:
+**Example use cases:**
 
-* Event properties
-* User properties
-* Geography
-* Technographics
-* App fields 
+* Compare engagement between **New Users** and **Returning Users**
+* Analyze purchases by **High-Value Users**
+* Understand content consumption for **Subscribed vs Free users**
 
-<Image title="Pick the Properties to Pivot On" alt={866} align="center" border={true} src="https://files.readme.io/e943721-Picking_the_Properties_to_Pivot_On.png">
-  Select Pivot On Properties
-</Image>
+## Choose Properties to Pivot On
 
-## Aggregating Your Query by Count vs. Conversion Property
+Pivots allow you to analyze events across multiple dimensions. You can pivot on:
 
-You can group your data by the occurrences of an event which are the number of times this event has happened. 
+* **Event properties** (for example, product name, content category)
+* **User profile properties** (for example, language, customer type)
+* **Geographic properties** (for example, city, country)
+* **Technographic properties** (for example, device type, OS)
+* **App fields** (for example, app version)
 
-If the event you are analyzing is your conversion event and your conversion property is an integer, you can group your data by the sum of this property. 
+These properties can be used as:
 
-> 👍 Flight Aggregator Example
->
-> A flight aggregator can view data by the count of flight booked event or by the sum of the amount property.
+* **Rows**
+* **Columns**
+* **Axes** in visualizations
+
+You can mix and match properties to explore different analytical angles.
+
+## Select Measurement
+
+The measurement defines **what you want to quantify** for the selected event.
+
+Pivots 2.0 supports two primary measurement types:
+
+### Event Count
+
+Counts how many times the selected event occurred.
+
+**Use this when you want to:**
+
+* Measure frequency or volume
+* Compare activity levels across dimensions
+
+**Example:**
+Number of `Product Viewed` events per category per day
+
+### Sum of Property
+
+Aggregates the total value of a numeric event property.
+
+This is useful when the event represents a value-bearing action.
+
+**Example use cases:**
+
+* Total revenue using the `amount` property of the `Charged` event
+* Total watch time using `video_duration` for `Video Watched`
 
 ## Understanding the Pivot Analysis
 
-The pivot analysis consists of:
+A pivot analysis consists of the following components:
 
-* Pool of available properties: This is a list of properties you selected while creating the pivot table. You can use these properties in any combination to slice and dice your data to derive insights. These properties could act as rows or columns in the tabular view and as cartesian axes in the graphical view.
-* Row(s): The properties you select as rows in your tabular views.
-* Column(s): The properties you select as columns in your tabular views.
-* Data visualizations: You can select what visualization you want to see the data you have sliced and diced in.
+### Available Properties
 
-# Example Analysis
+The pool of properties you selected during setup. You can dynamically assign these properties as rows, columns, or chart axes to explore different views of the same data.
 
-For example with a video application, we can use the pivot analysis to understand its output and content consumption patterns in our platform. To do so, we have selected the event *video watched* which is raised after someone is done watching a video.
+### Rows and Columns
 
-For this pivot analysis, we select the following properties:
+Rows and columns define how data is grouped in tabular views.
 
-* Hour of the day
-* Day of the week
-* Video name
+For example:
 
-We also pick our measurement property as *video duration watched* since it is critical for us to measure video performance, not just by the number of views, but also by the duration of content consumption.
+* Rows: Day of Week
+* Columns: Product Category
 
-Now, we explain each view and tell you what insights can be drawn for each view supported by our pivot analysis.
+This structure allows you to compare values across dimensions at a glance.
 
-## Table
+### Visualizations
 
-This is best for getting a quick overview of selected data.
+Pivots 2.0 supports multiple visualization types to help you interpret data effectively.
 
-<Image title="View Pivot Results in Table Form" alt={1197} align="center" border={true} src="https://files.readme.io/6f678ed-Pivots_result_table.png">
-  View Pivot Table
-</Image>
+You can switch between views without changing the underlying query.
 
-## Table Heat Map
+## Supported Visualizations and When to Use Them
 
-This is best for analyzing highest contributor in a given data set. 
+### Table
 
-For example, if your row is day of the week and your column is video name, this heat map tells you which video was played the most and on which day of the week it happened.
+Best for getting a precise, detailed overview of the data.
 
-<Image title="View Pivot Results in Table Heat Map Form" alt={1194} align="center" border={true} src="https://files.readme.io/5258a1a-Pivots_heat_map.png">
-  View Pivot Table - Heat Map
-</Image>
+Use tables when you want exact values or need to export results.
 
-## Columnar Heatmap
+### Heatmaps
 
-This is best for analyzing outliers in any column. 
+Heatmaps highlight intensity using color, making it easy to spot patterns.
 
-For example, if your row is day of the week and your column is video name, this heat map tells you which video was played the most on each day of the week.
+#### Table Heatmap
 
-<Image title="View Pivot Results in Table Columnar Heatmap Form" alt={1193} align="center" border={true} src="https://files.readme.io/631d4e0-Pivots_heat_map_columnar.png">
-  View Pivot Table - Columnar Heatmap
-</Image>
+Best for identifying highest contributors in the dataset.
 
-## Row-wise Heatmap
+**Insight example:**
+Which product-category and day combinations generate the most revenue?
 
-This is best for analyzing outliers in any row. 
+#### Column-wise Heatmap
 
-For example, if your row is day of the week and and your column is video name, this heat map tells you on which day of the week each video has performed well. *Game of Thrones* performs best on Sundays whereas *Friends* works best on Saturdays.
+Best for identifying outliers within each column.
 
-<Image title="View Pivot Results in Table Row-wise Heatmap Form" alt={1199} align="center" border={true} src="https://files.readme.io/ebb44ce-Pivots_heat_map_row.png">
-  View Pivot Table - Row-wise Heatmap
-</Image>
+**Insight example:**
+Which product performs best on each day of the week?
 
-> 📘 Zero Event Occurrences
->
-> In case of zero event occurrences for a given time, the Table, Columnar, and Row-wise heatmaps indicate whitespaces.
+#### Row-wise Heatmap
 
-## Stacked Bar Chart
+Best for identifying outliers within each row.
 
-This is best best for visualizing the change in performance of one variable over time when compared to several other variables. 
+**Insight example:**
+Which day performs best for each content title?
 
-For example, if your row is day of the week and your column is video name, you might see that the performance of *Game of Thrones* peaks around Sunday/Monday. *Game of Thrones* is a lot lower for the rest of the week as compared to the consumption of *Friends*, *Prison Break*, and *Breaking Bad* which are all consistent across the week.
+### Bar Chart
 
-<Image title="View Pivot Results in Stacked Bar Chart Form" alt={1192} align="center" border={true} src="https://files.readme.io/29a3b30-Pivots_heat_map_stacked_bar.png">
-  View Pivot - Stacked Bar Chart
-</Image>
+Best for comparing categorical data.
 
-## Bar Chart
+**Use this to:**
+Compare performance across categories such as products, regions, or languages.
 
-This is best for visualizing categorical or qualitative data over time. 
+### Stacked Bar Chart
 
-For example, if your row is day of the week and your column is video name, you can see how the consumption of *Game of Thrones* has been over the week.
+Best for comparing how multiple variables contribute to a total over time or across categories.
 
-<Image title="View Pivot Results in Bar Chart Form" alt={1198} align="center" border={true} src="https://files.readme.io/23868d6-Pivots_heat_map_bar_chart.png">
-  View Pivot - Bar Chart
-</Image>
+**Use this to:**
+Understand composition changes across dimensions.
 
-## Line Chart
+### Line Chart
 
-This is best for visualizing the change of variables over time. Since all lines are plotted on the same graph, this visualization helps you determine the relationship between different variables.
+Best for analyzing trends over time.
 
-For example, if your row is day of the week and your column is video name, you might see that *Breaking Bad* and *Prison Break* follow the same trend across the week. This implies that the demand for these videos is consistent.
+**Use this to:**
+Identify correlations or similar behavioral patterns between variables.
 
-<Image title="View Pivot Results in Line Chart Form" alt={1198} align="center" border={true} src="https://files.readme.io/bcf83e5-Pivots_heat_map_line_chart.png">
-  View Pivot - Line Chart
-</Image>
+### Area Chart
 
-## Area Chart
+Best for understanding part-to-whole relationships over time.
 
-While similar to line charts, this is better for analyzing part to whole relationships. 
+**Use this to:**
+Analyze contribution of individual categories to overall performance.
 
-For example, if your row is day of the week and your column is show name, the area chart will not only show you the trend variation of *Game of Thrones* over the week, but it will also show you the contribution of *Game of Thrones* to your total video views as compared to the rest of your titles.
+## Example Use Case: Content Consumption Analysis
 
-<Image title="View Pivot Results in Area Chart Form" alt={1192} align="center" border={true} src="https://files.readme.io/49659b9-Pivots_heat_map_area_chart.png">
-  View Pivot - Area Chart
-</Image>
+A video streaming app wants to analyze content performance beyond just views.
 
-> 📘 Note
->
-> We sample your data to ensure that results load faster, so you might see a minor difference in counts when you compare these numbers to the numbers on the rest of your dashboard. 
->
-> This sampling has been optimized for accuracy and your numbers will be directionally correct. Sampling kicks in if the query contains more than 100,000 events, and the sample rate beyond 100,000 events is 10%.
+**Setup:**
+
+* Event: `Video Watched`
+* Measurement: Sum of `video_duration`
+* Rows: Day of Week
+* Columns: Video Name
+
+**Insights derived:**
+
+* Identify which shows drive the most watch time
+* Understand viewing patterns across weekdays
+* Optimize content promotion and scheduling
+
+## Data Sampling
+
+To ensure fast query performance, CleverTap applies intelligent sampling when analyzing very large datasets.
+
+* Sampling is applied when queries exceed **100,000 events**
+* Sample rate beyond this threshold is **10%**
+* Results remain **directionally accurate**
+
+Minor differences may appear when comparing pivot data with unsampled dashboards.
+
+## When to Use Pivots vs Funnels
+
+| Use Case                           | Use Pivots | Use Funnels |
+| ---------------------------------- | ---------- | ----------- |
+| Explore trends and distributions   | ✅          |             |
+| Compare dimensions and segments    | ✅          |             |
+| Analyze step-by-step user journeys |            | ✅           |
+| Identify drop-offs between steps   |            | ✅           |
+
+***
+
+## Summary
+
+Pivots 2.0 empowers you to:
+
+* Slice user behavior across multiple dimensions
+* Visualize complex datasets with clarity
+* Identify trends, patterns, and anomalies
+* Make informed, data-driven decisions quickly
+
+By combining flexibility, performance, and powerful visualizations, Pivots 2.0 makes exploratory analytics accessible to every marketer.
+
+***
+
+If you want, next I can:
+
+* Create **migration notes** from old Pivots → Pivots 2.0
+* Write **inline UI tooltips** for Pivots
+* Add **FAQs or troubleshooting**
+* Tighten this for **ReadMe-style publishing**
