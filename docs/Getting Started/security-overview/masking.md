@@ -106,15 +106,12 @@ Once the properties are masked, they are queued for processing. Within a few min
 <Callout icon="📘" theme="info">
   **Download Restriction on PII Values**
 
-  CSV downloads respect masked PII access permissions.
+  CSV downloads follow encrypted PII access permissions. Admins and users with encrypted PII access via custom roles can view the actual values.
 
-  For system user properties, users without masked PII access cannot select masked fields in the CSV download confirmation pop-up.
+  For users without encrypted PII access, certain fields are restricted during export, as follows:
 
-  For custom user properties, users without masked PII access receive the column in the CSV with blank values. Admin users and users with masked PII access via custom roles receive actual values.   
-
-
-
-  (@Sanskriti, is the last statement right? Do the admins get actual values in the report?)
+  * **System user properties:** Encrypted fields are unavailable for selection in the CSV download confirmation pop-up.
+  * **Custom user properties:** Encrypted columns are included in the CSV, but the values appear as blank.
 </Callout>
 
 # Unmask Event Data
