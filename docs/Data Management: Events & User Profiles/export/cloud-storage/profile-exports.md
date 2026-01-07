@@ -225,7 +225,7 @@ Configure which properties to include in the export, as well as how they are lab
 2. **Add Communication Preferences**.  
    Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups)` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
 
-   <Image align="center" alt="Export Communication Preferences" border={true} caption="Export Communication Preferences" src="https://files.readme.io/c494bcc5ab5779790e9c9a66457dd15674f31428997d95de5ddcbebf1ae7380c-Export_Communication_Preferences.gif" />
+   <Image align="center" border={true} caption="Export Communication Preferences" src="https://files.readme.io/ad426b7e1132a4d3186a695cb0c5f1134cc1b3255de2a72ba2b6a70f556477ef-profile_export_1.png" />
 
 3. **Select User Properties**  
    Choose which profile properties to export:
