@@ -168,31 +168,29 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## January
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="Data&Integrations" id="promo-campaign-analytics">
+<div class="release-note article" data-category="data-and-integrations" id="profile-export-for-cloud-storage">
   <div class="release-note-header">
     <div class="anchor-link-icon">
-      <a href="#promo-campaign-analytics"><i class="fa-light fa-anchor"></i></a>
+      <a href="#profile-export-for-cloud-storage"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="Promotions" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
     </div>
-    <h3 class="release-note-heading">Promo Campaign Analytics</h3>
+    <h3 class="release-note-heading">Profile Export for Cloud Storage</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
-    <div class="badge beta">BETA</div> 
   </div>
   <div class="release-note-body">
-    <p>Introducing Promo Campaign Analytics, a powerful new way to measure the performance of your Promo Campaigns across rewards, engagement, and errors. This helps you evaluate campaign effectiveness, identify high-performing reward types, and optimize ROI through improved visibility into user engagement and system performance. Promo Analytics provides you with complete visibility into what’s working, what’s failing, and why, enabling you to optimize campaign performance with confidence.</p>
-    <p>With Promo Campaign Analytics, you can:</p>
+    <p>Introducing Profile Export for S3, GCP, and Azure, an upgrade that improves how profile data is exported from CleverTap to cloud storage destinations. This enhancement provides you with greater control over the export structure and schema, helping to keep data lakes organized and downstream pipelines stable.</p>
+    <p>With this enhancement, you can:</p>
     <p>
       <ul>
-        <li>Track Rewards Distributed, Points/Coupons/Vouchers issued, and Redemptions through clear KPIs.</li>
-        <li>Visualize time-based trends using interactive charts aggregated by day, week, or month.</li>
-        <li>View reward-type–specific metrics for Loyalty Points, Coupons (Discount & Cashback), Partner Vouchers, and Custom Rewards.</li>
-        <li>Identify errors in reward distributions across all reward types.</li>
-<li>Understand failures caused by limits, configuration issues, exhausted codes, or system errors.</li>
+        <li>Keep exports organized and easy to consume with custom subfolders, your own file naming, and Parquet output (with no additional compression), ensuring clean storage and predictable ingestion.</li>
+        <li>Match exports to your audience and identity strategy with flexible identifier selection (Email, Phone, CleverTap ID, or a custom identity property). You can also include Communication Preferences, with the option to export Subscription Groups alongside other preference flags, reducing downstream remapping and errors.</li>
+        <li>Protect downstream pipelines from unexpected changes by selecting the exact profile properties you want to export, renaming and ordering them for consistency, and enabling schema locking to prevent newly added properties from disrupting existing flows.</li>
+        <li>Automate daily delivery with recurring exports (every 24 hours) and choose whether each run is incremental or a full dataset refresh, based on the requirements of your team.</li>
       </ul>
     </p>
-    <p>For more information, refer to <a href=" https://docs.clevertap.com/docs/promo-campaign-stats" target="_blank">Promo Campaign Analytics</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/profile-exports" target="_blank">Profile Exports.</a>.</p>
 </div>
   <hr/>
 </div>
