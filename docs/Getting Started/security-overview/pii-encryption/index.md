@@ -148,12 +148,12 @@ CleverTap queues the selected fields for encryption and displays the encrypted f
 <Callout icon="📘" theme="info">
   **Download Restriction on PII Values**
 
-  CSV downloads respect encrypted PII access permissions.
+  CSV downloads follow encrypted PII access permissions. Admins and users with encrypted PII access via custom roles can view the actual values.
 
-  For system user properties, users without encrypted PII access cannot select encrypted fields in the CSV download confirmation pop-up.
+  For users without encrypted PII access, certain fields are restricted during export, as follows:
 
-  For custom user properties, users without encrypted PII access receive the column in the CSV with blank values.   
-  Admin users and users with encrypted PII access via custom roles receive actual values. (@Sanskriti, is it correct?)
+  * **System user properties:** Encrypted fields are unavailable for selection in the CSV download confirmation pop-up.
+  * **Custom user properties:** Encrypted columns are included in the CSV, but the values appear as blank.
 </Callout>
 
 # Supported Entities
