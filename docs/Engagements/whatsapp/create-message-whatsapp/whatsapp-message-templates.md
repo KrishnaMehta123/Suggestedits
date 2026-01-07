@@ -62,9 +62,9 @@ Utility templates are triggered by a user action or request. They must include d
 
 ## Template Library
 
-For WhatsApp Direct, Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without starting from scratch. 
+For WhatsApp Direct, Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without starting from scratch.
 
-The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to [Meta’s documentation](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/). 
+The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to <Anchor label="Meta’s documentation" target="_blank" href="https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-library">Meta’s documentation</Anchor>.
 
 <Image align="center" border={true} caption="Template Library" src="https://files.readme.io/c404fffa2a64aed639553bdd7275d6ab5becd10cd4282d26d4a6ce7dc6603095-Template_Library.png" />
 
@@ -74,10 +74,10 @@ To create a template using the Template Library, follow these steps:
 
 1. From the dashboard, navigate to _Account_ > _Settings_ > _Engage_ > _Channels_ > _WhatsApp_.
 2. Select the Provider Type as **WhatsApp Direct**.
-3. Select the required _WABA account_. 
+3. Select the required _WABA account_.
 
    <Image align="center" border={true} caption="Template Library for WhatsApp Direct" src="https://files.readme.io/91937bfeeb0acabce941f938bfcd1ce1a37fb6aab529899177d1d23819ed9cd4-template_library_1.png" />
-4. Navigate to the Templates tab and click **+ Template**. 
+4. Navigate to the Templates tab and click **+ Template**.
 
    <Image align="center" border={true} caption="Add Template" src="https://files.readme.io/312b97383f56970489d51c0f1805d081feac7f6875fb3ab6983572dc0d01b44c-template_library_3.png" />
 5. In Select Template Type, click **Template Library**.
