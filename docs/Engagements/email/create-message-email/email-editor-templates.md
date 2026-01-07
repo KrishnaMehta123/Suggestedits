@@ -40,12 +40,10 @@ Basic Templates provide a library of pre-built email templates that help you qui
 
 Basic Templates include the following template types:
 
-* **Email with rich media**: Create a rich message with text and images using the built-in email editor. You can also use the Source mode to type or paste in your HTML code. You can also add personalization by using the **@** and **\{\{}}** icons. For more information about personalization, refer to [Personalize Message](doc:personalize-message-email).
-* **Email with drag-and-drop**: These include out-of-the-box drag-and-drop templates with ready-made layouts and content blocks. You can start with these templates or create a custom one, and visually customize it by adding, removing, or rearranging elements such as text, images, buttons, and dividers.
+* **Email with rich media**: Rich Media templates include [out-of-the-box templates](doc:ootb-email.templates) and also allow you to [build templates from scratch](). These templates are designed for visually rich emails, supporting layouts optimized for images, text, and call-to-action elements. You can customize the layout and content to suit your campaign requirements. You can also add personalization by using the **@** and **\{\{}}** icons. For more information about personalization, refer to [Personalize Message](doc:personalize-message-email).
+* **Email with drag-and-drop**: These include out-of-the-box drag-and-drop templates with ready-made layouts. You can start with an existing template or [create one from scratch](), and visually customize it by adding, removing, or rearranging elements such as text, images, buttons, and dividers. Examples of out-of-the-box drag-and-drop templates include Welcome emails, Promotional or offer-based emails, and so on.
 
-In addition to Drag-and-Drop templates, the Basic Templates library also includes out-of-the-box HTML and AMP templates. You can use them as-is or customize them to align with your brand and messaging. For more information about these templates, refer to [Email Templates](doc:ootb-email.templates).
-
-You can filter Basic Templates to narrow down and view templates based on the following: _Industry_, _Goal_, or _Type_. This makes it easier to browse the template library and quickly find the most relevant template for your campaign.
+You can filter Basic Templates to narrow down and view templates based on the following: _Industry_ (for example, Food Delivery), _Goal_ (for example, Referral), or _Type_ (for example, HTML). This makes it easier to browse the template library and quickly find the most relevant template for your campaign.
 
 <Image align="center" border={true} caption="Filter Basic Templates" src="https://files.readme.io/1a47deacc49ac2ac63e91f5f723362694b4774b4e96d2e09cdb6d5a6c142e4e9-Filter_Bssic_Templates.gif" />
 
