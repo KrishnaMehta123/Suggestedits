@@ -20,7 +20,7 @@ From the _What_ section in the Email builder, click **Go to Editor**.
 
 The Email Editor tool displays.
 
-<Image align="center" alt={1424} border={true} caption="Email Editor" title="Email Editor Templates" src="https://files.readme.io/da4f737acde7baa5e43828c9c1d748a4a5cd3124a846930ec1abcc0e5a187d97-Email_Editor.png" />
+<Image align="center" alt={1424} border={true} caption="Email Editor" title="Email Editor Templates" src="https://files.readme.io/833c51a2808e19d7173f5e00695aa3f1d2f266062e963355d1a0412082c13514-Email_Editor.png" />
 
 # Template Types
 
@@ -168,12 +168,12 @@ Display conditions determine when and under what circumstances certain content i
 1. Click the row to which you want to add the display condition.
 2. Click **Add Condition** under the **DYNAMIC CONTENT** section. The **Add display conditions** pop-up window appears. The following columns appear.
 
-| Column Name                                   | Description                                                                                                                                                                           |
-| :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Name                                          | Add your condition name.                                                                                                                                                              |
-| Description                                   | Add your description for the condition.                                                                                                                                               |
-| Add display condition before the selected row | Add a criteria that is checked before the selected row from the email is rendered. This feature ensures that particular rows are shown only to recipients who meet specific criteria. |
-| Add display condition after the selected row  | Add a criteria that is checked after the selected row from the email is rendered. This feature controls the visibility of the content that follows the selected row.                  |
+| Column Name                                   | Description                                                                                                                                                                            |
+| :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                          | Add your condition name.                                                                                                                                                               |
+| Description                                   | Add your description for the condition.                                                                                                                                                |
+| Add display condition before the selected row | Add a criteria that is checked before the selected row from the email is rendered. This feature ensures that specific rows are displayed only to recipients who meet certain criteria. |
+| Add display condition after the selected row  | Add a criteria that is checked after the selected row from the email is rendered. This feature controls the visibility of the content that follows the selected row.                   |
 
 <Image align="center" alt="Email Editor Display Condition" border={true} src="https://files.readme.io/bb8dfbc-Email_Editor_-_Liquid_Tags.gif" className="border" />
 
