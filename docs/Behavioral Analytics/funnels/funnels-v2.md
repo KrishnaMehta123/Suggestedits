@@ -1,5 +1,5 @@
 ---
-title: Funnels Beta
+title: Funnels 2.0
 excerpt: >-
   Learn how to use the new and improved visualization using Funnels to gain
   deeper insights into your data and make more informed decisions.
