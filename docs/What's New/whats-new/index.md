@@ -174,7 +174,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
       <a href="#profile-export-for-cloud-storage"><i class="fa-light fa-anchor"></i></a>
     </div>
     <div>
-      <img src="https://files.readme.io/c65a9fbb8af21c3a8f01c546faa2089d52a3bf54c2efecc740879b1ea681242e-Property_1Selected.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
+      <img src="https://files.readme.io/bf86621cc6be2995b3a9323ccfcaae0e172d6da76b2bfedc7983c5be75eb179d-Partners_Icon_Outlined.svg" alt="data-and-integrations" class="release-note-heading-icon"/>
     </div>
     <h3 class="release-note-heading">Profile Export for Cloud Storage</h3>
     <div class="badge enhancement">ENHANCEMENT</div>
@@ -190,7 +190,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
         <li>Automate daily delivery with recurring exports (every 24 hours) and choose whether each run is incremental or a full dataset refresh, based on the requirements of your team.</li>
       </ul>
     </p>
-    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/profile-exports" target="_blank">Profile Exports.</a>.</p>
+    <p>For more information, refer to <a href="https://docs.clevertap.com/docs/profile-exports" target="_blank">Profile Exports.</a></p>
 </div>
   <hr/>
 </div>
