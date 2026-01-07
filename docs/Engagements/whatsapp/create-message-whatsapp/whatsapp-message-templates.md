@@ -85,9 +85,9 @@ To create a template using the Template Library, follow these steps:
 After you select a template, CleverTap opens the template editor with the predefined content populated.
 
 * The template structure, category, and components are populated based on the selected template.
-* All available language variants are displayed for selection. For language rules and requirements, refer to [Meta’s documentation on Template Languages](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/overview#languages).
+* All available language variants are displayed for selection.
 * Placeholders and formatting are populated by default.
-* You can update sample values and the Template Name for internal identification in CleverTap.
+* You can update sample values and the Template Name in CleverTap.
 
 Proceed using the same editor flow described in Create WhatsApp Template.
 
