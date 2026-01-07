@@ -20,7 +20,7 @@ From the _What_ section in the Email builder, click **Go to Editor**.
 
 The Email Editor tool displays.
 
-<Image align="center" alt={1424} border={true} caption="Email Editor" title="Email Editor Templates" src="https://files.readme.io/db93bcba07e17c25cad0eedcbdd8074382d45005fc89bd4178da2dabedbf6acc-Email_Editor.png" />
+<Image align="center" alt={1424} border={true} caption="Email Editor" title="Email Editor Templates" src="https://files.readme.io/d6f011693473f76cdecf2cd460eb214f76878e2c2d978c78cca3da9717f9e360-Filter_Basic_Templates.gif" />
 
 # Template Types
 
