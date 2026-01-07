@@ -168,7 +168,7 @@ View previous updates in [What's New: 2024](https://docs.clevertap.com/docs/rele
 ## January
 
 <HTMLBlock>{`
-<div class="release-note article" data-category="promotions" id="promo-campaign-analytics">
+<div class="release-note article" data-category="Data&Integrations" id="promo-campaign-analytics">
   <div class="release-note-header">
     <div class="anchor-link-icon">
       <a href="#promo-campaign-analytics"><i class="fa-light fa-anchor"></i></a>
