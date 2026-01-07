@@ -34,12 +34,20 @@ You can also save customized templates and view them under **Saved Templates**.
 
 # Basic Templates
 
-You can choose from the following types of templates:
+Basic Templates provide a library of pre-built email templates that help you quickly create campaigns for common use cases without starting from scratch.
+
+**Template Types**
+
+Basic Templates include the following template types:
 
 * **Email with rich media**: Create a rich message with text and images using the built-in email editor. You can also use the Source mode to type or paste in your HTML code. You can also add personalization by using the **@** and **\{\{}}** icons. For more information about personalization, refer to [Personalize Message](doc:personalize-message-email).
-* **Email with drag and drop** - Drag and drop elements such as text, images, and buttons to create a beautiful email message. Convert to HTML to add further customization.
+* **Email with drag and drop**: These include out-of-the-box drag-and-drop templates with ready-made layouts and content blocks. You can start with these templates or create a custom one, and visually customize it by adding, removing, or rearranging elements such as text, images, buttons, and dividers.
 
-In addition to the drag and drop templates under Basic Templates, CleverTap offers a comprehensive collection of out-of-the-box (OOTB) templates tailored for common marketing use cases such as birthday greetings, feedback collection, product recommendations, reminders, and more. The template library includes HTML and AMP templates, each tailored to specific campaign goals. You can use them as-is or customize them to align with your brand and messaging. For more information about these templates, refer to [Email Templates](doc:ootb-email.templates).
+In addition to drag-and-drop and Rich Media templates, the Basic Templates library also includes out-of-the-box HTML and AMP templates. You can use them as-is or customize them to align with your brand and messaging. For more information about these templates, refer to [Email Templates](doc:ootb-email.templates).
+
+You can filter Basic Templates to narrow down and view templates based on the following: _Industry_, _Goal_, or _Type_. This makes it easier to browse the template library and quickly find the most relevant template for your campaign.
+
+<Image align="center" border={true} caption="Filter Basic Templates" src="https://files.readme.io/88b6208372ea2fd0a4dc1ee987892256d32121fd0297e1c59db354dac9ba998e-Filter_Bssic_Templates.gif" />
 
 ## Rich Media Template
 
