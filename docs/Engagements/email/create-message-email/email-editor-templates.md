@@ -215,7 +215,7 @@ You can perform the following template operations by navigating to the _Content 
 
 ## Dark Mode
 
-You can preview how your email displays in dark mode on a desktop or a mobile phone.
+You can preview how your email displays in dark mode on both desktops and mobile phones.
 
 <Callout icon="📘" theme="info">
   #### Note
