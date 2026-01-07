@@ -12,15 +12,11 @@ metadata:
 next:
   description: ''
 ---
+<br />
+
 # Overview
 
 Profile Exports allow you to securely export user profile data from CleverTap to external cloud storage platforms such as Amazon S3, Google Cloud Storage, or Microsoft Azure. You can configure export to centralize customer data, integrate with existing analytics workflows, and ensure the data warehouse platform always has the latest profile information.
-
-<Callout icon="📘" theme="info">
-  #### Private Beta
-
-  This feature is a private beta release. Reach out to your Customer Success Manager for access.
-</Callout>
 
 With Profile Exports, you can:
 
@@ -192,12 +188,12 @@ Choose which user identifiers to include in the export and how they appear in th
    * **Export all values**: Exports all selected identifiers in the **identity** column, listed in order of priority. Missing values are omitted. Select this option when reconciliation, deduplication, or identity joins are required downstream.
 
 3. **(Optional) Select Account-Defined User Identity**  
-   Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](doc:developer-go-live-checklist#define) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.  
+   Turn ON the toggle to add **all_identities**, which exports all [account-defined identifiers](https://developer.clevertap.com/docs/developer-go-live-checklist) (**Identity**, **Email**, **Phone**) for each profile. If a user does not have a value for one or more of these identifiers, those values are omitted from the list.  
    _Example:_ If a profile has identities user_123, user_456, and email [user@example.com](mailto:user@example.com), the output will be:
 
 4. **Select CleverTap ID**  
    Select this option to include the following in your export:
-   * **clevertapId**: A unique, system-generated identifier assigned to each user profile. For more information, refer to [CleverTap ID](https://developer.clevertap.com/docs/user-profiles#clevertap-id).
+   * **clevertapId**: A unique, system-generated identifier assigned to each user profile. For more information, refer to [CleverTap ID](https://docs.clevertap.com/docs/user-profiles#user-profile-data-model).
    * **clevertapIds**: A list of all historical CleverTap IDs associated with the profile, useful for tracking users across devices and merged profiles.
 
 5. **Preview Output**  
@@ -223,7 +219,7 @@ Configure which properties to include in the export, as well as how they are lab
    </Callout>
 
 2. **Add Communication Preferences**.  
-   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `[subscriptionGroups](doc:group-unsubscribe#subscription-groups)` (subscription group preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
+   Include the [user's opt-in/opt-out status](doc:gdpr#right-to-marketing-opt-out) across messaging channels. Select one or more options from the dropdown: `MSG-push`, `MSG-webpush`, `MSG-email`, `MSG-sms`, `MSG-whatsapp`, and `subscriptionGroups` ([subscription group](doc:group-unsubscribe#subscription-groups) preferences for messaging channels). Selecting multiple items adds multiple columns. If a profile has no value for a selected item, the corresponding column appears blank.
 
    <Image align="center" border={true} caption="Export Communication Preferences" src="https://files.readme.io/ad426b7e1132a4d3186a695cb0c5f1134cc1b3255de2a72ba2b6a70f556477ef-profile_export_1.png" />
 
@@ -231,7 +227,13 @@ Configure which properties to include in the export, as well as how they are lab
    Choose which profile properties to export:
 
    * **All user properties**: Exports all system and custom user properties. For more information, refer to [User Properties](doc:user-profiles#user-properties).
-   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](doc:user-profiles#system-properties).
+   * **System properties**: Exports only CleverTap system properties such as **Name**, **Gender**, **DOB**, **Email**, **Phone**, and **Photo**. For more information, refer to [System Properties](https://docs.clevertap.com/docs/user-profiles#system-user-properties).
+
+     <Callout icon="📘" theme="info">
+       **Note**
+
+       Properties like Lat, Long, and CT_Test_User are available under all user properties and selected properties.
+     </Callout>
    * **Selected properties**: Pick specific fields from your schema (for example, **Email**, **Phone**, **Customer Type**). For more information, refer to [Custom Properties](doc:user-profiles#custom-properties).
 
    <Image align="center" alt="Select User Properties to Export" border={true} caption="Select User Properties to Export" src="https://files.readme.io/86580e1c39e195008221ca0c636d54717b94ff958c0e31dbf96c245927e65742-Select_User_Properties_to_Export.gif" />
@@ -313,24 +315,20 @@ Exported profile files follow this consistent column order:
     ```
     {
       "identity": "XXXXXXX",
-      "all_identities": [
-      "XXXXXXX"
-    ],
+      "all_identities": "[XXXXXXX]",
       "clevertapId": "__g1234567890",
-      "clevertapIds": "[__g1234567890,Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc]",
-      "device": {
-      "token": "XXXXXXX"
-    },
+      "clevertapIds": ["__g1234567890","Ne22k5-xQ90sN1aebRkzjiV65JN6Cwdc"],
+      "token": "XXXXXXX",
+      "subscriptionGroups": {
+        "group1": "Subscribed",
+        "group2": "Unsubscribed",
+        "group3": "Subscribed"
+    	},
+      "MSG-webpush": "XXXXXXX",
       "MSG-push": "XXXXXXX",
-      "MSG-push-all": "XXXXXXX",
       "MSG-email": "XXXXXXX",
       "MSG-sms": "XXXXXXX",
       "MSG-whatsapp": "XXXXXXX",
-      "subscriptionGroups": {
-      "group1": "Subscribed",
-      "group2": "Unsubscribed",
-      "group3": "Subscribed"
-    },
       "Email": "XXXXXXX",
       "Phone": "XXXXXXX",
       "Name": "XXXXXXX",
@@ -373,12 +371,22 @@ Exported profile files follow this consistent column order:
                 </entry>
             </device>
             <commPrefs>
-                <entry>
-                    <key>MSG-push</key>
+              <entry>
+                    <key>subscriptionGroups</key>
+                    <value>
+                    {
+                          "group1": "Subscribed",
+                          "group2": "Unsubscribed",
+                          "group3": "Subscribed"
+                    }
+                    </value>
+              </entry>
+              <entry>
+                    <key>MSG-webpush</key>
                     <value>XXXXXXX</value>
                 </entry>
                 <entry>
-                    <key>MSG-push-all</key>
+                    <key>MSG-push</key>
                     <value>XXXXXXX</value>
                 </entry>
                 <entry>
@@ -393,15 +401,6 @@ Exported profile files follow this consistent column order:
                     <key>MSG-whatsapp</key>
                     <value>XXXXXXX</value>
                 </entry>
-                <entry>
-                    <key>subscriptionGroups</key>
-                    <value>
-                    {
-                          "group1": "Subscribed",
-                          "group2": "Unsubscribed",
-                          "group3": "Subscribed"
-                    }
-                    </value>
                 </entry>
             </commPrefs>
             <profileProps>
@@ -470,15 +469,19 @@ Exported profile files follow this consistent column order:
           </th>
 
           <th style={{ textAlign: "left" }}>
-            device
+            token
+          </th>
+
+          <th style={{ textAlign: "left" }}>
+            subscriptionGroups
+          </th>
+
+          <th style={{ textAlign: "left" }}>
+            MSG-webpush
           </th>
 
           <th style={{ textAlign: "left" }}>
             MSG-push
-          </th>
-
-          <th style={{ textAlign: "left" }}>
-            MSG-push-all
           </th>
 
           <th style={{ textAlign: "left" }}>
@@ -491,10 +494,6 @@ Exported profile files follow this consistent column order:
 
           <th style={{ textAlign: "left" }}>
             MSG-whatsapp
-          </th>
-
-          <th style={{ textAlign: "left" }}>
-            subscriptionGroups
           </th>
 
           <th style={{ textAlign: "left" }}>
@@ -546,7 +545,7 @@ Exported profile files follow this consistent column order:
           </td>
 
           <td style={{ textAlign: "left" }}>
-            * \_g1234567890
+            \_g1234567890
           </td>
 
           <td style={{ textAlign: "left" }}>
@@ -554,34 +553,34 @@ Exported profile files follow this consistent column order:
           </td>
 
           <td style={{ textAlign: "left" }}>
-            \{"token":"XXXXXXX"}
+            XXXXXXX
           </td>
 
           <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            XXXXX
-          </td>
-
-          <td style={{ textAlign: "left" }}>
-            \{\
-            "group1":"Subscribed",  "group2":"Unsubscribed",\
-            "group3": "Subscribed"\
+            \{
+            "group1":"Subscribed",  "group2":"Unsubscribed",
+            "group3": "Subscribed"
             }
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
+          </td>
+
+          <td style={{ textAlign: "left" }}>
+            XXXXX
           </td>
 
           <td style={{ textAlign: "left" }}>
@@ -629,38 +628,46 @@ Exported profile files follow this consistent column order:
   <Tab title="Schema for Parquet File">
     ```
     [
-      {
-        "column_name": "identity",
-        "column_type": "VARCHAR",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      },
-      {
-        "column_name": "device",
-        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      },
-      {
-        "column_name": "commPrefs",
-        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      },
-      {
-        "column_name": "profileProps",
-        "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
-        "nullValue": "YES",
-        "key": null,
-        "defaultValue": null,
-        "extra": null
-      }
+    {
+    "column_name": "identity",
+    "column_type": "VARCHAR",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+    },
+    {
+    "column_name": "profileIdentities",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 VARCHAR, member1 VARCHAR[]))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+    },
+    {
+    "column_name": "device",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+    },
+    {
+    "column_name": "commPrefs",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR, member6 MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+    },
+    {
+    "column_name": "profileProps",
+    "column_type": "MAP(VARCHAR, STRUCT(member0 BOOLEAN, member1 INTEGER, member2 BIGINT, member3 FLOAT, member4 DOUBLE, member5 VARCHAR))",
+    "nullValue": "YES",
+    "key": null,
+    "defaultValue": null,
+    "extra": null
+    }
     ]
     ```
   </Tab>
@@ -711,10 +718,10 @@ Exported profile files follow this consistent column order:
 
           <td style={{ textAlign: "left" }}>
             \[\{
-            MSG-push: \{
+            subscriptionGroups: \{
             'member0': "XXXXXX", 'member1': "XXXXXX", 'member2': "XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
             },
-            MSG-push-all: \{
+            MSG-webpush: \{
             'member0': "XXXXXX", 'member1': "XXXXXX", 'member2':"XXXXXX", 'member3': "XXXXXX", 'member4': "XXXXXX", 'member5': "XXXXXX", 'member6': "XXXXXX"
             }
             }]
@@ -778,15 +785,6 @@ Follow these best practices to ensure your profile exports are reliable, organiz
   * For GCP exports, a 403 error often indicates that the service account key is invalid.
 
 # FAQs
-
-### Do CleverTap data exports allow special characters?
-
-Yes, CleverTap data exports allow the following special characters:
-
-* Supports Unicode (UTF-8) character encoding.
-* Replaces Whitespace, Tab, Slash, and null (\0) with a hyphen.
-* Replaces control characters with `?`.
-* Supports emoji characters; some emojis (UTF-16) may not render properly.
 
 ### Can I run a one-time Profiles export if a recurring Profiles export is active?
 
