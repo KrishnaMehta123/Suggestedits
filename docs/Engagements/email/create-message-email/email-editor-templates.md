@@ -20,7 +20,7 @@ From the _What_ section in the Email builder, click **Go to Editor**.
 
 The Email Editor tool displays.
 
-<Image align="center" alt={1424} border={true} caption="Email Editor" title="Email Editor Templates" src="https://files.readme.io/833c51a2808e19d7173f5e00695aa3f1d2f266062e963355d1a0412082c13514-Email_Editor.png" />
+<Image align="center" alt={1424} border={true} caption="Email Editor" title="Email Editor Templates" src="https://files.readme.io/db93bcba07e17c25cad0eedcbdd8074382d45005fc89bd4178da2dabedbf6acc-Email_Editor.png" />
 
 # Template Types
 
@@ -227,7 +227,7 @@ Follow the steps to preview your template in Dark Mode:
 
 1. Select the _Email with drag and drop_ editor.
 
-<Image align="center" alt={2866} border={true} caption="Select Drag-and-Drop Editor" title="Select the Email with Drag and Drop" src="https://files.readme.io/6bb33b9940a1305c6c874bc9fcd3976e82bc34fd0809cb6152911ee3e6ae5e81-Email_Editor.png" />
+<Image align="center" alt={2866} border={true} caption="Select Drag-and-Drop Editor" title="Select the Email with Drag and Drop" src="https://files.readme.io/5d708b8aaad79c2e2ec52b6cb1ea65c5084b486166e8b8b7fa74a0697029454d-Email_Editor.png" />
 
 2. Draft your message.
 
