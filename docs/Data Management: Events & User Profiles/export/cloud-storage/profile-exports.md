@@ -253,7 +253,7 @@ Configure which properties to include in the export, as well as how they are lab
   * Renaming only affects the column header in the export; it does not change the original property name.
   * Use the search bar to find specific fields.
   * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
-  * "If a property is missing for a profile, the column still appears but remains blank and the Key in the JSON file will be removed"
+  * If a property is missing for a profile, the column still appears but remains blank and the Key in the JSON file will be removed.
   * Reordering does not impact data collection or internal storage — it only affects the file structure.
   * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
 </Callout>
