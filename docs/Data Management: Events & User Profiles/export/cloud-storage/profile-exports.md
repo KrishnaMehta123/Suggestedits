@@ -149,6 +149,7 @@ In this section, you will define the destination, folder organization, file form
      * `{{Timestamp}}`: Epoch timestamp when the export runs.
      * `{{Instance-id}}`: Database identifier for your CleverTap account (typically 0–23).
      * `{{Date}}`: Export run date in `yyyy-mm-dd`.
+
        <Callout icon="📘" theme="info">
          #### Note
 
@@ -252,7 +253,7 @@ Configure which properties to include in the export, as well as how they are lab
   * Renaming only affects the column header in the export; it does not change the original property name.
   * Use the search bar to find specific fields.
   * Drag rows to rearrange columns, or use the Reorder button to set the export sequence.
-  * If a property is missing for a profile, the column still appears but remains blank.
+  * "If a property is missing for a profile, the column still appears but remains blank and the Key in the JSON file will be removed"
   * Reordering does not impact data collection or internal storage — it only affects the file structure.
   * If two or more properties have the same name, then the property present last in the order will only be exported. So avoid having two properties with the same name
 </Callout>
@@ -761,7 +762,7 @@ Follow these best practices to ensure your profile exports are reliable, organiz
 * **Use Clear File Naming Conventions**  
   Create descriptive file names using dynamic date variables to help identify and process exports chronologically.
 * **Structure Folders by Date**  
-  Organize exports using date-based folders (e.g., YYYYMMDD or \{\{Date}}) to simplify processing in your data pipelines.
+  Organize exports using date-based folders (e.g., yyyy-mm-dd or \{\{Date}}) to simplify processing in your data pipelines.
 * **Enable Incremental Exports**  
   Use incremental exports for large datasets to minimize processing time, enhance performance, and reduce storage costs.
 * **Manage Schema Carefully**
