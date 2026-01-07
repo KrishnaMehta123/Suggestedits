@@ -64,11 +64,13 @@ To create a message using a source mode:
 1. Select _Email with rich media_.
 2. Click **Source** mode and add your HTML content.
 
-> 🚧 Grammarly Extension
->
-> If the Grammarly extension is enabled on your device when creating the Email campaign using Rich Media Editor, it may add unwanted _\<p>_ tags to the code in Source mode. To maintain clean code, we recommend disabling Grammarly and refreshing the page before adding content. If content has already been added, disable Grammarly, refresh, and re-add the content.
->
-> <Image align="center" alt="View Source Mode" border={true} src="https://files.readme.io/22f1e95-image_8.png" className="border" />
+<Callout icon="🚧" theme="warn">
+  #### Grammarly Extension
+
+  If the Grammarly extension is enabled on your device when creating the Email campaign using Rich Media Editor, it may add unwanted _\<p>_ tags to the code in Source mode. To maintain clean code, we recommend disabling Grammarly and refreshing the page before adding content. If content has already been added, disable Grammarly, refresh, and re-add the content.
+
+  <Image align="center" alt="View Source Mode" border={true} src="https://files.readme.io/22f1e95-image_8.png" className="border" />
+</Callout>
 
 <Image align="center" alt={1413} border={true} src="https://files.readme.io/bf4ca46-Source.png" title="Add HTML Content using Source View" className="border" />
 
@@ -207,9 +209,11 @@ You can perform the following template operations by navigating to the _Content 
 
 You can preview how your email displays in dark mode on a desktop or a mobile phone.
 
-> 📘 Note
->
-> Dark Mode is only available in the _Email with drag and drop_ editor.
+<Callout icon="📘" theme="info">
+  #### Note
+
+  Dark Mode is only available in the _Email with drag and drop_ editor.
+</Callout>
 
 Follow the steps to preview your template in Dark Mode:
 
