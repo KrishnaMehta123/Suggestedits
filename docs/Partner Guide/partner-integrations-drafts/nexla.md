@@ -43,8 +43,8 @@ To integrate Nexla with CleverTap, perform the following five major steps:
 
 Use Data Warehouse Exports in CleverTap to send campaign interaction data to supported destinations such as:
 
-* BigQuery (@akshay: Add doc cross-reference here.)
-* Amazon S3 Exports (@akshay: Add doc cross-reference here.)
+* [BigQuery](https://docs.clevertap.com/docs/bigquery)
+* [Amazon S3](https://docs.clevertap.com/docs/data-export-to-aws-s3)
 
 <Image align="center" alt="Create Export" border={true} caption="Create Export" src="https://files.readme.io/d2bd87a881b08611cf192e3ce42e5875793ac33c1830a6eabfe5fdbd6f7cac3b-image.png" width="75% " />
 
@@ -60,9 +60,9 @@ To configure your data source, perform the following steps:
 
 Once connected, Nexla begins ingesting the exported CleverTap data.
 
-## (Optional) Send Webhook Data from CleverTap to Nexla 
+## (Optional) Send Webhook Data from CleverTap to Nexla
 
-You can optionally use Webhook campaigns in CleverTap to push event data to Nexla in real time. You can do so by creating a connector webhook campaign with Nexla’s webhook URL as the endpoint. 
+You can optionally use Webhook campaigns in CleverTap to push event data to Nexla in real time. You can do so by creating a connector webhook campaign with Nexla’s webhook URL as the endpoint.
 
 Use this approach if you want immediate data delivery without waiting for exports.
 
@@ -93,16 +93,11 @@ You can send data from Nexla into CleverTap using one of the following options:
 
 * Configure [Nexla](https://docs.nexla.com/user-guides/connectors/rest-api/rest-api-generic#3-data-destination) to use [CleverTap’s Upload Users or Events API](https://developer.clevertap.com/docs/api-overview).
 * Format the JSON payload to match the API requirements.
-* Ensure the following headers are set: (@Akshay: Please check this - header block is incorrect IMO. I think it should be as follows:    
-  ```http
-  X-CleverTap-Account-Id: <Your Account ID>
-  X-CleverTap-Passcode: <Your Passcode>
-  Content-Type: application/json
-  ```
-  ) 
+* Ensure the following headers are set:
 
-```
-Authorization: <Account ID + Passcode>
+```http
+X-CleverTap-Account-Id: <Your Account ID>
+X-CleverTap-Passcode: <Your Passcode>
 Content-Type: application/json
 ```
 
