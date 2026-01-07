@@ -1,5 +1,6 @@
 ---
 title: Nexla
+excerpt: Data Warehousing and Analytics Platform
 deprecated: false
 hidden: false
 metadata:
@@ -34,7 +35,7 @@ To integrate Nexla with CleverTap, perform the following five major steps:
 
 1. [Export Data from CleverTap](doc:nexla#export-data-from-clevertap-to-your-data-warehouse)
 2. [Add Data Source in Nexla](doc:nexla#add-data-source-in-nexla)
-3. (Optional) [Send Webhook Data from CleverTap to Nexla](doc:nexla#send-webhook-data-from-clevertap-to-nexla-optional)
+3. (Optional) [Send Webhook Data from CleverTap to Nexla](doc:nexla#optional-send-webhook-data-from-clevertap-to-nexla)
 4. [Transform Data in Nexla](doc:nexla#transform-data-in-nexla)
 5. [Import Data Back into CleverTap](doc:nexla#import-data-back-into-clevertap)
 
@@ -85,8 +86,8 @@ For more information, refer to [Using the Transform Builder](https://docs.nexla.
 
 You can send data from Nexla into CleverTap using one of the following options:
 
-* [Nexla REST API Destination](doc:nexla#option-a-nexla-rest-api-destination)
-* [Using SFTP Imports](doc:nexla#option-b-using-sftp-imports)
+* [Nexla REST API Destination](doc:nexla#nexla-rest-api-destination)
+* [Using SFTP Imports](doc:nexla#using-sftp-imports)
 
 ### Nexla REST API Destination
 
