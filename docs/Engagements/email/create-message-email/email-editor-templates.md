@@ -215,7 +215,7 @@ Follow the steps to preview your template in Dark Mode:
 
 1. Select the _Email with drag and drop_ editor.
 
-<Image align="center" alt={2866} border={true} src="https://files.readme.io/bf4a355-Email_Editor_Tool.png" title="Select the Email with Drag and Drop" className="border" />
+<Image align="center" alt={2866} border={true} src="https://files.readme.io/6bb33b9940a1305c6c874bc9fcd3976e82bc34fd0809cb6152911ee3e6ae5e81-Email_Editor.png" title="Select the Email with Drag and Drop" className="border" />
 
 2. Draft your message.
 
