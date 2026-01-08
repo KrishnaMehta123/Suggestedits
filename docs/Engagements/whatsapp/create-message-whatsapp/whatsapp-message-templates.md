@@ -62,9 +62,9 @@ Utility templates are triggered by a user action or request. They must include d
 
 ## Template Library
 
-For WhatsApp Direct, Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without starting from scratch.
+For WhatsApp Direct, the Template Library provides out-of-the-box WhatsApp template structures that are predefined for common messaging use cases. These templates help you quickly create WhatsApp messages without having to start from scratch.
 
-The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required before saving the template. For more information on WhatsApp message templates and their structure, refer to <Anchor label="Meta’s documentation" target="_blank" href="https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-library">Meta’s documentation</Anchor>.
+The templates include predefined components such as structure, placeholders, and formatting. You can customize the content and configure supported fields as required, and then save the template. For more information on WhatsApp message templates and their structure, refer to <Anchor label="Meta’s documentation" target="_blank" href="https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-library">Meta’s documentation</Anchor>.
 
 <Image align="center" border={true} caption="Template Library" src="https://files.readme.io/c404fffa2a64aed639553bdd7275d6ab5becd10cd4282d26d4a6ce7dc6603095-Template_Library.png" />
 
@@ -72,7 +72,7 @@ The templates include predefined components such as structure, placeholders, and
 
 To create a template using the Template Library, follow these steps:
 
-1. From the dashboard, navigate to _Account_ > _Settings_ > _Engage_ > _Channels_ > _WhatsApp_.
+1. From the dashboard, go to _Account_ > _Settings_ > _Engage_ > _Channels_ > _WhatsApp_.
 2. Select the Provider Type as **WhatsApp Direct**.
 3. Select the required _WABA account_.
 
@@ -82,14 +82,14 @@ To create a template using the Template Library, follow these steps:
    <Image align="center" border={true} caption="Add Template" src="https://files.readme.io/312b97383f56970489d51c0f1805d081feac7f6875fb3ab6983572dc0d01b44c-template_library_3.png" />
 5. In Select Template Type, click **Template Library**.
 
-After you select a template, CleverTap opens the template editor with the predefined content populated.
+After you select a template, CleverTap opens the template editor with the predefined content populated.(@krishna, the bullet list starts off without context)
 
 * The template structure, category, and components are populated based on the selected template.
 * All available language variants are displayed for selection.
 * Placeholders and formatting are populated by default.
 * You can update sample values and the Template Name in CleverTap.
 
-Proceed using the same editor flow described in Create WhatsApp Template.
+Continue using the same editor flow described in Create WhatsApp Template (@krishna, make it a cross-reference).
 
 ## Support for Authentication Templates
 
