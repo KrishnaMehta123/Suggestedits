@@ -1,7 +1,7 @@
 ---
 title: Edit a Segment
 excerpt: >-
-  Learn how to edit Segments in CleverTap to quickly update and apply segment
+  Learn how to edit Segments in CleverTap to quickly update and apply the
   changes across Campaigns and Journeys.
 deprecated: false
 hidden: false
@@ -14,15 +14,13 @@ next:
 ---
 # Overview
 
-The Segment Edits feature allows users to modify existing Past Behaviour Segments (PBS) directly within the CleverTap dashboard. This capability enhances operational efficiency by allowing edits to be made once and reflected across all associated entities, such as Campaigns, Journeys, and Product experiences, without the need to recreate or clone segments.
+The *Segment Edits* feature allows users to modify existing Past Behaviour Segments (PBS) directly within the CleverTap dashboard. This capability enhances operational efficiency by allowing edits to be made once and reflected across all associated entities, such as Campaigns, Journeys, and Product experiences, without the need to recreate or clone segments.
 
 <Callout icon="📘" theme="info">
   **Note**
 
   Editing is currently supported only for Past Behaviour Segments (PBS).
 </Callout>
-
-## Purpose
 
 This feature introduces segment modification support to simplify segment management across multiple use cases.
 
@@ -34,14 +32,14 @@ Segment Edits aims for the following:
 
 # Edit a Segment
 
-Editing a segment enables you to refine existing audience definitions without having to start from scratch. You can use this option when you want to adjust targeting rules, update filters, or align segment criteria with new campaign goals, all while preserving linked dependencies and historical context. 
+Editing a segment enables you to refine existing audience definitions without having to start from scratch. You can use this option when you want to adjust targeting rules, update filters, or align segment criteria with new campaign goals, all while preserving linked dependencies and historical context.
 
 The following are the steps to edit a segment:
 
 1. Navigate to the _Segments_ page of the CleverTap dashboard.
 2. Locate your desired Past Behaviour Segment in the list view or open its _Details_ page.
 3. Click the three-dot menu beside the segment name.
-4. Select _Edit_ from the dropdown menu.
+4. Select _Edit_ from the list
 
 <Image align="center" alt="Edit a Segment" border={true} caption="Edit a Segment" src="https://files.readme.io/0c53e068d95ef7c05957356de2fa4c5a52d724ea40aad650c2a6ded310ec07a9-image.png" />
 
@@ -51,12 +49,10 @@ When you click **Edit**, CleverTap confirms that all the Campaigns, Journeys, an
 
 The following are the steps to edit a segment with dependent engagements:
 
-1. Review the dependency list shown in the confirmation modal.
+1. Review the dependency list shown in the confirmation modal. Each dependent campaign or journey is listed.
+2. Select one of the following actions:
 
-   * Each dependent campaign or journey is listed.
-2. Choose one of the following actions:
-
-   * _Edit Segment_: Proceed with editing the segment definition.
+   * _Edit Segment_: Continue with editing the segment definition.
    * _Clone Segment_: Create a new version to avoid affecting existing dependencies.
 3. Modify any of the following:
 
@@ -64,33 +60,35 @@ The following are the steps to edit a segment with dependent engagements:
    * Events
    * User properties
 4. Click **Save Edits**.
-5. Confirm your changes in the confirmation window.
+5. Confirm your changes in the confirmation window. (@meenal is this a step?)
 6. Click **Confirm and Save**.
 
-<Image align="center" alt="Edit Segment Confirmation" border={true} caption="Edit Segment Confirmation" src="https://files.readme.io/4ed57c86375365de78083e58e8158457cb40512b096843be43b9a38b43471022-image.png" />
+<Image align="center" alt="Edit Segment Confirmation" border={true} caption="Edit Segment Confirmation (@meenal, move this image to the start of this section. Also, add another screenshot post-edit )" src="https://files.readme.io/4ed57c86375365de78083e58e8158457cb40512b096843be43b9a38b43471022-image.png" />
 
 # Segment Trend and Insights
 
-The following are the segment trends and insights:
+The following are the segment trends and insights for edited segments:
 
 * Trend cards display historical data until the next computation cycle updates the values.
 * The updated counts and analytics appear in the next scheduled run.
-* Insights columns are updated in real time as per the new definition.
+* Insights columns are updated in real-time according to the new definition.
 
 <Callout icon="🚧" theme="warn">
   **Important**
 
-  Ensure that segments used in Campaigns or Journeys are referenced segments if you want edits to take effect.
+  Check that the segments used in Campaigns or Journeys are referenced segments if you want edits to take effect. (@meenal this sentence is convoluted. please fix)
 </Callout>
 
-Only users who are segment owners and belong to the same team can edit that segment. This ensures that segment edits respect existing access control policies.
+Only segment owners from the specified team can edit that segment. This ensures that segment edits respect existing access control policies.
 
 # Use Case
 
-A marketer uses a Past Behavior Segment called "High-Value App Users" in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions.
+(@meenal, move the use case section within the overview itself)
+
+A marketer uses a Past Behavior Segment called *High-Value App Users* in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions(@meenal, why?).
 
 **Outcome**  
-All Campaigns and Journeys using this PBS segment automatically adopt the updated rule set during the next segment computation cycle.
+All Campaigns and Journeys using this PBS segment automatically adopt the updated rule set during the next segment computation cycle. 
 
 # FAQs
 
@@ -106,4 +104,4 @@ No. The updated segment definition is visible immediately, but data recalculatio
 
 ### What happens if I clone a segment instead of editing it?
 
-The clone creates a new independent segment. Campaigns referencing the old segment remain unaffected.
+The clone creates a separate segment. Campaigns referencing the old segment remain unaffected.
