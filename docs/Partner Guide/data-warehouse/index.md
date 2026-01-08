@@ -16,5 +16,5 @@ CleverTap allows you to export data via partners:
 * [AWS S3](doc:data-export-to-aws-s3)
 * [BigQuery](doc:bigquery)
 * [Google Cloud Platform](doc:data-export-to-gcp)
-* [Microsoft Azure]()
+* [Microsoft Azure](doc:microsoft-azure-export)
 * [Nexla](doc:nexla)
