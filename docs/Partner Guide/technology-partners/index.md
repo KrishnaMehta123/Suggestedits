@@ -1234,7 +1234,6 @@ next:
         </div>
     </div>
 </a>
-
 <a href="https://staging.docs.user.clevertap.net/docs/microsoft-azure-export">
     <div class="integration-card">
         <div class="logo-container">
@@ -1242,6 +1241,17 @@ next:
         </div>
         <div class="content">
             <div class="name">Microsoft Azure</div>
+            <div class="category">Data Warehouse</div>
+        </div>
+    </div>
+</a>
+<a href="https://staging.docs.user.clevertap.net/docs/nexla">
+    <div class="integration-card">
+        <div class="logo-container">
+            <img src="https://files.readme.io/0f370a30b8470d070aa47d30196b63c70a24a56dfd23c5d8cecd0d2bc367ddcb-nexla_logo_1.jpeg" alt="Nexla" class="logo">
+        </div>
+        <div class="content">
+            <div class="name">Nexla</div>
             <div class="category">Data Warehouse</div>
         </div>
     </div>
