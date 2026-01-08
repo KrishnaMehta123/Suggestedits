@@ -195,11 +195,11 @@ Time in User Property lets you schedule campaign delivery based on a time value 
 
 Use Time in User Property if:
 
-* You already calculate the best send time for each user outside CleverTap.
+* You externally calculate the best send time for each user.
 * You want CleverTap to deliver messages exactly at the time you provide for each user.
 * You want to avoid creating multiple time-based campaigns or segments.
 
-## Setting up Time in User Property 
+## Setting up Time in User Property
 
 To use Time in User Property feature:
 
@@ -220,14 +220,15 @@ To use Time in User Property feature:
   * Time in User Property uses the account timezone, not the user’s local timezone.
   * The send time is locked in when the campaign begins running. The message delivery is not affected by the updates made to the user property after dispatch begins.
   * Supported time format:
-    * The user property must be passed in the following 24 hour format: `HH:MM` For example,`09:30` or `18:45`.
+    * The user property must be passed in the following 24 hour format: `HH:MM`. For example,`09:30` or `18:45`.
     * Seconds are not supported.
 </Callout>
 
 ## Fallback behavior
 
-You can configure how CleverTap should proceed when the Time in User Property value cannot be applied for a user. If the selected user property is missing or contains an invalid value, you can choose to send the message immediately (default behavior), use CleverTap Best Time, or skip the user entirely.
+You can configure how CleverTap should proceed when the Time in User Property value cannot be applied for a user.
 
-If the time has expired or already passed for the current day, you can choose to send the message at a specific time, deliver it at the same time on the next day, or discard the message for that user.
+* If the selected user property is missing or contains an invalid value, you can choose to send the message immediately (default behavior), use CleverTap Best Time, or skip the user entirely.
+* If the time has expired or already passed for the current day, you can choose to send the message at a specific time, deliver it at the same time on the next day, or discard the message for that user.
 
 <br />
