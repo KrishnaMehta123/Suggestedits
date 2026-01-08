@@ -212,7 +212,7 @@ To use the External Best Time feature:
 <Callout icon="📘" theme="info">
   ## Note
 
-  * This option is available for **Send Later** and **Recurring** campaigns.
+  * This option is available for Past Behaviour Campaigns.
   * Campaign-level throttling and limits apply as usual.
   * External Best Time uses the account timezone, not the user’s local timezone.
   * The send time is locked in when the campaign begins running. The message delivery is not affected by the updates made to the user property after dispatch begins.
