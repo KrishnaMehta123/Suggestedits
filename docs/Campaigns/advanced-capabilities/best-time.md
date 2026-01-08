@@ -187,6 +187,10 @@ If _Best Time_ is chosen as the delivery option, the following advanced options 
 
 External Best Time lets you schedule campaign delivery based on a time value provided per user, instead of CleverTap’s system-calculated Best Time. This is useful when you already compute optimal send times using your own models or data pipelines.
 
+> 📘 Private Beta
+>
+> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Account Manager.
+
 ## When should you use this?
 
 Use External Best Time if:
