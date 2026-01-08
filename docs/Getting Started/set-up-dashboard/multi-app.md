@@ -52,13 +52,13 @@ To create a campaign using the Multi-app feature:
 
 1. From the dashboard, select _Campaigns_.
 2. Click **+ Campaign**.
-3. Select the messaging channel from the Messaging Channels list, and the campaign page will appear. 
+3. Select the messaging channel from the Messaging Channels list, and the campaign page will appear.
 
 <Image align="center" alt="Create Campaign" border={true} caption="Create Campaign" src="https://files.readme.io/ba0f9d4-image.png" />
 
 > 📘 Supported Channels
 >
-> * The feature is available for Push Notifications and App Inbox in Campaigns and Push Notifications, App Inbox, and In-App Messages in Journeys. 
+> * The feature is available for Push Notifications and App Inbox in Campaigns and Push Notifications, App Inbox, and In-App Messages in Journeys.
 > * If Copy to Inbox is enabled for a Push campaign:
 >   * The message is sent as a push notification to all selected apps.
 >   * The same message is also delivered to the App Inbox of each selected app.
@@ -88,14 +88,15 @@ The campaign goal can be as generic or as specific as you want. It can answer qu
 Select the apps for which you want to send the campaign. You can:
 
 * Select a single app
-* Select multiple apps
-* Use _Select All_ to include all apps in the project
+* Select multiple apps 
 
 By default, the dropdown is pre-filled with the default app to maintain backward compatibility. Once selected, the campaign is delivered to all chosen apps using the same configuration.
 
-@ss
+<Image align="center" alt="Select the App to Send the Campaign" border={true} caption="Select the App to Send the Campaign" src="https://files.readme.io/39b78486162fb47905958c368a0ff01f12a4cafd9632dce8226e7a0ebea2df20-2026-01-08_14-50-20.png" />
 
-<Image align="center" alt="Select the App to Send the Campaign" border={true} caption="Select the App to Send the Campaign" src="https://files.readme.io/9694ccf33e1ccd4570b623ad0467e5d46bd15699f4c74b612256d1c7a0e06292-select_app_to_send_campaign.png" />
+> 📘 Note
+>
+> You can select a maximum of 10 apps per campaign.
 
 ## Define Audience
 
@@ -109,17 +110,15 @@ Let us consider the same example where the business has the following two apps: 
 
 <Image align="center" alt="Select Target Audience" border={true} caption="Select Target Audience" src="https://files.readme.io/878258a-image.png" />
 
-# Review and Publish 
+# Review and Publish
 
-Before publishing, the campaign overview page displays all selected apps, and the campaign configuration applied to each app. After publishing, the campaign details page lists all apps where the campaign is live. 
+Before publishing, the campaign overview page displays all selected apps, and the campaign configuration applied to each app. After publishing, the campaign details page lists all apps where the campaign is live.
 
 App selection cannot be changed after the campaign is published. To modify the selected apps, create a new campaign.
 
 # Campaign Stats
 
-For campaigns sent to multiple apps, performance metrics can be viewed in different ways. You can view campaign performance per app, to analyze individual app performance, or cumulatively, to see combined performance across all selected apps.
-
-@ss
+For campaigns sent to multiple apps, performance metrics can be viewed cumulatively to see combined performance across all selected apps.
 
 # Analyze Data Across Apps
 
