@@ -205,8 +205,8 @@ To use the External Best Time feature:
 
 1. Pass a **time value** as a user property in the user profile. The value represents the exact time at which the message should be sent for that user.
 2. When configuring the Send Time for a campaign:
-   1. Select **External Best Time (User Property)** as the send-time option.
-   2. Choose the user property that contains the time value.
+   1. Select **External Best Time (User Property)** as the send-time option. @ss
+   2. Choose the user property that contains the time value. @ss
    3. Add the Start time (mandatory) and End time (optional). If End Time is not specified, the campaign runs for **24 hours**. CleverTap sends the message to each user based on the time stored in that property.
 
 <Callout icon="📘" theme="info">
