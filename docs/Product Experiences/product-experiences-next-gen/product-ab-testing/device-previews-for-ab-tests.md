@@ -28,9 +28,9 @@ Before you begin:
 * Check that the devices you want to test are **registered test devices** in your user profiles.
 * Your app is running the **latest SDK version** that supports the A/B Test Enhancements. (@murtaza, please provide the SDK version)
 
-***
-
 ## Mark a Device as a Test Device
+
+If you have not marked any devices as a test device then you must mark this device first. It wil then be used to send the variants. To mark the device as a test device:
 
 1. Navigate to **Users > Find People**.
 2. Search for the **user profile** you want to test with (by Identity or CleverTap ID).
@@ -54,7 +54,7 @@ Once you’ve marked test devices, you can assign them to particular test varian
 
 1. Open your A/B test from **Product Experiences > A/B Tests**.
 2. Go to the **Variables** tab and click the **+ Add Segment** icon.
-3. From the dropdown, select:
+3. From the list, select:
 
    * **Test Devices → Registered Test Devices**
 4. Choose the profile(s) and test device(s) you want to associate with a specific variant.
@@ -77,33 +77,15 @@ After assigning devices and variants:
 2. The status column updates to **Test Mode**.
 3. Use your marked test devices to preview the variants in your app.
 
-> **Tip:**
-> You can enable test mode for **multiple A/B tests** at once — perfect for teams testing multiple experiences in parallel.
+<Callout icon="👍">
+  Note
+
+  You can enable test mode for **multiple A/B tests** at once — perfect for teams testing multiple experiences in parallel.
+</Callout>
+
+<br />
 
 <Image alt="Placeholder: Screenshot showing “Preview and Test” toggle and Test Mode status" border={false} src="#" />
-
-***
-
-## Step 4: View and Manage Running Tests
-
-To view all currently running test sessions:
-
-1. Click **View Running Tests** in the A/B Test dashboard.
-2. The modal displays:
-
-   * All profiles and devices currently in test mode
-   * The A/B tests they’re assigned to
-3. You can:
-
-   * **Update Test:** Add or remove devices
-   * **Stop Test:** End the test session
-
-> **Note:**
-> Stopping a test session removes the device from test mode but does not delete the A/B test configuration.
-
-<Image alt="Placeholder: Screenshot showing View Running Tests modal" border={false} src="#" />
-
-***
 
 ## Troubleshooting
 
@@ -112,8 +94,6 @@ To view all currently running test sessions:
 | Device not showing in Test Devices list | Device not marked as test device          | Go to **Users > Find People**, mark the device as a test device, and refresh the A/B Test page. |
 | Can’t run multiple A/B tests            | One or more tests are still in draft mode | Publish or enable test mode for each test separately.                                           |
 | Variant not appearing on device         | Device not linked correctly               | Reassign the test device in the variant settings and re-publish the test.                       |
-
-***
 
 ## FAQs
 
@@ -126,33 +106,4 @@ No. Test Mode runs only on devices marked as _test devices_.
 **Can I unmark a test device later?**
 Yes. Click **Unmark as Test Device** on the user profile to remove it from the test device list.
 
-***
-
-## Summary
-
-The **Preview and Test Mode** feature helps you confidently validate experiments before rollout. By combining device-level targeting with multi-test capability, QA and marketing teams can simulate real-world scenarios across devices and variants efficiently.
-
-***
-
-### [Open Questions]
-
-* [ ] Confirm if screenshots for “Mark as Test Device” and “Preview and Test” are available in the Figma file.
-* [ ] Confirm SDK version required for device-level A/B testing.
-* [ ] Confirm if “Test Mode” is visible only to users with QA/Tester permissions.
-
-***
-
-### ✅ Style & Structure Notes
-
-* Follows TEC Style Guide and MSTP hierarchy.
-* Correct heading structure (H1 → H2 → H3).
-* Ordered and unordered lists formatted consistently.
-* Image placeholders labeled clearly.
-* Internal anchors ready for cross-references from “Run an A/B Test” page.
-
-***
-
-Would you like me to:
-
-* Add a **“Link to this page” section** (for integration into the main A/B Test doc tree)?
-* Or produce this as a **standalone page** with navigation metadata (front matter for docs.clevertap.com)?
+<br />
