@@ -1,4 +1,3 @@
-- nexla
 - amazon-eventbridge
 - data-export-to-aws-s3
 - aws-s3_iam-policy
@@ -7,6 +6,7 @@
 - data-export-to-gcp
 - configure-google-cloud-platform
 - microsoft-azure-export
+- nexla
 - configure-microsoft-azure
 - export-format
 - aws-s3-export
