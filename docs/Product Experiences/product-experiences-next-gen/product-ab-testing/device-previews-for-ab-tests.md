@@ -5,105 +5,117 @@ hidden: false
 metadata:
   robots: index
 ---
-# Overview
-
-Before you publish your A/B tests to your entire audience, you can now **preview and test multiple experiments simultaneously** on specific devices or profiles. This ensures that your variants render correctly and behave as expected across devices before the test goes live.
+<br />
 
 ## Overview
 
-CleverTap’s **Preview and Test Mode** allows you to perform the following actions:
+Before publishing your A/B tests, you can **preview and test variants across multiple devices** to ensure everything works as expected. CleverTap’s enhanced A/B Test feature lets you test on registered devices, view live variants, and run multiple tests in _Test Mode_ at once.
 
-* Mark specific devices as _test devices_ for controlled QA.
-* Assign specific variants to specific devices or user profiles.
-* Run multiple A/B tests at the same time in _Test Mode_.
-* View and manage all active test sessions directly from the dashboard.
+The **Preview and Test Mode** in CleverTap enables you to:
 
-These capabilities help QA and product teams verify complex, multi-device setups, ensuring a consistent user experience before launch.
+* Mark devices as _test devices_ and target them for QA.
+* Assign specific variants to individual devices or user profiles.
+* Run and preview multiple A/B tests simultaneously in test mode.
+* Verify app behavior and visual consistency before rollout.
+
+This feature is designed for QA, marketing, and product teams who want complete control over their A/B testing environment.
 
 ## Prerequisites
 
-Before you begin:
+Before testing an A/B experiment:
 
-* You must have **A/B Test creation** permissions.
-* Check that the devices you want to test are **registered test devices** in your user profiles.
-* Your app is running the **latest SDK version** that supports the A/B Test Enhancements. (@murtaza, please provide the SDK version)
+* Ensure your **CleverTap SDK** is updated to the latest version that supports test device registration.
+* You must have **A/B test creation** and **test mode access** permissions.
+* The devices you plan to use for testing must be **registered as test devices**.
 
-## Mark a Device as a Test Device
+## Step 1: Mark a Device as a Test Device
 
-If you have not marked any devices as a test device then you must mark this device first. It wil then be used to send the variants. To mark the device as a test device:
+To register a device for testing:
 
-1. Navigate to **Users > Find People**.
-2. Search for the **user profile** you want to test with (by Identity or CleverTap ID).
-3. Under **Devices**, click **Mark as Test Device** next to the required device.
-4. The button changes to **Unmark as Test Device** when active.
+1. Go to **Users → Find People**.
+2. Search for a user profile using **Identity** or **CleverTap ID**.
+3. Under the **Devices** section, click **Mark as Test Device**.
+4. The button label changes to **Unmark as Test Device** when active.
 
-<br />
+> **Note:**
+> You can mark multiple devices on the same user profile. Only devices marked as test devices appear in the **Test Devices** selector during A/B test setup.
 
-<Callout icon="📘" theme="info">
-  Note
+## Step 2: Assign Test Devices to Variants
 
-  You can mark multiple devices under the same profile for testing.
-  Only marked devices appear in the _Test Devices_ segment selector in the A/B Test dashboard
-</Callout>
+Once you’ve registered test devices:
 
-<Image alt="Placeholder: Screenshot showing “Mark as Test Device” button on user profile" border={false} src="#" />
-
-## Step 2: Assign Variants to Specific Devices
-
-Once you’ve marked test devices, you can assign them to particular test variants.
-
-1. Open your A/B test from **Product Experiences > A/B Tests**.
+1. Open an A/B test under **Product Experiences → A/B Tests**.
 2. Go to the **Variables** tab and click the **+ Add Segment** icon.
-3. From the list, select:
+3. In the segment list, choose **Test Devices → Registered Test Devices**.
+4. Select your desired test devices and associate them with a variant.
+5. Click **Save** to confirm the configuration.
 
-   * **Test Devices → Registered Test Devices**
-4. Choose the profile(s) and test device(s) you want to associate with a specific variant.
-5. Click **Save**.
+This allows different devices under the same profile to preview distinct variants, such as:
 
-This allows you to test multiple variants on multiple devices for the same profile — for example:
-
-* Variant A on the home screen on _iPhone 17_
-* Variant B on the settings screen on _Pixel 10_
-
-<Image alt="Placeholder: Screenshot showing test device selection for variant assignment" border={false} src="#" />
-
-***
+* **Variant A** on the _Home screen_ of an iPhone
+* **Variant B** on the _Settings screen_ of a Pixel device
 
 ## Step 3: Enable Preview and Test Mode
 
-After assigning devices and variants:
+After assigning variants:
 
-1. From the A/B test list, click **Preview and Test** for the test you want to validate.
-2. The status column updates to **Test Mode**.
-3. Use your marked test devices to preview the variants in your app.
+1. In the **A/B Tests** list, click **Preview and Test** for your chosen test.
+2. The status updates to **Test Mode**, visible beside the test name.
+3. Launch your app on a registered test device to preview assigned variants in real time.
 
-<Callout icon="👍">
-  Note
+> **Tip:**
+> You can now enable _Test Mode_ for **multiple A/B tests simultaneously**, making parallel QA testing possible across teams.
 
-  You can enable test mode for **multiple A/B tests** at once — perfect for teams testing multiple experiences in parallel.
-</Callout>
+## Step 4: View and Manage Active Tests
 
-<br />
+The **Device Previews** section lets you view and control all your ongoing test sessions.
 
-<Image alt="Placeholder: Screenshot showing “Preview and Test” toggle and Test Mode status" border={false} src="#" />
+<Image alt="Screenshot showing Device Previews table with test profiles, active preview status, and variants" border={false} src="/mnt/data/0cd34e63-1709-465e-bbb0-f6fb809a782e.png" />
+
+Each entry shows:
+
+* **Test User or Profile Name**
+* **Preview Status** (Active or Inactive)
+* **Preview Devices** (number of devices linked)
+* **Variant** assigned to that device
+
+Use this panel to:
+
+* Start or stop previews
+* Deselect or clear specific devices
+* Quickly compare variant performance in real-time environments
+
+## Step 5: Stop or Update a Test Session
+
+To modify or stop an active test session:
+
+1. Click **View Running Tests** in the A/B Test dashboard.
+2. Review the profiles and devices currently in _Test Mode_.
+3. Use:
+
+   * **Update Test** – to add or remove devices.
+   * **Stop Test** – to end test mode for that session.
+
+> **Note:**
+> Stopping a test only removes the device from test mode. It does not affect your published A/B test configuration.
 
 ## Troubleshooting
 
-| Issue                                   | Possible Cause                            | Solution                                                                                        |
-| --------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Device not showing in Test Devices list | Device not marked as test device          | Go to **Users > Find People**, mark the device as a test device, and refresh the A/B Test page. |
-| Can’t run multiple A/B tests            | One or more tests are still in draft mode | Publish or enable test mode for each test separately.                                           |
-| Variant not appearing on device         | Device not linked correctly               | Reassign the test device in the variant settings and re-publish the test.                       |
+| Issue                          | Cause                                     | Solution                                                                            |
+| ------------------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------- |
+| Test device not visible        | Device not registered                     | Go to **Find People**, mark the device as a test device, and refresh the dashboard. |
+| Unable to start multiple tests | Another test is still in single-test mode | Ensure all tests are saved and enable _Test Mode_ for each individually.            |
+| Variant not loading            | Incorrect device linkage                  | Verify the device’s variant assignment in the **Variables** tab and re-publish.     |
 
 ## FAQs
 
-**Can I run test mode for multiple tests simultaneously?**
-Yes. You can now enable test mode for several A/B tests at once. Each test’s status will display **Test Mode** in the dashboard.
+**Can I run multiple tests in Test Mode?**
+Yes. You can now preview and test multiple A/B experiments simultaneously.
 
-**Will test mode affect real users?**
-No. Test Mode runs only on devices marked as _test devices_.
+**Do test devices affect production users?**
+No. Test Mode is isolated — only registered test devices see variant changes.
 
 **Can I unmark a test device later?**
-Yes. Click **Unmark as Test Device** on the user profile to remove it from the test device list.
+Yes. Click **Unmark as Test Device** on the user’s profile page at any time.
 
 <br />
