@@ -22,9 +22,9 @@ You can now add multiple apps under a single project. This feature is handy when
 
 [Create a project](doc:project-setup#create-a-project) quickly after logging on to CleverTap to add multiple apps.
 
-> 📘 Enable Multi-App For Your Project
+> 📘 Private Beta
 >
-> You can only add multiple apps if the multi-app feature is enabled for your project. To enable this feature, contact your Customer Success Manager.
+> Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Customer Success Manager.
 
 To add an app:
 
@@ -88,7 +88,7 @@ The campaign goal can be as generic or as specific as you want. It can answer qu
 Select the apps for which you want to send the campaign. You can:
 
 * Select a single app
-* Select multiple apps 
+* Select multiple apps
 
 By default, the dropdown is pre-filled with the default app to maintain backward compatibility. Once selected, the campaign is delivered to all chosen apps using the same configuration.
 
