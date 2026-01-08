@@ -183,9 +183,9 @@ If _Best Time_ is chosen as the delivery option, the following advanced options 
 * User time zone: Considering the _Best Time_ feature chooses the time when the user is most active, the [user time zone](https://docs.clevertap.com/docs/notification-delivery-options#section-delivery-in-user-s-timezone) is always implicitly applied.
 * Global throttle limits: Cannot be applied with the _Best Time_ feature.
 
-# External Best Time (User Property)
+# Time in User Property
 
-External Best Time lets you schedule campaign delivery based on a time value provided per user, instead of CleverTap’s system-calculated Best Time. This is useful when you already compute optimal send times using your own models or data pipelines.
+Time in User Property lets you schedule campaign delivery based on a time value provided per user, instead of CleverTap’s system-calculated Best Time. This is useful when you already compute optimal send times using your own models or data pipelines.
 
 > 📘 Private Beta
 >
@@ -193,28 +193,31 @@ External Best Time lets you schedule campaign delivery based on a time value pro
 
 ## When should you use this?
 
-Use External Best Time if:
+Use Time in User Property if:
 
 * You already calculate the best send time for each user outside CleverTap.
 * You want CleverTap to deliver messages exactly at the time you provide for each user.
 * You want to avoid creating multiple time-based campaigns or segments.
 
-## How External Best Time works / Campaign setup
+## Setting up Time in User Property 
 
-To use the External Best Time feature:
+To use Time in User Property feature:
 
-1. Pass a **time value** as a user property in the user profile. The value represents the exact time at which the message should be sent for that user.
-2. When configuring the Send Time for a campaign:
-   1. Select **External Best Time (User Property)** as the send-time option. @ss
-   2. Choose the user property that contains the time value. @ss
-   3. Add the Start time (mandatory) and End time (optional). If End Time is not specified, the campaign runs for **24 hours**. CleverTap sends the message to each user based on the time stored in that property.
+1. Pass a time value as a user property in the user profile. The value represents the exact time at which the message should be sent for that user.
+2. When configuring the Send Time for a campaign, select **Time in User Property** as the send-time option.
+
+<Image align="center" border={true} caption="Time in User Property" src="https://files.readme.io/e1b7403b986ed71a6ff664dea102a642021dafc5573cdad7d7b91945864d3cb8-2026-01-08_15-22-39.png" />
+
+3. Add the Start time (mandatory) and End time (optional). If End Time is not specified, the campaign runs for 24 hours. CleverTap sends the message to each user based on the time stored in that property.
+
+<Image align="center" border={true} caption="Start and End Time" src="https://files.readme.io/06c31b2bb0bd5aa3ce23498301300a748170acc3367d6ac334729169753f9dc0-2026-01-08_15-25-50.png" />
 
 <Callout icon="📘" theme="info">
   ## Note
 
   * This option is available for Past Behaviour Campaigns.
   * Campaign-level throttling and limits apply as usual.
-  * External Best Time uses the account timezone, not the user’s local timezone.
+  * Time in User Property uses the account timezone, not the user’s local timezone.
   * The send time is locked in when the campaign begins running. The message delivery is not affected by the updates made to the user property after dispatch begins.
   * Supported time format:
     * The user property must be passed in the following 24 hour format: `HH:MM` For example,`09:30` or `18:45`.
@@ -223,8 +226,8 @@ To use the External Best Time feature:
 
 ## Fallback behavior
 
-You can configure how CleverTap should proceed when the External Best Time value cannot be applied for a user. If the selected user property is missing or contains an invalid value, you can choose to send the message immediately (default behavior), use CleverTap Best Time, or skip the user entirely.
+You can configure how CleverTap should proceed when the Time in User Property value cannot be applied for a user. If the selected user property is missing or contains an invalid value, you can choose to send the message immediately (default behavior), use CleverTap Best Time, or skip the user entirely.
 
-If the External Best Time has expired or already passed for the current day, you can choose to send the message at a specific time, deliver it at the same time on the next day, or discard the message for that user.
+If the time has expired or already passed for the current day, you can choose to send the message at a specific time, deliver it at the same time on the next day, or discard the message for that user.
 
 <br />
