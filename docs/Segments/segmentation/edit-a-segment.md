@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-The *Segment Edits* feature allows users to modify existing Past Behaviour Segments (PBS) directly within the CleverTap dashboard. This capability enhances operational efficiency by allowing edits to be made once and reflected across all associated entities, such as Campaigns, Journeys, and Product experiences, without the need to recreate or clone segments.
+The _Segment Edits_ feature allows users to modify existing Past Behaviour Segments (PBS) directly within the CleverTap dashboard. This capability enhances operational efficiency by allowing edits to be made once and reflected across all associated entities, such as Campaigns, Journeys, and Product experiences, without the need to recreate or clone segments.
 
 <Callout icon="📘" theme="info">
   **Note**
@@ -29,6 +29,10 @@ Segment Edits aims for the following:
 * Reduce operational overhead for marketing teams.
 * Ensure consistency across campaigns and journeys using shared PBS segments.
 * Minimize errors caused by cloning or duplicating segment definitions.
+
+Suppose a marketer uses a Past Behavior Segment called _High-Value App Users_ in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions to better target repeat purchasers. 
+
+As a result, all Campaigns and Journeys using this segment automatically apply the updated rules in the next segment computation cycle.
 
 # Edit a Segment
 
@@ -54,16 +58,15 @@ The following are the steps to edit a segment with dependent engagements:
 
    * _Edit Segment_: Continue with editing the segment definition.
    * _Clone Segment_: Create a new version to avoid affecting existing dependencies.
-3. Modify any of the following:
 
+<Image align="center" alt="Edit Segment Confirmation" border={true} caption="Edit Segment Confirmation" src="https://files.readme.io/4ed57c86375365de78083e58e8158457cb40512b096843be43b9a38b43471022-image.png" />
+
+3. Modify any of the following:
    * Include/Exclude conditions
    * Events
    * User properties
 4. Click **Save Edits**.
-5. Confirm your changes in the confirmation window. (@meenal is this a step?)
-6. Click **Confirm and Save**.
-
-<Image align="center" alt="Edit Segment Confirmation" border={true} caption="Edit Segment Confirmation (@meenal, move this image to the start of this section. Also, add another screenshot post-edit )" src="https://files.readme.io/4ed57c86375365de78083e58e8158457cb40512b096843be43b9a38b43471022-image.png" />
+5. Review your changes in the confirmation window. Click **Confirm and Save**.
 
 # Segment Trend and Insights
 
@@ -76,19 +79,10 @@ The following are the segment trends and insights for edited segments:
 <Callout icon="🚧" theme="warn">
   **Important**
 
-  Check that the segments used in Campaigns or Journeys are referenced segments if you want edits to take effect. (@meenal this sentence is convoluted. please fix)
+  To ensure your edits take effect, verify that the segments used in Campaigns or Journeys are referenced segments.
 </Callout>
 
 Only segment owners from the specified team can edit that segment. This ensures that segment edits respect existing access control policies.
-
-# Use Case
-
-(@meenal, move the use case section within the overview itself)
-
-A marketer uses a Past Behavior Segment called *High-Value App Users* in multiple Campaigns and Journeys. After new engagement rules are introduced, the marketer edits the segment to include users who have completed three or more transactions(@meenal, why?).
-
-**Outcome**  
-All Campaigns and Journeys using this PBS segment automatically adopt the updated rule set during the next segment computation cycle. 
 
 # FAQs
 
