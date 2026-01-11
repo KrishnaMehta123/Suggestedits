@@ -1,6 +1,6 @@
 ---
 title: Gallabox
-excerpt: WIP
+excerpt: WhatsApp Provider
 deprecated: false
 hidden: false
 metadata:
@@ -16,80 +16,69 @@ This integration connects CleverTap’s engagement engine with Gallabox’s What
 * Automate message delivery through journeys and campaigns.
 * Track delivery, read, and response metrics within CleverTap analytics.
 
-> 🚧 **Support for Integration**
+> 🚧 Support for Integration
 >
-> This integration is managed and continuously improved by **Gallabox**.
-> The CleverTap and Gallabox integration has undergone stringent testing to ensure seamless functionality.
-> For questions or issues, contact [Gallabox Support](mailto:support@gallabox.com).
+> This integration is managed and continuously improved by Gallabox. The CleverTap and Gallabox integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [Gallabox](mailto:support@gallabox.com) for support and resolution.
 
 # Prerequisites for Integration
 
 Before starting the integration, ensure that you have the following:
 
-* The **WhatsApp Campaigns** feature is enabled in your CleverTap account.
-* An active **Gallabox account** with **WhatsApp Business API (WABA)** access.
-* A **provisioned WhatsApp Business number** registered with Gallabox.
-* At least one **Meta-approved WhatsApp message template** in Gallabox.
-
-> 📘 **Enable the CleverTap Add-on**
->
-> Check that you have enabled the **CleverTap Integration Add-on** from the Gallabox dashboard before proceeding.
+* The WhatsApp add-on enabled on the CleverTap account in addition to the Basic or Essentials Plan.
+* Ensure that WhatsApp onboarding for the phone number to be used with CleverTap is completed.
+* At least one Meta-approved WhatsApp message template in Gallabox.
 
 # Integrate Gallabox with CleverTap
 
 The integration process involves three steps:
 
-1. [Create a CleverTap Passcode](#create-a-clevertap-passcode)
+1. [Configure CleverTap in Gallabox](doc:gallabox#configure-clevertap-in-gallabox)
 2. [Configure the CleverTap Dashboard](#configure-the-clevertap-dashboard)
 3. [Set Up CleverTap Callbacks in Gallabox](#set-up-clevertap-callbacks-in-gallabox)
 
-## Create a CleverTap Passcode
+## Configure CleverTap in Gallabox
 
-CleverTap uses **Account ID** and **Passcode** headers to authenticate API calls. You must create a passcode from your CleverTap dashboard to allow Gallabox to send WhatsApp messages via CleverTap’s API.
+Before configuring CleverTap, you must first connect CleverTap within the Gallabox dashboard. This step generates the Webhook URL required to complete the provider setup in CleverTap.
 
-To create a passcode:
+To configure CleverTap in Gallabox:
 
-1. Log in to your [CleverTap Dashboard](https://dashboard.clevertap.com/).
-2. Navigate to **Settings → Organization Settings → API Keys**.
-3. Click **Generate New Passcode**.
-4. Note down your:
+1. Go to _Integrations_ and select _CleverTap_ in Gallabox Dashboard
+2. Click **Connect**, provide an integration name, and submit the configuration.
+3. Gallabox generates a _Webhook URL Endpoint_ for your CleverTap connection.
+4. Select the WhatsApp channel you want to connect with CleverTap and save the configuration.
 
-   * **Account ID**
-   * **Passcode**
-5. For more information, refer to [Create Account Passcode](https://developer.clevertap.com/docs/authentication#create-account-passcode).
+> 📘 Note
+>
+> Gallabox manages the Webhook URL generation and channel mapping. You do not need to manually create API credentials.
+
+Keep the generated Webhook URL Endpoint handy you will use it while configuring CleverTap. For detailed, Gallabox-specific setup steps, refer to [Gallabox’s official documentation](https://docs.gallabox.com/integration/marketing-and-engagement-platforms/clevertap#configuring-clevertap-in-gallabox).
 
 ## Configure the CleverTap Dashboard
 
 To set up Gallabox as your WhatsApp provider in CleverTap:
 
-1. Go to **Settings → Channels → WhatsApp → WhatsApp Connect** in the CleverTap dashboard.
-2. Click **+ Add Provider** and select **Generic (Other)** from the Provider list.
+1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ from the CleverTap dashboard.
+2. Click **+ Add Provider** and select _Generic (Other)_ from the _Provider_ list.
 
-<Image alt="Provider Setup" border={false} src="https://files.readme.io/e451b36150e189f94b3d4082226e5ef5b9a8517791b6774746a9137ad43370e9-image.png" title="Provider Setup" />
+<Image align="center" alt="Provider Setup" border={true} width="55% " src="https://files.readme.io/e451b36150e189f94b3d4082226e5ef5b9a8517791b6774746a9137ad43370e9-image.png" title="Provider Setup" className="border" />
 
 3. Enter the following details:
 
-| Field                            | Details                                                                                                                                            |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nickname**                     | Enter a unique name, for example, `Gallabox_WA`.                                                                                                   |
-| **Mobile Number**                | Enter your WhatsApp-integrated number with the country code (for example, +918888001122).                                                          |
-| **Request Type**                 | Select `POST`.                                                                                                                                     |
-| **HTTP Endpoint**                | Use the **Webhook URL generated by Gallabox** after connecting CleverTap in your Gallabox dashboard. This URL is unique to your Gallabox account.  |
-| **Delivery Report Callback URL** | This URL is generated automatically by CleverTap. Refer to [Set Up CleverTap Callbacks in Gallabox](#set-up-clevertap-callbacks-in-gallabox).      |
-| **Inbound Message Callback URL** | This URL is also generated automatically in CleverTap. Refer to [Set Up CleverTap Callbacks in Gallabox](#set-up-clevertap-callbacks-in-gallabox). |
+| Field                            | Details                                                                                                                                                                                                                                     |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nickname**                     | Enter a unique name, for example, `Gallabox_WA`.                                                                                                                                                                                            |
+| **Mobile Number**                | Enter your WhatsApp-integrated number with the country code (for example, +918888001122).                                                                                                                                                   |
+| **Request Type**                 | Select `POST`.                                                                                                                                                                                                                              |
+| **HTTP Endpoint**                | Use the **Webhook URL generated by Gallabox** after connecting CleverTap in your Gallabox dashboard. This URL is unique to your Gallabox account. Refer to [Configure CleverTap in Gallabox](doc:gallabox#configure-clevertap-in-gallabox). |
+| **Delivery Report Callback URL** | This URL is generated automatically by CleverTap. Refer to [Set Up CleverTap Callbacks in Gallabox](doc:gallabox#set-up-clevertap-callbacks-in-gallabox).                                                                                   |
+| **Inbound Message Callback URL** | This URL is also generated automatically in CleverTap. Refer to [Set Up CleverTap Callbacks in Gallabox](doc:gallabox#set-up-clevertap-callbacks-in-gallabox).                                                                              |
 
-4. **Add Headers (if required by Gallabox):**
+4. (Optional) Select _Mark this as default_ to make Gallabox your primary WhatsApp provider.
+5. (Optional) Select _Set auto-reply for users not tracked on CleverTap_ to automatically reply to users who message on WhatsApp but are not tracked on the CleverTap dashboard.
+6. (Optional) Set the _Maximum Concurrent API requests_ between 30 and 1000. Consider your requirements and the provider's limitations when defining this value.
+7. Send a Test WhatsApp notification (refer to the following image).
 
-   * If Gallabox provides an **Authorization Token** during integration setup, paste it into the header section of the CleverTap configuration.
-   * If no token is required, you can skip this step.
-
-> 📘 **Note**
-> The Webhook URL and any required headers are provided by Gallabox during setup. You do not need to manually generate API credentials.
-
-5. (Optional) Select _Mark this as default_ to make Gallabox your primary WhatsApp provider.
-6. (Optional) Enable _Auto-reply for untracked users_ to respond automatically to users who message on WhatsApp but are not tracked in CleverTap.
-7. Set the _Maximum Concurrent API Requests_ according to your usage needs (recommended range: **30–1000**).
-8. Click **Save** and send a **Test Message** to validate the setup.
+<Image align="center" alt="Send Test Message on WhatsApp" border={true} caption="Send Test Message on WhatsApp" src="https://files.readme.io/7a1c1d3c7dc20157dcb867e518b2e4b75dfc0c9c5bf69d91d772b4bd08245ccb-image.png" width="65% " />
 
 ## Set Up CleverTap Callbacks in Gallabox
 
@@ -97,36 +86,47 @@ Callbacks ensure two-way synchronization between CleverTap and Gallabox. These a
 
 To configure callbacks:
 
-1. Log in to your [Gallabox Dashboard](https://app.gallabox.com/).
-2. Go to **Integrations → CleverTap**.
-3. In the CleverTap dashboard, go to **Settings → Channels → WhatsApp → Provider Nickname**.
-4. Copy the following:
+1. Go to _Integrations_ > _CleverTap_ in Gallabox dashboard.
+2. In the CleverTap dashboard, go to _Settings_ > _Channels_ > _WhatsApp_ > _Provider Nickname_.
+3. Copy the following:
 
    * **Delivery Report Callback URL**
    * **Inbound Message Callback URL**
-5. Paste both URLs into the Gallabox integration form under the corresponding fields.
-6. Click **Submit** to save the configuration.
+4. Paste both URLs into the Gallabox integration form under the corresponding fields.
+5. Click **Submit** to save the configuration.
 
-<Image alt="Callback URLs" border={false} src="https://files.readme.io/931f649e1d2a8e6a9c805ef928b38b661294cc92d1d2597d120df3702259a820-image.png" title="Callback URLs" />
+<Image align="center" alt="Callback URLs" border={true} caption="Callback URLs" src="https://files.readme.io/bb8aeadbdca5c9b6f6ea7d6b0d93bb508935b01a75f2e87ba03fea4d2a81a062-image.png" width="65% " />
 
 Once configured, Gallabox will sync message delivery statuses and inbound user replies with CleverTap in real time.
 
 ## Add WhatsApp Message Templates
 
-WhatsApp templates are reusable, pre-approved message formats required for sending outbound messages to users.
+To create WhatsApp campaigns, you must have pre-approved WhatsApp message templates saved in the CleverTap dashboard. To add the templates, follow these steps:
 
-To manage templates:
+1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ > _Provider Nickname_ in the CleverTap dashboard.
+2. Select the _Templates_ option and click **+Template**.
 
-1. In CleverTap, go to **Settings → Channels → WhatsApp → Provider Nickname**.
-2. Select **Templates** and click **+Template**.
-3. Enter the **Template Name**, **Language**, and **Header Type** (Text or Media).
-4. Paste the approved template content from Gallabox.
-5. Click **Save Template**.
+<Image align="center" alt="Create a New Template" border={true} caption="Create a New Template" title="Create a New Template" src="https://files.readme.io/70d1653-non_CT_approved_templates.jpg" width="75% " />
 
-> 📘 **Note**
-> Template names and languages must be unique for each provider configuration.
+3. Enter the template name.
+   > 📘 Naming WhatsApp Templates
+   >
+   > Template names and language variants must be unique for each provider configuration. This means that you can use the same template name once for each provider configuration.
+   >
+   > For example, if you have multiple provider configurations, such as Phone_1 and Phone_2, you can use the particular template name once within Phone_1 and Phone_2.
+4. You can also choose the language in which you will display the message.
+5. Select the type of template header (Text or Media). For Media headers, you can use _Image_, _Video_, _Document_, or _Location_.
+6. Create a [Limited Time Offer Template](doc:whatsapp-message-templates#limited-time-offer-templates), if required.
+7. Enter the message content.
+8. Select _Footer_ to add a footer text and a button (Quick Reply or a Call To Action).
 
-<Image alt="Create Template" border={false} src="https://files.readme.io/70d1653-non_CT_approved_templates.jpg" title="Create Template" />
+<Image align="center" alt="Define Template Content" border={true} caption="Define Template Content" src="https://files.readme.io/5bd5090-Generic_template_create.jpg" width="75% " />
+
+9. Click **Save Template**.
+
+## Testing a Message Template
+
+For detailed instructions on testing a WhatsApp message template, refer to [Testing a Message Template](doc:whatsapp-message-templates#testing-a-message-template).
 
 ## Create a WhatsApp Campaign
 
@@ -134,11 +134,13 @@ You can now send personalized WhatsApp campaigns via Gallabox using CleverTap.
 
 For step-by-step instructions, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
 
-## Create a WhatsApp Journey
+## Create Campaign
 
-Automate user engagement through journeys powered by Gallabox.
+For detailed instructions on creating a WhatsApp campaign using Gallabox as the provider, refer to [Create a WhatsApp Campaign](doc:create-message-whatsapp).
 
-To learn how to add Gallabox as your provider in a journey, refer to [Create a WhatsApp Journey](https://docs.clevertap.com/docs/engagement-nodes-whatsapp).
+## Creating a Journey
+
+For detailed instructions on creating a WhatsApp journey using Gallabox as the provider, refer to [Create a WhatsApp Journey](doc:engagement-nodes-whatsapp).
 
 ## Verification
 
