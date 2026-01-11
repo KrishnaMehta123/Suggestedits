@@ -128,12 +128,6 @@ To create WhatsApp campaigns, you must have pre-approved WhatsApp message templa
 
 For detailed instructions on testing a WhatsApp message template, refer to [Testing a Message Template](doc:whatsapp-message-templates#testing-a-message-template).
 
-## Create a WhatsApp Campaign
-
-You can now send personalized WhatsApp campaigns via Gallabox using CleverTap.
-
-For step-by-step instructions, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
-
 ## Create Campaign
 
 For detailed instructions on creating a WhatsApp campaign using Gallabox as the provider, refer to [Create a WhatsApp Campaign](doc:create-message-whatsapp).
