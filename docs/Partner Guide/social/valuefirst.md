@@ -61,9 +61,10 @@ After successful authentication, ValueFirst generates the _Auth URL_ and _Basic 
 To configure the CleverTap dashboard, perform the following steps:
 
 1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ from the CleverTap dashboard.
+
 2. Click **+ Add Provider** and select _Generic (Other)_ from the dropdown.
 
-  
+<Image align="center" alt="Provider Setup" border={true} caption="Provider Setup" src="https://files.readme.io/316de53f548915ae8cafc242a49a1613c037dc1ee304b78e249a6c3cf75033c7-885f26f7e2110aab22dd2bda2eba90bc4c3e187863d865a407301bc495da3a4d-image.png" width="65% " />
 
 1. Enter the following details:
 
