@@ -63,7 +63,7 @@ To configure the CleverTap dashboard, perform the following steps:
 1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ from the CleverTap dashboard.
 2. Click **+ Add Provider** and select _Generic (Other)_ from the dropdown.
 
-<br />
+  
 
 1. Enter the following details:
 
