@@ -47,22 +47,25 @@ Before configuring CleverTap, authenticate your WhatsApp account in the ValueFir
 
 To configure ValueFirst:
 
-1. Log in to the ValueFirst portal using the credentials provided by ValueFirst.
-2. Open the **ValueFirst – CleverTap WhatsApp Integration Plugin**.
-3. Enter the Username, Password, and WhatsApp phone number.
-4. Click **Authenticate**.
+1. Open the [ValueFirst – CleverTap WhatsApp Integration](https://ct.vfplugin.com/signup).
+2. Enter the Username, Password, and WhatsApp phone number and click **Sign Up**.
 
-After successful authentication, ValueFirst generates the **Auth URL** and **Basic Authorization Token**.
+<Image align="center" border={true} width="65% " src="https://files.readme.io/79b0fff38568248e70411b16566e7afd4ca5b4a5c2ac8d7af1647a801318f964-image.png" className="border" />
+
+3. To configure the ValueFirst WhatsApp connection, log in to the ValueFirst portal using the credentials created in the previous _step 2_.
+
+After successful authentication, ValueFirst generates the _Auth URL_ and _Basic Authorization Token_ required for configuring CleverTap.
 
 ## Configure the CleverTap Dashboard
 
-To set up ValueFirst as your WhatsApp provider in CleverTap:
+To configure the CleverTap dashboard, perform the following steps:
 
-1. Go to **Settings > Channels > WhatsApp > WhatsApp Connect** in the CleverTap dashboard.
+1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ from the CleverTap dashboard.
+2. Click **+ Add Provider** and select _Generic (Other)_ from the dropdown.
 
-2. Click **+ Add Provider** and select **Generic (Other)**.
+<br />
 
-3. Enter the following details:
+1. Enter the following details:
 
 | Field                        | Details                                                                        |
 | ---------------------------- | ------------------------------------------------------------------------------ |
@@ -84,8 +87,6 @@ To set up ValueFirst as your WhatsApp provider in CleverTap:
 
 8. Click **Save**.
 
-***
-
 ## Configure CleverTap Webhooks in ValueFirst
 
 Webhooks enable delivery reports and inbound WhatsApp messages to sync between ValueFirst and CleverTap.
@@ -101,8 +102,6 @@ To configure webhooks:
 4. Paste the callback URLs into the **Status Callback** and **Incoming Callback** fields.
 5. Click **Save**.
 
-***
-
 ## Add WhatsApp Message Templates
 
 To send WhatsApp campaigns, you must save Meta-approved message templates in CleverTap.
@@ -117,8 +116,6 @@ To add a template:
 6. (Optional) Add a footer or buttons.
 7. Click **Save Template**.
 
-***
-
 ## Testing a Message Template
 
 To test a WhatsApp message template:
@@ -130,8 +127,6 @@ To test a WhatsApp message template:
 
 If the message fails, share the response payload with ValueFirst support for troubleshooting.
 
-***
-
 ## Create a WhatsApp Campaign
 
 You can now send WhatsApp campaigns using ValueFirst through CleverTap.
@@ -139,16 +134,12 @@ You can now send WhatsApp campaigns using ValueFirst through CleverTap.
 For step-by-step instructions, see
 [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
 
-***
-
 ## Create a WhatsApp Journey
 
 Automate WhatsApp engagement using journeys.
 
 For detailed instructions, see
 [Create a WhatsApp Journey](doc:engagement-nodes-whatsapp).
-
-***
 
 ## Verification
 
@@ -158,19 +149,3 @@ Your integration is successful when:
 * Delivery reports appear in CleverTap analytics
 * Inbound WhatsApp messages sync correctly
 * No authentication or webhook errors appear
-
-***
-
-## ✅ Final Status
-
-* ✔ Navigation paths normalized
-* ✔ Tone and structure aligned with CleverTap docs
-* ✔ Safe to publish on **docs.clevertap.com**
-
-If you want next:
-
-* I can do the **same sweep for the Gallabox doc**
-* Or create a **reusable internal style guide snippet**
-* Or prep a **PR-ready MDX version**
-
-Just tell me what’s next 🚀
