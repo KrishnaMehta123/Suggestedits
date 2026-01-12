@@ -16,16 +16,15 @@ This integration connects CleverTap’s engagement platform with ValueFirst’s 
 * Automate WhatsApp communication through campaigns and journeys
 * Track message delivery and engagement metrics within CleverTap
 
-> 🚧 **Support for Integration**
+> 🚧 Support for Integration
 >
-> This integration is managed and supported by ValueFirst.
-> For provider-side setup, credentials, or delivery issues, contact **[partnerships@vfirst.com](mailto:partnerships@vfirst.com)**.
+> This integration is managed and continuously improved by ValueFirst. The CleverTap and ValueFirst integration has undergone stringent testing to ensure seamless functionality. For any questions or issues, contact [ValueFirst](mailto:partnerships@vfirst.com) for support and resolution.
 
 # Prerequisites for Integration
 
-Before starting the integration, ensure that you have the following:
+The following are the prerequisites for this integration.
 
-* WhatsApp add-on enabled on your CleverTap account (Basic or Essentials plan)
+* You must have the WhatsApp add-on enabled on the CleverTap account in addition to the Essentials Plan.
 * A ValueFirst WhatsApp XML account
 * WhatsApp credentials provided by ValueFirst:
 
@@ -34,8 +33,6 @@ Before starting the integration, ensure that you have the following:
   * WhatsApp-enabled phone number
 * CleverTap IP **43.205.172.215** whitelisted on the ValueFirst side
 
-***
-
 # Integrate ValueFirst with CleverTap
 
 The integration process involves three steps:
@@ -43,8 +40,6 @@ The integration process involves three steps:
 1. [Configure ValueFirst](#configure-valuefirst)
 2. [Configure the CleverTap Dashboard](#configure-the-clevertap-dashboard)
 3. [Configure CleverTap Webhooks in ValueFirst](#configure-clevertap-webhooks-in-valuefirst)
-
-***
 
 ## Configure ValueFirst
 
@@ -58,8 +53,6 @@ To configure ValueFirst:
 4. Click **Authenticate**.
 
 After successful authentication, ValueFirst generates the **Auth URL** and **Basic Authorization Token**.
-
-***
 
 ## Configure the CleverTap Dashboard
 
