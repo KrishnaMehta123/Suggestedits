@@ -1,5 +1,6 @@
 ---
 title: ValueFirst
+excerpt: WhatsApp Provider
 deprecated: false
 hidden: false
 metadata:
@@ -19,8 +20,6 @@ This integration connects CleverTap’s engagement platform with ValueFirst’s 
 >
 > This integration is managed and supported by ValueFirst.
 > For provider-side setup, credentials, or delivery issues, contact **[partnerships@vfirst.com](mailto:partnerships@vfirst.com)**.
-
-***
 
 # Prerequisites for Integration
 
