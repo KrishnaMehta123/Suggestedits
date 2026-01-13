@@ -15,7 +15,6 @@ The *Device Previews* in CleverTap enables you to:
 
 * Mark devices as _test devices_ and target them for QA.
 * Assign specific variants to individual devices or user profiles.
-* Run and preview multiple A/B tests simultaneously in test mode.
 * Verify app behavior and visual consistency before rollout.
 
 This feature is designed for QA, marketing, and product teams who want complete control over their A/B testing environment.
