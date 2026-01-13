@@ -56,6 +56,8 @@ To configure ValueFirst:
 
 After successful authentication, ValueFirst generates the _Auth URL_ and _Basic Authorization Token_ required for configuring CleverTap.
 
+<Image align="center" border={true} width="65% " src="https://files.readme.io/7e9deb134fad1c47bffb6d561b54109baa620d35232c55f16e7ad42584bf8868-image.png" className="border" />
+
 ## Configure the CleverTap Dashboard
 
 To configure the CleverTap dashboard, perform the following steps:
@@ -66,7 +68,7 @@ To configure the CleverTap dashboard, perform the following steps:
 
 <Image align="center" alt="Provider Setup" border={true} caption="Provider Setup" src="https://files.readme.io/316de53f548915ae8cafc242a49a1613c037dc1ee304b78e249a6c3cf75033c7-885f26f7e2110aab22dd2bda2eba90bc4c3e187863d865a407301bc495da3a4d-image.png" width="65% " />
 
-1. Enter the following details:
+3. Enter the following details:
 
 | Field                        | Details                                                                        |
 | ---------------------------- | ------------------------------------------------------------------------------ |
