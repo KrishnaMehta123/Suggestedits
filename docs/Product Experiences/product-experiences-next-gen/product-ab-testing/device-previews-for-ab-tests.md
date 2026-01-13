@@ -11,7 +11,7 @@ metadata:
 
 Before publishing your A/B tests, you can **preview and test variants across multiple devices** to ensure everything works as expected. CleverTap’s enhanced A/B Test feature allows you to test on registered devices, view live variants, and run multiple tests in.
 
-The *Device Previews* in CleverTap enables you to:
+The _Device Previews_ in CleverTap enables you to:
 
 * Mark devices as _test devices_ and target them for QA.
 * Assign specific variants to individual devices or user profiles.
@@ -23,16 +23,16 @@ This feature is designed for QA, marketing, and product teams who want complete 
 
 Before testing an A/B experiment:
 
-* Check that your *CleverTap SDK* is updated to the latest version that supports test device registration.
-* You must have access permissions for *A/B test creation* and *Device Previews*.
-* The devices you plan to use for testing must be *registered as test devices*.
+* Check that your _CleverTap SDK_ is updated to the latest version that supports test device registration.
+* You must have access permissions for _A/B test creation_ and _Device Previews_.
+* The devices you plan to use for testing must be _registered as test devices_.
 
 # Mark a Device as a Test Device
 
 To register a device for testing:
 
-1. Go to *Segments > Find People*.
-2. Search for a user profile using *Identity* or *CleverTap ID*.
+1. Go to _Segments > Find People_.
+2. Search for a user profile using _Identity_ or _CleverTap ID_.
 3. Select **Mark as Test Device**.
 
 For more information, refer to [Mark a user profile as a Test Profile](https://docs.clevertap.com/docs/user-profiles#mark-a-user-profile-as-a-test-profile).
@@ -41,7 +41,7 @@ For more information, refer to [Mark a user profile as a Test Profile](https://d
 
 1. Go to Product Experiences > A/B Tests
 2. [Create a new A/B Test](https://docs.clevertap.com/docs/create-ab-tests) or open an existing A/B Test.
-3. Under the *Device Preview* section, click **Add Preview**. The users and devices are listed. Each entry shows the following:
+3. Under the _Device Preview_ section, click **Add Preview**. The users and devices are listed. Each entry shows the following:
    * **Test User or Profile Name**
    * **Preview Status** (Active or Inactive)
    * **Preview Devices** (number of devices linked)
@@ -66,7 +66,7 @@ Use this panel to:
 * Deselect or clear specific devices
 * Quickly compare variant performance in real-time environments
 
-<Callout icon="👍">
+<Callout icon="👍" theme="okay">
   Tip
 
   You can now conduct **multiple A/B tests simultaneously**, making parallel QA testing possible across teams.
@@ -74,11 +74,21 @@ Use this panel to:
 
 # Stop or Update a Device Preview
 
+<br />
+
+<br />
+
+<br />
+
+<Image align="center" border={false} caption="Edit Preview Devices" src="https://files.readme.io/1e3c39f86bcf069cbb503baae7999cf4711fbce85a0e833d6c7b628caf2196d9-image.png" />
+
+<br />
+
 To modify or stop an active test session:
 
 1. View Running Tests in the A/B Test dashboard.
-2. Review the profiles and devices.
-3. You can either:
+2. From the *Device Previews* section, select the profiles and devices.
+3. You can either edit the device preview or do the following:
 
    * **Update Test** – to add or remove devices.
    * **Stop Test** – to end test mode for that session.
@@ -109,6 +119,6 @@ Yes. You can now preview and test multiple A/B experiments simultaneously.
 No. Only registered test devices get variant changes.
 
 **Can I unmark a test device later?**
-Yes. Clear *Mark as Test Device* on the user’s profile page at any time.
+Yes. Clear _Mark as Test Device_ on the user’s profile page at any time.
 
 <br />
