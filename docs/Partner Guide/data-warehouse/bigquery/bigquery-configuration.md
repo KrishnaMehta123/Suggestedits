@@ -216,17 +216,3 @@ Use the filters on _Import Connections_ to refine the list:
 Whitelist the required IP ranges to allow CleverTap to access your Google Cloud project. Refer to **CleverTap IP Ranges** for the latest list.
 
 <br />
-
-<Cards>
-  <Card title="Getting Started" href="#">
-    hi
-  </Card>
-
-  <Card title="API Reference" href="#">
-    Explore our interactive API reference.
-  </Card>
-
-  <Card title="Support & Community" href="#" target="_blank">
-    Join our community or checkout our FAQ.
-  </Card>
-</Cards>
