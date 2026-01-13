@@ -117,10 +117,10 @@ Generate a JSON key that CleverTap will use for authentication:
 
 1. In the Google Cloud Console, click on ![](https://files.readme.io/cfd2c44400c28fea69ef0071381f439904b5e3678672e6b8a60a7f94422edd3f-Big_query_1.png)  navigate to _IAM & Admin > Service Accounts_.
 2. Open the **Keys** tab.
-3. Click **Add key > Create new key**. 
+3. Click **Add key > Create new key**.
 
    <Image align="center" border={true} caption="Create new key" src="https://files.readme.io/493ab42bf9ecd411c3441c09c35d3f30ab2484ff50331c97639a072ea116f334-Big_query_8.png" />
-4. Select **JSON** and click **Create**. 
+4. Select **JSON** and click **Create**.
 
    <Image align="center" border={true} width="75% " src="https://files.readme.io/cda52a9b26d122363c1a73efc4f23abed6480d2cd9832fd76908b4a03d8113dc-Big_Query_9.png" className="border" />
 5. Download and securely store the JSON file.
@@ -214,3 +214,19 @@ Use the filters on _Import Connections_ to refine the list:
 ### How can I whitelist IPs for CleverTap integration?
 
 Whitelist the required IP ranges to allow CleverTap to access your Google Cloud project. Refer to **CleverTap IP Ranges** for the latest list.
+
+<br />
+
+<Cards>
+  <Card title="Getting Started" href="#" icon="fa-rocket">
+    hi
+  </Card>
+
+  <Card title="API Reference" href="#" icon="fa-code">
+    Explore our interactive API reference.
+  </Card>
+
+  <Card title="Support & Community" href="#" icon="fa-comments" target="_blank">
+    Join our community or checkout our FAQ.
+  </Card>
+</Cards>
