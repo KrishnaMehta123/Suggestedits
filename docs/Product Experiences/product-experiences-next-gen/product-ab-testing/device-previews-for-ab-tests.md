@@ -93,7 +93,7 @@ To modify or stop an active test session:
 
 <br />
 
-## Troubleshooting
+# Troubleshooting
 
 | Issue                          | Cause                                     | Solution                                                                            |
 | ------------------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -101,7 +101,7 @@ To modify or stop an active test session:
 | Unable to start multiple tests | Another test is still in single-test mode | Ensure all tests are saved and enable _Test Mode_ for each individually.            |
 | Variant not loading            | Incorrect device linkage                  | Verify the device’s variant assignment in the **Variables** tab and re-publish.     |
 
-## FAQs
+# FAQs
 
 **Can I run multiple tests in Test Mode?**
 Yes. You can now preview and test multiple A/B experiments simultaneously.
