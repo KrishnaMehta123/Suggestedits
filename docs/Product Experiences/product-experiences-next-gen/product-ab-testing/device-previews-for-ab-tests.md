@@ -103,7 +103,7 @@ To modify or stop an active test session:
 | Issue                          | Cause                                     | Solution                                                                            |
 | ------------------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------- |
 | Test device not visible        | Device not registered                     | Go to **Find People**, mark the device as a test device, and refresh the dashboard. |
-| Unable to start multiple tests | Another test is still in single-test mode | Ensure all tests are saved and enable _Test Mode_ for each individually.            |
+| Unable to start multiple tests | Another test is still in single-test mode | Ensure all tests are saved and enable  *Device Preview* for each individually.      |
 | Variant not loading            | Incorrect device linkage                  | Verify the device’s variant assignment in the **Variables** tab and re-publish.     |
 
 # FAQs
