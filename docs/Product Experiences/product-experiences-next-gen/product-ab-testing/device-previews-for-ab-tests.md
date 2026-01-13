@@ -1,5 +1,6 @@
 ---
 title: Device Previews for A/B Tests
+excerpt: Learn how to preview A/B Tests on test devices.
 deprecated: false
 hidden: false
 metadata:
