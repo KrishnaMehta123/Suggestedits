@@ -182,52 +182,50 @@ To configure webhooks:
 
 <Image align="center" alt="ValueFirst Callback URLs" border={true} caption="ValueFirst Callback URLs" src="https://files.readme.io/e14e5453ec995d4aaa8415531559eb397485bb09bc3c8376f710e4a5e136c516-image.png" width="65% " />
 
-3. Click **Save**.
+6. Click **Save**.
 
-## Add Message Templates
+## Add WhatsApp Message Templates
 
-To create WhatsApp campaigns, you must have pre-approved WhatsApp message templates saved in the CleverTap dashboard. To add the templates, perform the following steps:
+To create WhatsApp campaigns, you must have pre-approved WhatsApp message templates saved in the CleverTap dashboard. To add the templates, follow these steps:
 
-1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ > _Provider Nickname_ on the CleverTap dashboard.
-2. Select _Templates_ and click **+ Template**.
+1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ > _Provider Nickname_ in the CleverTap dashboard.
+2. Select the _Templates_ option and click **+Template**.
 
-![](https://files.readme.io/70d1653-non_CT_approved_templates.jpg "Create a New Template")  Create a New Template
+<Image align="center" alt="Create a New Template" border={true} caption="Create a New Template" title="Create a New Template" src="https://files.readme.io/70d1653-non_CT_approved_templates.jpg" width="75% " />
 
 3. Enter the template name.
-
-> 📘 Naming WhatsApp Templates
->
-> Template names and language variants must be unique for each provider configuration. This means that you can use the same template name once for each provider configuration.
->
-> For example, if you have multiple provider configurations, such as Phone_1 and Phone_2, you can use the a particular template name once within Phone_1 and Phone_2.
-
-4. Select the language in which you want to display the message.
+   > 📘 Naming WhatsApp Templates
+   >
+   > Template names and language variants must be unique for each provider configuration. This means that you can use the same template name once for each provider configuration.
+   >
+   > For example, if you have multiple provider configurations, such as Phone_1 and Phone_2, you can use the particular template name once within Phone_1 and Phone_2.
+4. You can also choose the language in which you will display the message.
 5. Select the type of template header (Text or Media). For Media headers, you can use _Image_, _Video_, _Document_, or _Location_.
 6. Create a [Limited Time Offer Template](doc:whatsapp-message-templates#limited-time-offer-templates), if required.
 7. Enter the message content.
 8. Select _Footer_ to add a footer text and a button (Quick Reply or a Call To Action).
 
-![](https://files.readme.io/5bd5090-Generic_template_create.jpg) Define Template Content
+<Image align="center" alt="Define Template Content" border={true} caption="Define Template Content" src="https://files.readme.io/5bd5090-Generic_template_create.jpg" width="75% " />
 
 9. Click **Save Template**.
 
-## Test a Message Template
+## Testing a Message Template
 
 For detailed instructions on testing a WhatsApp message template, refer to [Testing a Message Template](doc:whatsapp-message-templates#testing-a-message-template).
 
-# Create Campaign
+## Create Campaign
 
-For detailed instructions on creating a WhatsApp campaign using Route Mobile as the provider, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
+For detailed instructions on creating a WhatsApp campaign using ValueFirst as the provider, refer to [Create a WhatsApp Campaign](doc:create-message-whatsapp).
 
-# Create a Journey
+## Creating a Journey
 
-For detailed instructions on creating a WhatsApp journey using Route Mobile as the provider, refer to [Create a WhatsApp Journey](doc:engagement-nodes-whatsapp).
+For detailed instructions on creating a WhatsApp journey using ValueFirst as the provider, refer to [Create a WhatsApp Journey](doc:engagement-nodes-whatsapp).
 
 ## Verification
 
-Your integration is successful when:
+Your integration is considered successful when:
 
-* Test WhatsApp messages are delivered successfully
-* Delivery reports appear in CleverTap analytics
-* Inbound WhatsApp messages sync correctly
-* No authentication or webhook errors appear
+* Test WhatsApp messages are delivered successfully.
+* Delivery reports appear in CleverTap analytics.
+* Inbound WhatsApp messages sync correctly.
+* No authentication or webhook errors appear.
