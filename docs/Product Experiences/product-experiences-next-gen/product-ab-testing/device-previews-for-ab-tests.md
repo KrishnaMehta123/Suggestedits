@@ -72,11 +72,7 @@ Use this panel to:
   You can now conduct **multiple A/B tests simultaneously**, making parallel QA testing possible across teams.
 </Callout>
 
-# Stop or Update a Device Preview
-
-<br />
-
-<br />
+# Stop or Edit a Device Preview
 
 <br />
 
