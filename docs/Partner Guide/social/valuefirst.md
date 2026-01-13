@@ -39,7 +39,7 @@ The integration process involves three steps:
 
 1. [Configure ValueFirst](#configure-valuefirst)
 2. [Configure the CleverTap Dashboard](#configure-the-clevertap-dashboard)
-3. [Configure CleverTap Webhooks in ValueFirst](#configure-clevertap-webhooks-in-valuefirst)
+3. [Set Up CleverTap Callbacks with ValueFirst](doc:valuefirst#set-up-clevertap-callbacks-with-valuefirst)
 
 ## Configure ValueFirst
 
@@ -162,7 +162,7 @@ To configure the CleverTap dashboard, perform the following steps:
 
 <Image align="center" alt="Send Test Message on WhatsApp" border={true} caption="Send Test Message on WhatsApp" src="https://files.readme.io/6b7216065db1cfc7c825a026ef503d982e4fcff64f591caaa5491e16159bf17a-c384922-sendtest_1.png" width="65% " />
 
-### Set Up CleverTap Callbacks with ValueFirst
+## Set Up CleverTap Callbacks with ValueFirst
 
 Webhooks enable delivery reports and inbound WhatsApp messages to sync between ValueFirst and CleverTap.
 
