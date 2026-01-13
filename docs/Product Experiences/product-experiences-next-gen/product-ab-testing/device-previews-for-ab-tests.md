@@ -106,7 +106,7 @@ To modify or stop an active test session:
 Yes. You can now preview and test multiple A/B experiments simultaneously.
 
 **Do test devices affect production users?**
-No. Test Mode is isolated, only registered test devices get variant changes.
+No. Only registered test devices get variant changes.
 
 **Can I unmark a test device later?**
 Yes. Clear *Mark as Test Device* on the user’s profile page at any time.
