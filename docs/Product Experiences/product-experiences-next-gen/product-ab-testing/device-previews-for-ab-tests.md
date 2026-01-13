@@ -83,7 +83,7 @@ To modify or stop an active test session:
 
    * **Update Test** – to add or remove devices.
    * **Stop Test** – to end test mode for that session.
-   * **Delete** - to remove the device from the preview.
+   * **Delete** – to remove the device from the preview.
 
 <Callout icon="📘" theme="info">
   Note
