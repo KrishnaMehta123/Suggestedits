@@ -70,7 +70,7 @@ Use this panel to:
 <Callout icon="👍">
   Tip
 
-  You can now enable _Test Mode_ for **multiple A/B tests simultaneously**, making parallel QA testing possible across teams.
+  You can now conduct **multiple A/B tests simultaneously**, making parallel QA testing possible across teams.
 </Callout>
 
 # Stop or Update a Device Preview
