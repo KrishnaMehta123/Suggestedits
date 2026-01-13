@@ -10,7 +10,7 @@ metadata:
 
 # Overview
 
-Before publishing your A/B tests, you can **preview and test variants across multiple devices** to ensure everything works as expected. CleverTap’s enhanced A/B Test feature allows you to test on registered devices, view live variants, and run multiple tests in.
+Before publishing your A/B tests, you can **preview and test variants across multiple devices** to ensure everything works as expected. CleverTap’s enhanced A/B Test feature allows you to test on registered devices, view live variants, and run multiple tests.
 
 The _Device Previews_ in CleverTap enable you to:
 
