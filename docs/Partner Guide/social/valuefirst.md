@@ -50,13 +50,13 @@ To configure ValueFirst:
 1. Open the [ValueFirst – CleverTap WhatsApp Integration](https://ct.vfplugin.com/signup).
 2. Enter the Username, Password, and WhatsApp phone number and click **Sign Up**.
 
-<Image align="center" border={true} width="65% " src="https://files.readme.io/79b0fff38568248e70411b16566e7afd4ca5b4a5c2ac8d7af1647a801318f964-image.png" className="border" />
+<Image align="center" alt="ValueFrist Sign Up" border={true} caption="ValueFrist Sign Up" src="https://files.readme.io/79b0fff38568248e70411b16566e7afd4ca5b4a5c2ac8d7af1647a801318f964-image.png" width="65% " />
 
 3. To configure the ValueFirst WhatsApp connection, log in to the ValueFirst portal using the credentials created in the previous _step 2_.
 
 After successful authentication, ValueFirst generates the _Auth URL_ and _Basic Authorization Token_ required for configuring CleverTap.
 
-<Image align="center" border={true} width="65% " src="https://files.readme.io/7e9deb134fad1c47bffb6d561b54109baa620d35232c55f16e7ad42584bf8868-image.png" className="border" />
+<Image align="center" alt="Configure ValueFirst" border={true} caption="Configure ValueFirst" src="https://files.readme.io/7e9deb134fad1c47bffb6d561b54109baa620d35232c55f16e7ad42584bf8868-image.png" width="65% " />
 
 ## Configure the CleverTap Dashboard
 
@@ -82,13 +82,15 @@ To configure the CleverTap dashboard, perform the following steps:
    * **Key:** `Authorization`
    * **Value:** Paste the **Basic Token** from ValueFirst
 
-5. (Optional) Select **Mark this as default**.
+5. (Optional) Select _Mark this as default to make this service provider the default provider_ to send a WhatsApp message via ValueFirst.
 
-6. (Optional) Enable **Set auto-reply for users not tracked on CleverTap**.
+6. (Optional) Select _Set auto-reply for users not tracked on CleverTap_ to automatically reply to users who message on WhatsApp but are not tracked on the CleverTap dashboard.
 
-7. Click **Send Test WhatsApp** to validate the configuration.
+7. (Optional) Set the _Maximum Concurrent API requests_ between 30 and 1000. Consider your requirements and the provider's limitations when defining this value.
 
-8. Click **Save**.
+8. Send a Test WhatsApp notification (refer to the following image).
+
+<br />
 
 ## Configure CleverTap Webhooks in ValueFirst
 
