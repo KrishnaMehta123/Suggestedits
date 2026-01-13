@@ -218,15 +218,15 @@ Whitelist the required IP ranges to allow CleverTap to access your Google Cloud 
 <br />
 
 <Cards>
-  <Card title="Getting Started" href="#" icon="fa-rocket">
+  <Card title="Getting Started" href="#">
     hi
   </Card>
 
-  <Card title="API Reference" href="#" icon="fa-code">
+  <Card title="API Reference" href="#">
     Explore our interactive API reference.
   </Card>
 
-  <Card title="Support & Community" href="#" icon="fa-comments" target="_blank">
+  <Card title="Support & Community" href="#" target="_blank">
     Join our community or checkout our FAQ.
   </Card>
 </Cards>
