@@ -130,7 +130,7 @@ To configure the CleverTap dashboard, perform the following steps:
       </td>
 
       <td>
-        This URL is generated automatically in the CleverTap dashboard. refer to [Set Up CleverTap Callbacks with ValueFirst]().
+        This URL is generated automatically in the CleverTap dashboard. Refer to [Set Up CleverTap Callbacks with ValueFirst](doc:valuefirst#set-up-clevertap-callbacks-with-valuefirst).
       </td>
     </tr>
 
@@ -141,7 +141,7 @@ To configure the CleverTap dashboard, perform the following steps:
       </td>
 
       <td>
-        This URL is generated automatically in the CleverTap dashboard. refer to [Set Up CleverTap Callbacks with ValueFirst]().
+        This URL is generated automatically in the CleverTap dashboard. Refer to [Set Up CleverTap Callbacks with ValueFirst](doc:valuefirst#set-up-clevertap-callbacks-with-valuefirst).
       </td>
     </tr>
   </tbody>
@@ -160,61 +160,68 @@ To configure the CleverTap dashboard, perform the following steps:
 
 8. Send a Test WhatsApp notification (refer to the following image).
 
-  
+<Image align="center" alt="Send Test Message on WhatsApp" border={true} caption="Send Test Message on WhatsApp" src="https://files.readme.io/6b7216065db1cfc7c825a026ef503d982e4fcff64f591caaa5491e16159bf17a-c384922-sendtest_1.png" width="65% " />
 
-## Set Up CleverTap Callbacks with ValueFirst
+### Set Up CleverTap Callbacks with ValueFirst
 
 Webhooks enable delivery reports and inbound WhatsApp messages to sync between ValueFirst and CleverTap.
 
 To configure webhooks:
 
-1. In CleverTap, go to **Settings > Channels > WhatsApp > Provider Nickname**.
+1. In CleverTap, go to _Settings_ > _Channels_ > _WhatsApp_ > _Provider Nickname_.
 2. Copy the following URLs:
 
    * **Delivery Report Callback URL**
    * **Inbound Message Callback URL**
+
+<Image align="center" alt="CleverTap Callback URLs" border={true} caption="CleverTap Callback URLs" src="https://files.readme.io/036d142112373894015b596e466a10e255488a531f30e7f41580543f4bff3819-image.png" width="65% " />
+
 3. Log in to the ValueFirst portal.
-4. Paste the callback URLs into the **Status Callback** and **Incoming Callback** fields.
-5. Click **Save**.
+4. Go to _ValueFirst - CleverTap WhatsApp Plugin_ > select the CleverTap tab next to the ValueFirst tab.
+5. Paste the callback URLs into the _Status Callback_ and _Incoming Callback_ fields.
 
-## Add WhatsApp Message Templates
+<Image align="center" alt="ValueFirst Callback URLs" border={true} caption="ValueFirst Callback URLs" src="https://files.readme.io/e14e5453ec995d4aaa8415531559eb397485bb09bc3c8376f710e4a5e136c516-image.png" width="65% " />
 
-To send WhatsApp campaigns, you must save Meta-approved message templates in CleverTap.
+3. Click **Save**.
 
-To add a template:
+## Add Message Templates
 
-1. Go to **Settings > Channels > WhatsApp > Provider Nickname**.
-2. Select **Templates** and click **+ Template**.
-3. Enter the template name and select the language.
-4. Choose the header type (Text or Media).
-5. Enter the message content.
-6. (Optional) Add a footer or buttons.
-7. Click **Save Template**.
+To create WhatsApp campaigns, you must have pre-approved WhatsApp message templates saved in the CleverTap dashboard. To add the templates, perform the following steps:
 
-## Testing a Message Template
+1. Go to _Settings_ > _Channels_ > _WhatsApp_ > _WhatsApp Connect_ > _Provider Nickname_ on the CleverTap dashboard.
+2. Select _Templates_ and click **+ Template**.
 
-To test a WhatsApp message template:
+![](https://files.readme.io/70d1653-non_CT_approved_templates.jpg "Create a New Template")  Create a New Template
 
-1. Hover over the saved template.
-2. Click **Send Test**.
-3. Select test profiles or enter a mobile number.
-4. Click **Send Test**.
+3. Enter the template name.
 
-If the message fails, share the response payload with ValueFirst support for troubleshooting.
+> 📘 Naming WhatsApp Templates
+>
+> Template names and language variants must be unique for each provider configuration. This means that you can use the same template name once for each provider configuration.
+>
+> For example, if you have multiple provider configurations, such as Phone_1 and Phone_2, you can use the a particular template name once within Phone_1 and Phone_2.
 
-## Create a WhatsApp Campaign
+4. Select the language in which you want to display the message.
+5. Select the type of template header (Text or Media). For Media headers, you can use _Image_, _Video_, _Document_, or _Location_.
+6. Create a [Limited Time Offer Template](doc:whatsapp-message-templates#limited-time-offer-templates), if required.
+7. Enter the message content.
+8. Select _Footer_ to add a footer text and a button (Quick Reply or a Call To Action).
 
-You can now send WhatsApp campaigns using ValueFirst through CleverTap.
+![](https://files.readme.io/5bd5090-Generic_template_create.jpg) Define Template Content
 
-For step-by-step instructions, see
-[Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
+9. Click **Save Template**.
 
-## Create a WhatsApp Journey
+## Test a Message Template
 
-Automate WhatsApp engagement using journeys.
+For detailed instructions on testing a WhatsApp message template, refer to [Testing a Message Template](doc:whatsapp-message-templates#testing-a-message-template).
 
-For detailed instructions, see
-[Create a WhatsApp Journey](doc:engagement-nodes-whatsapp).
+# Create Campaign
+
+For detailed instructions on creating a WhatsApp campaign using Route Mobile as the provider, refer to [Create a WhatsApp Campaign](doc:whatsapp#section-creating-a-whatsapp-campaign).
+
+# Create a Journey
+
+For detailed instructions on creating a WhatsApp journey using Route Mobile as the provider, refer to [Create a WhatsApp Journey](doc:engagement-nodes-whatsapp).
 
 ## Verification
 
