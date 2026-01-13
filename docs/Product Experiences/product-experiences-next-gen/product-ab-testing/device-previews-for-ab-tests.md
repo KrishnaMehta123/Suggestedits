@@ -11,7 +11,7 @@ metadata:
 
 Before publishing your A/B tests, you can **preview and test variants across multiple devices** to ensure everything works as expected. CleverTap’s enhanced A/B Test feature allows you to test on registered devices, view live variants, and run multiple tests in.
 
-The _Device Previews_ in CleverTap enables you to:
+The _Device Previews_ in CleverTap enable you to:
 
 * Mark devices as _test devices_ and target them for QA.
 * Assign specific variants to individual devices or user profiles.
@@ -83,7 +83,7 @@ Use this panel to:
 To modify or stop an active test session:
 
 1. View Running Tests in the A/B Test dashboard.
-2. From the *Device Previews* section, select the profiles and devices.
+2. From the _Device Previews_ section, select the profiles and devices.
 3. You can either edit the device preview or do the following:
 
    * **Update Test** – to add or remove devices.
@@ -103,7 +103,7 @@ To modify or stop an active test session:
 | Issue                          | Cause                                     | Solution                                                                            |
 | ------------------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------- |
 | Test device not visible        | Device not registered                     | Go to **Find People**, mark the device as a test device, and refresh the dashboard. |
-| Unable to start multiple tests | Another test is still in single-test mode | Ensure all tests are saved and enable  *Device Preview* for each individually.      |
+| Unable to start multiple tests | Another test is still in single-test mode | Ensure all tests are saved and enable  _Device Preview_ for each individually.      |
 | Variant not loading            | Incorrect device linkage                  | Verify the device’s variant assignment in the **Variables** tab and re-publish.     |
 
 # FAQs
