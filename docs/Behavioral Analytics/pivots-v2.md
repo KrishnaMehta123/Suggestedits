@@ -38,6 +38,8 @@ By slicing and aggregating event data across dimensions, Pivots transform raw ev
 
 # Getting Started
 
+Pivots has the following four important components in it's query builder when you apply for the pivot analysis query (Feedback: Very vague and unclear. Write it better)
+
 * [Select Event](doc:pivots-v2#select-event)
 * [Select Segment](doc:pivots-v2#select-segment)
 * [Select Properties](doc:pivots-v2#select-properties)
@@ -69,7 +71,7 @@ For example, you can:
 
 ## Select Properties
 
-Pivots allow you to analyze events across multiple dimensions. You can mix and match properties to explore different analytical angles. These properties can be used as, Rows, Columns, or Axes in visualization options.
+Pivots allow you to analyze events across multiple dimensions. You can mix and match properties to explore different analytical angles. These properties can be used as Rows, Columns, or Axes in visualization options.
 
 <Image align="center" border={true} src="https://files.readme.io/cc2b583f401c8525c7d35cb0d634f9070dea2f4d967e79402ada93494d778ff9-image.png" className="border" />
 
@@ -87,9 +89,9 @@ The metric field defines what you want to quantify for the selected event.
 
 Pivots 2.0 supports three metric types:
 
-* [Event Count](doc:pivots-v2#event-count)  
-* [Event Property](doc:pivots-v2#event-property) 
-* [Sum of Property](doc:pivots-v2#sum-of-property) 
+* [Event Count](doc:pivots-v2#event-count)
+* [Event Property](doc:pivots-v2#event-property)
+* [Sum of Property](doc:pivots-v2#sum-of-property)
 
 ### Event Count
 
