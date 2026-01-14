@@ -10,33 +10,44 @@ metadata:
 
 Pivots enables you to explore, compare, and analyze user behavior across multiple dimensions using flexible, interactive tables and visualizations. It helps you break down large volumes of event data into meaningful patterns, allowing you to answer what is happening, where it is happening, and why it is happening.
 
-With Pivotd, you can quickly identify trends, outliers, and correlations across user segments, properties, and time without writing complex queries.
+With Pivots, you can quickly identify trends, outliers, and correlations across user segments, properties, and time without writing complex queries.
+
+Pivots 2.0 empowers you to:
+
+* Slice user behavior across multiple dimensions
+* Visualize complex datasets with clarity
+* Identify trends, patterns, and anomalies
+* Make informed, data-driven decisions quickly
+
+By combining flexibility, performance, and powerful visualizations, Pivots 2.0 makes exploratory analytics accessible to everyone.
+
+<Callout icon="📘" theme="info">
+  #### Public Beta
+
+  This feature is released in Public Beta. For more information about this feature or any queries, contact your Customer Success Manager or the [CleverTap Support](https://help.clevertap.com/hc/en-us/requests/new).
+</Callout>
 
 # Key Benefits
 
-Pivots help you answer questions such as:
+By slicing and aggregating event data across dimensions, Pivots transform raw events into actionable insights. Pivots help you answer questions such as:
 
 * Which products, categories, or content types perform best?
 * How does user behavior vary across cities, devices, or languages?
 * Which user segments generate the highest revenue or engagement?
 * At what times or days does a specific action peak or drop?
 
-By slicing and aggregating event data across dimensions, Pivots transform raw events into actionable insights.
-
 # Getting Started
 
-To create a pivot analysis:
-
-1. Navigate to _Analytics > Pivots_
-2. Select the **event** you want to analyze
-3. Apply **filters and segments** (optional)
-4. Choose **properties to pivot on**
-5. Select a **measurement** and **visualization**
-6. Run the analysis to explore insights
+* [Select Event](doc:pivots-v2#select-event)
+* [Select Segment](doc:pivots-v2#select-segment)
+* [Select Properties](doc:pivots-v2#select-properties)
+* [Select Metric](doc:pivots-v2#select-metric)
 
 ## Select an Event
 
-Start by selecting the event you want to analyze. This event forms the foundation of your pivot analysis.
+Start by selecting the event you want to analyze. This event forms the foundation of your pivot analysis. For example, `Product Viewed`, `Video Watched`, `Charged`, `App Launched` and so on.
+
+<Image align="center" border={true} src="https://files.readme.io/b3cddc152ed699635284236f480f6ab6cfc94a7632f97bd04720cf16fa72aad4-image.png" className="border" />
 
 The selected event determines:
 
@@ -44,28 +55,25 @@ The selected event determines:
 * The event properties available for pivoting
 * The measurements that can be applied
 
-For example:
+## Select Segment
 
-* `Product Viewed`
-* `Video Watched`
-* `Charged`
-* `App Launched`
+You can restrict the pivot analysis to a specific user segment or create a new segment from the same query builder. Segmenting helps you understand how different groups of users behave differently for the same event.
 
-## Apply Segments (Optional)
+<Image align="center" border={true} src="https://files.readme.io/c3c3caf4dbbb5d3680c62c71aec1cf2f1b4fc0f67ec54f4b1958bd21e025de2b-image.png" className="border" />
 
-You can restrict the pivot analysis to a specific user segment or compare behavior across segments.
+For example, you can:
 
-Segmenting helps you understand how different groups of users behave differently for the same event.
+* Compare engagement between New Users and Returning Users
+* Analyze purchases by High-Value Users
+* Understand content consumption for Subscribed vs Free users
 
-**Example use cases:**
+## Select Properties
 
-* Compare engagement between **New Users** and **Returning Users**
-* Analyze purchases by **High-Value Users**
-* Understand content consumption for **Subscribed vs Free users**
+Pivots allow you to analyze events across multiple dimensions. You can mix and match properties to explore different analytical angles. These properties can be used as, Rows, Columns, or Axes in visualization options.
 
-## Choose Properties to Pivot On
+<Image align="center" border={true} src="https://files.readme.io/cc2b583f401c8525c7d35cb0d634f9070dea2f4d967e79402ada93494d778ff9-image.png" className="border" />
 
-Pivots allow you to analyze events across multiple dimensions. You can pivot on:
+You can pivot on:
 
 * **Event properties** (for example, product name, content category)
 * **User profile properties** (for example, language, customer type)
@@ -73,52 +81,47 @@ Pivots allow you to analyze events across multiple dimensions. You can pivot on:
 * **Technographic properties** (for example, device type, OS)
 * **App fields** (for example, app version)
 
-These properties can be used as:
+## Select Metric
 
-* **Rows**
-* **Columns**
-* **Axes** in visualizations
+The metric field defines what you want to quantify for the selected event.
 
-You can mix and match properties to explore different analytical angles.
+Pivots 2.0 supports three metric types:
 
-## Select Measurement
-
-The measurement defines **what you want to quantify** for the selected event.
-
-Pivots 2.0 supports two primary measurement types:
+* [Event Count](doc:pivots-v2#event-count)  
+* [Event Property](doc:pivots-v2#event-property) 
+* [Sum of Property](doc:pivots-v2#sum-of-property) 
 
 ### Event Count
 
 Counts how many times the selected event occurred.
 
-**Use this when you want to:**
+Use this when you want to:
 
 * Measure frequency or volume
 * Compare activity levels across dimensions
 
-**Example:**
-Number of `Product Viewed` events per category per day
+For example, number of `Product Viewed` events per category per day
+
+### Event Property
 
 ### Sum of Property
 
-Aggregates the total value of a numeric event property.
+Aggregates the total value of a numeric event property. This is useful when the event represents a value-bearing action.
 
-This is useful when the event represents a value-bearing action.
-
-**Example use cases:**
+For example:
 
 * Total revenue using the `amount` property of the `Charged` event
 * Total watch time using `video_duration` for `Video Watched`
 
-## Understanding the Pivot Analysis
+# Reading the Pivot Analysis
 
 A pivot analysis consists of the following components:
 
-### Available Properties
+## Available Properties
 
 The pool of properties you selected during setup. You can dynamically assign these properties as rows, columns, or chart axes to explore different views of the same data.
 
-### Rows and Columns
+## Rows and Columns
 
 Rows and columns define how data is grouped in tabular views.
 
@@ -129,127 +132,163 @@ For example:
 
 This structure allows you to compare values across dimensions at a glance.
 
-### Visualizations
+## Visualizations
 
 Pivots 2.0 supports multiple visualization types to help you interpret data effectively.
 
 You can switch between views without changing the underlying query.
 
-## Supported Visualizations and When to Use Them
+## Table
 
-### Table
+Best for getting a precise, detailed overview of the data. Use tables when you want exact values or need to export results.
 
-Best for getting a precise, detailed overview of the data.
-
-Use tables when you want exact values or need to export results.
-
-### Heatmaps
+## Heatmaps
 
 Heatmaps highlight intensity using color, making it easy to spot patterns.
 
-#### Table Heatmap
+## Table Heatmap
 
-Best for identifying highest contributors in the dataset.
+Best for identifying highest contributors in the dataset. For example, which product-category and day combinations generate the most revenue?
 
-**Insight example:**
-Which product-category and day combinations generate the most revenue?
+## Column-wise Heatmap
 
-#### Column-wise Heatmap
+Best for identifying outliers within each column. For example, which product performs best on each day of the week?
 
-Best for identifying outliers within each column.
+## Row-wise Heatmap
 
-**Insight example:**
-Which product performs best on each day of the week?
+Best for identifying outliers within each row. For example, which day performs best for each content title?
 
-#### Row-wise Heatmap
+## Bar Chart
 
-Best for identifying outliers within each row.
+Best for comparing categorical data. Use this option to compare performance across categories such as products, regions, or languages.
 
-**Insight example:**
-Which day performs best for each content title?
+## Stacked Bar Chart
 
-### Bar Chart
+Best for comparing how multiple variables contribute to a total over time or across categories. Use this option to understand composition changes across dimensions.
 
-Best for comparing categorical data.
+## Line Chart
 
-**Use this to:**
-Compare performance across categories such as products, regions, or languages.
+Best for analyzing trends over time. Use this option to identify correlations or similar behavioral patterns between variables.
 
-### Stacked Bar Chart
+## Area Chart
 
-Best for comparing how multiple variables contribute to a total over time or across categories.
+Best for understanding part-to-whole relationships over time. Use this option to analyze contribution of individual categories to overall performance.
 
-**Use this to:**
-Understand composition changes across dimensions.
-
-### Line Chart
-
-Best for analyzing trends over time.
-
-**Use this to:**
-Identify correlations or similar behavioral patterns between variables.
-
-### Area Chart
-
-Best for understanding part-to-whole relationships over time.
-
-**Use this to:**
-Analyze contribution of individual categories to overall performance.
-
-## Example Use Case: Content Consumption Analysis
+# Example Use Case: Content Consumption Analysis
 
 A video streaming app wants to analyze content performance beyond just views.
 
-**Setup:**
+Query:
 
 * Event: `Video Watched`
 * Measurement: Sum of `video_duration`
 * Rows: Day of Week
 * Columns: Video Name
 
-**Insights derived:**
+Insights:
 
 * Identify which shows drive the most watch time
 * Understand viewing patterns across weekdays
 * Optimize content promotion and scheduling
 
-## Data Sampling
+## Create a Pivot Analysis
 
-To ensure fast query performance, CleverTap applies intelligent sampling when analyzing very large datasets.
+To create a pivot analysis:
 
-* Sampling is applied when queries exceed **100,000 events**
-* Sample rate beyond this threshold is **10%**
+1. Navigate to _Analytics > Pivots_
+2. Select the **event** you want to analyze
+3. Apply **filters and segments** (optional)
+4. Choose **properties to pivot on**
+5. Select a **measurement** and **visualization**
+6. Run the analysis to explore insights
+
+# FAQs
+
+This section answers common questions and helps you resolve frequent issues while using Pivots 2.0.
+
+### Why do my numbers not match other dashboards?
+
+Pivots may apply **data sampling** for large queries to improve performance.
+
+Sampling applies when:
+
+* Query contains more than **100,000 events**
+* Sample rate after 100,000 events is **10%**
 * Results remain **directionally accurate**
 
-Minor differences may appear when comparing pivot data with unsampled dashboards.
+**Recommendation:** Use pivot insights for patterns, trends, and comparisons; use raw dashboards for exact totals.
 
-## When to Use Pivots vs Funnels
+### Can I pivot using multiple properties?
 
-| Use Case                           | Use Pivots | Use Funnels |
-| ---------------------------------- | ---------- | ----------- |
-| Explore trends and distributions   | ✅          |             |
-| Compare dimensions and segments    | ✅          |             |
-| Analyze step-by-step user journeys |            | ✅           |
-| Identify drop-offs between steps   |            | ✅           |
+Yes. You can pivot using multiple dimensions by placing properties across rows and columns and exploring combinations through the table or visual view.
 
-***
+### What measurement should I use: Count or Sum of Property?
 
-## Summary
+Use:
 
-Pivots 2.0 empowers you to:
+* **Event Count** when you want frequency/volume of an event
+* **Sum of Property** when you want a total numeric value (revenue, watch time, quantity, etc.)
 
-* Slice user behavior across multiple dimensions
-* Visualize complex datasets with clarity
-* Identify trends, patterns, and anomalies
-* Make informed, data-driven decisions quickly
+### Why can’t I select a property for Sum?
 
-By combining flexibility, performance, and powerful visualizations, Pivots 2.0 makes exploratory analytics accessible to every marketer.
+Only **numeric properties** (integer/float) can be used with **Sum of Property**.
 
-***
+If the property is a string (for example, `"USD"` or `"category"`), it will not appear in the sum list.
 
-If you want, next I can:
+### Can I analyze users instead of events?
 
-* Create **migration notes** from old Pivots → Pivots 2.0
-* Write **inline UI tooltips** for Pivots
-* Add **FAQs or troubleshooting**
-* Tighten this for **ReadMe-style publishing**
+Pivots primarily measure events. However, by selecting the right event and combining segmentation filters, you can derive user-level insights such as:
+
+* Behavior by user segment
+* Events generated per segment
+* Value contribution by segment
+
+### Can I export pivot results?
+
+If exports are supported in your deployment/version, you can export tabular views. Export behavior depends on workspace permissions and feature availability.
+
+# Troubleshooting
+
+### Issue: “No Data Available”
+
+This can happen due to any of the following:
+
+Check:
+
+* Is the selected **event** firing in the chosen date range?
+* Did you apply a segment filter that excludes all users?
+* Are you using a property that has sparse or null values?
+
+### Issue: “Property not showing in pivot options”
+
+Possible causes:
+
+* The property does not exist for the selected event
+* The property has not been ingested in the selected date range
+* You selected a measurement type that limits property selection (for example, Sum requires numeric property)
+
+### Issue: “Results are too high / too low”
+
+Things to verify:
+
+* Are you viewing **event count** vs **sum**?
+* Are filters and segments applied correctly?
+* Is the conversion window or date range aligned with your intended analysis?
+
+### Issue: “Charts are hard to interpret due to too many values”
+
+Recommendations:
+
+* Reduce dimensionality by pivoting on fewer properties
+* Filter down to top-performing categories (if supported)
+* Use heatmaps to quickly spot high-impact areas
+* Switch to Table view when precision matters
+
+### Issue: “Pivot takes too long to load”
+
+Recommendations:
+
+* Narrow the date range
+* Remove high-cardinality dimensions (for example, user ID, session ID)
+* Use fewer rows/columns
+* Avoid combining too many breakdown properties at once
