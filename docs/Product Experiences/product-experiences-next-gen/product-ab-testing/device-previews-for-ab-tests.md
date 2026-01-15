@@ -115,7 +115,7 @@ Yes. You can now preview and test multiple A/B experiments simultaneously.
 **Do test devices affect production users?**
 No. Only registered test devices get variant changes.
 
-**Can I unmark a test device later?**
-Yes. Clear _mark as test profile_ on the user’s profile page at any time.
+**Can I remove the test device later?**
+Yes. Remove the device by editing Device Previews .
 
 <br />
