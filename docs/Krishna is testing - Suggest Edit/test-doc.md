@@ -1,5 +1,5 @@
 ---
-title: Test doc
+title: WhatsApp
 deprecated: false
 hidden: false
 metadata:
@@ -7,12 +7,8 @@ metadata:
 ---
 # Overview
 
-sfsefwfsting
+Lorem ipsum
 
-<br />
+# Create WhatsApp Campaign
 
-<br />
-
-Bajrang is testing
-
-vfdvdvd
+Lorem ipsum
