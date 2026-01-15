@@ -116,6 +116,6 @@ Yes. You can now preview and test multiple A/B experiments simultaneously.
 No. Only registered test devices get variant changes.
 
 **Can I unmark a test device later?**
-Yes. Clear _Mark as Test Device_ on the user’s profile page at any time.
+Yes. Clear _mark as test profile_ on the user’s profile page at any time.
 
 <br />
