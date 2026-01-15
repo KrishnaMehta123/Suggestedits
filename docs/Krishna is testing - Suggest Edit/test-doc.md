@@ -16,7 +16,10 @@ Lorem ipsum
 # Campaign Stats
 
 Lorem ipsum
+@Krishna, make it bold
 
 > 📘 Lorem ipsum
 >
 > Lorem ipsum
+
+Add screenshot for lorem ipsum.
