@@ -26,7 +26,7 @@ Before testing an A/B experiment:
 
 * Check that your _CleverTap SDK_ is updated to the latest version that supports test device registration.
 * You must have access permissions for _A/B test creation_ and _Device Previews_.
-* The devices you plan to use for testing must be _registered as test devices_.
+* The devices you plan to use for testing must be part of a profile marked for testing.
 
 # Mark a Device as a Test Device
 
