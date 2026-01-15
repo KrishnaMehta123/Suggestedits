@@ -26,15 +26,15 @@ Before testing an A/B experiment:
 
 * Check that your _CleverTap SDK_ is updated to the latest version that supports test device registration.
 * You must have access permissions for _A/B test creation_ and _Device Previews_.
-* The devices you plan to use for testing must be part of a profile marked for testing.
+* The devices you plan to use for testing must be part of a test profile.
 
-# Mark a Device as a Test Device
+# Mark a Profile as Test Profile
 
-To register a device for testing:
+A Test Profile lists all the devices associated with it. Before assigning test devices to variants, you must first mark the user profile as a Test Profile. To mark a profile as a test profile, do the following:
 
 1. Go to _Segments > Find People_.
 2. Search for a user profile using _Identity_ or _CleverTap ID_.
-3. Select **Mark as Test Device**.
+3. Select **mark as test profile**.
 
 For more information, refer to [Mark a user profile as a Test Profile](https://docs.clevertap.com/docs/user-profiles#mark-a-user-profile-as-a-test-profile).
 
