@@ -12,3 +12,11 @@ Lorem ipsum
 # Create WhatsApp Campaign
 
 Lorem ipsum
+
+# Campaign Stats
+
+Lorem ipsum
+
+> 📘 Lorem ipsum
+>
+> Lorem ipsum
