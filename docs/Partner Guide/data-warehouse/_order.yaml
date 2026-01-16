@@ -2,7 +2,7 @@
 - data-export-to-aws-s3
 - aws-s3_iam-policy
 - configure-aws-s3
-- bigquery-export
+- bigquery-configuration-1
 - data-export-to-gcp
 - configure-google-cloud-platform
 - microsoft-azure-export
