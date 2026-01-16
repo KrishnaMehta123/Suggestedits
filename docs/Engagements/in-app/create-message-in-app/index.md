@@ -266,6 +266,12 @@ Alternatively, you can display the campaign **exactly** when the user completes 
 
 The campaign is triggered after a specified delay once the user meets the qualification criteria. You can set the number of seconds (maximum 1200) to wait before showing the popup.
 
+<Callout icon="📘" theme="info">
+  Private Beta
+
+  Currently, this feature is a Private Beta Release. If you want access to this feature, contact your Customer Success Manager.
+</Callout>
+
 <Image align="center" alt="In-App Delay" border={true} caption="In-App Delay" src="https://files.readme.io/53ef58cd405aacea6c1136cc7a5ff8f0a67abc4f4d42b998ee79882f1025b195-image.png" />
 
 <br />
