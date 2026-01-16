@@ -13,19 +13,20 @@ By tracking events in your app, you can better understand what users are doing. 
 
 <Image align="center" alt={898} border={true} width="80%" src="https://files.readme.io/40b874a-events1.png" title="events1.png" className="border" />
 
+@comment
 ## Event Categories
 
 CleverTap has two categories of events:
 
 * System events: Events recorded automatically after you integrate our SDK.
 * Custom events: Events you define and track with our SDK or API.
-
+@comment
 ## Event Properties
 
 Events have details that describe the action taking place called properties.
 
 For example, while recording the _Product viewed_ event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
-
+@comment
 # System Events
 
 > 📘 Events Changelog
@@ -33,7 +34,7 @@ For example, while recording the _Product viewed_ event, you could also store ev
 > You can find information about the most recent changes to our existing system events or the introduction of new ones in our [Events Changelog](doc:events-changelog).
 
 System events are events recorded automatically after you integrate our SDK.
-
+@comment
 <Table align={["left","left","left"]}>
   <thead>
     <tr>
@@ -530,7 +531,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>The following properties are captured as part of this event to provide additional context about the credited points to the wallet:</p> <ul> <li><strong>Points Expiry</strong>: The expiration date/time of the credited points. Defines when the awarded points will no longer be valid.<ul><li>Format: <code>DD-MM-YYYY HH:MM:SS</code></li></ul></li> <li><strong>Wallet ID</strong>: Unique identifier for the wallet where points are being credited. Used to distinguish between multiple wallet types if applicable.</li> <li><strong>Transaction ID</strong>: Unique ID assigned to the point credit transaction. Useful for audit trails, debugging, and reporting. </li> <li><strong>Source</strong>: Identifies how the credit was initiated. <ul><li>Possible values: <code>API</code>, <code>Campaign</code>, <code>Manual</code>, <code>Cashback Coupon</code></li></ul> </li> <li><strong>Points Description</strong>: Descriptive label for the credit transaction. Configured during campaign or API call to explain why points were awarded.</li> <li><strong>Points</strong>: Number of points credited to the wallet. <ul><li>Numeric value, e.g., 25 or 100.</li></ul> </li> <li><strong>Event Timestamp</strong>: Timestamp representing when the event was logged in CleverTap. Used for tracking, filtering, and campaign attribution. </li> <li><strong>Campaign ID</strong>: The ID of the campaign responsible for the point credit. Applicable only if the source of credit is a campaign.</li>  <li><strong>Coupon Code</strong>: Indicates the specific coupon code whose redemption resulted in the crediting of points. Applicable when the source is a cashback coupon.</li> <li><strong>Coupon ID</strong>: Refers to the unique coupon ID associated with the redemption that triggered the points credit. Applicable when the source is a cashback coupon.</li> <li><strong>Sale Channel</strong>: The source channel for the transaction (e.g., Mobile, Web, POS). Applies to credit transactions created via API.</li> <li><strong>Location ID</strong>: Identifier for the transaction location (e.g., store code). Applies to credit transactions created via API.</li> <li><strong>Sale Amount</strong>: Gross order value tied to the transaction.</li> </ul>
+        <p>The following properties are captured as part of this event to provide additional context about the credited points to the wallet:</p> <ul> <li><strong>Points Expiry</strong>: The expiration date/time of the credited points. Defines when the awarded points will no longer be valid.<ul><li>Format: <code>DD-MM-YYYY HH:MM:SS</code></li></ul></li> <li><strong>Wallet ID</strong>: Unique identifier for the wallet where points are being credited. Used to distinguish between multiple wallet types if applicable.</li> <li><strong>Transaction ID</strong>: Unique ID assigned to the point credit transaction. Useful for audit trails, debugging, and reporting. </li> <li><strong>Source</strong>: Identifies how the credit was initiated. <ul><li>Possible values: <code>API</code>, <code>Campaign</code>, <code>Manual</code>, <code>Cashback Coupon</code></li></ul> </li> <li><strong>Points Description</strong>: Descriptive label for the credit transaction. Configured during campaign or API call to explain why points were awarded.</li> <li><strong>Points</strong>: Number of points credited to pplied and subsequently reverted. Helps map the reversal back to the original transaction. </li> <li><strong>Event Timestamp</strong>: The exact date and time when the reverted event was logged in CleverTap. Useful for auditing, ordering, and reporting. </li> <li><strong>Discount Amount</strong>: The monetary value of the discount that was revertethe wallet. <ul><li>Numeric value, e.g., 25 or 100.</li></ul> </li> <li><strong>Event Timestamp</strong>: Timestamp representing when the event was logged in CleverTap. Used for tracking, filtering, and campaign attribution. </li> <li><strong>Campaign ID</strong>: The ID of the campaign responsible for the point credit. Applicable only if the source of credit is a campaign.</li>  <li><strong>Coupon Code</strong>: Indicates the specific coupon code whose redemption resulted in the crediting of points. Applicable when the source is a cashback coupon.</li> <li><strong>Coupon ID</strong>: Refers to the unique coupon ID associated with the redemption that triggered the points credit. Applicable when the source is a cashback coupon.</li> <li><strong>Sale Channel</strong>: The source channel for the transaction (e.g., Mobile, Web, POS). Applies to credit transactions created via API.</li> <li><strong>Location ID</strong>: Identifier for the transaction location (e.g., store code). Applies to credit transactions created via API.</li> <li><strong>Sale Amount</strong>: Gross order value tied to the transaction.</li> </ul>
       </td>
     </tr>
 
@@ -544,7 +545,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>The following properties are captured as part of this event to provide additional context about the debited points to the wallet:</p><ul> <li><strong>Wallet ID</strong>: Unique identifier for the wallet from which points are debited. Used to map the transaction to a specific reward wallet.</li> <li><strong>Transaction ID</strong>: Unique ID associated with the debit transaction. Useful for reconciliation and debugging. </li> <li><strong>Source</strong>: Indicates how the debit was triggered. <ul><li>Possible values include: <code>API</code>, <code>Manual</code>, <code>Campaign</code>, etc.</li></ul> </li> <li><strong>Points Description</strong>: Descriptive text or label explaining the context of the points debit. Configured during campaign or API setup.</li> <li><strong>Points</strong>: Number of points debited from the wallet. <ul><li>Numeric value, e.g., 10 or 50.</li></ul> </li> <li><strong>Event Timestamp</strong>: The exact time when the points debit action occurred and was logged in CleverTap. Auto-recorded for chronological tracking. </li> <li><strong>Campaign ID</strong>: ID of the campaign that triggered the debit (if applicable). Helps link the debit to a promotional action. </li> <li><strong>Sale Channel</strong>: The source channel for the transaction (e.g., Mobile, Web, POS). Applies to debit transactions created via API.</li> <li><strong>Location ID</strong>: Identifier for the transaction location (e.g., store code). Applies to debit transactions created via API.</li> <li><strong>Sale Amount</strong>: Gross order value tied to the transaction.</li> </ul>
+        <p>The following properties are captured as part of this event to provide additional context about the debited points to the wallet:</p><ul> <li><strong>Wallet ID</strong>: Unique identifier for the wallet from which points are debited. Used to map the transaction to a specific reward wallet.</li> <li><strong>Transaction ID</strong>: Unique ID associated with the debit transaction. Useful for reconciliation and debugging. </li> <li><strong>Source</strong>: Indicates how the debit was triggered. <ul><li>Possible values include: <code>API</code>, <code>Manual</code>, <code>Campaign</code>, etc.</li></ul> </li> <li><strong>Points Description</strong>: Descriptive text or label explaining the context of the points debit. Configured during campaign or API setup.</li> <li><strong>Points</strong>: Number of points debpplied and subsequently reverted. Helps map the reversal back to the original transaction. </li> <li><strong>Event Timestamp</strong>: The exact date and time when the reverted event was logged in CleverTap. Useful for auditing, ordering, and reporting. </li> <li><strong>Discount Amount</strong>: The monetary value of the discount that was reverteited from the wallet. <ul><li>Numeric value, e.g., 10 or 50.</li></ul> </li> <li><strong>Event Timestamp</strong>: The exact time when the points debit action occurred and was logged in CleverTap. Auto-recorded for chronological tracking. </li> <li><strong>Campaign ID</strong>: ID of the campaign that triggered the debit (if applicable). Helps link the debit to a promotional action. </li> <li><strong>Sale Channel</strong>: The source channel for the transaction (e.g., Mobile, Web, POS). Applies to debit transactions created via API.</li> <li><strong>Location ID</strong>: Identifier for the transaction location (e.g., store code). Applies to debit transactions created via API.</li> <li><strong>Sale Amount</strong>: Gross order value tied to the transaction.</li> </ul>
       </td>
     </tr>
 
@@ -600,7 +601,7 @@ The following are the advantages of Charged event:
 
 * Helps you identify your customers and how they are using your app or website
 * Run campaigns to reward loyal users or get lost customers back
-* Measure customer loyalty via running a cohort analysis on repeat purchases
+* Measure customer loyalty via running a cohort analysis on repeat purchases Charged Event Personalization
 * Analyze paid campaign performance by total revenue earned
 * Get revenue insights like – total revenue, number of transactions, count of paying users, and much more
 
@@ -641,7 +642,7 @@ In the case of manual indexing, you can ensure that the index is smaller than th
 > 📘 Charged Event Personalization for App Inbox Campaigns
 >
 > * In the case of App Inbox campaigns, event personalization for `Charged.Items` is not enabled.
-> * However, if you use event personalization with `Charged.Items`, the default values for the items are displayed in the case of App Inbox campaigns.
+> * However, if you use event personalization with `Charged.Items`, the default values for the items are displayed in theCharged Event Personalization case of App Inbox campaigns.
 > * If you use event personalization with `Charged.Items` when creating a combination of Push Notification and App Inbox campaigns, the personalized values for the items are displayed for Push and default values are displayed for App Inbox.
 
 # Event Data Types
@@ -654,7 +655,7 @@ CleverTap supports the following data types:
 * Boolean
 * Mixed
 
-You can use an array only with the Charged event. All others will return an incorrect data type if using an array.
+You can use an array only with the Charged event. All others will return an Comment incorrect data type if using an array.
 
 # Event Metadata Recorded Automatically
 
@@ -672,14 +673,14 @@ In addition, CleverTap keeps the user profiles updated with the latest:
 
 # System Properties
 
-CleverTap tracks the following system properties automatically from the mobile SDK. All the system properties are prefixed by _CT_ indicating that they are provided by CleverTap.
+CleverTap tracks the following system properties automatically from Krishna is Krishna the mobile SDK. All the system properties are prefixed by _CT_ indicating that they are provided by CleverTap.
 
 The following properties are tracked automatically on all events:
 
 | <p>System Property</p> | <p>Description</p>                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <p>CT App Version</p>  | <p>This is the current version of your application installed on the user device.</p>                                                                                                                                                                                                                                                                                                                                                        |
-| <p>CT Latitude</p>     | <p>The user location identified by the latitude.</p>                                                                                                                                                                                                                                                                                                                                                                                        |
+| <p>CT Latitude</p>     | <p>The user locatBajrang ion identified by the latitude.</p>                                                                                                                                                                                                                                                                                                                                                                                        |
 | <p>CT Longitude</p>    | <p>The user location identified by the longitude.</p>                                                                                                                                                                                                                                                                                                                                                                                       |
 | <p>CT Source</p>       | <p>The source of the event.</p><p>For example, the event may originate from a Mobile SDK or an API.</p><p>All possible values:</p><ul><li>Mobile (Mobile SDK)</li><li>MobileWeb (Web SDK)</li><li>Web (Web SDK)</li><li>API</li><li>segment</li><li>appsflyer</li><li>apsalar</li><li>branch</li><li>tune</li><li>System (for events generated by CleverTap)</li><li>SendGrid</li><li> Infobip</li><li>Amazon SES</li><li>Generic</li></ul> |
 
@@ -701,7 +702,7 @@ The following properties are available on the _App Launched_ event:
 
 > 📘 Latitude and Longitude
 >
-> The system properties _latitude_ and _longitude_ are captured and sent from the SDK only if the user gives consent on your app.
+> The system properties _latitude_ and _longitude_ are captured and sent Krishna comment 2123 from the SDK only if the user gives consent on your app.
 
 # Overview
 
@@ -722,7 +723,7 @@ CleverTap has two categories of events:
 
 Events have details that describe the action taking place called properties.
 
-For example, while recording the _Product viewed_ event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
+For example, while recording the _Product viewed_ event, you could also store event krishna comments krishna comments krishna comments properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
 
 # System Events
 
@@ -766,7 +767,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>The event is raised when the user launches the app for the first time on any mobile device. </p><p>There are two cases when this event will be recorded multiple times for a single user. The first case is when a user installs your app, uninstalls it, and then reinstalls it. The second case is when a user clears your app's memory and relaunches it.</p>
+        <p>The event is raised when the user launches the app for the first time on any mobile device. </p><p>There are two cases when test test test this event will be recorded multiple times for a single user. The first case is when a user installs your app, uninstalls it, and then reinstalls it. The second case is when a user clears your app's memory and relaunches it.</p>
       </td>
     </tr>
 
@@ -794,7 +795,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is tracked by sending silent push notifications which is a type of notification that is not rendered on a user's device. We send silent push notifications to your entire install base once every 24 hours to track uninstalls. For more information, refer to <a href="https://clevertap.com/blog/track-app-uninstalls-effectively/">App Uninstall</a>.</p>
+        <p>This event is tracked by sending silent push notifications which is a type of notification that is not rendered krishna krishna on a user's device. We send silent push notifications to your entire install base once every 24 hours to track uninstalls. For more information, refer to <a href="https://clevertap.com/blog/track-app-uninstalls-effectively/">App Uninstall</a>.</p>
       </td>
     </tr>
 
@@ -818,7 +819,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. This event is also tracked when a CleverTap-integrated attribution platform, such as Branch or Apsalar, sends this information to CleverTap.</p>
+        <p>This event is tracked when a user clicks on a link from a marketing campaign that has a UTM parameter defined on it. Charged Event Personalization This event is also tracked when a CleverTap-integrated attribution platform, such as Branch or Apsalar, sends this information to CleverTap.</p>
       </td>
 
       <td>
@@ -850,7 +851,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <ul><li>Campaign ID: It helps identify the specific campaign associated with the error.</li><li>Campaign Type: It indicates the type of campaign (for example, WhatsApp, SMS, Email, and so on).</li><li>Error: It displays the error message for the error observed in the campaign.</li><li>Label: It denotes the specific label associated with the campaign.</li><li>Variant: It helps identify the errors for a specific campaign variant in the case of A/B, split delivery, or multi-variant campaigns.</li></ul>For detailed information on WhatsApp errors, refer to [WhatsApp Error Stats.](\{'\<>'}). **Note**: This event is currently in Private Beta. Contact your account manager to enable it.
+        <ul><li>Campaign ID: It helps identify the specific campaign associated with the error.</li><li>Campaign Type: It indicates Charged Event Personalization the type of campaign (for example, WhatsApp, SMS, Email, and so on).</li><li>Error: It displays the error message for the error observed in the campaign.</li><li>Label: It denotes the specific label associated with the campaign.</li><li>Variant: It helps identify the errors for a specific campaign variant in the case of A/B, split delivery, or multi-variant campaigns.</li></ul>For detailed information on WhatsApp errors, refer to [WhatsApp Error Stats.](\{'\<>'}). **Note**: This event is currently in Private Beta. Contact your account manager to enable it.
       </td>
     </tr>
 
@@ -878,7 +879,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>Recorded when a user clicks on a mobile push, in-app, email, web popup, or web push message sent via the CleverTap dashboard or through the campaign API. </p><p>The Android push notifications containing deep links to third-party apps are not tracked.</p><p>Important Properties:</p><ul><li>Variant: String value containing an A/B testing campaign's variant name.</li><li>wzrk_c2a: String value containing the action button name of notification clicked events.</li><li>button_id: Visible only when the Notification Clicked event is tracked for button clicks associated with the Image Interstitial template.</li></ul><p>The "Notification Clicked" event is triggered only for CleverTap BSP users if Click tracking is enabled when creating WhatsApp campaigns</p>
+        <p>Recorded when a user clicks on a mobile push, in-app, email, web popup, or web push message sent via the CleverTap dashboard or through the Charged Event Personalization campaign API. </p><p>The Android push notifications containing deep links to third-party apps are not tracked.</p><p>Important Properties:</p><ul><li>Variant: String value containing an A/B testing campaign's variant name.</li><li>wzrk_c2a: String value containing the action button name of notification clicked events.</li><li>button_id: Visible only when the Notification Clicked event is tracked for button clicks associated with the Image Interstitial template.</li></ul><p>The "Notification Clicked" event is triggered only for CleverTap BSP users if Click tracking is enabled when creating WhatsApp campaigns</p>
       </td>
     </tr>
 
@@ -892,7 +893,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>After the toggle for <em>Push Impressions</em> is turned on/setup from settings, the CleverTap SDK starts recording an event whenever a push notification sent via CleverTap is delivered to the user's device.</p>
+        <p>After the toggle for <em>Push Impressions</em> is turned on/setup from settings, the CleverTap SDK starts recording an event whenever a push notification Charged Event Personalization sent via CleverTap is delivered to the user's device.</p>
       </td>
     </tr>
 
@@ -920,7 +921,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is raised when the brand receives a reply from the user.</p><p>Properties:</p><ul><li><p>Incoming Message Type: Represents the type of message received (text, image, document, etc.)</p></li><li><p>Channel: String value that represents the medium of the incoming message.</p></li><li><p>Incoming text: String value that represents the incoming message. In the case of an SMS campaign, it includes the reply message sent by the SMS recipient. The maximum length of the message is set to 512 characters. </p></li><li><p>Incoming Media URL: String value that represents the URL of the media included in the message.</p></li><li><p>Campaign ID: String value that represents the original campaign ID to which the user has replied</p></li><li><p>Lat: Float value that represents the latitude of the particular location.</p></li><li><p>Long: Float value that represents the longitude of the particular location.</p></li></ul>
+        <p>This event is raised when the brand receives a reply from the user.</p><p>Properties:</p><ul><li><p>Incoming Message Type: Represents Charged Event Personalization the type of message received (text, image, document, etc.)</p></li><li><p>Channel: String value that represents the medium of the incoming message.</p></li><li><p>Incoming text: String value that represents the incoming message. In the case of an SMS campaign, it includes the reply message sent by the SMS recipient. The maximum length of the message is set to 512 characters. </p></li><li><p>Incoming Media URL: String value that represents the URL of the media included in the message.</p></li><li><p>Campaign ID: String value that represents the original campaign ID to which the user has replied</p></li><li><p>Lat: Float value that represents the latitude of the particular location.</p></li><li><p>Long: Float value that represents the longitude of the particular location.</p></li></ul>
       </td>
     </tr>
 
@@ -948,7 +949,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is raised whenever a user transitions from one state to another or from unmapped to one of the states in the lifecycle optimization framework. It is meant for internal usage at CleverTap and therefore, unavailable for querying.</p>
+        <p>This event is raised whenever a user transitions from one state to another or from unmapped to one of the states in the Charged Event Personalization lifecycle optimization framework. It is meant for internal usage at CleverTap and therefore, unavailable for querying.</p>
       </td>
     </tr>
 
@@ -958,7 +959,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is recorded to mark the end of a session. Session tracking must be enabled for the event to be tracked.</p>
+        <p>This event is recorded to mark the end of a session. Charged Event Personalization Session tracking must be enabled for the event to be tracked.</p>
       </td>
 
       <td>
@@ -972,7 +973,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>This event is recorded to mark when a device enters a geofence. </p><p>The event will only be applicable for customers who have the geofence feature enabled for them.</p>
+        <p>This event is recorded to mark when a device enters a geofence. </p><p>The event will only be Charged Event Personalization applicable for customers who have the geofence feature enabled for them.</p>
       </td>
 
       <td>
@@ -1004,7 +1005,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <p>Properties:</p><ol><li>Campaign ID: This is the ID of the campaign from which user are updating subscriptions. Campaign Type: Currently only present for Email Campaigns.</li><li>Group: Group name from which the user unsubscribed/resubscribed.</li><li>Identity: The user identity/email address.</li><li>Variant</li><li>Type: Valid values are bounced, dropped, and spam. Email IDs that bounce, drop, or are marked as spam are opted out of future emails.</li><li>Subscription Type: Account level and Profile level.<ul><li>Profile Level: The specific profile is opted out for all email campaigns in the future until they opt in again.</li><li>Account Level: The specific profile and email address are opted out of all email campaigns. Even if other profiles have that email address, they will not be sent emails in the future because that email address has been unsubscribed at the account level.</li></ul></li><li> Resubscribed: The value is true if the user has resubscribed, or else the value will be false.</li><li>Reason: Currently, present for email campaigns only. It is the same reason that was given by the email provider for the type of error. For example: "smtp;550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces."</li></ol>
+        <p>Properties:</p><ol><li>Campaign ID: This is the ID of the campaign Charged Event Personalization from which user are updating subscriptions. Campaign Type: Currently only present for Email Campaigns.</li><li>Group: Group name from which the user unsubscribed/resubscribed.</li><li>Identity: The user identity/email address.</li><li>Variant</li><li>Type: Valid values are bounced, dropped, and spam. Email IDs that bounce, drop, or are marked as spam are opted out of future emails.</li><li>Subscription Type: Account level and Profile level.<ul><li>Profile Level: The specific profile is opted out for all email campaigns in the future until they opt in again.</li><li>Account Level: The specific profile and email address are opted out of all email campaigns. Even if other profiles have that email address, they will not be sent emails in the future because that email address has been unsubscribed at the account level.</li></ul></li><li> Resubscribed: The value is true if the user has resubscribed, or else the value will be false.</li><li>Reason: Currently, present for email campaigns only. It is the same reason that was given by the email provider for the type of error. For example: "smtp;550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces."</li></ol>
       </td>
     </tr>
 
@@ -1032,7 +1033,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        <li> In the case of Email campaigns, it is raised when the provider confirms that the email campaign is delivered to the recipient mail server. In most cases, this indicates successful delivery to the end user. For campaigns sent via Generic SMTP, CleverTap should receive a [callback](doc:generic-smtp-v2-payload) to raise this event. **Note**: [Notification Delivered](doc:email-campaign-stats-delivered) is currently released in Private Beta for Infobip (in the case of Advanced Email add-on) and Sendgrid email providers. Contact your Customer Success Manager for access.</li> <li> In the case of SMS campaigns, it is raised when the notification is delivered to the end user, and CleverTap receives the [callback](doc:generic-sms#sms-callbacks). It includes the `Provider` event property, a string value that represents the service through which the campaign is sent. For example, Twilio.</li> <li> In the case of WhatsApp, it is raised when the provider confirms that the notification has reached the end user (double-tick of WhatsApp). </li>
+        <li> In the case of Email campaigns, it is raised when the provider confirms that the email campaig Charged Event Personalization n is delivered to the recipient mail server. In most cases, this indicates successful delivery to the end user. For campaigns sent via Generic SMTP, CleverTap should receive a [callback](doc:generic-smtp-v2-payload) to raise this event. **Note**: [Notification Delivered](doc:email-campaign-stats-delivered) is currently released in Private Beta for Infobip (in the case of Advanced Email add-on) and Sendgrid email providers. Contact your Customer Success Manager for access.</li> <li> In the case of SMS campaigns, it is raised when the notification is delivered to the end user, and CleverTap receives the [callback](doc:generic-sms#sms-callbacks). It includes the `Provider` event property, a string value that represents the service through which the campaign is sent. For example, Twilio.</li> <li> In the case of WhatsApp, it is raised when the provider confirms that the notification has reached the end user (double-tick of WhatsApp). </li>
       </td>
     </tr>
 
@@ -1056,7 +1057,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        This event is recorded to mark the end of a session. Session tracking must be enabled for the event to be tracked.
+        This event is recorded to mark the end of a session. Session tracking must be enabled for the event to be tracked. Charged Event Personalization
       </td>
 
       <td>
@@ -1074,7 +1075,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        This event is raised whenever a user is assigned a state or there is a transition from one state to another. It is meant for internal usage at CleverTap and therefore, unavailable for querying.
+        This event is raised whenever a user is assigned a state or there is a transition from one state to another. It is meant for internal usage at Charged Event Personalization CleverTap and therefore, unavailable for querying.
       </td>
     </tr>
 
@@ -1116,7 +1117,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        Event is raised when you are using the _Product A/B Tests _feature.
+        This event is raised whenever a user is assigned a state or there is a transition from one state to another. It is meant for internal usage at Charged Event Personalization CleverTap and therefore, unavailable for querying.
       </td>
     </tr>
 
@@ -1158,7 +1159,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        Event is raised when you are using the _Product A/B Tests _feature.
+        This event is raised whenever a user is assigned a state or there is a transition from one state to another. It is meant for internal usage at Charged Event Personalization CleverTap and therefore, unavailable for querying.
       </td>
     </tr>
 
@@ -1182,7 +1183,7 @@ System events are events recorded automatically after you integrate our SDK.
       </td>
 
       <td>
-        This event is raised when the coupon is issued to a user through a Promo campaign.
+        This event is raised whenever a user is assigned a state or there is a transition from one state to another. It is meant for internal usage at Charged Event Personalization CleverTap and therefore, unavailable for querying.
       </td>
 
       <td>
@@ -1298,13 +1299,13 @@ The following are the advantages of Charged event:
 
 * Helps you identify your customers and how they are using your app or website
 * Run campaigns to reward loyal users or get lost customers back
-* Measure customer loyalty via running a cohort analysis on repeat purchases
+* CleverTap also records transactions or purchases using a special event called **Charged**. Clevertap enriches this special event with additional information such as items sold, their categories, transaction amount, transaction ID, and information about your users. Recording a purchase against a user marks them as a customer in CleverTap and enables you to compare your funnel reports between customers and other users .
 * Analyze paid campaign performance by total revenue earned
 * Get revenue insights like – total revenue, number of transactions, count of paying users, and much more
 
 ### Charged Event Personalization
 
-You can personalize the message for customers who purchase multiple items in a single transaction. You can do so by using liquid tags from the CleverTap dashboard, as shown in the following sample codes:
+CleverTap also records transactions or purchases using a special event called **Charged**. Clevertap enriches this special event with additional information such as items sold, their categories, transaction amount, transaction ID, and information about your users. Recording a purchase against a user marks them as a customer in CleverTap and enables you to compare your funnel reports between customers and other users .
 
 * **Using for Loops in Liquid Tags**
 
@@ -1341,6 +1342,38 @@ In the case of manual indexing, you can ensure that the index is smaller than th
 > * In the case of App Inbox campaigns, event personalization for `Charged.Items` is not enabled.
 > * However, if you use event personalization with `Charged.Items`, the default values for the items are displayed in the case of App Inbox campaigns.
 > * If you use event personalization with `Charged.Items` when creating a combination of Push Notification and App Inbox campaigns, the personalized values for the items are displayed for Push and default values are displayed for App Inbox.
+
+# Overview
+
+Lorem ipsum
+
+# Create WhatsApp Campaign
+
+Lorem ipsum
+
+# Campaign Stats
+
+Lorem ipsum
+
+> 📘 Lorem ipsum
+>
+> Lorem ipsum
+
+## Errors
+
+<Tabs>
+  <Tab title="First Tab">
+    Welcome to the content that you can only see inside the first Tab.
+  </Tab>
+
+  <Tab title="Second Tab">
+    Here's content that's only inside the second Tab.
+  </Tab>
+
+  <Tab title="Third Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
 
 # Event Data Types
 
