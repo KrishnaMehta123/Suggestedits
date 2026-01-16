@@ -21,6 +21,7 @@ CleverTap has two categories of events:
 
 * System events: Events recorded automatically after you integrate our SDK.
 * Custom events: Events you define and track with our SDK or API.
+* comment
 
 ## Event Properties
 
@@ -634,6 +635,12 @@ Product price: {{ Event.Items[2].price }}
 
 `Event.items` is a custom array property that you can use to store additional information about items associated with an event. It allows you to include item-specific details when tracking events. For example, if an event called "Charged" represents a user making a purchase, you can use the `Charged.Items` array to store information about the specific items purchased within that event. Each item in the array can have its own properties, such as name, price, quantity, and so.
 
+* Helps you identify your customers and how they are using your app or website
+* Run campaigns to reward loyal users or get lost customers back
+* Measure customer loyalty via running a cohort analysis on repeat purchases
+* Analyze paid campaign performance by total revenue earned
+* Get revenue insights like – total revenue, number of transactions, count of paying users, and much more
+
 You can personalize the message for any number of items in the `Event.items` array. For example, you want to send an email including order details to the customers who bought three books from your e-commerce website. The `Event.items` array, in this case, would include three items, and you can send a personalized message for all three items.
 
 <Image align="center" alt="Charged Event Personalization" border={true} src="https://files.readme.io/aef5e4b-Charged_Event_Personalization.png" className="border" />
@@ -724,7 +731,7 @@ CleverTap has two categories of events:
 
 Events have details that describe the action taking place called properties.
 
-For example, while recording the _Product viewed_ event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed.
+For example, while recording the _Product viewed_ event, you could also store event properties, such as product name, category, and price. Recording event properties will help you discover insights, such as which product category is more popular, and segment users based on which categories or price points they have viewed. y tracking events in your app, you can better understand what users are doing. In CleverTap, you can analyze these events in many different ways, such as getting aggregated metrics of a specific event or measuring how a specific event type trends over time. You can also engage with your users based on these events by creating campaigns in CleverTap that are triggered by them.
 
 # System Events
 
