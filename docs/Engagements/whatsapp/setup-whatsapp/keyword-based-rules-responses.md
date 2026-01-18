@@ -58,4 +58,25 @@ To configure keyword-based unsubscribe:
 
 Once saved, CleverTap automatically unsubscribes users from WhatsApp communication when incoming messages match the configured criteria.
 
+## Keyword-based Support
+
+Keyword-based Support allows users to request help on WhatsApp by sending predefined support keywords.
+
+To configure keyword-based support:
+
+1. Select **Keyword-based Support**.
+
+2. Select the **Keyword Criteria**:
+
+   * **Contains** triggers support when the keyword appears anywhere in the incoming message.
+   * **Exact Keyword** triggers support only when the incoming message exactly matches the keyword.
+
+3. Enter the **Keyword**.
+
+   * You can add multiple support keywords using the **+** option.
+
+4. Click **Save**.
+
+Once saved, CleverTap detects incoming WhatsApp messages that match the configured criteria and routes them as support requests.
+
 <br />
