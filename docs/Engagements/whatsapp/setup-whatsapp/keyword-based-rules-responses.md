@@ -79,4 +79,58 @@ To configure keyword-based support:
 
 Once saved, CleverTap detects incoming WhatsApp messages that match the configured criteria and routes them as support requests.
 
+## Configure Responses for Keyword-based Rules
+
+Responses define the message that is sent when a keyword-based rule is triggered.
+
+### Access Responses
+
+1. Navigate to _Settings_ > _Subscription Management_.
+2. Select **WhatsApp** as the channel.
+3. Click the ellipsis (**⋮**) next to a configured keyword-based option.
+4. Select **Responses**.
+
+The configuration screen includes the following tabs:
+
+* **Rules** shows the keyword configuration.
+* **Responses** is used to create and manage responses.
+* **Stats** displays performance metrics.
+
+## Create a Response
+
+Responses define the message that is sent when a keyword-based rule is triggered.
+
+To create a response:
+
+1. Open the **Responses** tab.
+2. Click **Create Response**.
+3. Enter the response **Name**.
+4. Review the **Channel** and **Type**, which are auto-populated based on the selected keyword-based option.
+5. Configure the **Response** by selecting a **Service provider** and creating or selecting a WhatsApp message under **Content**.
+6. Click **Publish**.
+
+The response is published and becomes active for the selected keyword-based rule.
+
+## Create WhatsApp Message for a Response
+
+When creating a message for a response:
+
+1. Select an approved WhatsApp template.
+2. Configure the message content by entering the **Title** and required **Body** values.
+3. Configure the action by providing the button **Text** and destination **URL**.
+4. Use **Preview & Test** to review the message.
+5. Click **Done**.
+
+The message is linked to the response.
+
+## Manage Responses and View Stats
+
+All responses associated with a keyword-based rule are listed in the **Responses** tab.
+
+* Responses can be viewed or deleted as required.
+* Multiple responses can be configured for a single rule.
+* If a rule is paused, responses are not sent until it is resumed.
+
+The **Stats** tab provides performance metrics for the configured responses.
+
 <br />
