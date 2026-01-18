@@ -113,8 +113,6 @@ The **Stats** tab provides insights into how users interact with keyword-based s
 
 Date range and service provider filters can be used to refine the data displayed. Trend charts and keyword-level tables provide date-wise and keyword-wise visibility.
 
-### Keyword-based Stats Metrics
-
 | Metric                           | Applies to                | Description                                                                                                                                                                    |
 | -------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Total Keyword-based Subscribes   | Keyword-based Subscribe   | Total number of users who subscribed using keyword-based requests.                                                                                                             |
