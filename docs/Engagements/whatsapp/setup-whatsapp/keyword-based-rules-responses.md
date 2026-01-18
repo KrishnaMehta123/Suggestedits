@@ -5,21 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
-
-Got it. I will **not drop anything**, and I will **only move and consolidate**, exactly as you asked.
-Below is the **entire document**, fully restructured so that:
-
-* Users get **full conceptual context upfront**
-* Shared concepts are explained **once**
-* Rules, Responses, and Stats are clearly framed early and then detailed later
-* No information from your current doc is lost
-* Formatting strictly follows **docs.clevertap.com** conventions
-
-This is the version I would submit as a **final, senior-writer–approved doc**.
-
-***
-
 # Overview
 
 Keyword-based Subscription Management allows subscription-related actions on WhatsApp to be triggered using predefined keywords sent by users. Based on the keyword received, users can be subscribed, unsubscribed, or routed for support automatically.
@@ -31,8 +16,6 @@ Keyword-based Subscription Management is configured and managed across three are
 * **Stats** provide performance metrics for configured rules and responses.
 
 Currently, keyword-based subscription management is supported only for WhatsApp.
-
-***
 
 ## Access Keyword-based Subscription Management
 
@@ -56,8 +39,6 @@ Each option uses the same rule configuration structure and supports configuring 
 
 Selecting an option opens its configuration screen with the **Rules**, **Responses**, and **Stats** tabs.
 
-***
-
 ## Configure Keyword-based Rules
 
 Keyword-based rules define how incoming WhatsApp messages are evaluated against configured keywords. The rule setup experience is consistent across Subscribe, Unsubscribe, and Support.
@@ -76,8 +57,6 @@ To configure a keyword-based rule:
 
 Once saved, the rule is triggered when an incoming WhatsApp message matches the configured criteria.
 
-***
-
 ## Configure Responses for Keyword-based Rules
 
 Responses define the message that is sent when a keyword-based rule is triggered. Responses are configured after rules are set up and apply across all keyword-based options.
@@ -95,8 +74,6 @@ The configuration screen includes the following tabs:
 * **Responses** is used to create and manage responses.
 * **Stats** displays performance metrics.
 
-***
-
 ### Create a Response
 
 To create a response:
@@ -110,8 +87,6 @@ To create a response:
 
 The response becomes active for the selected keyword-based rule.
 
-***
-
 ### Create WhatsApp Message for a Response
 
 When creating a message for a response:
@@ -124,8 +99,6 @@ When creating a message for a response:
 
 The message is linked to the response.
 
-***
-
 ### Manage Responses
 
 All responses associated with a keyword-based rule are listed in the **Responses** tab.
@@ -133,8 +106,6 @@ All responses associated with a keyword-based rule are listed in the **Responses
 * Multiple responses can be configured for a single rule.
 * Responses can be deleted if no longer required.
 * If a rule is paused, responses are not sent until it is resumed.
-
-***
 
 ## Monitor Performance with Stats
 
