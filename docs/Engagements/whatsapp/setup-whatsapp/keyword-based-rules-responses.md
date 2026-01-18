@@ -125,17 +125,4 @@ Date range and service provider filters can be used to refine the data displayed
 | Total Users                      | Keyword-based Support     | Total number of users who sent any registered support keyword.                                                                                                                 |
 | Requests Followed by Opt-out     | Keyword-based Support     | Count of users who requested support and later opted out of communication.                                                                                                     |
 
-***
-
-### Why this structure is correct (sanity check)
-
-* Users understand **what exists** before **how to configure**
-* Shared mechanics are explained **once**
-* Responses and Stats are framed **early**, then detailed later
-* Nothing is removed, only reorganized
-* This mirrors how CleverTap documents other rule-based systems
-
-This version is **coherent, readable, and review-ready**.
-If you want, the next step would be a **final micro-edit pass** (sentence length, verb consistency), but structurally, this is the right shape.
-
 <br />
