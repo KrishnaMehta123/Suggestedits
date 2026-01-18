@@ -22,8 +22,6 @@ The following options are available:
 
 * **Keyword-based Subscribe**
 * **Keyword-based Unsubscribe**
-* **Segment-based Unsubscribe**
-* **Error-based Unsubscribe**
 * **Keyword-based Support**
 
 Selecting an option opens the corresponding setup screen.
@@ -133,4 +131,22 @@ All responses associated with a keyword-based rule are listed in the **Responses
 
 The **Stats** tab provides performance metrics for the configured responses.
 
-<br />
+## Stats
+
+The **Stats** tab provides insights into how users interact with keyword-based subscription rules. Metrics vary based on the selected keyword-based option.
+
+Date range and service provider filters can be used to refine the data displayed.
+
+### Keyword-based Stats Metrics
+
+| Metric                               | Applies to                | Description                                                                                                                                                                    |
+| ------------------------------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Total Keyword-based Unsubscribes** | Keyword-based Unsubscribe | Total number of users who unsubscribed using keyword-based requests.                                                                                                           |
+| **Keyword-based Unsubscribe Rate**   | Keyword-based Unsubscribe | Percentage of active users who unsubscribed through keyword-based requests. Calculated as (Opt-out Attempts / Total Active Users) × 100.                                       |
+| **Total Keyword-based Subscribes**   | Keyword-based Subscribe   | Total number of users who subscribed using keyword-based requests.                                                                                                             |
+| **Keyword Match Rate**               | Keyword-based Subscribe   | Percentage of incoming messages that matched configured subscription keywords. Calculated as (Keyword Matches / Total Messages) × 100.                                         |
+| **Re-subscribed Users**              | Keyword-based Subscribe   | Percentage of previously unsubscribed users who subscribed again using keywords. Calculated as (Users who unsubscribed and subscribed again / Total unsubscribed users) × 100. |
+| **Total Users**                      | Keyword-based Support     | Total number of users who sent any registered support keyword.                                                                                                                 |
+| **Requests Followed by Opt-out**     | Keyword-based Support     | Count of users who requested support and later opted out of communication.                                                                                                     |
+
+Trend charts and keyword-level tables provide date-wise and keyword-wise visibility for the selected metric.
