@@ -45,14 +45,12 @@ Keyword-based rules define how incoming WhatsApp messages are evaluated against 
 
 To configure a keyword-based rule:
 
-1. Select a keyword-based option (**Keyword-based Subscribe**, **Keyword-based Unsubscribe**, or **Keyword-based Support**).
-2. Select the **Keyword Criteria**:
+1. Select a keyword-based option: Keyword-based Subscribe, Keyword-based Unsubscribe, or Keyword-based Support.
+2. Select the _Keyword Criteria_:
 
    * **Contains Keyword** triggers the rule when the keyword appears anywhere in the message.
-   * **Exact Keyword** triggers the rule only when the message exactly matches the keyword.
-3. Enter the **Keyword**.
-
-   * Add additional keywords using the **+** option.
+   * **Exact Keyword** triggers the rule only when the message matches the keyword exactly.
+3. Enter the _Keyword_. Add additional keywords using the **+** option.
 4. Click **Save**.
 
 Once saved, the rule is triggered when an incoming WhatsApp message matches the configured criteria.
